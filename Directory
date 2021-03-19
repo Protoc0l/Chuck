@@ -1,5 +1,8 @@
-Chuck/main/Version
-Chuck/main/README.md
-Chuck/main/LICENSE
-Chuck/main/nodejs/StreamDeckActionList.coll
-Chuck/main/nodejes/StreamDeckNode.js
+file Chuck/main/Directory
+file Chuck/main/LICENSE
+file Chuck/main/README.md
+file Chuck/main/Version
+folder c:/ProgramData/Chuck/main/Modules/
+folder c:/ProgramData/Chuck/main/nodejs/
+file Chuck/main/nodejs/StreamDeckActionList.coll
+file Chuck/main/nodejs/StreamDeckNode.js
