@@ -1,8 +1,200 @@
 file Chuck/main/Directory
 file Chuck/main/LICENSE
 file Chuck/main/README.md
+file Chuck/main/SQLite
 file Chuck/main/Version
 folder c:/ProgramData/Chuck/main/Modules/
 folder c:/ProgramData/Chuck/main/nodejs/
+folder c:/ProgramData/Chuck/main/SQLite/
+file Chuck/main/Modules/ToDoList LowPriority
+folder c:/ProgramData/Chuck/main/Modules/.Examples for Stream Deck/
+folder c:/ProgramData/Chuck/main/Modules/Exam Room Camera Receive/
+folder c:/ProgramData/Chuck/main/Modules/Exam Room Camera Send/
+folder c:/ProgramData/Chuck/main/Modules/Screen Blackout/
+folder c:/ProgramData/Chuck/main/Modules/Screen Blackout 2nd Monitor/
+folder c:/ProgramData/Chuck/main/Modules/Spherical Equivalent Calculator/
+folder c:/ProgramData/Chuck/main/Modules/Stream Deck Editor/
+folder c:/ProgramData/Chuck/main/Modules/Stream Deck Virtual/
+folder c:/ProgramData/Chuck/main/Modules/Taskbar/
+folder c:/ProgramData/Chuck/main/Modules/ToDoList LowPriority/
+file Chuck/main/nodejs/LICENSE
+file Chuck/main/nodejs/node_modules
+file Chuck/main/nodejs/package-lock.json
 file Chuck/main/nodejs/StreamDeckActionList.coll
 file Chuck/main/nodejs/StreamDeckNode.js
+file Chuck/main/Modules/.Examples for Stream Deck/Optional Installs Updates
+folder c:/ProgramData/Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/
+folder c:/ProgramData/Chuck/main/Modules/.Examples for Stream Deck/Optional Installs Updates/
+file Chuck/main/Modules/Exam Room Camera Receive/Exam Room Camera Receive - Master.maxpat
+file Chuck/main/Modules/Exam Room Camera Receive/Exam Room Camera Receive.png
+file Chuck/main/Modules/Exam Room Camera Send/Exam Room Camera Send - Master.maxpat
+file Chuck/main/Modules/Exam Room Camera Send/Exam Room Camera Send.png
+file Chuck/main/Modules/Screen Blackout/Screen Blackout - Master.maxpat
+file Chuck/main/Modules/Screen Blackout/Screen Blackout.png
+file Chuck/main/Modules/Screen Blackout 2nd Monitor/Instructions.txt
+file Chuck/main/Modules/Screen Blackout 2nd Monitor/Screen Blackout 2nd Monitor - Master.maxpat
+file Chuck/main/Modules/Screen Blackout 2nd Monitor/Screen Blackout 2nd Monitor.png
+file Chuck/main/Modules/Spherical Equivalent Calculator/Spherical Equivalent Calculator - Master.maxpat
+file Chuck/main/Modules/Spherical Equivalent Calculator/Spherical Equivalent Calculator.maxpat
+file Chuck/main/Modules/Spherical Equivalent Calculator/Spherical Equivalent Calculator.png
+file Chuck/main/Modules/Stream Deck Editor/clear.png
+file Chuck/main/Modules/Stream Deck Editor/delete.png
+file Chuck/main/Modules/Stream Deck Editor/MIDIActionIcon.maxpat
+file Chuck/main/Modules/Stream Deck Editor/Save_Coll_Message_Screen.maxpat
+file Chuck/main/Modules/Stream Deck Editor/SDNonSDCommands.maxpat
+file Chuck/main/Modules/Stream Deck Editor/Stream Deck Editor - Master.maxpat
+file Chuck/main/Modules/Stream Deck Editor/Stream Deck Editor Main.maxpat
+file Chuck/main/Modules/Stream Deck Editor/Stream Deck Editor.png
+file Chuck/main/Modules/Stream Deck Editor/StreamDeckActionEditor.maxpat
+file Chuck/main/Modules/Stream Deck Editor/StreamDeckButtonEditor.maxpat
+file Chuck/main/Modules/Stream Deck Editor/StreamDeckButtonIcon.maxpat
+file Chuck/main/Modules/Stream Deck Editor/StreamDeckButtonMulitpleActions.maxpat
+file Chuck/main/Modules/Stream Deck Virtual/clear.png
+file Chuck/main/Modules/Stream Deck Virtual/Stream Deck Virtual - Master.maxpat
+file Chuck/main/Modules/Stream Deck Virtual/Stream Deck Virtual.png
+file Chuck/main/Modules/Stream Deck Virtual/Stream Deck Virtual2.png
+file Chuck/main/Modules/Stream Deck Virtual/Stream Deck Virtual3.png
+file Chuck/main/Modules/Stream Deck Virtual/StreamDeckVirtual Main.maxpat
+file Chuck/main/Modules/Stream Deck Virtual/StreamDeckVirtual16.maxpat
+file Chuck/main/Modules/Stream Deck Virtual/StreamDeckVirtual32.maxpat
+file Chuck/main/Modules/Stream Deck Virtual/StreamDeckVirtual6.maxpat
+file Chuck/main/Modules/Stream Deck Virtual/StreamDeckVirtualButton.maxpat
+file Chuck/main/Modules/Taskbar/Maxpat
+file Chuck/main/Modules/Taskbar/StreamDeckIntegration.maxpat
+file Chuck/main/Modules/Taskbar/Taskbar - Master.maxpat
+folder c:/ProgramData/Chuck/main/Modules/Taskbar/Focus/
+folder c:/ProgramData/Chuck/main/Modules/Taskbar/Icons/
+folder c:/ProgramData/Chuck/main/Modules/Taskbar/Instructions/
+folder c:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat/
+file Chuck/main/Modules/ToDoList LowPriority/Textbox.maxpat
+file Chuck/main/Modules/ToDoList LowPriority/ToDoList Low Priority.png
+file Chuck/main/Modules/ToDoList LowPriority/ToDoList LowPriority - Master.maxpat
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Python Scripts
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/StreamDeckActionList.coll
+folder c:/ProgramData/Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/
+folder c:/ProgramData/Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Profiles/
+folder c:/ProgramData/Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Python Scripts/
+file Chuck/main/Modules/.Examples for Stream Deck/Optional Installs Updates/Python Packages.bat
+file Chuck/main/Modules/Taskbar/Focus/Focus License.txt
+file Chuck/main/Modules/Taskbar/Focus/sendKeys.bat
+file Chuck/main/Modules/Taskbar/Icons/.notfound.jpg
+file Chuck/main/Modules/Taskbar/Icons/.notfound.png
+file Chuck/main/Modules/Taskbar/Icons/hide icon.png
+file Chuck/main/Modules/Taskbar/Icons/lock_unlock_icon.png
+file Chuck/main/Modules/Taskbar/Icons/nes icon 2.png
+file Chuck/main/Modules/Taskbar/Icons/nes icon.png
+file Chuck/main/Modules/Taskbar/Icons/nes icon2.png
+file Chuck/main/Modules/Taskbar/Icons/on_off_icon.png
+file Chuck/main/Modules/Taskbar/Icons/restart.png
+file Chuck/main/Modules/Taskbar/Icons/streamdeckicon.png
+file Chuck/main/Modules/Taskbar/Icons/user icon.png
+file Chuck/main/Modules/Taskbar/Icons/User.png
+file Chuck/main/Modules/Taskbar/Icons/Users.png
+file Chuck/main/Modules/Taskbar/Instructions/Backup Information.txt
+file Chuck/main/Modules/Taskbar/Maxpat/Button.maxpat
+file Chuck/main/Modules/Taskbar/Maxpat/Computer Interaction.maxpat
+file Chuck/main/Modules/Taskbar/Maxpat/SDNodeJS.maxpat
+file Chuck/main/Modules/Taskbar/Maxpat/SDVariables.maxpat
+file Chuck/main/Modules/Taskbar/Maxpat/StreamDeckIntegrationOLD.maxpat
+file Chuck/main/Modules/Taskbar/Maxpat/Taskbar.maxpat
+file Chuck/main/Modules/Taskbar/Maxpat/Users.maxpat
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/.ExclamationMark.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/.Percentage.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/.period.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/.QuestionMark.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/0.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/1.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/2.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/3.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/4.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/5.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/6.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/7.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/8.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/9.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/A.png
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/advanced actions - variables.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/advanced actions - variables.jpg.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/B.png
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/backtomain.png.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/Basic Action Change Button Image.png.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/Basic Action Toggle Button Images.png.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/Basic Action Toggle Button Images.png.jpg.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/BasicAction Message Screen.png.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/brightness dec with border.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/brightness inc with border.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/buttonpresses.png.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/C.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/countdown1.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/countdown2.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/countdown3.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/D.png
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/E.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/E.png
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/E.png.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/examples.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/F.png
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/G.png
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/green right arrow.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/H.png
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/I.png
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/images.png.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/info.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/Install.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/J.png
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/K.png
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/L.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/L.png
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/L.png.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/launch_programsapps.jpg.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/M.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/M.png
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/M.png.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/message with variable.jpg.png.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/N.png
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/O.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/O.png
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/OBS info.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/optiona_installs.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/P.png.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/Panel_3seconds.png
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/Panel_3seconds.png.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/Panel_countdown.png
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/Panel_countdown.png.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/Panel_holdpress.png.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/Panel_toggle.png
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/Panel_toggle.png.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/program.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/python info.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/Q.png
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/R.png
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/reset_images.png.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/S.png
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/S.png.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/saveimageanotherbutton.png.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/set_variable.jpg.png.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/setimage.png.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/setimageonmanybuttons.png.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/setup.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/Stream Deck Editor.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/T.png
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/toggle image.jpg.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/U.png
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/Updates.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/Users.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/V.png
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/virtual desktop info.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/virutal desktop.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/W.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/W.png
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/X.png
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/X.png.jpg
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/Y.png
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Icon Images/Z.png
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Profiles/Example.ButtonPresses.coll
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Profiles/Example.Images.coll
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Profiles/Example.Main.coll
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Profiles/Example.Panel_Toggle.coll
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Profiles/Mini Virtual Stream Deck - 6 Button.coll
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Profiles/Optional_Installation.coll
+file Chuck/main/Modules/.Examples for Stream Deck/Examples User Profiles/Profiles/Other_Actions.coll

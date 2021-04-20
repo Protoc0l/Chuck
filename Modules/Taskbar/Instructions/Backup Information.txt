@@ -1,0 +1,23 @@
+Purpose: To create backups of files &/or folders and be able to restore them from back up by date or a custom name.
+-----------------------------------------------------------------------------------
+Setup (found in the 'Backup Files' module/application):
+1) Click on the '+' icon.
+2) Enter name of Backup to be created.
+3) Drag the source folder into the associated dropbox - this is the file/folder that you want to create a backup of.
+4) Drag the destination folder into the associated dropbox - this is the file/folder that you want to save backups into.
+------------------------------------------------------------------------------------
+How to use:
+Backup Files Module/Application:
+1) Click on the large dropdown menu and select the previously named backup (note: the one you created via 'Setup' above).
+2) Select 'date' or 'custom' from the left menu
+   a) 'date' = backup timestamped folder
+   b) 'custom' = custom folder name
+3) Click on the 'save' button (only shown when there is a backup selected).
+   a) if date is selected it will automatically timestamp the name of the created folder with your backup with the current time.
+   b) if custom is selected you will be given a prompt where you input the custom name you want to give the folder.
+   The folder (named with timestamp or custom name) will be saved into the destination folder selected in Setup above.
+Restore from Backup Module/Application:
+1) Select the previously named backup (note: the one you created in Backup program above).
+2) Click on the 'restore' button (only shown when there is a backup selected).
+-------------------------------------------------------------------------------------
+Created on 2021-02-15 by Dr Cory McClung

@@ -1,0 +1,10 @@
+How to use the To Do List Max Patch:
+
+The purpose of this patch is to create screen shots and store them in a predetermined file. To set this file hole the escape key while turning the program on.
+Alternatively you can send it the path when you send the message ToDoListSend which will take the screenshot and save it at the path you tell it.
+
+1) The message is composed on 'ToDoListInfo' 'ToDoListTag'
+a) ToDoListInfo sends the message in this box plus any previously pressed 'ToDoListTag'
+2) ToDoListSend sends the message; if it contains a ':' then it will be routed to send the screenshot to a different path
+ - ex: ToDoListSend (is the recieve object); and the message is 'C:/users/desktop/ToDoListFolder/'; this will save to that folder.
+**make sure to include the last backslash**

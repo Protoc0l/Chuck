@@ -1,0 +1,29 @@
+Instructions for Stream Deck Integration:
+
+1) There is a .coll file (editable by notepad or any .txt editor) for each program.
+a) Label .coll file with the same name as the folder: aka name as "folder_name.coll" 
+b) Place "folder_name.coll" inside root program folder next to "folder_name.pn"g icon AND "folder_name - master.maxpat"
+
+2) Send items (aka the 1st value the button sends)
+ - requirement: no spaces (aka 1 word only)
+ - Options:
+	a) Main_SDC: There is a Main.coll object that is opened on start (found inside Taskbar Folder) - only accepts a bang as the path is exact to "/Programs/Taskbar/StreamDeckCommands.coll"
+		note: To reset back to main via "Main_SDC bang" button OR inside max msp send a bang to "s Main_SDC"
+	b) Program_SDC - In that folder you can open the action of other folders via "Program_SDC 'Program_Name'" or inside max msp send the name of the program ("Taskbar") to "s Program_SDC"
+	c) Other_SDC - You send an exact path to a .coll file and it will load into the coll object that routes the button presses.
+	d) OpenPatch - "OpenPatch Patch_name"
+	e) ClosePatch - "ClosePatch Patch_name"
+	f) OpenProgram - "OpenProgram Program_exact_path"
+	g) Pause - "Pause 4000" puts a 4000ms pause between everything afterwards
+		note: if you only want this for a single instance put a Pause action after what you need the pause for (the 2nd pause command will take an equal delay to the 1st pause length before it takes effect).
+	h) "Blank bang" - when opening a stream deck app folder its important to open the a seperate SDC.coll file; if there are no actions for that then blank is required so the button presses are not still linked with the prior screen.
+
+3) Stream Deck Commands:
+a) Each command has a send (no spaces) followed by a message to send.
+For ex: "OpenPatch Taskbar" sends the word Taskbar to "r OpenPatch" which in this case opens the Cory's program Taskbar.
+b) 3 different options for messages for each button to customize it.
+
+4) .coll object 3 possible lines per button
+1) "Button_Number down" = always activates on down press no matter if short or long press,
+2) "Button_Number shortup" = only activates if press is shorter than 500ms,
+3) "Button_Number longup" = only activates if press is held for at least 500ms.
