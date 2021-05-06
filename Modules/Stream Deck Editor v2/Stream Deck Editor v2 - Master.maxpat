@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 5,
+			"revision" : 10,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -355,7 +355,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 10,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -577,7 +577,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 10,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -715,7 +715,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 10,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1067,13 +1067,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 10,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"openrect" : [ 40.0, 82.0, 760.0, 732.0 ],
+						"openrect" : [ 40.0, 82.0, 624.0, 327.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -1094,7 +1094,7 @@
 						"boxanimatetime" : 200,
 						"enablehscroll" : 0,
 						"enablevscroll" : 0,
-						"devicewidth" : 760.0,
+						"devicewidth" : 624.0,
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
@@ -1103,6 +1103,27 @@
 						"assistshowspatchername" : 0,
 						"title" : "Stream Deck Editor",
 						"boxes" : [ 							{
+								"box" : 								{
+									"bgmode" : 0,
+									"border" : 0,
+									"clickthrough" : 0,
+									"enablehscroll" : 0,
+									"enablevscroll" : 0,
+									"id" : "obj-1",
+									"lockeddragscroll" : 0,
+									"maxclass" : "bpatcher",
+									"name" : "StreamDeckEditorv2 Main.maxpat",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"offset" : [ 0.0, 0.0 ],
+									"patching_rect" : [ 23.0, 64.0, 104.0, 105.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 0.0, 0.0, 627.0, 330.0 ],
+									"viewvisibility" : 1
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-41",
 									"linecount" : 3,
@@ -1148,28 +1169,6 @@
 									"patching_rect" : [ 74.5, 446.0, 166.0, 22.0 ],
 									"save" : [ "#N", "menubar", 4, 0, ";", "#X", "about", "About", "Max", ";", "#X", "closeitem", ";", "#X", "end", ";" ],
 									"text" : "menubar"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgmode" : 0,
-									"border" : 0,
-									"clickthrough" : 0,
-									"enablehscroll" : 0,
-									"enablevscroll" : 0,
-									"id" : "obj-1",
-									"lockeddragscroll" : 0,
-									"maxclass" : "bpatcher",
-									"name" : "StreamDeckEditorv2 Main.maxpat",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"offset" : [ 0.0, 0.0 ],
-									"patching_rect" : [ 51.5, 61.0, 117.0, 112.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 0.0, 0.0, 627.0, 338.0 ],
-									"varname" : "SDEditor",
-									"viewvisibility" : 1
 								}
 
 							}
@@ -1278,29 +1277,6 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 214.5, 175.0, 84.0, 22.0 ],
 									"text" : "window notitle"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgcolor" : [ 0.874509803921569, 0.874509803921569, 0.874509803921569, 0.0 ],
-									"fontface" : 1,
-									"fontlink" : 1,
-									"fontsize" : 24.0,
-									"id" : "obj-24",
-									"maxclass" : "textbutton",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "int" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 595.003906488418579, 47.0, 23.992187023162842, 35.59765625 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 206.0, -11.0, 23.992187023162842, 35.59765625 ],
-									"text" : "-",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"texton" : "-",
-									"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"textovercolor" : [ 0.996078431372549, 0.996078431372549, 0.0, 1.0 ]
 								}
 
 							}
@@ -1465,7 +1441,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 5,
+											"revision" : 10,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1828,48 +1804,6 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 0.815686274509804, 0.8, 0.8, 1.0 ],
-									"bgoncolor" : [ 0.850980392156863, 0.850980392156863, 0.850980392156863, 1.0 ],
-									"fontsize" : 9.0,
-									"id" : "obj-25",
-									"maxclass" : "textbutton",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "int" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 334.5, 6.0, 47.5, 18.201171875 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 183.0, 1.0, 24.5, 18.201171875 ],
-									"text" : "X",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"texton" : "X",
-									"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgcolor" : [ 0.815686274509804, 0.8, 0.8, 1.0 ],
-									"bgoncolor" : [ 0.850980392156863, 0.850980392156863, 0.850980392156863, 1.0 ],
-									"fontsize" : 12.0,
-									"id" : "obj-32",
-									"maxclass" : "textbutton",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "int" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 389.5, 6.0, 47.5, 18.201171875 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 156.5, 1.0, 24.5, 18.201171875 ],
-									"text" : "+",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"texton" : "+",
-									"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"angle" : 270.0,
 									"bgcolor" : [ 0.756862745098039, 0.756862745098039, 0.756862745098039, 0.95 ],
 									"id" : "obj-39",
@@ -1879,7 +1813,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 452.0, 6.0, 74.0, 37.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 0.0, 0.0, 627.0, 19.201171875 ],
+									"presentation_rect" : [ 1.0, 0.0, 623.0, 19.201171875 ],
 									"proportion" : 0.5,
 									"rounded" : 0
 								}
@@ -1998,27 +1932,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-6", 0 ],
 									"source" : [ "obj-21", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-24", 0 ],
-									"source" : [ "obj-22", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-24", 0 ],
-									"source" : [ "obj-23", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-10", 0 ],
-									"source" : [ "obj-24", 0 ]
 								}
 
 							}
@@ -2262,6 +2175,7 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -2272,7 +2186,6 @@
 										"autogradient" : 0
 									}
 ,
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
@@ -2336,6 +2249,10 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -2349,10 +2266,6 @@
 
 								}
 ,
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -2364,6 +2277,7 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -2373,8 +2287,7 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-,
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "default",
@@ -2383,8 +2296,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2788,7 +2701,14 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "StreamDeckEditorv2 Main.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Stream Deck Editor v2",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Stream Deck Editor v2",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Save_Coll_Message_Screenv2.maxpat",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Stream Deck Editor v2",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -2816,6 +2736,7 @@
 , 			{
 				"name" : "_myStyle",
 				"default" : 				{
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -2826,7 +2747,6 @@
 						"autogradient" : 0
 					}
 ,
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 				}
 ,
@@ -2890,6 +2810,10 @@
 			}
 , 			{
 				"name" : "s_161006_G!",
+				"comment" : 				{
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				}
+,
 				"message" : 				{
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -2903,10 +2827,6 @@
 
 				}
 ,
-				"comment" : 				{
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-				}
-,
 				"parentstyle" : "",
 				"multi" : 1
 			}
@@ -2918,6 +2838,7 @@
 , 			{
 				"name" : "simple-2",
 				"default" : 				{
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -2927,8 +2848,7 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-,
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 				}
 ,
 				"parentstyle" : "default",
@@ -2937,8 +2857,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

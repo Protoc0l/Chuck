@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 5,
+			"revision" : 10,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 305.0, 200.0, 1301.0, 763.0 ],
+		"rect" : [ 376.0, 388.0, 901.0, 763.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -94,7 +94,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 610.015624046325684, 68.0, 198.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 323.031248092651367, 231.0, 181.0, 25.0 ],
+					"presentation_rect" : [ 357.031248092651367, 231.0, 181.0, 25.0 ],
 					"text" : "Create a Dummy Action",
 					"textcolor" : [ 0.850980392156863, 0.850980392156863, 0.850980392156863, 1.0 ]
 				}
@@ -190,7 +190,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1247.5, 658.201171875, 30.015624046325684, 35.59765625 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 292.015624046325684, 225.0, 30.015624046325684, 35.59765625 ],
+					"presentation_rect" : [ 326.015624046325684, 225.0, 30.015624046325684, 35.59765625 ],
 					"text" : "+",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"texton" : "+",
@@ -211,7 +211,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1259.0, 648.0, 26.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 298.015624046325684, 233.0, 20.0, 21.0 ],
+					"presentation_rect" : [ 332.015624046325684, 233.0, 20.0, 21.0 ],
 					"proportion" : 0.5
 				}
 
@@ -249,7 +249,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1319.0, 92.0, 292.0, 34.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 289.015624046325684, 25.0, 233.0, 34.0 ],
+					"presentation_rect" : [ 323.015624046325684, 25.0, 233.0, 34.0 ],
 					"text" : "Add Action to Profile:",
 					"textcolor" : [ 0.850980392156863, 0.850980392156863, 0.850980392156863, 1.0 ]
 				}
@@ -264,7 +264,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1394.015624046325684, 49.0, 198.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 238.015624046325684, 191.0, 30.0, 25.0 ],
+					"presentation_rect" : [ 272.015624046325684, 191.0, 30.0, 25.0 ],
 					"text" : "3)",
 					"textcolor" : [ 0.850980392156863, 0.850980392156863, 0.850980392156863, 1.0 ]
 				}
@@ -279,7 +279,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1394.015624046325684, 175.0, 198.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 238.015624046325684, 135.0, 30.0, 25.0 ],
+					"presentation_rect" : [ 272.015624046325684, 135.0, 30.0, 25.0 ],
 					"text" : "2)",
 					"textcolor" : [ 0.850980392156863, 0.850980392156863, 0.850980392156863, 1.0 ]
 				}
@@ -294,7 +294,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1366.0, 121.0, 198.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 238.015624046325684, 63.0, 30.0, 25.0 ],
+					"presentation_rect" : [ 272.015624046325684, 63.0, 30.0, 25.0 ],
 					"text" : "1)",
 					"textcolor" : [ 0.850980392156863, 0.850980392156863, 0.850980392156863, 1.0 ]
 				}
@@ -310,7 +310,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1402.015624046325684, 86.75, 198.0, 43.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 292.015624046325684, 191.0, 270.0, 25.0 ],
+					"presentation_rect" : [ 326.015624046325684, 191.0, 270.0, 25.0 ],
 					"text" : "Press to create entry to add macros.",
 					"textcolor" : [ 0.850980392156863, 0.850980392156863, 0.850980392156863, 1.0 ]
 				}
@@ -326,7 +326,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1402.015624046325684, 60.75, 198.0, 43.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 266.015624046325684, 135.0, 296.0, 25.0 ],
+					"presentation_rect" : [ 300.015624046325684, 135.0, 296.0, 25.0 ],
 					"text" : "Current MIDI or controller button press:",
 					"textcolor" : [ 0.850980392156863, 0.850980392156863, 0.850980392156863, 1.0 ]
 				}
@@ -343,7 +343,7 @@
 					"patching_rect" : [ 1376.0, 19.0, 198.0, 98.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 286.015624046325684, 65.0, 280.0, 62.0 ],
+					"presentation_rect" : [ 320.015624046325684, 65.0, 280.0, 62.0 ],
 					"text" : "Press to create action from either:\n    1) MIDI-in signal,\n    2) Gaming Controller Button Press. ",
 					"textcolor" : [ 0.850980392156863, 0.850980392156863, 0.850980392156863, 1.0 ]
 				}
@@ -463,7 +463,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1247.5, 353.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 266.015624046325684, 191.0, 24.0, 24.0 ]
+					"presentation_rect" : [ 300.015624046325684, 191.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -525,7 +525,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1241.007812023162842, 324.0, 219.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 292.015624046325684, 162.0, 270.0, 27.0 ],
+					"presentation_rect" : [ 326.015624046325684, 162.0, 270.0, 27.0 ],
 					"text" : "KB.backspace shortup",
 					"textcolor" : [ 0.545098039215686, 0.0, 0.0, 1.0 ]
 				}
@@ -566,7 +566,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 10,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -795,6 +795,7 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -805,7 +806,6 @@
 										"autogradient" : 0
 									}
 ,
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
@@ -869,6 +869,10 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -882,10 +886,6 @@
 
 								}
 ,
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -897,6 +897,7 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -906,8 +907,7 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-,
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "default",
@@ -916,8 +916,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1058,7 +1058,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 10,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1537,7 +1537,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 10,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2151,7 +2151,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 10,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3048,6 +3048,7 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -3058,7 +3059,6 @@
 										"autogradient" : 0
 									}
 ,
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
@@ -3122,6 +3122,10 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -3135,10 +3139,6 @@
 
 								}
 ,
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -3150,6 +3150,7 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -3159,8 +3160,7 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-,
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "default",
@@ -3169,8 +3169,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3620,7 +3620,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 10,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3955,6 +3955,7 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -3965,7 +3966,6 @@
 										"autogradient" : 0
 									}
 ,
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
@@ -4029,6 +4029,10 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -4042,10 +4046,6 @@
 
 								}
 ,
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -4057,6 +4057,7 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -4066,8 +4067,7 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-,
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "default",
@@ -4076,8 +4076,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -4112,7 +4112,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1255.015624046325684, 101.951171875, 30.015624046325684, 35.59765625 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 260.015624046325684, 58.0, 30.015624046325684, 35.59765625 ],
+					"presentation_rect" : [ 294.015624046325684, 58.0, 30.015624046325684, 35.59765625 ],
 					"text" : "+",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"texton" : "+",
@@ -4133,7 +4133,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1242.023436069488525, 116.0, 26.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 266.015624046325684, 66.0, 20.0, 21.0 ],
+					"presentation_rect" : [ 300.015624046325684, 66.0, 20.0, 21.0 ],
 					"proportion" : 0.5
 				}
 
@@ -4164,7 +4164,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 390.0, 211.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 234.0, 21.0, 339.0, 202.0 ],
+					"presentation_rect" : [ 268.0, 21.0, 339.0, 202.0 ],
 					"proportion" : 0.5
 				}
 
@@ -4181,8 +4181,26 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1242.023436069488525, 648.0, 295.0, 286.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 278.515624046325684, 225.0, 250.484375953674316, 39.0 ],
+					"presentation_rect" : [ 312.515624046325684, 225.0, 250.484375953674316, 39.0 ],
 					"proportion" : 0.5
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 0.407843137254902, 0.407843137254902, 0.407843137254902, 1.0 ],
+					"bordercolor" : [ 0.407843137254902, 0.407843137254902, 0.407843137254902, 1.0 ],
+					"id" : "obj-97",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 190.0, 218.0, 128.0, 128.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, -1.0, 976.0, 525.0 ],
+					"proportion" : 0.5,
+					"rounded" : 0
 				}
 
 			}
@@ -5053,6 +5071,7 @@
 , 			{
 				"name" : "_myStyle",
 				"default" : 				{
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -5063,7 +5082,6 @@
 						"autogradient" : 0
 					}
 ,
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 				}
 ,
@@ -5127,6 +5145,10 @@
 			}
 , 			{
 				"name" : "s_161006_G!",
+				"comment" : 				{
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				}
+,
 				"message" : 				{
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -5140,10 +5162,6 @@
 
 				}
 ,
-				"comment" : 				{
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-				}
-,
 				"parentstyle" : "",
 				"multi" : 1
 			}
@@ -5155,6 +5173,7 @@
 , 			{
 				"name" : "simple-2",
 				"default" : 				{
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -5164,8 +5183,7 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-,
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 				}
 ,
 				"parentstyle" : "default",
@@ -5174,8 +5192,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
