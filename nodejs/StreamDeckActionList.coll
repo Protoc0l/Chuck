@@ -13,6 +13,8 @@ OpenProgram, 'full path of program/exe' -> limited though does not require pytho
 MaxMspPatch, 'full path of .maxpat' -> opens and closes maxmsp patch;
 -------COMPUTER-ACTIONS--------, 'System Commands';
 BackUp, 'edit/date/custom' or 'Backup Program Name' or 'Backup Program Name' 'BackUp folder Name';
+Pyperclip_Copy, 'text' it will copy text onto cliipboard only;
+Pyperclip_Copy&Paste, 'text' it will copy text onto clipboard and paste where cursor is;
 Restore, 'edit' or 'Restore Program Name' or 'Restore Program Name' 'Restore folder Name';
 CommandPrompt, 'command prompt script here' note: replace all forward slashes with double forward slashes;
 FileWrite, 'fullpath to file' 'contents of file' 'can have' 'multiple single-quotes';
