@@ -1,7 +1,6 @@
 -------BASIC-ACTIONS--------, 'basic commands';
 Action, 'Name of Action from database' -> Pull an action from the database;
 BringToFront, 'Fullpath_to_exe/shortcut/Webpage-URL' 'partial/full_window_name' - bringtofront if open else opens exe;
-BringToFront_ButtonPress, 'Button_Press_id/# down/shortup/longup' 'partial/full_windown_name' - bringtofront else press button;
 Image, 'ButtonID' 'name of pic located inside images folder or full path of picture' -> optional ButtonID arg;
 Jarvis, 'anything' opens Jarvis module;
 Macro, 'build c {} like SuperMacros -> note pls use single quotes around long strings of text';
