@@ -65,7 +65,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 973.958312999999862, 548.5, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 506.0, 11.0, 22.0, 22.0 ]
+					"presentation_rect" : [ 566.0, 12.0, 22.0, 22.0 ]
 				}
 
 			}
