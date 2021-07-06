@@ -1140,7 +1140,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 73.666666666666671, 399.0, 320.0, 22.0 ],
-					"text" : "sprintf exec \\\"SELECT * FROM %s WHERE #1 LIKE '%s'\\\""
+					"text" : "sprintf exec \\\"SELECT * FROM %s WHERE %s\\\""
 				}
 
 			}
