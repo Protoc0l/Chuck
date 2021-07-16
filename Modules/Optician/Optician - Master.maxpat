@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"openrect" : [ 43.0, 96.0, 286.0, 78.0 ],
+		"openrect" : [ 43.0, 96.0, 296.0, 88.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -31,7 +31,7 @@
 		"boxanimatetime" : 200,
 		"enablehscroll" : 1,
 		"enablevscroll" : 1,
-		"devicewidth" : 286.0,
+		"devicewidth" : 296.0,
 		"description" : "",
 		"digest" : "",
 		"tags" : "",
@@ -63,7 +63,7 @@
 					"fontsize" : 8.0,
 					"hidden" : 1,
 					"id" : "obj-26",
-					"items" : [ "Select", ",", "Lindsay" ],
+					"items" : [ "Select", ",", "Dr Cory", ",", "Lindsay" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -79,16 +79,17 @@
 , 			{
 				"box" : 				{
 					"fontsize" : 20.0,
+					"hidden" : 1,
 					"id" : "obj-10",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 84.0, 283.0, 237.0, 75.0 ],
+					"patching_rect" : [ 84.0, 283.0, 237.0, 52.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 3,
-					"presentation_rect" : [ 0.0, 2.0, 210.0, 75.0 ],
-					"text" : "cliede hassler - new nosepads and sunnies - crm",
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 0.0, 2.0, 210.0, 52.0 ],
+					"text" : "Message to this staff member",
 					"textcolor" : [ 0.556862745098039, 0.149019607843137, 0.149019607843137, 0.76 ],
 					"textjustification" : 1
 				}
@@ -473,6 +474,7 @@
 				"box" : 				{
 					"bgcolor" : [ 0.2, 0.2, 0.2, 0.0 ],
 					"blinktime" : 500,
+					"hidden" : 1,
 					"id" : "obj-23",
 					"maxclass" : "led",
 					"numinlets" : 1,
@@ -2475,7 +2477,6 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.2, 0.2, 0.2, 0.0 ],
-					"hidden" : 1,
 					"id" : "obj-9",
 					"maxclass" : "led",
 					"numinlets" : 1,
@@ -2593,7 +2594,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 1042.0, 159.0, 115.0, 36.0 ],
+													"patching_rect" : [ 1042.0, 159.0, 117.0, 36.0 ],
 													"text" : "(DATETIME('NOW', 'LOCALTIME'))"
 												}
 
@@ -2648,8 +2649,8 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 164.0, 32.0, 1105.0, 44.0 ],
-													"text" : "exec \"CREATE TABLE WAITINGLIST(WAITINGLIST_ID INTEGER PRIMARY KEY AUTOINCREMENT, WAITINGLIST_NAME VARCHAR(256) DEFAULT 'Type Here', WAITINGLIST_APPEARANCE VARCHAR(256) DEFAULT 'Type Here', WAITINGLIST_PROBLEM DEFAULT 'Here for?', STAFF_ID FOREIGNKEY INTEGER DEFAULT 1, TIME_STAFF_HELPED DATETIME DEFAULT NULL, TIMESTAMP DATE DEFAULT (DATETIME('NOW', 'LOCALTIME')), FOREIGN KEY(STAFF_ID) REFERENCES STAFF(STAFF_ID))\""
+													"patching_rect" : [ 168.0, 32.0, 1108.0, 44.0 ],
+													"text" : "exec \"CREATE TABLE WAITINGLIST(WAITINGLIST_ID INTEGER PRIMARY KEY AUTOINCREMENT, WAITINGLIST_NAME VARCHAR(256) DEFAULT 'Type Here', WAITINGLIST_APPEARANCE VARCHAR(256) DEFAULT 'Type Here', WAITINGLIST_PROBLEM DEFAULT 'Here for?', STAFF_ID FOREIGNKEY INTEGER DEFAULT 1, TIME_STAFF_HELPED DATETIME DEFAULT NULL, USER_ID FOREIGNKEY INTEGER DEFAULT 1, TIMESTAMP DATE DEFAULT (DATETIME('NOW', 'LOCALTIME')), FOREIGN KEY(STAFF_ID) REFERENCES STAFF(STAFF_ID), FOREIGN KEY(USER_ID) REFERENCES STAFF(USER_ID))\""
 												}
 
 											}
@@ -2903,7 +2904,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-1", 0 ],
-													"midpoints" : [ 173.5, 143.5, 98.5, 143.5 ],
+													"midpoints" : [ 177.5, 143.5, 98.5, 143.5 ],
 													"source" : [ "obj-6", 0 ]
 												}
 
@@ -3210,7 +3211,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 174.0, 32.0, 1105.0, 44.0 ],
-													"text" : "exec \"CREATE TABLE STAFF(STAFF_ID INTEGER PRIMARY KEY AUTOINCREMENT, STAFF_NAME VARCHAR(256) DEFAULT 'Type Here', STAFF_ROLE VARCHAR(256) DEFAULT 'Type Here', STAFF_AVAILABLE INTEGER DEFAULT 0, STAFF_IN_TODAY DATE DEFAULT (DATE('NOW','LOCALTIME')), STAFF_WEBHOOK VARCHAR(256) DEFAULT 'Webhook URL', STAFF_MESSAGE VARCHAR(256) DEFAULT 'Message to this staff member', TIMESTAMP DATE DEFAULT (DATETIME('NOW','LOCALTIME')))\""
+													"text" : "exec \"CREATE TABLE STAFF(STAFF_ID INTEGER PRIMARY KEY AUTOINCREMENT, STAFF_NAME VARCHAR(256) DEFAULT 'Type Here', STAFF_ROLE VARCHAR(256) DEFAULT 'Type Here', STAFF_AVAILABLE INTEGER DEFAULT 0, STAFF_IN_TODAY DATE DEFAULT (DATE('NOW','LOCALTIME')), STAFF_WEBHOOK VARCHAR(256) DEFAULT 'Webhook URL', STAFF_MESSAGE VARCHAR(256) DEFAULT 'Message to this staff member', USER_ID FOREIGNKEY INTEGER DEFAULT 1, TIMESTAMP DATE DEFAULT (DATETIME('NOW','LOCALTIME')), FOREIGN KEY(USER_ID) REFERENCES STAFF(USER_ID))\""
 												}
 
 											}
@@ -3733,6 +3734,7 @@
 				"box" : 				{
 					"angle" : 270.0,
 					"bgcolor" : [ 0.611764705882353, 0.611764705882353, 0.611764705882353, 1.0 ],
+					"hidden" : 1,
 					"id" : "obj-19",
 					"maxclass" : "panel",
 					"mode" : 0,
