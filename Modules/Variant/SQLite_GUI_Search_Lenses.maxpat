@@ -617,6 +617,7 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -627,7 +628,6 @@
 										"autogradient" : 0
 									}
 ,
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -738,8 +738,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1459,7 +1459,7 @@
 					"color" : [ 0.435294117647059, 0.741176470588235, 0.403921568627451, 1.0 ],
 					"fontsize" : 8.0,
 					"id" : "obj-7",
-					"items" : [ "ALL", ",", "1", ",", "Essilor Sucks", ",", "Type Here", ",", "Type Here", ",", "PRICE", ",", "1.5", ",", "-10", ",", "10", ",", "-4", ",", "0", ",", "Type Here", ",", "Type Here", ",", "Type Here", ",", "Type Here", ",", "0", ",", "2021-07-07 14:00:55", ",", "2", ",", "Zeiss Rocks", ",", "Type Here", ",", "Type Here", ",", "PRICE", ",", "1.5", ",", "-10", ",", "10", ",", "-4", ",", "0", ",", "Type Here", ",", "Type Here", ",", "Type Here", ",", "Type Here", ",", "0", ",", "2021-07-07 14:00:57", ",", "3", ",", "Essilor Really Sucks", ",", "Type Here", ",", "Type Here", ",", "PRICE", ",", "1.5", ",", "-10", ",", "6", ",", "-4", ",", "0", ",", "Type Here", ",", "Type Here", ",", "Type Here", ",", "Type Here", ",", "0", ",", "2021-07-07 14:02:52" ],
+					"items" : [ "ALL", ",", "Alicia", ",", "12", ",", "0", ",", "Webhook URL", ",", "Alison M", ",", "8", ",", "0", ",", "Webhook URL", ",", "Alyssa", ",", "10", ",", "0", ",", "Webhook URL", ",", "Chantal", ",", "9", ",", "0", ",", "Webhook URL", ",", "Corrina", ",", "3", ",", "0", ",", "Webhook URL", ",", "Karen", ",", "6", ",", "0", ",", "Webhook URL", ",", "Keara", ",", "11", ",", "0", ",", "Webhook URL", ",", "Lindsay", ",", "2", ",", "0", ",", "Webhook URL", ",", "Melissa", ",", "4", ",", "0", ",", "Webhook URL", ",", "Tammy", ",", "5", ",", "0", ",", "Webhook URL", ",", "Tonya", ",", "7", ",", "0", ",", "Webhook URL", ",", "Waiting", ",", "1", ",", "0", ",", "Webhook URL" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1501,6 +1501,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 17.0, 0.0, 10.0, 20.0 ],
 					"rounded" : 0.0,
+					"textjustification" : 1,
 					"varname" : "textboxedit"
 				}
 
@@ -2263,6 +2264,7 @@
 , 			{
 				"name" : "_myStyle",
 				"default" : 				{
+					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -2273,7 +2275,6 @@
 						"autogradient" : 0
 					}
 ,
-					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 				}
 ,
@@ -2384,8 +2385,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
