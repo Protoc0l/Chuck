@@ -206,7 +206,7 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "Variant.maxpat",
-					"numinlets" : 0,
+					"numinlets" : 2,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 865.833333333333371, 167.0, 204.041666666666629, 98.0 ],
@@ -231,7 +231,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 696.291666333333524, 147.0, 70.041667000000004, 64.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1020.999999999999773, 69.0, 70.041667000000004, 64.0 ],
+					"presentation_rect" : [ 1119.999999999999773, 69.0, 70.041667000000004, 64.0 ],
 					"rounded" : 24.0,
 					"text" : "Lenses",
 					"texton" : "Lenses",
@@ -357,7 +357,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 696.333333333333485, 5.5, 88.041666666666629, 87.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1020.999999999999773, 0.0, 70.041666666666515, 64.0 ],
+					"presentation_rect" : [ 1119.999999999999773, 0.0, 70.041666666666515, 64.0 ],
 					"rounded" : 24.0,
 					"text" : "X",
 					"texton" : "X",
@@ -1257,8 +1257,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3453,8 +3453,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 								}
 ,
 								"parentstyle" : "",
@@ -4657,9 +4657,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 0.0, 0.0, 608.0, 398.0 ],
+					"patching_rect" : [ 0.0, 0.0, 679.0, 399.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 426.0, 0.0, 576.0, 372.0 ],
+					"presentation_rect" : [ 426.0, 0.0, 678.0, 372.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -5845,7 +5845,38 @@
 
 			}
  ],
-		"dependency_cache" : [  ],
+		"dependency_cache" : [ 			{
+				"name" : "Optician Available.maxpat",
+				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Optician",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Search Icon Light.png",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Icons",
+				"patcherrelativepath" : "../Icons",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Variant.maxpat",
+				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Variant",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "SQLite_GUI_Search_Lenses.maxpat",
+				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Variant",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "SQLite_GUI_Search_Lenses_Sph.maxpat",
+				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Variant",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
 		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
@@ -5989,8 +6020,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 				}
 ,
 				"parentstyle" : "",
