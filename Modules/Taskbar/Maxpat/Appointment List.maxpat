@@ -2057,6 +2057,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-149",
+					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -2238,7 +2239,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 443.0, 951.0, 273.0, 64.0 ],
+					"patching_rect" : [ 443.0, 951.0, 275.0, 64.0 ],
 					"text" : "sprintf exec \\\"UPDATE APPT_WAITINGLIST SET TIME_STAFF_HELPED=(DATETIME('NOW'\\, 'LOCALTIME')) WHERE APPT_WAITINGLIST_ID=%s\\\""
 				}
 
@@ -2373,6 +2374,45 @@
 						"title" : "Add Patient to Waiting List",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-63",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 174.0, 782.0, 100.0, 22.0 ],
+									"text" : "print"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 0.0 ],
+									"bgfillcolor_angle" : 270.0,
+									"bgfillcolor_autogradient" : 0.0,
+									"bgfillcolor_color" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 0.0 ],
+									"bgfillcolor_color1" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 0.67 ],
+									"bgfillcolor_color2" : [ 0.2, 0.2, 0.2, 1.0 ],
+									"bgfillcolor_proportion" : 0.5,
+									"bgfillcolor_type" : "color",
+									"color" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 0.0 ],
+									"elementcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 0.0 ],
+									"fontsize" : 19.0,
+									"id" : "obj-7",
+									"items" : [ "Comprehensive", ",", "Contact Lens", ",", "DFE OCT", ",", "DFE OCT HFA 24-2", ",", "Non-Urgent Med-Eye" ],
+									"maxclass" : "umenu",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "int", "", "" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 587.0, 253.0, 100.0, 30.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 251.0, 38.0, 29.0, 30.0 ],
+									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
+									"varname" : "umenu"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-9",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
@@ -2477,7 +2517,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 316.0, 331.0, 283.5, 27.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 6.0, 73.5, 274.166666666666686, 27.0 ],
+									"presentation_rect" : [ 6.0, 73.5, 243.0, 27.0 ],
 									"text" : "Req'd Appointment Day/Time",
 									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
 								}
@@ -2496,7 +2536,7 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "", "int", "", "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 170.333333333333314, 329.0, 348.0, 31.0 ],
+									"patching_rect" : [ 175.0, 331.0, 348.0, 31.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 6.0, 70.0, 274.0, 30.0 ],
 									"rounded" : 0.0,
@@ -2526,7 +2566,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 709.5, 320.0, 100.0, 22.0 ],
+									"patching_rect" : [ 709.5, 319.0, 100.0, 22.0 ],
 									"text" : "prepend hidden"
 								}
 
@@ -2536,10 +2576,10 @@
 									"id" : "obj-10",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "select", "", "int" ],
+									"numoutlets" : 4,
+									"outlettype" : [ "select", "bang", "", "int" ],
 									"patching_rect" : [ 628.5, 295.0, 100.0, 22.0 ],
-									"text" : "t select s 1"
+									"text" : "t select b s 1"
 								}
 
 							}
@@ -2564,34 +2604,6 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 628.5, 360.0, 100.0, 22.0 ],
 									"text" : "fromsymbol"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 0.0 ],
-									"bgfillcolor_angle" : 270.0,
-									"bgfillcolor_autogradient" : 0.0,
-									"bgfillcolor_color" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 0.0 ],
-									"bgfillcolor_color1" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 0.67 ],
-									"bgfillcolor_color2" : [ 0.2, 0.2, 0.2, 1.0 ],
-									"bgfillcolor_proportion" : 0.5,
-									"bgfillcolor_type" : "color",
-									"color" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 0.0 ],
-									"elementcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 0.0 ],
-									"fontsize" : 19.0,
-									"id" : "obj-7",
-									"items" : [ "Comprehensive", ",", "Contact Lens", ",", "DFE OCT", ",", "DFE OCT HFA 24-2", ",", "Non-Urgent Med-Eye" ],
-									"maxclass" : "umenu",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "int", "", "" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 587.0, 253.0, 100.0, 30.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 251.0, 38.0, 29.0, 30.0 ],
-									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
-									"varname" : "umenu"
 								}
 
 							}
@@ -3868,7 +3880,7 @@
 									"numinlets" : 4,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 299.0, 813.0, 329.0, 91.0 ],
+									"patching_rect" : [ 299.0, 813.0, 331.0, 91.0 ],
 									"text" : "sprintf exec \\\"INSERT INTO APPT_WAITINGLIST ('APPT_WAITINGLIST_NAME'\\, 'APPT_WAITINGLIST_TYPE'\\, 'APPT_WAITINGLIST_DAY_TIME'\\, 'APPT_WAITINGLIST_DOCTOR') VALUES ('%s'\\, '%s'\\, '%s'\\, '%s')\\\""
 								}
 
@@ -4073,6 +4085,7 @@
 									"bubbleusescolors" : 1,
 									"fontface" : 2,
 									"fontsize" : 18.0,
+									"hidden" : 1,
 									"id" : "obj-4",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -4098,10 +4111,11 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "", "int", "", "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 201.333333333333314, 174.0, 348.0, 31.0 ],
+									"patching_rect" : [ 187.000000000000057, 176.0, 348.0, 31.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 6.0, 38.0, 274.0, 30.0 ],
+									"presentation_rect" : [ 6.0, 38.0, 243.0, 30.0 ],
 									"rounded" : 0.0,
+									"text" : "Comprehensive",
 									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
 									"wordwrap" : 0
 								}
@@ -4246,19 +4260,27 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-11", 0 ],
-									"source" : [ "obj-10", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-30", 0 ],
 									"source" : [ "obj-10", 2 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-30", 0 ],
+									"source" : [ "obj-10", 3 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-5", 0 ],
+									"source" : [ "obj-10", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"color" : [ 0.929411764705882, 0.584313725490196, 1.0, 1.0 ],
 									"destination" : [ "obj-5", 0 ],
 									"source" : [ "obj-10", 0 ]
 								}
@@ -4273,6 +4295,7 @@
 							}
 , 							{
 								"patchline" : 								{
+									"color" : [ 0.929411764705882, 0.584313725490196, 1.0, 1.0 ],
 									"destination" : [ "obj-5", 0 ],
 									"source" : [ "obj-12", 0 ]
 								}
@@ -4403,6 +4426,15 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-42", 0 ],
+									"order" : 0,
+									"source" : [ "obj-28", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-63", 0 ],
+									"order" : 1,
 									"source" : [ "obj-28", 0 ]
 								}
 
@@ -4454,7 +4486,7 @@
 , 							{
 								"patchline" : 								{
 									"color" : [ 0.192156862745098, 0.282352941176471, 0.098039215686275, 1.0 ],
-									"destination" : [ "obj-13", 0 ],
+									"destination" : [ "obj-4", 0 ],
 									"source" : [ "obj-30", 0 ]
 								}
 
@@ -4490,7 +4522,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-5", 0 ],
-									"midpoints" : [ 320.5, 167.0, 282.0, 167.0, 282.0, 167.0, 210.833333333333314, 167.0 ],
+									"midpoints" : [ 320.5, 167.0, 282.0, 167.0, 282.0, 167.0, 196.500000000000057, 167.0 ],
 									"source" : [ "obj-33", 0 ]
 								}
 
@@ -4506,7 +4538,7 @@
 								"patchline" : 								{
 									"color" : [ 0.047058823529412, 0.913725490196078, 0.913725490196078, 1.0 ],
 									"destination" : [ "obj-127", 0 ],
-									"order" : 2,
+									"order" : 1,
 									"source" : [ "obj-35", 0 ]
 								}
 
@@ -4524,7 +4556,16 @@
 								"patchline" : 								{
 									"color" : [ 0.047058823529412, 0.913725490196078, 0.913725490196078, 1.0 ],
 									"destination" : [ "obj-5", 0 ],
-									"order" : 1,
+									"order" : 2,
+									"source" : [ "obj-35", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"color" : [ 0.047058823529412, 0.913725490196078, 0.913725490196078, 1.0 ],
+									"destination" : [ "obj-61", 0 ],
+									"order" : 3,
 									"source" : [ "obj-35", 0 ]
 								}
 
@@ -4532,7 +4573,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-61", 0 ],
-									"midpoints" : [ 320.5, 313.0, 179.833333333333314, 313.0 ],
+									"midpoints" : [ 320.5, 313.0, 184.5, 313.0 ],
 									"source" : [ "obj-36", 0 ]
 								}
 
@@ -5993,9 +6034,9 @@
 					"outmode" : 1,
 					"patching_rect" : [ 285.0, 485.5, 504.0, 134.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 10.0, 499.0, 36.0 ],
-					"rowdef" : [ [ 0, 0, 0, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ] ],
-					"rows" : 1,
+					"presentation_rect" : [ 0.0, 10.0, 499.0, 90.0 ],
+					"rowdef" : [ [ 0, 0, 0, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 1, 0, 0, 0.0, 0.63921568627451, 0.054901960784314, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 2, 0, 0, 0.0, 0.63921568627451, 0.054901960784314, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 3, 0, 0, 0.0, 0.63921568627451, 0.054901960784314, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 4, 0, 0, 0.0, 0.63921568627451, 0.054901960784314, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ] ],
+					"rows" : 5,
 					"selmode" : 3,
 					"stcolor" : [ 0.407843137254902, 0.407843137254902, 0.407843137254902, 1.0 ],
 					"varname" : "APPT_WAITINGLIST_CREATE",
