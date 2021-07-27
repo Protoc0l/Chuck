@@ -112,6 +112,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-140",
+					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -163,7 +164,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 566.5, 597.0, 85.0, 22.0 ],
+					"patching_rect" : [ 566.5, 621.0, 85.0, 22.0 ],
 					"text" : "s set_TB_size"
 				}
 
@@ -175,7 +176,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 566.5, 573.0, 100.0, 22.0 ],
+					"patching_rect" : [ 566.5, 597.0, 100.0, 22.0 ],
 					"text" : "v open_TB_size"
 				}
 
@@ -233,7 +234,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 43.166666666666657, 694.0, 329.0, 146.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 44.0, 1920.0, 787.0 ],
+					"presentation_rect" : [ 0.0, 44.0, 1920.0, 1080.0 ],
 					"varname" : "Dashboard",
 					"viewvisibility" : 1
 				}
@@ -276,7 +277,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 274.5, 393.5, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 40.0, 2560.0, 6.0 ],
+					"presentation_rect" : [ 0.0, 40.0, 1920.0, 6.0 ],
 					"textcolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 0.0 ],
 					"textoncolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 0.0 ],
 					"textovercolor" : [ 0.929411764705882, 0.929411764705882, 0.352941176470588, 0.0 ]
@@ -1285,8 +1286,8 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -2110,8 +2111,8 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -2567,8 +2568,8 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -3667,8 +3668,8 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -3967,7 +3968,7 @@
 					"bgfillcolor_type" : "color",
 					"hidden" : 1,
 					"id" : "obj-134",
-					"items" : "<empty>",
+					"items" : [ ".Examples for Stream Deck", ",", "AHC Billing", ",", "Exam Room Camera Receive", ",", "Exam Room Camera Send", ",", "Jarvis Launcher", ",", "Jarvis Lenses", ",", "Optician", ",", "Screen Blackout", ",", "Screen Blackout 2nd Monitor", ",", "Screenshare", ",", "Spherical Equivalent Calculator", ",", "Stream Deck Editor", ",", "Stream Deck Editor v2", ",", "Stream Deck Virtual", ",", "Taskbar", ",", "ToDoList LowPriority", ",", "ToDoList Viewer", ",", "Variant" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -4513,8 +4514,8 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -4878,8 +4879,8 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -5406,8 +5407,8 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -6070,8 +6071,8 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -6396,7 +6397,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
 					"patching_rect" : [ 680.5, 516.0, 67.0, 22.0 ],
-					"text" : "select 101"
+					"text" : "select 521"
 				}
 
 			}
@@ -6576,7 +6577,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 648.0, 322.0, 67.5, 22.0 ],
-					"text" : "> 101"
+					"text" : "> 521"
 				}
 
 			}
@@ -6952,8 +6953,8 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -7107,7 +7108,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 194.333333333333314, 337.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 150.0, 40.0, 2560.0, 6.0 ],
+					"presentation_rect" : [ 150.0, 40.0, 1920.0, 6.0 ],
 					"textcolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 0.0 ],
 					"textoncolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 0.0 ],
 					"textovercolor" : [ 0.929411764705882, 0.929411764705882, 0.352941176470588, 0.0 ]
@@ -7126,7 +7127,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 181.666666666666686, 393.5, 71.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 94.0, 0.0, 2598.0, 40.0 ],
+					"presentation_rect" : [ 94.0, 0.0, 978.0, 40.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
@@ -7542,13 +7543,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-127", 0 ],
-					"source" : [ "obj-154", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-55", 2 ],
 					"source" : [ "obj-154", 1 ]
 				}
@@ -7587,7 +7581,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-55", 0 ],
-					"midpoints" : [ 679.5, 633.0, 495.000000000000057, 633.0 ],
+					"midpoints" : [ 679.5, 631.0, 495.000000000000057, 631.0 ],
 					"order" : 0,
 					"source" : [ "obj-155", 0 ]
 				}
@@ -8469,8 +8463,8 @@
 , 			{
 				"name" : "_myStyle",
 				"default" : 				{
-					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
