@@ -66,7 +66,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 646.500000000000114, 590.0, 100.0, 22.0 ],
+					"patching_rect" : [ 524.500000000000114, 604.0, 100.0, 22.0 ],
 					"text" : "t 27"
 				}
 
@@ -77,7 +77,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 646.500000000000114, 614.0, 146.0, 22.0 ],
+					"patching_rect" : [ 524.500000000000114, 628.0, 146.0, 22.0 ],
 					"text" : "s ---close_taskbar_esc"
 				}
 
@@ -414,7 +414,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 618.375000000000114, 652.0, 150.0, 20.0 ],
+					"patching_rect" : [ 785.375000000000114, 637.0, 150.0, 20.0 ],
 					"text" : "<-broke this"
 				}
 
@@ -483,7 +483,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 513.375000000000114, 652.0, 103.0, 22.0 ],
+					"patching_rect" : [ 680.375000000000114, 637.0, 103.0, 22.0 ],
 					"text" : "s ---open_taskbar"
 				}
 
@@ -672,7 +672,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "next" ],
-					"patching_rect" : [ 513.375000000000114, 624.0, 115.458333333333258, 22.0 ],
+					"patching_rect" : [ 680.375000000000114, 609.0, 115.458333333333258, 22.0 ],
 					"text" : "t next"
 				}
 
@@ -1157,8 +1157,8 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -3309,8 +3309,8 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -5876,8 +5876,8 @@
 , 			{
 				"name" : "_myStyle",
 				"default" : 				{
-					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
