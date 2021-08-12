@@ -53,7 +53,6 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.2, 0.2, 0.2, 0.0 ],
-					"hidden" : 1,
 					"id" : "obj-48",
 					"maxclass" : "led",
 					"numinlets" : 1,
@@ -138,6 +137,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"title" : "Optician Waiting List",
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-9",
@@ -2600,6 +2600,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-76",
+									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -3334,9 +3335,9 @@
 									"outmode" : 1,
 									"patching_rect" : [ 212.0, 219.5, 504.0, 134.5 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 0.0, 0.0, 440.0, 54.0 ],
-									"rowdef" : [ [ 0, 0, 0, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 1, 0, 0, 0.0, 0.63921568627451, 0.054901960784314, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 2, 0, 0, 0.0, 0.63921568627451, 0.054901960784314, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ] ],
-									"rows" : 3,
+									"presentation_rect" : [ 0.0, 0.0, 440.0, 36.0 ],
+									"rowdef" : [ [ 0, 0, 0, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 1, 0, 0, 0.0, 0.63921568627451, 0.054901960784314, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ] ],
+									"rows" : 2,
 									"selmode" : 3,
 									"stcolor" : [ 0.407843137254902, 0.407843137254902, 0.407843137254902, 1.0 ],
 									"varname" : "WAITINGLIST_CREATE",
@@ -5052,6 +5053,7 @@
 					"patching_rect" : [ 84.0, 283.0, 237.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 2.0, 210.0, 29.0 ],
+					"text" : "0",
 					"textcolor" : [ 0.556862745098039, 0.149019607843137, 0.149019607843137, 0.76 ],
 					"textjustification" : 1
 				}
@@ -6023,6 +6025,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-17",
+									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -7291,7 +7294,6 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.2, 0.2, 0.2, 0.0 ],
-					"hidden" : 1,
 					"id" : "obj-9",
 					"maxclass" : "led",
 					"numinlets" : 1,
