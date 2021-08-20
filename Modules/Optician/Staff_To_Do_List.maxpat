@@ -7254,7 +7254,7 @@
 					"outmode" : 1,
 					"patching_rect" : [ 1033.0, 491.5, 504.0, 134.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 18.0, 14.0, 500.0, 20.0 ],
+					"presentation_rect" : [ 0.0, 14.0, 500.0, 20.0 ],
 					"rowdef" : [ [ 0, 0, 0, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ] ],
 					"rows" : 1,
 					"selmode" : 3,
