@@ -317,7 +317,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-70",
-									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -2415,7 +2414,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 409.0, 686.0, 30.0, 22.0 ],
-									"text" : "t 1"
+									"text" : "t 0"
 								}
 
 							}
@@ -6076,7 +6075,6 @@
 									"bubbleusescolors" : 1,
 									"fontface" : 2,
 									"fontsize" : 18.0,
-									"hidden" : 1,
 									"id" : "obj-13",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -6106,7 +6104,6 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 6.0, 72.0, 243.0, 30.0 ],
 									"rounded" : 0.0,
-									"text" : "2021/8/27",
 									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
 									"wordwrap" : 0
 								}
@@ -6117,7 +6114,6 @@
 									"bubbleusescolors" : 1,
 									"fontface" : 2,
 									"fontsize" : 18.0,
-									"hidden" : 1,
 									"id" : "obj-4",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -6147,7 +6143,6 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 6.0, 39.0, 274.0, 30.0 ],
 									"rounded" : 0.0,
-									"text" : "Boss or Sonos",
 									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
 									"wordwrap" : 0
 								}
@@ -6158,7 +6153,6 @@
 									"bubbleusescolors" : 1,
 									"fontface" : 2,
 									"fontsize" : 18.0,
-									"hidden" : 1,
 									"id" : "obj-131",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -6188,7 +6182,6 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 8.0, 5.5, 270.0, 30.0 ],
 									"rounded" : 0.0,
-									"text" : "Speakers",
 									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
 									"wordwrap" : 0
 								}
