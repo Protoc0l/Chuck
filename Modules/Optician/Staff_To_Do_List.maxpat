@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 120.0, 85.0, 1368.0, 913.0 ],
+		"rect" : [ 98.0, 185.0, 1368.0, 819.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -46,7 +46,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 893.0, 55.5, 100.0, 36.0 ],
+					"patching_rect" : [ 893.0, 55.5, 103.0, 36.0 ],
 					"text" : "loadmess hidden 1"
 				}
 
@@ -79,6 +79,7 @@
 , 			{
 				"box" : 				{
 					"fontsize" : 8.0,
+					"hidden" : 1,
 					"htabcolor" : [ 0.333333333333333, 0.333333333333333, 0.333333333333333, 0.701960784313725 ],
 					"id" : "obj-47",
 					"maxclass" : "tab",
@@ -88,7 +89,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 988.0, 127.0, 200.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 363.0, 0.0, 96.0, 14.0 ],
+					"presentation_rect" : [ 84.0, -1.0, 96.0, 14.0 ],
 					"rounded" : 6.0,
 					"tabcolor" : [ 0.0, 0.0, 0.0, 0.76 ],
 					"tabs" : [ "Personal", "To Others" ],
@@ -191,7 +192,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 35.0, -3.0, 104.0, 16.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 500.0, 16.0 ],
+					"presentation_rect" : [ 82.0, -1.0, 500.0, 16.0 ],
 					"text" : "To Do List",
 					"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
 					"textjustification" : 1
@@ -211,7 +212,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 458.0, 757.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 468.0, 0.0, 32.0, 13.0 ],
+					"presentation_rect" : [ 668.0, 0.0, 32.0, 13.0 ],
 					"text" : "+",
 					"texton" : "+",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 0.76078431372549 ]
@@ -230,7 +231,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1564.0, 391.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 500.0, 13.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 700.0, 13.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
@@ -9394,7 +9395,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 267.0, 231.0, 62.0, 36.0 ],
-									"text" : "col 2 width 265"
+									"text" : "col 2 width 345"
 								}
 
 							}
@@ -9432,7 +9433,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 127.0, 231.0, 62.0, 36.0 ],
-									"text" : "col 0 width 175"
+									"text" : "col 0 width 195"
 								}
 
 							}
