@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 42.0, 149.0, 1368.0, 913.0 ],
+		"rect" : [ 120.0, 85.0, 1368.0, 913.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,19 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-40",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 893.0, 55.5, 100.0, 36.0 ],
+					"text" : "loadmess hidden 1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-30",
 					"maxclass" : "newobj",
@@ -75,10 +88,10 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 988.0, 127.0, 200.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 536.0, -1.0, 96.0, 14.0 ],
+					"presentation_rect" : [ 363.0, 0.0, 96.0, 14.0 ],
 					"rounded" : 6.0,
 					"tabcolor" : [ 0.0, 0.0, 0.0, 0.76 ],
-					"tabs" : [ "From", "To" ],
+					"tabs" : [ "Personal", "To Others" ],
 					"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
 				}
 
@@ -178,7 +191,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 35.0, -3.0, 104.0, 16.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 82.0, -3.0, 584.0, 16.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 500.0, 16.0 ],
 					"text" : "To Do List",
 					"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
 					"textjustification" : 1
@@ -198,7 +211,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 458.0, 757.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 668.0, 0.0, 32.0, 13.0 ],
+					"presentation_rect" : [ 468.0, 0.0, 32.0, 13.0 ],
 					"text" : "+",
 					"texton" : "+",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 0.76078431372549 ]
@@ -217,7 +230,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1564.0, 391.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 700.0, 13.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 500.0, 13.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
@@ -9258,7 +9271,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1124.0, 78.0, 196.5, 36.0 ],
-					"text" : "store \"Subject/Px Name\" ID Item Time Days Due From"
+					"text" : "store Subject ID Item Time Days Due From"
 				}
 
 			}
@@ -9381,7 +9394,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 267.0, 231.0, 62.0, 36.0 ],
-									"text" : "col 2 width 340"
+									"text" : "col 2 width 265"
 								}
 
 							}
@@ -9419,7 +9432,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 127.0, 231.0, 62.0, 36.0 ],
-									"text" : "col 0 width 200"
+									"text" : "col 0 width 175"
 								}
 
 							}
@@ -9928,7 +9941,7 @@
 			}
 , 			{
 				"box" : 				{
-					"coldef" : [ [ 1, 2, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 0, 200, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 2, 340, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 3, 2, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 4, 35, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 5, 60, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 6, 60, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ] ],
+					"coldef" : [ [ 1, 2, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 0, 175, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 2, 265, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 3, 2, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 4, 35, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 5, 60, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 6, 60, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ] ],
 					"cols" : 7,
 					"fontface" : 0,
 					"fontname" : "Arial",
@@ -11506,6 +11519,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-47", 0 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-45", 0 ],
 					"source" : [ "obj-31", 0 ]
 				}
@@ -11585,6 +11605,13 @@
 					"destination" : [ "obj-6", 0 ],
 					"order" : 1,
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-47", 0 ],
+					"source" : [ "obj-40", 0 ]
 				}
 
 			}
