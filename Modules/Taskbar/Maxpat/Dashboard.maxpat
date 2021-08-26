@@ -103,7 +103,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 712.833333333333258, 426.0, 210.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 426.0, 372.0, 520.0, 267.0 ],
+					"presentation_rect" : [ 426.0, 372.0, 727.041666999999734, 267.0 ],
 					"varname" : "TODOLIST",
 					"viewvisibility" : 1
 				}
@@ -298,7 +298,7 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "Variant.maxpat",
-					"numinlets" : 2,
+					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 903.833333333333371, 181.0, 204.041666666666629, 98.0 ],
@@ -1238,8 +1238,8 @@
 										"autogradient" : 0
 									}
 ,
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1266,8 +1266,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3390,8 +3390,8 @@
 										"autogradient" : 0
 									}
 ,
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3418,8 +3418,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -5947,31 +5947,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Search Icon Light.png",
-				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Icons",
-				"patcherrelativepath" : "../Icons",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Variant.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Variant",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "SQLite_GUI_Search_Lenses.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Variant",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "SQLite_GUI_Search_Lenses_Sph.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Variant",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "Appointment List.maxpat",
 				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
 				"patcherrelativepath" : ".",
@@ -6017,8 +5992,8 @@
 						"autogradient" : 0
 					}
 ,
-					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6045,8 +6020,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
