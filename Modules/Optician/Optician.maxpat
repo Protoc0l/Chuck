@@ -40,6 +40,20 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-46",
+					"interpinlet" : 1,
+					"maxclass" : "gain~",
+					"multichannelvariant" : 0,
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1146.0, 629.0, 89.0, 38.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"hidden" : 1,
 					"id" : "obj-57",
 					"maxclass" : "textbutton",
@@ -87,7 +101,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1035.0, 415.5, 39.0, 23.0 ],
+					"patching_rect" : [ 1022.0, 420.5, 39.0, 23.0 ],
 					"text" : "dac~"
 				}
 
@@ -108,10 +122,10 @@
 					"id" : "obj-123",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "int", "bang", "int", "bang" ],
+					"numoutlets" : 5,
+					"outlettype" : [ "int", "bang", "int", "bang", "int" ],
 					"patching_rect" : [ 981.0, 388.75, 100.0, 22.0 ],
-					"text" : "t 1 b 1 b"
+					"text" : "t 1 b 1 b 140"
 				}
 
 			}
@@ -212,7 +226,7 @@
 								"selection" : [ 0.0, 1.0 ],
 								"loop" : 0,
 								"content_state" : 								{
-
+									"loop" : 0
 								}
 
 							}
@@ -246,7 +260,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1022.0, 491.0, 94.0, 50.0 ],
-					"text" : "open C:/Windows/Media/Ring01.wav"
+					"text" : "open C:/Windows/Media/Ring04.wav"
 				}
 
 			}
@@ -274,7 +288,7 @@
 						"followglobaltempo" : 0,
 						"formantcorrection" : 0,
 						"mode" : "basic",
-						"originallength" : [ 5422.846258503401259, "ticks" ],
+						"originallength" : [ 7603.200000000000728, "ticks" ],
 						"originaltempo" : 120.000000000000014,
 						"pitchcorrection" : 0,
 						"quality" : "basic",
@@ -291,7 +305,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1146.0, 607.0, 45.0, 45.0 ]
+					"patching_rect" : [ 1146.0, 699.0, 89.0, 89.0 ]
 				}
 
 			}
@@ -8890,7 +8904,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
+					"destination" : [ "obj-46", 0 ],
 					"midpoints" : [ 1264.0, 600.0, 1191.0, 600.0, 1191.0, 600.0, 1155.5, 600.0 ],
 					"source" : [ "obj-108", 0 ]
 				}
@@ -8926,7 +8940,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
+					"destination" : [ "obj-46", 0 ],
 					"midpoints" : [ 1264.0, 600.0, 1191.0, 600.0, 1191.0, 600.0, 1155.5, 600.0 ],
 					"source" : [ "obj-116", 0 ]
 				}
@@ -8978,6 +8992,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-41", 0 ],
 					"source" : [ "obj-123", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-46", 0 ],
+					"source" : [ "obj-123", 4 ]
 				}
 
 			}
@@ -9242,6 +9263,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-8", 1 ],
+					"order" : 0,
+					"source" : [ "obj-46", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"order" : 1,
+					"source" : [ "obj-46", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-45", 0 ],
 					"source" : [ "obj-47", 0 ]
 				}
@@ -9382,16 +9419,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-8", 1 ],
-					"order" : 0,
-					"source" : [ "obj-64", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"order" : 1,
+					"destination" : [ "obj-46", 0 ],
 					"source" : [ "obj-64", 0 ]
 				}
 
