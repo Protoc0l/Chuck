@@ -9259,7 +9259,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 7,
 					"outlettype" : [ "int", "int", "", "", "", "", "" ],
-					"patching_rect" : [ 1037.0, 743.5, 175.0, 22.0 ],
+					"patching_rect" : [ 1037.0, 743.5, 330.999999999999773, 22.0 ],
 					"text" : "unpack i i s s s s s"
 				}
 
@@ -9295,7 +9295,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "int" ],
-					"patching_rect" : [ 1141.0, 770.0, 262.0, 22.0 ],
+					"patching_rect" : [ 1141.0, 774.5, 262.0, 22.0 ],
 					"text" : "t s s s 1"
 				}
 
@@ -11843,7 +11843,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-64", 0 ],
-					"source" : [ "obj-66", 4 ]
+					"source" : [ "obj-66", 2 ]
 				}
 
 			}
