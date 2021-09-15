@@ -868,8 +868,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1356,8 +1356,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"fontsize" : [ 12.059008 ],
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+													"fontsize" : [ 12.059008 ]
 												}
 ,
 												"parentstyle" : "",
@@ -2693,8 +2693,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"fontsize" : [ 12.059008 ],
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+													"fontsize" : [ 12.059008 ]
 												}
 ,
 												"parentstyle" : "",
@@ -2721,8 +2721,8 @@
 , 											{
 												"name" : "texteditGold",
 												"default" : 												{
-													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -2917,8 +2917,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3386,8 +3386,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"fontsize" : [ 12.059008 ],
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+													"fontsize" : [ 12.059008 ]
 												}
 ,
 												"parentstyle" : "",
@@ -4701,8 +4701,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"fontsize" : [ 12.059008 ],
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+													"fontsize" : [ 12.059008 ]
 												}
 ,
 												"parentstyle" : "",
@@ -4729,8 +4729,8 @@
 , 											{
 												"name" : "texteditGold",
 												"default" : 												{
-													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -4925,8 +4925,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -5031,7 +5031,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 603.0, 341.0, 37.5, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 153.5, 2.5, 27.5, 19.0 ],
+					"presentation_rect" : [ 170.5, 2.5, 27.5, 19.0 ],
 					"text" : "",
 					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"texton" : "",
@@ -5051,7 +5051,7 @@
 					"patching_rect" : [ 660.0, 341.0, 49.0, 45.0 ],
 					"pic" : "Screen_Rotation_Icon.png",
 					"presentation" : 1,
-					"presentation_rect" : [ 156.5, 2.0, 21.5, 19.0 ]
+					"presentation_rect" : [ 173.5, 2.0, 21.5, 19.0 ]
 				}
 
 			}
@@ -5067,7 +5067,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 619.25, 350.0, 37.5, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 153.5, -0.5, 27.5, 24.0 ],
+					"presentation_rect" : [ 170.5, -0.5, 27.5, 24.0 ],
 					"proportion" : 0.39,
 					"rounded" : 6
 				}
@@ -8189,7 +8189,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 8.0, 1.0, 37.5, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 126.0, -1.5, 27.5, 19.0 ],
+					"presentation_rect" : [ 143.0, -1.5, 27.5, 19.0 ],
 					"text" : "",
 					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"texton" : "",
@@ -8211,7 +8211,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 227.0, 22.5, 37.5, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 98.0, -0.5, 27.5, 19.0 ],
+					"presentation_rect" : [ 115.0, -0.5, 27.5, 19.0 ],
 					"text" : "",
 					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"texton" : "",
@@ -8231,7 +8231,7 @@
 					"patching_rect" : [ 65.0, 1.0, 49.0, 45.0 ],
 					"pic" : "Flip_image_vertically_icon.png",
 					"presentation" : 1,
-					"presentation_rect" : [ 129.0, 1.5, 21.5, 19.0 ]
+					"presentation_rect" : [ 146.0, 1.5, 21.5, 19.0 ]
 				}
 
 			}
@@ -8246,7 +8246,7 @@
 					"patching_rect" : [ 284.0, 37.5, 49.0, 45.0 ],
 					"pic" : "camera_refresh_icon.png",
 					"presentation" : 1,
-					"presentation_rect" : [ 98.5, -0.5, 25.5, 23.0 ]
+					"presentation_rect" : [ 115.5, -0.5, 25.5, 23.0 ]
 				}
 
 			}
@@ -8262,7 +8262,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 24.25, 10.0, 37.5, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 126.0, -0.5, 27.5, 24.0 ],
+					"presentation_rect" : [ 143.0, -0.5, 27.5, 24.0 ],
 					"proportion" : 0.39,
 					"rounded" : 6
 				}
@@ -8280,7 +8280,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 243.25, 46.5, 37.5, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 98.0, -0.5, 27.5, 24.0 ],
+					"presentation_rect" : [ 115.0, -0.5, 27.5, 24.0 ],
 					"proportion" : 0.39,
 					"rounded" : 6
 				}
@@ -9346,8 +9346,8 @@
 										"autogradient" : 0
 									}
 ,
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -9374,8 +9374,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -9457,8 +9457,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -10073,7 +10073,35 @@
 
 			}
  ],
-		"dependency_cache" : [  ],
+		"dependency_cache" : [ 			{
+				"name" : "camera_refresh_icon.png",
+				"bootpath" : "C:/ProgramData/Chuck/main/Modules/SLE Camera/Icon Images",
+				"patcherrelativepath" : "../Icon Images",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Flip_image_vertically_icon.png",
+				"bootpath" : "C:/ProgramData/Chuck/main/Modules/SLE Camera/Icon Images",
+				"patcherrelativepath" : "../Icon Images",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Screen_Rotation_Icon.png",
+				"bootpath" : "C:/ProgramData/Chuck/main/Modules/SLE Camera/Icon Images",
+				"patcherrelativepath" : "../Icon Images",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "recording_icon.png",
+				"bootpath" : "C:/ProgramData/Chuck/main/Modules/SLE Camera/Icon Images",
+				"patcherrelativepath" : "../Icon Images",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+ ],
 		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
@@ -10106,8 +10134,8 @@
 						"autogradient" : 0
 					}
 ,
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
+					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -10134,8 +10162,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -10217,8 +10245,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
