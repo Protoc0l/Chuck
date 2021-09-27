@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 84.0, 170.0, 1713.0, 731.0 ],
+		"rect" : [ 84.0, 170.0, 1386.0, 731.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -7225,7 +7225,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
 					"patching_rect" : [ 742.5, 64.0, 59.0, 57.0 ],
-					"pic" : "Users.png",
+					"pic" : "hat.png",
 					"presentation" : 1,
 					"presentation_rect" : [ 18.0, 0.0, 24.0, 18.0 ]
 				}
@@ -7264,8 +7264,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 742.5, 144.0, 59.0, 57.0 ],
-					"pic" : "Users.png",
+					"patching_rect" : [ 742.5, 148.0, 59.0, 57.0 ],
+					"pic" : "Profile.png",
 					"presentation" : 1,
 					"presentation_rect" : [ 39.0, 0.0, 24.0, 18.0 ]
 				}
