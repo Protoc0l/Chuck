@@ -61,7 +61,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1221.0, 419.5, 100.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, -3.0, 21.0, 25.0 ],
+					"presentation_rect" : [ -2.0, -3.0, 21.0, 25.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -89,7 +89,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 129.5, 235.0, 100.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 45.0, -3.0, 19.0, 25.0 ],
+					"presentation_rect" : [ 43.0, -3.0, 19.0, 25.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -104,7 +104,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1038.5, 410.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 18.0, 17.0 ]
+					"presentation_rect" : [ -2.0, 0.0, 18.0, 17.0 ]
 				}
 
 			}
@@ -1060,7 +1060,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 180.5, 244.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 44.0, 0.0, 18.0, 17.0 ]
+					"presentation_rect" : [ 42.0, 0.0, 18.0, 17.0 ]
 				}
 
 			}
@@ -1074,7 +1074,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 30.5, 62.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 18.0, 0.0, 18.0, 17.0 ]
+					"presentation_rect" : [ 16.0, 0.0, 18.0, 17.0 ]
 				}
 
 			}
@@ -7188,7 +7188,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 8.0, 72.0, 100.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 21.5, -3.0, 21.5, 25.0 ],
+					"presentation_rect" : [ 19.5, -3.0, 21.5, 25.0 ],
 					"textcolor" : [ 0.16078431372549, 0.16078431372549, 0.16078431372549, 1.0 ]
 				}
 
@@ -7204,7 +7204,7 @@
 					"patching_rect" : [ 742.5, 64.0, 59.0, 57.0 ],
 					"pic" : "hat.png",
 					"presentation" : 1,
-					"presentation_rect" : [ 18.0, 0.0, 24.0, 18.0 ]
+					"presentation_rect" : [ 16.0, 0.0, 24.0, 18.0 ]
 				}
 
 			}
@@ -7219,7 +7219,7 @@
 					"patching_rect" : [ 672.5, 64.0, 59.0, 57.0 ],
 					"pic" : "User.png",
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 18.0, 18.0 ]
+					"presentation_rect" : [ -2.0, 0.0, 18.0, 18.0 ]
 				}
 
 			}
@@ -7244,7 +7244,7 @@
 					"patching_rect" : [ 742.5, 148.0, 59.0, 57.0 ],
 					"pic" : "Profile.png",
 					"presentation" : 1,
-					"presentation_rect" : [ 39.0, 0.0, 24.0, 18.0 ]
+					"presentation_rect" : [ 37.0, 0.0, 24.0, 18.0 ]
 				}
 
 			}
