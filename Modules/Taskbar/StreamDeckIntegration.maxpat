@@ -1117,7 +1117,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 328.5, 37.5, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 62.0, -0.0, 18.0, 20.0 ]
+					"presentation_rect" : [ 68.0, 0.0, 18.0, 20.0 ]
 				}
 
 			}
@@ -1131,7 +1131,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 157.5, 32.5, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 44.0, -0.0, 18.0, 20.0 ]
+					"presentation_rect" : [ 50.0, 0.0, 18.0, 20.0 ]
 				}
 
 			}
@@ -17656,7 +17656,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 282.5, 26.5, 100.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 62.0, -1.0, 18.0, 18.0 ],
+					"presentation_rect" : [ 68.0, -1.0, 18.0, 18.0 ],
 					"textcolor" : [ 0.792156862745098, 0.792156862745098, 0.792156862745098, 1.0 ]
 				}
 
@@ -66693,7 +66693,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 166.0, 25.5, 100.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 44.0, -1.0, 18.0, 18.0 ],
+					"presentation_rect" : [ 50.0, -1.0, 18.0, 18.0 ],
 					"textcolor" : [ 0.792156862745098, 0.792156862745098, 0.792156862745098, 1.0 ]
 				}
 
@@ -66725,7 +66725,7 @@
 					"patching_rect" : [ 244.0, 208.5, 83.0, 21.5 ],
 					"pic" : "nes icon.png",
 					"presentation" : 1,
-					"presentation_rect" : [ 39.0, 0.0, 44.0, 17.0 ]
+					"presentation_rect" : [ 45.0, 0.0, 44.0, 17.0 ]
 				}
 
 			}
@@ -66756,7 +66756,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 234.0, 177.5, 100.5, 60.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 34.5, -1.0, 50.0, 20.0 ],
+					"presentation_rect" : [ 40.5, -1.0, 50.0, 20.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
