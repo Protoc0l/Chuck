@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 2492.0, 1289.0 ],
+		"rect" : [ 42.0, 85.0, 2165.0, 1289.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -72,7 +72,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 609.0, 463.0, 30.0, 30.0 ]
+					"patching_rect" : [ 2497.0, 1350.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -91,14 +91,16 @@
 			}
 , 			{
 				"box" : 				{
+					"dstrect" : [ 0, 0, 3072, 2048 ],
 					"id" : "obj-2",
 					"maxclass" : "jit.pwindow",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 37.0, 107.0, 591.0, 345.0 ],
+					"patching_rect" : [ 37.0, 97.0, 2479.0, 1244.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 3072.0, 2048.0 ]
+					"presentation_rect" : [ 0.0, 0.0, 3072.0, 2048.0 ],
+					"srcrect" : [ 0, 0, 3072, 2048 ]
 				}
 
 			}
@@ -158,8 +160,8 @@
 						"autogradient" : 0
 					}
 ,
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
+					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -314,8 +316,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 				}
 ,
 				"parentstyle" : "",
