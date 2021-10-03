@@ -1,6 +1,0 @@
-Instructions:
-
-This program should be open on 2020_App launch as it should be open anytime there is a dual monitor on start.
-
-Stream Deck integration:
- - this program hides and unhides with the command `blackout sent by keystrokes to the program as a hotkey.
