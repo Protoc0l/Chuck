@@ -1136,7 +1136,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ -1500.0, 100.0, 1100.0, 500.0 ],
+						"rect" : [ 42.0, 85.0, 1980.0, 1080.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1299,23 +1299,6 @@
 					}
 ,
 					"text" : "p left_monitor"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 270.0,
-					"bgcolor" : [ 0.396078431372549, 0.0, 0.0, 1.0 ],
-					"bordercolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 0.0 ],
-					"id" : "obj-17",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 7.0, 146.0, 222.0, 113.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ -1.0, 0.0, 14.0, 11.0 ],
-					"proportion" : 0.5
 				}
 
 			}
