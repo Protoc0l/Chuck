@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"openrect" : [ 42.0, 85.0, 1265.0, 955.0 ],
+		"openrect" : [ 42.0, 85.0, 1264.0, 955.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -31,7 +31,7 @@
 		"boxanimatetime" : 200,
 		"enablehscroll" : 1,
 		"enablevscroll" : 1,
-		"devicewidth" : 1265.0,
+		"devicewidth" : 1264.0,
 		"description" : "",
 		"digest" : "",
 		"tags" : "",
@@ -12705,7 +12705,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 581.0, 876.5, 368.999999833333277, 175.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.0, 170.0, 1263.0, 784.0 ],
+					"presentation_rect" : [ 4.0, 173.0, 1259.0, 780.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -19376,7 +19376,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1198.0, 183.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 996.0, 1.0, 268.0, 167.0 ],
+					"presentation_rect" : [ 996.0, 1.0, 267.0, 167.0 ],
 					"proportion" : 0.5,
 					"rounded" : 2
 				}
@@ -20393,15 +20393,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-201", 0 ],
-					"order" : 0,
-					"source" : [ "obj-198", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-39", 0 ],
-					"order" : 1,
 					"source" : [ "obj-198", 0 ]
 				}
 
