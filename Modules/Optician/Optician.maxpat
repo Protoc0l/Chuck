@@ -40,6 +40,25 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgcolor" : [ 0.07843137254902, 0.611764705882353, 0.082352941176471, 0.901960784313726 ],
+					"hidden" : 1,
+					"id" : "obj-79",
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1135.0, 128.0, 100.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 196.0, -1.0, 100.0, 35.0 ],
+					"text" : "Available",
+					"texton" : "Available",
+					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
 					"bgfillcolor_color" : [ 0.2, 0.2, 0.2, 1.0 ],
@@ -60,25 +79,6 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 210.0, 0.0, 18.0, 18.0 ],
 					"textcolor" : [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.07843137254902, 0.611764705882353, 0.082352941176471, 0.901960784313726 ],
-					"hidden" : 1,
-					"id" : "obj-79",
-					"maxclass" : "textbutton",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 1135.0, 128.0, 100.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 196.0, -1.0, 100.0, 35.0 ],
-					"text" : "Available",
-					"texton" : "Available",
-					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -2830,9 +2830,9 @@
 									"outmode" : 1,
 									"patching_rect" : [ 226.0, 701.5, 504.0, 134.5 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 0.0, 14.0, 700.0, 18.0 ],
-									"rowdef" : [ [ 0, 0, 0, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ] ],
-									"rows" : 1,
+									"presentation_rect" : [ 0.0, 14.0, 700.0, 108.0 ],
+									"rowdef" : [ [ 0, 0, 0, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 1, 0, 0, 0.0, 0.63921568627451, 0.054901960784314, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 2, 0, 0, 0.0, 0.63921568627451, 0.054901960784314, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 3, 0, 0, 0.0, 0.63921568627451, 0.054901960784314, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 4, 0, 0, 0.0, 0.63921568627451, 0.054901960784314, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ] ],
+									"rows" : 6,
 									"selmode" : 3,
 									"stcolor" : [ 0.407843137254902, 0.407843137254902, 0.407843137254902, 1.0 ],
 									"varname" : "TODOLIST_INDIVIDUAL",
@@ -10767,7 +10767,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-17",
-									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -13768,7 +13767,6 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.2, 0.2, 0.2, 0.0 ],
-					"hidden" : 1,
 					"id" : "obj-56",
 					"maxclass" : "led",
 					"numinlets" : 1,
@@ -13800,8 +13798,8 @@
 					"maxclass" : "led",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"offcolor" : [ 1.0, 0.0, 0.0, 0.75 ],
-					"oncolor" : [ 1.0, 0.0, 0.0, 0.75 ],
+					"offcolor" : [ 0.0, 1.0, 0.0, 0.75 ],
+					"oncolor" : [ 0.0, 1.0, 0.0, 0.75 ],
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1242.5, 16.0, 44.0, 44.0 ],
