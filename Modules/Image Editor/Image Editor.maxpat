@@ -40,6 +40,21 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgcolor" : [ 0.2, 0.2, 0.2, 0.0 ],
+					"id" : "obj-178",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1485.333333000000039, 308.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1007.543209543210196, 7.75, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontsize" : 20.0,
 					"id" : "obj-347",
 					"maxclass" : "comment",
@@ -81,7 +96,7 @@
 				"box" : 				{
 					"id" : "obj-345",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
+					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "clear" ],
 					"patcher" : 					{
@@ -124,6 +139,31 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 33.0, 840.7225341796875, 100.0, 22.0 ],
+									"text" : "t b"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-3",
+									"index" : 3,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 1002.487654320987986, 356.2225341796875, 30.0, 30.0 ]
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-25",
 									"maxclass" : "newobj",
@@ -336,19 +376,6 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 139.864197530864203, 491.7225341796875, 71.0, 22.0 ],
 									"text" : "fromsymbol"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-6",
-									"linecount" : 2,
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 149.0, 368.2225341796875, 156.0, 36.0 ],
-									"text" : "Test \"1\" \"1\" \"1\" \"1 1 1\" \"1\" \"10\" \"1 1 1\" \"24\""
 								}
 
 							}
@@ -1025,10 +1052,10 @@
 									"id" : "obj-256",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "bang", "" ],
+									"numoutlets" : 3,
+									"outlettype" : [ "bang", "", "" ],
 									"patching_rect" : [ 50.0, 658.2225341796875, 106.0, 22.0 ],
-									"text" : "t b s"
+									"text" : "t b s s"
 								}
 
 							}
@@ -1039,7 +1066,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 685.2225341796875, 66.277777777777828, 22.0 ],
+									"patching_rect" : [ 50.0, 694.7225341796875, 66.277777777777828, 22.0 ],
 									"text" : "v Staff_ID"
 								}
 
@@ -1050,7 +1077,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 801.7225341796875, 106.0, 22.0 ],
+									"patching_rect" : [ 50.0, 807.7225341796875, 106.0, 22.0 ],
 									"text" : "s ---databaselocal"
 								}
 
@@ -1060,11 +1087,11 @@
 									"id" : "obj-254",
 									"linecount" : 4,
 									"maxclass" : "newobj",
-									"numinlets" : 12,
+									"numinlets" : 13,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 735.2225341796875, 821.777777777777828, 64.0 ],
-									"text" : "sprintf exec \\\"REPLACE INTO IMAGE_EDITOR_SETTINGS (IMAGE_EDITOR_SETTINGS_ID\\, STAFF_ID\\, IMAGE_EDITOR_SETTINGS_NAME\\, BRIGHTNESS\\, CONTRAST\\, SATURATION\\, RGB_ENHANCEMENT\\, ANNOTATION_TOOL\\, PENSIZE\\, PENCOLOR\\, FONT_SIZE\\, RESCALE) VALUES ((SELECT IMAGE_EDITOR_SETTING_ID FROM IMAGE_EDITOR_SETTINGS WHERE STAFF_ID='%s' AND IMAGE_EDITOR_SETTING_NAME='%s')\\, '%s'\\, '%s'\\, '%s'\\, '%s'\\, '%s'\\, '%s'\\, '%s'\\, '%s'\\, '%s'\\, '%s')\\\""
+									"text" : "sprintf exec \\\"REPLACE INTO IMAGE_EDITOR_SETTINGS (IMAGE_EDITOR_SETTINGS_ID\\, STAFF_ID\\, IMAGE_EDITOR_SETTINGS_NAME\\, BRIGHTNESS\\, CONTRAST\\, SATURATION\\, RGB_ENHANCEMENT\\, ANNOTATION_TOOL\\, PENSIZE\\, PENCOLOR\\, FONT_SIZE\\, RESCALE) VALUES ((SELECT IMAGE_EDITOR_SETTINGS_ID FROM IMAGE_EDITOR_SETTINGS WHERE STAFF_ID='%s' AND IMAGE_EDITOR_SETTINGS_NAME='%s')\\, '%s'\\, '%s'\\, '%s'\\, '%s'\\, '%s'\\, '%s'\\, '%s'\\, '%s'\\, '%s'\\, '%s'\\,'%s')\\\""
 								}
 
 							}
@@ -1276,42 +1303,42 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-254", 3 ],
+									"destination" : [ "obj-254", 4 ],
 									"source" : [ "obj-17", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-254", 4 ],
+									"destination" : [ "obj-254", 5 ],
 									"source" : [ "obj-18", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-254", 5 ],
+									"destination" : [ "obj-254", 6 ],
 									"source" : [ "obj-19", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-254", 6 ],
+									"destination" : [ "obj-254", 7 ],
 									"source" : [ "obj-20", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-254", 7 ],
+									"destination" : [ "obj-254", 8 ],
 									"source" : [ "obj-21", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-254", 8 ],
+									"destination" : [ "obj-254", 9 ],
 									"source" : [ "obj-22", 0 ]
 								}
 
@@ -1346,14 +1373,14 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-254", 9 ],
+									"destination" : [ "obj-254", 10 ],
 									"source" : [ "obj-23", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-254", 10 ],
+									"destination" : [ "obj-254", 11 ],
 									"source" : [ "obj-24", 0 ]
 								}
 
@@ -1395,7 +1422,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-254", 11 ],
+									"destination" : [ "obj-254", 12 ],
 									"source" : [ "obj-25", 0 ]
 								}
 
@@ -1473,14 +1500,23 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-253", 0 ],
+									"order" : 0,
 									"source" : [ "obj-254", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-254", 1 ],
-									"midpoints" : [ 59.5, 721.2225341796875, 132.479797979797979, 721.2225341796875 ],
+									"destination" : [ "obj-4", 0 ],
+									"order" : 1,
+									"source" : [ "obj-254", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-254", 2 ],
+									"midpoints" : [ 59.5, 721.2225341796875, 193.296296296296305, 721.2225341796875 ],
 									"order" : 0,
 									"source" : [ "obj-255", 0 ]
 								}
@@ -1496,7 +1532,14 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-254", 2 ],
+									"destination" : [ "obj-254", 3 ],
+									"source" : [ "obj-256", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-254", 1 ],
 									"source" : [ "obj-256", 1 ]
 								}
 
@@ -1557,15 +1600,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-307", 0 ],
 									"midpoints" : [ 409.487654320987986, 450.7225341796875, 59.5, 450.7225341796875 ],
-									"order" : 1,
-									"source" : [ "obj-296", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-6", 1 ],
-									"order" : 0,
 									"source" : [ "obj-296", 0 ]
 								}
 
@@ -1588,6 +1622,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-296", 0 ],
 									"source" : [ "obj-299", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-310", 0 ],
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -1906,6 +1947,14 @@
 								"patchline" : 								{
 									"destination" : [ "obj-342", 0 ],
 									"source" : [ "obj-343", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-310", 0 ],
+									"midpoints" : [ 42.5, 873.0, 957.0, 873.0, 957.0, 393.0, 1007.487654320987986, 393.0 ],
+									"source" : [ "obj-4", 0 ]
 								}
 
 							}
@@ -2420,7 +2469,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 138.0, 37.0, 1105.0, 56.0 ],
+									"patching_rect" : [ 138.0, 37.0, 1107.0, 56.0 ],
 									"text" : "exec \"CREATE TABLE IMAGE_EDITOR_SETTINGS(IMAGE_EDITOR_SETTINGS_ID INTEGER PRIMARY KEY AUTOINCREMENT, IMAGE_EDITOR_SETTINGS_NAME VARCHAR(256) DEFAULT 'Type Here', STAFF_ID INTEGER DEFAULT NULL, BRIGHTNESS DECIMAL DEFAULT '1', CONTRAST DECIMAL DEFAULT '1', SATURATION DECIMAL DEFAULT '1', RGB_ENHANCEMENT VARCHAR(256) DEFAULT '1. 1. 1.', ANNOTATION_TOOL INTEGER DEFAULT 1, PENSIZE INTEGER DEFAULT 10, PENCOLOR VARCHAR(256) DEFAULT '1. 1. 1.', FONT_SIZE INTEGER DEFAULT 24, RESCALE INTEGER DEFAULT 1, TIMESTAMP DATE DEFAULT (DATETIME('NOW','LOCALTIME')), FOREIGN KEY(STAFF_ID) REFERENCES STAFF(STAFF_ID))\""
 								}
 
@@ -20271,14 +20320,14 @@
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 24.0,
+					"fontsize" : 36.0,
 					"id" : "obj-288",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1504.333333000000039, 1213.0, 106.0, 34.0 ],
+					"patching_rect" : [ 1504.333333000000039, 1213.0, 155.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 671.5, 132.364906832298118, 86.0, 34.0 ],
+					"presentation_rect" : [ 671.5, 132.364906832298118, 125.0, 48.0 ],
 					"text" : "sample",
 					"textcolor" : [ 0.407843137254902, 0.407843137254902, 0.407843137254902, 1.0 ]
 				}
@@ -23721,7 +23770,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 966.817626999999902, 473.5, 34.364745999999968, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 768.5, 6.0, 220.364745999999968, 159.0 ]
+					"presentation_rect" : [ 768.5, 6.0, 220.364745999999968, 159.0 ],
+					"saturation" : 249
 				}
 
 			}
@@ -27888,6 +27938,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-173", 0 ],
 					"source" : [ "obj-177", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-345", 2 ],
+					"source" : [ "obj-178", 0 ]
 				}
 
 			}
