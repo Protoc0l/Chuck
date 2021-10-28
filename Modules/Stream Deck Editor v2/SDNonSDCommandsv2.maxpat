@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 376.0, 388.0, 901.0, 763.0 ],
+		"rect" : [ 42.0, 146.0, 901.0, 763.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -92,9 +92,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 610.015624046325684, 68.0, 198.0, 25.0 ],
+					"patching_rect" : [ 620.015624046325684, 46.0, 198.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 357.031248092651367, 231.0, 181.0, 25.0 ],
+					"presentation_rect" : [ 357.031248092651367, 222.0, 181.0, 25.0 ],
 					"text" : "Create a Dummy Action",
 					"textcolor" : [ 0.850980392156863, 0.850980392156863, 0.850980392156863, 1.0 ]
 				}
@@ -190,7 +190,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1247.5, 658.201171875, 30.015624046325684, 35.59765625 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 326.015624046325684, 225.0, 30.015624046325684, 35.59765625 ],
+					"presentation_rect" : [ 326.015624046325684, 217.0, 30.015624046325684, 35.59765625 ],
 					"text" : "+",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"texton" : "+",
@@ -211,7 +211,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1259.0, 648.0, 26.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 332.015624046325684, 233.0, 20.0, 21.0 ],
+					"presentation_rect" : [ 332.015624046325684, 225.0, 20.0, 21.0 ],
 					"proportion" : 0.5
 				}
 
@@ -249,7 +249,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1319.0, 92.0, 292.0, 34.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 323.015624046325684, 25.0, 233.0, 34.0 ],
+					"presentation_rect" : [ 323.015624046325684, 12.0, 233.0, 34.0 ],
 					"text" : "Add Action to Profile:",
 					"textcolor" : [ 0.850980392156863, 0.850980392156863, 0.850980392156863, 1.0 ]
 				}
@@ -264,7 +264,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1394.015624046325684, 49.0, 198.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 272.015624046325684, 191.0, 30.0, 25.0 ],
+					"presentation_rect" : [ 272.015624046325684, 179.0, 30.0, 25.0 ],
 					"text" : "3)",
 					"textcolor" : [ 0.850980392156863, 0.850980392156863, 0.850980392156863, 1.0 ]
 				}
@@ -279,7 +279,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1394.015624046325684, 175.0, 198.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 272.015624046325684, 135.0, 30.0, 25.0 ],
+					"presentation_rect" : [ 272.015624046325684, 123.0, 30.0, 25.0 ],
 					"text" : "2)",
 					"textcolor" : [ 0.850980392156863, 0.850980392156863, 0.850980392156863, 1.0 ]
 				}
@@ -294,7 +294,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1366.0, 121.0, 198.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 272.015624046325684, 63.0, 30.0, 25.0 ],
+					"presentation_rect" : [ 272.015624046325684, 51.0, 30.0, 25.0 ],
 					"text" : "1)",
 					"textcolor" : [ 0.850980392156863, 0.850980392156863, 0.850980392156863, 1.0 ]
 				}
@@ -310,7 +310,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1402.015624046325684, 86.75, 198.0, 43.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 326.015624046325684, 191.0, 270.0, 25.0 ],
+					"presentation_rect" : [ 326.015624046325684, 178.0, 270.0, 25.0 ],
 					"text" : "Press to create entry to add macros.",
 					"textcolor" : [ 0.850980392156863, 0.850980392156863, 0.850980392156863, 1.0 ]
 				}
@@ -326,7 +326,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1402.015624046325684, 60.75, 198.0, 43.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 300.015624046325684, 135.0, 296.0, 25.0 ],
+					"presentation_rect" : [ 300.015624046325684, 122.0, 296.0, 25.0 ],
 					"text" : "Current MIDI or controller button press:",
 					"textcolor" : [ 0.850980392156863, 0.850980392156863, 0.850980392156863, 1.0 ]
 				}
@@ -343,7 +343,7 @@
 					"patching_rect" : [ 1376.0, 19.0, 198.0, 98.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 320.015624046325684, 65.0, 280.0, 62.0 ],
+					"presentation_rect" : [ 320.015624046325684, 52.0, 280.0, 62.0 ],
 					"text" : "Press to create action from either:\n    1) MIDI-in signal,\n    2) Gaming Controller Button Press. ",
 					"textcolor" : [ 0.850980392156863, 0.850980392156863, 0.850980392156863, 1.0 ]
 				}
@@ -463,7 +463,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1247.5, 353.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 300.015624046325684, 191.0, 24.0, 24.0 ]
+					"presentation_rect" : [ 300.015624046325684, 179.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -525,7 +525,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1241.007812023162842, 324.0, 219.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 326.015624046325684, 162.0, 270.0, 27.0 ],
+					"presentation_rect" : [ 326.015624046325684, 149.0, 270.0, 27.0 ],
 					"text" : "KB.backspace shortup",
 					"textcolor" : [ 0.545098039215686, 0.0, 0.0, 1.0 ]
 				}
@@ -795,7 +795,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -806,6 +805,7 @@
 										"autogradient" : 0
 									}
 ,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
@@ -833,8 +833,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -869,10 +869,6 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -886,6 +882,10 @@
 
 								}
 ,
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -897,7 +897,6 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -907,7 +906,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "default",
@@ -1064,7 +1064,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 163.0, 182.0, 909.0, 563.0 ],
+						"rect" : [ 980.0, 272.0, 909.0, 563.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1897,7 +1897,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 409.500000000000057, 665.0, 202.0, 22.0 ],
+					"patching_rect" : [ 409.500000000000057, 675.0, 202.0, 22.0 ],
 					"text" : "r ---StreamDeckLayout_this_patcher"
 				}
 
@@ -1922,7 +1922,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 355.333333333333371, 665.0, 46.0, 22.0 ],
+					"patching_rect" : [ 355.333333333333371, 675.0, 46.0, 22.0 ],
 					"text" : "route 1"
 				}
 
@@ -1930,12 +1930,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-53",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 5,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 355.333333333333371, 637.0, 867.0, 22.0 ],
-					"text" : "sprintf %i script newobject bpatcher @name MIDIActionIcon @varname %iMacroButton @presentation_rect 20. %i 334. 78. @presentation 1 @args \\\"%s\\\" \\\"%s\\\""
+					"patching_rect" : [ 355.333333333333371, 629.0, 867.0, 36.0 ],
+					"text" : "sprintf %i script newobject bpatcher @name MIDIActionIconv2 @varname %iMacroButton @presentation_rect 20. %i 334. 78. @presentation 1 @args \\\"%s\\\" \\\"%s\\\""
 				}
 
 			}
@@ -3048,7 +3049,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -3059,6 +3059,7 @@
 										"autogradient" : 0
 									}
 ,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
@@ -3086,8 +3087,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3122,10 +3123,6 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -3139,6 +3136,10 @@
 
 								}
 ,
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -3150,7 +3151,6 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -3160,7 +3160,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "default",
@@ -3955,7 +3956,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -3966,6 +3966,7 @@
 										"autogradient" : 0
 									}
 ,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
@@ -3993,8 +3994,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -4029,10 +4030,6 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -4046,6 +4043,10 @@
 
 								}
 ,
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -4057,7 +4058,6 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -4067,7 +4067,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "default",
@@ -4112,7 +4113,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1255.015624046325684, 101.951171875, 30.015624046325684, 35.59765625 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 294.015624046325684, 58.0, 30.015624046325684, 35.59765625 ],
+					"presentation_rect" : [ 294.015624046325684, 46.0, 30.015624046325684, 35.59765625 ],
 					"text" : "+",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"texton" : "+",
@@ -4133,7 +4134,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1242.023436069488525, 116.0, 26.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 300.015624046325684, 66.0, 20.0, 21.0 ],
+					"presentation_rect" : [ 300.015624046325684, 54.0, 20.0, 21.0 ],
 					"proportion" : 0.5
 				}
 
@@ -4155,8 +4156,9 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
-					"bgcolor" : [ 0.537254901960784, 0.537254901960784, 0.537254901960784, 0.41 ],
-					"bordercolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 0.0 ],
+					"bgcolor" : [ 0.0, 0.0, 0.0, 0.41 ],
+					"border" : 2,
+					"bordercolor" : [ 0.407843137254902, 0.407843137254902, 0.407843137254902, 1.0 ],
 					"id" : "obj-75",
 					"maxclass" : "panel",
 					"mode" : 0,
@@ -4164,7 +4166,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 390.0, 211.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 268.0, 21.0, 339.0, 202.0 ],
+					"presentation_rect" : [ 268.0, 8.0, 339.0, 202.0 ],
 					"proportion" : 0.5
 				}
 
@@ -4172,8 +4174,9 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
-					"bgcolor" : [ 0.537254901960784, 0.537254901960784, 0.537254901960784, 0.41 ],
-					"bordercolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 0.0 ],
+					"bgcolor" : [ 0.0, 0.0, 0.0, 0.41 ],
+					"border" : 2,
+					"bordercolor" : [ 0.407843137254902, 0.407843137254902, 0.407843137254902, 1.0 ],
 					"id" : "obj-106",
 					"maxclass" : "panel",
 					"mode" : 0,
@@ -4181,7 +4184,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1242.023436069488525, 648.0, 295.0, 286.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 312.515624046325684, 225.0, 250.484375953674316, 39.0 ],
+					"presentation_rect" : [ 312.515624046325684, 216.0, 250.484375953674316, 39.0 ],
 					"proportion" : 0.5
 				}
 
@@ -4189,7 +4192,8 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
-					"bgcolor" : [ 0.407843137254902, 0.407843137254902, 0.407843137254902, 1.0 ],
+					"background" : 1,
+					"bgcolor" : [ 0.0, 0.0, 0.0, 0.98 ],
 					"bordercolor" : [ 0.407843137254902, 0.407843137254902, 0.407843137254902, 1.0 ],
 					"id" : "obj-97",
 					"maxclass" : "panel",
@@ -5048,7 +5052,13 @@
 
 			}
  ],
-		"dependency_cache" : [  ],
+		"dependency_cache" : [ 			{
+				"name" : "Exam Room Master.coll",
+				"bootpath" : "A:/Programming/.Chuck/Work DB Backups/Stream Deck/Profiles",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+ ],
 		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
@@ -5071,7 +5081,6 @@
 , 			{
 				"name" : "_myStyle",
 				"default" : 				{
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -5082,6 +5091,7 @@
 						"autogradient" : 0
 					}
 ,
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 				}
 ,
@@ -5109,8 +5119,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -5145,10 +5155,6 @@
 			}
 , 			{
 				"name" : "s_161006_G!",
-				"comment" : 				{
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-				}
-,
 				"message" : 				{
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -5162,6 +5168,10 @@
 
 				}
 ,
+				"comment" : 				{
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				}
+,
 				"parentstyle" : "",
 				"multi" : 1
 			}
@@ -5173,7 +5183,6 @@
 , 			{
 				"name" : "simple-2",
 				"default" : 				{
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -5183,7 +5192,8 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-
+,
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 				}
 ,
 				"parentstyle" : "default",
