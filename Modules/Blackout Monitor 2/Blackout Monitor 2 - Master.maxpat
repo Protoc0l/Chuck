@@ -40,6 +40,30 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 163.0, 373.0, 22.0, 22.0 ],
+					"text" : "t b"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 163.0, 397.0, 51.0, 22.0 ],
+					"text" : "delay 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-4",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -69,7 +93,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 308.0, 438.0, 50.0, 22.0 ],
+					"patching_rect" : [ 308.0, 484.0, 50.0, 22.0 ],
 					"text" : "close"
 				}
 
@@ -81,7 +105,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 264.0, 471.0, 100.0, 22.0 ],
+					"patching_rect" : [ 264.0, 517.0, 100.0, 22.0 ],
 					"text" : "pcontrol"
 				}
 
@@ -93,7 +117,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "open" ],
-					"patching_rect" : [ 183.0, 444.0, 100.0, 22.0 ],
+					"patching_rect" : [ 183.0, 490.0, 100.0, 22.0 ],
 					"text" : "t l open"
 				}
 
@@ -1800,7 +1824,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 183.0, 502.0, 454.0, 22.0 ],
+					"patching_rect" : [ 183.0, 548.0, 454.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1818,7 +1842,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 407.0, 379.5, 307.0, 20.0 ],
+					"patching_rect" : [ 407.0, 425.5, 307.0, 20.0 ],
 					"text" : "<- change to name of module without \"- Master.maxpat\""
 				}
 
@@ -1853,7 +1877,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 163.0, 375.0, 240.0, 29.0 ],
+					"patching_rect" : [ 163.0, 421.0, 240.0, 29.0 ],
 					"text" : "\"Blackout Monitor 2\"",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -1865,7 +1889,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 163.0, 408.0, 100.0, 22.0 ],
+					"patching_rect" : [ 163.0, 454.0, 100.0, 22.0 ],
 					"text" : "s Launch"
 				}
 
@@ -2075,6 +2099,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-50", 0 ],
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-41", 0 ],
 					"source" : [ "obj-11", 0 ]
 				}
@@ -2104,8 +2135,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
-					"midpoints" : [ 273.5, 495.0, 192.5, 495.0 ],
+					"midpoints" : [ 273.5, 541.0, 192.5, 541.0 ],
 					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"source" : [ "obj-17", 0 ]
 				}
 
 			}
@@ -2168,7 +2206,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-50", 0 ],
+					"destination" : [ "obj-17", 0 ],
 					"source" : [ "obj-45", 0 ]
 				}
 
