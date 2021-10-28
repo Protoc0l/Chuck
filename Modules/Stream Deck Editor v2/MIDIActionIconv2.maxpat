@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1188.0, 248.0, 1062.0, 816.0 ],
+		"rect" : [ 42.0, 248.0, 1062.0, 816.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -57,7 +57,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 553.0, 490.0, 484.0, 443.0 ],
+						"rect" : [ 575.0, 647.0, 484.0, 443.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -166,7 +166,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 688.0, 301.0, 1190.0, 659.0 ],
+										"rect" : [ 1203.0, 323.0, 1190.0, 659.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -195,6 +195,18 @@
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
+												"box" : 												{
+													"id" : "obj-10",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
+													"patching_rect" : [ 145.0, 212.0, 100.0, 22.0 ],
+													"text" : "zl rev"
+												}
+
+											}
+, 											{
 												"box" : 												{
 													"id" : "obj-11",
 													"maxclass" : "newobj",
@@ -247,12 +259,13 @@
 											}
 , 											{
 												"box" : 												{
+													"color" : [ 0.0, 0.011764705882353, 1.0, 1.0 ],
 													"id" : "obj-4",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 627.0, 353.0, 90.0, 22.0 ],
+													"patching_rect" : [ 627.0, 385.0, 90.0, 22.0 ],
 													"text" : "v editor_launch"
 												}
 
@@ -264,7 +277,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 50.0, 212.0, 57.0, 22.0 ],
+													"patching_rect" : [ 50.0, 247.0, 57.0, 22.0 ],
 													"text" : "tosymbol"
 												}
 
@@ -415,48 +428,52 @@
 											}
 , 											{
 												"box" : 												{
+													"color" : [ 0.0, 0.011764705882353, 1.0, 1.0 ],
 													"id" : "obj-19",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 482.75, 353.0, 91.0, 22.0 ],
+													"patching_rect" : [ 482.75, 385.0, 91.0, 22.0 ],
 													"text" : "v editor_longup"
 												}
 
 											}
 , 											{
 												"box" : 												{
+													"color" : [ 0.0, 0.011764705882353, 1.0, 1.0 ],
 													"id" : "obj-18",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 338.5, 353.0, 95.0, 22.0 ],
+													"patching_rect" : [ 338.5, 385.0, 95.0, 22.0 ],
 													"text" : "v editor_shortup"
 												}
 
 											}
 , 											{
 												"box" : 												{
+													"color" : [ 0.0, 0.011764705882353, 1.0, 1.0 ],
 													"id" : "obj-17",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 194.0, 353.0, 83.0, 22.0 ],
+													"patching_rect" : [ 194.0, 385.0, 83.0, 22.0 ],
 													"text" : "v editor_down"
 												}
 
 											}
 , 											{
 												"box" : 												{
+													"color" : [ 0.0, 0.011764705882353, 1.0, 1.0 ],
 													"id" : "obj-16",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 50.0, 353.0, 87.0, 22.0 ],
+													"patching_rect" : [ 50.0, 385.0, 87.0, 22.0 ],
 													"text" : "v editor_image"
 												}
 
@@ -468,7 +485,7 @@
 													"numinlets" : 6,
 													"numoutlets" : 6,
 													"outlettype" : [ "", "", "", "", "", "" ],
-													"patching_rect" : [ 50.0, 326.0, 740.25, 22.0 ],
+													"patching_rect" : [ 50.0, 358.0, 740.25, 22.0 ],
 													"text" : "route image down shortup longup launch"
 												}
 
@@ -480,7 +497,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 50.0, 294.0, 46.0, 22.0 ],
+													"patching_rect" : [ 50.0, 326.0, 46.0, 22.0 ],
 													"text" : "route 1"
 												}
 
@@ -492,7 +509,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 2,
 													"outlettype" : [ "int", "" ],
-													"patching_rect" : [ 50.0, 241.0, 209.0, 22.0 ],
+													"patching_rect" : [ 50.0, 273.0, 209.0, 22.0 ],
 													"text" : "t 1 s"
 												}
 
@@ -504,7 +521,7 @@
 													"numinlets" : 3,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 50.0, 268.0, 209.0, 22.0 ],
+													"patching_rect" : [ 50.0, 300.0, 209.0, 22.0 ],
 													"text" : "sprintf %i \\\"%s\\\" \\\"%s\\\""
 												}
 
@@ -516,7 +533,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 109.0, 212.0, 55.0, 22.0 ],
+													"patching_rect" : [ 145.0, 241.0, 55.0, 22.0 ],
 													"text" : "zl slice 1"
 												}
 
@@ -528,7 +545,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 109.0, 151.0, 77.0, 22.0 ],
+													"patching_rect" : [ 145.0, 155.0, 77.0, 22.0 ],
 													"text" : "route symbol"
 												}
 
@@ -540,7 +557,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 109.0, 184.0, 71.0, 22.0 ],
+													"patching_rect" : [ 145.0, 188.0, 71.0, 22.0 ],
 													"text" : "fromsymbol"
 												}
 
@@ -559,12 +576,13 @@
 											}
 , 											{
 												"box" : 												{
+													"color" : [ 0.992156862745098, 1.0, 0.0, 1.0 ],
 													"id" : "obj-562",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 4,
 													"outlettype" : [ "", "", "", "" ],
-													"patching_rect" : [ 50.0, 125.0, 196.0, 22.0 ],
+													"patching_rect" : [ 50.0, 125.0, 303.999999999999943, 22.0 ],
 													"saved_object_attributes" : 													{
 														"embed" : 0,
 														"precision" : 6
@@ -580,6 +598,13 @@
 													"destination" : [ "obj-3", 0 ],
 													"midpoints" : [ 59.5, 39.0, 45.0, 39.0, 45.0, 39.0, 23.5, 39.0 ],
 													"source" : [ "obj-1", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-7", 0 ],
+													"source" : [ "obj-10", 0 ]
 												}
 
 											}
@@ -802,7 +827,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-7", 0 ],
+													"destination" : [ "obj-10", 0 ],
 													"source" : [ "obj-5", 0 ]
 												}
 
@@ -825,7 +850,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-5", 0 ],
-													"midpoints" : [ 176.5, 177.0, 118.5, 177.0 ],
+													"midpoints" : [ 212.5, 181.0, 154.5, 181.0 ],
 													"source" : [ "obj-6", 1 ]
 												}
 
@@ -847,7 +872,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-8", 1 ],
-													"source" : [ "obj-7", 1 ]
+													"source" : [ "obj-7", 0 ]
 												}
 
 											}
@@ -887,7 +912,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -898,7 +922,8 @@
 														"autogradient" : 0
 													}
 ,
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -925,8 +950,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"fontsize" : [ 12.059008 ],
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+													"fontsize" : [ 12.059008 ]
 												}
 ,
 												"parentstyle" : "",
@@ -1008,8 +1033,8 @@
 , 											{
 												"name" : "texteditGold",
 												"default" : 												{
-													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -1451,7 +1476,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -1462,7 +1486,8 @@
 										"autogradient" : 0
 									}
 ,
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1489,8 +1514,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1572,8 +1597,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2019,7 +2044,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -2030,7 +2054,8 @@
 										"autogradient" : 0
 									}
 ,
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2057,8 +2082,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2140,8 +2165,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -4677,14 +4702,8 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "urgent exam room.jpg",
-				"bootpath" : "S:/SLE CLIPBOARD/Chuck Profiles/Cory Work/Icon Images",
-				"type" : "JPEG",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "Exam Room Master.coll",
-				"bootpath" : "S:/SLE CLIPBOARD/Chuck Profiles/Cory Work/Profiles",
+				"bootpath" : "A:/Programming/.Chuck/Work DB Backups/Stream Deck/Profiles",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
@@ -4711,7 +4730,6 @@
 , 			{
 				"name" : "_myStyle",
 				"default" : 				{
-					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -4722,7 +4740,8 @@
 						"autogradient" : 0
 					}
 ,
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -4749,8 +4768,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -4832,8 +4851,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
