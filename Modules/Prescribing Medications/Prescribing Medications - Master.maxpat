@@ -1134,8 +1134,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2482,8 +2482,8 @@
 , 															{
 																"name" : "texteditGold",
 																"default" : 																{
-																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -3771,8 +3771,8 @@
 , 															{
 																"name" : "texteditGold",
 																"default" : 																{
-																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -4988,8 +4988,8 @@
 , 																			{
 																				"name" : "texteditGold",
 																				"default" : 																				{
-																					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+																					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+																					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 																				}
 ,
 																				"parentstyle" : "",
@@ -6794,8 +6794,8 @@
 , 															{
 																"name" : "texteditGold",
 																"default" : 																{
-																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -9312,8 +9312,8 @@
 , 																			{
 																				"name" : "texteditGold",
 																				"default" : 																				{
-																					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+																					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+																					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 																				}
 ,
 																				"parentstyle" : "",
@@ -9832,8 +9832,8 @@
 , 															{
 																"name" : "texteditGold",
 																"default" : 																{
-																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -10970,8 +10970,8 @@
 , 															{
 																"name" : "texteditGold",
 																"default" : 																{
-																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -11592,8 +11592,8 @@
 , 											{
 												"name" : "texteditGold",
 												"default" : 												{
-													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -13427,8 +13427,8 @@
 , 											{
 												"name" : "texteditGold",
 												"default" : 												{
-													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -14131,8 +14131,8 @@
 , 											{
 												"name" : "texteditGold",
 												"default" : 												{
-													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -15682,8 +15682,8 @@
 , 											{
 												"name" : "texteditGold",
 												"default" : 												{
-													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -16823,8 +16823,8 @@
 , 															{
 																"name" : "texteditGold",
 																"default" : 																{
-																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -17394,8 +17394,8 @@
 , 											{
 												"name" : "texteditGold",
 												"default" : 												{
-													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -18333,8 +18333,8 @@
 , 											{
 												"name" : "texteditGold",
 												"default" : 												{
-													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -18903,8 +18903,8 @@
 , 															{
 																"name" : "texteditGold",
 																"default" : 																{
-																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -19242,7 +19242,7 @@
 													"parameter_enable" : 0,
 													"patching_rect" : [ 601.777777777777942, 174.0, 97.666666666666686, 19.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 163.0, 164.0, 443.0, 20.0 ],
+													"presentation_rect" : [ 163.0, 140.0, 443.0, 20.0 ],
 													"rounded" : 0.0,
 													"text" : "-",
 													"varname" : "textboxedit[22]"
@@ -19790,8 +19790,8 @@
 , 															{
 																"name" : "texteditGold",
 																"default" : 																{
-																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -20586,8 +20586,8 @@
 , 															{
 																"name" : "texteditGold",
 																"default" : 																{
-																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -21382,8 +21382,8 @@
 , 															{
 																"name" : "texteditGold",
 																"default" : 																{
-																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -22264,8 +22264,8 @@
 , 															{
 																"name" : "texteditGold",
 																"default" : 																{
-																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -23084,8 +23084,8 @@
 , 															{
 																"name" : "texteditGold",
 																"default" : 																{
-																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -23904,8 +23904,8 @@
 , 															{
 																"name" : "texteditGold",
 																"default" : 																{
-																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -24700,8 +24700,8 @@
 , 															{
 																"name" : "texteditGold",
 																"default" : 																{
-																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -25496,8 +25496,8 @@
 , 															{
 																"name" : "texteditGold",
 																"default" : 																{
-																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -26292,8 +26292,8 @@
 , 															{
 																"name" : "texteditGold",
 																"default" : 																{
-																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -27088,8 +27088,8 @@
 , 															{
 																"name" : "texteditGold",
 																"default" : 																{
-																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -27884,8 +27884,8 @@
 , 															{
 																"name" : "texteditGold",
 																"default" : 																{
-																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -28680,8 +28680,8 @@
 , 															{
 																"name" : "texteditGold",
 																"default" : 																{
-																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -29476,8 +29476,8 @@
 , 															{
 																"name" : "texteditGold",
 																"default" : 																{
-																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -30272,8 +30272,8 @@
 , 															{
 																"name" : "texteditGold",
 																"default" : 																{
-																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -31068,8 +31068,8 @@
 , 															{
 																"name" : "texteditGold",
 																"default" : 																{
-																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -31864,8 +31864,8 @@
 , 															{
 																"name" : "texteditGold",
 																"default" : 																{
-																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -32660,8 +32660,8 @@
 , 															{
 																"name" : "texteditGold",
 																"default" : 																{
-																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -33481,8 +33481,8 @@
 , 															{
 																"name" : "texteditGold",
 																"default" : 																{
-																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -35187,8 +35187,8 @@
 , 															{
 																"name" : "texteditGold",
 																"default" : 																{
-																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -36326,8 +36326,8 @@
 , 															{
 																"name" : "texteditGold",
 																"default" : 																{
-																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -37029,8 +37029,8 @@
 , 															{
 																"name" : "texteditGold",
 																"default" : 																{
-																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -37550,8 +37550,8 @@
 , 															{
 																"name" : "texteditGold",
 																"default" : 																{
-																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -37758,7 +37758,7 @@
 													"parameter_enable" : 0,
 													"patching_rect" : [ 657.388888888888914, 252.5, 97.666666666666686, 19.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 163.0, 140.0, 443.0, 20.0 ],
+													"presentation_rect" : [ 163.0, 164.0, 443.0, 20.0 ],
 													"rounded" : 0.0,
 													"text" : "-",
 													"varname" : "textboxedit[4]"
@@ -38336,8 +38336,8 @@
 , 															{
 																"name" : "texteditGold",
 																"default" : 																{
-																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -39592,8 +39592,8 @@
 , 															{
 																"name" : "texteditGold",
 																"default" : 																{
-																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -41176,8 +41176,8 @@
 , 											{
 												"name" : "texteditGold",
 												"default" : 												{
-													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -41780,8 +41780,8 @@
 , 											{
 												"name" : "texteditGold",
 												"default" : 												{
-													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -42692,8 +42692,8 @@
 , 											{
 												"name" : "texteditGold",
 												"default" : 												{
-													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -45009,8 +45009,8 @@
 , 											{
 												"name" : "texteditGold",
 												"default" : 												{
-													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -46012,8 +46012,8 @@
 , 											{
 												"name" : "texteditGold",
 												"default" : 												{
-													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -46997,8 +46997,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -47239,12 +47239,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Search Icon Light.png",
-				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Icons",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "Favorite.png",
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Prescribing Medications",
 				"patcherrelativepath" : ".",
@@ -47402,8 +47396,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
