@@ -850,7 +850,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 275.5, 561.0, 238.0, 22.0 ],
+					"patching_rect" : [ 234.0, 561.0, 238.0, 22.0 ],
 					"text" : "print \"SLE Camera - NDI connected to\""
 				}
 
