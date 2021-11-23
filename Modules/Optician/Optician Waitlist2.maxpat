@@ -12,7 +12,7 @@
 		"classnamespace" : "box",
 		"rect" : [ 59.0, 85.0, 1284.0, 913.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -42,14 +42,16 @@
 				"box" : 				{
 					"fontsize" : 8.0,
 					"id" : "obj-7",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 270.0, 54.0, 106.0, 16.0 ],
+					"patching_rect" : [ 270.0, 54.0, 106.0, 34.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, -4.0, 44.0, 16.0 ],
-					"text" : "4th Street",
-					"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
+					"presentation_rect" : [ 0.0, -4.0, 382.0, 26.0 ],
+					"text" : "4th St Optician/Front Desk Waiting List\n",
+					"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
+					"textjustification" : 1
 				}
 
 			}
@@ -4034,7 +4036,6 @@
 									"bubbleusescolors" : 1,
 									"fontface" : 2,
 									"fontsize" : 18.0,
-									"hidden" : 1,
 									"id" : "obj-13",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -4064,7 +4065,6 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 6.0, 71.0, 243.0, 30.0 ],
 									"rounded" : 0.0,
-									"text" : "test",
 									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
 									"wordwrap" : 0
 								}
@@ -4075,7 +4075,6 @@
 									"bubbleusescolors" : 1,
 									"fontface" : 2,
 									"fontsize" : 18.0,
-									"hidden" : 1,
 									"id" : "obj-4",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -4105,7 +4104,6 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 6.0, 38.0, 274.0, 30.0 ],
 									"rounded" : 0.0,
-									"text" : "test",
 									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
 									"wordwrap" : 0
 								}
@@ -4116,7 +4114,6 @@
 									"bubbleusescolors" : 1,
 									"fontface" : 2,
 									"fontsize" : 18.0,
-									"hidden" : 1,
 									"id" : "obj-131",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -4146,7 +4143,6 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 8.0, 4.5, 270.0, 30.0 ],
 									"rounded" : 0.0,
-									"text" : "test",
 									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
 									"wordwrap" : 0
 								}
@@ -5278,7 +5274,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
-									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -7941,7 +7936,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-106",
-					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -8843,8 +8837,8 @@
 			}
 , 			{
 				"box" : 				{
-					"coldef" : [ [ 1, 2, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 0, 86, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 2, 141, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 3, 150, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 4, 2, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 5, 35, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ] ],
-					"cols" : 6,
+					"coldef" : [ [ 0, 86, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ] ],
+					"cols" : 1,
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -8858,7 +8852,7 @@
 					"outmode" : 1,
 					"patching_rect" : [ 42.0, 483.5, 417.0, 134.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 10.0, 417.0, 36.0 ],
+					"presentation_rect" : [ 0.0, 10.0, 417.0, 20.0 ],
 					"rowdef" : [ [ 0, 0, 0, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ] ],
 					"rows" : 1,
 					"selmode" : 3,
@@ -8946,7 +8940,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 426.0, 670.5, 111.333332999999925, 40.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 10.0, 417.0, 36.0 ],
+					"presentation_rect" : [ 0.0, 10.0, 417.0, 18.0 ],
 					"varname" : "PxWAITLIST_HINT2"
 				}
 
