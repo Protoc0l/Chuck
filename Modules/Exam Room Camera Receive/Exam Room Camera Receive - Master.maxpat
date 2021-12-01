@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 26.0, 85.0, 1852.0, 929.0 ],
+		"rect" : [ 42.0, 85.0, 1852.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -955,18 +955,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-39",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 487.0, 155.0, 100.0, 22.0 ],
-					"text" : "sprintf set"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-38",
 					"maxclass" : "toggle",
 					"numinlets" : 1,
@@ -1532,13 +1520,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-39", 0 ],
-					"source" : [ "obj-34", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-43", 1 ],
 					"source" : [ "obj-34", 1 ]
 				}
@@ -1557,13 +1538,6 @@
 					"destination" : [ "obj-34", 0 ],
 					"order" : 1,
 					"source" : [ "obj-38", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-38", 0 ],
-					"source" : [ "obj-39", 0 ]
 				}
 
 			}
@@ -1611,7 +1585,13 @@
 
 			}
  ],
-		"dependency_cache" : [  ],
+		"dependency_cache" : [ 			{
+				"name" : "3rd Street.jpg",
+				"bootpath" : "S:/SLE CLIPBOARD/Clinic Monitors",
+				"type" : "JPEG",
+				"implicit" : 1
+			}
+ ],
 		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
