@@ -1558,7 +1558,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "bang" ],
 													"patching_rect" : [ 20.0, 429.0, 100.0, 22.0 ],
-													"text" : "delay 200"
+													"text" : "delay 50"
 												}
 
 											}
