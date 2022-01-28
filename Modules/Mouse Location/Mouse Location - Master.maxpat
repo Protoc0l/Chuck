@@ -127,7 +127,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"openrect" : [ 36.0, 87.0, 153.0, 33.0 ],
+						"openrect" : [ 36.0, 87.0, 152.0, 63.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -148,7 +148,7 @@
 						"boxanimatetime" : 200,
 						"enablehscroll" : 1,
 						"enablevscroll" : 1,
-						"devicewidth" : 153.0,
+						"devicewidth" : 152.0,
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
@@ -156,7 +156,6 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"title" : "Optical Tools",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-3",
@@ -210,7 +209,7 @@
 									"offset" : [ 0.0, 0.0 ],
 									"patching_rect" : [ 136.0, 13.0, 153.0, 35.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 0.0, -1.0, 154.0, 35.0 ],
+									"presentation_rect" : [ -1.0, -1.0, 154.0, 65.0 ],
 									"viewvisibility" : 1
 								}
 
