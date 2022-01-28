@@ -46,7 +46,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 18.0, 156.0, 100.0, 36.0 ],
+					"patching_rect" : [ 18.0, 173.0, 100.0, 36.0 ],
 					"text" : "regexp \\\\. @substitute \" \\\\|\""
 				}
 
@@ -122,7 +122,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 18.0, 278.0, 39.0, 36.0 ],
+					"patching_rect" : [ 18.0, 278.0, 37.0, 36.0 ],
 					"text" : "deferlow"
 				}
 
@@ -136,7 +136,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 419.0, 452.0, 184.0, 36.0 ],
-					"text" : "\"{{MOUSEXY:0.316667, 0.712963}}{{LBUTTON}}\""
+					"text" : "\"{{MOUSEXY:0.278125, 0.413889}}{{LBUTTON}}\""
 				}
 
 			}
@@ -339,7 +339,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 58.5, 306.0, 192.0, 22.0 ]
+					"patching_rect" : [ 58.5, 306.0, 192.0, 22.0 ],
+					"text" : "Von Hyde, Clark Kent"
 				}
 
 			}
@@ -388,7 +389,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 18.0, 118.0, 159.0, 22.0 ],
+					"patching_rect" : [ 18.0, 146.0, 159.0, 22.0 ],
 					"text" : "receive CrystalPM_PxName"
 				}
 
@@ -529,7 +530,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
-					"midpoints" : [ 88.25, 198.0, 27.5, 198.0 ],
+					"midpoints" : [ 88.25, 215.0, 27.5, 215.0 ],
 					"source" : [ "obj-19", 3 ]
 				}
 
