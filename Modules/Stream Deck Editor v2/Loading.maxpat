@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 573.0, 698.0, 1301.0, 654.0 ],
+		"rect" : [ 595.0, 988.0, 1301.0, 654.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,15 +40,16 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"fontsize" : 72.0,
+					"fontsize" : 48.0,
 					"id" : "obj-3",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 214.0, 223.0, 488.0, 89.0 ],
+					"patching_rect" : [ 81.0, 51.0, 331.0, 62.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 214.0, 223.0, 488.0, 89.0 ],
-					"text" : " ...LOADING..."
+					"presentation_rect" : [ 167.0, 111.0, 331.0, 62.0 ],
+					"text" : " ...LOADING...",
+					"textcolor" : [ 0.992156862745098, 1.0, 0.0, 0.43921568627451 ]
 				}
 
 			}
