@@ -128,7 +128,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 241.5, 701.0, 33.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 54.0, 548.0, 680.0 ]
+					"presentation_rect" : [ 1.0, 55.0, 548.0, 680.0 ]
 				}
 
 			}
@@ -144,7 +144,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 283.0, 701.0, 40.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.0, 54.0, 547.0, 680.0 ],
+					"presentation_rect" : [ 2.0, 55.0, 547.0, 680.0 ],
 					"proportion" : 0.5
 				}
 
@@ -2290,7 +2290,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 906.75, 102.0, 229.916666666666515, 181.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 550.0, 28.0, 775.0, 706.0 ],
+					"presentation_rect" : [ 550.0, 29.0, 775.0, 706.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -4045,7 +4045,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 200.0, 494.0, 109.0, 51.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 54.0, 548.0, 680.0 ],
+					"presentation_rect" : [ 1.0, 55.0, 548.0, 680.0 ],
 					"rendermode" : 0,
 					"url" : "c:/ProgramData/Chuck/Settings/Pearls.txt"
 				}
