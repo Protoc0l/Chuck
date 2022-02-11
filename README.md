@@ -1,3 +1,3 @@
 # Chuck
-Developed by Protoc0l Copyright 2020-2021
+Developed by Protoc0l Copyright 2020-2022
 -------------------------------------------
