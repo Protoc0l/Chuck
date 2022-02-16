@@ -5,6 +5,7 @@ Image, 'ButtonID' 'name of pic located inside images folder or full path of pict
 ScreenToText, 'Coordinates on screen x1 y1 x2 y2' 'Name Variable' -> Coords: x1 y1 top left x2 y2 bottom right;
 Jarvis, 'anything' opens Jarvis module;
 Macro, 'build c {} like SuperMacros -> note pls use single quotes around long strings of text';
+Macrov2, 'command' 'msg';
 MessageMonitor, 'Message' -> sends a message directly to the computer monitor on screen for 1500ms;
 Panel, 'name of picture locationed in icon images folder' or 'full path of picture' note does not work in virtual stream deck;
 Pause, 'integer' -> integer is in milliseconds - aka if you want delay of 1 second put 1000 into box;
