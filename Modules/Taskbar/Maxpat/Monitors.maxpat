@@ -82,7 +82,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "int" ],
-					"patching_rect" : [ 1290.0, 1052.0, 126.0, 22.0 ],
+					"patching_rect" : [ 1287.5, 1052.0, 126.0, 22.0 ],
 					"text" : "t b b i"
 				}
 
@@ -107,7 +107,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 1316.75, 729.0, 100.0, 22.0 ],
-					"text" : "delay 300"
+					"text" : "delay 500"
 				}
 
 			}
@@ -142,7 +142,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 1316.75, 787.0, 100.0, 22.0 ],
-					"text" : "delay 500"
+					"text" : "delay 750"
 				}
 
 			}
@@ -319,7 +319,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 1147.0, 572.0, 39.0, 22.0 ],
+					"patching_rect" : [ 1144.5, 572.0, 39.0, 22.0 ],
 					"text" : "== 0"
 				}
 
@@ -777,7 +777,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 1164.5, 639.0, 65.0, 22.0 ],
-					"text" : "delay 10"
+					"text" : "delay 100"
 				}
 
 			}
@@ -1515,8 +1515,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-													"fontsize" : [ 12.059008 ]
+													"fontsize" : [ 12.059008 ],
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -2028,7 +2028,6 @@
 								"name" : "_myStyle",
 								"default" : 								{
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -2038,7 +2037,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2065,8 +2065,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2148,8 +2148,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2337,6 +2337,7 @@
 			}
 , 			{
 				"box" : 				{
+					"hidden" : 1,
 					"id" : "obj-127",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -2372,8 +2373,9 @@
 					"bgfillcolor_color2" : [ 0.2, 0.2, 0.2, 1.0 ],
 					"bgfillcolor_proportion" : 0.5,
 					"bgfillcolor_type" : "gradient",
+					"hidden" : 1,
 					"id" : "obj-122",
-					"items" : [ "0 - 1920 x 1080 32 bit 60Hz", ",", "1 - 1920 x 1080 32 bit 59Hz", ",", "2 - 1920 x 1080 32 bit 50Hz", ",", "3 - 1920 x 1080 32 bit 30Hz", ",", "4 - 1920 x 1080 32 bit 29Hz", ",", "5 - 1920 x 1080 32 bit 25Hz", ",", "6 - 640 x 480 32 bit 59Hz", ",", "7 - 640 x 480 32 bit 60Hz", ",", "8 - 720 x 480 32 bit 60Hz", ",", "9 - 720 x 480 32 bit 59Hz", ",", "10 - 720 x 576 32 bit 50Hz", ",", "11 - 800 x 600 32 bit 56Hz", ",", "12 - 800 x 600 32 bit 60Hz", ",", "13 - 1024 x 768 32 bit 60Hz", ",", "14 - 1024 x 768 32 bit 70Hz", ",", "15 - 1152 x 864 32 bit 75Hz", ",", "16 - 1176 x 664 32 bit 50Hz", ",", "17 - 1176 x 664 32 bit 60Hz", ",", "18 - 1176 x 664 32 bit 59Hz", ",", "19 - 1280 x 720 32 bit 60Hz", ",", "20 - 1280 x 720 32 bit 59Hz", ",", "21 - 1280 x 720 32 bit 50Hz", ",", "22 - 1280 x 768 32 bit 60Hz", ",", "23 - 1280 x 800 32 bit 60Hz", ",", "24 - 1280 x 960 32 bit 60Hz", ",", "25 - 1280 x 1024 32 bit 60Hz", ",", "26 - 1360 x 768 32 bit 60Hz", ",", "27 - 1366 x 768 32 bit 60Hz", ",", "28 - 1600 x 900 32 bit 59Hz", ",", "29 - 1600 x 900 32 bit 60Hz", ",", "30 - 1600 x 1024 32 bit 59Hz", ",", "31 - 1600 x 1024 32 bit 60Hz", ",", "32 - 1680 x 1050 32 bit 59Hz", ",", "33 - 1680 x 1050 32 bit 60Hz", ",", "34 - 1768 x 992 32 bit 25Hz", ",", "35 - 1768 x 992 32 bit 30Hz", ",", "36 - 1768 x 992 32 bit 29Hz", ",", "37 - 624 x 464 32 bit 59Hz", ",", "38 - 624 x 464 32 bit 60Hz", ",", "39 - 1440 x 900 32 bit 60Hz" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2849,7 +2851,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ -1878.0, 85.0, 1920.0, 1080.0 ],
+						"rect" : [ -34.0, 34.0, 2560.0, 1440.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -3363,7 +3365,6 @@
 																"name" : "_myStyle",
 																"default" : 																{
 																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -3373,7 +3374,8 @@
 																		"proportion" : 0.39,
 																		"autogradient" : 0
 																	}
-
+,
+																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -3400,8 +3402,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-																	"fontsize" : [ 12.059008 ]
+																	"fontsize" : [ 12.059008 ],
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -3483,8 +3485,8 @@
 , 															{
 																"name" : "texteditGold",
 																"default" : 																{
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 																}
 ,
 																"parentstyle" : "",
@@ -3988,7 +3990,6 @@
 												"name" : "_myStyle",
 												"default" : 												{
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -3998,7 +3999,8 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-
+,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -4025,8 +4027,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-													"fontsize" : [ 12.059008 ]
+													"fontsize" : [ 12.059008 ],
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -4108,8 +4110,8 @@
 , 											{
 												"name" : "texteditGold",
 												"default" : 												{
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 												}
 ,
 												"parentstyle" : "",
@@ -4256,7 +4258,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 533.0, 166.0, 128.0, 92.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 0.0, 0.0, 1920.0, 1080.0 ],
+									"presentation_rect" : [ 0.0, 0.0, 2560.0, 1440.0 ],
 									"proportion" : 0.5,
 									"rounded" : 0
 								}
@@ -4414,7 +4416,6 @@
 								"name" : "_myStyle",
 								"default" : 								{
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -4424,7 +4425,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -4451,8 +4453,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -4534,8 +4536,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 								}
 ,
 								"parentstyle" : "",
@@ -4561,6 +4563,7 @@
 			}
 , 			{
 				"box" : 				{
+					"hidden" : 1,
 					"id" : "obj-115",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -4580,7 +4583,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1141.5, 545.0, 100.0, 22.0 ],
+					"patching_rect" : [ 1164.5, 545.0, 100.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -4867,6 +4870,7 @@
 			}
 , 			{
 				"box" : 				{
+					"hidden" : 1,
 					"id" : "obj-44",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -4875,7 +4879,7 @@
 					"patching_rect" : [ 827.25, 285.0, 152.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 24.5, 227.5, 235.0, 20.0 ],
-					"text" : "Screen Coordinates -1920 0 0 1080",
+					"text" : "Screen Coordinates 0 0 2560 1440",
 					"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
 				}
 
@@ -4896,6 +4900,7 @@
 			}
 , 			{
 				"box" : 				{
+					"hidden" : 1,
 					"id" : "obj-33",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -4903,7 +4908,7 @@
 					"patching_rect" : [ 629.0, 698.0, 132.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 24.5, 207.0, 132.0, 20.0 ],
-					"text" : "Refresh rate: 60 Hz",
+					"text" : "Refresh rate: 144 Hz",
 					"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
 				}
 
@@ -4923,6 +4928,7 @@
 			}
 , 			{
 				"box" : 				{
+					"hidden" : 1,
 					"id" : "obj-31",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -4930,7 +4936,7 @@
 					"patching_rect" : [ 484.25, 684.0, 132.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 24.5, 184.0, 132.0, 20.0 ],
-					"text" : "Resolution: 1920 1080",
+					"text" : "Resolution: 2560 1440",
 					"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
 				}
 
@@ -4987,13 +4993,14 @@
 			}
 , 			{
 				"box" : 				{
+					"hidden" : 1,
 					"id" : "obj-26",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 445.5, 762.0, 62.0, 34.0 ],
-					"text" : "Monitor 2 Selected"
+					"text" : "Monitor 1 Selected"
 				}
 
 			}
@@ -5072,6 +5079,7 @@
 			}
 , 			{
 				"box" : 				{
+					"hidden" : 1,
 					"htabcolor" : [ 0.925490196078431, 0.866666666666667, 0.007843137254902, 1.0 ],
 					"id" : "obj-12",
 					"maxclass" : "tab",
@@ -5725,7 +5733,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-105", 5 ],
-					"midpoints" : [ 1406.5, 1074.0, 1567.000000000000227, 1074.0 ],
+					"midpoints" : [ 1404.0, 1074.0, 1567.000000000000227, 1074.0 ],
 					"source" : [ "obj-157", 2 ]
 				}
 
@@ -6345,7 +6353,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-78", 0 ],
-					"midpoints" : [ 1174.0, 693.0, 1326.25, 693.0 ],
+					"midpoints" : [ 1174.0, 696.0, 1326.25, 696.0 ],
 					"source" : [ "obj-77", 0 ]
 				}
 
@@ -6547,7 +6555,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-78", 0 ],
-					"midpoints" : [ 1146.75, 694.0, 1161.0, 694.0, 1161.0, 694.0, 1326.25, 694.0 ],
+					"midpoints" : [ 1146.75, 663.0, 1161.0, 663.0, 1161.0, 663.0, 1326.25, 663.0 ],
 					"source" : [ "obj-92", 0 ]
 				}
 
@@ -6627,7 +6635,6 @@
 				"name" : "_myStyle",
 				"default" : 				{
 					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -6637,7 +6644,8 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-
+,
+					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6664,8 +6672,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -6747,8 +6755,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 				}
 ,
 				"parentstyle" : "",
