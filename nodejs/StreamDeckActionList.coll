@@ -1,3 +1,13 @@
+-------ACTIONS--------------, 'basic commands';
+CMD, 'command prompt script';
+Image, 'ButtonID' 'name of pic located inside images folder or full path of picture' -> optional ButtonID arg;
+Macrov2, 'command' 'msg';
+MessageMonitor, 'Message' -> sends a message directly to the computer monitor on screen for 1500ms;
+OpenProgram, 'full path of program/exe' -> limited though does not require python;
+Pause, 'integer' -> integer is in milliseconds - aka if you want delay of 1 second put 1000 into box;
+Screenshot, 'x1' 'y1' 'x2' 'y2' 'save_path';
+ScreenToText, 'x1' 'y1' 'x2' 'y2' 'variable name' to store contents of OCR image capture;
+Volume, 'Mute' & 'int' sets mute and volume change respectively;
 -------BASIC-ACTIONS--------, 'basic commands';
 Action, 'Name of Action from database' -> Pull an action from the database;
 BringToFront, 'Fullpath_to_exe/shortcut/Webpage-URL' 'partial/full_window_name' - bringtofront if open else opens exe;
