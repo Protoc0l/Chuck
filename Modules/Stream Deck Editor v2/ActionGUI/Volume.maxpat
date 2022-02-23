@@ -40,13 +40,25 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 444.0, 542.0, 100.0, 22.0 ],
+					"text" : "loadmess clear"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-29",
 					"linecount" : 3,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "Mute", "int" ],
-					"patching_rect" : [ 95.25, 368.0, 38.5, 50.0 ],
+					"patching_rect" : [ 95.25, 368.0, 39.0, 50.0 ],
 					"text" : "t Mute 1"
 				}
 
@@ -107,7 +119,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 396.5, 241.0, 55.0, 36.0 ],
+					"patching_rect" : [ 396.5, 241.0, 56.0, 36.0 ],
 					"text" : "prepend hidden"
 				}
 
@@ -168,7 +180,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 4.5, 17.0, 114.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.0, 18.0, 111.0, 20.0 ],
+					"presentation_rect" : [ 66.0, 16.0, 111.0, 20.0 ],
 					"text" : "Volume Command",
 					"textjustification" : 2
 				}
@@ -187,7 +199,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 95.25, 310.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 118.5, 18.0, 100.0, 20.0 ],
+					"presentation_rect" : [ 180.5, 16.0, 100.0, 20.0 ],
 					"text" : "Mute",
 					"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
 					"texton" : "Change Volume",
@@ -279,7 +291,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 552.0, 48.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 141.0, 0.0, 77.5, 14.0 ],
+					"presentation_rect" : [ 335.0, 6.0, 60.5, 14.0 ],
 					"text" : "Test ",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 0.76 ]
 				}
@@ -445,13 +457,14 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-28",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 209.5, 592.0, 114.0, 20.0 ],
+					"patching_rect" : [ 209.5, 592.0, 114.0, 34.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.5, 43.0, 108.0, 20.0 ],
-					"text" : "Set Command",
+					"presentation_rect" : [ 63.5, 41.0, 142.0, 20.0 ],
+					"text" : "Volume Change Amount",
 					"textjustification" : 2
 				}
 
@@ -474,9 +487,8 @@
 					"parameter_mappable" : 0,
 					"patching_rect" : [ 328.5, 592.0, 146.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 111.0, 44.0, 290.0, 18.0 ],
+					"presentation_rect" : [ 221.0, 41.0, 59.5, 18.0 ],
 					"rounded" : 0.0,
-					"text" : "-25",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 1,
 					"wordwrap" : 0
@@ -676,6 +688,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
 					"midpoints" : [ 561.5, 120.0, 561.5, 120.0 ],
 					"source" : [ "obj-20", 0 ]
@@ -798,7 +817,7 @@
 				"patchline" : 				{
 					"color" : [ 0.47843137254902, 0.709803921568627, 0.317647058823529, 1.0 ],
 					"destination" : [ "obj-18", 0 ],
-					"midpoints" : [ 124.25, 420.0, 381.0, 420.0, 381.0, 237.0, 406.0, 237.0 ],
+					"midpoints" : [ 124.75, 420.0, 381.0, 420.0, 381.0, 237.0, 406.0, 237.0 ],
 					"source" : [ "obj-29", 1 ]
 				}
 
@@ -940,6 +959,7 @@
 , 			{
 				"name" : "_myStyle",
 				"default" : 				{
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -950,7 +970,6 @@
 						"autogradient" : 0
 					}
 ,
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 				}
 ,
@@ -1059,6 +1078,10 @@
 			}
 , 			{
 				"name" : "s_161006_G!",
+				"comment" : 				{
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				}
+,
 				"message" : 				{
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -1072,10 +1095,6 @@
 
 				}
 ,
-				"comment" : 				{
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-				}
-,
 				"parentstyle" : "",
 				"multi" : 1
 			}
@@ -1087,6 +1106,7 @@
 , 			{
 				"name" : "simple-2",
 				"default" : 				{
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -1096,8 +1116,7 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-,
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 				}
 ,
 				"parentstyle" : "default",

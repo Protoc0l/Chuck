@@ -393,6 +393,7 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -403,7 +404,6 @@
 										"autogradient" : 0
 									}
 ,
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
@@ -512,6 +512,10 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -525,10 +529,6 @@
 
 								}
 ,
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -540,6 +540,7 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -549,8 +550,7 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-,
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "default",
@@ -593,7 +593,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 23.5, 228.0, 48.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 391.0, 29.0, 17.0, 12.0 ],
+					"presentation_rect" : [ 380.0, 24.0, 17.0, 12.0 ],
 					"text" : "+",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 0.76 ]
 				}
@@ -610,7 +610,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 517.0, 111.5, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 365.5, 13.0, 40.5, 14.0 ],
+					"presentation_rect" : [ 334.5, 5.0, 60.5, 14.0 ],
 					"text" : "Test ",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 0.76 ]
 				}
@@ -793,7 +793,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 156.5, 263.0, 114.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -1.5, 28.0, 86.0, 20.0 ],
+					"presentation_rect" : [ 0.5, 28.0, 86.0, 20.0 ],
 					"text" : "Set Command",
 					"textjustification" : 2
 				}
@@ -817,7 +817,7 @@
 					"parameter_mappable" : 0,
 					"patching_rect" : [ 275.5, 263.0, 146.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 86.5, 29.0, 319.5, 18.0 ],
+					"presentation_rect" : [ 86.5, 29.0, 295.5, 18.0 ],
 					"rounded" : 0.0,
 					"text" : "systeminfo",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -1183,6 +1183,7 @@
 , 			{
 				"name" : "_myStyle",
 				"default" : 				{
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -1193,7 +1194,6 @@
 						"autogradient" : 0
 					}
 ,
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 				}
 ,
@@ -1302,6 +1302,10 @@
 			}
 , 			{
 				"name" : "s_161006_G!",
+				"comment" : 				{
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				}
+,
 				"message" : 				{
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -1315,10 +1319,6 @@
 
 				}
 ,
-				"comment" : 				{
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-				}
-,
 				"parentstyle" : "",
 				"multi" : 1
 			}
@@ -1330,6 +1330,7 @@
 , 			{
 				"name" : "simple-2",
 				"default" : 				{
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -1339,8 +1340,7 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-,
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 				}
 ,
 				"parentstyle" : "default",
