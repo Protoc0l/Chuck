@@ -63,16 +63,17 @@
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 72.0,
+					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fontsize" : 48.0,
 					"id" : "obj-12",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 6.0, 8.0, 690.0, 160.0 ],
+					"patching_rect" : [ 6.0, 8.0, 429.0, 117.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 6.0, 8.0, 690.0, 160.0 ],
+					"presentation_rect" : [ 14.0, 87.0, 390.0, 155.0 ],
 					"text" : "EMERGENCY",
 					"textoncolor" : [ 1.0, 0.0, 0.0, 1.0 ]
 				}
