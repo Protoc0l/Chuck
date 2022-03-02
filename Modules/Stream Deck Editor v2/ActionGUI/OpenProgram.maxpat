@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 287.0, 139.0, 1210.0, 835.0 ],
+		"rect" : [ 1124.0, 376.0, 1210.0, 835.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -145,6 +145,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 117.5, 26.0, 278.0, 19.0 ],
 					"rounded" : 0.0,
+					"text" : "c:/programdata",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 1,
 					"wordwrap" : 0
@@ -397,7 +398,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 0.0, 0.0, 640.0, 292.0 ],
 									"rounded" : 0.0,
-									"text" : "C:/Program Files/Google/Chrome/Application/chrome.exe",
+									"text" : "Visionarys",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"wordwrap" : 0
 								}
@@ -494,7 +495,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -505,7 +505,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -550,8 +551,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -660,8 +661,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1015,6 +1016,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 117.5, 49.0, 272.0, 18.0 ],
 					"rounded" : 0.0,
+					"text" : "Visionarys",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 1,
 					"wordwrap" : 0
@@ -1028,7 +1030,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 362.5, 109.0, 58.0, 22.0 ],
+					"patching_rect" : [ 366.0, 113.0, 58.0, 22.0 ],
 					"text" : "tosymbol"
 				}
 
@@ -1040,7 +1042,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 362.5, 134.0, 161.0, 22.0 ],
+					"patching_rect" : [ 366.0, 138.0, 161.0, 22.0 ],
 					"text" : "regexp \\\\[|\\\\]|' @substitute \\\""
 				}
 
@@ -1079,7 +1081,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2.0, 7.0, 231.0, 124.0 ],
+					"patching_rect" : [ 18.0, 13.0, 174.0, 134.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 4.0, 2.0, 402.0, 70.0 ],
 					"proportion" : 0.5,
@@ -1251,7 +1253,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-73", 0 ],
-					"midpoints" : [ 491.25, 96.0, 372.0, 96.0 ],
+					"midpoints" : [ 491.25, 96.0, 375.5, 96.0 ],
 					"source" : [ "obj-16", 2 ]
 				}
 
@@ -1381,7 +1383,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-73", 0 ],
-					"midpoints" : [ 518.5, 96.0, 372.0, 96.0 ],
+					"midpoints" : [ 518.5, 96.0, 375.5, 96.0 ],
 					"source" : [ "obj-26", 0 ]
 				}
 
@@ -1561,7 +1563,6 @@
 , 			{
 				"name" : "_myStyle",
 				"default" : 				{
-					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -1572,7 +1573,8 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-
+,
+					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1617,8 +1619,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1727,8 +1729,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
