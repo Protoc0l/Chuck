@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1886.0, 77.0, 1241.0, 929.0 ],
+		"rect" : [ 34.0, 77.0, 1852.0, 923.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -70,7 +70,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1618.166666666666515, 24.0, 1429.0, 50.0 ],
+					"patching_rect" : [ 1618.166666666666515, 24.0, 1310.0, 50.0 ],
 					"text" : "sprintf sqlout \\\"SELECT TODOLIST.TODOLIST_ID\\, URGENT\\, UNREAD\\, TODOLIST.TODOLIST_NAME\\, TODOLIST.TODOLIST_LASTNAME\\, TODOLIST.TODOLIST_ITEM\\, TODOLIST.TIMESTAMP\\, (JULIANDAY(DATETIME('NOW'\\, 'LOCALTIME'))-JULIANDAY(TODOLIST.TIMESTAMP))\\, TODOLIST.TODOLIST_DUEDATE\\, (SELECT STAFF.STAFF_NAME FROM STAFF WHERE STAFF.STAFF_ID=TODOLIST.STAFF_ID_FROM) AS TODOLIST_INDIVIDUAL FROM TODOLIST LEFT JOIN USER ON TODOLIST.STAFF_ID_FROM=USER.USER_ID WHERE TODOLIST.STAFF_ID_FOR=%i AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NOT NULL ORDER BY TODOLIST.TODOLIST_DUEDATE ASC\\\""
 				}
 
@@ -1638,10 +1638,10 @@
 					"id" : "obj-115",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "int", "bang" ],
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "bang", "int" ],
 					"patching_rect" : [ 1395.0, 106.0, 100.0, 22.0 ],
-					"text" : "t i b"
+					"text" : "t i b i"
 				}
 
 			}
@@ -15747,6 +15747,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-116", 1 ],
+					"source" : [ "obj-115", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-116", 0 ],
 					"source" : [ "obj-115", 0 ]
 				}
@@ -16671,6 +16678,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-41", 0 ],
 					"source" : [ "obj-91", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-97", 0 ],
+					"source" : [ "obj-91", 2 ]
 				}
 
 			}
