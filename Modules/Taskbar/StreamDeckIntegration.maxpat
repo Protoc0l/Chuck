@@ -4693,7 +4693,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 511.0, 317.0, 1377.0, 757.0 ],
+						"rect" : [ 501.0, 317.0, 1377.0, 757.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -4845,7 +4845,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 313.0, 52.0, 135.0, 20.0 ],
+									"patching_rect" : [ 336.0, 52.0, 135.0, 20.0 ],
 									"text" : "Drop Serve.py file here"
 								}
 
@@ -4857,7 +4857,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 287.0, 16.0, 180.0, 92.0 ]
+									"patching_rect" : [ 323.0, 16.0, 180.0, 92.0 ]
 								}
 
 							}
@@ -4893,8 +4893,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 10.0, 114.0, 296.0, 22.0 ],
-									"text" : "C:/ProgramData/Chuck/main/serve2.cpython-39.pyc"
+									"patching_rect" : [ 10.0, 114.0, 332.0, 22.0 ],
+									"text" : "C:/ProgramData/Chuck/main/PyChuck.exe"
 								}
 
 							}
