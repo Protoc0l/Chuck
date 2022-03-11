@@ -2932,7 +2932,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 2004.0, 276.0, 1794.0, 480.0 ],
+						"rect" : [ -1766.0, 255.0, 1794.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3251,13 +3251,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-23",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "newobj",
-									"numinlets" : 1,
+									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 350.0, 182.75, 676.0, 36.0 ],
-									"text" : "sprintf sqlout \\\"SELECT COUNT(ALL) AS URGENT_UNREAD2 FROM TODOLIST WHERE TODOLIST.STAFF_ID_FOR='%i' AND TODOLIST.UNREAD='1' AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NULL\\\""
+									"patching_rect" : [ 350.0, 182.75, 676.0, 50.0 ],
+									"text" : "sprintf sqlout \\\"SELECT COUNT(ALL) AS URGENT_UNREAD2 FROM TODOLIST WHERE (TODOLIST.STAFF_ID_FOR='%i' OR TODOLIST.USER_ID='%i') AND TODOLIST.UNREAD='1' AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NULL\\\""
 								}
 
 							}
@@ -3302,11 +3302,11 @@
 									"id" : "obj-28",
 									"linecount" : 2,
 									"maxclass" : "newobj",
-									"numinlets" : 1,
+									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 31.0, 144.75, 674.0, 36.0 ],
-									"text" : "sprintf sqlout \\\"SELECT COUNT(ALL) AS URGENT_UNREAD FROM TODOLIST WHERE TODOLIST.STAFF_ID_FOR='%i' AND TODOLIST.URGENT='1' AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NULL\\\""
+									"text" : "sprintf sqlout \\\"SELECT COUNT(ALL) AS URGENT_UNREAD FROM TODOLIST WHERE (TODOLIST.STAFF_ID_FOR='%i' OR TODOLIST.USER_ID='%i') AND TODOLIST.URGENT='1' AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NULL\\\""
 								}
 
 							}
@@ -3393,7 +3393,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-149",
-									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -3437,7 +3436,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 31.0, 234.89156711101532, 104.0, 22.0 ],
+									"patching_rect" : [ 31.0, 239.89156711101532, 104.0, 22.0 ],
 									"text" : "s ---databaselocal"
 								}
 
@@ -4040,7 +4039,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-81", 0 ],
-									"midpoints" : [ 359.5, 229.0, 40.5, 229.0 ],
+									"midpoints" : [ 359.5, 236.0, 40.5, 236.0 ],
 									"source" : [ "obj-23", 0 ]
 								}
 
@@ -20208,7 +20207,6 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"hcellcolor" : [ 0.572549019607843, 0.572549019607843, 0.572549019607843, 0.47 ],
-					"hidden" : 1,
 					"hscroll" : 0,
 					"id" : "obj-50",
 					"maxclass" : "jit.cellblock",
@@ -20218,12 +20216,13 @@
 					"outmode" : 1,
 					"patching_rect" : [ 1040.0, 706.5, 631.0, 136.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 14.0, 700.0, 20.0 ],
+					"presentation_rect" : [ 0.0, 14.0, 700.0, 72.0 ],
 					"rowdef" : [ [ 0, 0, 0, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ] ],
 					"rows" : 1,
 					"selmode" : 3,
 					"stcolor" : [ 0.407843137254902, 0.407843137254902, 0.407843137254902, 1.0 ],
-					"varname" : "TODOLIST_INDIVIDUAL"
+					"varname" : "TODOLIST_INDIVIDUAL",
+					"vscroll" : 0
 				}
 
 			}
@@ -20238,7 +20237,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1449.463541999999961, 872.5, 111.333332999999925, 40.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 14.0, 700.0, 18.0 ],
+					"presentation_rect" : [ 0.0, 14.0, 700.0, 72.0 ],
 					"varname" : "TDL_HINT"
 				}
 
