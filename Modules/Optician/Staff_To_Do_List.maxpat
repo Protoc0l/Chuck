@@ -40,30 +40,6 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-185",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 2147.5, 208.0, 100.0, 22.0 ],
-					"text" : "fromsymbol"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-186",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 2147.5, 181.0, 100.0, 22.0 ],
-					"text" : "v USER_ID"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-184",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -1183,8 +1159,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -1194,7 +1168,9 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-
+,
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -1257,10 +1233,6 @@
 											}
 , 											{
 												"name" : "s_161006_G!",
-												"comment" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-												}
-,
 												"message" : 												{
 													"bgfillcolor" : 													{
 														"type" : "color",
@@ -1274,6 +1246,10 @@
 
 												}
 ,
+												"comment" : 												{
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+												}
+,
 												"parentstyle" : "",
 												"multi" : 1
 											}
@@ -1285,7 +1261,6 @@
 , 											{
 												"name" : "simple-2",
 												"default" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -1295,7 +1270,8 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-
+,
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
 												"parentstyle" : "default",
@@ -2677,8 +2653,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -2688,7 +2662,9 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2796,10 +2772,6 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -2813,6 +2785,10 @@
 
 								}
 ,
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -2824,7 +2800,6 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -2834,7 +2809,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "default",
@@ -2932,7 +2908,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ -1766.0, 255.0, 1794.0, 480.0 ],
+						"rect" : [ -1766.0, 255.0, 939.0, 762.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2962,13 +2938,37 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-5",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 256.666666666666629, 183.0, 100.0, 22.0 ],
+									"text" : "fromsymbol"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 256.666666666666629, 153.0, 100.0, 22.0 ],
+									"text" : "v USER_ID"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-68",
 									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 4,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 558.0, 1038.60843288898468, 355.0, 36.0 ],
+									"patching_rect" : [ 571.0, 1124.60843288898468, 355.0, 36.0 ],
 									"text" : "sprintf script sendbox Taskbar_horiz_button2 bgcolor %i %i %i %i"
 								}
 
@@ -2979,7 +2979,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 107.5, 684.0, 150.0, 20.0 ],
+									"patching_rect" : [ 120.5, 770.0, 150.0, 20.0 ],
 									"text" : "TRIGGER LIGHTS"
 								}
 
@@ -2991,7 +2991,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 134.0, 632.0, 68.0, 22.0 ],
+									"patching_rect" : [ 147.0, 718.0, 68.0, 22.0 ],
 									"text" : "zl change"
 								}
 
@@ -3003,7 +3003,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 406.0, 440.0, 100.0, 22.0 ],
+									"patching_rect" : [ 419.0, 526.0, 100.0, 22.0 ],
 									"text" : "fromsymbol"
 								}
 
@@ -3015,7 +3015,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 67.0, 444.0, 100.0, 22.0 ],
+									"patching_rect" : [ 80.0, 530.0, 100.0, 22.0 ],
 									"text" : "fromsymbol"
 								}
 
@@ -3027,7 +3027,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 134.0, 603.0, 100.0, 22.0 ],
+									"patching_rect" : [ 147.0, 689.0, 100.0, 22.0 ],
 									"text" : "+"
 								}
 
@@ -3039,7 +3039,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 446.5, 537.0, 25.0, 22.0 ],
+									"patching_rect" : [ 459.5, 623.0, 25.0, 22.0 ],
 									"text" : "t 1"
 								}
 
@@ -3051,7 +3051,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 406.0, 510.0, 100.0, 22.0 ],
+									"patching_rect" : [ 419.0, 596.0, 100.0, 22.0 ],
 									"text" : "route 1 0"
 								}
 
@@ -3063,7 +3063,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 406.0, 537.0, 25.0, 22.0 ],
+									"patching_rect" : [ 419.0, 623.0, 25.0, 22.0 ],
 									"text" : "t 0"
 								}
 
@@ -3075,7 +3075,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 107.5, 537.0, 25.0, 22.0 ],
+									"patching_rect" : [ 120.5, 623.0, 25.0, 22.0 ],
 									"text" : "t 2"
 								}
 
@@ -3087,7 +3087,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 67.0, 510.0, 100.0, 22.0 ],
+									"patching_rect" : [ 80.0, 596.0, 100.0, 22.0 ],
 									"text" : "route 1 0"
 								}
 
@@ -3099,7 +3099,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 67.0, 537.0, 25.0, 22.0 ],
+									"patching_rect" : [ 80.0, 623.0, 25.0, 22.0 ],
 									"text" : "t 0"
 								}
 
@@ -3111,7 +3111,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 406.0, 484.0, 100.0, 22.0 ],
+									"patching_rect" : [ 419.0, 570.0, 100.0, 22.0 ],
 									"text" : "== 0"
 								}
 
@@ -3123,7 +3123,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 67.0, 484.0, 100.0, 22.0 ],
+									"patching_rect" : [ 80.0, 570.0, 100.0, 22.0 ],
 									"text" : "== 0"
 								}
 
@@ -3135,7 +3135,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 590.0, 354.0, 63.0, 22.0 ],
+									"patching_rect" : [ 603.0, 440.0, 63.0, 22.0 ],
 									"text" : "closebang"
 								}
 
@@ -3149,7 +3149,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "zlclear", "bang" ],
-									"patching_rect" : [ 540.0, 384.0, 69.0, 22.0 ],
+									"patching_rect" : [ 553.0, 470.0, 69.0, 22.0 ],
 									"text" : "t zlclear b"
 								}
 
@@ -3161,7 +3161,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 540.0, 354.0, 48.0, 22.0 ],
+									"patching_rect" : [ 553.0, 440.0, 48.0, 22.0 ],
 									"text" : "route 1"
 								}
 
@@ -3175,7 +3175,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 406.0, 408.0, 70.0, 22.0 ],
+									"patching_rect" : [ 419.0, 494.0, 70.0, 22.0 ],
 									"text" : "zl group 1"
 								}
 
@@ -3189,7 +3189,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 528.0, 278.0, 72.0, 22.0 ],
+									"patching_rect" : [ 541.0, 364.0, 72.0, 22.0 ],
 									"text" : "r ---datatitle"
 								}
 
@@ -3203,7 +3203,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 406.0, 327.0, 53.0, 22.0 ],
+									"patching_rect" : [ 419.0, 413.0, 53.0, 22.0 ],
 									"text" : "r ---data"
 								}
 
@@ -3216,7 +3216,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 386.0, 374.0, 39.0, 32.0 ]
+									"patching_rect" : [ 399.0, 460.0, 39.0, 32.0 ]
 								}
 
 							}
@@ -3229,7 +3229,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "URGENT_UNREAD2" ],
-									"patching_rect" : [ 528.0, 302.0, 167.0, 22.0 ],
+									"patching_rect" : [ 541.0, 388.0, 167.0, 22.0 ],
 									"text" : "t s URGENT_UNREAD2"
 								}
 
@@ -3243,7 +3243,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 528.0, 325.0, 167.0, 22.0 ],
+									"patching_rect" : [ 541.0, 411.0, 167.0, 22.0 ],
 									"text" : "zl compare"
 								}
 
@@ -3256,7 +3256,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 350.0, 182.75, 676.0, 50.0 ],
+									"patching_rect" : [ 150.333333333333314, 270.75, 676.0, 50.0 ],
 									"text" : "sprintf sqlout \\\"SELECT COUNT(ALL) AS URGENT_UNREAD2 FROM TODOLIST WHERE (TODOLIST.STAFF_ID_FOR='%i' OR TODOLIST.USER_ID='%i') AND TODOLIST.UNREAD='1' AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NULL\\\""
 								}
 
@@ -3266,10 +3266,10 @@
 									"id" : "obj-21",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "int", "int" ],
-									"patching_rect" : [ 31.0, 119.0, 338.0, 22.0 ],
-									"text" : "t i i"
+									"numoutlets" : 3,
+									"outlettype" : [ "int", "int", "bang" ],
+									"patching_rect" : [ 44.0, 121.0, 231.666666666666629, 22.0 ],
+									"text" : "t i i b"
 								}
 
 							}
@@ -3280,7 +3280,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 31.0, 95.0, 100.0, 22.0 ],
+									"patching_rect" : [ 44.0, 95.0, 100.0, 22.0 ],
 									"text" : "fromsymbol"
 								}
 
@@ -3292,7 +3292,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 31.0, 71.0, 100.0, 22.0 ],
+									"patching_rect" : [ 44.0, 71.0, 100.0, 22.0 ],
 									"text" : "v Staff_ID"
 								}
 
@@ -3305,7 +3305,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 31.0, 144.75, 674.0, 36.0 ],
+									"patching_rect" : [ 44.0, 230.75, 674.0, 36.0 ],
 									"text" : "sprintf sqlout \\\"SELECT COUNT(ALL) AS URGENT_UNREAD FROM TODOLIST WHERE (TODOLIST.STAFF_ID_FOR='%i' OR TODOLIST.USER_ID='%i') AND TODOLIST.URGENT='1' AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NULL\\\""
 								}
 
@@ -3317,7 +3317,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 251.0, 348.0, 63.0, 22.0 ],
+									"patching_rect" : [ 264.0, 434.0, 63.0, 22.0 ],
 									"text" : "closebang"
 								}
 
@@ -3331,7 +3331,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "zlclear", "bang" ],
-									"patching_rect" : [ 201.0, 378.0, 69.0, 22.0 ],
+									"patching_rect" : [ 214.0, 464.0, 69.0, 22.0 ],
 									"text" : "t zlclear b"
 								}
 
@@ -3343,7 +3343,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 201.0, 348.0, 48.0, 22.0 ],
+									"patching_rect" : [ 214.0, 434.0, 48.0, 22.0 ],
 									"text" : "route 1"
 								}
 
@@ -3357,7 +3357,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 67.0, 402.0, 70.0, 22.0 ],
+									"patching_rect" : [ 80.0, 488.0, 70.0, 22.0 ],
 									"text" : "zl group 1"
 								}
 
@@ -3371,7 +3371,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 189.0, 272.0, 72.0, 22.0 ],
+									"patching_rect" : [ 202.0, 358.0, 72.0, 22.0 ],
 									"text" : "r ---datatitle"
 								}
 
@@ -3385,7 +3385,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 67.0, 321.0, 53.0, 22.0 ],
+									"patching_rect" : [ 80.0, 407.0, 53.0, 22.0 ],
 									"text" : "r ---data"
 								}
 
@@ -3398,7 +3398,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 47.0, 368.0, 39.0, 32.0 ]
+									"patching_rect" : [ 60.0, 454.0, 39.0, 32.0 ]
 								}
 
 							}
@@ -3411,7 +3411,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "URGENT_UNREAD" ],
-									"patching_rect" : [ 189.0, 296.0, 167.0, 22.0 ],
+									"patching_rect" : [ 202.0, 382.0, 167.0, 22.0 ],
 									"text" : "t s URGENT_UNREAD"
 								}
 
@@ -3425,7 +3425,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 189.0, 319.0, 167.0, 22.0 ],
+									"patching_rect" : [ 202.0, 405.0, 167.0, 22.0 ],
 									"text" : "zl compare"
 								}
 
@@ -3436,7 +3436,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 31.0, 239.89156711101532, 104.0, 22.0 ],
+									"patching_rect" : [ 44.0, 325.89156711101532, 104.0, 22.0 ],
 									"text" : "s ---databaselocal"
 								}
 
@@ -3448,7 +3448,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 31.0, 20.0, 71.0, 22.0 ],
+									"patching_rect" : [ 44.0, 20.0, 71.0, 22.0 ],
 									"text" : "loadmess 1"
 								}
 
@@ -3460,7 +3460,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 31.0, 47.0, 81.0, 22.0 ],
+									"patching_rect" : [ 44.0, 47.0, 81.0, 22.0 ],
 									"text" : "metro 1000"
 								}
 
@@ -3472,7 +3472,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 302.0, 734.0, 245.0, 62.0 ],
+									"patching_rect" : [ 315.0, 820.0, 245.0, 62.0 ],
 									"text" : "3 = both urgent & unread (red flash)\n2 = only urgent not unread (red flash)\n1 = no urgent only unread (green flash)\n0 = neither urgent or unread (no flash)"
 								}
 
@@ -3484,7 +3484,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "int", "int" ],
-									"patching_rect" : [ 240.5, 768.0, 37.0, 22.0 ],
+									"patching_rect" : [ 253.5, 854.0, 37.0, 22.0 ],
 									"text" : "t 0 0"
 								}
 
@@ -3496,7 +3496,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "int", "int" ],
-									"patching_rect" : [ 205.0, 768.0, 37.0, 22.0 ],
+									"patching_rect" : [ 218.0, 854.0, 37.0, 22.0 ],
 									"text" : "t 0 1"
 								}
 
@@ -3508,7 +3508,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "int", "int" ],
-									"patching_rect" : [ 134.0, 768.0, 37.0, 22.0 ],
+									"patching_rect" : [ 147.0, 854.0, 37.0, 22.0 ],
 									"text" : "t 1 0"
 								}
 
@@ -3520,7 +3520,7 @@
 									"numinlets" : 5,
 									"numoutlets" : 5,
 									"outlettype" : [ "", "", "", "", "" ],
-									"patching_rect" : [ 134.0, 734.0, 161.0, 22.0 ],
+									"patching_rect" : [ 147.0, 820.0, 161.0, 22.0 ],
 									"text" : "route 3 2 1 0"
 								}
 
@@ -3533,7 +3533,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 246.0, 820.5, 24.0, 24.0 ]
+									"patching_rect" : [ 259.0, 906.5, 24.0, 24.0 ]
 								}
 
 							}
@@ -3545,7 +3545,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 246.0, 903.89156711101532, 43.0, 36.0 ],
+									"patching_rect" : [ 259.0, 989.89156711101532, 43.0, 36.0 ],
 									"text" : "delay 1000"
 								}
 
@@ -3557,7 +3557,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "bang" ],
-									"patching_rect" : [ 246.0, 875.39156711101532, 100.0, 22.0 ],
+									"patching_rect" : [ 259.0, 961.39156711101532, 100.0, 22.0 ],
 									"text" : "t b b"
 								}
 
@@ -3569,7 +3569,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 246.0, 850.0, 100.0, 22.0 ],
+									"patching_rect" : [ 259.0, 936.0, 100.0, 22.0 ],
 									"text" : "metro 2000"
 								}
 
@@ -3582,7 +3582,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 134.0, 824.5, 24.0, 24.0 ]
+									"patching_rect" : [ 147.0, 910.5, 24.0, 24.0 ]
 								}
 
 							}
@@ -3594,7 +3594,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 134.0, 907.89156711101532, 43.0, 36.0 ],
+									"patching_rect" : [ 147.0, 993.89156711101532, 43.0, 36.0 ],
 									"text" : "delay 1000"
 								}
 
@@ -3606,7 +3606,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "bang" ],
-									"patching_rect" : [ 134.0, 879.39156711101532, 100.0, 22.0 ],
+									"patching_rect" : [ 147.0, 965.39156711101532, 100.0, 22.0 ],
 									"text" : "t b b"
 								}
 
@@ -3618,7 +3618,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 134.0, 854.0, 100.0, 22.0 ],
+									"patching_rect" : [ 147.0, 940.0, 100.0, 22.0 ],
 									"text" : "metro 2000"
 								}
 
@@ -3629,7 +3629,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 134.0, 964.0, 45.0, 20.0 ],
+									"patching_rect" : [ 147.0, 1050.0, 45.0, 20.0 ],
 									"text" : "black"
 								}
 
@@ -3641,7 +3641,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 134.0, 987.39156711101532, 50.0, 22.0 ],
+									"patching_rect" : [ 147.0, 1073.39156711101532, 50.0, 22.0 ],
 									"text" : "0 0 0 1"
 								}
 
@@ -3652,7 +3652,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 209.0, 964.0, 33.0, 20.0 ],
+									"patching_rect" : [ 222.0, 1050.0, 33.0, 20.0 ],
 									"text" : "red"
 								}
 
@@ -3664,7 +3664,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 192.0, 987.39156711101532, 50.0, 22.0 ],
+									"patching_rect" : [ 205.0, 1073.39156711101532, 50.0, 22.0 ],
 									"text" : "1 0 0 1"
 								}
 
@@ -3675,7 +3675,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 327.0, 964.0, 45.0, 20.0 ],
+									"patching_rect" : [ 340.0, 1050.0, 45.0, 20.0 ],
 									"text" : "green"
 								}
 
@@ -3687,7 +3687,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 327.0, 987.39156711101532, 50.0, 22.0 ],
+									"patching_rect" : [ 340.0, 1073.39156711101532, 50.0, 22.0 ],
 									"text" : "0 1 0 1"
 								}
 
@@ -3699,7 +3699,7 @@
 									"numinlets" : 4,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 192.0, 1038.60843288898468, 355.0, 22.0 ],
+									"patching_rect" : [ 205.0, 1124.60843288898468, 355.0, 22.0 ],
 									"text" : "sprintf script sendbox Taskbar_horiz_button bgcolor %i %i %i %i"
 								}
 
@@ -3711,7 +3711,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 192.0, 1085.60843288898468, 162.0, 22.0 ],
+									"patching_rect" : [ 205.0, 1171.60843288898468, 162.0, 22.0 ],
 									"text" : "s ---taskbar_this_patcher"
 								}
 
@@ -3734,7 +3734,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-100", 0 ],
-									"midpoints" : [ 336.5, 1023.0, 201.5, 1023.0 ],
+									"midpoints" : [ 349.5, 1109.0, 214.5, 1109.0 ],
 									"order" : 1,
 									"source" : [ "obj-126", 0 ]
 								}
@@ -3743,7 +3743,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-68", 0 ],
-									"midpoints" : [ 336.5, 1032.0, 567.5, 1032.0 ],
+									"midpoints" : [ 349.5, 1118.0, 580.5, 1118.0 ],
 									"order" : 0,
 									"source" : [ "obj-126", 0 ]
 								}
@@ -3752,7 +3752,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-144", 0 ],
-									"midpoints" : [ 260.5, 374.0, 210.5, 374.0 ],
+									"midpoints" : [ 273.5, 460.0, 223.5, 460.0 ],
 									"source" : [ "obj-143", 0 ]
 								}
 
@@ -3760,7 +3760,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-146", 0 ],
-									"midpoints" : [ 210.5, 404.0, 76.5, 404.0 ],
+									"midpoints" : [ 223.5, 490.0, 89.5, 490.0 ],
 									"source" : [ "obj-144", 0 ]
 								}
 
@@ -3817,7 +3817,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-145", 0 ],
-									"midpoints" : [ 198.5, 339.0, 210.5, 339.0 ],
+									"midpoints" : [ 211.5, 425.0, 223.5, 425.0 ],
 									"order" : 0,
 									"source" : [ "obj-151", 0 ]
 								}
@@ -3826,7 +3826,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-149", 0 ],
-									"midpoints" : [ 198.5, 360.0, 56.5, 360.0 ],
+									"midpoints" : [ 211.5, 446.0, 69.5, 446.0 ],
 									"order" : 1,
 									"source" : [ "obj-151", 0 ]
 								}
@@ -3835,7 +3835,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-100", 0 ],
-									"midpoints" : [ 201.5, 1018.60843288898468, 201.5, 1018.60843288898468 ],
+									"midpoints" : [ 214.5, 1104.60843288898468, 214.5, 1104.60843288898468 ],
 									"order" : 1,
 									"source" : [ "obj-161", 0 ]
 								}
@@ -3844,7 +3844,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-68", 0 ],
-									"midpoints" : [ 201.5, 1032.0, 567.5, 1032.0 ],
+									"midpoints" : [ 214.5, 1118.0, 580.5, 1118.0 ],
 									"order" : 0,
 									"source" : [ "obj-161", 0 ]
 								}
@@ -3853,7 +3853,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-100", 0 ],
-									"midpoints" : [ 143.5, 1018.60843288898468, 201.5, 1018.60843288898468 ],
+									"midpoints" : [ 156.5, 1104.60843288898468, 214.5, 1104.60843288898468 ],
 									"order" : 1,
 									"source" : [ "obj-176", 0 ]
 								}
@@ -3862,7 +3862,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-68", 0 ],
-									"midpoints" : [ 143.5, 1033.0, 567.5, 1033.0 ],
+									"midpoints" : [ 156.5, 1119.0, 580.5, 1119.0 ],
 									"order" : 0,
 									"source" : [ "obj-176", 0 ]
 								}
@@ -4017,8 +4017,22 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-5", 0 ],
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-21", 0 ],
 									"source" : [ "obj-20", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"source" : [ "obj-21", 2 ]
 								}
 
 							}
@@ -4039,7 +4053,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-81", 0 ],
-									"midpoints" : [ 359.5, 236.0, 40.5, 236.0 ],
+									"midpoints" : [ 159.833333333333314, 322.0, 53.5, 322.0 ],
 									"source" : [ "obj-23", 0 ]
 								}
 
@@ -4047,7 +4061,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-26", 0 ],
-									"midpoints" : [ 599.5, 380.0, 549.5, 380.0 ],
+									"midpoints" : [ 612.5, 466.0, 562.5, 466.0 ],
 									"source" : [ "obj-25", 0 ]
 								}
 
@@ -4055,7 +4069,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-29", 0 ],
-									"midpoints" : [ 549.5, 410.0, 415.5, 410.0 ],
+									"midpoints" : [ 562.5, 496.0, 428.5, 496.0 ],
 									"source" : [ "obj-26", 0 ]
 								}
 
@@ -4126,7 +4140,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-27", 0 ],
-									"midpoints" : [ 537.5, 345.0, 549.5, 345.0 ],
+									"midpoints" : [ 550.5, 431.0, 562.5, 431.0 ],
 									"order" : 0,
 									"source" : [ "obj-34", 0 ]
 								}
@@ -4135,7 +4149,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-32", 0 ],
-									"midpoints" : [ 537.5, 366.0, 395.5, 366.0 ],
+									"midpoints" : [ 550.5, 452.0, 408.5, 452.0 ],
 									"order" : 1,
 									"source" : [ "obj-34", 0 ]
 								}
@@ -4241,8 +4255,26 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-23", 1 ],
+									"midpoints" : [ 266.166666666666629, 216.0, 816.833333333333258, 216.0 ],
+									"order" : 0,
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-28", 1 ],
+									"midpoints" : [ 266.166666666666629, 217.0, 522.0, 217.0, 522.0, 217.0, 708.5, 217.0 ],
+									"order" : 1,
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-97", 0 ],
-									"midpoints" : [ 567.5, 1077.0, 201.5, 1077.0 ],
+									"midpoints" : [ 580.5, 1163.0, 214.5, 1163.0 ],
 									"source" : [ "obj-68", 0 ]
 								}
 
@@ -4269,8 +4301,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -4280,7 +4310,9 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -4388,10 +4420,6 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -4405,6 +4433,10 @@
 
 								}
 ,
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -4416,7 +4448,6 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -4426,7 +4457,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "default",
@@ -6282,8 +6314,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -6293,7 +6323,9 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -6356,10 +6388,6 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -6373,6 +6401,10 @@
 
 								}
 ,
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -6384,7 +6416,6 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -6394,7 +6425,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "default",
@@ -6645,11 +6677,11 @@
 					"id" : "obj-28",
 					"linecount" : 4,
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1141.5, 226.0, 1429.0, 64.0 ],
-					"text" : "sprintf sqlout \\\"SELECT TODOLIST.TODOLIST_ID\\, URGENT\\, UNREAD\\, TODOLIST.TODOLIST_NAME\\, TODOLIST.TODOLIST_LASTNAME\\, TODOLIST.TODOLIST_ITEM\\, TODOLIST.TIMESTAMP\\, (JULIANDAY(DATETIME('NOW'\\, 'LOCALTIME'))-JULIANDAY(TODOLIST.TIMESTAMP))\\, TODOLIST.TODOLIST_DUEDATE\\, (SELECT STAFF.STAFF_NAME FROM STAFF WHERE STAFF.STAFF_ID=TODOLIST.STAFF_ID_FOR)\\, (SELECT COUNT(TODOLIST_NOTES.TODOLIST_ID) FROM TODOLIST_NOTES WHERE TODOLIST.TODOLIST_ID=TODOLIST_NOTES.TODOLIST_ID) AS TODOLIST_INDIVIDUAL FROM TODOLIST LEFT JOIN USER ON TODOLIST.STAFF_ID_FROM=USER.USER_ID WHERE (TODOLIST.STAFF_ID_FROM='%i' OR TODOLIST.USER_ID='%i') AND TODOLIST.STAFF_ID_FOR IS NOT '%i' AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NULL ORDER BY TODOLIST.TODOLIST_DUEDATE ASC\\\""
+					"text" : "sprintf sqlout \\\"SELECT TODOLIST.TODOLIST_ID\\, URGENT\\, UNREAD\\, TODOLIST.TODOLIST_NAME\\, TODOLIST.TODOLIST_LASTNAME\\, TODOLIST.TODOLIST_ITEM\\, TODOLIST.TIMESTAMP\\, (JULIANDAY(DATETIME('NOW'\\, 'LOCALTIME'))-JULIANDAY(TODOLIST.TIMESTAMP))\\, TODOLIST.TODOLIST_DUEDATE\\, (SELECT STAFF.STAFF_NAME FROM STAFF WHERE STAFF.STAFF_ID=TODOLIST.STAFF_ID_FOR)\\, (SELECT COUNT(TODOLIST_NOTES.TODOLIST_ID) FROM TODOLIST_NOTES WHERE TODOLIST.TODOLIST_ID=TODOLIST_NOTES.TODOLIST_ID) AS TODOLIST_INDIVIDUAL FROM TODOLIST LEFT JOIN USER ON TODOLIST.STAFF_ID_FROM=USER.USER_ID WHERE TODOLIST.STAFF_ID_FROM='%i' AND TODOLIST.STAFF_ID_FOR IS NOT '%i' AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NULL ORDER BY TODOLIST.TODOLIST_DUEDATE ASC\\\""
 				}
 
 			}
@@ -7060,7 +7092,7 @@
 									"color" : [ 0.435294117647059, 0.741176470588235, 0.403921568627451, 1.0 ],
 									"fontsize" : 18.0,
 									"id" : "obj-117",
-									"items" : "<empty>",
+									"items" : "Role",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -7546,8 +7578,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -7557,7 +7587,9 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-
+,
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -7665,10 +7697,6 @@
 											}
 , 											{
 												"name" : "s_161006_G!",
-												"comment" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-												}
-,
 												"message" : 												{
 													"bgfillcolor" : 													{
 														"type" : "color",
@@ -7682,6 +7710,10 @@
 
 												}
 ,
+												"comment" : 												{
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+												}
+,
 												"parentstyle" : "",
 												"multi" : 1
 											}
@@ -7693,7 +7725,6 @@
 , 											{
 												"name" : "simple-2",
 												"default" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -7703,7 +7734,8 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-
+,
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
 												"parentstyle" : "default",
@@ -7755,7 +7787,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 721.15625, 676.0, 698.6875, 50.0 ],
-									"text" : "sprintf exec \\\"INSERT INTO TODOLIST ('TODOLIST_NAME'\\, 'TODOLIST_LASTNAME'\\, 'TODOLIST_ITEM'\\, 'TODOLIST_DUEDATE'\\, 'USER_ID'\\, 'STAFF_ID_FROM'\\, 'UNREAD'\\, 'URGENT'\\, 'STAFF_ID_FOR') VALUES ('%s'\\, '%s'\\, '%s'\\, '%s'\\, '%s'\\, '%s'\\, '0'\\, '%i'\\, NULL)\\\""
+									"text" : "sprintf exec \\\"INSERT INTO TODOLIST ('TODOLIST_NAME'\\, 'TODOLIST_LASTNAME'\\, 'TODOLIST_ITEM'\\, 'TODOLIST_DUEDATE'\\, 'USER_ID'\\, 'STAFF_ID_FROM'\\, 'UNREAD'\\, 'URGENT'\\, 'STAFF_ID_FOR') VALUES ('%s'\\, '%s'\\, '%s'\\, '%s'\\, '%s'\\, '%s'\\, '1'\\, '%i'\\, NULL)\\\""
 								}
 
 							}
@@ -9016,8 +9048,6 @@
 , 															{
 																"name" : "_myStyle",
 																"default" : 																{
-																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -9027,7 +9057,9 @@
 																		"proportion" : 0.39,
 																		"autogradient" : 0
 																	}
-
+,
+																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -9090,10 +9122,6 @@
 															}
 , 															{
 																"name" : "s_161006_G!",
-																"comment" : 																{
-																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-																}
-,
 																"message" : 																{
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
@@ -9107,6 +9135,10 @@
 
 																}
 ,
+																"comment" : 																{
+																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+																}
+,
 																"parentstyle" : "",
 																"multi" : 1
 															}
@@ -9118,7 +9150,6 @@
 , 															{
 																"name" : "simple-2",
 																"default" : 																{
-																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -9128,7 +9159,8 @@
 																		"proportion" : 0.39,
 																		"autogradient" : 0
 																	}
-
+,
+																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 																}
 ,
 																"parentstyle" : "default",
@@ -9640,8 +9672,6 @@
 , 															{
 																"name" : "_myStyle",
 																"default" : 																{
-																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -9651,7 +9681,9 @@
 																		"proportion" : 0.39,
 																		"autogradient" : 0
 																	}
-
+,
+																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -9714,10 +9746,6 @@
 															}
 , 															{
 																"name" : "s_161006_G!",
-																"comment" : 																{
-																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-																}
-,
 																"message" : 																{
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
@@ -9731,6 +9759,10 @@
 
 																}
 ,
+																"comment" : 																{
+																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+																}
+,
 																"parentstyle" : "",
 																"multi" : 1
 															}
@@ -9742,7 +9774,6 @@
 , 															{
 																"name" : "simple-2",
 																"default" : 																{
-																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -9752,7 +9783,8 @@
 																		"proportion" : 0.39,
 																		"autogradient" : 0
 																	}
-
+,
+																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 																}
 ,
 																"parentstyle" : "default",
@@ -10216,8 +10248,6 @@
 , 															{
 																"name" : "_myStyle",
 																"default" : 																{
-																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -10227,7 +10257,9 @@
 																		"proportion" : 0.39,
 																		"autogradient" : 0
 																	}
-
+,
+																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -10254,10 +10286,6 @@
 															}
 , 															{
 																"name" : "s_161006_G!",
-																"comment" : 																{
-																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-																}
-,
 																"message" : 																{
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
@@ -10271,6 +10299,10 @@
 
 																}
 ,
+																"comment" : 																{
+																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+																}
+,
 																"parentstyle" : "",
 																"multi" : 1
 															}
@@ -10282,7 +10314,6 @@
 , 															{
 																"name" : "simple-2",
 																"default" : 																{
-																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -10292,7 +10323,8 @@
 																		"proportion" : 0.39,
 																		"autogradient" : 0
 																	}
-
+,
+																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 																}
 ,
 																"parentstyle" : "default",
@@ -10394,8 +10426,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -10405,7 +10435,9 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-
+,
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -10468,10 +10500,6 @@
 											}
 , 											{
 												"name" : "s_161006_G!",
-												"comment" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-												}
-,
 												"message" : 												{
 													"bgfillcolor" : 													{
 														"type" : "color",
@@ -10485,6 +10513,10 @@
 
 												}
 ,
+												"comment" : 												{
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+												}
+,
 												"parentstyle" : "",
 												"multi" : 1
 											}
@@ -10496,7 +10528,6 @@
 , 											{
 												"name" : "simple-2",
 												"default" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -10506,7 +10537,8 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-
+,
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
 												"parentstyle" : "default",
@@ -13531,8 +13563,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -13542,7 +13572,9 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-
+,
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -13605,10 +13637,6 @@
 											}
 , 											{
 												"name" : "s_161006_G!",
-												"comment" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-												}
-,
 												"message" : 												{
 													"bgfillcolor" : 													{
 														"type" : "color",
@@ -13622,6 +13650,10 @@
 
 												}
 ,
+												"comment" : 												{
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+												}
+,
 												"parentstyle" : "",
 												"multi" : 1
 											}
@@ -13633,7 +13665,6 @@
 , 											{
 												"name" : "simple-2",
 												"default" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -13643,7 +13674,8 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-
+,
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
 												"parentstyle" : "default",
@@ -15799,8 +15831,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -15810,7 +15840,9 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -15873,10 +15905,6 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -15890,6 +15918,10 @@
 
 								}
 ,
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -15901,7 +15933,6 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -15911,7 +15942,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "default",
@@ -17120,8 +17152,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -17131,7 +17161,9 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -17194,10 +17226,6 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -17211,6 +17239,10 @@
 
 								}
 ,
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -17222,7 +17254,6 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -17232,7 +17263,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "default",
@@ -18845,8 +18877,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -18856,7 +18886,9 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-
+,
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -18919,10 +18951,6 @@
 											}
 , 											{
 												"name" : "s_161006_G!",
-												"comment" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-												}
-,
 												"message" : 												{
 													"bgfillcolor" : 													{
 														"type" : "color",
@@ -18936,6 +18964,10 @@
 
 												}
 ,
+												"comment" : 												{
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+												}
+,
 												"parentstyle" : "",
 												"multi" : 1
 											}
@@ -18947,7 +18979,6 @@
 , 											{
 												"name" : "simple-2",
 												"default" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -18957,7 +18988,8 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-
+,
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
 												"parentstyle" : "default",
@@ -19466,8 +19498,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -19477,7 +19507,9 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-
+,
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -19540,10 +19572,6 @@
 											}
 , 											{
 												"name" : "s_161006_G!",
-												"comment" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-												}
-,
 												"message" : 												{
 													"bgfillcolor" : 													{
 														"type" : "color",
@@ -19557,6 +19585,10 @@
 
 												}
 ,
+												"comment" : 												{
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+												}
+,
 												"parentstyle" : "",
 												"multi" : 1
 											}
@@ -19568,7 +19600,6 @@
 , 											{
 												"name" : "simple-2",
 												"default" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -19578,7 +19609,8 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-
+,
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
 												"parentstyle" : "default",
@@ -20754,20 +20786,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-28", 1 ],
-					"source" : [ "obj-185", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-185", 0 ],
-					"source" : [ "obj-186", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-124", 0 ],
 					"source" : [ "obj-19", 0 ]
 				}
@@ -20994,14 +21012,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-186", 0 ],
-					"source" : [ "obj-46", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-28", 2 ],
+					"destination" : [ "obj-28", 1 ],
 					"source" : [ "obj-46", 3 ]
 				}
 
@@ -21482,8 +21493,6 @@
 , 			{
 				"name" : "_myStyle",
 				"default" : 				{
-					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -21493,7 +21502,9 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-
+,
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -21601,10 +21612,6 @@
 			}
 , 			{
 				"name" : "s_161006_G!",
-				"comment" : 				{
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-				}
-,
 				"message" : 				{
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -21618,6 +21625,10 @@
 
 				}
 ,
+				"comment" : 				{
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				}
+,
 				"parentstyle" : "",
 				"multi" : 1
 			}
@@ -21629,7 +21640,6 @@
 , 			{
 				"name" : "simple-2",
 				"default" : 				{
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -21639,7 +21649,8 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-
+,
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 				}
 ,
 				"parentstyle" : "default",
