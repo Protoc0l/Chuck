@@ -924,7 +924,8 @@
 					"id" : "obj-201",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -936,7 +937,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 180.0, 85.0, 1483.0, 887.0 ],
+						"rect" : [ 180.0, 85.0, 1578.0, 887.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -965,6 +966,30 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-16",
+									"index" : 1,
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 267.0, 426.0, 30.0, 30.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-15",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"patching_rect" : [ 267.0, 397.0, 100.0, 22.0 ],
+									"text" : "t 0"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-11",
 									"maxclass" : "newobj",
@@ -1523,7 +1548,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 118.0, 99.0, 100.0, 22.0 ],
+									"patching_rect" : [ 120.0, 161.0, 100.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -2227,7 +2252,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 120.0, 66.0, 166.0, 22.0 ],
+									"patching_rect" : [ 120.0, 135.0, 166.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -2245,7 +2270,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1110.0, 307.0, 217.0, 20.0 ],
+									"patching_rect" : [ 1224.0, 333.0, 217.0, 20.0 ],
 									"text" : "Mark note item sent back to to do list"
 								}
 
@@ -2256,7 +2281,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 612.0, 506.0, 150.0, 20.0 ],
+									"patching_rect" : [ 726.0, 532.0, 150.0, 20.0 ],
 									"text" : "Mark note item completed"
 								}
 
@@ -2268,7 +2293,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "bang" ],
-									"patching_rect" : [ 717.0, 277.0, 379.5, 22.0 ],
+									"patching_rect" : [ 831.0, 303.0, 379.5, 22.0 ],
 									"text" : "t b b"
 								}
 
@@ -2281,7 +2306,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1197.5, 359.0, 99.0, 36.0 ],
+									"patching_rect" : [ 1311.5, 385.0, 99.0, 36.0 ],
 									"text" : "\"Sent back to To Do List\""
 								}
 
@@ -2293,7 +2318,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1077.5, 387.0, 126.0, 22.0 ],
+									"patching_rect" : [ 1191.5, 413.0, 126.0, 22.0 ],
 									"text" : "v TODOLIST_ITEM"
 								}
 
@@ -2305,7 +2330,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1317.5, 391.0, 64.0, 22.0 ],
+									"patching_rect" : [ 1431.5, 385.0, 64.0, 22.0 ],
 									"text" : "v Staff_ID"
 								}
 
@@ -2317,7 +2342,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "bang", "bang", "" ],
-									"patching_rect" : [ 1077.5, 329.0, 259.0, 22.0 ],
+									"patching_rect" : [ 1191.5, 355.0, 259.0, 22.0 ],
 									"text" : "t b b s"
 								}
 
@@ -2328,7 +2353,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1077.5, 486.0, 106.5, 22.0 ],
+									"patching_rect" : [ 1191.5, 512.0, 106.5, 22.0 ],
 									"text" : "s ---databaselocal"
 								}
 
@@ -2341,7 +2366,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1077.5, 418.0, 259.0, 64.0 ],
+									"patching_rect" : [ 1191.5, 444.0, 259.0, 64.0 ],
 									"text" : "sprintf exec \\\"INSERT INTO TODOLIST_NOTES ('TODOLIST_ID'\\, 'TODOLIST_NOTE'\\, STAFF_ID) VALUES ('%s'\\, '%s'\\, '%s')\\\""
 								}
 
@@ -2353,7 +2378,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 716.0, 560.0, 99.0, 22.0 ],
+									"patching_rect" : [ 830.0, 586.0, 99.0, 22.0 ],
 									"text" : "Completed"
 								}
 
@@ -2365,7 +2390,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 596.0, 588.0, 126.0, 22.0 ],
+									"patching_rect" : [ 710.0, 614.0, 126.0, 22.0 ],
 									"text" : "v TODOLIST_ITEM"
 								}
 
@@ -2377,7 +2402,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 836.0, 592.0, 64.0, 22.0 ],
+									"patching_rect" : [ 950.0, 618.0, 64.0, 22.0 ],
 									"text" : "v Staff_ID"
 								}
 
@@ -2389,7 +2414,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "bang", "bang", "" ],
-									"patching_rect" : [ 596.0, 530.0, 259.0, 22.0 ],
+									"patching_rect" : [ 710.0, 556.0, 259.0, 22.0 ],
 									"text" : "t b b s"
 								}
 
@@ -2400,7 +2425,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 596.0, 687.0, 106.5, 22.0 ],
+									"patching_rect" : [ 710.0, 713.0, 106.5, 22.0 ],
 									"text" : "s ---databaselocal"
 								}
 
@@ -2413,7 +2438,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 596.0, 619.0, 259.0, 64.0 ],
+									"patching_rect" : [ 710.0, 645.0, 259.0, 64.0 ],
 									"text" : "sprintf exec \\\"INSERT INTO TODOLIST_NOTES ('TODOLIST_ID'\\, 'TODOLIST_NOTE'\\, STAFF_ID) VALUES ('%s'\\, '%s'\\, '%s')\\\""
 								}
 
@@ -2426,7 +2451,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "bang", "bang" ],
-									"patching_rect" : [ 234.0, 233.0, 223.0, 36.0 ],
+									"patching_rect" : [ 348.0, 259.0, 223.0, 36.0 ],
 									"text" : "dialog @mode 2 @label To Do List Item Complete?"
 								}
 
@@ -2439,7 +2464,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "bang", "bang" ],
-									"patching_rect" : [ 717.0, 233.0, 223.0, 36.0 ],
+									"patching_rect" : [ 831.0, 259.0, 223.0, 36.0 ],
 									"text" : "dialog @mode 2 @label To Do List Item Incomplete?"
 								}
 
@@ -2451,7 +2476,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 153.0, 135.0, 100.0, 22.0 ],
+									"patching_rect" : [ 267.0, 161.0, 100.0, 22.0 ],
 									"text" : "v TDL_done"
 								}
 
@@ -2475,7 +2500,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 44.0, 349.0, 100.0, 22.0 ],
+									"patching_rect" : [ 43.0, 418.0, 90.0, 22.0 ],
 									"text" : "s TDL_Refresh"
 								}
 
@@ -2486,7 +2511,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 153.0, 349.0, 100.0, 22.0 ],
+									"patching_rect" : [ 149.0, 418.0, 97.0, 22.0 ],
 									"text" : "s TDL_re_select"
 								}
 
@@ -2498,7 +2523,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 315.0, 371.0, 64.0, 22.0 ],
+									"patching_rect" : [ 429.0, 397.0, 64.0, 22.0 ],
 									"text" : "v Staff_ID"
 								}
 
@@ -2510,7 +2535,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "bang", "", "bang" ],
-									"patching_rect" : [ 315.0, 343.0, 300.0, 22.0 ],
+									"patching_rect" : [ 429.0, 369.0, 300.0, 22.0 ],
 									"text" : "t b s b"
 								}
 
@@ -2522,7 +2547,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "int" ],
-									"patching_rect" : [ 153.0, 177.0, 100.0, 22.0 ],
+									"patching_rect" : [ 267.0, 203.0, 100.0, 22.0 ],
 									"text" : "t b i"
 								}
 
@@ -2533,7 +2558,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 798.0, 435.0, 106.5, 22.0 ],
+									"patching_rect" : [ 912.0, 461.0, 106.5, 22.0 ],
 									"text" : "s ---databaselocal"
 								}
 
@@ -2545,7 +2570,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 717.0, 343.0, 100.0, 22.0 ],
+									"patching_rect" : [ 831.0, 369.0, 100.0, 22.0 ],
 									"text" : "route ID"
 								}
 
@@ -2558,7 +2583,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 798.0, 367.0, 254.0, 50.0 ],
+									"patching_rect" : [ 912.0, 393.0, 254.0, 50.0 ],
 									"text" : "sprintf exec \\\"UPDATE TODOLIST SET TIME_TDL_ITEM_COMPLETED=NULL\\, UNREAD='0' WHERE TODOLIST_ID='%s'\\\""
 								}
 
@@ -2570,7 +2595,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 717.0, 319.0, 126.0, 22.0 ],
+									"patching_rect" : [ 831.0, 345.0, 126.0, 22.0 ],
 									"text" : "v TODOLIST_ITEM"
 								}
 
@@ -2582,7 +2607,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 234.0, 207.0, 985.0, 22.0 ],
+									"patching_rect" : [ 348.0, 233.0, 985.0, 22.0 ],
 									"text" : "route 0 1"
 								}
 
@@ -2593,7 +2618,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 315.0, 497.0, 106.5, 22.0 ],
+									"patching_rect" : [ 429.0, 523.0, 106.5, 22.0 ],
 									"text" : "s ---databaselocal"
 								}
 
@@ -2605,7 +2630,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 234.0, 319.0, 100.0, 22.0 ],
+									"patching_rect" : [ 348.0, 345.0, 100.0, 22.0 ],
 									"text" : "route ID"
 								}
 
@@ -2618,7 +2643,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 315.0, 395.0, 203.0, 91.0 ],
+									"patching_rect" : [ 429.0, 421.0, 203.0, 91.0 ],
 									"text" : "sprintf exec \\\"UPDATE TODOLIST SET TIME_TDL_ITEM_COMPLETED=(DATETIME('NOW'\\, 'LOCALTIME'))\\, STAFF_ID_FOR='%s'\\, UNREAD='0' WHERE TODOLIST_ID='%s'\\\""
 								}
 
@@ -2630,7 +2655,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 234.0, 295.0, 126.0, 22.0 ],
+									"patching_rect" : [ 348.0, 321.0, 126.0, 22.0 ],
 									"text" : "v TODOLIST_ITEM"
 								}
 
@@ -2660,7 +2685,15 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-126", 0 ],
-									"order" : 1,
+									"order" : 2,
+									"source" : [ "obj-11", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-15", 0 ],
+									"order" : 0,
 									"source" : [ "obj-11", 0 ]
 								}
 
@@ -2668,7 +2701,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-189", 0 ],
-									"order" : 0,
+									"order" : 1,
 									"source" : [ "obj-11", 0 ]
 								}
 
@@ -2696,6 +2729,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-16", 0 ],
+									"source" : [ "obj-15", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-8", 1 ],
 									"source" : [ "obj-17", 0 ]
 								}
@@ -2711,7 +2751,15 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-126", 0 ],
-									"order" : 1,
+									"order" : 2,
+									"source" : [ "obj-19", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-15", 0 ],
+									"order" : 0,
 									"source" : [ "obj-19", 0 ]
 								}
 
@@ -2719,7 +2767,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-189", 0 ],
-									"order" : 0,
+									"order" : 1,
 									"source" : [ "obj-19", 0 ]
 								}
 
@@ -5278,8 +5326,8 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 237.0, 191.0, 183.0, 22.0 ],
-													"text" : "title \"Notes for To Do List\""
+													"patching_rect" : [ 237.0, 191.0, 233.0, 22.0 ],
+													"text" : "title \"Notes Thread for Selected To Do List\""
 												}
 
 											}
@@ -7496,17 +7544,6 @@
 					}
 ,
 					"text" : "p TDL_NOTES"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-105",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1452.666666666666515, 1031.39156711101532, 173.333333333333258, 20.0 ],
-					"text" : "OLD - mark as item completed"
 				}
 
 			}
@@ -27901,6 +27938,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-17", 1 ],
 					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 1 ],
+					"midpoints" : [ 1257.833333333333258, 1080.0, 1355.0, 1080.0, 1355.0, 1002.0, 1312.0, 1002.0 ],
+					"source" : [ "obj-201", 0 ]
 				}
 
 			}
