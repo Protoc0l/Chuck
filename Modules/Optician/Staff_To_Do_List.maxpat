@@ -7598,6 +7598,31 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 1047.0, 31.0, 434.0, 20.0 ],
+									"text" : "OLD - TODOLISTERRORd cause flash only when selected and thus TDLITEM"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"linecount" : 2,
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 989.0, 55.0, 674.0, 36.0 ],
+									"presentation_linecount" : 2,
+									"text" : "sprintf sqlout \\\"SELECT COUNT(ALL) AS URGENT_UNREAD3 FROM TODOLIST_GROUP WHERE TODOLIST_GROUP.STAFF_ID='%i' AND TODOLIST_GROUP.TODOLIST_ID='%s' AND TODOLIST_GROUP.URGENT='1'\\\""
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-136",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
@@ -7641,19 +7666,6 @@
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 214.0, 837.0, 100.0, 22.0 ],
 									"text" : "+"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-135",
-									"linecount" : 2,
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 962.0, 324.0, 673.0, 50.0 ],
-									"text" : "sqlout \"SELECT COUNT(ALL) AS URGENT_UNREAD4 FROM TODOLIST_GROUP WHERE TODOLIST_GROUP.STAFF_ID='3' AND TODOLIST_GROUP.TODOLIST_ID='1175' AND TODOLIST_GROUP.UNREAD='1'\""
 								}
 
 							}
@@ -8165,11 +8177,11 @@
 									"id" : "obj-4",
 									"linecount" : 2,
 									"maxclass" : "newobj",
-									"numinlets" : 2,
+									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 970.333333333333258, 270.75, 676.0, 36.0 ],
-									"text" : "sprintf sqlout \\\"SELECT COUNT(ALL) AS URGENT_UNREAD4 FROM TODOLIST_GROUP WHERE TODOLIST_GROUP.STAFF_ID='%i' AND TODOLIST_GROUP.TODOLIST_ID='%s' AND TODOLIST_GROUP.UNREAD='1'\\\""
+									"patching_rect" : [ 970.333333333333258, 270.75, 550.0, 36.0 ],
+									"text" : "sprintf sqlout \\\"SELECT COUNT(ALL) AS URGENT_UNREAD4 FROM TODOLIST_GROUP WHERE TODOLIST_GROUP.STAFF_ID='%i' AND TODOLIST_GROUP.UNREAD='1'\\\""
 								}
 
 							}
@@ -8178,11 +8190,11 @@
 									"id" : "obj-6",
 									"linecount" : 2,
 									"maxclass" : "newobj",
-									"numinlets" : 2,
+									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 866.0, 226.0, 674.0, 36.0 ],
-									"text" : "sprintf sqlout \\\"SELECT COUNT(ALL) AS URGENT_UNREAD3 FROM TODOLIST_GROUP WHERE TODOLIST_GROUP.STAFF_ID='%i' AND TODOLIST_GROUP.TODOLIST_ID='%s' AND TODOLIST_GROUP.URGENT='1'\\\""
+									"patching_rect" : [ 866.0, 226.0, 548.0, 36.0 ],
+									"text" : "sprintf sqlout \\\"SELECT COUNT(ALL) AS URGENT_UNREAD3 FROM TODOLIST_GROUP WHERE TODOLIST_GROUP.STAFF_ID='%i' AND TODOLIST_GROUP.URGENT='1'\\\""
 								}
 
 							}
@@ -9572,17 +9584,8 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-135", 1 ],
-									"order" : 0,
-									"source" : [ "obj-4", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-96", 0 ],
 									"midpoints" : [ 979.833333333333258, 314.0, 876.0, 314.0, 876.0, 315.0, 875.5, 315.0 ],
-									"order" : 1,
 									"source" : [ "obj-4", 0 ]
 								}
 
@@ -9930,24 +9933,6 @@
 									"midpoints" : [ 936.5, 444.0, 794.5, 444.0 ],
 									"order" : 1,
 									"source" : [ "obj-94", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-4", 1 ],
-									"midpoints" : [ 1088.166666666666515, 213.0, 1636.833333333333258, 213.0 ],
-									"order" : 0,
-									"source" : [ "obj-99", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-6", 1 ],
-									"midpoints" : [ 1088.166666666666515, 213.0, 1530.5, 213.0 ],
-									"order" : 1,
-									"source" : [ "obj-99", 0 ]
 								}
 
 							}
