@@ -41,6 +41,42 @@
 		"title" : "Right Click Menu",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-89",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 782.0, 939.0, 100.0, 22.0 ],
+					"text" : "s TDL_delete"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-209",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 394.0, 643.0, 100.0, 22.0 ],
+					"text" : "r STDL_unread"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-208",
+					"linecount" : 3,
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 274.333333333333314, 622.0, 49.0, 50.0 ],
+					"text" : "r STDL_urgent"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-88",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -2830,7 +2866,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -2841,7 +2876,8 @@
 										"autogradient" : 0
 									}
 ,
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2949,10 +2985,6 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -2966,6 +2998,10 @@
 
 								}
 ,
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -2977,7 +3013,6 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -2987,7 +3022,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "default",
@@ -3851,7 +3887,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -3862,7 +3897,8 @@
 										"autogradient" : 0
 									}
 ,
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3925,10 +3961,6 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -3942,6 +3974,10 @@
 
 								}
 ,
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -3953,7 +3989,6 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -3963,7 +3998,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "default",
@@ -5004,7 +5040,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -5015,7 +5050,8 @@
 										"autogradient" : 0
 									}
 ,
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -5123,10 +5159,6 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -5140,6 +5172,10 @@
 
 								}
 ,
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -5151,7 +5187,6 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -5161,7 +5196,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "default",
@@ -6347,7 +6383,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 825.0, 1055.0, 64.0, 22.0 ],
+					"patching_rect" : [ 863.0, 1099.0, 64.0, 22.0 ],
 					"text" : "v Staff_ID"
 				}
 
@@ -6359,7 +6395,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 825.0, 1031.0, 254.0, 22.0 ],
+					"patching_rect" : [ 863.0, 1075.0, 254.0, 22.0 ],
 					"text" : "t b s"
 				}
 
@@ -6371,7 +6407,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "int" ],
-					"patching_rect" : [ 663.0, 913.0, 100.0, 22.0 ],
+					"patching_rect" : [ 663.0, 913.0, 138.0, 22.0 ],
 					"text" : "t b i"
 				}
 
@@ -6406,7 +6442,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1173.5, 1085.0, 106.5, 22.0 ],
+					"patching_rect" : [ 1211.5, 1129.0, 106.5, 22.0 ],
 					"text" : "s ---databaselocal"
 				}
 
@@ -6418,7 +6454,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1092.5, 993.0, 100.0, 22.0 ],
+					"patching_rect" : [ 1130.5, 1037.0, 100.0, 22.0 ],
 					"text" : "route ID"
 				}
 
@@ -6431,7 +6467,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1173.5, 1017.0, 254.0, 50.0 ],
+					"patching_rect" : [ 1211.5, 1061.0, 254.0, 50.0 ],
 					"text" : "sprintf exec \\\"UPDATE TODOLIST SET TIME_TDL_ITEM_COMPLETED=NULL\\, UNREAD='0' WHERE TODOLIST_ID='%s'\\\""
 				}
 
@@ -6443,7 +6479,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1092.5, 969.0, 126.0, 22.0 ],
+					"patching_rect" : [ 1130.5, 1013.0, 126.0, 22.0 ],
 					"text" : "v TODOLIST_ITEM"
 				}
 
@@ -6515,7 +6551,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 744.0, 943.0, 716.0, 22.0 ],
+					"patching_rect" : [ 782.0, 987.0, 716.0, 22.0 ],
 					"text" : "route 1 0"
 				}
 
@@ -6550,7 +6586,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 825.0, 1147.0, 106.5, 22.0 ],
+					"patching_rect" : [ 863.0, 1191.0, 106.5, 22.0 ],
 					"text" : "s ---databaselocal"
 				}
 
@@ -6562,7 +6598,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 744.0, 1007.0, 100.0, 22.0 ],
+					"patching_rect" : [ 782.0, 1051.0, 100.0, 22.0 ],
 					"text" : "route ID"
 				}
 
@@ -6575,7 +6611,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 825.0, 1079.0, 259.0, 64.0 ],
+					"patching_rect" : [ 863.0, 1123.0, 259.0, 64.0 ],
 					"text" : "sprintf exec \\\"UPDATE TODOLIST SET TIME_TDL_ITEM_COMPLETED=(DATETIME('NOW'\\, 'LOCALTIME'))\\, STAFF_ID_FOR='%s'\\, UNREAD='0' WHERE TODOLIST_ID='%s'\\\""
 				}
 
@@ -6587,7 +6623,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 744.0, 983.0, 126.0, 22.0 ],
+					"patching_rect" : [ 782.0, 1027.0, 126.0, 22.0 ],
 					"text" : "v TODOLIST_ITEM"
 				}
 
@@ -6932,7 +6968,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-45", 0 ],
+					"destination" : [ "obj-89", 0 ],
 					"source" : [ "obj-19", 1 ]
 				}
 
@@ -6948,6 +6984,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-17", 1 ],
 					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-208", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-209", 0 ]
 				}
 
 			}
@@ -7684,7 +7734,6 @@
 , 			{
 				"name" : "_myStyle",
 				"default" : 				{
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -7695,7 +7744,8 @@
 						"autogradient" : 0
 					}
 ,
-					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
+					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -7803,10 +7853,6 @@
 			}
 , 			{
 				"name" : "s_161006_G!",
-				"comment" : 				{
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-				}
-,
 				"message" : 				{
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -7820,6 +7866,10 @@
 
 				}
 ,
+				"comment" : 				{
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				}
+,
 				"parentstyle" : "",
 				"multi" : 1
 			}
@@ -7831,7 +7881,6 @@
 , 			{
 				"name" : "simple-2",
 				"default" : 				{
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -7841,7 +7890,8 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-
+,
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 				}
 ,
 				"parentstyle" : "default",
