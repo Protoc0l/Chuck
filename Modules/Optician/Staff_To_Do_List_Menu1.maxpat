@@ -1188,8 +1188,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1478,7 +1478,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 634.0, 668.0, 644.0, 639.0 ],
+						"rect" : [ 638.0, 340.0, 644.0, 639.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1606,9 +1606,9 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 4,
-									"outlettype" : [ "int", "bang", "int", "bang" ],
+									"outlettype" : [ "int", "int", "bang", "bang" ],
 									"patching_rect" : [ 50.0, 77.0, 168.0, 22.0 ],
-									"text" : "t i b i b"
+									"text" : "t i i b b"
 								}
 
 							}
@@ -1685,7 +1685,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-25", 0 ],
-									"source" : [ "obj-1", 2 ]
+									"source" : [ "obj-1", 1 ]
 								}
 
 							}
@@ -1700,8 +1700,8 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-33", 0 ],
-									"midpoints" : [ 109.166666666666657, 186.0, 109.0, 186.0 ],
-									"source" : [ "obj-1", 1 ]
+									"midpoints" : [ 158.833333333333314, 186.0, 109.0, 186.0 ],
+									"source" : [ "obj-1", 2 ]
 								}
 
 							}
@@ -1821,7 +1821,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1377.0, 150.0, 658.0, 571.0 ],
+						"rect" : [ 1220.0, 150.0, 658.0, 571.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3788,8 +3788,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
