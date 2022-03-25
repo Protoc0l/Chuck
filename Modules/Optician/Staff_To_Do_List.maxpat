@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 384.0, 477.0, 1487.0, 929.0 ],
+		"rect" : [ 113.0, 85.0, 1487.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -70,7 +70,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 672.0, 264.0, 1557.0, 906.0 ],
+						"rect" : [ 174.0, 147.0, 1557.0, 906.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -100,6 +100,18 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 56.0, 35.0, 100.0, 22.0 ],
+									"text" : "delay 100"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-120",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -115,7 +127,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 808.0, 680.0, 1184.0, 374.0 ],
+										"rect" : [ -1708.0, 280.0, 1671.0, 629.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -144,6 +156,322 @@
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
+												"box" : 												{
+													"id" : "obj-7",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 1122.0, -129.0, 100.0, 22.0 ],
+													"text" : "loadmess 0"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-8",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 1220.0, 33.0, 194.0, 22.0 ],
+													"text" : "sprintf \\\"OR TODOLIST.%s='1'\\\""
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-9",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 964.0, 106.0, 100.0, 22.0 ],
+													"text" : "tosymbol"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-10",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 5,
+													"outlettype" : [ "bang", "bang", "bang", "zlclear", " " ],
+													"patching_rect" : [ 964.0, -99.0, 100.0, 22.0 ],
+													"text" : "t b b b zlclear \" \""
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-11",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "UNREAD" ],
+													"patching_rect" : [ 1220.0, -21.0, 100.0, 22.0 ],
+													"text" : "t UNREAD"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-12",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "bang", "" ],
+													"patching_rect" : [ 1220.0, -47.0, 100.0, 22.0 ],
+													"text" : "select 0"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-13",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "URGENT" ],
+													"patching_rect" : [ 991.0, -21.0, 100.0, 22.0 ],
+													"text" : "t URGENT"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-19",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "bang", "" ],
+													"patching_rect" : [ 991.0, -47.0, 100.0, 22.0 ],
+													"text" : "select 0"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-20",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 1220.0, -71.0, 170.5, 22.0 ],
+													"text" : "v ALERT_UNREAD_DISPLAY"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-22",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 991.0, -71.0, 161.0, 22.0 ],
+													"text" : "v ALERT_URENT_DISPLAY"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-23",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
+													"patching_rect" : [ 964.0, 79.0, 59.0, 22.0 ],
+													"text" : "zl group"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-24",
+													"linecount" : 2,
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 991.0, 26.0, 193.0, 36.0 ],
+													"text" : "sprintf \\\"AND (TODOLIST.%s='1' %s)\\\""
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-126",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 1201.0, 251.0, 100.0, 22.0 ],
+													"text" : "loadmess 0"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-125",
+													"linecount" : 2,
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 1299.0, 413.0, 194.0, 36.0 ],
+													"text" : "sprintf \\\"OR TODOLIST_GROUP.%s='1'\\\""
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-123",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 1043.0, 486.0, 100.0, 22.0 ],
+													"text" : "tosymbol"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-102",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 5,
+													"outlettype" : [ "bang", "bang", "bang", "zlclear", " " ],
+													"patching_rect" : [ 1043.0, 281.0, 100.0, 22.0 ],
+													"text" : "t b b b zlclear \" \""
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-100",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "UNREAD" ],
+													"patching_rect" : [ 1299.0, 359.0, 100.0, 22.0 ],
+													"text" : "t UNREAD"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-101",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "bang", "" ],
+													"patching_rect" : [ 1299.0, 333.0, 100.0, 22.0 ],
+													"text" : "select 0"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-99",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "URGENT" ],
+													"patching_rect" : [ 1070.0, 359.0, 100.0, 22.0 ],
+													"text" : "t URGENT"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-96",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "bang", "" ],
+													"patching_rect" : [ 1070.0, 333.0, 100.0, 22.0 ],
+													"text" : "select 0"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-91",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 1299.0, 309.0, 170.5, 22.0 ],
+													"text" : "v ALERT_UNREAD_DISPLAY"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-93",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 1070.0, 309.0, 161.0, 22.0 ],
+													"text" : "v ALERT_URENT_DISPLAY"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-88",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
+													"patching_rect" : [ 1043.0, 459.0, 59.0, 22.0 ],
+													"text" : "zl group"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-83",
+													"linecount" : 2,
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 1070.0, 406.0, 193.0, 36.0 ],
+													"text" : "sprintf \\\"AND (TODOLIST_GROUP.%s='1' %s)\\\""
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-2",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 749.5, 132.999996900558472, 100.0, 22.0 ],
+													"text" : "v USER_ID"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-44",
+													"linecount" : 4,
+													"maxclass" : "newobj",
+													"numinlets" : 3,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 45.0, 156.999996900558472, 1428.0, 64.0 ],
+													"text" : "sprintf sqlout \\\"SELECT TODOLIST.TODOLIST_ID\\, TODOLIST.TODOLIST_NAME\\, TODOLIST.TODOLIST_LASTNAME\\, TODOLIST.TODOLIST_ITEM\\, TODOLIST.TIMESTAMP\\, (JULIANDAY(DATETIME('NOW'\\, 'LOCALTIME'))-JULIANDAY(TODOLIST.TIMESTAMP))\\, TODOLIST.TODOLIST_DUEDATE\\, (SELECT STAFF.STAFF_NAME FROM STAFF WHERE STAFF.STAFF_ID=TODOLIST.STAFF_ID_FROM)\\, (SELECT COUNT(TODOLIST_NOTES.TODOLIST_ID) FROM TODOLIST_NOTES WHERE TODOLIST.TODOLIST_ID=TODOLIST_NOTES.TODOLIST_ID)\\, TODOLIST.USER_ID\\, TODOLIST.URGENT\\, TODOLIST.UNREAD\\, 0\\, 0 AS ALERT_CREATE FROM TODOLIST LEFT JOIN USER ON TODOLIST.STAFF_ID_FROM=USER.USER_ID WHERE (TODOLIST.STAFF_ID_FOR='%i' OR TODOLIST.USER_ID='%s') AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NULL %s ORDER BY TODOLIST.TODOLIST_DUEDATE ASC\\\""
+												}
+
+											}
+, 											{
 												"box" : 												{
 													"id" : "obj-21",
 													"maxclass" : "newobj",
@@ -603,7 +931,7 @@
  ]
 													}
 ,
-													"patching_rect" : [ 164.105428814888, 48.315795183181763, 64.631705045700073, 22.0 ],
+													"patching_rect" : [ 89.105428814888, 26.999996900558472, 64.631705045700073, 22.0 ],
 													"saved_object_attributes" : 													{
 														"description" : "",
 														"digest" : "",
@@ -618,13 +946,12 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-18",
-													"linecount" : 2,
 													"maxclass" : "newobj",
-													"numinlets" : 1,
+													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 28.736899077892303, 162.999996900558472, 920.0, 36.0 ],
-													"text" : "sprintf \\\"(SELECT TODOLIST_GROUP.TODOLIST_ID FROM TODOLIST_GROUP WHERE (TODOLIST_GROUP.UNREAD='1' OR TODOLIST_GROUP.URGENT='1') AND TODOLIST_GROUP.STAFF_ID='%i')\\\""
+													"patching_rect" : [ 28.579008460044861, 292.999996900558472, 920.0, 22.0 ],
+													"text" : "sprintf \\\"(SELECT TODOLIST_GROUP.TODOLIST_ID FROM TODOLIST_GROUP WHERE TODOLIST_GROUP.STAFF_ID='%i' %s)\\\""
 												}
 
 											}
@@ -635,7 +962,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 28.579008460044861, 111.999996900558472, 73.0, 22.0 ],
+													"patching_rect" : [ 28.579008460044861, 119.999996900558472, 73.0, 22.0 ],
 													"text" : "fromsymbol"
 												}
 
@@ -647,7 +974,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 28.579008460044861, 84.999996900558472, 73.0, 22.0 ],
+													"patching_rect" : [ 28.579008460044861, 92.999996900558472, 73.0, 22.0 ],
 													"text" : "v Staff_ID"
 												}
 
@@ -657,10 +984,10 @@
 													"id" : "obj-17",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
-													"numoutlets" : 1,
-													"outlettype" : [ "bang" ],
-													"patching_rect" : [ 28.579008460044861, 60.999996900558472, 30.0, 22.0 ],
-													"text" : "t b"
+													"numoutlets" : 2,
+													"outlettype" : [ "bang", "bang" ],
+													"patching_rect" : [ 28.579008460044861, 64.999996900558472, 739.920991539955139, 22.0 ],
+													"text" : "t b b"
 												}
 
 											}
@@ -671,7 +998,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 2,
 													"outlettype" : [ "int", "int" ],
-													"patching_rect" : [ 28.579008460044861, 138.999996900558472, 935.315781235694885, 22.0 ],
+													"patching_rect" : [ 28.579008460044861, 264.999996900558472, 938.0, 22.0 ],
 													"text" : "t i i"
 												}
 
@@ -682,7 +1009,7 @@
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 28.579008460044861, 325.999996900558472, 108.0, 22.0 ],
+													"patching_rect" : [ 28.579008460044861, 451.999996900558472, 108.0, 22.0 ],
 													"text" : "s ---databaselocal"
 												}
 
@@ -695,7 +1022,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 28.579008460044861, 203.499996900558472, 935.315781235694885, 105.0 ],
+													"patching_rect" : [ 28.579008460044861, 329.499996900558472, 938.0, 105.0 ],
 													"text" : "sprintf sqlout \\\"SELECT TODOLIST.TODOLIST_ID\\, TODOLIST.TODOLIST_NAME\\, TODOLIST.TODOLIST_LASTNAME\\, TODOLIST.TODOLIST_ITEM\\, TODOLIST.TIMESTAMP\\, (JULIANDAY(DATETIME('NOW'\\, 'LOCALTIME'))-JULIANDAY(TODOLIST.TIMESTAMP))\\, TODOLIST.TODOLIST_DUEDATE\\, (SELECT STAFF.STAFF_NAME FROM STAFF WHERE STAFF.STAFF_ID=TODOLIST.STAFF_ID_FROM)\\, (SELECT COUNT(TODOLIST_NOTES.TODOLIST_ID) FROM TODOLIST_NOTES WHERE TODOLIST.TODOLIST_ID=TODOLIST_NOTES.TODOLIST_ID)\\, TODOLIST.USER_ID\\, TODOLIST.URGENT\\, TODOLIST.UNREAD\\, TODOLIST_GROUP.URGENT\\, TODOLIST_GROUP.UNREAD AS ALERT_CREATE FROM TODOLIST LEFT JOIN USER ON TODOLIST.STAFF_ID_FROM=USER.USER_ID LEFT OUTER JOIN TODOLIST_GROUP ON TODOLIST.TODOLIST_ID=TODOLIST_GROUP.TODOLIST_ID WHERE TODOLIST.TODOLIST_ID IN %s AND TODOLIST_GROUP.STAFF_ID='%i' AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NULL ORDER BY TODOLIST.TODOLIST_DUEDATE ASC\\\""
 												}
 
@@ -723,6 +1050,147 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-20", 0 ],
+													"midpoints" : [ 1014.0, -75.0, 1229.5, -75.0 ],
+													"source" : [ "obj-10", 2 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-22", 0 ],
+													"source" : [ "obj-10", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"color" : [ 0.929411764705882, 0.36078431372549, 0.866666666666667, 1.0 ],
+													"destination" : [ "obj-23", 0 ],
+													"source" : [ "obj-10", 3 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"color" : [ 0.929411764705882, 0.36078431372549, 0.866666666666667, 1.0 ],
+													"destination" : [ "obj-23", 0 ],
+													"source" : [ "obj-10", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-24", 1 ],
+													"source" : [ "obj-10", 4 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-125", 0 ],
+													"source" : [ "obj-100", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-100", 0 ],
+													"source" : [ "obj-101", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-83", 1 ],
+													"source" : [ "obj-102", 4 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"color" : [ 0.929411764705882, 0.36078431372549, 0.866666666666667, 1.0 ],
+													"destination" : [ "obj-88", 0 ],
+													"source" : [ "obj-102", 3 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"color" : [ 0.929411764705882, 0.36078431372549, 0.866666666666667, 1.0 ],
+													"destination" : [ "obj-88", 0 ],
+													"source" : [ "obj-102", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-91", 0 ],
+													"midpoints" : [ 1093.0, 305.0, 1308.5, 305.0 ],
+													"source" : [ "obj-102", 2 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-93", 0 ],
+													"source" : [ "obj-102", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-8", 0 ],
+													"source" : [ "obj-11", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-11", 0 ],
+													"source" : [ "obj-12", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-18", 1 ],
+													"source" : [ "obj-123", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-83", 1 ],
+													"source" : [ "obj-125", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-91", 0 ],
+													"order" : 0,
+													"source" : [ "obj-126", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-93", 0 ],
+													"order" : 1,
+													"source" : [ "obj-126", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-24", 0 ],
+													"source" : [ "obj-13", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-6", 0 ],
 													"source" : [ "obj-14", 0 ]
 												}
@@ -730,7 +1198,16 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-44", 0 ],
+													"order" : 0,
+													"source" : [ "obj-15", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-5", 0 ],
+													"order" : 1,
 													"source" : [ "obj-15", 0 ]
 												}
 
@@ -744,6 +1221,22 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-10", 0 ],
+													"order" : 1,
+													"source" : [ "obj-17", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-102", 0 ],
+													"order" : 0,
+													"source" : [ "obj-17", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-16", 0 ],
 													"source" : [ "obj-17", 0 ]
 												}
@@ -751,8 +1244,65 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-2", 0 ],
+													"order" : 2,
+													"source" : [ "obj-17", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-14", 0 ],
 													"source" : [ "obj-18", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-13", 0 ],
+													"source" : [ "obj-19", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-44", 1 ],
+													"source" : [ "obj-2", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-12", 0 ],
+													"source" : [ "obj-20", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-19", 0 ],
+													"source" : [ "obj-22", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-9", 0 ],
+													"source" : [ "obj-23", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-23", 0 ],
+													"source" : [ "obj-24", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-6", 0 ],
+													"source" : [ "obj-44", 0 ]
 												}
 
 											}
@@ -767,6 +1317,78 @@
 												"patchline" : 												{
 													"destination" : [ "obj-18", 0 ],
 													"source" : [ "obj-5", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-20", 0 ],
+													"order" : 0,
+													"source" : [ "obj-7", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-22", 0 ],
+													"order" : 1,
+													"source" : [ "obj-7", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-24", 1 ],
+													"source" : [ "obj-8", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-88", 0 ],
+													"source" : [ "obj-83", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-123", 0 ],
+													"source" : [ "obj-88", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-44", 2 ],
+													"source" : [ "obj-9", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-101", 0 ],
+													"source" : [ "obj-91", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-96", 0 ],
+													"source" : [ "obj-93", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-99", 0 ],
+													"source" : [ "obj-96", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-83", 0 ],
+													"source" : [ "obj-99", 0 ]
 												}
 
 											}
@@ -999,7 +1621,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 69.0, 46.0, 108.0, 22.0 ],
+									"patching_rect" : [ 56.0, 12.0, 108.0, 22.0 ],
 									"text" : "r ALERT_Refresh"
 								}
 
@@ -1650,7 +2272,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 1330.0, 395.0, 1188.0, 971.0 ],
+										"rect" : [ 400.0, 182.0, 1188.0, 770.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -3254,7 +3876,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 94.0, 74.0, 72.0, 22.0 ],
+									"patching_rect" : [ 94.0, 64.0, 72.0, 22.0 ],
 									"text" : "loadmess 1"
 								}
 
@@ -3267,7 +3889,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 94.0, 100.0, 72.0, 22.0 ],
-									"text" : "metro 2000"
+									"text" : "metro 5000"
 								}
 
 							}
@@ -3625,7 +4247,7 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-103", 0 ],
+									"destination" : [ "obj-3", 0 ],
 									"source" : [ "obj-1", 0 ]
 								}
 
@@ -3809,6 +4431,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-71", 0 ],
 									"source" : [ "obj-156", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-103", 0 ],
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -4454,7 +5083,6 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"title" : "Alert Bar",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-91",
@@ -4560,9 +5188,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "", "" ],
-									"patching_rect" : [ 86.0, 638.0, 126.0, 22.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 222.671045124530792, 101.535050302743912, 126.0, 22.0 ],
+									"patching_rect" : [ 925.971981257200241, 759.0, 126.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0,
 										"precision" : 6
@@ -4783,7 +5409,6 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"comment" : "",
@@ -4792,7 +5417,7 @@
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
-													"outlettype" : [ "next" ],
+													"outlettype" : [ "prev" ],
 													"patching_rect" : [ 220.0, 568.0, 30.0, 30.0 ]
 												}
 
@@ -14588,7 +15213,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 555.0, 411.0, 1184.0, 374.0 ],
+						"rect" : [ -1802.0, 189.0, 1702.0, 459.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -14617,6 +15242,31 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1540.0, 84.999996900558472, 100.0, 22.0 ],
+									"text" : "v USER_ID"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-44",
+									"linecount" : 4,
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 131.0, 154.999996900558472, 1428.0, 64.0 ],
+									"text" : "sprintf sqlout \\\"SELECT TODOLIST.TODOLIST_ID\\, TODOLIST.TODOLIST_NAME\\, TODOLIST.TODOLIST_LASTNAME\\, TODOLIST.TODOLIST_ITEM\\, TODOLIST.TIMESTAMP\\, (JULIANDAY(DATETIME('NOW'\\, 'LOCALTIME'))-JULIANDAY(TODOLIST.TIMESTAMP))\\, TODOLIST.TODOLIST_DUEDATE\\, (SELECT STAFF.STAFF_NAME FROM STAFF WHERE STAFF.STAFF_ID=TODOLIST.STAFF_ID_FROM)\\, (SELECT COUNT(TODOLIST_NOTES.TODOLIST_ID) FROM TODOLIST_NOTES WHERE TODOLIST.TODOLIST_ID=TODOLIST_NOTES.TODOLIST_ID)\\, TODOLIST.USER_ID\\, TODOLIST.URGENT\\, TODOLIST.UNREAD\\, 0\\, 0 AS TODOLIST_INDIVIDUAL FROM TODOLIST LEFT JOIN USER ON TODOLIST.STAFF_ID_FROM=USER.USER_ID WHERE (TODOLIST.STAFF_ID_FOR='%i' OR TODOLIST.USER_ID='%s') AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NULL ORDER BY TODOLIST.TODOLIST_DUEDATE ASC\\\""
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-21",
 									"maxclass" : "newobj",
@@ -15076,7 +15726,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 164.105428814888, 48.315795183181763, 64.631705045700073, 22.0 ],
+									"patching_rect" : [ 75.105428814888, 22.999996900558472, 64.631705045700073, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -15096,7 +15746,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 28.736899077892303, 162.999996900558472, 920.0, 36.0 ],
+									"patching_rect" : [ 28.736899077892303, 252.999996900558472, 920.0, 36.0 ],
 									"text" : "sprintf \\\"(SELECT TODOLIST_GROUP.TODOLIST_ID FROM TODOLIST_GROUP WHERE (TODOLIST_GROUP.UNREAD='1' OR TODOLIST_GROUP.URGENT='1') AND TODOLIST_GROUP.STAFF_ID='%i')\\\""
 								}
 
@@ -15108,7 +15758,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 28.579008460044861, 111.999996900558472, 73.0, 22.0 ],
+									"patching_rect" : [ 28.579008460044861, 114.999996900558472, 73.0, 22.0 ],
 									"text" : "fromsymbol"
 								}
 
@@ -15120,7 +15770,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 28.579008460044861, 84.999996900558472, 73.0, 22.0 ],
+									"patching_rect" : [ 28.579008460044861, 87.999996900558472, 73.0, 22.0 ],
 									"text" : "v Staff_ID"
 								}
 
@@ -15130,10 +15780,10 @@
 									"id" : "obj-17",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 28.579008460044861, 60.999996900558472, 30.0, 22.0 ],
-									"text" : "t b"
+									"numoutlets" : 2,
+									"outlettype" : [ "bang", "bang" ],
+									"patching_rect" : [ 28.579008460044861, 60.999996900558472, 1530.420991539955139, 22.0 ],
+									"text" : "t b b"
 								}
 
 							}
@@ -15144,7 +15794,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "int", "int" ],
-									"patching_rect" : [ 28.579008460044861, 138.999996900558472, 935.315781235694885, 22.0 ],
+									"patching_rect" : [ 28.579008460044861, 228.999996900558472, 935.315781235694885, 22.0 ],
 									"text" : "t i i"
 								}
 
@@ -15155,7 +15805,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 28.579008460044861, 325.999996900558472, 108.0, 22.0 ],
+									"patching_rect" : [ 28.579008460044861, 421.999996900558472, 108.0, 22.0 ],
 									"text" : "s ---databaselocal"
 								}
 
@@ -15168,7 +15818,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 28.579008460044861, 203.499996900558472, 935.315781235694885, 119.0 ],
+									"patching_rect" : [ 28.579008460044861, 293.499996900558472, 935.315781235694885, 119.0 ],
 									"text" : "sprintf sqlout \\\"SELECT TODOLIST.TODOLIST_ID\\, TODOLIST.TODOLIST_NAME\\, TODOLIST.TODOLIST_LASTNAME\\, TODOLIST.TODOLIST_ITEM\\, TODOLIST.TIMESTAMP\\, (JULIANDAY(DATETIME('NOW'\\, 'LOCALTIME'))-JULIANDAY(TODOLIST.TIMESTAMP))\\, TODOLIST.TODOLIST_DUEDATE\\, (SELECT STAFF.STAFF_NAME FROM STAFF WHERE STAFF.STAFF_ID=TODOLIST.STAFF_ID_FROM)\\, (SELECT COUNT(TODOLIST_NOTES.TODOLIST_ID) FROM TODOLIST_NOTES WHERE TODOLIST.TODOLIST_ID=TODOLIST_NOTES.TODOLIST_ID)\\, TODOLIST.USER_ID\\, TODOLIST.URGENT\\, TODOLIST.UNREAD\\, TODOLIST_GROUP.URGENT\\, TODOLIST_GROUP.UNREAD AS TODOLIST_INDIVIDUAL FROM TODOLIST LEFT JOIN USER ON TODOLIST.STAFF_ID_FROM=USER.USER_ID LEFT OUTER JOIN TODOLIST_GROUP ON TODOLIST.TODOLIST_ID=TODOLIST_GROUP.TODOLIST_ID WHERE TODOLIST.TODOLIST_ID IN %s AND TODOLIST_GROUP.STAFF_ID='%i' AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NULL ORDER BY TODOLIST.TODOLIST_DUEDATE ASC\\\""
 								}
 
@@ -15203,7 +15853,17 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-44", 0 ],
+									"midpoints" : [ 38.079008460044861, 145.0, 140.5, 145.0 ],
+									"order" : 0,
+									"source" : [ "obj-15", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-5", 0 ],
+									"order" : 1,
 									"source" : [ "obj-15", 0 ]
 								}
 
@@ -15224,8 +15884,29 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"source" : [ "obj-17", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-14", 0 ],
 									"source" : [ "obj-18", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-44", 1 ],
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"source" : [ "obj-44", 0 ]
 								}
 
 							}
@@ -15441,7 +16122,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 888.0, 445.5, 227.0, 22.0 ],
+					"patching_rect" : [ 879.0, 464.0, 227.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -26847,7 +27528,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 643.0, 368.0, 1199.0, 960.0 ],
+						"rect" : [ 487.0, 235.0, 1199.0, 960.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -30261,7 +30942,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 42.0, 210.0, 878.0, 481.0 ],
+										"rect" : [ -977.0, 360.0, 662.0, 571.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -30291,13 +30972,146 @@
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
 												"box" : 												{
-													"id" : "obj-10",
+													"id" : "obj-29",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 367.400007009506226, 338.888905048370361, 100.0, 22.0 ],
+													"text" : "tosymbol"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-23",
+													"linecount" : 2,
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 367.400007009506226, 391.555567264556885, 267.0, 36.0 ],
+													"text" : "sprintf \\\"(SELECT MAX(TODOLIST_ID) FROM TODOLIST WHERE STAFF_ID_FROM='%s')\\\""
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-25",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 367.400001764297485, 540.777783870697021, 107.0, 22.0 ],
+													"text" : "s ---databaselocal"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-26",
+													"linecount" : 7,
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 367.400001764297485, 431.777783870697021, 129.0, 105.0 ],
+													"text" : "sprintf exec \\\"INSERT INTO TODOLIST_GROUP (TODOLIST_ID\\, STAFF_ID\\, UNREAD) VALUES (%s\\, '%s'\\, '1')\\\""
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-17",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 367.400007009506226, 313.111105918884277, 110.0, 22.0 ],
+													"text" : "v Staff_ID_FOR"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-16",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "bang", "" ],
+													"patching_rect" : [ 367.400007009506226, 287.111105918884277, 100.0, 22.0 ],
+													"text" : "select 0"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-15",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 367.400007009506226, 236.111105918884277, 75.199999630451202, 22.0 ],
+													"text" : "fromsymbol"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-14",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
+													"patching_rect" : [ 367.400007009506226, 262.311111450195313, 110.412492990493661, 22.0 ],
+													"text" : "zl compare"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-13",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 2,
 													"outlettype" : [ "bang", "bang" ],
-													"patching_rect" : [ 339.0, 92.0, 46.0, 22.0 ],
+													"patching_rect" : [ 366.0, 188.111105918884277, 111.612500309944039, 22.0 ],
 													"text" : "t b b"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-2",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 366.0, 212.111105918884277, 65.0, 22.0 ],
+													"text" : "v Staff_ID"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-41",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 458.812499999999886, 212.111105918884277, 110.0, 22.0 ],
+													"text" : "v Staff_ID_FOR"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-10",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 3,
+													"outlettype" : [ "bang", "bang", "bang" ],
+													"patching_rect" : [ 339.0, 92.0, 46.0, 22.0 ],
+													"text" : "t b b b"
 												}
 
 											}
@@ -30474,6 +31288,13 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-13", 0 ],
+													"source" : [ "obj-10", 2 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-44", 0 ],
 													"source" : [ "obj-10", 1 ]
 												}
@@ -30503,13 +31324,94 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-10", 0 ],
+													"midpoints" : [ 60.5, 99.0, 324.0, 99.0, 324.0, 87.0, 348.5, 87.0 ],
 													"source" : [ "obj-12", 0 ]
 												}
 
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-2", 0 ],
+													"source" : [ "obj-13", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-41", 0 ],
+													"source" : [ "obj-13", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-16", 0 ],
+													"source" : [ "obj-14", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-14", 0 ],
+													"source" : [ "obj-15", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-17", 0 ],
+													"source" : [ "obj-16", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-29", 0 ],
+													"source" : [ "obj-17", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-15", 0 ],
+													"source" : [ "obj-2", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-26", 0 ],
+													"source" : [ "obj-23", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-25", 0 ],
+													"source" : [ "obj-26", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-23", 0 ],
+													"order" : 1,
+													"source" : [ "obj-29", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-26", 1 ],
+													"order" : 0,
+													"source" : [ "obj-29", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-72", 0 ],
+													"midpoints" : [ 348.5, 267.0, 60.5, 267.0 ],
 													"source" : [ "obj-3", 0 ]
 												}
 
@@ -30518,6 +31420,13 @@
 												"patchline" : 												{
 													"destination" : [ "obj-72", 0 ],
 													"source" : [ "obj-4", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-14", 1 ],
+													"source" : [ "obj-41", 0 ]
 												}
 
 											}
@@ -41291,7 +42200,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 1015.0, 30.0, 69.0, 22.0 ],
-					"text" : "metro 2000"
+					"text" : "metro 1000"
 				}
 
 			}
