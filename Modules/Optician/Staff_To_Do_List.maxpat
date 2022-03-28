@@ -40,6 +40,17 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-202",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1067.5, 30.0, 25.0, 20.0 ],
+					"text" : "***"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-205",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -26008,7 +26019,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 44.0, 32.0, 81.0, 22.0 ],
-									"text" : "metro 5000"
+									"text" : "metro 10000"
 								}
 
 							}
@@ -42700,8 +42711,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1050.0, 8.0, 69.0, 22.0 ],
-					"text" : "metro 1000"
+					"patching_rect" : [ 1050.0, 8.0, 77.0, 22.0 ],
+					"text" : "metro 10000"
 				}
 
 			}
