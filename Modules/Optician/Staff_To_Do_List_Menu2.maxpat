@@ -1105,7 +1105,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 488.5, 74.0, 101.0, 39.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 21.0, 0.0, 21.0, 14.5 ],
+					"presentation_rect" : [ 21.0, 0.0, 21.0, 18.5 ],
 					"text" : "✉",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"texton" : "✉",
@@ -1125,7 +1125,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 381.0, 74.0, 101.0, 39.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 21.0, 14.5 ],
+					"presentation_rect" : [ 0.0, 0.0, 21.0, 18.5 ],
 					"text" : "⚠",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"texton" : "⚠",
@@ -1332,8 +1332,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
