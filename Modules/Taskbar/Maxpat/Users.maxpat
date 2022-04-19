@@ -40,43 +40,13 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-48",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 14.5, 1098.0, 100.0, 22.0 ],
-					"text" : "zl slice 4"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-49",
-					"linecount" : 4,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 14.5, 922.0, 123.0, 64.0 ],
-					"text" : "read C:/ProgramData/Chuck/Settings/Monitors.coll"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-50",
+					"id" : "obj-38",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 14.5, 1023.0, 100.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"embed" : 0,
-						"precision" : 6
-					}
-,
-					"text" : "coll ---monitors"
+					"numoutlets" : 2,
+					"outlettype" : [ "list", "list" ],
+					"patching_rect" : [ 22.0, 920.0, 100.0, 22.0 ],
+					"text" : "screensize"
 				}
 
 			}
@@ -2320,43 +2290,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-64",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 151.5, 1067.0, 261.0, 20.0 ],
-					"text" : "<- change to display number "
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.956862745098039, 1.0, 0.0, 1.0 ],
-					"bgcolor2" : [ 0.956862745098039, 1.0, 0.0, 1.0 ],
-					"bgfillcolor_angle" : 270.0,
-					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 1.0, 0.968627450980392, 0.0, 1.0 ],
-					"bgfillcolor_color1" : [ 0.956862745098039, 1.0, 0.0, 1.0 ],
-					"bgfillcolor_color2" : [ 0.2, 0.2, 0.2, 1.0 ],
-					"bgfillcolor_proportion" : 0.5,
-					"bgfillcolor_type" : "color",
-					"fontface" : 1,
-					"fontsize" : 24.0,
-					"gradient" : 1,
-					"id" : "obj-67",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 68.5, 1051.0, 78.0, 36.0 ],
-					"text" : "0",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"textjustification" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-69",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -2385,7 +2318,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 14.5, 850.0, 58.0, 22.0 ],
+					"patching_rect" : [ 35.5, 840.0, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -11919,6 +11852,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-62", 0 ],
+					"source" : [ "obj-38", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-52", 0 ],
 					"source" : [ "obj-39", 0 ]
 				}
@@ -11978,34 +11918,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
 					"source" : [ "obj-47", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-62", 0 ],
-					"source" : [ "obj-48", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-50", 0 ],
-					"source" : [ "obj-49", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-48", 0 ],
-					"source" : [ "obj-50", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-67", 0 ],
-					"source" : [ "obj-50", 2 ]
 				}
 
 			}
@@ -12154,14 +12066,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-50", 0 ],
-					"midpoints" : [ 78.0, 1088.0, 9.5, 1088.0, 9.5, 1019.0, 24.0, 1019.0 ],
-					"source" : [ "obj-67", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
 					"source" : [ "obj-68", 0 ]
 				}
@@ -12218,15 +12122,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-63", 1 ],
-					"source" : [ "obj-76", 2 ]
+					"destination" : [ "obj-38", 0 ],
+					"source" : [ "obj-76", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-67", 0 ],
-					"source" : [ "obj-76", 0 ]
+					"destination" : [ "obj-63", 1 ],
+					"source" : [ "obj-76", 2 ]
 				}
 
 			}
@@ -12381,6 +12285,13 @@
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Last User.coll",
+				"bootpath" : "C:/ProgramData/Chuck/Settings",
+				"patcherrelativepath" : "../../../../Settings",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
  ],
