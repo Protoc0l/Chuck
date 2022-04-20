@@ -40,6 +40,17 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-52",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1144.5, 960.5, 110.0, 22.0 ],
+					"text" : "s ---close_taskbar"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-137",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -788,7 +799,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -799,6 +809,7 @@
 										"autogradient" : 0
 									}
 ,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
@@ -844,8 +855,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -907,10 +918,6 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -924,6 +931,10 @@
 
 								}
 ,
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -935,7 +946,6 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -945,7 +955,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "default",
@@ -1442,7 +1453,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -1453,6 +1463,7 @@
 										"autogradient" : 0
 									}
 ,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
@@ -1480,8 +1491,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1516,10 +1527,6 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -1533,6 +1540,10 @@
 
 								}
 ,
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -1544,7 +1555,6 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -1554,7 +1564,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "default",
@@ -2059,7 +2070,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -2070,6 +2080,7 @@
 										"autogradient" : 0
 									}
 ,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
@@ -2115,8 +2126,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2178,10 +2189,6 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -2195,6 +2202,10 @@
 
 								}
 ,
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -2206,7 +2217,6 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -2216,7 +2226,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "default",
@@ -2521,7 +2532,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -2532,6 +2542,7 @@
 										"autogradient" : 0
 									}
 ,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
@@ -2577,8 +2588,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2640,10 +2651,6 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -2657,6 +2664,10 @@
 
 								}
 ,
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -2668,7 +2679,6 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -2678,7 +2688,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "default",
@@ -3260,7 +3271,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -3271,6 +3281,7 @@
 										"autogradient" : 0
 									}
 ,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
@@ -3316,8 +3327,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3379,10 +3390,6 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -3396,6 +3403,10 @@
 
 								}
 ,
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -3407,7 +3418,6 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -3417,7 +3427,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "default",
@@ -3674,7 +3685,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -3685,6 +3695,7 @@
 										"autogradient" : 0
 									}
 ,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
@@ -3730,8 +3741,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3793,10 +3804,6 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -3810,6 +3817,10 @@
 
 								}
 ,
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -3821,7 +3832,6 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -3831,7 +3841,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "default",
@@ -4870,7 +4881,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -4881,6 +4891,7 @@
 										"autogradient" : 0
 									}
 ,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
@@ -4926,8 +4937,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -4989,10 +5000,6 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -5006,6 +5013,10 @@
 
 								}
 ,
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -5017,7 +5028,6 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -5027,7 +5037,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "default",
@@ -5897,7 +5908,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -5908,6 +5918,7 @@
 										"autogradient" : 0
 									}
 ,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
@@ -5935,8 +5946,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -5971,10 +5982,6 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -5988,6 +5995,10 @@
 
 								}
 ,
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -5999,7 +6010,6 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -6009,7 +6019,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "default",
@@ -6568,7 +6579,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -6579,6 +6589,7 @@
 										"autogradient" : 0
 									}
 ,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
@@ -6606,8 +6617,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -6642,10 +6653,6 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -6659,6 +6666,10 @@
 
 								}
 ,
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -6670,7 +6681,6 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -6680,7 +6690,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "default",
@@ -7222,7 +7233,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -7233,6 +7243,7 @@
 										"autogradient" : 0
 									}
 ,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
@@ -7260,8 +7271,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -7296,10 +7307,6 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -7313,6 +7320,10 @@
 
 								}
 ,
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -7324,7 +7335,6 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -7334,7 +7344,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "default",
@@ -7865,7 +7876,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -7876,6 +7886,7 @@
 										"autogradient" : 0
 									}
 ,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
@@ -7903,8 +7914,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -7939,10 +7950,6 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -7956,6 +7963,10 @@
 
 								}
 ,
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -7967,7 +7978,6 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -7977,7 +7987,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "default",
@@ -8903,8 +8914,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-																	"fontsize" : [ 12.059008 ]
+																	"fontsize" : [ 12.059008 ],
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -9415,7 +9426,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -9426,6 +9436,7 @@
 														"autogradient" : 0
 													}
 ,
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 												}
 ,
@@ -9453,8 +9464,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-													"fontsize" : [ 12.059008 ]
+													"fontsize" : [ 12.059008 ],
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -9489,10 +9500,6 @@
 											}
 , 											{
 												"name" : "s_161006_G!",
-												"comment" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-												}
-,
 												"message" : 												{
 													"bgfillcolor" : 													{
 														"type" : "color",
@@ -9506,6 +9513,10 @@
 
 												}
 ,
+												"comment" : 												{
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+												}
+,
 												"parentstyle" : "",
 												"multi" : 1
 											}
@@ -9517,7 +9528,6 @@
 , 											{
 												"name" : "simple-2",
 												"default" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -9527,7 +9537,8 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-
+,
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
 												"parentstyle" : "default",
@@ -10085,7 +10096,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -10096,6 +10106,7 @@
 										"autogradient" : 0
 									}
 ,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
@@ -10123,8 +10134,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -10159,10 +10170,6 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -10176,6 +10183,10 @@
 
 								}
 ,
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -10187,7 +10198,6 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -10197,7 +10207,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "default",
@@ -11070,8 +11081,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-																	"fontsize" : [ 12.059008 ]
+																	"fontsize" : [ 12.059008 ],
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -11589,7 +11600,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -11600,6 +11610,7 @@
 														"autogradient" : 0
 													}
 ,
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 												}
 ,
@@ -11627,8 +11638,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-													"fontsize" : [ 12.059008 ]
+													"fontsize" : [ 12.059008 ],
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -11663,10 +11674,6 @@
 											}
 , 											{
 												"name" : "s_161006_G!",
-												"comment" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-												}
-,
 												"message" : 												{
 													"bgfillcolor" : 													{
 														"type" : "color",
@@ -11680,6 +11687,10 @@
 
 												}
 ,
+												"comment" : 												{
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+												}
+,
 												"parentstyle" : "",
 												"multi" : 1
 											}
@@ -11691,7 +11702,6 @@
 , 											{
 												"name" : "simple-2",
 												"default" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -11701,7 +11711,8 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-
+,
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
 												"parentstyle" : "default",
@@ -12285,7 +12296,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -12296,6 +12306,7 @@
 										"autogradient" : 0
 									}
 ,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
@@ -12341,8 +12352,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -12404,10 +12415,6 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -12421,6 +12428,10 @@
 
 								}
 ,
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -12432,7 +12443,6 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -12442,7 +12452,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "default",
@@ -13574,7 +13585,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -13585,6 +13595,7 @@
 										"autogradient" : 0
 									}
 ,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
@@ -13612,8 +13623,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -13648,10 +13659,6 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -13665,6 +13672,10 @@
 
 								}
 ,
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -13676,7 +13687,6 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -13686,7 +13696,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "default",
@@ -14372,7 +14383,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -14383,6 +14393,7 @@
 														"autogradient" : 0
 													}
 ,
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 												}
 ,
@@ -14410,8 +14421,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-													"fontsize" : [ 12.059008 ]
+													"fontsize" : [ 12.059008 ],
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -14446,10 +14457,6 @@
 											}
 , 											{
 												"name" : "s_161006_G!",
-												"comment" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-												}
-,
 												"message" : 												{
 													"bgfillcolor" : 													{
 														"type" : "color",
@@ -14463,6 +14470,10 @@
 
 												}
 ,
+												"comment" : 												{
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+												}
+,
 												"parentstyle" : "",
 												"multi" : 1
 											}
@@ -14474,7 +14485,6 @@
 , 											{
 												"name" : "simple-2",
 												"default" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -14484,7 +14494,8 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-
+,
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
 												"parentstyle" : "default",
@@ -14996,7 +15007,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -15007,6 +15017,7 @@
 														"autogradient" : 0
 													}
 ,
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 												}
 ,
@@ -15034,8 +15045,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-													"fontsize" : [ 12.059008 ]
+													"fontsize" : [ 12.059008 ],
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -15070,10 +15081,6 @@
 											}
 , 											{
 												"name" : "s_161006_G!",
-												"comment" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-												}
-,
 												"message" : 												{
 													"bgfillcolor" : 													{
 														"type" : "color",
@@ -15087,6 +15094,10 @@
 
 												}
 ,
+												"comment" : 												{
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+												}
+,
 												"parentstyle" : "",
 												"multi" : 1
 											}
@@ -15098,7 +15109,6 @@
 , 											{
 												"name" : "simple-2",
 												"default" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -15108,7 +15118,8 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-
+,
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
 												"parentstyle" : "default",
@@ -15572,7 +15583,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -15583,6 +15593,7 @@
 														"autogradient" : 0
 													}
 ,
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 												}
 ,
@@ -15592,8 +15603,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-													"fontsize" : [ 12.059008 ]
+													"fontsize" : [ 12.059008 ],
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -15610,10 +15621,6 @@
 											}
 , 											{
 												"name" : "s_161006_G!",
-												"comment" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-												}
-,
 												"message" : 												{
 													"bgfillcolor" : 													{
 														"type" : "color",
@@ -15627,6 +15634,10 @@
 
 												}
 ,
+												"comment" : 												{
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+												}
+,
 												"parentstyle" : "",
 												"multi" : 1
 											}
@@ -15638,7 +15649,6 @@
 , 											{
 												"name" : "simple-2",
 												"default" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -15648,7 +15658,8 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-
+,
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
 												"parentstyle" : "default",
@@ -15764,7 +15775,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -15775,6 +15785,7 @@
 										"autogradient" : 0
 									}
 ,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
@@ -15802,8 +15813,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -15838,10 +15849,6 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -15855,6 +15862,10 @@
 
 								}
 ,
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -15866,7 +15877,6 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -15876,7 +15886,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "default",
@@ -17249,7 +17260,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -17260,6 +17270,7 @@
 										"autogradient" : 0
 									}
 ,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
@@ -17287,8 +17298,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -17323,10 +17334,6 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -17340,6 +17347,10 @@
 
 								}
 ,
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -17351,7 +17362,6 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -17361,7 +17371,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "default",
@@ -17483,10 +17494,10 @@
 					"id" : "obj-108",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "open", "bang" ],
-					"patching_rect" : [ 981.5, 931.5, 74.0, 22.0 ],
-					"text" : "t open b"
+					"numoutlets" : 3,
+					"outlettype" : [ "open", "bang", "bang" ],
+					"patching_rect" : [ 981.5, 931.5, 182.0, 22.0 ],
+					"text" : "t open b b"
 				}
 
 			}
@@ -18440,7 +18451,6 @@
 , 															{
 																"name" : "_myStyle",
 																"default" : 																{
-																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -18451,6 +18461,7 @@
 																		"autogradient" : 0
 																	}
 ,
+																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 																}
 ,
@@ -18478,8 +18489,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-																	"fontsize" : [ 12.059008 ]
+																	"fontsize" : [ 12.059008 ],
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -18514,10 +18525,6 @@
 															}
 , 															{
 																"name" : "s_161006_G!",
-																"comment" : 																{
-																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-																}
-,
 																"message" : 																{
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
@@ -18531,6 +18538,10 @@
 
 																}
 ,
+																"comment" : 																{
+																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+																}
+,
 																"parentstyle" : "",
 																"multi" : 1
 															}
@@ -18542,7 +18553,6 @@
 , 															{
 																"name" : "simple-2",
 																"default" : 																{
-																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -18552,7 +18562,8 @@
 																		"proportion" : 0.39,
 																		"autogradient" : 0
 																	}
-
+,
+																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 																}
 ,
 																"parentstyle" : "default",
@@ -19041,7 +19052,6 @@
 , 															{
 																"name" : "_myStyle",
 																"default" : 																{
-																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -19052,6 +19062,7 @@
 																		"autogradient" : 0
 																	}
 ,
+																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 																}
 ,
@@ -19061,8 +19072,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-																	"fontsize" : [ 12.059008 ]
+																	"fontsize" : [ 12.059008 ],
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -19079,10 +19090,6 @@
 															}
 , 															{
 																"name" : "s_161006_G!",
-																"comment" : 																{
-																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-																}
-,
 																"message" : 																{
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
@@ -19096,6 +19103,10 @@
 
 																}
 ,
+																"comment" : 																{
+																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+																}
+,
 																"parentstyle" : "",
 																"multi" : 1
 															}
@@ -19107,7 +19118,6 @@
 , 															{
 																"name" : "simple-2",
 																"default" : 																{
-																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -19117,7 +19127,8 @@
 																		"proportion" : 0.39,
 																		"autogradient" : 0
 																	}
-
+,
+																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 																}
 ,
 																"parentstyle" : "default",
@@ -19357,7 +19368,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -19368,6 +19378,7 @@
 														"autogradient" : 0
 													}
 ,
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 												}
 ,
@@ -19395,8 +19406,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-													"fontsize" : [ 12.059008 ]
+													"fontsize" : [ 12.059008 ],
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -19431,10 +19442,6 @@
 											}
 , 											{
 												"name" : "s_161006_G!",
-												"comment" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-												}
-,
 												"message" : 												{
 													"bgfillcolor" : 													{
 														"type" : "color",
@@ -19448,6 +19455,10 @@
 
 												}
 ,
+												"comment" : 												{
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+												}
+,
 												"parentstyle" : "",
 												"multi" : 1
 											}
@@ -19459,7 +19470,6 @@
 , 											{
 												"name" : "simple-2",
 												"default" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -19469,7 +19479,8 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-
+,
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
 												"parentstyle" : "default",
@@ -19889,8 +19900,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-																	"fontsize" : [ 12.059008 ]
+																	"fontsize" : [ 12.059008 ],
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -20364,7 +20375,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -20375,6 +20385,7 @@
 														"autogradient" : 0
 													}
 ,
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 												}
 ,
@@ -20402,8 +20413,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-													"fontsize" : [ 12.059008 ]
+													"fontsize" : [ 12.059008 ],
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -20438,10 +20449,6 @@
 											}
 , 											{
 												"name" : "s_161006_G!",
-												"comment" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-												}
-,
 												"message" : 												{
 													"bgfillcolor" : 													{
 														"type" : "color",
@@ -20455,6 +20462,10 @@
 
 												}
 ,
+												"comment" : 												{
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+												}
+,
 												"parentstyle" : "",
 												"multi" : 1
 											}
@@ -20466,7 +20477,6 @@
 , 											{
 												"name" : "simple-2",
 												"default" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -20476,7 +20486,8 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-
+,
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
 												"parentstyle" : "default",
@@ -21795,7 +21806,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -21806,6 +21816,7 @@
 										"autogradient" : 0
 									}
 ,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
@@ -21833,8 +21844,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -21869,10 +21880,6 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -21886,6 +21893,10 @@
 
 								}
 ,
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -21897,7 +21908,6 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -21907,7 +21917,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "default",
@@ -24153,6 +24164,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-52", 0 ],
+					"source" : [ "obj-108", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-89", 0 ],
 					"source" : [ "obj-11", 1 ]
 				}
@@ -25323,8 +25341,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "Python.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
-				"patcherrelativepath" : "../Taskbar/Maxpat",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -25358,7 +25375,6 @@
 , 			{
 				"name" : "_myStyle",
 				"default" : 				{
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -25369,6 +25385,7 @@
 						"autogradient" : 0
 					}
 ,
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 				}
 ,
@@ -25414,8 +25431,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -25477,10 +25494,6 @@
 			}
 , 			{
 				"name" : "s_161006_G!",
-				"comment" : 				{
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-				}
-,
 				"message" : 				{
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -25494,6 +25507,10 @@
 
 				}
 ,
+				"comment" : 				{
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				}
+,
 				"parentstyle" : "",
 				"multi" : 1
 			}
@@ -25505,7 +25522,6 @@
 , 			{
 				"name" : "simple-2",
 				"default" : 				{
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -25515,7 +25531,8 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-
+,
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 				}
 ,
 				"parentstyle" : "default",
