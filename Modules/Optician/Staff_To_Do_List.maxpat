@@ -16463,7 +16463,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "int" ],
 													"patching_rect" : [ 123.5, 272.0, 100.0, 22.0 ],
-													"text" : "< 52"
+													"text" : "< 50"
 												}
 
 											}
@@ -22721,6 +22721,7 @@
 , 							{
 								"box" : 								{
 									"fontsize" : 20.0,
+									"hint" : "fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa dsa fds",
 									"id" : "obj-48",
 									"maxclass" : "comment",
 									"numinlets" : 1,
