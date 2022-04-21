@@ -605,7 +605,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -616,7 +615,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1381,7 +1381,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -1392,7 +1391,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1704,7 +1704,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 1006.0, 62.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 426.0, 572.0, 650.0, 272.0 ],
+					"presentation_rect" : [ 426.0, 555.0, 650.0, 289.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -1862,29 +1862,6 @@
 					"patching_rect" : [ 696.291666333333524, 362.0, 100.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"hidden" : 1,
-					"id" : "obj-13",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "Variant2.maxpat",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 903.833333333333371, 181.0, 204.041666666666629, 98.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 356.0, 1128.041666666666515, 488.0 ],
-					"varname" : "Variant",
-					"viewvisibility" : 1
 				}
 
 			}
@@ -2793,7 +2770,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -2804,7 +2780,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -4655,7 +4632,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-8",
-									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -4924,7 +4900,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -4935,7 +4910,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -6180,7 +6156,30 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 0.0, 0.0, 679.0, 399.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 426.0, 356.0, 650.0, 214.0 ],
+					"presentation_rect" : [ 426.0, 356.0, 650.0, 197.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"hidden" : 1,
+					"id" : "obj-13",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "Variant2.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 903.833333333333371, 181.0, 204.041666666666629, 98.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 356.0, 1128.041666666666515, 488.0 ],
+					"varname" : "Variant",
 					"viewvisibility" : 1
 				}
 
@@ -7636,7 +7635,6 @@
 , 			{
 				"name" : "_myStyle",
 				"default" : 				{
-					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -7647,7 +7645,8 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-
+,
+					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
