@@ -281,7 +281,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 88.0, 69.0, 30.0, 30.0 ]
 								}
 
@@ -625,7 +625,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -720,8 +720,8 @@
 									"id" : "obj-1",
 									"maxclass" : "newobj",
 									"numinlets" : 5,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"numoutlets" : 2,
+									"outlettype" : [ "bang", "" ],
 									"patching_rect" : [ 33.0, 247.0, 465.0, 22.0 ],
 									"text" : "Python MySQL_OPTICIAN_AVAIL_SPECIFIC"
 								}
@@ -1286,7 +1286,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 5,
 									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
+									"outlettype" : [ "bang", "" ],
 									"patching_rect" : [ 114.0, 198.5, 244.0, 22.0 ],
 									"text" : "Python USER_ID_QUERY_AVAIL"
 								}
@@ -1885,7 +1885,8 @@
 									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 5,
-									"numoutlets" : 0,
+									"numoutlets" : 2,
+									"outlettype" : [ "bang", "" ],
 									"patching_rect" : [ 127.0, 376.0, 178.0, 50.0 ],
 									"text" : "Python UPDATE_STAFF_AVAIL_HELPING"
 								}
@@ -3013,7 +3014,8 @@
 					"id" : "obj-162",
 					"maxclass" : "newobj",
 					"numinlets" : 5,
-					"numoutlets" : 0,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
 					"patching_rect" : [ 541.166666666666629, 1358.5, 196.0, 22.0 ],
 					"text" : "Python UPDATE_STAFF_AVAIL"
 				}
@@ -3075,7 +3077,8 @@
 					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 5,
-					"numoutlets" : 0,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
 					"patching_rect" : [ 148.0, 1246.5, 178.0, 36.0 ],
 					"text" : "Python UPDATE_STAFF_AVAIL"
 				}
@@ -3089,7 +3092,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -3196,8 +3199,8 @@
 									"id" : "obj-1",
 									"maxclass" : "newobj",
 									"numinlets" : 5,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"numoutlets" : 2,
+									"outlettype" : [ "bang", "" ],
 									"patching_rect" : [ 33.0, 247.0, 465.0, 22.0 ],
 									"text" : "Python MySQL_OPTICIAN_AVAIL"
 								}
@@ -4530,7 +4533,8 @@
 									"id" : "obj-2",
 									"maxclass" : "newobj",
 									"numinlets" : 5,
-									"numoutlets" : 0,
+									"numoutlets" : 2,
+									"outlettype" : [ "bang", "" ],
 									"patching_rect" : [ 188.0, 216.0, 359.0, 22.0 ],
 									"text" : "Python DELETE_OPTICAL_PWL"
 								}
@@ -4665,7 +4669,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -4784,8 +4788,8 @@
 									"id" : "obj-1",
 									"maxclass" : "newobj",
 									"numinlets" : 5,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"numoutlets" : 2,
+									"outlettype" : [ "bang", "" ],
 									"patching_rect" : [ 33.0, 247.0, 465.0, 22.0 ],
 									"text" : "Python MySQL_PWL"
 								}
@@ -10622,7 +10626,8 @@
 									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 5,
-									"numoutlets" : 0,
+									"numoutlets" : 2,
+									"outlettype" : [ "bang", "" ],
 									"patching_rect" : [ 845.0, 396.0, 178.0, 36.0 ],
 									"text" : "Python UPDATE_STAFF_AVAIL"
 								}
@@ -12500,7 +12505,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 42.0, 464.0, 887.0, 536.0 ],
+						"rect" : [ 245.0, 295.0, 887.0, 536.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -12942,7 +12947,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "int", "int" ],
 									"patching_rect" : [ 105.5, 199.0, 39.0, 22.0 ],
-									"text" : "t 15 1"
+									"text" : "t 10 1"
 								}
 
 							}
@@ -12990,7 +12995,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 61.0, 150.0, 32.0, 22.0 ],
-									"text" : "< 15"
+									"text" : "< 10"
 								}
 
 							}
@@ -13104,7 +13109,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 34.0, 16.0, 30.0, 30.0 ]
 								}
 
@@ -16515,7 +16520,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "int", "int" ],
 									"patching_rect" : [ 105.5, 199.0, 39.0, 22.0 ],
-									"text" : "t 15 1"
+									"text" : "t 10 1"
 								}
 
 							}
@@ -16563,7 +16568,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 61.0, 150.0, 32.0, 22.0 ],
-									"text" : "< 15"
+									"text" : "< 10"
 								}
 
 							}
@@ -17609,7 +17614,8 @@
 									"id" : "obj-67",
 									"maxclass" : "newobj",
 									"numinlets" : 5,
-									"numoutlets" : 0,
+									"numoutlets" : 2,
+									"outlettype" : [ "bang", "" ],
 									"patching_rect" : [ 414.25, 698.0, 169.0, 22.0 ],
 									"text" : "Python INSERT_PX_GL_WL"
 								}
@@ -22981,7 +22987,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 88.0, 69.0, 30.0, 30.0 ]
 								}
 
@@ -25358,6 +25364,13 @@
 			}
  ],
 		"dependency_cache" : [ 			{
+				"name" : "Python.maxpat",
+				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"patcherrelativepath" : "../Taskbar/Maxpat",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "OPTICAL_WAITLIST_LIST_MENU.maxpat",
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Optician",
 				"patcherrelativepath" : ".",
