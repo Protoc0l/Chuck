@@ -735,7 +735,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 42.0, 85.0, 1309.0, 533.0 ],
+						"rect" : [ 42.0, 85.0, 1854.0, 1018.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -765,6 +765,40 @@
 						"assistshowspatchername" : 0,
 						"title" : "User & Role Selection",
 						"boxes" : [ 							{
+								"box" : 								{
+									"fontsize" : 48.0,
+									"id" : "obj-50",
+									"linecount" : 5,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 738.0, 182.0, 557.0, 282.0 ],
+									"presentation" : 1,
+									"presentation_linecount" : 3,
+									"presentation_rect" : [ 823.0, 173.0, 921.0, 172.0 ],
+									"text" : "Major Update:\n1) no more crashes (fingers crossed)\n    if it crashes it should reload (6 seconds)",
+									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
+									"textjustification" : 0
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontsize" : 72.0,
+									"id" : "obj-47",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 37.0, 29.0, 828.0, 89.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 40.0, 29.0, 1441.0, 89.0 ],
+									"text" : "Welcome to Chuck:",
+									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
+									"textjustification" : 1
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-41",
 									"maxclass" : "newobj",
@@ -945,8 +979,9 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 774.0, 107.0, 95.0, 48.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 101.0, 190.0, 551.0, 48.0 ],
-									"text" : "Role:"
+									"presentation_rect" : [ 117.0, 297.0, 551.0, 48.0 ],
+									"text" : "Role:",
+									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
 								}
 
 							}
@@ -959,8 +994,9 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 1040.0, 111.0, 96.0, 48.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 101.0, 349.0, 551.0, 48.0 ],
-									"text" : "User:"
+									"presentation_rect" : [ 117.0, 431.0, 551.0, 48.0 ],
+									"text" : "User:",
+									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
 								}
 
 							}
@@ -973,8 +1009,9 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 525.0, 7.0, 828.0, 89.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 22.0, 39.0, 624.0, 89.0 ],
+									"presentation_rect" : [ 44.0, 173.0, 473.0, 89.0 ],
 									"text" : "Please Select:",
+									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
 									"textjustification" : 1
 								}
 
@@ -1003,7 +1040,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 1008.0, 143.0, 100.0, 50.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 101.0, 399.0, 551.0, 50.0 ],
+									"presentation_rect" : [ 117.0, 481.0, 551.0, 50.0 ],
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1
 								}
@@ -1033,7 +1070,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 871.0, 143.0, 100.0, 50.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 101.0, 240.0, 551.0, 50.0 ],
+									"presentation_rect" : [ 117.0, 347.0, 551.0, 50.0 ],
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1
 								}
@@ -2466,7 +2503,8 @@
 , 							{
 								"box" : 								{
 									"angle" : 270.0,
-									"bgcolor" : [ 0.0, 0.0, 0.0, 0.55 ],
+									"bgcolor" : [ 0.0, 0.0, 0.0, 0.76 ],
+									"bordercolor" : [ 0.0, 0.0, 0.0, 0.76 ],
 									"id" : "obj-2",
 									"maxclass" : "panel",
 									"mode" : 0,
@@ -2474,7 +2512,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 231.0, 236.0, 126.0, 71.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 0.0, 0.0, 1920.0, 1080.0 ],
+									"presentation_rect" : [ 0.0, 5.0, 1920.0, 1080.0 ],
 									"proportion" : 0.5,
 									"rounded" : 0
 								}
