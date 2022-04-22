@@ -46,7 +46,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 961.0, 57.5, 100.0, 22.0 ],
-					"text" : "r Refresh_OWL"
+					"text" : "r Refresh_OWLP"
 				}
 
 			}
@@ -17579,8 +17579,8 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 333.0, 655.0, 100.0, 22.0 ],
-									"text" : "s Refresh_OWL"
+									"patching_rect" : [ 333.0, 655.0, 106.0, 22.0 ],
+									"text" : "s Refresh_OWLP"
 								}
 
 							}
