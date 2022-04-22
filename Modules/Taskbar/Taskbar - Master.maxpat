@@ -40,30 +40,41 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-204",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"id" : "obj-208",
+					"maxclass" : "comment",
+					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1511.0, 459.0, 104.0, 22.0 ],
-					"text" : "s RefreshServers"
+					"patching_rect" : [ 1411.0, 65.0, 110.0, 20.0 ],
+					"suppressinlet" : 1,
+					"text" : "USC server status"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.0, 0.0, 0.0, 0.85 ],
-					"id" : "obj-203",
-					"maxclass" : "textbutton",
+					"color" : [ 0.956862745098039, 1.0, 0.0, 1.0 ],
+					"id" : "obj-205",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1363.125, 28.5, 107.0, 22.0 ],
+					"text" : "r USC_Server_Bg"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.0625, 1.0, 0.165039, 1.0 ],
+					"id" : "obj-206",
+					"maxclass" : "panel",
+					"mode" : 0,
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 1511.0, 430.5, 100.0, 20.0 ],
+					"numoutlets" : 0,
+					"patching_rect" : [ 1363.125, 57.5, 37.0, 34.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1129.0, 114.0, 75.0, 20.0 ],
-					"rounded" : 8.640000000000001,
-					"text" : "Refresh",
-					"textoncolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
+					"presentation_rect" : [ 0.0, 0.0, 13.0, 13.0 ],
+					"rounded" : 1457
 				}
 
 			}
@@ -156,7 +167,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 818.75, 937.0, 296.5, 132.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 74.0, 30.0, 1300.0, 523.0 ],
+					"presentation_rect" : [ -12.0, 30.0, 1300.0, 523.0 ],
 					"varname" : "EMERGENCY",
 					"viewvisibility" : 1
 				}
@@ -743,8 +754,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1333,8 +1344,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1889,8 +1900,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2891,8 +2902,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3153,8 +3164,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3415,8 +3426,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3832,8 +3843,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -4237,8 +4248,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -5654,8 +5665,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -6712,8 +6723,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -7169,8 +7180,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -8377,8 +8388,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -9222,8 +9233,8 @@
 , 											{
 												"name" : "texteditGold",
 												"default" : 												{
-													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -9587,8 +9598,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -10113,8 +10124,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -10796,8 +10807,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -11682,8 +11693,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -12644,8 +12655,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-204", 0 ],
-					"source" : [ "obj-203", 0 ]
+					"destination" : [ "obj-206", 0 ],
+					"source" : [ "obj-205", 0 ]
 				}
 
 			}
@@ -13397,119 +13408,98 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "StreamDeckIntegration.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Exam Room Master.coll",
-				"bootpath" : "S:/SLE CLIPBOARD/Chuck Profiles/Cory Work/Profiles",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "Users.maxpat",
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
-				"patcherrelativepath" : "./Maxpat",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Python.maxpat",
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
-				"patcherrelativepath" : "./Maxpat",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "UDP.maxpat",
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
-				"patcherrelativepath" : "./Maxpat",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Background_Query.maxpat",
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
-				"patcherrelativepath" : "./Maxpat",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Python_R.maxpat",
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
-				"patcherrelativepath" : "./Maxpat",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Dashboard.maxpat",
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
-				"patcherrelativepath" : "./Maxpat",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Optician Available.maxpat",
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Optician",
-				"patcherrelativepath" : "../Optician",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OPTICAL_WAITLIST_LIST_MENU.maxpat",
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Optician",
-				"patcherrelativepath" : "../Optician",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Appointment List.maxpat",
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
-				"patcherrelativepath" : "./Maxpat",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "APT_LIST_MENU.maxpat",
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
-				"patcherrelativepath" : "./Maxpat",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Staff_To_Do_List.maxpat",
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Optician",
-				"patcherrelativepath" : "../Optician",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Staff_To_Do_List_Menu2.maxpat",
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Optician",
-				"patcherrelativepath" : "../Optician",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Staff_To_Do_List_Menu1.maxpat",
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Optician",
-				"patcherrelativepath" : "../Optician",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Staff_To_Do_List_Menu3.maxpat",
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Optician",
-				"patcherrelativepath" : "../Optician",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Emergency.maxpat",
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
-				"patcherrelativepath" : "./Maxpat",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -13714,8 +13704,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
