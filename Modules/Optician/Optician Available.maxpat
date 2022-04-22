@@ -15377,19 +15377,6 @@
 											}
 , 											{
 												"box" : 												{
-													"id" : "obj-24",
-													"linecount" : 3,
-													"maxclass" : "message",
-													"numinlets" : 2,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
-													"patching_rect" : [ 602.5, 113.0, 277.0, 50.0 ],
-													"text" : "https://discordapp.com/api/webhooks/705248442271662085/d7wZEwyIoC9lKF-X4U9Zas3WYfRIhuqeQkMyaMInbJgerzdEM8TLhSxZ6Gb7oxp5_0rJ"
-												}
-
-											}
-, 											{
-												"box" : 												{
 													"id" : "obj-16",
 													"maxclass" : "message",
 													"numinlets" : 2,
@@ -15511,13 +15498,6 @@
 												"patchline" : 												{
 													"destination" : [ "obj-9", 0 ],
 													"source" : [ "obj-2", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
-													"destination" : [ "obj-4", 1 ],
-													"source" : [ "obj-24", 0 ]
 												}
 
 											}
