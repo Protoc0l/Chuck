@@ -167,7 +167,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 818.75, 937.0, 296.5, 132.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -12.0, 30.0, 1300.0, 523.0 ],
+					"presentation_rect" : [ 134.0, 30.0, 1300.0, 523.0 ],
 					"varname" : "EMERGENCY",
 					"viewvisibility" : 1
 				}
@@ -4501,7 +4501,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 37.0, 694.0, 295.0, 149.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 44.0, 2560.0, 1440.0 ],
+					"presentation_rect" : [ 0.0, 47.0, 2560.0, 1440.0 ],
 					"varname" : "Dashboard",
 					"viewvisibility" : 1
 				}
@@ -11757,7 +11757,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1582.0, 25.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 44.0, 1204.0, 853.0 ],
+					"presentation_rect" : [ 0.0, 46.0, 1212.0, 941.0 ],
 					"proportion" : 0.5
 				}
 
@@ -13415,37 +13415,43 @@
 			}
 , 			{
 				"name" : "Users.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"patcherrelativepath" : "./Maxpat",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Python.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"patcherrelativepath" : "./Maxpat",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "UDP.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"patcherrelativepath" : "./Maxpat",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Background_Query.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"patcherrelativepath" : "./Maxpat",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Python_R.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"patcherrelativepath" : "./Maxpat",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Dashboard.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"patcherrelativepath" : "./Maxpat",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -13463,13 +13469,15 @@
 			}
 , 			{
 				"name" : "Appointment List.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"patcherrelativepath" : "./Maxpat",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "APT_LIST_MENU.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"patcherrelativepath" : "./Maxpat",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -13499,7 +13507,8 @@
 			}
 , 			{
 				"name" : "Emergency.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"patcherrelativepath" : "./Maxpat",
 				"type" : "JSON",
 				"implicit" : 1
 			}
