@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1106.0, 747.0, 1108.0, 762.0 ],
+		"rect" : [ 1097.0, 569.0, 1108.0, 762.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -58,7 +58,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 711.0, 142.0, 100.0, 22.0 ],
-					"text" : "delay 750"
+					"text" : "delay 375"
 				}
 
 			}
@@ -859,7 +859,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 511.0, 142.0, 100.0, 22.0 ],
-					"text" : "delay 500"
+					"text" : "delay 250"
 				}
 
 			}
@@ -911,6 +911,18 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 23.0, 269.0, 100.0, 22.0 ],
+									"text" : "delay 10"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "",
 									"id" : "obj-3",
 									"index" : 1,
@@ -928,7 +940,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 23.0, 280.0, 204.0, 22.0 ],
+									"patching_rect" : [ 23.0, 299.0, 204.0, 22.0 ],
 									"text" : "s APPT_WAITLIST_DONE_QUERY"
 								}
 
@@ -992,7 +1004,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-2", 0 ],
+									"destination" : [ "obj-4", 0 ],
 									"source" : [ "obj-10", 0 ]
 								}
 
@@ -1036,6 +1048,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-11", 0 ],
 									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"source" : [ "obj-4", 0 ]
 								}
 
 							}
@@ -1257,7 +1276,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 391.5, 142.0, 100.0, 22.0 ],
-					"text" : "delay 250"
+					"text" : "delay 125"
 				}
 
 			}
@@ -1883,7 +1902,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 263.0, 91.0, 69.0, 22.0 ],
-					"text" : "metro 1000"
+					"text" : "metro 500"
 				}
 
 			}

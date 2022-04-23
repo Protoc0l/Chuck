@@ -45,7 +45,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 327.0, 316.0, 207.0, 22.0 ],
+					"patching_rect" : [ 275.0, 233.0, 207.0, 22.0 ],
 					"text" : "r APPT_WAITLIST_DONE_QUERY"
 				}
 
@@ -58,18 +58,6 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 146.0, 477.0, 106.0, 22.0 ],
 					"text" : "s ---close_taskbar"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-40",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 242.0, 41.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -93,42 +81,6 @@
 					"outlettype" : [ "bang", "bang" ],
 					"patching_rect" : [ 358.5, 1120.0, 100.0, 22.0 ],
 					"text" : "t b b"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-13",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 296.0, 49.0, 100.0, 22.0 ],
-					"text" : "delay 1002"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-12",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 416.0, 38.0, 100.0, 22.0 ],
-					"text" : "r PWL_Refresh"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-9",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 296.0, 2.0, 109.0, 22.0 ],
-					"text" : "r ---open_taskbar"
 				}
 
 			}
@@ -1310,55 +1262,6 @@
 					"outlettype" : [ "bang", "" ],
 					"patching_rect" : [ 439.5, 1179.0, 100.0, 36.0 ],
 					"text" : "Python APPT_BOOKED"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-25",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 442.0, 128.0, 85.0, 22.0 ],
-					"text" : "%d %M %Y"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-11",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "bang", "bang", "bang", "bang" ],
-					"patching_rect" : [ 296.0, 75.5, 238.0, 22.0 ],
-					"text" : "t b b b b"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-10",
-					"maxclass" : "newobj",
-					"numinlets" : 5,
-					"numoutlets" : 2,
-					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 296.0, 275.0, 238.0, 22.0 ],
-					"text" : "Python appt_waitinglist_create_colored"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-1",
-					"linecount" : 7,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 405.5, 154.0, 467.0, 105.0 ],
-					"text" : "\"SELECT APPT_WAITINGLIST_NAME AS 'Name', APPT_WAITINGLIST_ID AS 'ID', APPT_WAITINGLIST_PHONE_NUMBER AS 'Phone', APPT_WAITINGLIST_TYPE AS 'Type', APPT_WAITINGLIST_DAY_TIME AS 'Req Date', APPT_WAITINGLIST_DOCTOR AS 'Req Doctor', (TO_DAYS(CURRENT_TIME)-TO_DAYS(TIMESTAMP)) AS 'Due', date_format(TIMESTAMP, ? ? ?) AS 'Created' FROM APPT_WAITINGLIST WHERE TIME_STAFF_HELPED IS NULL ORDER BY TIMESTAMP ASC\""
 				}
 
 			}
@@ -2792,7 +2695,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 543.0, 268.5, 201.875, 117.0 ],
+					"patching_rect" : [ 522.0, 47.5, 201.875, 117.0 ],
 					"text" : "APPT_WAITINGLIST TABLE:\n'APPT_WAITINGLIST_ID' (PK),\n'APPT_WAITINGLIST__NAME', \n'APPT_WAITINGLIST_TYPE',\n'APPT_WAITINGLIST_DAY_TIME',\n'APPT_WAITINGLIST_DOCTOR',\n'TIME_STAFF_HELPED';\n'TIMESTAMP'"
 				}
 
@@ -3484,7 +3387,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 867.0, 361.0, 1011.0, 707.0 ],
+						"rect" : [ 967.0, 336.0, 1011.0, 707.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3902,7 +3805,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "int", "int" ],
 									"patching_rect" : [ 105.5, 199.0, 39.0, 22.0 ],
-									"text" : "t 19 1"
+									"text" : "t 10 1"
 								}
 
 							}
@@ -3950,7 +3853,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 61.0, 150.0, 32.0, 22.0 ],
-									"text" : "< 20"
+									"text" : "< 11"
 								}
 
 							}
@@ -4671,7 +4574,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 474.0, 390.25, 266.0, 36.0 ],
+					"patching_rect" : [ 275.0, 264.25, 266.0, 36.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -4690,7 +4593,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 721.0, 431.5, 67.0, 22.0 ],
+					"patching_rect" : [ 522.0, 305.5, 67.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -9150,7 +9053,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 509.5, 431.5, 135.0, 22.0 ],
+					"patching_rect" : [ 555.4375, 372.5, 135.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -9169,7 +9072,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 284.5, 457.0, 238.5, 22.0 ],
+					"patching_rect" : [ 294.5, 442.0, 238.5, 22.0 ],
 					"text" : "refer appt_waitinglist_create_colored_coll"
 				}
 
@@ -9189,7 +9092,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "list", "", "", "" ],
 					"outmode" : 1,
-					"patching_rect" : [ 285.0, 485.5, 673.0, 132.5 ],
+					"patching_rect" : [ 275.0, 477.0, 673.0, 132.5 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 16.0, 584.0, 20.0 ],
 					"rowdef" : [ [ 0, 0, 0, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ] ],
@@ -9208,7 +9111,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 284.5, 431.5, 58.0, 22.0 ],
+					"patching_rect" : [ 294.5, 412.5, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -9232,7 +9135,7 @@
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 271.0, 2.0, 473.875, 622.5 ]
+					"patching_rect" : [ 264.125, -4.0, 704.875, 628.5 ]
 				}
 
 			}
@@ -9272,13 +9175,6 @@
 			}
  ],
 		"lines" : [ 			{
-				"patchline" : 				{
-					"destination" : [ "obj-10", 2 ],
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-110", 0 ],
 					"source" : [ "obj-100", 0 ]
@@ -9343,34 +9239,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-11", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-10", 4 ],
-					"source" : [ "obj-11", 3 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
-					"source" : [ "obj-11", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-25", 0 ],
-					"source" : [ "obj-11", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-113", 0 ],
 					"source" : [ "obj-110", 0 ]
 				}
@@ -9380,13 +9248,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-33", 0 ],
 					"source" : [ "obj-113", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
-					"source" : [ "obj-13", 0 ]
 				}
 
 			}
@@ -9581,13 +9442,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-10", 3 ],
-					"source" : [ "obj-25", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-237", 0 ],
 					"source" : [ "obj-250", 0 ]
 				}
@@ -9759,13 +9613,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
-					"source" : [ "obj-40", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-113", 0 ],
 					"midpoints" : [ 686.0, 1022.0, 663.0, 1022.0, 663.0, 1023.0, 449.0, 1023.0 ],
 					"source" : [ "obj-41", 0 ]
@@ -9834,7 +9681,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-50", 0 ],
-					"midpoints" : [ 519.0, 484.0, 429.0, 484.0, 429.0, 484.0, 294.5, 484.0 ],
+					"midpoints" : [ 564.9375, 484.0, 429.0, 484.0, 429.0, 484.0, 284.5, 484.0 ],
 					"source" : [ "obj-55", 0 ]
 				}
 
