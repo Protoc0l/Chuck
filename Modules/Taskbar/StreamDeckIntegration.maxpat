@@ -6211,49 +6211,12 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-65",
-									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 961.0, 158.0, 162.0, 36.0 ],
+									"patching_rect" : [ 968.0, 158.0, 223.0, 22.0 ],
 									"text" : "'Discord Webhook' '' 'hope this works'"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-64",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 1013.0, 287.0, 147.0, 22.0 ],
-									"text" : "\"'Test Connection' blah\""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-12",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 924.0, 208.0, 162.0, 22.0 ],
-									"text" : "'Test Connection' 'blah'"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-5",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 639.0, 535.0, 310.0, 22.0 ],
-									"text" : "\"'Test Connection' blah\""
 								}
 
 							}
@@ -6653,7 +6616,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "list", "int" ],
 									"patching_rect" : [ 749.0, 351.0, 192.0, 22.0 ],
-									"text" : "sadam.udpReceiver 5018 65535"
+									"text" : "sadam.udpReceiver 5016 65535"
 								}
 
 							}
@@ -6689,7 +6652,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 749.0, 307.0, 192.0, 22.0 ],
-									"text" : "sadam.udpSender 127.0.0.1 5017"
+									"text" : "sadam.udpSender 127.0.0.1 5015"
 								}
 
 							}
@@ -6699,7 +6662,7 @@
 									"fontsize" : 30.0,
 									"id" : "obj-58",
 									"maxclass" : "newobj",
-									"numinlets" : 0,
+									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 573.0, 158.0, 284.0, 43.0 ],
 									"text" : "background_query"
@@ -7333,8 +7296,8 @@
 													"linecount" : 2,
 													"maxclass" : "newobj",
 													"numinlets" : 5,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
+													"numoutlets" : 2,
+													"outlettype" : [ "bang", "" ],
 													"patching_rect" : [ 80.0, 189.0, 100.0, 36.0 ],
 													"text" : "Python \"Test Connection\""
 												}
@@ -8185,8 +8148,8 @@
 									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 5,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"numoutlets" : 2,
+									"outlettype" : [ "bang", "" ],
 									"patching_rect" : [ 1252.0, 463.5, 100.0, 36.0 ],
 									"text" : "Python USER_NAMES"
 								}
@@ -8344,7 +8307,8 @@
 									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 5,
-									"numoutlets" : 0,
+									"numoutlets" : 2,
+									"outlettype" : [ "bang", "" ],
 									"patching_rect" : [ 1241.0, 312.5, 100.0, 36.0 ],
 									"text" : "Python \"Test Connection\""
 								}
@@ -8546,13 +8510,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-41", 0 ],
 									"source" : [ "obj-11", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-61", 0 ],
-									"source" : [ "obj-12", 0 ]
 								}
 
 							}
@@ -8973,24 +8930,8 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-5", 1 ],
-									"order" : 1,
-									"source" : [ "obj-78", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-64", 1 ],
-									"order" : 0,
-									"source" : [ "obj-78", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-86", 0 ],
-									"order" : 2,
+									"order" : 0,
 									"source" : [ "obj-78", 0 ]
 								}
 
@@ -8999,7 +8940,7 @@
 								"patchline" : 								{
 									"destination" : [ "obj-87", 0 ],
 									"midpoints" : [ 758.5, 397.0, 652.5, 397.0 ],
-									"order" : 3,
+									"order" : 1,
 									"source" : [ "obj-78", 0 ]
 								}
 
@@ -81304,6 +81245,36 @@
 			}
  ],
 		"dependency_cache" : [ 			{
+				"name" : "Users.maxpat",
+				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Python.maxpat",
+				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "UDP.maxpat",
+				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Background_Query.maxpat",
+				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Python_R.maxpat",
+				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "mxj.mxe64",
 				"type" : "mx64"
 			}
