@@ -97,6 +97,18 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "int", "bang" ],
+									"patching_rect" : [ 346.0, 313.0, 100.0, 22.0 ],
+									"text" : "t i b"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "",
 									"id" : "obj-4",
 									"index" : 1,
@@ -117,7 +129,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "Restarting RSC.exe" ],
-									"patching_rect" : [ 365.0, 345.0, 100.0, 36.0 ],
+									"patching_rect" : [ 398.0, 383.0, 100.0, 36.0 ],
 									"text" : "t \"Restarting RSC.exe\""
 								}
 
@@ -129,7 +141,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 365.0, 385.0, 100.0, 22.0 ],
+									"patching_rect" : [ 398.0, 423.0, 100.0, 22.0 ],
 									"text" : "print RSC.exe"
 								}
 
@@ -141,7 +153,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "" ],
-									"patching_rect" : [ 346.0, 313.0, 100.0, 22.0 ],
+									"patching_rect" : [ 346.0, 345.0, 100.0, 22.0 ],
 									"text" : "select 1"
 								}
 
@@ -461,7 +473,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-11", 0 ],
+									"destination" : [ "obj-9", 0 ],
 									"source" : [ "obj-10", 0 ]
 								}
 
@@ -648,6 +660,21 @@
 								"patchline" : 								{
 									"destination" : [ "obj-7", 4 ],
 									"source" : [ "obj-8", 3 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-11", 0 ],
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-35", 0 ],
+									"midpoints" : [ 436.5, 336.0, 456.0, 336.0, 456.0, 245.0, 89.5, 245.0 ],
+									"source" : [ "obj-9", 1 ]
 								}
 
 							}
