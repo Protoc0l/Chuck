@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 390.0, 156.0, 1108.0, 762.0 ],
+		"rect" : [ 1145.0, 85.0, 1108.0, 762.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -52,6 +52,7 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 1.0, 0.152941176470588, 0.152941176470588, 1.0 ],
 					"id" : "obj-42",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -67,7 +68,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 961.0, 385.0, 656.0, 621.0 ],
+						"rect" : [ 1611.0, 547.0, 656.0, 621.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -97,13 +98,25 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-9",
+									"id" : "obj-23",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 42.0, 70.0, 24.0, 24.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-6",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "int", "bang" ],
-									"patching_rect" : [ 346.0, 313.0, 100.0, 22.0 ],
-									"text" : "t i b"
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 24.0, 189.0, 54.0, 22.0 ],
+									"text" : "deferlow"
 								}
 
 							}
@@ -129,7 +142,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "Restarting RSC.exe" ],
-									"patching_rect" : [ 398.0, 383.0, 100.0, 36.0 ],
+									"patching_rect" : [ 367.0, 350.0, 100.0, 36.0 ],
 									"text" : "t \"Restarting RSC.exe\""
 								}
 
@@ -141,7 +154,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 398.0, 423.0, 100.0, 22.0 ],
+									"patching_rect" : [ 367.0, 390.0, 100.0, 22.0 ],
 									"text" : "print RSC.exe"
 								}
 
@@ -153,7 +166,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "" ],
-									"patching_rect" : [ 346.0, 345.0, 100.0, 22.0 ],
+									"patching_rect" : [ 346.0, 313.0, 100.0, 22.0 ],
 									"text" : "select 1"
 								}
 
@@ -209,7 +222,7 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 1.0, 0.125, 0.125, 1.0 ],
+									"bgcolor" : [ 0.0625, 1.0, 0.165039, 1.0 ],
 									"id" : "obj-24",
 									"maxclass" : "panel",
 									"mode" : 0,
@@ -289,7 +302,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 80.0, 286.0, 100.0, 22.0 ],
+									"patching_rect" : [ 80.0, 286.0, 50.0, 22.0 ],
 									"text" : "> 6000"
 								}
 
@@ -313,7 +326,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "float", "" ],
-									"patching_rect" : [ 80.0, 255.0, 50.0, 22.0 ],
+									"patching_rect" : [ 80.0, 248.0, 50.0, 22.0 ],
 									"text" : "timer"
 								}
 
@@ -337,8 +350,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 140.75, 154.0, 50.0, 22.0 ],
-									"text" : "Good"
+									"patching_rect" : [ 151.4375, 150.0, 50.0, 22.0 ],
+									"text" : "good"
 								}
 
 							}
@@ -350,8 +363,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 100.25, 109.0, 94.0, 36.0 ],
-									"text" : "\"Test Connection\""
+									"patching_rect" : [ 103.8125, 109.0, 94.0, 36.0 ],
+									"text" : "\"RSC Connection\""
 								}
 
 							}
@@ -359,13 +372,12 @@
 								"box" : 								{
 									"color" : [ 1.0, 0.968627450980392, 0.0, 1.0 ],
 									"id" : "obj-7",
-									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 5,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 80.0, 189.0, 114.25, 36.0 ],
-									"text" : "Python_R \"Test Connection_RSC\""
+									"patching_rect" : [ 80.0, 180.0, 203.25, 22.0 ],
+									"text" : "Python_R \"RSC Connection\""
 								}
 
 							}
@@ -387,7 +399,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 0,
 									"numoutlets" : 0,
-									"patching_rect" : [ 463.5, 435.5, 135.0, 20.0 ],
+									"patching_rect" : [ 464.0, 445.25, 135.0, 20.0 ],
 									"suppressinlet" : 1,
 									"text" : "Drop Serve.py file here"
 								}
@@ -401,7 +413,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 442.0, 416.0, 178.0, 59.0 ]
+									"patching_rect" : [ 442.0, 435.5, 179.0, 39.5 ]
 								}
 
 							}
@@ -473,7 +485,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-9", 0 ],
+									"destination" : [ "obj-11", 0 ],
 									"source" : [ "obj-10", 0 ]
 								}
 
@@ -532,6 +544,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"source" : [ "obj-23", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
 									"source" : [ "obj-26", 0 ]
 								}
@@ -579,15 +598,14 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-35", 0 ],
-									"midpoints" : [ 205.5, 251.0, 89.5, 251.0 ],
+									"midpoints" : [ 205.5, 244.0, 89.5, 244.0 ],
 									"source" : [ "obj-36", 1 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-35", 1 ],
-									"midpoints" : [ 33.5, 233.0, 120.5, 233.0 ],
+									"destination" : [ "obj-6", 0 ],
 									"source" : [ "obj-37", 0 ]
 								}
 
@@ -629,6 +647,14 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-35", 1 ],
+									"midpoints" : [ 33.5, 235.0, 120.5, 235.0 ],
+									"source" : [ "obj-6", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-35", 0 ],
 									"source" : [ "obj-7", 0 ]
 								}
@@ -653,28 +679,6 @@
 									"destination" : [ "obj-37", 0 ],
 									"midpoints" : [ 89.5, 128.0, 33.5, 128.0 ],
 									"source" : [ "obj-8", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-7", 4 ],
-									"source" : [ "obj-8", 3 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-11", 0 ],
-									"source" : [ "obj-9", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-35", 0 ],
-									"midpoints" : [ 436.5, 336.0, 456.0, 336.0, 456.0, 245.0, 89.5, 245.0 ],
-									"source" : [ "obj-9", 1 ]
 								}
 
 							}
@@ -821,8 +825,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1634,8 +1638,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2051,8 +2055,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2469,8 +2473,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -4855,8 +4859,8 @@
 , 											{
 												"name" : "texteditGold",
 												"default" : 												{
-													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -6417,8 +6421,8 @@
 , 											{
 												"name" : "texteditGold",
 												"default" : 												{
-													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -6793,8 +6797,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -8409,7 +8413,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "Python_R.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -8603,8 +8607,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
