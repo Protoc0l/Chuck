@@ -40,6 +40,19 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-151",
+					"linecount" : 3,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1097.727272727272748, 867.89156711101532, 392.0, 52.0 ],
+					"text" : "0 4 1654 \" \" ✉ \"Dr. Cory\" McClung \"Re: Helen Strugari pt has eye surg. hole repair 19th of May. Should she keep her May 27 appt with you?\" 04May2022 9 2022/5/5 Roxanne Roxanne 1 \" \""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-150",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -69,7 +82,8 @@
 					"patching_rect" : [ 1891.0, 276.0, 208.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 530.0, 3.0, 140.0, 16.0 ],
-					"rounded" : 2.0
+					"rounded" : 2.0,
+					"text" : "cor"
 				}
 
 			}
@@ -426,7 +440,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 954.700864374637604, 397.632479429244995, 99.572650074958801, 22.0 ],
-									"text" : "%cory%"
+									"text" : "%cor%"
 								}
 
 							}
@@ -793,7 +807,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 153.0, 455.0, 1012.0, 22.0 ],
-									"text" : "%cory% %cory% %cory%"
+									"text" : "%cor% %cor% %cor%"
 								}
 
 							}
@@ -23248,7 +23262,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 42.0, 386.0, 1011.0, 480.0 ],
+						"rect" : [ -1369.0, 270.0, 575.0, 401.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -29857,6 +29871,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-3",
+									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -53440,6 +53455,7 @@
 									"bubbleusescolors" : 1,
 									"fontface" : 2,
 									"fontsize" : 18.0,
+									"hidden" : 1,
 									"id" : "obj-4",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -53469,6 +53485,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 6.0, 72.0, 274.0, 30.0 ],
 									"rounded" : 0.0,
+									"text" : "test",
 									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
 									"wordwrap" : 0
 								}
@@ -60222,7 +60239,6 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"hcellcolor" : [ 0.572549019607843, 0.572549019607843, 0.572549019607843, 0.47 ],
-					"hidden" : 1,
 					"hscroll" : 0,
 					"id" : "obj-50",
 					"maxclass" : "jit.cellblock",
@@ -60232,7 +60248,7 @@
 					"outmode" : 1,
 					"patching_rect" : [ 1040.0, 706.5, 627.0, 70.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 20.0, 700.0, 20.0 ],
+					"presentation_rect" : [ 0.0, 20.0, 700.0, 234.0 ],
 					"rowdef" : [ [ 0, 0, 0, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ] ],
 					"rows" : 1,
 					"selmode" : 3,
@@ -60284,14 +60300,14 @@
 				"box" : 				{
 					"background" : 1,
 					"enabled" : 0,
-					"hint" : "0",
+					"hint" : "McClung",
 					"id" : "obj-129",
 					"maxclass" : "hint",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1445.333333333333258, 808.0, 111.333332999999925, 40.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 20.0, 700.0, 18.0 ],
+					"presentation_rect" : [ 0.0, 20.0, 700.0, 234.0 ],
 					"varname" : "TDL_HINT"
 				}
 
@@ -61613,7 +61629,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-151", 1 ],
+					"order" : 0,
+					"source" : [ "obj-50", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-267", 0 ],
+					"order" : 1,
 					"source" : [ "obj-50", 0 ]
 				}
 
