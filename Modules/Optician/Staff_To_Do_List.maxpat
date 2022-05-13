@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 1,
+			"minor" : 2,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -99,8 +99,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -357,14 +357,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 397.0, 441.0, 1473.0, 884.0 ],
+						"rect" : [ 405.0, 142.0, 1473.0, 884.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -412,7 +412,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 954.700864374637604, 397.632479429244995, 99.572650074958801, 22.0 ],
-									"text" : "%lun%"
+									"text" : "%cory%"
 								}
 
 							}
@@ -532,7 +532,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 179.5, 896.0, 402.333333333333258, 24.0 ],
-									"text" : "store ID ⚠ ✉ \"First Name\" \"Last Name\" Item ⧗ ⛅ ⏱ For ✏"
+									"text" : "store ID ⚠ ✉ \"First Name\" \"Last Name\" Item ⧗ ⛅ ⏱ For From ✏ ✓"
 								}
 
 							}
@@ -556,7 +556,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 179.5, 868.0, 100.0, 22.0 ],
-									"text" : "route ID"
+									"text" : "route PxID"
 								}
 
 							}
@@ -779,7 +779,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 153.0, 455.0, 1012.0, 22.0 ],
-									"text" : "%ory% %ory% %ory% %lun% %lun% %lun%"
+									"text" : "%cory% %cory% %cory%"
 								}
 
 							}
@@ -943,13 +943,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-4",
-									"linecount" : 8,
+									"linecount" : 10,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 207.0, 604.0, 958.0, 119.0 ],
-									"text" : "sprintf \\\"SELECT TODOLIST.TODOLIST_ID AS 'ID'\\, TODOLIST.TODOLIST_NAME\\, TODOLIST.TODOLIST_LASTNAME\\, TODOLIST.TODOLIST_ITEM\\, date_format(TODOLIST.TIMESTAMP\\, ? ? ?) AS 'Created'\\, (TO_DAYS(CURRENT_TIMESTAMP)-TO_DAYS(TODOLIST.TIMESTAMP))\\, TODOLIST.TODOLIST_DUEDATE\\, (SELECT STAFF.STAFF_NAME FROM STAFF WHERE STAFF.STAFF_ID=TODOLIST.STAFF_ID_FOR)\\, (SELECT COUNT(TODOLIST_NOTES.TODOLIST_ID) FROM TODOLIST_NOTES WHERE TODOLIST.TODOLIST_ID=TODOLIST_NOTES.TODOLIST_ID)\\, TODOLIST.USER_ID\\, TODOLIST.URGENT\\, TODOLIST.UNREAD\\, TODOLIST_GROUP.URGENT\\, TODOLIST_GROUP.UNREAD AS TODOLIST_INDIVIDUAL\\, (SELECT IF( EXISTS( SELECT TODOLIST_GROUP.TODOLIST_ID FROM TODOLIST_GROUP LEFT JOIN TODOLIST ON TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID WHERE TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID)\\, 1\\, 0)) AS 'Flag' FROM TODOLIST LEFT JOIN USER ON TODOLIST.STAFF_ID_FROM=USER.USER_ID LEFT JOIN TODOLIST_GROUP ON TODOLIST.TODOLIST_ID=TODOLIST_GROUP.TODOLIST_ID WHERE %s ORDER BY TODOLIST.TIMESTAMP DESC LIMIT 0\\, 20\\\""
+									"patching_rect" : [ 207.0, 604.0, 1027.0, 146.0 ],
+									"text" : "sprintf \\\"SELECT TODOLIST.TODOLIST_ID AS 'PxID'\\, TODOLIST.TODOLIST_NAME\\, TODOLIST.TODOLIST_LASTNAME\\, TODOLIST.TODOLIST_ITEM\\, date_format(TODOLIST.TIMESTAMP\\, ? ? ?) AS 'Created'\\, (TO_DAYS(CURRENT_TIMESTAMP)-TO_DAYS(TODOLIST.TIMESTAMP))\\, TODOLIST.TODOLIST_DUEDATE\\, (SELECT IFNULL((SELECT STAFF_NAME FROM STAFF WHERE STAFF_ID=(SELECT STAFF_ID_FOR FROM TODOLIST WHERE TODOLIST_ID=PxID))\\, (SELECT USER_NAME FROM USER WHERE USER_ID=(SELECT USER_ID FROM TODOLIST WHERE TODOLIST.TODOLIST_ID=PxID)))) AS 'For'\\, (SELECT STAFF.STAFF_NAME FROM STAFF WHERE STAFF.STAFF_ID=TODOLIST.STAFF_ID_FROM) AS 'From'\\, (SELECT COUNT(TODOLIST_NOTES.TODOLIST_ID) FROM TODOLIST_NOTES WHERE TODOLIST.TODOLIST_ID=TODOLIST_NOTES.TODOLIST_ID)\\, TODOLIST.USER_ID\\, TODOLIST.URGENT\\, TODOLIST.UNREAD\\, TODOLIST_GROUP.URGENT\\, TODOLIST_GROUP.UNREAD AS TODOLIST_INDIVIDUAL\\, (SELECT IF( EXISTS( SELECT TODOLIST_GROUP.TODOLIST_ID FROM TODOLIST_GROUP LEFT JOIN TODOLIST ON TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID WHERE TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID)\\, 1\\, 0)) AS 'Flag'\\, TIME_TDL_ITEM_COMPLETED FROM TODOLIST LEFT JOIN USER ON TODOLIST.STAFF_ID_FROM=USER.USER_ID LEFT JOIN TODOLIST_GROUP ON TODOLIST.TODOLIST_ID=TODOLIST_GROUP.TODOLIST_ID WHERE %s ORDER BY TODOLIST.TIMESTAMP DESC LIMIT 0\\, 20\\\""
 								}
 
 							}
@@ -1613,8 +1613,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2728,8 +2728,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3169,14 +3169,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 942.0, 309.0, 1576.0, 988.0 ],
+						"rect" : [ -1605.0, 155.0, 1576.0, 988.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3205,6 +3205,102 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-91",
+									"linecount" : 5,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 601.0, 359.0, 52.0, 75.0 ],
+									"text" : "cutting out User_ID from query"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-88",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 658.0, 359.0, 55.0, 22.0 ],
+									"text" : "zl slice 2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-77",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 609.0, 487.0, 100.0, 22.0 ],
+									"text" : "v COMPLETE?"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-76",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"patching_rect" : [ 658.0, 427.0, 51.0, 22.0 ],
+									"text" : "t l b"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-75",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 658.0, 586.0, 55.0, 22.0 ],
+									"text" : "zl join"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-74",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1454.0, 509.0, 100.0, 22.0 ],
+									"text" : "v COMPLETE?"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-73",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "✓" ],
+									"patching_rect" : [ 1454.0, 480.0, 27.0, 24.0 ],
+									"text" : "t ✓"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-38",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 1326.0, 451.0, 144.0, 22.0 ],
+									"text" : "zl slice 1"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-71",
 									"maxclass" : "newobj",
@@ -3259,7 +3355,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1326.0, 452.0, 100.0, 22.0 ],
+									"patching_rect" : [ 1326.0, 480.0, 100.0, 22.0 ],
 									"text" : "v group_yn"
 								}
 
@@ -3358,7 +3454,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 12.0, 49.0, 100.0, 22.0 ],
-									"text" : "route ID"
+									"text" : "route PxID"
 								}
 
 							}
@@ -3465,7 +3561,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 573.0, 626.0, 100.0, 22.0 ],
+									"patching_rect" : [ 573.0, 626.0, 104.0, 22.0 ],
 									"text" : "zl join"
 								}
 
@@ -3487,10 +3583,10 @@
 									"id" : "obj-36",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "int", "int" ],
-									"patching_rect" : [ 719.0, 262.0, 100.0, 22.0 ],
-									"text" : "t 0 0"
+									"numoutlets" : 3,
+									"outlettype" : [ "int", "int", " " ],
+									"patching_rect" : [ 719.0, 262.0, 181.0, 22.0 ],
+									"text" : "t 0 0 \" \""
 								}
 
 							}
@@ -3538,7 +3634,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 658.0, 332.0, 100.0, 22.0 ],
-									"text" : "zl slice 2"
+									"text" : "zl slice 3"
 								}
 
 							}
@@ -4196,7 +4292,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-70", 1 ],
+									"destination" : [ "obj-88", 0 ],
 									"source" : [ "obj-27", 0 ]
 								}
 
@@ -4309,8 +4405,29 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-74", 0 ],
+									"source" : [ "obj-36", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-18", 1 ],
 									"source" : [ "obj-37", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-64", 0 ],
+									"source" : [ "obj-38", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-73", 0 ],
+									"source" : [ "obj-38", 1 ]
 								}
 
 							}
@@ -4337,7 +4454,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-64", 0 ],
+									"destination" : [ "obj-38", 0 ],
 									"source" : [ "obj-40", 1 ]
 								}
 
@@ -4575,6 +4692,41 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-74", 0 ],
+									"source" : [ "obj-73", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-70", 1 ],
+									"source" : [ "obj-75", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-75", 0 ],
+									"source" : [ "obj-76", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-77", 0 ],
+									"source" : [ "obj-76", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-75", 1 ],
+									"source" : [ "obj-77", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-36", 0 ],
 									"midpoints" : [ 102.5, 79.0, 728.5, 79.0 ],
 									"order" : 0,
@@ -4615,6 +4767,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-86", 0 ],
 									"source" : [ "obj-87", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-76", 0 ],
+									"source" : [ "obj-88", 0 ]
 								}
 
 							}
@@ -4846,8 +5005,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5105,14 +5264,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 42.0, 229.0, 1791.0, 612.0 ],
+						"rect" : [ 87.0, 290.0, 1791.0, 612.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -5145,10 +5304,10 @@
 									"id" : "obj-14",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 478.777777777777771, 137.0, 100.0, 22.0 ],
-									"text" : "zl join"
+									"text" : "pak i i"
 								}
 
 							}
@@ -5208,7 +5367,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 97.0, 482.0, 402.333333333333258, 24.0 ],
-									"text" : "store ID ⚠ ✉ \"First Name\" \"Last Name\" Item ⧗ ⛅ ⏱ From ✏"
+									"text" : "store ID ⚠ ✉ \"First Name\" \"Last Name\" Item ⧗ ⛅ ⏱ For From ✏ ✓"
 								}
 
 							}
@@ -5244,7 +5403,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 96.888888888888914, 444.0, 100.0, 22.0 ],
-									"text" : "route ID"
+									"text" : "route PxID"
 								}
 
 							}
@@ -5341,13 +5500,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-3",
-									"linecount" : 6,
+									"linecount" : 8,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 255.888888888888914, 210.0, 1398.0, 91.0 ],
-									"text" : "\"SELECT TODOLIST.TODOLIST_ID AS 'ID', TODOLIST.TODOLIST_NAME AS 'First Name', TODOLIST.TODOLIST_LASTNAME AS 'Last Name', TODOLIST.TODOLIST_ITEM AS 'Item', date_format(TODOLIST.TIMESTAMP, ? ? ?) AS 'Created', (TO_DAYS(CURRENT_TIMESTAMP)-TO_DAYS(TODOLIST.TIMESTAMP)), TODOLIST.TODOLIST_DUEDATE, (SELECT STAFF.STAFF_NAME FROM STAFF WHERE STAFF.STAFF_ID=TODOLIST.STAFF_ID_FOR), (SELECT COUNT(TODOLIST_NOTES.TODOLIST_ID) FROM TODOLIST_NOTES WHERE TODOLIST.TODOLIST_ID=TODOLIST_NOTES.TODOLIST_ID), TODOLIST.USER_ID, TODOLIST.URGENT, TODOLIST.UNREAD, TODOLIST_GROUP.URGENT, TODOLIST_GROUP.UNREAD AS TODOLIST_INDIVIDUAL, (SELECT IF( EXISTS( SELECT TODOLIST_GROUP.TODOLIST_ID FROM TODOLIST_GROUP LEFT JOIN TODOLIST ON TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID WHERE TODOLIST_GROUP.STAFF_ID=? AND TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID), 1, 0)) AS 'Flag' FROM TODOLIST LEFT JOIN USER ON TODOLIST.STAFF_ID_FROM=USER.USER_ID LEFT JOIN TODOLIST_GROUP ON TODOLIST.TODOLIST_ID=TODOLIST_GROUP.TODOLIST_ID WHERE TODOLIST.STAFF_ID_FOR=? AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NOT NULL ORDER BY TODOLIST.TIME_TDL_ITEM_COMPLETED DESC LIMIT 0, 20\""
+									"patching_rect" : [ 255.888888888888914, 210.0, 1398.0, 119.0 ],
+									"text" : "\"SELECT TODOLIST.TODOLIST_ID AS 'PxID', TODOLIST.TODOLIST_NAME AS 'First Name', TODOLIST.TODOLIST_LASTNAME AS 'Last Name', TODOLIST.TODOLIST_ITEM AS 'Item', date_format(TODOLIST.TIMESTAMP, ? ? ?) AS 'Created', (TO_DAYS(CURRENT_TIMESTAMP)-TO_DAYS(TODOLIST.TIMESTAMP)), TODOLIST.TODOLIST_DUEDATE, (SELECT IFNULL((SELECT STAFF_NAME FROM STAFF WHERE STAFF_ID=(SELECT STAFF_ID_FOR FROM TODOLIST WHERE TODOLIST_ID=PxID)), (SELECT USER_NAME FROM USER WHERE USER_ID=(SELECT USER_ID FROM TODOLIST WHERE TODOLIST.TODOLIST_ID=PxID)))) AS 'For', (SELECT STAFF.STAFF_NAME FROM STAFF WHERE STAFF.STAFF_ID=TODOLIST.STAFF_ID_FROM) AS 'From', (SELECT COUNT(TODOLIST_NOTES.TODOLIST_ID) FROM TODOLIST_NOTES WHERE TODOLIST.TODOLIST_ID=TODOLIST_NOTES.TODOLIST_ID), TODOLIST.USER_ID, TODOLIST.URGENT, TODOLIST.UNREAD, TODOLIST_GROUP.URGENT, TODOLIST_GROUP.UNREAD AS TODOLIST_INDIVIDUAL, (SELECT IF( EXISTS( SELECT TODOLIST_GROUP.TODOLIST_ID FROM TODOLIST_GROUP LEFT JOIN TODOLIST ON TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID WHERE TODOLIST_GROUP.STAFF_ID=? AND TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID), 1, 0)) AS 'Flag', TIME_TDL_ITEM_COMPLETED FROM TODOLIST LEFT JOIN USER ON TODOLIST.STAFF_ID_FROM=USER.USER_ID LEFT JOIN TODOLIST_GROUP ON TODOLIST.TODOLIST_ID=TODOLIST_GROUP.TODOLIST_ID WHERE TODOLIST.STAFF_ID_FOR=? AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NOT NULL ORDER BY TODOLIST.TIME_TDL_ITEM_COMPLETED DESC LIMIT 0, 20\""
 								}
 
 							}
@@ -5737,14 +5896,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ -1888.0, 241.0, 1791.0, 600.0 ],
+						"rect" : [ 25.0, 242.0, 1791.0, 600.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -5865,7 +6024,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 73.388888888888914, 472.0, 402.333333333333258, 24.0 ],
-									"text" : "store ID ⚠ ✉ \"First Name\" \"Last Name\" Item ⧗ ⛅ ⏱ For ✏"
+									"text" : "store ID ⚠ ✉ \"First Name\" \"Last Name\" Item ⧗ ⛅ ⏱ For From ✏ ✓"
 								}
 
 							}
@@ -5889,7 +6048,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 73.388888888888914, 438.0, 100.0, 22.0 ],
-									"text" : "route ID"
+									"text" : "route PxID"
 								}
 
 							}
@@ -6022,13 +6181,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-3",
-									"linecount" : 7,
+									"linecount" : 8,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 244.888888888888914, 210.0, 1502.0, 105.0 ],
-									"text" : "\"SELECT TODOLIST.TODOLIST_ID AS 'ID', TODOLIST.TODOLIST_NAME, TODOLIST.TODOLIST_LASTNAME, TODOLIST.TODOLIST_ITEM, date_format(TODOLIST.TIMESTAMP, ? ? ?) AS 'Created', (TO_DAYS(CURRENT_TIMESTAMP)-TO_DAYS(TODOLIST.TIMESTAMP)), TODOLIST.TODOLIST_DUEDATE, (SELECT IFNULL((SELECT STAFF_NAME FROM STAFF WHERE STAFF_ID=(SELECT STAFF_ID_FOR FROM TODOLIST WHERE TODOLIST_ID=ID)), (SELECT USER_NAME FROM USER WHERE USER_ID=(SELECT USER_ID FROM TODOLIST WHERE TODOLIST.TODOLIST_ID=ID)))), (SELECT COUNT(TODOLIST_NOTES.TODOLIST_ID) FROM TODOLIST_NOTES WHERE TODOLIST.TODOLIST_ID=TODOLIST_NOTES.TODOLIST_ID), TODOLIST.USER_ID, TODOLIST.URGENT, TODOLIST.UNREAD, TODOLIST_GROUP.URGENT, TODOLIST_GROUP.UNREAD AS TODOLIST_INDIVIDUAL, (SELECT IF( EXISTS( SELECT TODOLIST_GROUP.TODOLIST_ID FROM TODOLIST_GROUP LEFT JOIN TODOLIST ON TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID WHERE TODOLIST_GROUP.STAFF_ID=? AND TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID), 1, 0)) AS 'Flag' FROM TODOLIST LEFT JOIN USER ON TODOLIST.STAFF_ID_FROM=USER.USER_ID LEFT JOIN TODOLIST_GROUP ON TODOLIST.TODOLIST_ID=TODOLIST_GROUP.TODOLIST_ID WHERE TODOLIST.STAFF_ID_FROM=? AND (TODOLIST.STAFF_ID_FOR NOT IN (?) OR TODOLIST.USER_ID IS NOT NULL) AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NOT NULL ORDER BY TODOLIST.TIME_TDL_ITEM_COMPLETED DESC LIMIT ?, 20\""
+									"patching_rect" : [ 244.888888888888914, 210.0, 1504.0, 119.0 ],
+									"text" : "\"SELECT TODOLIST.TODOLIST_ID AS 'PxID', TODOLIST.TODOLIST_NAME, TODOLIST.TODOLIST_LASTNAME, TODOLIST.TODOLIST_ITEM, date_format(TODOLIST.TIMESTAMP, ? ? ?) AS 'Created', (TO_DAYS(CURRENT_TIMESTAMP)-TO_DAYS(TODOLIST.TIMESTAMP)), TODOLIST.TODOLIST_DUEDATE, (SELECT IFNULL((SELECT STAFF_NAME FROM STAFF WHERE STAFF_ID=(SELECT STAFF_ID_FOR FROM TODOLIST WHERE TODOLIST_ID=PxID)), (SELECT USER_NAME FROM USER WHERE USER_ID=(SELECT USER_ID FROM TODOLIST WHERE TODOLIST.TODOLIST_ID=PxID)))) AS 'For', (SELECT STAFF.STAFF_NAME FROM STAFF WHERE STAFF.STAFF_ID=TODOLIST.STAFF_ID_FROM) AS 'From', (SELECT COUNT(TODOLIST_NOTES.TODOLIST_ID) FROM TODOLIST_NOTES WHERE TODOLIST.TODOLIST_ID=TODOLIST_NOTES.TODOLIST_ID), TODOLIST.USER_ID, TODOLIST.URGENT, TODOLIST.UNREAD, TODOLIST_GROUP.URGENT, TODOLIST_GROUP.UNREAD AS TODOLIST_INDIVIDUAL, (SELECT IF( EXISTS( SELECT TODOLIST_GROUP.TODOLIST_ID FROM TODOLIST_GROUP LEFT JOIN TODOLIST ON TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID WHERE TODOLIST_GROUP.STAFF_ID=? AND TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID), 1, 0)) AS 'Flag', TIME_TDL_ITEM_COMPLETED FROM TODOLIST LEFT JOIN USER ON TODOLIST.STAFF_ID_FROM=USER.USER_ID LEFT JOIN TODOLIST_GROUP ON TODOLIST.TODOLIST_ID=TODOLIST_GROUP.TODOLIST_ID WHERE TODOLIST.STAFF_ID_FROM=? AND (TODOLIST.STAFF_ID_FOR NOT IN (?) OR TODOLIST.USER_ID IS NOT NULL) AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NOT NULL ORDER BY TODOLIST.TIME_TDL_ITEM_COMPLETED DESC LIMIT ?, 20\""
 								}
 
 							}
@@ -6448,14 +6607,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 74.0, 141.0, 1791.0, 876.0 ],
+						"rect" : [ 87.0, 315.0, 1791.0, 876.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -6612,7 +6771,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 73.5, 488.0, 402.333333333333258, 24.0 ],
-									"text" : "store ID ⚠ ✉ \"First Name\" \"Last Name\" Item ⧗ ⛅ ⏱ For ✏"
+									"text" : "store ID ⚠ ✉ \"First Name\" \"Last Name\" Item ⧗ ⛅ ⏱ For From ✏ ✓"
 								}
 
 							}
@@ -6636,7 +6795,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 73.388888888888914, 445.0, 100.0, 22.0 ],
-									"text" : "route ID"
+									"text" : "route PxID"
 								}
 
 							}
@@ -6762,8 +6921,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 255.888888888888914, 189.0, 1399.0, 119.0 ],
-									"text" : "\"SELECT TODOLIST.TODOLIST_ID AS 'ID', TODOLIST.TODOLIST_NAME, TODOLIST.TODOLIST_LASTNAME, TODOLIST.TODOLIST_ITEM, date_format(TODOLIST.TIMESTAMP, ? ? ?) AS 'Created', (TO_DAYS(CURRENT_TIMESTAMP)-TO_DAYS(TODOLIST.TIMESTAMP)), TODOLIST.TODOLIST_DUEDATE, (SELECT IFNULL((SELECT STAFF_NAME FROM STAFF WHERE STAFF_ID=(SELECT STAFF_ID_FOR FROM TODOLIST WHERE TODOLIST_ID=ID)), (SELECT USER_NAME FROM USER WHERE USER_ID=(SELECT USER_ID FROM TODOLIST WHERE TODOLIST.TODOLIST_ID=ID)))), (SELECT COUNT(TODOLIST_NOTES.TODOLIST_ID) FROM TODOLIST_NOTES WHERE TODOLIST.TODOLIST_ID=TODOLIST_NOTES.TODOLIST_ID), TODOLIST.USER_ID, TODOLIST.URGENT, TODOLIST.UNREAD, TODOLIST_GROUP.URGENT, TODOLIST_GROUP.UNREAD AS TODOLIST_INDIVIDUAL, (SELECT IF( EXISTS( SELECT TODOLIST_GROUP.TODOLIST_ID FROM TODOLIST_GROUP LEFT JOIN TODOLIST ON TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID WHERE TODOLIST_GROUP.STAFF_ID=? AND TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID), 1, 0)) AS 'Flag' FROM TODOLIST LEFT JOIN USER ON TODOLIST.STAFF_ID_FROM=USER.USER_ID LEFT JOIN TODOLIST_GROUP ON TODOLIST.TODOLIST_ID=TODOLIST_GROUP.TODOLIST_ID WHERE TODOLIST.STAFF_ID_FROM=? AND (TODOLIST.STAFF_ID_FOR NOT IN (?) OR TODOLIST.USER_ID IS NOT NULL) AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NULL ORDER BY TODOLIST.TODOLIST_DUEDATE ASC\""
+									"patching_rect" : [ 255.888888888888914, 189.0, 1403.0, 119.0 ],
+									"text" : "\"SELECT TODOLIST.TODOLIST_ID AS 'PxID', TODOLIST.TODOLIST_NAME, TODOLIST.TODOLIST_LASTNAME, TODOLIST.TODOLIST_ITEM, date_format(TODOLIST.TIMESTAMP, ? ? ?) AS 'Created', (TO_DAYS(CURRENT_TIMESTAMP)-TO_DAYS(TODOLIST.TIMESTAMP)), TODOLIST.TODOLIST_DUEDATE, (SELECT IFNULL((SELECT STAFF_NAME FROM STAFF WHERE STAFF_ID=(SELECT STAFF_ID_FOR FROM TODOLIST WHERE TODOLIST_ID=PxID)), (SELECT USER_NAME FROM USER WHERE USER_ID=(SELECT USER_ID FROM TODOLIST WHERE TODOLIST.TODOLIST_ID=PxID)))) AS 'For', (SELECT STAFF.STAFF_NAME FROM STAFF WHERE STAFF.STAFF_ID=TODOLIST.STAFF_ID_FROM) AS 'From', (SELECT COUNT(TODOLIST_NOTES.TODOLIST_ID) FROM TODOLIST_NOTES WHERE TODOLIST.TODOLIST_ID=TODOLIST_NOTES.TODOLIST_ID), TODOLIST.USER_ID, TODOLIST.URGENT, TODOLIST.UNREAD, TODOLIST_GROUP.URGENT, TODOLIST_GROUP.UNREAD AS TODOLIST_INDIVIDUAL, (SELECT IF( EXISTS( SELECT TODOLIST_GROUP.TODOLIST_ID FROM TODOLIST_GROUP LEFT JOIN TODOLIST ON TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID WHERE TODOLIST_GROUP.STAFF_ID=? AND TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID), 1, 0)) AS 'Flag', TIME_TDL_ITEM_COMPLETED FROM TODOLIST LEFT JOIN USER ON TODOLIST.STAFF_ID_FROM=USER.USER_ID LEFT JOIN TODOLIST_GROUP ON TODOLIST.TODOLIST_ID=TODOLIST_GROUP.TODOLIST_ID WHERE TODOLIST.STAFF_ID_FROM=? AND (TODOLIST.STAFF_ID_FOR NOT IN (?) OR TODOLIST.USER_ID IS NOT NULL) AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NULL ORDER BY TODOLIST.TODOLIST_DUEDATE ASC\""
 								}
 
 							}
@@ -7213,8 +7372,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -7806,8 +7965,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -7853,8 +8012,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -8303,8 +8462,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -8755,8 +8914,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -9207,8 +9366,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -9659,8 +9818,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -10111,8 +10270,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -10581,8 +10740,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -11081,8 +11240,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -11137,8 +11296,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 3,
-															"revision" : 1,
+															"minor" : 2,
+															"revision" : 2,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -11679,8 +11838,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 3,
-															"revision" : 1,
+															"minor" : 2,
+															"revision" : 2,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -12828,6 +12987,7 @@
 								"box" : 								{
 									"bgcolor" : [ 0.0, 0.0, 0.0, 0.76 ],
 									"fontsize" : 14.0,
+									"hidden" : 1,
 									"id" : "obj-20",
 									"maxclass" : "textbutton",
 									"mode" : 1,
@@ -12987,8 +13147,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -14312,8 +14472,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -14488,8 +14648,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 3,
-															"revision" : 1,
+															"minor" : 2,
+															"revision" : 2,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -15723,8 +15883,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -16389,8 +16549,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -16436,8 +16596,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 3,
-															"revision" : 1,
+															"minor" : 2,
+															"revision" : 2,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -18720,8 +18880,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -18768,8 +18928,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -19035,8 +19195,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -19262,8 +19422,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -19443,8 +19603,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -20127,8 +20287,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -20274,8 +20434,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 3,
-															"revision" : 1,
+															"minor" : 2,
+															"revision" : 2,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -20764,8 +20924,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -20904,8 +21064,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 3,
-															"revision" : 1,
+															"minor" : 2,
+															"revision" : 2,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -21911,8 +22071,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -22330,8 +22490,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -22566,8 +22726,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -23295,7 +23455,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 755.0, 1020.39156711101532, 104.0, 180.60843288898468 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1467.0, 306.0, 102.0, 181.0 ],
+					"presentation_rect" : [ 1153.0, 1007.0, 102.0, 181.0 ],
 					"varname" : "Right_click_menu_STDL",
 					"viewvisibility" : 1
 				}
@@ -23471,6 +23631,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-210",
+					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -23503,8 +23664,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -23984,6 +24145,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-173",
+					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -24004,8 +24166,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -24074,8 +24236,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -24624,8 +24786,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -25204,8 +25366,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -25754,8 +25916,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -26227,8 +26389,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -26861,8 +27023,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -26944,8 +27106,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 3,
-															"revision" : 1,
+															"minor" : 2,
+															"revision" : 2,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -27432,8 +27594,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -29070,8 +29232,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -29457,6 +29619,7 @@
 				"box" : 				{
 					"fontface" : 2,
 					"fontsize" : 14.0,
+					"hidden" : 1,
 					"id" : "obj-198",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -29477,6 +29640,7 @@
 					"angle" : 270.0,
 					"grad1" : [ 0.368627450980392, 0.368627450980392, 0.368627450980392, 0.76 ],
 					"grad2" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"hidden" : 1,
 					"id" : "obj-196",
 					"maxclass" : "panel",
 					"mode" : 1,
@@ -29538,8 +29702,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -29894,8 +30058,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -30559,8 +30723,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -30617,8 +30781,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -30700,8 +30864,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 3,
-															"revision" : 1,
+															"minor" : 2,
+															"revision" : 2,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -31322,8 +31486,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -31643,8 +31807,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -31712,8 +31876,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 3,
-															"revision" : 1,
+															"minor" : 2,
+															"revision" : 2,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -32338,8 +32502,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 3,
-															"revision" : 1,
+															"minor" : 2,
+															"revision" : 2,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -32725,8 +32889,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 3,
-															"revision" : 1,
+															"minor" : 2,
+															"revision" : 2,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -33147,8 +33311,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 3,
-															"revision" : 1,
+															"minor" : 2,
+															"revision" : 2,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -34180,8 +34344,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -34965,8 +35129,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -35305,8 +35469,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -35510,8 +35674,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -35556,8 +35720,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 3,
-															"revision" : 1,
+															"minor" : 2,
+															"revision" : 2,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -35989,8 +36153,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 3,
-															"revision" : 1,
+															"minor" : 2,
+															"revision" : 2,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -37389,8 +37553,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -37532,8 +37696,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 3,
-															"revision" : 1,
+															"minor" : 2,
+															"revision" : 2,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -38383,8 +38547,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -38982,9 +39146,9 @@
 							}
 , 							{
 								"box" : 								{
-									"coldef" : [ [ 0, 2, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 4, 2, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 3, 150, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 2, 115, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 1, 538, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ] ],
+									"coldef" : [ [ 0, 2, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ] ],
 									"colhead" : 1,
-									"cols" : 5,
+									"cols" : 1,
 									"fontface" : 0,
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
@@ -40283,7 +40447,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1688.166666666666515, 24.0, 404.333333333333485, 24.0 ],
-					"text" : "store ID ⚠ ✉ \"First Name\" \"Last Name\" Item ⧗ ⛅ ⏱ From ✏"
+					"text" : "store ID ⚠ ✉ \"First Name\" \"Last Name\" Item ⧗ ⛅ ⏱ For From ✏"
 				}
 
 			}
@@ -40311,8 +40475,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -41625,7 +41789,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1435.5, 132.0, 397.333333333333258, 24.0 ],
-					"text" : "store ID ⚠ ✉ \"First Name\" \"Last Name\" Item ⧗ ⛅ ⏱ For ✏"
+					"text" : "store ID ⚠ ✉ \"First Name\" \"Last Name\" Item ⧗ ⛅ ⏱ For From ✏ ✓"
 				}
 
 			}
@@ -41672,7 +41836,6 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"hidden" : 1,
 					"id" : "obj-95",
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
@@ -42131,7 +42294,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1493.0, 24.0, 302.0, 186.0 ],
+					"patching_rect" : [ 1569.166666666666515, 272.0, 302.0, 186.0 ],
 					"text" : "TODOLIST TABLE:\n'TODOLIST_ID' (PK),\n'TODOLIST_NAME', \n'TODOLIST_LASTNAME',\n'TODOLIST_ITEM',\n'STAFF_ID_FOR', <- Staff ID TDL is for\n'STAFF_ID_FROM' <- who game the TDL\n'TIME_TDL_ITEM_COMPLETED';\n'TODOLIST_DUEDATE',\n'USER_ID'\n'TIMESTAMP'\n'URGENT'\n'UNREAD'"
 				}
 
@@ -42161,8 +42324,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -42569,8 +42732,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -42688,8 +42851,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -43421,7 +43584,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1168.5, 232.0, 396.333333333333258, 24.0 ],
-					"text" : "store ID ⚠ ✉ \"First Name\" \"Last Name\" Item ⧗ ⛅ ⏱ For ✏"
+					"text" : "store ID ⚠ ✉ \"First Name\" \"Last Name\" Item ⧗ ⛅ ⏱ For From ✏ ✓"
 				}
 
 			}
@@ -43478,7 +43641,6 @@
 , 			{
 				"box" : 				{
 					"fontsize" : 12.0,
-					"hidden" : 1,
 					"htabcolor" : [ 0.333333333333333, 0.333333333333333, 0.333333333333333, 0.701960784313725 ],
 					"id" : "obj-47",
 					"maxclass" : "tab",
@@ -43579,7 +43741,6 @@
 					"bgcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
 					"fontface" : 0,
 					"fontsize" : 14.0,
-					"hidden" : 1,
 					"id" : "obj-107",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
@@ -43644,8 +43805,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -43700,8 +43861,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -45314,8 +45475,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -46352,8 +46513,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -46505,8 +46666,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -46645,8 +46806,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -46798,8 +46959,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -48293,8 +48454,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -49273,8 +49434,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -49598,8 +49759,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -49909,8 +50070,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 3,
-															"revision" : 1,
+															"minor" : 2,
+															"revision" : 2,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -50483,8 +50644,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 3,
-															"revision" : 1,
+															"minor" : 2,
+															"revision" : 2,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -51344,8 +51505,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -51487,8 +51648,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 3,
-															"revision" : 1,
+															"minor" : 2,
+															"revision" : 2,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -54772,8 +54933,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -55959,14 +56120,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 865.0, 393.0, 768.0, 480.0 ],
+						"rect" : [ -1021.0, 347.0, 768.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -55996,6 +56157,20 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-19",
+									"linecount" : 2,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 472.5, 279.0, 62.0, 36.0 ],
+									"presentation_linecount" : 2,
+									"text" : "col 12 width 20"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-18",
 									"linecount" : 2,
 									"maxclass" : "message",
@@ -56003,7 +56178,8 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 405.5, 279.0, 62.0, 36.0 ],
-									"text" : "col 11 width 0"
+									"presentation_linecount" : 2,
+									"text" : "col 11 width 20"
 								}
 
 							}
@@ -56016,7 +56192,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 342.0, 279.0, 62.0, 36.0 ],
-									"text" : "col 10 width 39"
+									"text" : "col 10 width 67"
 								}
 
 							}
@@ -56081,7 +56257,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 504.75, 231.0, 62.0, 36.0 ],
-									"text" : "col 5 width 280"
+									"text" : "col 5 width 230"
 								}
 
 							}
@@ -56094,7 +56270,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 421.75, 231.0, 62.0, 36.0 ],
-									"text" : "col 4 width 85"
+									"text" : "col 4 width 81"
 								}
 
 							}
@@ -56107,7 +56283,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 342.0, 231.0, 62.0, 36.0 ],
-									"text" : "col 3 width 100"
+									"text" : "col 3 width 81"
 								}
 
 							}
@@ -56427,7 +56603,7 @@
 						"lines" : [ 							{
 								"patchline" : 								{
 									"destination" : [ "obj-10", 0 ],
-									"order" : 5,
+									"order" : 6,
 									"source" : [ "obj-1", 0 ]
 								}
 
@@ -56435,7 +56611,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-11", 0 ],
-									"order" : 2,
+									"order" : 3,
 									"source" : [ "obj-1", 0 ]
 								}
 
@@ -56459,7 +56635,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-14", 0 ],
-									"order" : 6,
+									"order" : 7,
 									"source" : [ "obj-1", 0 ]
 								}
 
@@ -56467,46 +56643,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-15", 0 ],
-									"order" : 8,
-									"source" : [ "obj-1", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-16", 0 ],
-									"order" : 10,
-									"source" : [ "obj-1", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-17", 0 ],
-									"order" : 4,
-									"source" : [ "obj-1", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-18", 0 ],
-									"order" : 3,
-									"source" : [ "obj-1", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-3", 0 ],
-									"order" : 11,
-									"source" : [ "obj-1", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-5", 0 ],
 									"order" : 9,
 									"source" : [ "obj-1", 0 ]
 								}
@@ -56514,8 +56650,56 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-16", 0 ],
+									"order" : 11,
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-17", 0 ],
+									"order" : 5,
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-18", 0 ],
+									"order" : 4,
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-19", 0 ],
+									"order" : 2,
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"order" : 12,
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-5", 0 ],
+									"order" : 10,
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-7", 0 ],
-									"order" : 7,
+									"order" : 8,
 									"source" : [ "obj-1", 0 ]
 								}
 
@@ -56580,6 +56764,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-77", 0 ],
 									"source" : [ "obj-18", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-77", 0 ],
+									"source" : [ "obj-19", 0 ]
 								}
 
 							}
@@ -56785,8 +56976,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -56834,8 +57025,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -57324,8 +57515,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -57834,8 +58025,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -58376,8 +58567,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
-											"revision" : 1,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -59495,7 +59686,6 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"hidden" : 1,
 					"id" : "obj-23",
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
@@ -59514,8 +59704,8 @@
 			}
 , 			{
 				"box" : 				{
-					"coldef" : [ [ 0, 2, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ] ],
-					"cols" : 1,
+					"coldef" : [ [ 0, 2, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 1, 20, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 6, 2, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 5, 230, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 4, 81, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 11, 20, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 10, 67, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 3, 81, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 9, 67, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 2, 20, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 8, 65, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 7, 25, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 12, 20, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ] ],
+					"cols" : 13,
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -59529,9 +59719,9 @@
 					"outmode" : 1,
 					"patching_rect" : [ 1040.0, 706.5, 627.0, 70.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 20.0, 700.0, 90.0 ],
+					"presentation_rect" : [ 0.0, 20.0, 700.0, 270.0 ],
 					"rowdef" : [ [ 0, 0, 0, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ] ],
-					"rows" : 1,
+					"rows" : 15,
 					"selmode" : 3,
 					"stcolor" : [ 0.407843137254902, 0.407843137254902, 0.407843137254902, 1.0 ],
 					"varname" : "TODOLIST_INDIVIDUAL",
@@ -59580,14 +59770,14 @@
 				"box" : 				{
 					"background" : 1,
 					"enabled" : 0,
-					"hint" : "Stewart Johnston",
+					"hint" : "Dr Cory McClung",
 					"id" : "obj-129",
 					"maxclass" : "hint",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1445.333333333333258, 808.0, 111.333332999999925, 40.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 20.0, 700.0, 90.0 ],
+					"presentation_rect" : [ 0.0, 20.0, 700.0, 270.0 ],
 					"varname" : "TDL_HINT"
 				}
 
@@ -61332,8 +61522,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "Python.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
-				"patcherrelativepath" : "../Taskbar/Maxpat",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
 				"type" : "JSON",
 				"implicit" : 1
 			}
