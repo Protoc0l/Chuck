@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 10,
+			"minor" : 2,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 770.0, 85.0, 1108.0, 1179.0 ],
+		"rect" : [ -1249.0, 146.0, 1108.0, 788.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -133,14 +133,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 10,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 424.0, 231.0, 656.0, 621.0 ],
+						"rect" : [ 131.0, 350.0, 656.0, 621.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -169,6 +169,18 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-19",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 51.0, 31.0, 24.0, 24.0 ]
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-23",
 									"maxclass" : "button",
@@ -251,7 +263,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 346.0, 286.0, 100.0, 22.0 ],
-									"text" : "> 12000"
+									"text" : "> 20000"
 								}
 
 							}
@@ -294,7 +306,7 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 1.0, 0.125, 0.125, 1.0 ],
+									"bgcolor" : [ 0.0625, 1.0, 0.165039, 1.0 ],
 									"id" : "obj-24",
 									"maxclass" : "panel",
 									"mode" : 0,
@@ -374,8 +386,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 80.0, 286.0, 50.0, 22.0 ],
-									"text" : "> 6000"
+									"patching_rect" : [ 80.0, 286.0, 60.0, 22.0 ],
+									"text" : "> 10000"
 								}
 
 							}
@@ -447,7 +459,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 5,
 									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
+									"outlettype" : [ "bang", "" ],
 									"patching_rect" : [ 80.0, 180.0, 162.25, 22.0 ],
 									"text" : "Python_R \"RSC Connection\""
 								}
@@ -599,6 +611,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-12", 0 ],
 									"source" : [ "obj-14", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-8", 0 ],
+									"source" : [ "obj-19", 0 ]
 								}
 
 							}
@@ -793,8 +812,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -804,7 +821,9 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -867,10 +886,6 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -884,6 +899,10 @@
 
 								}
 ,
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -895,7 +914,6 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -905,7 +923,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "default",
@@ -972,8 +991,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 10,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1018,8 +1037,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 10,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1097,7 +1116,7 @@
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
-													"outlettype" : [ "" ],
+													"outlettype" : [ "bang" ],
 													"patching_rect" : [ 88.0, 18.0, 30.0, 30.0 ]
 												}
 
@@ -1495,7 +1514,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 5,
 									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
+									"outlettype" : [ "bang", "" ],
 									"patching_rect" : [ 33.0, 247.0, 465.0, 22.0 ],
 									"text" : "Python_R MySQL_OPTICIAN_AVAIL_IND"
 								}
@@ -1580,8 +1599,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -1591,7 +1608,9 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1699,10 +1718,6 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -1716,6 +1731,10 @@
 
 								}
 ,
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -1727,7 +1746,6 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -1737,7 +1755,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "default",
@@ -1791,8 +1810,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 10,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1880,7 +1899,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 5,
 									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
+									"outlettype" : [ "bang", "" ],
 									"patching_rect" : [ 23.0, 242.0, 238.0, 22.0 ],
 									"text" : "Python_R appt_waitinglist_create_colored"
 								}
@@ -1978,8 +1997,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -1989,7 +2006,9 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2097,10 +2116,6 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -2114,6 +2129,10 @@
 
 								}
 ,
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -2125,7 +2144,6 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -2135,7 +2153,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "default",
@@ -2190,8 +2209,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 10,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2304,7 +2323,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 5,
 									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
+									"outlettype" : [ "bang", "" ],
 									"patching_rect" : [ 33.0, 247.0, 465.0, 22.0 ],
 									"text" : "Python_R MySQL_PWL"
 								}
@@ -2396,8 +2415,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -2407,7 +2424,9 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2515,10 +2534,6 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -2532,6 +2547,10 @@
 
 								}
 ,
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -2543,7 +2562,6 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -2553,7 +2571,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "default",
@@ -2596,8 +2615,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 10,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2815,8 +2834,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 10,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3075,8 +3094,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 10,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3305,7 +3324,6 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-68",
-													"int" : 1,
 													"maxclass" : "gswitch2",
 													"numinlets" : 2,
 													"numoutlets" : 2,
@@ -3318,7 +3336,6 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-63",
-													"int" : 1,
 													"maxclass" : "gswitch2",
 													"numinlets" : 2,
 													"numoutlets" : 2,
@@ -4782,8 +4799,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -4793,7 +4808,9 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-
+,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -4901,10 +4918,6 @@
 											}
 , 											{
 												"name" : "s_161006_G!",
-												"comment" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-												}
-,
 												"message" : 												{
 													"bgfillcolor" : 													{
 														"type" : "color",
@@ -4918,6 +4931,10 @@
 
 												}
 ,
+												"comment" : 												{
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+												}
+,
 												"parentstyle" : "",
 												"multi" : 1
 											}
@@ -4929,7 +4946,6 @@
 , 											{
 												"name" : "simple-2",
 												"default" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -4939,7 +4955,8 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-
+,
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
 												"parentstyle" : "default",
@@ -4996,14 +5013,14 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 10,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 841.0, 96.0, 1210.0, 1274.0 ],
+										"rect" : [ -1878.0, 85.0, 1852.0, 929.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -5280,7 +5297,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 55.444444444444457, 858.0, 402.333333333333258, 24.0 ],
-													"text" : "store ID ⚠ ✉ \"First Name\" \"Last Name\" Item ⧗ ⛅ ⏱ From ✏"
+													"text" : "store ID ⚠ ✉ \"First Name\" \"Last Name\" Item ⧗ ⛅ ⏱ For From ✏ ✓"
 												}
 
 											}
@@ -5292,7 +5309,7 @@
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 55.444444444444457, 831.0, 100.0, 22.0 ],
-													"text" : "route ID"
+													"text" : "route PxID"
 												}
 
 											}
@@ -5391,7 +5408,7 @@
 													"maxclass" : "newobj",
 													"numinlets" : 5,
 													"numoutlets" : 2,
-													"outlettype" : [ "", "" ],
+													"outlettype" : [ "bang", "" ],
 													"patching_rect" : [ 14.0, 741.0, 316.888888888888914, 22.0 ],
 													"text" : "Python_R P_Combined_Personal_User_Query"
 												}
@@ -5558,7 +5575,7 @@
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 2175.0, 475.0, 131.0, 22.0 ],
+													"patching_rect" : [ 2175.0, 501.0, 131.0, 22.0 ],
 													"text" : "s P_Combined_Values"
 												}
 
@@ -5569,7 +5586,7 @@
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 1944.777777777778283, 475.0, 127.0, 22.0 ],
+													"patching_rect" : [ 1944.777777777778283, 501.0, 127.0, 22.0 ],
 													"text" : "s P_Combined_Query"
 												}
 
@@ -5637,13 +5654,13 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-24",
-													"linecount" : 12,
+													"linecount" : 13,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 1944.777777777778283, 279.0, 891.0, 174.0 ],
-													"text" : "\"SELECT TODOLIST.TODOLIST_ID AS 'ID', TODOLIST.TODOLIST_NAME AS 'First Name', TODOLIST.TODOLIST_LASTNAME AS 'Last Name', TODOLIST.TODOLIST_ITEM AS 'Item', date_format(TODOLIST.TIMESTAMP, ? ? ?) AS 'Created', (TO_DAYS(CURRENT_TIMESTAMP)-TO_DAYS(TODOLIST.TIMESTAMP)) AS 'Days', TODOLIST.TODOLIST_DUEDATE AS 'Due', (SELECT STAFF.STAFF_NAME FROM STAFF WHERE STAFF.STAFF_ID=TODOLIST.STAFF_ID_FROM) AS 'For', (SELECT COUNT(TODOLIST_NOTES.TODOLIST_ID) FROM TODOLIST_NOTES WHERE TODOLIST.TODOLIST_ID=TODOLIST_NOTES.TODOLIST_ID) AS 'Notes', TODOLIST.USER_ID AS 'ID', TODOLIST.URGENT AS '1', TODOLIST.UNREAD AS '1', TODOLIST_GROUP.URGENT AS '1', TODOLIST_GROUP.UNREAD AS '1', (SELECT IF( EXISTS( SELECT TODOLIST_GROUP.TODOLIST_ID FROM TODOLIST_GROUP LEFT JOIN TODOLIST ON TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID WHERE TODOLIST_GROUP.STAFF_ID=? AND TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID), 1, 0)) AS 'Flag' FROM TODOLIST LEFT JOIN USER ON TODOLIST.STAFF_ID_FROM=USER.USER_ID LEFT JOIN TODOLIST_GROUP ON TODOLIST.TODOLIST_ID=TODOLIST_GROUP.TODOLIST_ID AND TODOLIST.STAFF_ID_FROM=TODOLIST_GROUP.STAFF_ID WHERE TODOLIST.TODOLIST_ID IN (SELECT TODOLIST_GROUP.TODOLIST_ID FROM TODOLIST_GROUP WHERE (TODOLIST_GROUP.UNREAD='1' OR TODOLIST_GROUP.URGENT='1') AND TODOLIST_GROUP.STAFF_ID=?) AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NULL\""
+													"patching_rect" : [ 1944.777777777778283, 279.0, 896.0, 188.0 ],
+													"text" : "\"SELECT TODOLIST.TODOLIST_ID AS 'PxID', TODOLIST_NAME, TODOLIST_LASTNAME, TODOLIST_ITEM, date_format(TODOLIST.TIMESTAMP, ? ? ?), (TO_DAYS(CURRENT_TIMESTAMP)-TO_DAYS(TODOLIST.TIMESTAMP)), TODOLIST_DUEDATE, (SELECT IFNULL((SELECT STAFF_NAME FROM STAFF WHERE STAFF_ID=(SELECT STAFF_ID_FOR FROM TODOLIST WHERE TODOLIST_ID=PxID)), (SELECT USER_NAME FROM USER WHERE USER_ID=(SELECT USER_ID FROM TODOLIST WHERE TODOLIST.TODOLIST_ID=PxID)))), (SELECT STAFF.STAFF_NAME FROM STAFF WHERE STAFF.STAFF_ID=TODOLIST.STAFF_ID_FROM), (SELECT COUNT(TODOLIST_NOTES.TODOLIST_ID) FROM TODOLIST_NOTES WHERE TODOLIST.TODOLIST_ID=TODOLIST_NOTES.TODOLIST_ID), TODOLIST.USER_ID AS 'ID', TODOLIST.URGENT, TODOLIST.UNREAD, TODOLIST_GROUP.URGENT, TODOLIST_GROUP.UNREAD, (SELECT IF( EXISTS( SELECT TODOLIST_GROUP.TODOLIST_ID FROM TODOLIST_GROUP LEFT JOIN TODOLIST ON TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID WHERE TODOLIST_GROUP.STAFF_ID=? AND TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID), 1, 0)), TIME_TDL_ITEM_COMPLETED FROM TODOLIST LEFT JOIN USER ON TODOLIST.STAFF_ID_FROM=USER.USER_ID LEFT JOIN TODOLIST_GROUP ON TODOLIST.TODOLIST_ID=TODOLIST_GROUP.TODOLIST_ID AND TODOLIST.STAFF_ID_FROM=TODOLIST_GROUP.STAFF_ID WHERE TODOLIST.TODOLIST_ID IN (SELECT TODOLIST_GROUP.TODOLIST_ID FROM TODOLIST_GROUP WHERE (TODOLIST_GROUP.UNREAD='1' OR TODOLIST_GROUP.URGENT='1') AND TODOLIST_GROUP.STAFF_ID=?) AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NULL\""
 												}
 
 											}
@@ -5653,7 +5670,7 @@
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 1278.0, 465.0, 130.0, 22.0 ],
+													"patching_rect" : [ 1278.0, 477.0, 130.0, 22.0 ],
 													"text" : "s P_Combined_Values"
 												}
 
@@ -5664,7 +5681,7 @@
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 1054.888888888888914, 465.0, 131.0, 22.0 ],
+													"patching_rect" : [ 1054.888888888888914, 477.0, 131.0, 22.0 ],
 													"text" : "s P_Combined_Query"
 												}
 
@@ -5754,13 +5771,13 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-10",
-													"linecount" : 12,
+													"linecount" : 13,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 1054.888888888888914, 273.0, 753.0, 174.0 ],
-													"text" : "\"SELECT TODOLIST.TODOLIST_ID AS 'ID', TODOLIST.TODOLIST_NAME AS 'First Name', TODOLIST.TODOLIST_LASTNAME AS 'Last Name', TODOLIST.TODOLIST_ITEM AS 'Item', date_format(TODOLIST.TIMESTAMP, ? ? ?) AS 'Created', (TO_DAYS(CURRENT_TIMESTAMP)-TO_DAYS(TODOLIST.TIMESTAMP)) AS 'Days', TODOLIST.TODOLIST_DUEDATE AS 'Due', (SELECT STAFF.STAFF_NAME FROM STAFF WHERE STAFF.STAFF_ID=TODOLIST.STAFF_ID_FROM) AS 'For', (SELECT COUNT(TODOLIST_NOTES.TODOLIST_ID) FROM TODOLIST_NOTES WHERE TODOLIST.TODOLIST_ID=TODOLIST_NOTES.TODOLIST_ID) AS 'Notes', TODOLIST.USER_ID AS 'ID', TODOLIST.URGENT AS '1', TODOLIST.UNREAD AS '1', TODOLIST_GROUP.URGENT AS 'URGENT', TODOLIST_GROUP.UNREAD AS 'UNREAD', (SELECT IF( EXISTS( SELECT TODOLIST_GROUP.TODOLIST_ID FROM TODOLIST_GROUP WHERE TODOLIST_GROUP.STAFF_ID=? AND TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID), 1, 0)) AS 'Flag' FROM TODOLIST LEFT JOIN USER ON TODOLIST.STAFF_ID_FROM=USER.USER_ID LEFT JOIN TODOLIST_GROUP ON TODOLIST.TODOLIST_ID=TODOLIST_GROUP.TODOLIST_ID AND STAFF_ID=? WHERE TODOLIST.USER_ID=? AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NULL\""
+													"patching_rect" : [ 1054.888888888888914, 273.0, 753.0, 188.0 ],
+													"text" : "\"SELECT TODOLIST.TODOLIST_ID AS 'PxID', TODOLIST_NAME, TODOLIST_LASTNAME, TODOLIST_ITEM, date_format(TODOLIST.TIMESTAMP, ? ? ?), (TO_DAYS(CURRENT_TIMESTAMP)-TO_DAYS(TODOLIST.TIMESTAMP)), TODOLIST_DUEDATE, (SELECT IFNULL((SELECT STAFF_NAME FROM STAFF WHERE STAFF_ID=(SELECT STAFF_ID_FOR FROM TODOLIST WHERE TODOLIST_ID=PxID)), (SELECT USER_NAME FROM USER WHERE USER_ID=(SELECT USER_ID FROM TODOLIST WHERE TODOLIST.TODOLIST_ID=PxID)))), (SELECT STAFF.STAFF_NAME FROM STAFF WHERE STAFF.STAFF_ID=TODOLIST.STAFF_ID_FROM), (SELECT COUNT(TODOLIST_NOTES.TODOLIST_ID) FROM TODOLIST_NOTES WHERE TODOLIST.TODOLIST_ID=TODOLIST_NOTES.TODOLIST_ID), TODOLIST.USER_ID AS 'ID', TODOLIST.URGENT, TODOLIST.UNREAD, TODOLIST_GROUP.URGENT, TODOLIST_GROUP.UNREAD, (SELECT IF( EXISTS( SELECT TODOLIST_GROUP.TODOLIST_ID FROM TODOLIST_GROUP WHERE TODOLIST_GROUP.STAFF_ID=? AND TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID), 1, 0)), TIME_TDL_ITEM_COMPLETED FROM TODOLIST LEFT JOIN USER ON TODOLIST.STAFF_ID_FROM=USER.USER_ID LEFT JOIN TODOLIST_GROUP ON TODOLIST.TODOLIST_ID=TODOLIST_GROUP.TODOLIST_ID AND STAFF_ID=? WHERE TODOLIST.USER_ID=? AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NULL\""
 												}
 
 											}
@@ -5783,7 +5800,7 @@
 													"numinlets" : 5,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 434.0, 198.0, 340.777777777777828, 22.0 ],
+													"patching_rect" : [ 433.777777777777771, 211.0, 340.777777777777828, 22.0 ],
 													"text" : "pack i i i i i"
 												}
 
@@ -5839,13 +5856,13 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-3",
-													"linecount" : 11,
+													"linecount" : 12,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 162.888888888888914, 273.0, 885.0, 160.0 ],
-													"text" : "\"SELECT TODOLIST.TODOLIST_ID AS 'ID', TODOLIST.TODOLIST_NAME AS 'First Name', TODOLIST.TODOLIST_LASTNAME AS 'Last Name', TODOLIST.TODOLIST_ITEM AS 'Item', date_format(TODOLIST.TIMESTAMP, ? ? ?) AS 'Created', (TO_DAYS(CURRENT_TIMESTAMP)-TO_DAYS(TODOLIST.TIMESTAMP)) AS 'Days', TODOLIST.TODOLIST_DUEDATE AS 'DUE', (SELECT STAFF.STAFF_NAME FROM STAFF WHERE STAFF.STAFF_ID=TODOLIST.STAFF_ID_FROM) AS 'From', (SELECT COUNT(TODOLIST_NOTES.TODOLIST_ID) FROM TODOLIST_NOTES WHERE TODOLIST.TODOLIST_ID=TODOLIST_NOTES.TODOLIST_ID) AS 'Notes', TODOLIST.USER_ID AS 'ID', TODOLIST.URGENT AS '1', TODOLIST.UNREAD AS '1', TODOLIST_GROUP.URGENT AS '1', TODOLIST_GROUP.UNREAD AS '1', (SELECT IF( EXISTS( SELECT TODOLIST_GROUP.TODOLIST_ID FROM TODOLIST_GROUP LEFT JOIN TODOLIST ON TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID WHERE TODOLIST_GROUP.STAFF_ID=? AND TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID), 1, 0)) AS 'Flag' FROM TODOLIST LEFT JOIN USER ON TODOLIST.STAFF_ID_FROM=USER.USER_ID LEFT JOIN TODOLIST_GROUP ON TODOLIST.TODOLIST_ID=TODOLIST_GROUP.TODOLIST_ID AND TODOLIST.STAFF_ID_FOR=? WHERE (TODOLIST.STAFF_ID_FOR=? OR TODOLIST.USER_ID=?) AND TODOLIST_GROUP.STAFF_ID=? AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NULL\""
+													"patching_rect" : [ 162.888888888888914, 273.0, 885.0, 174.0 ],
+													"text" : "\"SELECT TODOLIST.TODOLIST_ID AS 'PxID', TODOLIST_NAME, TODOLIST_LASTNAME, TODOLIST_ITEM, date_format(TODOLIST.TIMESTAMP, ? ? ?), (TO_DAYS(CURRENT_TIMESTAMP)-TO_DAYS(TODOLIST.TIMESTAMP)), TODOLIST_DUEDATE, (SELECT IFNULL((SELECT STAFF_NAME FROM STAFF WHERE STAFF_ID=(SELECT STAFF_ID_FOR FROM TODOLIST WHERE TODOLIST_ID=PxID)), (SELECT USER_NAME FROM USER WHERE USER_ID=(SELECT USER_ID FROM TODOLIST WHERE TODOLIST.TODOLIST_ID=PxID)))), (SELECT STAFF.STAFF_NAME FROM STAFF WHERE STAFF.STAFF_ID=TODOLIST.STAFF_ID_FROM), (SELECT COUNT(TODOLIST_NOTES.TODOLIST_ID) FROM TODOLIST_NOTES WHERE TODOLIST.TODOLIST_ID=TODOLIST_NOTES.TODOLIST_ID), TODOLIST.USER_ID, TODOLIST.URGENT, TODOLIST.UNREAD, TODOLIST_GROUP.URGENT, TODOLIST_GROUP.UNREAD, (SELECT IF( EXISTS( SELECT TODOLIST_GROUP.TODOLIST_ID FROM TODOLIST_GROUP LEFT JOIN TODOLIST ON TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID WHERE TODOLIST_GROUP.STAFF_ID=? AND TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID), 1, 0)), TIME_TDL_ITEM_COMPLETED FROM TODOLIST LEFT JOIN USER ON TODOLIST.STAFF_ID_FROM=USER.USER_ID LEFT JOIN TODOLIST_GROUP ON TODOLIST.TODOLIST_ID=TODOLIST_GROUP.TODOLIST_ID AND TODOLIST.STAFF_ID_FOR=? WHERE (TODOLIST.STAFF_ID_FOR=? OR TODOLIST.USER_ID=?) AND TODOLIST_GROUP.STAFF_ID=? AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NULL\""
 												}
 
 											}
@@ -6383,8 +6400,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -6394,7 +6409,9 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-
+,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -6502,10 +6519,6 @@
 											}
 , 											{
 												"name" : "s_161006_G!",
-												"comment" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-												}
-,
 												"message" : 												{
 													"bgfillcolor" : 													{
 														"type" : "color",
@@ -6519,6 +6532,10 @@
 
 												}
 ,
+												"comment" : 												{
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+												}
+,
 												"parentstyle" : "",
 												"multi" : 1
 											}
@@ -6530,7 +6547,6 @@
 , 											{
 												"name" : "simple-2",
 												"default" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -6540,7 +6556,8 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-
+,
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
 												"parentstyle" : "default",
@@ -6759,8 +6776,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -6770,7 +6785,9 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -6878,10 +6895,6 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -6895,6 +6908,10 @@
 
 								}
 ,
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -6906,7 +6923,6 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -6916,7 +6932,8 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "default",
@@ -7032,8 +7049,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 10,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -7447,7 +7464,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 5,
 					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
+					"outlettype" : [ "bang", "" ],
 					"patching_rect" : [ 33.0, 542.0, 259.0, 22.0 ],
 					"text" : "Python_R BACKGROUND_QUERY"
 				}
@@ -7619,8 +7636,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 10,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -8599,8 +8616,6 @@
 , 			{
 				"name" : "_myStyle",
 				"default" : 				{
-					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -8610,7 +8625,9 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-
+,
+					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -8718,10 +8735,6 @@
 			}
 , 			{
 				"name" : "s_161006_G!",
-				"comment" : 				{
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-				}
-,
 				"message" : 				{
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -8735,6 +8748,10 @@
 
 				}
 ,
+				"comment" : 				{
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				}
+,
 				"parentstyle" : "",
 				"multi" : 1
 			}
@@ -8746,7 +8763,6 @@
 , 			{
 				"name" : "simple-2",
 				"default" : 				{
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -8756,7 +8772,8 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-
+,
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 				}
 ,
 				"parentstyle" : "default",
