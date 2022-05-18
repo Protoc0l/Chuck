@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 196.0, 139.0, 1086.0, 907.0 ],
+		"rect" : [ 42.0, 85.0, 2220.0, 1146.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -5894,13 +5894,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-3",
-									"linecount" : 8,
+									"linecount" : 7,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 255.888888888888914, 210.0, 1398.0, 119.0 ],
-									"text" : "\"SELECT TODOLIST.TODOLIST_ID AS 'PxID', TODOLIST.TODOLIST_NAME AS 'First Name', TODOLIST.TODOLIST_LASTNAME AS 'Last Name', TODOLIST.TODOLIST_ITEM AS 'Item', date_format(TODOLIST.TIMESTAMP, ? ? ?) AS 'Created', (TO_DAYS(CURRENT_TIMESTAMP)-TO_DAYS(TODOLIST.TIMESTAMP)), TODOLIST.TODOLIST_DUEDATE, (SELECT IFNULL((SELECT STAFF_NAME FROM STAFF WHERE STAFF_ID=(SELECT STAFF_ID_FOR FROM TODOLIST WHERE TODOLIST_ID=PxID)), (SELECT USER_NAME FROM USER WHERE USER_ID=(SELECT USER_ID FROM TODOLIST WHERE TODOLIST.TODOLIST_ID=PxID)))) AS 'For', (SELECT STAFF.STAFF_NAME FROM STAFF WHERE STAFF.STAFF_ID=TODOLIST.STAFF_ID_FROM) AS 'From', (SELECT COUNT(TODOLIST_NOTES.TODOLIST_ID) FROM TODOLIST_NOTES WHERE TODOLIST.TODOLIST_ID=TODOLIST_NOTES.TODOLIST_ID), TODOLIST.USER_ID, TODOLIST.URGENT, TODOLIST.UNREAD, TODOLIST_GROUP.URGENT, TODOLIST_GROUP.UNREAD AS TODOLIST_INDIVIDUAL, (SELECT IF( EXISTS( SELECT TODOLIST_GROUP.TODOLIST_ID FROM TODOLIST_GROUP LEFT JOIN TODOLIST ON TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID WHERE TODOLIST_GROUP.STAFF_ID=? AND TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID), 1, 0)) AS 'Flag', TIME_TDL_ITEM_COMPLETED FROM TODOLIST LEFT JOIN USER ON TODOLIST.STAFF_ID_FROM=USER.USER_ID LEFT JOIN TODOLIST_GROUP ON TODOLIST.TODOLIST_ID=TODOLIST_GROUP.TODOLIST_ID WHERE TODOLIST.STAFF_ID_FOR=? AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NOT NULL ORDER BY TODOLIST.TIME_TDL_ITEM_COMPLETED DESC LIMIT 0, 20\""
+									"patching_rect" : [ 255.888888888888914, 210.0, 1457.0, 105.0 ],
+									"text" : "\"SELECT TODOLIST.TODOLIST_ID AS 'PxID', TODOLIST.TODOLIST_NAME AS 'First Name', TODOLIST.TODOLIST_LASTNAME AS 'Last Name', TODOLIST.TODOLIST_ITEM AS 'Item', date_format(TODOLIST.TIMESTAMP, ? ? ?) AS 'Created', (TO_DAYS(CURRENT_TIMESTAMP)-TO_DAYS(TODOLIST.TIMESTAMP)), TODOLIST.TODOLIST_DUEDATE, (SELECT IFNULL((SELECT STAFF_NAME FROM STAFF WHERE STAFF_ID=(SELECT STAFF_ID_FOR FROM TODOLIST WHERE TODOLIST_ID=PxID)), (SELECT USER_NAME FROM USER WHERE USER_ID=(SELECT USER_ID FROM TODOLIST WHERE TODOLIST.TODOLIST_ID=PxID)))) AS 'For', (SELECT STAFF.STAFF_NAME FROM STAFF WHERE STAFF.STAFF_ID=TODOLIST.STAFF_ID_FROM) AS 'From', (SELECT COUNT(TODOLIST_NOTES.TODOLIST_ID) FROM TODOLIST_NOTES WHERE TODOLIST.TODOLIST_ID=TODOLIST_NOTES.TODOLIST_ID), TODOLIST.USER_ID, TODOLIST.URGENT, TODOLIST.UNREAD, TODOLIST_GROUP.URGENT, TODOLIST_GROUP.UNREAD AS TODOLIST_INDIVIDUAL, (SELECT IF( EXISTS( SELECT TODOLIST_GROUP.TODOLIST_ID FROM TODOLIST_GROUP LEFT JOIN TODOLIST ON TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID WHERE TODOLIST_GROUP.STAFF_ID=? AND TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID), 1, 0)) AS 'Flag', TIME_TDL_ITEM_COMPLETED FROM TODOLIST LEFT JOIN USER ON TODOLIST.STAFF_ID_FROM=USER.USER_ID LEFT JOIN TODOLIST_GROUP ON TODOLIST.TODOLIST_ID=TODOLIST_GROUP.TODOLIST_ID WHERE TODOLIST.STAFF_ID_FOR=? AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NOT NULL ORDER BY TODOLIST.TIME_TDL_ITEM_COMPLETED DESC\""
 								}
 
 							}
@@ -5911,7 +5911,7 @@
 									"numinlets" : 5,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "" ],
-									"patching_rect" : [ 32.888888888888914, 307.0, 465.0, 22.0 ],
+									"patching_rect" : [ 32.888888888888914, 316.0, 465.0, 22.0 ],
 									"text" : "Python Personal_completed_TDL"
 								}
 
@@ -6283,7 +6283,7 @@
 					"fontsize" : 30.0,
 					"id" : "obj-251",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
+					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "clear", "bang" ],
 					"patcher" : 					{
@@ -6340,17 +6340,6 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-14",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 179.0, 5.0, 150.0, 20.0 ],
-									"text" : "<-- broken ***"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-12",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -6382,31 +6371,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 255.888888888888914, 549.0, 30.0, 30.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-9",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "bang", "int" ],
-									"patching_rect" : [ 136.0, 29.0, 683.555555555555657, 22.0 ],
-									"text" : "t b i"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"comment" : "",
-									"id" : "obj-7",
-									"index" : 2,
-									"maxclass" : "inlet",
-									"numinlets" : 0,
-									"numoutlets" : 1,
-									"outlettype" : [ "int" ],
-									"patching_rect" : [ 136.0, -6.5, 31.0, 31.0 ]
 								}
 
 							}
@@ -6462,11 +6426,11 @@
 								"box" : 								{
 									"id" : "obj-25",
 									"maxclass" : "newobj",
-									"numinlets" : 4,
+									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 478.777777777777771, 126.0, 340.777777777777828, 22.0 ],
-									"text" : "pak i i i i"
+									"text" : "pak i i i"
 								}
 
 							}
@@ -6565,10 +6529,10 @@
 									"id" : "obj-4",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 5,
-									"outlettype" : [ "bang", "bang", "bang", "bang", "int" ],
-									"patching_rect" : [ 33.0, 59.0, 910.555555555555543, 22.0 ],
-									"text" : "t b b b b 0"
+									"numoutlets" : 4,
+									"outlettype" : [ "bang", "bang", "bang", "bang" ],
+									"patching_rect" : [ 33.0, 59.0, 687.666666666666629, 22.0 ],
+									"text" : "t b b b b"
 								}
 
 							}
@@ -6580,8 +6544,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 244.888888888888914, 210.0, 1504.0, 119.0 ],
-									"text" : "\"SELECT TODOLIST.TODOLIST_ID AS 'PxID', TODOLIST.TODOLIST_NAME, TODOLIST.TODOLIST_LASTNAME, TODOLIST.TODOLIST_ITEM, date_format(TODOLIST.TIMESTAMP, ? ? ?) AS 'Created', (TO_DAYS(CURRENT_TIMESTAMP)-TO_DAYS(TODOLIST.TIMESTAMP)), TODOLIST.TODOLIST_DUEDATE, (SELECT IFNULL((SELECT STAFF_NAME FROM STAFF WHERE STAFF_ID=(SELECT STAFF_ID_FOR FROM TODOLIST WHERE TODOLIST_ID=PxID)), (SELECT USER_NAME FROM USER WHERE USER_ID=(SELECT USER_ID FROM TODOLIST WHERE TODOLIST.TODOLIST_ID=PxID)))) AS 'For', (SELECT STAFF.STAFF_NAME FROM STAFF WHERE STAFF.STAFF_ID=TODOLIST.STAFF_ID_FROM) AS 'From', (SELECT COUNT(TODOLIST_NOTES.TODOLIST_ID) FROM TODOLIST_NOTES WHERE TODOLIST.TODOLIST_ID=TODOLIST_NOTES.TODOLIST_ID), TODOLIST.USER_ID, TODOLIST.URGENT, TODOLIST.UNREAD, TODOLIST_GROUP.URGENT, TODOLIST_GROUP.UNREAD AS TODOLIST_INDIVIDUAL, (SELECT IF( EXISTS( SELECT TODOLIST_GROUP.TODOLIST_ID FROM TODOLIST_GROUP LEFT JOIN TODOLIST ON TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID WHERE TODOLIST_GROUP.STAFF_ID=? AND TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID), 1, 0)) AS 'Flag', TIME_TDL_ITEM_COMPLETED FROM TODOLIST LEFT JOIN USER ON TODOLIST.STAFF_ID_FROM=USER.USER_ID LEFT JOIN TODOLIST_GROUP ON TODOLIST.TODOLIST_ID=TODOLIST_GROUP.TODOLIST_ID WHERE TODOLIST.STAFF_ID_FROM=? AND (TODOLIST.STAFF_ID_FOR NOT IN (?) OR TODOLIST.USER_ID IS NOT NULL) AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NOT NULL ORDER BY TODOLIST.TIME_TDL_ITEM_COMPLETED DESC LIMIT ?, 20\""
+									"patching_rect" : [ 249.888888888888914, 194.0, 1508.0, 119.0 ],
+									"text" : "\"SELECT TODOLIST.TODOLIST_ID AS 'PxID', TODOLIST.TODOLIST_NAME, TODOLIST.TODOLIST_LASTNAME, TODOLIST.TODOLIST_ITEM, date_format(TODOLIST.TIMESTAMP, ? ? ?) AS 'Created', (TO_DAYS(CURRENT_TIMESTAMP)-TO_DAYS(TODOLIST.TIMESTAMP)), TODOLIST.TODOLIST_DUEDATE, (SELECT IFNULL((SELECT STAFF_NAME FROM STAFF WHERE STAFF_ID=(SELECT STAFF_ID_FOR FROM TODOLIST WHERE TODOLIST_ID=PxID)), (SELECT USER_NAME FROM USER WHERE USER_ID=(SELECT USER_ID FROM TODOLIST WHERE TODOLIST.TODOLIST_ID=PxID)))) AS 'For', (SELECT STAFF.STAFF_NAME FROM STAFF WHERE STAFF.STAFF_ID=TODOLIST.STAFF_ID_FROM) AS 'From', (SELECT COUNT(TODOLIST_NOTES.TODOLIST_ID) FROM TODOLIST_NOTES WHERE TODOLIST.TODOLIST_ID=TODOLIST_NOTES.TODOLIST_ID), TODOLIST.USER_ID, TODOLIST.URGENT, TODOLIST.UNREAD, TODOLIST_GROUP.URGENT, TODOLIST_GROUP.UNREAD AS TODOLIST_INDIVIDUAL, (SELECT IF( EXISTS( SELECT TODOLIST_GROUP.TODOLIST_ID FROM TODOLIST_GROUP LEFT JOIN TODOLIST ON TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID WHERE TODOLIST_GROUP.STAFF_ID=? AND TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID), 1, 0)) AS 'Flag', TIME_TDL_ITEM_COMPLETED FROM TODOLIST LEFT JOIN USER ON TODOLIST.STAFF_ID_FROM=USER.USER_ID LEFT JOIN TODOLIST_GROUP ON TODOLIST.TODOLIST_ID=TODOLIST_GROUP.TODOLIST_ID WHERE TODOLIST.STAFF_ID_FROM=? AND (TODOLIST.STAFF_ID_FOR NOT IN (?) OR TODOLIST.USER_ID IS NOT NULL) AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NOT NULL ORDER BY TODOLIST.TIME_TDL_ITEM_COMPLETED DESC\""
 								}
 
 							}
@@ -6608,6 +6572,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-25", 2 ],
+									"midpoints" : [ 488.277777777777771, 119.0, 810.055555555555657, 119.0 ],
 									"order" : 0,
 									"source" : [ "obj-19", 0 ]
 								}
@@ -6616,7 +6581,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-25", 1 ],
-									"midpoints" : [ 488.277777777777771, 119.0, 595.537037037037067, 119.0 ],
+									"midpoints" : [ 488.277777777777771, 119.0, 649.166666666666742, 119.0 ],
 									"order" : 1,
 									"source" : [ "obj-19", 0 ]
 								}
@@ -6688,13 +6653,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-25", 3 ],
-									"source" : [ "obj-4", 4 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-3", 0 ],
 									"source" : [ "obj-4", 1 ]
 								}
@@ -6761,20 +6719,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-4", 0 ],
 									"source" : [ "obj-6", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-9", 0 ],
-									"source" : [ "obj-7", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-25", 3 ],
-									"source" : [ "obj-9", 1 ]
 								}
 
 							}
@@ -8396,6 +8340,66 @@
 						"assistshowspatchername" : 0,
 						"title" : "Alert/Message Bar",
 						"boxes" : [ 							{
+								"box" : 								{
+									"bgcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
+									"fontsize" : 20.0,
+									"id" : "obj-94",
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 606.220636660236323, 1.778035759925842, 118.598127961158752, 28.196261525154114 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 232.068237066268921, 92.140190005302429, 105.598127961158752, 40.789720594882965 ],
+									"rounded" : 4.0,
+									"text" : "✏ Reply",
+									"texton" : "Read",
+									"textoncolor" : [ 0.0, 0.0, 0.0, 0.76 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
+									"fontsize" : 20.0,
+									"id" : "obj-67",
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 477.427569150924683, 1.778035759925842, 118.598127961158752, 28.196261525154114 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 124.470109105110168, 92.140190005302429, 105.598127961158752, 40.789720594882965 ],
+									"rounded" : 4.0,
+									"text" : "✉ Read",
+									"texton" : "✉ Read",
+									"textoncolor" : [ 0.0, 0.0, 0.0, 0.76 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
+									"fontsize" : 20.0,
+									"id" : "obj-42",
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 532.453294277191162, 76.927099764347076, 118.598127961158752, 28.196261525154114 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 16.871981143951416, 92.140190005302429, 105.598127961158752, 40.789720594882965 ],
+									"rounded" : 4.0,
+									"text" : "☑ Done",
+									"texton" : "Done",
+									"textoncolor" : [ 0.0, 0.0, 0.0, 0.76 ]
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"handoff" : "",
 									"hltcolor" : [ 0.474509803921569, 0.694117647058824, 1.0, 0.0 ],
@@ -13651,46 +13655,6 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
-									"fontsize" : 20.0,
-									"id" : "obj-94",
-									"maxclass" : "textbutton",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "int" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 606.220636660236323, 1.778035759925842, 118.598127961158752, 28.196261525154114 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 232.068237066268921, 92.140190005302429, 105.598127961158752, 40.789720594882965 ],
-									"rounded" : 4.0,
-									"text" : "✏ Reply",
-									"texton" : "Read",
-									"textoncolor" : [ 0.0, 0.0, 0.0, 0.76 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
-									"fontsize" : 20.0,
-									"id" : "obj-67",
-									"maxclass" : "textbutton",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "int" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 477.427569150924683, 1.778035759925842, 118.598127961158752, 28.196261525154114 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 124.470109105110168, 92.140190005302429, 105.598127961158752, 40.789720594882965 ],
-									"rounded" : 4.0,
-									"text" : "✉ Read",
-									"texton" : "✉ Read",
-									"textoncolor" : [ 0.0, 0.0, 0.0, 0.76 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-59",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -13891,26 +13855,6 @@
 									"text" : "✉",
 									"texton" : "✉",
 									"textoncolor" : [ 1.0, 0.0, 0.0, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
-									"fontsize" : 20.0,
-									"id" : "obj-42",
-									"maxclass" : "textbutton",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "int" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 532.453294277191162, 76.927099764347076, 118.598127961158752, 28.196261525154114 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 16.871981143951416, 92.140190005302429, 105.598127961158752, 40.789720594882965 ],
-									"rounded" : 4.0,
-									"text" : "☑ Done",
-									"texton" : "Done",
-									"textoncolor" : [ 0.0, 0.0, 0.0, 0.76 ]
 								}
 
 							}
@@ -43630,7 +43574,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ -994.0, 265.0, 900.0, 465.0 ],
+						"rect" : [ 42.0, 265.0, 900.0, 465.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -43666,7 +43610,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 50.0, 98.0, 59.0, 22.0 ],
-									"text" : "delay 10"
+									"text" : "delay 50"
 								}
 
 							}
@@ -56930,7 +56874,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-38", 0 ],
-									"midpoints" : [ 424.5, 217.0, 557.5, 217.0 ],
+									"midpoints" : [ 424.5, 246.0, 557.5, 246.0 ],
 									"source" : [ "obj-41", 0 ]
 								}
 
@@ -57371,7 +57315,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ -1021.0, 347.0, 768.0, 480.0 ],
+						"rect" : [ 42.0, 347.0, 768.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -57499,7 +57443,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 504.75, 231.0, 62.0, 36.0 ],
-									"text" : "col 5 width 230"
+									"text" : "col 5 width 215"
 								}
 
 							}
@@ -61313,13 +61257,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-88", 0 ],
 					"source" : [ "obj-138", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-251", 1 ],
-					"source" : [ "obj-14", 0 ]
 				}
 
 			}
