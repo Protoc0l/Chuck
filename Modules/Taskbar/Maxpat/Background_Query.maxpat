@@ -449,10 +449,10 @@
 					"id" : "obj-41",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 5,
-					"outlettype" : [ "bang", "bang", "bang", "bang", "bang" ],
-					"patching_rect" : [ 263.0, 203.0, 616.333333333333371, 22.0 ],
-					"text" : "t b b b b b"
+					"numoutlets" : 4,
+					"outlettype" : [ "bang", "bang", "bang", "bang" ],
+					"patching_rect" : [ 263.0, 203.0, 391.0, 22.0 ],
+					"text" : "t b b b b"
 				}
 
 			}
@@ -1681,7 +1681,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 391.5, 231.0, 100.0, 22.0 ],
+					"patching_rect" : [ 387.0, 231.0, 100.0, 22.0 ],
 					"text" : "delay 400"
 				}
 
@@ -1762,7 +1762,7 @@
 									"maxclass" : "button",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
+									"outlettype" : [ "" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 102.0, 22.0, 24.0, 24.0 ]
 								}
@@ -2080,7 +2080,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 391.5, 255.0, 101.0, 22.0 ],
+					"patching_rect" : [ 387.0, 255.0, 101.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2590,7 +2590,7 @@
 									"maxclass" : "button",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
+									"outlettype" : [ "" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 73.0, 1.0, 24.0, 24.0 ]
 								}
@@ -4803,7 +4803,7 @@
 													"maxclass" : "button",
 													"numinlets" : 1,
 													"numoutlets" : 1,
-													"outlettype" : [ "bang" ],
+													"outlettype" : [ "" ],
 													"parameter_enable" : 0,
 													"patching_rect" : [ 390.0, 752.0, 24.0, 24.0 ]
 												}
@@ -5043,7 +5043,7 @@
 													"maxclass" : "button",
 													"numinlets" : 1,
 													"numoutlets" : 1,
-													"outlettype" : [ "bang" ],
+													"outlettype" : [ "" ],
 													"parameter_enable" : 0,
 													"patching_rect" : [ 68.0, 9.0, 24.0, 24.0 ]
 												}
@@ -6843,7 +6843,7 @@
 									"maxclass" : "button",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
+									"outlettype" : [ "" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 111.0, 100.0, 24.0, 24.0 ]
 								}
@@ -8188,6 +8188,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
+					"midpoints" : [ 644.5, 228.0, 720.5, 228.0 ],
 					"source" : [ "obj-41", 3 ]
 				}
 
