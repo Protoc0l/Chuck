@@ -20379,7 +20379,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 818.5, 400.0, 137.5, 22.0 ],
-					"text" : "refer MySQL_PWL_coll"
+					"text" : "refer PWL_LIST"
 				}
 
 			}
