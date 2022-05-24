@@ -1705,7 +1705,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1428.0, 217.0, 828.0, 486.0 ],
+						"rect" : [ -1197.0, 356.0, 828.0, 486.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1762,7 +1762,7 @@
 									"maxclass" : "button",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 102.0, 22.0, 24.0, 24.0 ]
 								}
@@ -1802,7 +1802,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 256.0, 150.0, 497.0, 77.0 ],
-									"text" : "\"SELECT WAITINGLIST_NAME AS '.Name', WAITINGLIST_ID AS 'ID', WAITINGLIST_APPEARANCE AS 'Appearance', WAITINGLIST_PROBLEM 'Item', date_format(TIMESTAMP, ? ? ?) AS 'Time', (TO_DAYS(CURRENT_TIME)-TO_DAYS(TIMESTAMP))*60*24 AS 'Wait' FROM WAITINGLIST2 WHERE STAFF_ID IS NULL ORDER BY TIMESTAMP ASC\""
+									"text" : "\"SELECT WAITINGLIST_NAME AS '.Name', WAITINGLIST_ID AS 'ID', WAITINGLIST_APPEARANCE AS 'Appearance', WAITINGLIST_PROBLEM 'Item', date_format(TIMESTAMP, ? ? ?) AS 'Time', TIMESTAMPDIFF(MINUTE, TIMESTAMP, CURRENT_TIME) AS 'Wait' FROM WAITINGLIST2 WHERE STAFF_ID IS NULL ORDER BY TIMESTAMP ASC\""
 								}
 
 							}
@@ -2590,7 +2590,7 @@
 									"maxclass" : "button",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 73.0, 1.0, 24.0, 24.0 ]
 								}
@@ -4724,6 +4724,7 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
+										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-68",
@@ -4803,7 +4804,7 @@
 													"maxclass" : "button",
 													"numinlets" : 1,
 													"numoutlets" : 1,
-													"outlettype" : [ "" ],
+													"outlettype" : [ "bang" ],
 													"parameter_enable" : 0,
 													"patching_rect" : [ 390.0, 752.0, 24.0, 24.0 ]
 												}
@@ -4972,7 +4973,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 55.444444444444457, 858.0, 402.333333333333258, 24.0 ],
+													"patching_rect" : [ 96.888888888888914, 859.0, 402.333333333333258, 24.0 ],
 													"text" : "store ID ⚠ ✉ \"First Name\" \"Last Name\" Item ⧗ ⛅ ⏱ For From ✏ ✓"
 												}
 
@@ -5018,10 +5019,10 @@
 													"id" : "obj-56",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
-													"numoutlets" : 3,
-													"outlettype" : [ "bang", "dump", "clear" ],
-													"patching_rect" : [ 14.0, 772.0, 100.0, 22.0 ],
-													"text" : "t b dump clear"
+													"numoutlets" : 4,
+													"outlettype" : [ "bang", "dump", "bang", "clear" ],
+													"patching_rect" : [ 14.0, 772.0, 143.333333333333371, 22.0 ],
+													"text" : "t b dump b clear"
 												}
 
 											}
@@ -5043,7 +5044,7 @@
 													"maxclass" : "button",
 													"numinlets" : 1,
 													"numoutlets" : 1,
-													"outlettype" : [ "" ],
+													"outlettype" : [ "bang" ],
 													"parameter_enable" : 0,
 													"patching_rect" : [ 68.0, 9.0, 24.0, 24.0 ]
 												}
@@ -5741,13 +5742,6 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-58", 0 ],
-													"source" : [ "obj-31", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
 													"destination" : [ "obj-2", 2 ],
 													"source" : [ "obj-33", 0 ]
 												}
@@ -5943,7 +5937,7 @@
 												"patchline" : 												{
 													"destination" : [ "obj-1", 0 ],
 													"order" : 1,
-													"source" : [ "obj-56", 2 ]
+													"source" : [ "obj-56", 3 ]
 												}
 
 											}
@@ -5958,6 +5952,13 @@
 												"patchline" : 												{
 													"destination" : [ "obj-54", 0 ],
 													"order" : 0,
+													"source" : [ "obj-56", 3 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-58", 0 ],
 													"source" : [ "obj-56", 2 ]
 												}
 
@@ -5972,7 +5973,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-1", 0 ],
-													"midpoints" : [ 64.944444444444457, 890.0, 64.944444444444457, 890.0 ],
+													"midpoints" : [ 106.388888888888914, 895.0, 64.944444444444457, 895.0 ],
 													"source" : [ "obj-58", 0 ]
 												}
 
@@ -6725,7 +6726,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 33.0, 624.0, 100.0, 22.0 ],
+					"patching_rect" : [ 33.0, 636.0, 100.0, 22.0 ],
 					"text" : "route row_id"
 				}
 
@@ -6843,7 +6844,7 @@
 									"maxclass" : "button",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 111.0, 100.0, 24.0, 24.0 ]
 								}
