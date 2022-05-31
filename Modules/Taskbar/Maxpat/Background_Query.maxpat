@@ -2886,6 +2886,230 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-17",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 0,
+									"patcher" : 									{
+										"fileversion" : 1,
+										"appversion" : 										{
+											"major" : 8,
+											"minor" : 2,
+											"revision" : 2,
+											"architecture" : "x64",
+											"modernui" : 1
+										}
+,
+										"classnamespace" : "box",
+										"rect" : [ 413.0, 290.0, 1205.0, 480.0 ],
+										"bglocked" : 0,
+										"openinpresentation" : 0,
+										"default_fontsize" : 12.0,
+										"default_fontface" : 0,
+										"default_fontname" : "Arial",
+										"gridonopen" : 1,
+										"gridsize" : [ 15.0, 15.0 ],
+										"gridsnaponopen" : 1,
+										"objectsnaponopen" : 1,
+										"statusbarvisible" : 2,
+										"toolbarvisible" : 1,
+										"lefttoolbarpinned" : 0,
+										"toptoolbarpinned" : 0,
+										"righttoolbarpinned" : 0,
+										"bottomtoolbarpinned" : 0,
+										"toolbars_unpinned_last_save" : 0,
+										"tallnewobj" : 0,
+										"boxanimatetime" : 200,
+										"enablehscroll" : 1,
+										"enablevscroll" : 1,
+										"devicewidth" : 0.0,
+										"description" : "",
+										"digest" : "",
+										"tags" : "",
+										"style" : "",
+										"subpatcher_template" : "",
+										"assistshowspatchername" : 0,
+										"boxes" : [ 											{
+												"box" : 												{
+													"id" : "obj-19",
+													"linecount" : 5,
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 487.0, 41.0, 391.0, 77.0 ],
+													"presentation_linecount" : 5,
+													"text" : "\"SELECT TODOLIST.TODOLIST_ID, TODOLIST.STAFF_ID_FOR FROM TODOLIST LEFT JOIN TODOLIST_GROUP ON TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID WHERE TIME_TDL_ITEM_COMPLETED IS NULL AND TODOLIST_GROUP_ID IS NULL\""
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-14",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 2,
+													"outlettype" : [ "bang", "" ],
+													"patching_rect" : [ 90.0, 317.0, 100.0, 22.0 ],
+													"text" : "t b l"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-13",
+													"linecount" : 3,
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "bang", "" ],
+													"patching_rect" : [ 90.0, 401.0, 100.0, 50.0 ],
+													"text" : "MySQL_User mass_insert_tdl_notes"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-12",
+													"linecount" : 3,
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 90.0, 343.0, 300.0, 50.0 ],
+													"text" : "\"INSERT INTO TODOLIST_GROUP (TODOLIST_ID, STAFF_ID, UNREAD, URGENT) VALUES (?, ?, '0', '0')\""
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-5",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "dump" ],
+													"patching_rect" : [ 90.0, 196.0, 49.0, 22.0 ],
+													"text" : "t dump"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-4",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 4,
+													"outlettype" : [ "", "", "", "" ],
+													"patching_rect" : [ 90.0, 222.0, 204.0, 22.0 ],
+													"saved_object_attributes" : 													{
+														"embed" : 0,
+														"precision" : 6
+													}
+,
+													"text" : "coll mass_insert_todolist_notes_coll"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-3",
+													"linecount" : 3,
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "bang", "" ],
+													"patching_rect" : [ 90.0, 140.0, 100.0, 50.0 ],
+													"text" : "MySQL_User mass_insert_todolist_notes"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-2",
+													"linecount" : 5,
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 90.0, 41.0, 391.0, 77.0 ],
+													"text" : "\"SELECT TODOLIST.TODOLIST_ID, TODOLIST.STAFF_ID_FROM FROM TODOLIST LEFT JOIN TODOLIST_GROUP ON TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID WHERE TIME_TDL_ITEM_COMPLETED IS NULL AND TODOLIST_GROUP_ID IS NULL\""
+												}
+
+											}
+ ],
+										"lines" : [ 											{
+												"patchline" : 												{
+													"destination" : [ "obj-13", 0 ],
+													"source" : [ "obj-12", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-12", 0 ],
+													"source" : [ "obj-14", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-13", 1 ],
+													"source" : [ "obj-14", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-3", 0 ],
+													"source" : [ "obj-19", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-3", 0 ],
+													"source" : [ "obj-2", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-5", 0 ],
+													"source" : [ "obj-3", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-14", 0 ],
+													"source" : [ "obj-4", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-4", 0 ],
+													"source" : [ "obj-5", 0 ]
+												}
+
+											}
+ ]
+									}
+,
+									"patching_rect" : [ 704.0, 88.0, 100.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"description" : "",
+										"digest" : "",
+										"globalpatchername" : "",
+										"tags" : ""
+									}
+,
+									"text" : "p INSERT"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-23",
 									"maxclass" : "message",
 									"numinlets" : 2,
@@ -5252,26 +5476,26 @@
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
 												"box" : 												{
+													"id" : "obj-69",
+													"linecount" : 11,
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 710.888888888888914, 629.0, 885.0, 160.0 ],
+													"text" : "\"SELECT DISTINCT TODOLIST.TODOLIST_ID AS 'PxID', TODOLIST_NAME, TODOLIST_LASTNAME, TODOLIST_ITEM, date_format(TODOLIST.TIMESTAMP, ? ? ?), (TO_DAYS(CURRENT_TIMESTAMP)-TO_DAYS(TODOLIST.TIMESTAMP)), TODOLIST_DUEDATE, (SELECT IFNULL((SELECT STAFF_NAME FROM STAFF WHERE STAFF_ID=(SELECT STAFF_ID_FOR FROM TODOLIST WHERE TODOLIST_ID=PxID)), (SELECT USER_NAME FROM USER WHERE USER_ID=(SELECT USER_ID FROM TODOLIST WHERE TODOLIST.TODOLIST_ID=PxID)))), (SELECT STAFF.STAFF_NAME FROM STAFF WHERE STAFF.STAFF_ID=TODOLIST.STAFF_ID_FROM), (SELECT COUNT(TODOLIST_NOTES.TODOLIST_ID) FROM TODOLIST_NOTES WHERE TODOLIST.TODOLIST_ID=TODOLIST_NOTES.TODOLIST_ID), TODOLIST.USER_ID, TODOLIST.URGENT, TODOLIST.UNREAD, TODOLIST_GROUP.URGENT, TODOLIST_GROUP.UNREAD, (SELECT IF( EXISTS( SELECT TODOLIST_GROUP.TODOLIST_ID FROM TODOLIST_GROUP LEFT JOIN TODOLIST ON TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID WHERE TODOLIST_GROUP.STAFF_ID=? AND TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID), 1, 0)), TIME_TDL_ITEM_COMPLETED FROM TODOLIST LEFT JOIN USER ON TODOLIST.STAFF_ID_FROM=USER.USER_ID LEFT JOIN TODOLIST_GROUP ON TODOLIST.TODOLIST_ID=TODOLIST_GROUP.TODOLIST_ID AND TODOLIST.STAFF_ID_FOR=? WHERE (TODOLIST.STAFF_ID_FOR=? OR TODOLIST.USER_ID=?) AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NULL\""
+												}
+
+											}
+, 											{
+												"box" : 												{
 													"id" : "obj-70",
 													"linecount" : 2,
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
 													"patching_rect" : [ 806.0, 597.0, 265.0, 34.0 ],
-													"text" : "below with TODOLIST_GROUP_STAFF_ID\n - i removed as error in creating staff_ID_TDL"
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-60",
-													"linecount" : 12,
-													"maxclass" : "message",
-													"numinlets" : 2,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
-													"patching_rect" : [ 677.888888888888914, 646.0, 885.0, 174.0 ],
-													"text" : "\"SELECT TODOLIST.TODOLIST_ID AS 'PxID', TODOLIST_NAME, TODOLIST_LASTNAME, TODOLIST_ITEM, date_format(TODOLIST.TIMESTAMP, ? ? ?), (TO_DAYS(CURRENT_TIMESTAMP)-TO_DAYS(TODOLIST.TIMESTAMP)), TODOLIST_DUEDATE, (SELECT IFNULL((SELECT STAFF_NAME FROM STAFF WHERE STAFF_ID=(SELECT STAFF_ID_FOR FROM TODOLIST WHERE TODOLIST_ID=PxID)), (SELECT USER_NAME FROM USER WHERE USER_ID=(SELECT USER_ID FROM TODOLIST WHERE TODOLIST.TODOLIST_ID=PxID)))), (SELECT STAFF.STAFF_NAME FROM STAFF WHERE STAFF.STAFF_ID=TODOLIST.STAFF_ID_FROM), (SELECT COUNT(TODOLIST_NOTES.TODOLIST_ID) FROM TODOLIST_NOTES WHERE TODOLIST.TODOLIST_ID=TODOLIST_NOTES.TODOLIST_ID), TODOLIST.USER_ID, TODOLIST.URGENT, TODOLIST.UNREAD, TODOLIST_GROUP.URGENT, TODOLIST_GROUP.UNREAD, (SELECT IF( EXISTS( SELECT TODOLIST_GROUP.TODOLIST_ID FROM TODOLIST_GROUP LEFT JOIN TODOLIST ON TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID WHERE TODOLIST_GROUP.STAFF_ID=? AND TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID), 1, 0)), TIME_TDL_ITEM_COMPLETED FROM TODOLIST LEFT JOIN USER ON TODOLIST.STAFF_ID_FROM=USER.USER_ID LEFT JOIN TODOLIST_GROUP ON TODOLIST.TODOLIST_ID=TODOLIST_GROUP.TODOLIST_ID AND TODOLIST.STAFF_ID_FOR=? WHERE (TODOLIST.STAFF_ID_FOR=? OR TODOLIST.USER_ID=?) AND TODOLIST_GROUP.STAFF_ID=? AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NULL\""
+													"text" : "below without TODOLIST_GROUP_STAFF_ID\n - i removed as error in creating staff_ID_TDL"
 												}
 
 											}
@@ -6011,11 +6235,11 @@
 												"box" : 												{
 													"id" : "obj-25",
 													"maxclass" : "newobj",
-													"numinlets" : 4,
+													"numinlets" : 5,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 433.777777777777771, 211.0, 340.777777777777828, 22.0 ],
-													"text" : "pack i i i i"
+													"text" : "pack i i i i i"
 												}
 
 											}
@@ -6070,13 +6294,13 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-3",
-													"linecount" : 11,
+													"linecount" : 12,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 162.888888888888914, 273.0, 885.0, 160.0 ],
-													"text" : "\"SELECT DISTINCT TODOLIST.TODOLIST_ID AS 'PxID', TODOLIST_NAME, TODOLIST_LASTNAME, TODOLIST_ITEM, date_format(TODOLIST.TIMESTAMP, ? ? ?), (TO_DAYS(CURRENT_TIMESTAMP)-TO_DAYS(TODOLIST.TIMESTAMP)), TODOLIST_DUEDATE, (SELECT IFNULL((SELECT STAFF_NAME FROM STAFF WHERE STAFF_ID=(SELECT STAFF_ID_FOR FROM TODOLIST WHERE TODOLIST_ID=PxID)), (SELECT USER_NAME FROM USER WHERE USER_ID=(SELECT USER_ID FROM TODOLIST WHERE TODOLIST.TODOLIST_ID=PxID)))), (SELECT STAFF.STAFF_NAME FROM STAFF WHERE STAFF.STAFF_ID=TODOLIST.STAFF_ID_FROM), (SELECT COUNT(TODOLIST_NOTES.TODOLIST_ID) FROM TODOLIST_NOTES WHERE TODOLIST.TODOLIST_ID=TODOLIST_NOTES.TODOLIST_ID), TODOLIST.USER_ID, TODOLIST.URGENT, TODOLIST.UNREAD, TODOLIST_GROUP.URGENT, TODOLIST_GROUP.UNREAD, (SELECT IF( EXISTS( SELECT TODOLIST_GROUP.TODOLIST_ID FROM TODOLIST_GROUP LEFT JOIN TODOLIST ON TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID WHERE TODOLIST_GROUP.STAFF_ID=? AND TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID), 1, 0)), TIME_TDL_ITEM_COMPLETED FROM TODOLIST LEFT JOIN USER ON TODOLIST.STAFF_ID_FROM=USER.USER_ID LEFT JOIN TODOLIST_GROUP ON TODOLIST.TODOLIST_ID=TODOLIST_GROUP.TODOLIST_ID AND TODOLIST.STAFF_ID_FOR=? WHERE (TODOLIST.STAFF_ID_FOR=? OR TODOLIST.USER_ID=?) AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NULL\""
+													"patching_rect" : [ 162.888888888888914, 273.0, 885.0, 174.0 ],
+													"text" : "\"SELECT TODOLIST.TODOLIST_ID AS 'PxID', TODOLIST_NAME, TODOLIST_LASTNAME, TODOLIST_ITEM, date_format(TODOLIST.TIMESTAMP, ? ? ?), (TO_DAYS(CURRENT_TIMESTAMP)-TO_DAYS(TODOLIST.TIMESTAMP)), TODOLIST_DUEDATE, (SELECT IFNULL((SELECT STAFF_NAME FROM STAFF WHERE STAFF_ID=(SELECT STAFF_ID_FOR FROM TODOLIST WHERE TODOLIST_ID=PxID)), (SELECT USER_NAME FROM USER WHERE USER_ID=(SELECT USER_ID FROM TODOLIST WHERE TODOLIST.TODOLIST_ID=PxID)))), (SELECT STAFF.STAFF_NAME FROM STAFF WHERE STAFF.STAFF_ID=TODOLIST.STAFF_ID_FROM), (SELECT COUNT(TODOLIST_NOTES.TODOLIST_ID) FROM TODOLIST_NOTES WHERE TODOLIST.TODOLIST_ID=TODOLIST_NOTES.TODOLIST_ID), TODOLIST.USER_ID, TODOLIST.URGENT, TODOLIST.UNREAD, TODOLIST_GROUP.URGENT, TODOLIST_GROUP.UNREAD, (SELECT IF( EXISTS( SELECT TODOLIST_GROUP.TODOLIST_ID FROM TODOLIST_GROUP LEFT JOIN TODOLIST ON TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID WHERE TODOLIST_GROUP.STAFF_ID=? AND TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID), 1, 0)), TIME_TDL_ITEM_COMPLETED FROM TODOLIST LEFT JOIN USER ON TODOLIST.STAFF_ID_FROM=USER.USER_ID LEFT JOIN TODOLIST_GROUP ON TODOLIST.TODOLIST_ID=TODOLIST_GROUP.TODOLIST_ID AND TODOLIST.STAFF_ID_FOR=? WHERE (TODOLIST.STAFF_ID_FOR=? OR TODOLIST.USER_ID=?) AND TODOLIST_GROUP.STAFF_ID=? AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NULL\""
 												}
 
 											}
@@ -6133,7 +6357,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-25", 1 ],
-													"midpoints" : [ 443.277777777777771, 201.0, 550.537037037037067, 201.0 ],
+													"midpoints" : [ 443.277777777777771, 201.0, 523.722222222222172, 201.0 ],
 													"order" : 0,
 													"source" : [ "obj-19", 0 ]
 												}
@@ -6185,8 +6409,17 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-25", 4 ],
+													"order" : 0,
+													"source" : [ "obj-22", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-25", 2 ],
-													"midpoints" : [ 765.277777777777828, 204.0, 657.796296296296305, 204.0 ],
+													"midpoints" : [ 765.277777777777828, 204.0, 604.166666666666742, 204.0 ],
+													"order" : 1,
 													"source" : [ "obj-22", 0 ]
 												}
 
@@ -8796,6 +9029,13 @@
 			}
  ],
 		"dependency_cache" : [ 			{
+				"name" : "MySQL_User.maxpat",
+				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Python_R.maxpat",
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
 				"patcherrelativepath" : ".",
