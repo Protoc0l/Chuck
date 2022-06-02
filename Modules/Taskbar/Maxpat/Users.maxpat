@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 42.0, 268.0, 1843.0, 731.0 ],
+		"rect" : [ 35.0, 268.0, 1843.0, 731.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -5597,7 +5597,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 107.0, 1874.0, 1080.0 ],
+						"rect" : [ 4.0, 107.0, 1874.0, 1080.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -5641,15 +5641,15 @@
 								"box" : 								{
 									"fontsize" : 48.0,
 									"id" : "obj-50",
-									"linecount" : 14,
+									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 101.0, 650.0, 992.0, 779.0 ],
+									"patching_rect" : [ 101.0, 650.0, 996.0, 172.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 14,
-									"presentation_rect" : [ 746.0, 168.0, 978.0, 779.0 ],
-									"text" : "Major Update:\n\n1) Revamped To Do List Notes Section\n     - can complete, change date, reassign from the notes popup (from double clicking an item/task on to do list menu)\n\n2) A user can NO LONGER fully complete an item/task assigned to them; once completed the item/task's originator will be sent a message for final conformation of completion of the task before it is marked as completed.\n\n3) You can ask Jarvis for a coffee!!",
+									"presentation_linecount" : 3,
+									"presentation_rect" : [ 746.0, 168.0, 978.0, 172.0 ],
+									"text" : "Major Update:\n\n1) Emoji's in To Do List Notes!!!",
 									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
 								}
 
