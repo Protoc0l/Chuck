@@ -38526,6 +38526,7 @@
 								"box" : 								{
 									"color" : [ 1.0, 0.0, 0.0, 1.0 ],
 									"id" : "obj-42",
+									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -48400,7 +48401,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ -718.0, 229.0, 2541.0, 746.0 ],
+										"rect" : [ -81.0, 702.0, 2541.0, 746.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -48962,7 +48963,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 335.599992990493774, 75.0, 56.0, 22.0 ],
-													"text" : "pipe 100"
+													"text" : "pipe 200"
 												}
 
 											}
