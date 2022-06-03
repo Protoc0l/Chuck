@@ -2938,7 +2938,6 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 487.0, 41.0, 391.0, 77.0 ],
-													"presentation_linecount" : 5,
 													"text" : "\"SELECT TODOLIST.TODOLIST_ID, TODOLIST.STAFF_ID_FOR FROM TODOLIST LEFT JOIN TODOLIST_GROUP ON TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID WHERE TIME_TDL_ITEM_COMPLETED IS NULL AND TODOLIST_GROUP_ID IS NULL\""
 												}
 
@@ -3393,6 +3392,42 @@
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
+												"box" : 												{
+													"id" : "obj-83",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
+													"patching_rect" : [ 174.0, 509.0, 100.0, 22.0 ],
+													"text" : "zl slice 1"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-88",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
+													"patching_rect" : [ 174.0, 480.0, 100.0, 22.0 ],
+													"text" : "zl rev"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-89",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
+													"patching_rect" : [ 174.0, 457.0, 100.0, 22.0 ],
+													"text" : "zl join"
+												}
+
+											}
+, 											{
 												"box" : 												{
 													"id" : "obj-91",
 													"linecount" : 5,
@@ -4459,7 +4494,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-18", 0 ],
+													"destination" : [ "obj-89", 0 ],
 													"source" : [ "obj-10", 0 ]
 												}
 
@@ -4523,8 +4558,8 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-37", 0 ],
-													"midpoints" : [ 284.0, 556.0, 260.5, 556.0 ],
+													"destination" : [ "obj-89", 1 ],
+													"midpoints" : [ 284.0, 389.0, 264.5, 389.0 ],
 													"source" : [ "obj-2", 0 ]
 												}
 
@@ -4559,7 +4594,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-37", 0 ],
+													"destination" : [ "obj-89", 1 ],
 													"source" : [ "obj-24", 0 ]
 												}
 
@@ -5154,6 +5189,20 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-18", 0 ],
+													"source" : [ "obj-83", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-37", 0 ],
+													"source" : [ "obj-83", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-77", 0 ],
 													"source" : [ "obj-85", 2 ]
 												}
@@ -5193,6 +5242,20 @@
 												"patchline" : 												{
 													"destination" : [ "obj-86", 0 ],
 													"source" : [ "obj-87", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-83", 0 ],
+													"source" : [ "obj-88", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-88", 0 ],
+													"source" : [ "obj-89", 0 ]
 												}
 
 											}
@@ -5735,7 +5798,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 96.888888888888914, 859.0, 402.333333333333258, 24.0 ],
-													"text" : "store ID ⚠ ✉ \"First Name\" \"Last Name\" Item ⧗ ⛅ ⏱ For From ✏ ✓"
+													"text" : "store ID ⚠ ✉ \"Last Name\" \"First Name\" Item ⧗ ⛅ ⏱ For From ✏ ✓"
 												}
 
 											}
