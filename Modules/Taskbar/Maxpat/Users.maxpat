@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 42.0, 268.0, 1843.0, 731.0 ],
+		"rect" : [ 35.0, 268.0, 1843.0, 731.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -5597,7 +5597,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 42.0, 107.0, 1874.0, 1080.0 ],
+						"rect" : [ 4.0, 107.0, 1874.0, 1080.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -5648,8 +5648,8 @@
 									"patching_rect" : [ 101.0, 650.0, 996.0, 338.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 6,
-									"presentation_rect" : [ 746.0, 168.0, 978.0, 338.0 ],
-									"text" : "Major Update:\n\n1) Emoji's in To Do List Notes!!!\n    (  possible bug: hopefully i solved it but the buttons might \"#1\"; however when you press it, it should display an emoji :)   )",
+									"presentation_rect" : [ 746.0, 168.0, 980.0, 338.0 ],
+									"text" : "Major Update:\n\n1) Emoji's in To Do List Notes!!!\n2) Temp disabled auto \"read\" from to do list notes pop up. you have to manually mark as read.",
 									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
 								}
 
