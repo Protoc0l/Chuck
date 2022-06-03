@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 35.0, 268.0, 1843.0, 731.0 ],
+		"rect" : [ 42.0, 268.0, 1843.0, 731.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -5597,7 +5597,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 4.0, 107.0, 1874.0, 1080.0 ],
+						"rect" : [ 42.0, 107.0, 1874.0, 1080.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -5641,15 +5641,15 @@
 								"box" : 								{
 									"fontsize" : 48.0,
 									"id" : "obj-50",
-									"linecount" : 3,
+									"linecount" : 6,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 101.0, 650.0, 996.0, 172.0 ],
+									"patching_rect" : [ 101.0, 650.0, 996.0, 338.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 3,
-									"presentation_rect" : [ 746.0, 168.0, 978.0, 172.0 ],
-									"text" : "Major Update:\n\n1) Emoji's in To Do List Notes!!!",
+									"presentation_linecount" : 6,
+									"presentation_rect" : [ 746.0, 168.0, 978.0, 338.0 ],
+									"text" : "Major Update:\n\n1) Emoji's in To Do List Notes!!!\n    (  possible bug: hopefully i solved it but the buttons might \"#1\"; however when you press it, it should display an emoji :)   )",
 									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
 								}
 
