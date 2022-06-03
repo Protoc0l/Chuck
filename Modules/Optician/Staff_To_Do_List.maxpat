@@ -32378,9 +32378,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 1449.0, 162.666664600372314, 100.0, 20.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 729.0, 27.0, 95.0, 27.0 ],
+									"patching_rect" : [ 1449.0, 161.666664600372314, 100.0, 20.0 ],
 									"text" : "Send & Done",
 									"texton" : "Send",
 									"textoncolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
@@ -36886,10 +36884,10 @@
 									"id" : "obj-57",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
+									"numoutlets" : 2,
+									"outlettype" : [ "bang", "bang" ],
 									"patching_rect" : [ 1146.0, 781.0, 100.0, 22.0 ],
-									"text" : "t b"
+									"text" : "t b b"
 								}
 
 							}
@@ -36905,7 +36903,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 1146.0, 754.0, 100.0, 20.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 666.0, 27.0, 62.0, 27.0 ],
+									"presentation_rect" : [ 666.0, 27.0, 158.0, 27.0 ],
 									"text" : "Send",
 									"texton" : "Send",
 									"textoncolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
@@ -38597,7 +38595,6 @@
 								"box" : 								{
 									"color" : [ 1.0, 0.0, 0.0, 1.0 ],
 									"id" : "obj-42",
-									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -41048,6 +41045,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-69", 0 ],
 									"source" : [ "obj-57", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-87", 0 ],
+									"source" : [ "obj-57", 1 ]
 								}
 
 							}
@@ -54649,6 +54653,7 @@
 									"bubbleusescolors" : 1,
 									"fontface" : 2,
 									"fontsize" : 18.0,
+									"hidden" : 1,
 									"id" : "obj-4",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -54678,6 +54683,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 6.0, 72.0, 243.0, 30.0 ],
 									"rounded" : 0.0,
+									"text" : "(>‿◠)✌",
 									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
 									"wordwrap" : 0
 								}
