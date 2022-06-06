@@ -32036,7 +32036,7 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 0.2, 0.2, 0.2, 0.09 ],
+									"bgcolor" : [ 0.2, 0.2, 0.2, 0.01 ],
 									"checkedcolor" : [ 0.388235294117647, 0.388235294117647, 0.388235294117647, 1.0 ],
 									"id" : "obj-18",
 									"maxclass" : "toggle",
@@ -32615,7 +32615,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 1259.0, 224.5, 101.0, 39.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 666.0, 3.0, 110.0, 22.0 ],
+									"presentation_rect" : [ 71.0, 3.0, 110.0, 22.0 ],
 									"text" : "☐ Completed",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"texton" : "☑ Completed",
@@ -38716,7 +38716,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 1110.5, 195.0, 101.0, 39.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 395.0, 3.0, 33.0, 22.0 ],
+									"presentation_rect" : [ 634.0, 3.0, 30.0, 22.0 ],
 									"text" : "⚐",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"texton" : "⚑",
@@ -38804,6 +38804,7 @@
 								"box" : 								{
 									"color" : [ 1.0, 0.0, 0.0, 1.0 ],
 									"id" : "obj-42",
+									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
