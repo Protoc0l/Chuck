@@ -534,7 +534,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 59.0, 107.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -690,18 +690,6 @@
 					}
 ,
 					"text" : "p font_color"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"attr" : "textoncolor",
-					"id" : "obj-64",
-					"maxclass" : "attrui",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 388.0, 910.0, 150.0, 22.0 ]
 				}
 
 			}
@@ -9626,7 +9614,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 330.0, 689.0, 100.0, 22.0 ],
+					"patching_rect" : [ 331.5625, 682.0, 100.0, 22.0 ],
 					"text" : "r STDL_unread"
 				}
 
@@ -17557,7 +17545,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 215.0, 460.0, 277.0, 27.0 ],
+									"patching_rect" : [ 215.0, 430.0, 277.0, 27.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -17791,24 +17779,11 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-4",
-									"linecount" : 3,
-									"maxclass" : "newobj",
-									"numinlets" : 3,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 377.0, 254.0, 256.0, 50.0 ],
-									"text" : "sprintf exec \\\"UPDATE TODOLIST SET UNREAD='%s' WHERE TODOLIST_ID=%s AND STAFF_ID_FOR='%s'\\\""
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-3",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 430.0, 430.0, 176.0, 20.0 ],
+									"patching_rect" : [ 420.0, 400.0, 176.0, 20.0 ],
 									"text" : "UPDATE TODOLIST_GROUP"
 								}
 
@@ -17819,32 +17794,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 388.0, 317.0, 150.0, 20.0 ],
+									"patching_rect" : [ 420.0, 317.0, 150.0, 20.0 ],
 									"text" : "UPDATE TODOLIST"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-26",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 168.0, 472.0, 106.5, 22.0 ],
-									"text" : "s ---databaselocal"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-25",
-									"linecount" : 3,
-									"maxclass" : "newobj",
-									"numinlets" : 3,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 168.0, 415.0, 256.0, 50.0 ],
-									"text" : "sprintf exec \\\"UPDATE TODOLIST_GROUP SET UNREAD='%s' WHERE TODOLIST_ID='%s' AND STAFF_ID='%s'\\\""
 								}
 
 							}
@@ -17862,17 +17813,6 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-37",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 119.0, 361.0, 106.5, 22.0 ],
-									"text" : "s ---databaselocal"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-40",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
@@ -17880,19 +17820,6 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 201.0, 268.0, 100.0, 22.0 ],
 									"text" : "route ID"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-41",
-									"linecount" : 2,
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 119.0, 304.0, 256.0, 36.0 ],
-									"text" : "sprintf exec \\\"UPDATE TODOLIST SET UNREAD='%s' WHERE TODOLIST_ID=%s\\\""
 								}
 
 							}
@@ -17955,13 +17882,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-26", 0 ],
-									"source" : [ "obj-25", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-1", 0 ],
 									"order" : 1,
 									"source" : [ "obj-28", 0 ]
@@ -18012,13 +17932,6 @@
 									"destination" : [ "obj-29", 1 ],
 									"order" : 1,
 									"source" : [ "obj-40", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-37", 0 ],
-									"source" : [ "obj-41", 0 ]
 								}
 
 							}
@@ -19063,13 +18976,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-85", 0 ],
 					"source" : [ "obj-63", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"source" : [ "obj-64", 0 ]
 				}
 
 			}
