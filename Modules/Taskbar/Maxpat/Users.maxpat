@@ -5641,15 +5641,15 @@
 								"box" : 								{
 									"fontsize" : 48.0,
 									"id" : "obj-50",
-									"linecount" : 6,
+									"linecount" : 5,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 101.0, 650.0, 996.0, 338.0 ],
+									"patching_rect" : [ 101.0, 650.0, 996.0, 282.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 6,
-									"presentation_rect" : [ 746.0, 168.0, 980.0, 338.0 ],
-									"text" : "Major Update:\n\n1) Emoji's in To Do List Notes!!!\n2) Temp disabled auto \"read\" from to do list notes pop up. you have to manually mark as read.",
+									"presentation_linecount" : 5,
+									"presentation_rect" : [ 746.0, 168.0, 980.0, 282.0 ],
+									"text" : "Major Update:\n\n1) Emoji's in To Do List Notes!!!\n2) Re-enabled auto \"read\" when closing to-do-list notes pop up thread/converseation.",
 									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
 								}
 
