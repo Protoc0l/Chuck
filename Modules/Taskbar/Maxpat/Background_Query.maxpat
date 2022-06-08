@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 42.0, 146.0, 1108.0, 788.0 ],
+		"rect" : [ 945.0, 473.0, 1108.0, 788.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -563,12 +563,36 @@
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
 												"box" : 												{
+													"id" : "obj-10",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
+													"patching_rect" : [ 119.0, 310.0, 69.0, 22.0 ],
+													"text" : "route .Staff"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-9",
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 337.5, 137.0, 236.0, 22.0 ],
+													"text" : "store STAFF . AVAILABLE . \"LINKED PX\""
+												}
+
+											}
+, 											{
+												"box" : 												{
 													"id" : "obj-8",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 88.0, 134.0, 56.0, 22.0 ],
+													"patching_rect" : [ 88.0, 177.0, 56.0, 22.0 ],
 													"text" : "deferlow"
 												}
 
@@ -593,7 +617,7 @@
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 88.0, 190.0, 30.0, 30.0 ]
+													"patching_rect" : [ 88.0, 233.0, 30.0, 30.0 ]
 												}
 
 											}
@@ -615,10 +639,10 @@
 													"id" : "obj-6",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
-													"numoutlets" : 2,
-													"outlettype" : [ "dump", "clear" ],
+													"numoutlets" : 3,
+													"outlettype" : [ "dump", "bang", "clear" ],
 													"patching_rect" : [ 169.0, 110.0, 356.0, 22.0 ],
-													"text" : "t dump clear"
+													"text" : "t dump b clear"
 												}
 
 											}
@@ -629,7 +653,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 4,
 													"outlettype" : [ "", "", "", "" ],
-													"patching_rect" : [ 169.0, 134.0, 236.0, 22.0 ],
+													"patching_rect" : [ 169.0, 177.0, 236.0, 22.0 ],
 													"saved_object_attributes" : 													{
 														"embed" : 0,
 														"precision" : 6
@@ -646,7 +670,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "aside" ],
-													"patching_rect" : [ 355.666666666666686, 294.0, 63.0, 22.0 ],
+													"patching_rect" : [ 355.666666666666686, 337.0, 63.0, 22.0 ],
 													"text" : "t aside"
 												}
 
@@ -658,7 +682,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 210.0, 198.0, 100.0, 22.0 ],
+													"patching_rect" : [ 210.0, 241.0, 100.0, 22.0 ],
 													"text" : "zl slice 1"
 												}
 
@@ -670,7 +694,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "reserved" ],
-													"patching_rect" : [ 288.666666666666686, 294.0, 63.0, 22.0 ],
+													"patching_rect" : [ 288.666666666666686, 337.0, 63.0, 22.0 ],
 													"text" : "t reserved"
 												}
 
@@ -682,7 +706,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 210.0, 228.0, 100.0, 22.0 ],
+													"patching_rect" : [ 210.0, 271.0, 100.0, 22.0 ],
 													"text" : "fromsymbol"
 												}
 
@@ -695,7 +719,7 @@
 													"numinlets" : 5,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 169.0, 348.0, 156.0, 36.0 ],
+													"patching_rect" : [ 169.0, 391.0, 156.0, 36.0 ],
 													"text" : "sprintf store \\\"%s\\\" \\\"%s\\\" \\\"%s\\\" \\\"%s\\\" \\\"%s\\\""
 												}
 
@@ -707,7 +731,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "busy" ],
-													"patching_rect" : [ 249.5, 322.0, 44.0, 22.0 ],
+													"patching_rect" : [ 249.5, 365.0, 44.0, 22.0 ],
 													"text" : "t busy"
 												}
 
@@ -719,7 +743,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "available" ],
-													"patching_rect" : [ 210.0, 294.0, 65.0, 22.0 ],
+													"patching_rect" : [ 210.0, 337.0, 65.0, 22.0 ],
 													"text" : "t available"
 												}
 
@@ -731,7 +755,7 @@
 													"numinlets" : 5,
 													"numoutlets" : 5,
 													"outlettype" : [ "", "", "", "", "" ],
-													"patching_rect" : [ 210.0, 252.0, 176.333333333333371, 22.0 ],
+													"patching_rect" : [ 210.0, 295.0, 176.333333333333371, 22.0 ],
 													"text" : "route 1 0 2 3"
 												}
 
@@ -743,7 +767,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 169.0, 162.0, 60.0, 22.0 ],
+													"patching_rect" : [ 169.0, 205.0, 60.0, 22.0 ],
 													"text" : "zl slice 2"
 												}
 
@@ -756,7 +780,7 @@
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 169.0, 407.0, 30.0, 30.0 ]
+													"patching_rect" : [ 169.0, 450.0, 30.0, 30.0 ]
 												}
 
 											}
@@ -771,6 +795,14 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-23", 0 ],
+													"source" : [ "obj-10", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-10", 0 ],
+													"midpoints" : [ 178.5, 266.0, 128.5, 266.0 ],
 													"source" : [ "obj-13", 0 ]
 												}
 
@@ -884,7 +916,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-25", 0 ],
-													"source" : [ "obj-6", 1 ]
+													"source" : [ "obj-6", 2 ]
 												}
 
 											}
@@ -892,6 +924,13 @@
 												"patchline" : 												{
 													"destination" : [ "obj-5", 0 ],
 													"source" : [ "obj-6", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-9", 0 ],
+													"source" : [ "obj-6", 1 ]
 												}
 
 											}
@@ -913,6 +952,13 @@
 												"patchline" : 												{
 													"destination" : [ "obj-26", 0 ],
 													"source" : [ "obj-8", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-25", 0 ],
+													"source" : [ "obj-9", 0 ]
 												}
 
 											}
@@ -5509,7 +5555,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ -1878.0, 85.0, 1852.0, 929.0 ],
+										"rect" : [ 73.0, 165.0, 1852.0, 929.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -5538,6 +5584,66 @@
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
+												"box" : 												{
+													"id" : "obj-74",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 348.944444444444457, 754.0, 100.0, 22.0 ],
+													"text" : "v TDL_order_by"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-63",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "bang" ],
+													"patching_rect" : [ 162.944444444444457, 730.0, 205.0, 22.0 ],
+													"text" : "t s b"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-60",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 215.055555555555543, 754.0, 166.0, 22.0 ],
+													"text" : "sprintf \\\"%s ORDER BY %s\\\""
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-73",
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 1944.777777777778283, 580.0, 257.0, 22.0 ],
+													"text" : "OR TODOLIST_GROUP.PERSONAL='1'"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-71",
+													"linecount" : 2,
+													"maxclass" : "comment",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 1994.0, 230.0, 150.0, 34.0 ],
+													"text" : "Group/Thread included\nTDL Items"
+												}
+
+											}
+, 											{
 												"box" : 												{
 													"id" : "obj-69",
 													"linecount" : 11,
@@ -5570,7 +5676,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 14.0, 802.0, 38.0, 36.0 ],
+													"patching_rect" : [ 14.0, 839.0, 38.0, 36.0 ],
 													"text" : "deferlow"
 												}
 
@@ -5618,19 +5724,7 @@
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 88.472222222222229, 909.0, 30.0, 30.0 ]
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-63",
-													"maxclass" : "button",
-													"numinlets" : 1,
-													"numoutlets" : 1,
-													"outlettype" : [ "bang" ],
-													"parameter_enable" : 0,
-													"patching_rect" : [ 390.0, 752.0, 24.0, 24.0 ]
+													"patching_rect" : [ 88.472222222222229, 946.0, 30.0, 30.0 ]
 												}
 
 											}
@@ -5786,7 +5880,7 @@
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 14.0, 909.0, 30.0, 30.0 ]
+													"patching_rect" : [ 14.0, 946.0, 30.0, 30.0 ]
 												}
 
 											}
@@ -5797,7 +5891,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 96.888888888888914, 859.0, 402.333333333333258, 24.0 ],
+													"patching_rect" : [ 96.888888888888914, 896.0, 402.333333333333258, 24.0 ],
 													"text" : "store ID ⚠ ✉ \"Last Name\" \"First Name\" Item ⧗ ⛅ ⏱ For From ✏ ✓"
 												}
 
@@ -5809,7 +5903,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 55.444444444444457, 831.0, 100.0, 22.0 ],
+													"patching_rect" : [ 55.444444444444457, 868.0, 100.0, 22.0 ],
 													"text" : "route PxID"
 												}
 
@@ -5822,7 +5916,7 @@
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 55.444444444444457, 909.0, 30.0, 30.0 ]
+													"patching_rect" : [ 55.444444444444457, 946.0, 30.0, 30.0 ]
 												}
 
 											}
@@ -5834,7 +5928,7 @@
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 136.444444444444457, 909.0, 30.0, 30.0 ]
+													"patching_rect" : [ 136.444444444444457, 946.0, 30.0, 30.0 ]
 												}
 
 											}
@@ -5845,7 +5939,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 4,
 													"outlettype" : [ "bang", "dump", "bang", "clear" ],
-													"patching_rect" : [ 14.0, 772.0, 143.333333333333371, 22.0 ],
+													"patching_rect" : [ 14.0, 809.0, 143.333333333333371, 22.0 ],
 													"text" : "t b dump b clear"
 												}
 
@@ -5881,7 +5975,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 4,
 													"outlettype" : [ "", "", "", "" ],
-													"patching_rect" : [ 55.444444444444457, 802.0, 249.0, 22.0 ],
+													"patching_rect" : [ 55.444444444444457, 839.0, 249.0, 22.0 ],
 													"saved_object_attributes" : 													{
 														"embed" : 0,
 														"precision" : 6
@@ -5910,7 +6004,7 @@
 													"numinlets" : 5,
 													"numoutlets" : 2,
 													"outlettype" : [ "bang", "" ],
-													"patching_rect" : [ 14.0, 741.0, 316.888888888888914, 22.0 ],
+													"patching_rect" : [ 14.0, 778.0, 316.888888888888914, 22.0 ],
 													"text" : "Python_R P_Combined_Personal_User_Query"
 												}
 
@@ -6161,7 +6255,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 1944.777777777778283, 279.0, 896.0, 188.0 ],
-													"text" : "\"SELECT TODOLIST.TODOLIST_ID AS 'PxID', TODOLIST_NAME, TODOLIST_LASTNAME, TODOLIST_ITEM, date_format(TODOLIST.TIMESTAMP, ? ? ?), (TO_DAYS(CURRENT_TIMESTAMP)-TO_DAYS(TODOLIST.TIMESTAMP)), TODOLIST_DUEDATE, (SELECT IFNULL((SELECT STAFF_NAME FROM STAFF WHERE STAFF_ID=(SELECT STAFF_ID_FOR FROM TODOLIST WHERE TODOLIST_ID=PxID)), (SELECT USER_NAME FROM USER WHERE USER_ID=(SELECT USER_ID FROM TODOLIST WHERE TODOLIST.TODOLIST_ID=PxID)))), (SELECT STAFF.STAFF_NAME FROM STAFF WHERE STAFF.STAFF_ID=TODOLIST.STAFF_ID_FROM), (SELECT COUNT(TODOLIST_NOTES.TODOLIST_ID) FROM TODOLIST_NOTES WHERE TODOLIST.TODOLIST_ID=TODOLIST_NOTES.TODOLIST_ID), TODOLIST.USER_ID AS 'ID', TODOLIST.URGENT, TODOLIST.UNREAD, TODOLIST_GROUP.URGENT, TODOLIST_GROUP.UNREAD, (SELECT IF( EXISTS( SELECT TODOLIST_GROUP.TODOLIST_ID FROM TODOLIST_GROUP LEFT JOIN TODOLIST ON TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID WHERE TODOLIST_GROUP.STAFF_ID=? AND TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID), 1, 0)), TIME_TDL_ITEM_COMPLETED FROM TODOLIST LEFT JOIN USER ON TODOLIST.STAFF_ID_FROM=USER.USER_ID LEFT JOIN TODOLIST_GROUP ON TODOLIST.TODOLIST_ID=TODOLIST_GROUP.TODOLIST_ID AND TODOLIST.STAFF_ID_FROM=TODOLIST_GROUP.STAFF_ID WHERE TODOLIST.TODOLIST_ID IN (SELECT TODOLIST_GROUP.TODOLIST_ID FROM TODOLIST_GROUP WHERE (TODOLIST_GROUP.UNREAD='1' OR TODOLIST_GROUP.URGENT='1') AND TODOLIST_GROUP.STAFF_ID=?) AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NULL\""
+													"text" : "\"SELECT TODOLIST.TODOLIST_ID AS 'PxID', TODOLIST_NAME, TODOLIST_LASTNAME, TODOLIST_ITEM, date_format(TODOLIST.TIMESTAMP, ? ? ?), (TO_DAYS(CURRENT_TIMESTAMP)-TO_DAYS(TODOLIST.TIMESTAMP)), TODOLIST_DUEDATE, (SELECT IFNULL((SELECT STAFF_NAME FROM STAFF WHERE STAFF_ID=(SELECT STAFF_ID_FOR FROM TODOLIST WHERE TODOLIST_ID=PxID)), (SELECT USER_NAME FROM USER WHERE USER_ID=(SELECT USER_ID FROM TODOLIST WHERE TODOLIST.TODOLIST_ID=PxID)))), (SELECT STAFF.STAFF_NAME FROM STAFF WHERE STAFF.STAFF_ID=TODOLIST.STAFF_ID_FROM), (SELECT COUNT(TODOLIST_NOTES.TODOLIST_ID) FROM TODOLIST_NOTES WHERE TODOLIST.TODOLIST_ID=TODOLIST_NOTES.TODOLIST_ID), TODOLIST.USER_ID AS 'ID', TODOLIST.URGENT, TODOLIST.UNREAD, TODOLIST_GROUP.URGENT, TODOLIST_GROUP.UNREAD, (SELECT IF( EXISTS( SELECT TODOLIST_GROUP.TODOLIST_ID FROM TODOLIST_GROUP LEFT JOIN TODOLIST ON TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID WHERE TODOLIST_GROUP.STAFF_ID=? AND TODOLIST_GROUP.TODOLIST_ID=TODOLIST.TODOLIST_ID), 1, 0)), TIME_TDL_ITEM_COMPLETED FROM TODOLIST LEFT JOIN USER ON TODOLIST.STAFF_ID_FROM=USER.USER_ID LEFT JOIN TODOLIST_GROUP ON TODOLIST.TODOLIST_ID=TODOLIST_GROUP.TODOLIST_ID AND TODOLIST.STAFF_ID_FROM=TODOLIST_GROUP.STAFF_ID WHERE TODOLIST.TODOLIST_ID IN (SELECT TODOLIST_GROUP.TODOLIST_ID FROM TODOLIST_GROUP WHERE (TODOLIST_GROUP.UNREAD='1' OR TODOLIST_GROUP.URGENT='1' OR TODOLIST_GROUP.PERSONAL='1') AND TODOLIST_GROUP.STAFF_ID=?) AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NULL\""
 												}
 
 											}
@@ -6566,7 +6660,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-2", 2 ],
+													"destination" : [ "obj-63", 0 ],
 													"source" : [ "obj-33", 0 ]
 												}
 
@@ -6648,7 +6742,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-2", 3 ],
-													"midpoints" : [ 534.5, 735.0, 246.916666666666686, 735.0 ],
+													"midpoints" : [ 534.5, 772.0, 246.916666666666686, 772.0 ],
 													"source" : [ "obj-41", 0 ]
 												}
 
@@ -6797,7 +6891,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-1", 0 ],
-													"midpoints" : [ 106.388888888888914, 895.0, 64.944444444444457, 895.0 ],
+													"midpoints" : [ 106.388888888888914, 932.0, 64.944444444444457, 932.0 ],
 													"source" : [ "obj-58", 0 ]
 												}
 
@@ -6818,6 +6912,13 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-2", 2 ],
+													"source" : [ "obj-60", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-21", 0 ],
 													"source" : [ "obj-62", 0 ]
 												}
@@ -6825,8 +6926,15 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-56", 0 ],
+													"destination" : [ "obj-2", 2 ],
 													"source" : [ "obj-63", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-74", 0 ],
+													"source" : [ "obj-63", 1 ]
 												}
 
 											}
@@ -6862,6 +6970,13 @@
 												"patchline" : 												{
 													"destination" : [ "obj-8", 0 ],
 													"source" : [ "obj-7", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-60", 1 ],
+													"source" : [ "obj-74", 0 ]
 												}
 
 											}
@@ -8042,9 +8157,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "", "UNION ALL" ],
+					"outlettype" : [ "", "UNION" ],
 					"patching_rect" : [ 153.0, 389.0, 100.0, 22.0 ],
-					"text" : "t s \"UNION ALL\""
+					"text" : "t s UNION"
 				}
 
 			}
