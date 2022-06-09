@@ -42,11 +42,11 @@
 				"box" : 				{
 					"id" : "obj-8",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 123.0, 192.0, 61.0, 22.0 ],
-					"text" : "deferlow"
+					"text" : "delay 10"
 				}
 
 			}
