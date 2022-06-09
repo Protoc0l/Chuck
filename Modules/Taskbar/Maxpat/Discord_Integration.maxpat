@@ -1334,13 +1334,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-77",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 909.5, 646.0, 50.0, 36.0 ],
-					"text" : "\"sql insert\""
+					"patching_rect" : [ 909.5, 646.0, 50.0, 22.0 ],
+					"text" : "sql"
 				}
 
 			}
@@ -1604,13 +1603,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-93",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 968.5, 1062.0, 50.0, 36.0 ],
-					"text" : "\"sql insert\""
+					"patching_rect" : [ 968.5, 1062.0, 50.0, 22.0 ],
+					"text" : "sql"
 				}
 
 			}
@@ -2053,13 +2051,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-48",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 389.5, 1034.0, 50.0, 36.0 ],
-					"text" : "\"sql insert\""
+					"patching_rect" : [ 389.5, 1034.0, 50.0, 22.0 ],
+					"text" : "sql"
 				}
 
 			}
