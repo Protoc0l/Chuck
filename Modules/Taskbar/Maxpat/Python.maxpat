@@ -42,11 +42,11 @@
 				"box" : 				{
 					"id" : "obj-8",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
+					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 120.5, 187.0, 63.5, 22.0 ],
-					"text" : "delay 50"
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 123.0, 192.0, 61.0, 22.0 ],
+					"text" : "deferlow"
 				}
 
 			}
@@ -868,7 +868,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
-					"midpoints" : [ 130.0, 203.0, 132.5, 203.0 ],
 					"source" : [ "obj-8", 0 ]
 				}
 
