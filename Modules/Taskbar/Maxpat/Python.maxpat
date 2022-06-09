@@ -58,7 +58,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 426.583333333333258, 264.0, 73.25, 50.0 ],
-					"presentation_linecount" : 3,
 					"text" : "sprintf set post_data::\\\"sql\\\" \\\"%s\\\""
 				}
 
@@ -464,7 +463,7 @@
 						"headers" : [ "Content-Type=application/json" ],
 						"url" : "http://127.0.0.1:4001/sql",
 						"post_data" : 						{
-							"sql" : ""
+							"sql" : "SELECT STAFF_ID FROM STAFF"
 						}
 ,
 						"parse_type" : "json",
@@ -495,7 +494,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 348.5, 133.0, 73.25, 50.0 ],
+					"patching_rect" : [ 348.5, 133.0, 75.0, 50.0 ],
 					"text" : "prepend set post_data::sql"
 				}
 
