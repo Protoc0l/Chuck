@@ -25834,13 +25834,12 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-20",
-													"linecount" : 2,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 102.75, 158.0, 50.0, 36.0 ],
-													"text" : "\"sql insert\""
+													"patching_rect" : [ 102.75, 158.0, 50.0, 22.0 ],
+													"text" : "sql"
 												}
 
 											}
@@ -26263,13 +26262,12 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-5",
-													"linecount" : 2,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 653.75, 159.0, 50.0, 36.0 ],
-													"text" : "\"sql insert\""
+													"patching_rect" : [ 653.75, 159.0, 50.0, 22.0 ],
+													"text" : "sql"
 												}
 
 											}
@@ -26384,13 +26382,12 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-20",
-													"linecount" : 2,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 102.75, 148.0, 50.0, 36.0 ],
-													"text" : "\"sql insert\""
+													"patching_rect" : [ 102.75, 148.0, 50.0, 22.0 ],
+													"text" : "sql"
 												}
 
 											}
@@ -26964,13 +26961,12 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-20",
-													"linecount" : 2,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 102.75, 158.0, 50.0, 36.0 ],
-													"text" : "\"sql insert\""
+													"patching_rect" : [ 102.75, 158.0, 50.0, 22.0 ],
+													"text" : "sql"
 												}
 
 											}
@@ -27464,13 +27460,12 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-20",
-													"linecount" : 2,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 102.75, 158.0, 50.0, 36.0 ],
-													"text" : "\"sql insert\""
+													"patching_rect" : [ 102.75, 158.0, 50.0, 22.0 ],
+													"text" : "sql"
 												}
 
 											}
@@ -27937,13 +27932,12 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-20",
-													"linecount" : 2,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 102.75, 148.0, 50.0, 36.0 ],
-													"text" : "\"sql insert\""
+													"patching_rect" : [ 102.75, 148.0, 50.0, 22.0 ],
+													"text" : "sql"
 												}
 
 											}
@@ -34101,13 +34095,12 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-6",
-																	"linecount" : 2,
 																	"maxclass" : "message",
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 96.400000000000006, 321.0, 50.0, 36.0 ],
-																	"text" : "\"sql insert\""
+																	"patching_rect" : [ 96.400000000000006, 321.0, 50.0, 22.0 ],
+																	"text" : "sql"
 																}
 
 															}
@@ -34627,13 +34620,12 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-6",
-																	"linecount" : 2,
 																	"maxclass" : "message",
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 82.75, 171.0, 50.0, 36.0 ],
-																	"text" : "\"sql insert\""
+																	"patching_rect" : [ 82.75, 171.0, 50.0, 22.0 ],
+																	"text" : "sql"
 																}
 
 															}
@@ -35014,13 +35006,12 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-6",
-																	"linecount" : 2,
 																	"maxclass" : "message",
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 82.75, 171.0, 50.0, 36.0 ],
-																	"text" : "\"sql insert\""
+																	"patching_rect" : [ 82.75, 171.0, 50.0, 22.0 ],
+																	"text" : "sql"
 																}
 
 															}
@@ -35449,13 +35440,12 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-6",
-																	"linecount" : 2,
 																	"maxclass" : "message",
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 82.75, 151.0, 50.0, 36.0 ],
-																	"text" : "\"sql insert\""
+																	"patching_rect" : [ 82.75, 151.0, 50.0, 22.0 ],
+																	"text" : "sql"
 																}
 
 															}
@@ -35848,13 +35838,12 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-9",
-													"linecount" : 2,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 79.5, 94.0, 50.0, 36.0 ],
-													"text" : "\"sql insert\""
+													"patching_rect" : [ 79.5, 94.0, 50.0, 22.0 ],
+													"text" : "sql"
 												}
 
 											}
@@ -37530,13 +37519,12 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-6",
-																	"linecount" : 2,
 																	"maxclass" : "message",
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 82.75, 171.0, 50.0, 36.0 ],
-																	"text" : "\"sql insert\""
+																	"patching_rect" : [ 82.75, 171.0, 50.0, 22.0 ],
+																	"text" : "sql"
 																}
 
 															}
@@ -37963,13 +37951,12 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-6",
-																	"linecount" : 2,
 																	"maxclass" : "message",
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 82.75, 171.0, 50.0, 36.0 ],
-																	"text" : "\"sql insert\""
+																	"patching_rect" : [ 82.75, 171.0, 50.0, 22.0 ],
+																	"text" : "sql"
 																}
 
 															}
@@ -45248,13 +45235,12 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-46",
-													"linecount" : 2,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 148.25, 100.0, 43.0, 36.0 ],
-													"text" : "\"sql insert\""
+													"patching_rect" : [ 148.25, 100.0, 43.0, 22.0 ],
+													"text" : "sql"
 												}
 
 											}
@@ -46001,13 +45987,12 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-77",
-													"linecount" : 2,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 1536.0, 615.0, 50.0, 36.0 ],
-													"text" : "\"sql insert\""
+													"patching_rect" : [ 1536.0, 615.0, 50.0, 22.0 ],
+													"text" : "sql"
 												}
 
 											}
@@ -48535,13 +48520,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-148",
-									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1115.958333333333258, 714.0, 50.0, 36.0 ],
-									"text" : "\"sql insert\""
+									"patching_rect" : [ 1115.958333333333258, 714.0, 50.0, 22.0 ],
+									"text" : "sql"
 								}
 
 							}
@@ -48597,13 +48581,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-144",
-									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 390.958333333333258, 714.0, 50.0, 36.0 ],
-									"text" : "\"sql insert\""
+									"patching_rect" : [ 390.958333333333258, 714.0, 50.0, 22.0 ],
+									"text" : "sql"
 								}
 
 							}
@@ -49098,7 +49081,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ -81.0, 702.0, 2541.0, 746.0 ],
+										"rect" : [ -823.0, 244.0, 2541.0, 746.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -49207,7 +49190,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 367.25, 390.888894081115723, 68.0, 22.0 ],
-													"text" : "\"sql insert\""
+													"text" : "sql"
 												}
 
 											}
@@ -49434,13 +49417,12 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-42",
-													"linecount" : 2,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 1517.75, 422.0, 50.0, 36.0 ],
-													"text" : "\"sql insert\""
+													"patching_rect" : [ 1517.75, 422.0, 50.0, 22.0 ],
+													"text" : "sql"
 												}
 
 											}
@@ -49477,7 +49459,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 731.25, 401.0, 68.0, 22.0 ],
-													"text" : "\"sql insert\""
+													"text" : "sql"
 												}
 
 											}
@@ -63811,21 +63793,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Emoji_All.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Optician",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "Emoji_single_button.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Optician",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Emoji_single_button_long.maxpat",
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Optician",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

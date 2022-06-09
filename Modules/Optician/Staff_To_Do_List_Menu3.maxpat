@@ -1064,7 +1064,7 @@
 														}
 ,
 														"classnamespace" : "box",
-														"rect" : [ 1448.0, 846.0, 814.0, 504.0 ],
+														"rect" : [ 611.0, 334.0, 814.0, 504.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 0,
 														"default_fontsize" : 12.0,
@@ -1240,13 +1240,12 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-6",
-																	"linecount" : 2,
 																	"maxclass" : "message",
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 96.400000000000006, 291.0, 50.0, 36.0 ],
-																	"text" : "\"sql insert\""
+																	"patching_rect" : [ 96.400000000000006, 291.0, 50.0, 22.0 ],
+																	"text" : "sql"
 																}
 
 															}
@@ -1756,13 +1755,12 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-6",
-																	"linecount" : 2,
 																	"maxclass" : "message",
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 82.75, 151.0, 50.0, 36.0 ],
-																	"text" : "\"sql insert\""
+																	"patching_rect" : [ 82.75, 151.0, 50.0, 22.0 ],
+																	"text" : "sql"
 																}
 
 															}
@@ -2310,13 +2308,12 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-6",
-																	"linecount" : 2,
 																	"maxclass" : "message",
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 96.400000000000006, 291.0, 50.0, 36.0 ],
-																	"text" : "\"sql insert\""
+																	"patching_rect" : [ 96.400000000000006, 291.0, 50.0, 22.0 ],
+																	"text" : "sql"
 																}
 
 															}
@@ -3169,13 +3166,12 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-20",
-													"linecount" : 2,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 102.75, 158.0, 50.0, 36.0 ],
-													"text" : "\"sql insert\""
+													"patching_rect" : [ 102.75, 158.0, 50.0, 22.0 ],
+													"text" : "sql"
 												}
 
 											}
@@ -3426,7 +3422,7 @@
 														}
 ,
 														"classnamespace" : "box",
-														"rect" : [ 1448.0, 846.0, 814.0, 504.0 ],
+														"rect" : [ 675.0, 385.0, 814.0, 504.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 0,
 														"default_fontsize" : 12.0,
@@ -3602,13 +3598,12 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-6",
-																	"linecount" : 2,
 																	"maxclass" : "message",
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 96.400000000000006, 291.0, 50.0, 36.0 ],
-																	"text" : "\"sql insert\""
+																	"patching_rect" : [ 96.400000000000006, 291.0, 50.0, 22.0 ],
+																	"text" : "sql"
 																}
 
 															}
@@ -4093,66 +4088,6 @@
 															}
 , 															{
 																"box" : 																{
-																	"id" : "obj-12",
-																	"maxclass" : "comment",
-																	"numinlets" : 1,
-																	"numoutlets" : 0,
-																	"patching_rect" : [ 506.0, 79.0, 150.0, 20.0 ],
-																	"text" : "OLD"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-10",
-																	"linecount" : 2,
-																	"maxclass" : "message",
-																	"numinlets" : 2,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 500.5, 171.0, 310.0, 36.0 ],
-																	"text" : "\"UPDATE TODOLIST SET URGENT='0', UNREAD='0' WHERE TODOLIST_ID=? AND USER_ID=?\""
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-2",
-																	"maxclass" : "newobj",
-																	"numinlets" : 2,
-																	"numoutlets" : 2,
-																	"outlettype" : [ "", "" ],
-																	"patching_rect" : [ 500.5, 143.0, 143.0, 22.0 ],
-																	"text" : "zl join"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-5",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 624.5, 119.0, 72.0, 22.0 ],
-																	"text" : "v USER_ID"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-9",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 500.5, 119.0, 115.0, 22.0 ],
-																	"text" : "v TODOLIST_ITEM"
-																}
-
-															}
-, 															{
-																"box" : 																{
 																	"id" : "obj-8",
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
@@ -4178,13 +4113,12 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-6",
-																	"linecount" : 2,
 																	"maxclass" : "message",
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 82.75, 151.0, 50.0, 36.0 ],
-																	"text" : "\"sql insert\""
+																	"patching_rect" : [ 82.75, 151.0, 50.0, 22.0 ],
+																	"text" : "sql"
 																}
 
 															}
@@ -4257,13 +4191,6 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-2", 1 ],
-																	"source" : [ "obj-5", 0 ]
-																}
-
-															}
-, 															{
-																"patchline" : 																{
 																	"destination" : [ "obj-4", 1 ],
 																	"source" : [ "obj-6", 0 ]
 																}
@@ -4301,13 +4228,6 @@
 																"patchline" : 																{
 																	"destination" : [ "obj-91", 0 ],
 																	"source" : [ "obj-8", 3 ]
-																}
-
-															}
-, 															{
-																"patchline" : 																{
-																	"destination" : [ "obj-2", 0 ],
-																	"source" : [ "obj-9", 0 ]
 																}
 
 															}
@@ -4557,7 +4477,7 @@
 														}
 ,
 														"classnamespace" : "box",
-														"rect" : [ 1448.0, 846.0, 814.0, 504.0 ],
+														"rect" : [ 634.0, 331.0, 814.0, 504.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 0,
 														"default_fontsize" : 12.0,
@@ -4746,13 +4666,12 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-6",
-																	"linecount" : 2,
 																	"maxclass" : "message",
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 96.400000000000006, 291.0, 50.0, 36.0 ],
-																	"text" : "\"sql insert\""
+																	"patching_rect" : [ 99.400000000000006, 291.0, 50.0, 22.0 ],
+																	"text" : "sql"
 																}
 
 															}
@@ -7027,13 +6946,12 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-20",
-													"linecount" : 2,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 102.75, 158.0, 50.0, 36.0 ],
-													"text" : "\"sql insert\""
+													"patching_rect" : [ 102.75, 158.0, 50.0, 22.0 ],
+													"text" : "sql"
 												}
 
 											}
@@ -11099,13 +11017,12 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-20",
-													"linecount" : 2,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 102.75, 158.0, 50.0, 36.0 ],
-													"text" : "\"sql insert\""
+													"patching_rect" : [ 102.75, 158.0, 50.0, 22.0 ],
+													"text" : "sql"
 												}
 
 											}
@@ -15200,13 +15117,12 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-20",
-													"linecount" : 2,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 102.75, 158.0, 50.0, 36.0 ],
-													"text" : "\"sql insert\""
+													"patching_rect" : [ 102.75, 158.0, 50.0, 22.0 ],
+													"text" : "sql"
 												}
 
 											}
@@ -15444,13 +15360,12 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-20",
-													"linecount" : 2,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 102.75, 158.0, 50.0, 36.0 ],
-													"text" : "\"sql insert\""
+													"patching_rect" : [ 102.75, 158.0, 50.0, 22.0 ],
+													"text" : "sql"
 												}
 
 											}
@@ -16614,13 +16529,12 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-20",
-													"linecount" : 2,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 102.75, 158.0, 50.0, 36.0 ],
-													"text" : "\"sql insert\""
+													"patching_rect" : [ 102.75, 158.0, 50.0, 22.0 ],
+													"text" : "sql"
 												}
 
 											}
@@ -16874,13 +16788,12 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-20",
-													"linecount" : 2,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 102.75, 158.0, 50.0, 36.0 ],
-													"text" : "\"sql insert\""
+													"patching_rect" : [ 102.75, 158.0, 50.0, 22.0 ],
+													"text" : "sql"
 												}
 
 											}
@@ -17451,13 +17364,12 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-20",
-													"linecount" : 2,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 102.75, 158.0, 50.0, 36.0 ],
-													"text" : "\"sql insert\""
+													"patching_rect" : [ 102.75, 158.0, 50.0, 22.0 ],
+													"text" : "sql"
 												}
 
 											}
@@ -17686,13 +17598,12 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-20",
-													"linecount" : 2,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 102.75, 158.0, 50.0, 36.0 ],
-													"text" : "\"sql insert\""
+													"patching_rect" : [ 102.75, 158.0, 50.0, 22.0 ],
+													"text" : "sql"
 												}
 
 											}
