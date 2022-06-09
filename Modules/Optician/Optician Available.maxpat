@@ -786,7 +786,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 115.0, 772.0, 640.0, 480.0 ],
+						"rect" : [ -1061.0, 295.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -814,7 +814,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-9",
@@ -2306,7 +2305,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1238.0, 710.0, 640.0, 480.0 ],
+						"rect" : [ 1053.0, 360.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2469,13 +2468,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-154",
-									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 167.75, 259.0, 50.0, 36.0 ],
-									"text" : "\"sql insert\""
+									"patching_rect" : [ 167.75, 259.0, 50.0, 22.0 ],
+									"text" : "sql"
 								}
 
 							}
@@ -3535,13 +3533,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-159",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 584.166666666666629, 1180.5, 42.0, 36.0 ],
-					"text" : "\"sql insert\""
+					"patching_rect" : [ 584.166666666666629, 1180.5, 42.0, 22.0 ],
+					"text" : "sql"
 				}
 
 			}
@@ -3597,13 +3594,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-154",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 186.75, 989.5, 43.0, 36.0 ],
-					"text" : "\"sql insert\""
+					"patching_rect" : [ 186.75, 989.5, 43.0, 22.0 ],
+					"text" : "sql"
 				}
 
 			}
@@ -4575,7 +4571,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 752.0, 732.0, 1080.0, 340.0 ],
+						"rect" : [ 740.0, 529.0, 1080.0, 340.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -4702,13 +4698,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-6",
-									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 273.0, 174.0, 50.0, 36.0 ],
-									"text" : "\"sql insert\""
+									"patching_rect" : [ 273.0, 174.0, 50.0, 22.0 ],
+									"text" : "sql"
 								}
 
 							}
@@ -10100,13 +10095,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-154",
-									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 885.75, 279.0, 50.0, 36.0 ],
-									"text" : "\"sql insert\""
+									"patching_rect" : [ 885.75, 279.0, 50.0, 22.0 ],
+									"text" : "sql"
 								}
 
 							}
@@ -17086,13 +17080,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-70",
-									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 451.75, 641.0, 43.0, 36.0 ],
-									"text" : "\"sql insert\""
+									"patching_rect" : [ 451.75, 641.0, 43.0, 22.0 ],
+									"text" : "sql"
 								}
 
 							}
