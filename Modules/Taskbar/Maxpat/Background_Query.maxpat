@@ -533,7 +533,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 1580.0, 518.0, 640.0, 480.0 ],
+										"rect" : [ 1238.0, 518.0, 640.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -581,7 +581,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 337.5, 137.0, 236.0, 22.0 ],
-													"text" : "store STAFF . AVAILABLE . \"LINKED PX\""
+													"text" : "store Staff . Availability . \"Linked Px\""
 												}
 
 											}
@@ -2930,7 +2930,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-17",
@@ -3008,7 +3007,7 @@
 													"maxclass" : "newobj",
 													"numinlets" : 2,
 													"numoutlets" : 2,
-													"outlettype" : [ "bang", "" ],
+													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 90.0, 401.0, 100.0, 50.0 ],
 													"text" : "MySQL_User mass_insert_tdl_notes"
 												}
@@ -3063,7 +3062,7 @@
 													"maxclass" : "newobj",
 													"numinlets" : 2,
 													"numoutlets" : 2,
-													"outlettype" : [ "bang", "" ],
+													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 90.0, 140.0, 100.0, 50.0 ],
 													"text" : "MySQL_User mass_insert_todolist_notes"
 												}
@@ -5556,7 +5555,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 26.0, 26.0, 1708.0, 954.0 ],
+										"rect" : [ 26.0, 85.0, 1708.0, 954.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -5584,7 +5583,6 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-92",
