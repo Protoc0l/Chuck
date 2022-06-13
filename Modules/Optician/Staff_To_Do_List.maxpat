@@ -41421,6 +41421,15 @@
 							}
 , 							{
 								"patchline" : 								{
+									"color" : [ 0.0, 0.180392156862745, 1.0, 1.0 ],
+									"destination" : [ "obj-115", 0 ],
+									"order" : 0,
+									"source" : [ "obj-13", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-35", 0 ],
 									"source" : [ "obj-13", 0 ]
 								}
@@ -41430,6 +41439,7 @@
 								"patchline" : 								{
 									"color" : [ 0.0, 0.180392156862745, 1.0, 1.0 ],
 									"destination" : [ "obj-68", 0 ],
+									"order" : 1,
 									"source" : [ "obj-13", 1 ]
 								}
 
