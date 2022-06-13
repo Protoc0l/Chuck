@@ -786,7 +786,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ -1061.0, 295.0, 640.0, 480.0 ],
+						"rect" : [ 42.0, 295.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -835,7 +835,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 200.333333333333314, 72.0, 114.0, 50.0 ],
-									"text" : "store STAFF . AVAILABLE . \"LINKED PX\""
+									"text" : "store Staff . Availablility . \"Linked Px\""
 								}
 
 							}
