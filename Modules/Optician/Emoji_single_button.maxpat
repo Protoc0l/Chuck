@@ -124,7 +124,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 42.0, 42.0 ],
 					"rounded" : 8.0,
-					"text" : "#1",
+					"text" : "bang",
 					"texton" : "#1",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -153,13 +153,6 @@
 				"patchline" : 				{
 					"destination" : [ "", -1 ],
 					"source" : [ "obj-1", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"source" : [ "", -1 ]
 				}
 
 			}
@@ -210,6 +203,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "", -1 ]
 				}
 
 			}
