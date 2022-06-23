@@ -1655,7 +1655,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 556.5, 370.0, 99.0, 22.0 ],
-					"text" : "40. 82. 357. 413."
+					"text" : "40. 82. 435. 335."
 				}
 
 			}
@@ -1667,7 +1667,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 569.5, 341.0, 85.0, 22.0 ],
-					"text" : "5. 0. 313. 346."
+					"text" : "5. 0. 392. 270."
 				}
 
 			}
@@ -3044,7 +3044,7 @@
 									"offset" : [ 0.0, 0.0 ],
 									"patching_rect" : [ 29.0, 92.0, 117.0, 112.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 6.0, 0.0, 627.0, 338.0 ],
+									"presentation_rect" : [ 5.0, 0.0, 392.0, 270.0 ],
 									"varname" : "SDVirtual",
 									"viewvisibility" : 1
 								}
@@ -4768,6 +4768,27 @@
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Stream Deck Virtual",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "StreamDeckVirtual15.maxpat",
+				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Stream Deck Virtual",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "StreamDeckVirtualButton.maxpat",
+				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Stream Deck Virtual",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "clear.png",
+				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Stream Deck Virtual",
+				"patcherrelativepath" : ".",
+				"type" : "PNG",
 				"implicit" : 1
 			}
  ],
