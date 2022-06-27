@@ -517,6 +517,79 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-13",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 362.0, 299.0, 34.0, 20.0 ],
+									"text" : "OLD"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-11",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 33.0, 194.0, 24.0, 22.0 ],
+									"text" : "t b"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-10",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 33.0, 116.0, 24.0, 22.0 ],
+									"text" : "t b"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"linecount" : 3,
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 33.0, 140.0, 78.0, 50.0 ],
+									"text" : "v STAFF_LIST_ORDERBY"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-8",
+									"linecount" : 5,
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 181.666666666666657, 131.0, 453.0, 77.0 ],
+									"text" : "sprintf \\\"SELECT STAFF_NAME AS '.Staff'\\, STAFF_ID AS 'ID'\\, STAFF_AVAILABLE AS 'Availability'\\, STAFF_WEBHOOK AS 'Webhook'\\, STAFF_PX_HELPING AS 'Linked Px'\\, STAFF_ROLE As 'Role' FROM STAFF WHERE date(STAFF_IN_TODAY)=date(CURRENT_TIMESTAMP) ORDER BY STAFF_AVAILABLE DESC%s\\\""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 181.666666666666657, 100.0, 156.0, 22.0 ],
+									"text" : "v STAFF_LIST_ORDERBY"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-26",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -581,7 +654,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 337.5, 137.0, 236.0, 22.0 ],
-													"text" : "store Staff . Availability . \"Linked Px\""
+													"text" : "store Staff . Availability . \"Linked Px\" Role"
 												}
 
 											}
@@ -716,11 +789,11 @@
 													"id" : "obj-23",
 													"linecount" : 2,
 													"maxclass" : "newobj",
-													"numinlets" : 5,
+													"numinlets" : 6,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 169.0, 391.0, 156.0, 36.0 ],
-													"text" : "sprintf store \\\"%s\\\" \\\"%s\\\" \\\"%s\\\" \\\"%s\\\" \\\"%s\\\""
+													"text" : "sprintf store \\\"%s\\\" \\\"%s\\\" \\\"%s\\\" \\\"%s\\\" \\\"%s\\\" \\\"%s\\\""
 												}
 
 											}
@@ -1038,8 +1111,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 256.0, 150.0, 500.0, 64.0 ],
-									"text" : "\"SELECT STAFF_NAME AS '.Staff', STAFF_ID AS 'ID', STAFF_AVAILABLE AS 'Availability', STAFF_WEBHOOK AS 'Webhook', STAFF_PX_HELPING AS 'Linked Px' FROM STAFF WHERE date(STAFF_IN_TODAY)=date(CURRENT_TIMESTAMP) ORDER BY STAFF_AVAILABLE DESC, STAFF_NAME ASC\""
+									"patching_rect" : [ 362.0, 325.0, 500.0, 64.0 ],
+									"text" : "\"SELECT STAFF_NAME AS '.Staff', STAFF_ID AS 'ID', STAFF_AVAILABLE AS 'Availability', STAFF_WEBHOOK AS 'Webhook', STAFF_PX_HELPING AS 'Linked Px', STAFF_ROLE As 'Role' FROM STAFF WHERE date(STAFF_IN_TODAY)=date(CURRENT_TIMESTAMP) ORDER BY STAFF_AVAILABLE DESC %s\""
 								}
 
 							}
@@ -1060,6 +1133,20 @@
 								"patchline" : 								{
 									"destination" : [ "obj-26", 0 ],
 									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"source" : [ "obj-10", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"source" : [ "obj-11", 0 ]
 								}
 
 							}
@@ -1093,14 +1180,14 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-1", 0 ],
+									"destination" : [ "obj-10", 0 ],
 									"source" : [ "obj-4", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-3", 0 ],
+									"destination" : [ "obj-6", 0 ],
 									"source" : [ "obj-4", 1 ]
 								}
 
@@ -1109,6 +1196,28 @@
 								"patchline" : 								{
 									"destination" : [ "obj-4", 0 ],
 									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-8", 0 ],
+									"source" : [ "obj-6", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 2 ],
+									"midpoints" : [ 191.166666666666657, 232.0, 265.5, 232.0 ],
+									"source" : [ "obj-8", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-11", 0 ],
+									"source" : [ "obj-9", 0 ]
 								}
 
 							}
