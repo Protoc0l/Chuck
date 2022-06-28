@@ -282,8 +282,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1130.0, 959.0, 131.0, 22.0 ],
-					"text" : "s TDL_Notes_INSERT"
+					"patching_rect" : [ 1130.0, 959.0, 238.0, 22.0 ],
+					"text" : "s TDL_REASSIGN_PARTIAL COMPLETE"
 				}
 
 			}
