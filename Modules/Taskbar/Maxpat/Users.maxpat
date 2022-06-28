@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1737.0, 236.0, 1843.0, 731.0 ],
+		"rect" : [ 26.0, 85.0, 2492.0, 1283.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -1631,7 +1631,7 @@
 													"maxclass" : "button",
 													"numinlets" : 1,
 													"numoutlets" : 1,
-													"outlettype" : [ "bang" ],
+													"outlettype" : [ "" ],
 													"parameter_enable" : 0,
 													"patching_rect" : [ 104.0, 51.0, 24.0, 24.0 ]
 												}
@@ -1930,7 +1930,7 @@
 									"maxclass" : "button",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
+									"outlettype" : [ "" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 80.0, 226.0, 24.0, 24.0 ]
 								}
@@ -4508,7 +4508,7 @@
 					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 819.5, 200.0, 24.0, 24.0 ]
 				}
@@ -4520,7 +4520,7 @@
 					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 672.5, 200.0, 24.0, 24.0 ]
 				}
@@ -4727,7 +4727,7 @@
 					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1120.0, 62.0, 24.0, 24.0 ]
 				}
@@ -5663,17 +5663,17 @@
 							}
 , 							{
 								"box" : 								{
-									"fontsize" : 48.0,
+									"fontsize" : 36.0,
 									"id" : "obj-50",
-									"linecount" : 9,
+									"linecount" : 18,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 101.0, 650.0, 1006.0, 505.0 ],
+									"patching_rect" : [ 101.0, 650.0, 768.0, 752.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 9,
-									"presentation_rect" : [ 727.0, 183.0, 980.0, 505.0 ],
-									"text" : "Major Update:\n\n1) Emoji's in To Do List Notes!!!\n2) Re-enabled auto \"read\" when closing to-do-list notes pop up thread/converseation.\n3) Fixed a few tables to have the labels for columns at the top :)\n4) Fixed bug if type a note it types onto next to do list item ٩(˘◡˘)۶",
+									"presentation_linecount" : 14,
+									"presentation_rect" : [ 727.0, 183.0, 838.0, 586.0 ],
+									"text" : "Major Update:\n1) Virtual stream deck now hides to top right corner of screen like taskbar. Click on the small bar to the top-right side of screen to allow it to pop up.\n\nMinor Updates:\n2) Staff Selection add double click features\n  a) Staff to autoselect that staff in todolist create,\n  b) Role to autoselect role into todolist create,\n  c) Px Linked to add a patient staff is working on\n\n3) Fixed Urgent Message bug - when complete task when not assigned to you task it should only send a message to the originator the task has completed.",
 									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
 								}
 
@@ -8634,7 +8634,7 @@
 									"maxclass" : "button",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
+									"outlettype" : [ "" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 40.0, 48.0, 24.0, 24.0 ]
 								}
@@ -10377,7 +10377,7 @@
 													"maxclass" : "button",
 													"numinlets" : 1,
 													"numoutlets" : 1,
-													"outlettype" : [ "bang" ],
+													"outlettype" : [ "" ],
 													"parameter_enable" : 0,
 													"patching_rect" : [ 104.0, 51.0, 24.0, 24.0 ]
 												}
@@ -10676,7 +10676,7 @@
 									"maxclass" : "button",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
+									"outlettype" : [ "" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 80.0, 226.0, 24.0, 24.0 ]
 								}
@@ -13865,7 +13865,7 @@
 									"maxclass" : "button",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
+									"outlettype" : [ "" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 119.0, 38.0, 24.0, 24.0 ]
 								}
@@ -14329,7 +14329,7 @@
 									"maxclass" : "button",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
+									"outlettype" : [ "" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 105.0, 13.0, 24.0, 24.0 ]
 								}
@@ -16140,7 +16140,7 @@
 									"maxclass" : "button",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
+									"outlettype" : [ "" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 187.0, 83.0, 24.0, 24.0 ]
 								}
