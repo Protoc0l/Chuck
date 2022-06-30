@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 269.0, 162.0, 1108.0, 788.0 ],
+		"rect" : [ -1250.0, 123.0, 1108.0, 788.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,358 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-51",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 888.0, 227.0, 100.0, 22.0 ],
+					"text" : "delay 900"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"fontsize" : 12.0,
+					"id" : "obj-43",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 8,
+							"minor" : 2,
+							"revision" : 2,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ -1053.0, 321.0, 828.0, 486.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-32",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 135.375, 8.0, 956.0, 48.0 ],
+									"text" : "Query database for an emergency\nIf there is a staff_id_inactivate=0 it will return 1, if no staff_id_inactivate=0 then return 0\n2) If return = 1 then show emergency, start recording video feeds until returns 0, query staff_id_activate to know who activated the emergency, open camera feed on all computers."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 197.0, 129.0, 142.0, 22.0 ],
+									"text" : "s ERG_COUNT_QUERY"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 33.0, 101.0, 183.0, 22.0 ],
+									"text" : "MySQL_Background ER_Count"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-28",
+									"linecount" : 2,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 33.0, 58.0, 392.0, 36.0 ],
+									"text" : "\"SELECT COUNT(*) AS EMERGENCY_ACTIVE_QUERY FROM EMERGENCY WHERE STAFF_ID_INACTIVATE='0'\""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-5",
+									"index" : 1,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 33.0, 21.0, 30.0, 30.0 ]
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-2", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"source" : [ "obj-28", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-28", 0 ],
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+ ],
+						"styles" : [ 							{
+								"name" : "AudioStatus_Menu",
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"type" : "color",
+										"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
+										"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39,
+										"autogradient" : 0
+									}
+
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "_myStyle",
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"type" : "color",
+										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
+										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39,
+										"autogradient" : 0
+									}
+,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "newobjBlue-1",
+								"default" : 								{
+									"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "newobjBrown-1",
+								"default" : 								{
+									"accentcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "newobjGreen-1",
+								"default" : 								{
+									"accentcolor" : [ 0.0, 0.533333, 0.168627, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "newobjRed-1",
+								"default" : 								{
+									"accentcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "newobjYellow-1",
+								"default" : 								{
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "numberB-1",
+								"default" : 								{
+									"accentcolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "numberG-1",
+								"default" : 								{
+									"accentcolor" : [ 0.0, 0.533333, 0.168627, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "numberGold-1",
+								"default" : 								{
+									"accentcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "numberR-1",
+								"default" : 								{
+									"accentcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "panelGold-1",
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"type" : "color",
+										"color" : [ 0.764706, 0.592157, 0.101961, 0.25 ],
+										"color1" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39,
+										"autogradient" : 0
+									}
+
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "s_161006_G!",
+								"message" : 								{
+									"bgfillcolor" : 									{
+										"type" : "color",
+										"color" : [ 0.32549, 0.345098, 0.372549, 0.79 ],
+										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39,
+										"autogradient" : 0
+									}
+
+								}
+,
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 1
+							}
+, 							{
+								"name" : "simple-1",
+								"parentstyle" : "simple",
+								"multi" : 0
+							}
+, 							{
+								"name" : "simple-2",
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"type" : "color",
+										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
+										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39,
+										"autogradient" : 0
+									}
+,
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
+								"parentstyle" : "default",
+								"multi" : 0
+							}
+, 							{
+								"name" : "texteditGold",
+								"default" : 								{
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 888.0, 255.0, 161.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p Emergency"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-50",
 					"maxclass" : "newobj",
@@ -449,10 +801,10 @@
 					"id" : "obj-41",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "bang", "bang", "bang", "bang" ],
-					"patching_rect" : [ 263.0, 203.0, 391.0, 22.0 ],
-					"text" : "t b b b b"
+					"numoutlets" : 5,
+					"outlettype" : [ "bang", "bang", "bang", "bang", "bang" ],
+					"patching_rect" : [ 263.0, 203.0, 616.0, 22.0 ],
+					"text" : "t b b b b b"
 				}
 
 			}
@@ -464,7 +816,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 711.0, 231.0, 100.0, 22.0 ],
-					"text" : "delay 800"
+					"text" : "delay 750"
 				}
 
 			}
@@ -2989,7 +3341,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 283.0, 99.0, 69.0, 22.0 ],
-					"text" : "metro 1000"
+					"text" : "metro 1050"
 				}
 
 			}
@@ -8183,7 +8535,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 888.0, 500.0, 50.0, 22.0 ],
+					"patching_rect" : [ 652.0, 119.0, 50.0, 22.0 ],
 					"text" : "3"
 				}
 
@@ -8195,7 +8547,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 805.0, 500.0, 50.0, 22.0 ],
+					"patching_rect" : [ 569.0, 119.0, 50.0, 22.0 ],
 					"text" : "14"
 				}
 
@@ -8207,7 +8559,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 888.0, 528.0, 100.0, 22.0 ],
+					"patching_rect" : [ 652.0, 147.0, 100.0, 22.0 ],
 					"text" : "v USER_ID"
 				}
 
@@ -8219,7 +8571,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 805.0, 528.0, 67.0, 22.0 ],
+					"patching_rect" : [ 569.0, 147.0, 67.0, 22.0 ],
 					"text" : "v Staff_ID"
 				}
 
@@ -8825,611 +9177,6 @@
 			}
 , 			{
 				"box" : 				{
-					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
-					"fontsize" : 20.0,
-					"id" : "obj-6",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patcher" : 					{
-						"fileversion" : 1,
-						"appversion" : 						{
-							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
-							"architecture" : "x64",
-							"modernui" : 1
-						}
-,
-						"classnamespace" : "box",
-						"rect" : [ 42.0, 107.0, 2440.0, 297.0 ],
-						"bglocked" : 0,
-						"openinpresentation" : 0,
-						"default_fontsize" : 12.0,
-						"default_fontface" : 0,
-						"default_fontname" : "Arial",
-						"gridonopen" : 1,
-						"gridsize" : [ 15.0, 15.0 ],
-						"gridsnaponopen" : 1,
-						"objectsnaponopen" : 1,
-						"statusbarvisible" : 2,
-						"toolbarvisible" : 1,
-						"lefttoolbarpinned" : 0,
-						"toptoolbarpinned" : 0,
-						"righttoolbarpinned" : 0,
-						"bottomtoolbarpinned" : 0,
-						"toolbars_unpinned_last_save" : 0,
-						"tallnewobj" : 0,
-						"boxanimatetime" : 200,
-						"enablehscroll" : 1,
-						"enablevscroll" : 1,
-						"devicewidth" : 0.0,
-						"description" : "",
-						"digest" : "",
-						"tags" : "",
-						"style" : "",
-						"subpatcher_template" : "",
-						"assistshowspatchername" : 0,
-						"boxes" : [ 							{
-								"box" : 								{
-									"comment" : "",
-									"id" : "obj-44",
-									"index" : 1,
-									"maxclass" : "inlet",
-									"numinlets" : 0,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 46.0, 5.0, 30.0, 30.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-43",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 4,
-									"outlettype" : [ "bang", "bang", "bang", "bang" ],
-									"patching_rect" : [ 46.0, 39.0, 1788.0, 22.0 ],
-									"text" : "t b b b b"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-41",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 2304.0, 199.0, 99.0, 22.0 ],
-									"text" : "s SQL_VALUES"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-42",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 1815.0, 203.0, 120.0, 22.0 ],
-									"text" : "s SQL_STATEMENT"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-39",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 1714.333333333333258, 203.0, 96.0, 22.0 ],
-									"text" : "s SQL_VALUES"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-40",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 1225.333333333333258, 203.0, 120.0, 22.0 ],
-									"text" : "s SQL_STATEMENT"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-35",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 1834.0, 99.0, 23.0, 20.0 ],
-									"text" : "4"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-36",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "bang", "bang" ],
-									"patching_rect" : [ 1815.0, 70.0, 508.0, 22.0 ],
-									"text" : "t b b"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-37",
-									"linecount" : 5,
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 1815.0, 123.0, 461.0, 77.0 ],
-									"text" : "\"SELECT 'UNREAD_4', COUNT(*) AS URGENT_UNREAD4 FROM TODOLIST_GROUP WHERE TODOLIST_GROUP.STAFF_ID=? AND TODOLIST_GROUP.URGENT='1' AND TODOLIST_ID IN (SELECT TODOLIST.TODOLIST_ID FROM TODOLIST WHERE TODOLIST.TIME_TDL_ITEM_COMPLETED IS NULL)\""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-38",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 2304.0, 123.0, 73.0, 22.0 ],
-									"text" : "v Staff_ID"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-32",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 1244.333333333333258, 99.0, 24.0, 20.0 ],
-									"text" : "3"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-30",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "bang", "bang" ],
-									"patching_rect" : [ 1225.333333333333258, 70.0, 508.0, 22.0 ],
-									"text" : "t b b"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-29",
-									"linecount" : 5,
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 1225.333333333333258, 123.0, 462.0, 77.0 ],
-									"text" : "\"SELECT 'UNREAD_3', COUNT(*) AS URGENT_UNREAD3 FROM TODOLIST_GROUP WHERE TODOLIST_GROUP.STAFF_ID=? AND TODOLIST_GROUP.URGENT='1' AND TODOLIST_ID IN (SELECT TODOLIST.TODOLIST_ID FROM TODOLIST WHERE TODOLIST.TIME_TDL_ITEM_COMPLETED IS NULL)\""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-21",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "bang", "bang" ],
-									"patching_rect" : [ 635.666666666666629, 70.0, 387.666666666666629, 22.0 ],
-									"text" : "t b b"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-22",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "bang", "bang" ],
-									"patching_rect" : [ 1004.333333333333144, 123.0, 116.0, 22.0 ],
-									"text" : "t b b"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-23",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 1004.333333333333144, 161.0, 74.0, 22.0 ],
-									"text" : "v USER_ID"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-24",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 1101.33333333333303, 161.0, 74.0, 22.0 ],
-									"text" : "v Staff_ID"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-25",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 652.166666666666629, 99.0, 18.0, 20.0 ],
-									"text" : "2"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-27",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 1004.333333333333144, 207.0, 120.0, 22.0 ],
-									"text" : "s SQL_VALUES"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-28",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 635.666666666666629, 207.0, 120.0, 22.0 ],
-									"text" : "s SQL_STATEMENT"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-1",
-									"linecount" : 4,
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 635.666666666666629, 123.0, 343.0, 64.0 ],
-									"text" : "\"SELECT 'UNREAD_2', COUNT(*) AS URGENT_UNREAD2 FROM TODOLIST WHERE (TODOLIST.STAFF_ID_FOR=? OR TODOLIST.USER_ID=?) AND TODOLIST.UNREAD='1' AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NULL\""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-19",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "bang", "bang" ],
-									"patching_rect" : [ 46.0, 70.0, 387.666666666666629, 22.0 ],
-									"text" : "t b b"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-9",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "bang", "bang" ],
-									"patching_rect" : [ 414.666666666666629, 123.0, 116.0, 22.0 ],
-									"text" : "t b b"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-33",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 1714.333333333333258, 123.0, 74.0, 22.0 ],
-									"text" : "v Staff_ID"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-17",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 414.666666666666629, 161.0, 74.0, 22.0 ],
-									"text" : "v USER_ID"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-15",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 511.666666666666629, 161.0, 74.0, 22.0 ],
-									"text" : "v Staff_ID"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-8",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 62.5, 99.0, 18.0, 20.0 ],
-									"text" : "1"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-6",
-									"linecount" : 4,
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 46.0, 125.0, 335.0, 64.0 ],
-									"text" : "\"SELECT 'UNREAD_1', COUNT(*) AS URGENT_UNREAD FROM TODOLIST WHERE (TODOLIST.STAFF_ID_FOR=? OR TODOLIST.USER_ID=?) AND TODOLIST.URGENT='1' AND TODOLIST.TIME_TDL_ITEM_COMPLETED IS NULL\""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-4",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 414.666666666666629, 207.0, 120.0, 22.0 ],
-									"text" : "s SQL_VALUES"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-3",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 46.0, 207.0, 120.0, 22.0 ],
-									"text" : "s SQL_STATEMENT"
-								}
-
-							}
- ],
-						"lines" : [ 							{
-								"patchline" : 								{
-									"destination" : [ "obj-28", 0 ],
-									"source" : [ "obj-1", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-4", 0 ],
-									"source" : [ "obj-15", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-4", 0 ],
-									"source" : [ "obj-17", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-6", 0 ],
-									"source" : [ "obj-19", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-9", 0 ],
-									"source" : [ "obj-19", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-1", 0 ],
-									"source" : [ "obj-21", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-22", 0 ],
-									"source" : [ "obj-21", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-23", 0 ],
-									"source" : [ "obj-22", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-24", 0 ],
-									"source" : [ "obj-22", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-27", 0 ],
-									"source" : [ "obj-23", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-27", 0 ],
-									"source" : [ "obj-24", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-40", 0 ],
-									"source" : [ "obj-29", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-29", 0 ],
-									"source" : [ "obj-30", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-33", 0 ],
-									"source" : [ "obj-30", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-39", 0 ],
-									"source" : [ "obj-33", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-37", 0 ],
-									"source" : [ "obj-36", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-38", 0 ],
-									"source" : [ "obj-36", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-42", 0 ],
-									"source" : [ "obj-37", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-41", 0 ],
-									"source" : [ "obj-38", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-19", 0 ],
-									"source" : [ "obj-43", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-21", 0 ],
-									"source" : [ "obj-43", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-30", 0 ],
-									"source" : [ "obj-43", 2 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-36", 0 ],
-									"source" : [ "obj-43", 3 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-43", 0 ],
-									"source" : [ "obj-44", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-3", 0 ],
-									"source" : [ "obj-6", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-15", 0 ],
-									"source" : [ "obj-9", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-17", 0 ],
-									"source" : [ "obj-9", 0 ]
-								}
-
-							}
- ]
-					}
-,
-					"patching_rect" : [ 152.0, 316.0, 202.0, 31.0 ],
-					"saved_object_attributes" : 					{
-						"description" : "",
-						"digest" : "",
-						"globalpatchername" : "",
-						"tags" : ""
-					}
-,
-					"text" : "p Query_TB_Colors"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontsize" : 36.0,
 					"id" : "obj-3",
 					"maxclass" : "comment",
@@ -9694,8 +9441,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
-					"midpoints" : [ 644.5, 228.0, 720.5, 228.0 ],
+					"midpoints" : [ 720.25, 228.0, 720.5, 228.0 ],
 					"source" : [ "obj-41", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-51", 0 ],
+					"source" : [ "obj-41", 4 ]
 				}
 
 			}
@@ -9758,6 +9512,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-43", 0 ],
+					"source" : [ "obj-51", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
 					"source" : [ "obj-7", 0 ]
 				}
@@ -9773,6 +9534,13 @@
 			}
  ],
 		"dependency_cache" : [ 			{
+				"name" : "MySQL_Background.maxpat",
+				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "MySQL_User.maxpat",
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
 				"patcherrelativepath" : ".",
