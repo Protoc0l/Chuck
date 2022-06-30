@@ -340,7 +340,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 14.0, 21.0, 1268.0, 62.0 ],
 					"text" : "Dr Cory McClung",
-					"textcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"textcolor" : [ 1.0, 1.0, 0.0, 1.0 ],
 					"textjustification" : 1
 				}
 
@@ -690,6 +690,30 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 871.5, 517.0, 135.0, 22.0 ],
+									"text" : "textcolor 1 0 0 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 912.0, 545.0, 135.0, 22.0 ],
+									"text" : "textcolor 1 1 0 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-27",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -802,7 +826,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 573.5, 358.0, 432.0, 50.0 ],
+									"patching_rect" : [ 573.5, 358.0, 433.0, 50.0 ],
 									"text" : "\"SELECT STAFF_NAME, URGENCY FROM EMERGENCY LEFT JOIN STAFF ON EMERGENCY.STAFF_ID_ACTIVATE=STAFF.STAFF_ID WHERE STAFF_ID_INACTIVATE=0\""
 								}
 
@@ -1033,14 +1057,32 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-24", 0 ],
+									"order" : 0,
 									"source" : [ "obj-15", 1 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-36", 0 ],
+									"destination" : [ "obj-3", 0 ],
+									"order" : 1,
 									"source" : [ "obj-15", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-36", 0 ],
+									"order" : 0,
+									"source" : [ "obj-15", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"order" : 1,
+									"source" : [ "obj-15", 1 ]
 								}
 
 							}
@@ -1060,8 +1102,22 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-127", 0 ],
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-20", 0 ],
 									"source" : [ "obj-36", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-127", 0 ],
+									"source" : [ "obj-4", 0 ]
 								}
 
 							}
