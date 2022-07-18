@@ -10,9 +10,9 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1493.0, 199.0, 1089.0, 692.0 ],
+		"rect" : [ -1866.0, 96.0, 1089.0, 692.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -41,6 +41,116 @@
 		"title" : "Send Camera Footage",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-22",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 202.0, 197.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 202.0, 221.0, 63.0, 22.0 ],
+					"text" : "closebang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1508.0, 460.0, 52.0, 20.0 ],
+					"text" : "drop file"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "dropfile",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 1480.0, 433.5, 114.0, 73.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 335.0, 164.5, 250.0, 176.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 1598.0, 179.0, 254.0, 22.0 ],
+					"text" : "MySQL_User DELETE FROM_Camera_Table"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1833.0, 139.0, 103.0, 22.0 ],
+					"text" : "v Camera_ID_Sel"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "bang" ],
+					"patching_rect" : [ 1598.0, 111.0, 254.0, 22.0 ],
+					"text" : "t b b"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1598.0, 135.0, 212.0, 36.0 ],
+					"presentation_linecount" : 2,
+					"text" : "\"DELETE FROM CAMERAS WHERE CAMERA_ID=?\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "bang", "bang" ],
+					"patching_rect" : [ 1598.0, 87.0, 281.0, 22.0 ],
+					"text" : "dialog @mode 2 @label Delete Camera From List?"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgcolor" : [ 0.0, 0.0, 0.0, 0.75 ],
 					"fontface" : 1,
 					"id" : "obj-2",
@@ -49,9 +159,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1609.0, 64.0, 16.0, 17.798828125 ],
+					"patching_rect" : [ 1603.5, 64.0, 16.0, 17.798828125 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 164.25, 17.798828125, 19.0, 17.798828125 ],
+					"presentation_rect" : [ 569.25, 14.798828125, 19.0, 17.798828125 ],
 					"text" : "-",
 					"texton" : "-",
 					"textoncolor" : [ 0.686274509803922, 0.686274509803922, 0.686274509803922, 1.0 ]
@@ -70,7 +180,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1251.5, 59.0, 16.0, 17.798828125 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 164.25, -2.0, 19.0, 17.798828125 ],
+					"presentation_rect" : [ 569.25, -2.0, 19.0, 17.798828125 ],
 					"text" : "+",
 					"texton" : "+",
 					"textoncolor" : [ 0.686274509803922, 0.686274509803922, 0.686274509803922, 1.0 ]
@@ -158,7 +268,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 488.0, 289.5, 61.0, 34.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 12.0, 162.0, 96.0, 34.0 ],
+					"presentation_rect" : [ 10.0, 169.0, 52.0, 34.0 ],
 					"text" : "Edit"
 				}
 
@@ -540,7 +650,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 779.5, 110.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 518.25, 3.0, 70.0, 24.0 ],
+					"presentation_rect" : [ 170.0, 6.5, 64.0, 17.0 ],
 					"text" : "Refresh",
 					"textoncolor" : [ 0.686274509803922, 0.686274509803922, 0.686274509803922, 1.0 ]
 				}
@@ -569,7 +679,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1531.0, 586.5, 94.0, 34.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 402.0, 162.0, 96.0, 34.0 ],
+					"presentation_rect" : [ 412.0, 169.0, 96.0, 34.0 ],
 					"text" : "Camera"
 				}
 
@@ -580,7 +690,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 84.0, 860.0, 61.0, 20.0 ],
+					"patching_rect" : [ 117.0, 313.5, 61.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 56.0, 210.0, 103.0, 20.0 ],
 					"text" : "ID:"
@@ -720,9 +830,9 @@
 					"parameter_mappable" : 0,
 					"patching_rect" : [ 1219.0, 444.5, 151.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 161.0, 302.0, 151.0, 20.0 ],
+					"presentation_rect" : [ 161.0, 305.5, 151.0, 20.0 ],
 					"rounded" : 0.0,
-					"text" : "S:/SLE CLIPBOARD/Clinic Monitors/4th Street.jpg",
+					"text" : " ",
 					"wordwrap" : 0
 				}
 
@@ -877,6 +987,7 @@
 					"keymode" : 1,
 					"lines" : 1,
 					"maxclass" : "textedit",
+					"nosymquotes" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "" ],
@@ -885,9 +996,9 @@
 					"parameter_mappable" : 0,
 					"patching_rect" : [ 971.0, 444.5, 151.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 161.0, 279.0, 151.0, 20.0 ],
+					"presentation_rect" : [ 161.0, 282.5, 151.0, 20.0 ],
 					"rounded" : 0.0,
-					"text" : "\"3rd Streets\"",
+					"text" : " ",
 					"wordwrap" : 0
 				}
 
@@ -1003,6 +1114,7 @@
 					"keymode" : 1,
 					"lines" : 1,
 					"maxclass" : "textedit",
+					"nosymquotes" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "" ],
@@ -1011,9 +1123,9 @@
 					"parameter_mappable" : 0,
 					"patching_rect" : [ 725.0, 444.5, 151.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 161.0, 256.0, 151.0, 20.0 ],
+					"presentation_rect" : [ 161.0, 259.5, 151.0, 20.0 ],
 					"rounded" : 0.0,
-					"text" : "\"1920 1080\"",
+					"text" : " ",
 					"wordwrap" : 0
 				}
 
@@ -1154,8 +1266,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 37.0, 337.5, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 161.0, 210.0, 150.0, 20.0 ],
-					"text" : "1"
+					"presentation_rect" : [ 161.0, 213.5, 150.0, 20.0 ],
+					"text" : " "
 				}
 
 			}
@@ -2200,6 +2312,8 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"angle" : 270.0,
 														"autogradient" : 0,
@@ -2209,9 +2323,7 @@
 														"proportion" : 0.39,
 														"type" : "color"
 													}
-,
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 												}
 ,
 												"parentstyle" : "",
@@ -2274,6 +2386,10 @@
 											}
 , 											{
 												"name" : "s_161006_G!",
+												"comment" : 												{
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+												}
+,
 												"message" : 												{
 													"bgfillcolor" : 													{
 														"angle" : 270.0,
@@ -2287,10 +2403,6 @@
 
 												}
 ,
-												"comment" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-												}
-,
 												"parentstyle" : "",
 												"multi" : 1
 											}
@@ -2302,6 +2414,7 @@
 , 											{
 												"name" : "simple-2",
 												"default" : 												{
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"angle" : 270.0,
 														"autogradient" : 0,
@@ -2311,8 +2424,7 @@
 														"proportion" : 0.39,
 														"type" : "color"
 													}
-,
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 												}
 ,
 												"parentstyle" : "default",
@@ -2321,8 +2433,8 @@
 , 											{
 												"name" : "texteditGold",
 												"default" : 												{
-													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -2980,6 +3092,8 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"angle" : 270.0,
 										"autogradient" : 0,
@@ -2989,9 +3103,7 @@
 										"proportion" : 0.39,
 										"type" : "color"
 									}
-,
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -3099,6 +3211,10 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"angle" : 270.0,
@@ -3112,10 +3228,6 @@
 
 								}
 ,
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -3127,6 +3239,7 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"angle" : 270.0,
 										"autogradient" : 0,
@@ -3136,8 +3249,7 @@
 										"proportion" : 0.39,
 										"type" : "color"
 									}
-,
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "default",
@@ -3146,8 +3258,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3211,7 +3323,7 @@
 					"outmode" : 1,
 					"patching_rect" : [ 313.0, 159.5, 431.25, 108.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -1.0, 31.0, 589.25, 127.5 ],
+					"presentation_rect" : [ -1.0, 34.5, 589.25, 127.5 ],
 					"rows" : 2,
 					"selmode" : 3,
 					"stcolor" : [ 0.407843137254902, 0.407843137254902, 0.407843137254902, 1.0 ]
@@ -3225,6 +3337,7 @@
 					"keymode" : 1,
 					"lines" : 1,
 					"maxclass" : "textedit",
+					"nosymquotes" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "" ],
@@ -3233,9 +3346,9 @@
 					"parameter_mappable" : 0,
 					"patching_rect" : [ 41.0, 444.5, 151.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 161.0, 233.0, 151.0, 20.0 ],
+					"presentation_rect" : [ 161.0, 236.5, 151.0, 20.0 ],
 					"rounded" : 0.0,
-					"text" : "\"3rd St Exam Camera\"",
+					"text" : " ",
 					"wordwrap" : 0
 				}
 
@@ -4054,6 +4167,8 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -4063,9 +4178,7 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-,
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -4128,6 +4241,10 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -4141,10 +4258,6 @@
 
 								}
 ,
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -4156,6 +4269,7 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -4165,8 +4279,7 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-,
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "default",
@@ -4175,8 +4288,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -4257,9 +4370,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
 					"patching_rect" : [ 1455.0, 586.5, 80.0, 29.0 ],
-					"pic" : "S:/SLE CLIPBOARD/Clinic Monitors/4th Street.jpg",
+					"pic" : "S:/SLE CLIPBOARD/Clinic Monitors/3rd Street.jpg",
 					"presentation" : 1,
-					"presentation_rect" : [ 335.0, 161.0, 250.0, 176.0 ]
+					"presentation_rect" : [ 335.0, 164.5, 250.0, 176.0 ]
 				}
 
 			}
@@ -4272,9 +4385,9 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 6.0, 271.5, 1723.0, 350.0 ],
+					"patching_rect" : [ 10.0, 270.5, 1723.0, 350.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.0, 161.0, 329.0, 176.0 ],
+					"presentation_rect" : [ 4.0, 164.5, 329.0, 176.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
@@ -4282,6 +4395,20 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-90", 0 ],
 					"midpoints" : [ 451.5, 150.5, 323.0, 150.5, 323.0, 162.5, 322.5, 162.5 ],
@@ -4307,6 +4434,46 @@
 				"patchline" : 				{
 					"destination" : [ "obj-117", 0 ],
 					"source" : [ "obj-115", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-121", 0 ],
+					"order" : 4,
+					"source" : [ "obj-116", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-122", 0 ],
+					"order" : 3,
+					"source" : [ "obj-116", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-164", 0 ],
+					"order" : 2,
+					"source" : [ "obj-116", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-166", 0 ],
+					"order" : 1,
+					"source" : [ "obj-116", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-180", 0 ],
+					"order" : 0,
+					"source" : [ "obj-116", 0 ]
 				}
 
 			}
@@ -4368,6 +4535,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-12", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-120", 0 ],
 					"source" : [ "obj-121", 0 ]
 				}
@@ -4384,6 +4565,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-122", 0 ],
 					"source" : [ "obj-125", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 1 ],
+					"source" : [ "obj-13", 0 ]
 				}
 
 			}
@@ -4473,6 +4661,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-134", 0 ],
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-141", 0 ],
 					"source" : [ "obj-154", 0 ]
 				}
@@ -4489,6 +4684,22 @@
 				"patchline" : 				{
 					"destination" : [ "obj-161", 0 ],
 					"source" : [ "obj-159", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-184", 0 ],
+					"order" : 0,
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-187", 0 ],
+					"order" : 1,
+					"source" : [ "obj-16", 0 ]
 				}
 
 			}
@@ -4634,6 +4845,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-184", 0 ],
+					"source" : [ "obj-185", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-184", 0 ],
+					"source" : [ "obj-185", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-181", 0 ],
 					"source" : [ "obj-186", 0 ]
 				}
@@ -4657,6 +4882,27 @@
 				"patchline" : 				{
 					"destination" : [ "obj-185", 0 ],
 					"source" : [ "obj-187", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-116", 0 ],
+					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-22", 0 ]
 				}
 
 			}
@@ -4693,6 +4939,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-134", 0 ],
 					"source" : [ "obj-68", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-134", 0 ],
+					"source" : [ "obj-69", 0 ]
 				}
 
 			}
@@ -4790,7 +5043,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "4th Street.jpg",
+				"name" : "3rd Street.jpg",
 				"bootpath" : "S:/SLE CLIPBOARD/Clinic Monitors",
 				"type" : "JPEG",
 				"implicit" : 1
@@ -4825,6 +5078,8 @@
 , 			{
 				"name" : "_myStyle",
 				"default" : 				{
+					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -4834,9 +5089,7 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-,
-					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 				}
 ,
 				"parentstyle" : "",
@@ -4944,6 +5197,10 @@
 			}
 , 			{
 				"name" : "s_161006_G!",
+				"comment" : 				{
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				}
+,
 				"message" : 				{
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -4957,10 +5214,6 @@
 
 				}
 ,
-				"comment" : 				{
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-				}
-,
 				"parentstyle" : "",
 				"multi" : 1
 			}
@@ -4972,6 +5225,7 @@
 , 			{
 				"name" : "simple-2",
 				"default" : 				{
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -4981,8 +5235,7 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-,
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 				}
 ,
 				"parentstyle" : "default",
@@ -4991,8 +5244,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
