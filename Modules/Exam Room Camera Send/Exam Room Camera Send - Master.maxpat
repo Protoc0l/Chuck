@@ -131,7 +131,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1096.0, 885.0, 154.0, 89.0 ],
+					"patching_rect" : [ 1096.0, 885.0, 157.0, 89.0 ],
 					"text" : "invisible button was overtop the image to click on to toggle hide and not hide (took off presentation, if adding back in just add to presentation mode)"
 				}
 
@@ -152,7 +152,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 38.0, 756.0, 128.0, 128.0 ],
+					"patching_rect" : [ 38.0, 774.0, 128.0, 128.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 26.0, 591.0, 346.0 ],
 					"varname" : "Camera_SetUp",
@@ -2381,11 +2381,11 @@
 				"box" : 				{
 					"id" : "obj-11",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
+					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 645.0, 793.0, 234.0, 22.0 ],
-					"text" : "sprintf exportimage \\\"%s%s\\\" jpeg"
+					"patching_rect" : [ 645.0, 793.0, 172.0, 22.0 ],
+					"text" : "sprintf exportimage \\\"%s\\\" jpeg"
 				}
 
 			}
