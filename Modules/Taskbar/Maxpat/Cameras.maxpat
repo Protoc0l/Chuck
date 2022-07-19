@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1866.0, 96.0, 1089.0, 692.0 ],
+		"openrect" : [ 114.0, 157.0, 585.0, 341.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -31,15 +31,69 @@
 		"boxanimatetime" : 200,
 		"enablehscroll" : 1,
 		"enablevscroll" : 1,
-		"devicewidth" : 0.0,
+		"devicewidth" : 585.0,
 		"description" : "",
 		"digest" : "",
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
-		"title" : "Send Camera Footage",
+		"title" : "Camera Setup",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "bang", "", "" ],
+					"patching_rect" : [ 1480.0, 514.0, 41.0, 22.0 ],
+					"text" : "t b s s"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 41.0, 197.0, 35.0, 22.0 ],
+					"text" : "clear"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-86",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 41.0, 221.0, 120.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0,
+						"precision" : 6
+					}
+,
+					"text" : "coll ---Camera_Table"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-14",
+					"index" : 0,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 178.5, 14.0, 74.0, 74.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-22",
 					"maxclass" : "newobj",
@@ -83,7 +137,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 1480.0, 433.5, 114.0, 73.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 335.0, 164.5, 250.0, 176.0 ]
+					"presentation_rect" : [ 317.0, 164.5, 267.0, 176.0 ]
 				}
 
 			}
@@ -132,7 +186,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1598.0, 135.0, 212.0, 36.0 ],
-					"presentation_linecount" : 2,
 					"text" : "\"DELETE FROM CAMERAS WHERE CAMERA_ID=?\""
 				}
 
@@ -650,7 +703,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 779.5, 110.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 170.0, 6.5, 64.0, 17.0 ],
+					"presentation_rect" : [ 503.25, -1.201171875, 64.0, 17.0 ],
 					"text" : "Refresh",
 					"textoncolor" : [ 0.686274509803922, 0.686274509803922, 0.686274509803922, 1.0 ]
 				}
@@ -666,7 +719,8 @@
 					"patching_rect" : [ 576.25, 25.0, 168.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ -1.0, -2.0, 259.0, 34.0 ],
-					"text" : "Camera Setup"
+					"text" : "Camera Setup",
+					"textcolor" : [ 0.686274509803922, 0.686274509803922, 0.686274509803922, 1.0 ]
 				}
 
 			}
@@ -679,8 +733,9 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1531.0, 586.5, 94.0, 34.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 412.0, 169.0, 96.0, 34.0 ],
-					"text" : "Camera"
+					"presentation_rect" : [ 405.0, 163.0, 96.0, 34.0 ],
+					"text" : "Camera",
+					"textcolor" : [ 0.686274509803922, 0.686274509803922, 0.686274509803922, 1.0 ]
 				}
 
 			}
@@ -2433,8 +2488,8 @@
 , 											{
 												"name" : "texteditGold",
 												"default" : 												{
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 												}
 ,
 												"parentstyle" : "",
@@ -3258,8 +3313,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3307,8 +3362,8 @@
 , 			{
 				"box" : 				{
 					"bordercolor" : [ 0.145098039215686, 0.145098039215686, 0.145098039215686, 1.0 ],
-					"coldef" : [ [ 0, 25, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 1, 155, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 2, 85, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 3, 75, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 4, 155, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 5, 75, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ] ],
-					"cols" : 6,
+					"coldef" : [ [ 0, 25, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ] ],
+					"cols" : 1,
 					"fgcolor" : [ 0.27843137254902, 0.27843137254902, 0.27843137254902, 1.0 ],
 					"fontface" : 0,
 					"fontname" : "Arial",
@@ -3324,7 +3379,7 @@
 					"patching_rect" : [ 313.0, 159.5, 431.25, 108.5 ],
 					"presentation" : 1,
 					"presentation_rect" : [ -1.0, 34.5, 589.25, 127.5 ],
-					"rows" : 2,
+					"rows" : 1,
 					"selmode" : 3,
 					"stcolor" : [ 0.407843137254902, 0.407843137254902, 0.407843137254902, 1.0 ]
 				}
@@ -4288,8 +4343,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 								}
 ,
 								"parentstyle" : "",
@@ -4372,7 +4427,7 @@
 					"patching_rect" : [ 1455.0, 586.5, 80.0, 29.0 ],
 					"pic" : "S:/SLE CLIPBOARD/Clinic Monitors/3rd Street.jpg",
 					"presentation" : 1,
-					"presentation_rect" : [ 335.0, 164.5, 250.0, 176.0 ]
+					"presentation_rect" : [ 318.0, 164.5, 267.0, 176.0 ]
 				}
 
 			}
@@ -4387,7 +4442,24 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 10.0, 270.5, 1723.0, 350.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.0, 164.5, 329.0, 176.0 ],
+					"presentation_rect" : [ -1.0, 164.5, 319.0, 176.0 ],
+					"proportion" : 0.5,
+					"rounded" : 0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 0.0, 0.0, 0.0, 0.75 ],
+					"id" : "obj-20",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 25.0, 285.5, 1723.0, 350.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ -1.0, -2.0, 593.0, 348.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
@@ -4689,16 +4761,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-184", 0 ],
-					"order" : 0,
-					"source" : [ "obj-16", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-187", 0 ],
-					"order" : 1,
+					"destination" : [ "obj-17", 0 ],
 					"source" : [ "obj-16", 0 ]
 				}
 
@@ -4770,6 +4833,28 @@
 				"patchline" : 				{
 					"destination" : [ "obj-169", 0 ],
 					"source" : [ "obj-167", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-184", 0 ],
+					"source" : [ "obj-17", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-187", 0 ],
+					"source" : [ "obj-17", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"color" : [ 0.925490196078431, 1.0, 0.0, 1.0 ],
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-17", 0 ]
 				}
 
 			}
@@ -4887,6 +4972,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-86", 0 ],
+					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
 					"source" : [ "obj-2", 0 ]
 				}
@@ -4895,6 +4987,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-116", 0 ],
+					"order" : 0,
+					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"order" : 1,
 					"source" : [ "obj-21", 0 ]
 				}
 
@@ -4910,6 +5011,16 @@
 				"patchline" : 				{
 					"destination" : [ "obj-134", 0 ],
 					"midpoints" : [ 789.0, 208.0, 806.5, 208.0 ],
+					"order" : 0,
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-97", 0 ],
+					"midpoints" : [ 789.0, 132.0, 606.0, 132.0, 606.0, 87.0, 322.5, 87.0 ],
+					"order" : 1,
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -5043,12 +5154,6 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "3rd Street.jpg",
-				"bootpath" : "S:/SLE CLIPBOARD/Clinic Monitors",
-				"type" : "JPEG",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "MySQL_User.maxpat",
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
 				"patcherrelativepath" : ".",
@@ -5244,8 +5349,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 				}
 ,
 				"parentstyle" : "",
