@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 10,
+			"minor" : 2,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 2492.0, 1289.0 ],
+		"rect" : [ 34.0, 77.0, 1852.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-104",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 99.0, 323.75, 69.0, 22.0 ],
+					"text" : "v PROFILE"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-109",
 					"maxclass" : "newobj",
@@ -75,8 +87,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 10,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -394,8 +406,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 10,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -464,8 +476,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 10,
+											"minor" : 2,
+											"revision" : 1,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -641,8 +653,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 10,
+															"minor" : 2,
+															"revision" : 1,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -769,8 +781,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-																	"fontsize" : [ 12.059008 ]
+																	"fontsize" : [ 12.059008 ],
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -1281,6 +1293,8 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -1290,9 +1304,7 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-,
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 												}
 ,
 												"parentstyle" : "",
@@ -1319,8 +1331,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-													"fontsize" : [ 12.059008 ]
+													"fontsize" : [ 12.059008 ],
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -1355,6 +1367,10 @@
 											}
 , 											{
 												"name" : "s_161006_G!",
+												"comment" : 												{
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+												}
+,
 												"message" : 												{
 													"bgfillcolor" : 													{
 														"type" : "color",
@@ -1368,10 +1384,6 @@
 
 												}
 ,
-												"comment" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-												}
-,
 												"parentstyle" : "",
 												"multi" : 1
 											}
@@ -1383,6 +1395,7 @@
 , 											{
 												"name" : "simple-2",
 												"default" : 												{
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -1392,8 +1405,7 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-,
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 												}
 ,
 												"parentstyle" : "default",
@@ -1402,8 +1414,8 @@
 , 											{
 												"name" : "texteditGold",
 												"default" : 												{
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 												}
 ,
 												"parentstyle" : "",
@@ -1590,8 +1602,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 10,
+											"minor" : 2,
+											"revision" : 1,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1719,6 +1731,8 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -1728,9 +1742,7 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-,
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 												}
 ,
 												"parentstyle" : "",
@@ -1757,8 +1769,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-													"fontsize" : [ 12.059008 ]
+													"fontsize" : [ 12.059008 ],
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -1793,6 +1805,10 @@
 											}
 , 											{
 												"name" : "s_161006_G!",
+												"comment" : 												{
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+												}
+,
 												"message" : 												{
 													"bgfillcolor" : 													{
 														"type" : "color",
@@ -1806,10 +1822,6 @@
 
 												}
 ,
-												"comment" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-												}
-,
 												"parentstyle" : "",
 												"multi" : 1
 											}
@@ -1821,6 +1833,7 @@
 , 											{
 												"name" : "simple-2",
 												"default" : 												{
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -1830,8 +1843,7 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-,
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 												}
 ,
 												"parentstyle" : "default",
@@ -1840,8 +1852,8 @@
 , 											{
 												"name" : "texteditGold",
 												"default" : 												{
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 												}
 ,
 												"parentstyle" : "",
@@ -1997,8 +2009,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 10,
+											"minor" : 2,
+											"revision" : 1,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2671,8 +2683,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 10,
+											"minor" : 2,
+											"revision" : 1,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2979,6 +2991,8 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -2988,9 +3002,7 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-,
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 												}
 ,
 												"parentstyle" : "",
@@ -3017,8 +3029,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-													"fontsize" : [ 12.059008 ]
+													"fontsize" : [ 12.059008 ],
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -3053,6 +3065,10 @@
 											}
 , 											{
 												"name" : "s_161006_G!",
+												"comment" : 												{
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+												}
+,
 												"message" : 												{
 													"bgfillcolor" : 													{
 														"type" : "color",
@@ -3066,10 +3082,6 @@
 
 												}
 ,
-												"comment" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-												}
-,
 												"parentstyle" : "",
 												"multi" : 1
 											}
@@ -3081,6 +3093,7 @@
 , 											{
 												"name" : "simple-2",
 												"default" : 												{
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -3090,8 +3103,7 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-,
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 												}
 ,
 												"parentstyle" : "default",
@@ -3100,8 +3112,8 @@
 , 											{
 												"name" : "texteditGold",
 												"default" : 												{
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 												}
 ,
 												"parentstyle" : "",
@@ -4314,6 +4326,8 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -4323,9 +4337,7 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-,
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -4370,8 +4382,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -4433,6 +4445,10 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -4446,10 +4462,6 @@
 
 								}
 ,
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -4461,6 +4473,7 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -4470,8 +4483,7 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-,
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "default",
@@ -4480,8 +4492,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 								}
 ,
 								"parentstyle" : "",
@@ -4936,8 +4948,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 10,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5003,7 +5015,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 148.749999999999886, 177.555557250976563, 72.0, 22.0 ],
+									"patching_rect" : [ 148.749999999999886, 177.555557250976562, 72.0, 22.0 ],
 									"text" : "v USER_ID"
 								}
 
@@ -5111,7 +5123,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 240.708330631256047, 177.555557250976563, 72.0, 22.0 ],
+									"patching_rect" : [ 240.708330631256047, 177.555557250976562, 72.0, 22.0 ],
 									"text" : "v USER_ID"
 								}
 
@@ -5367,6 +5379,8 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -5376,9 +5390,7 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-,
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -5423,8 +5435,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -5486,6 +5498,10 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -5499,10 +5515,6 @@
 
 								}
 ,
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -5514,6 +5526,7 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -5523,8 +5536,7 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-,
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "default",
@@ -5533,8 +5545,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 								}
 ,
 								"parentstyle" : "",
@@ -5615,14 +5627,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 10,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 215.0, 147.0, 1920.0, 1080.0 ],
+						"rect" : [ 34.0, 77.0, 1852.0, 929.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -5653,6 +5665,50 @@
 						"title" : "User & Role Selection",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-43",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 1040.0, 771.0, 22.0, 22.0 ],
+									"text" : "t b"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 0.0, 0.0, 0.0, 0.47 ],
+									"fontface" : 0,
+									"fontsize" : 24.0,
+									"id" : "obj-203",
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 1040.0, 730.0, 237.0, 39.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 0.0, 0.0, 215.0, 39.0 ],
+									"rounded" : 2.0,
+									"text" : "Setup Monitors",
+									"textoncolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
+									"varname" : "monitors_button"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-198",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 1040.0, 795.0, 107.0, 22.0 ],
+									"text" : "s MONITORS_TB"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-39",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -5666,15 +5722,15 @@
 								"box" : 								{
 									"fontsize" : 36.0,
 									"id" : "obj-50",
-									"linecount" : 5,
+									"linecount" : 9,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 101.0, 650.0, 771.0, 213.0 ],
+									"patching_rect" : [ 101.0, 650.0, 771.0, 379.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 5,
-									"presentation_rect" : [ 727.0, 183.0, 843.0, 213.0 ],
-									"text" : "Updates:\n1) Hopefully finally fixed adding items to peoples todolists, glitched occassionally when trying to add something to a todolist and it wouldn't actually be put onto a list...",
+									"presentation_linecount" : 8,
+									"presentation_rect" : [ 727.0, 183.0, 843.0, 338.0 ],
+									"text" : "Updates:\n1) Automatic camera connection :)\n\nOngoing:\nTrying to fix the random database connection issues... thanks for your patience here, if you add someone to a to do list and it doesnt ... just let Keara or I know and we can restart the server...",
 									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
 								}
 
@@ -6035,8 +6091,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 10,
+											"minor" : 2,
+											"revision" : 1,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -6237,8 +6293,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 10,
+															"minor" : 2,
+															"revision" : 1,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -6422,6 +6478,8 @@
 , 															{
 																"name" : "_myStyle",
 																"default" : 																{
+																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -6431,9 +6489,7 @@
 																		"proportion" : 0.39,
 																		"autogradient" : 0
 																	}
-,
-																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 																}
 ,
 																"parentstyle" : "",
@@ -6460,8 +6516,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-																	"fontsize" : [ 12.059008 ]
+																	"fontsize" : [ 12.059008 ],
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -6496,6 +6552,10 @@
 															}
 , 															{
 																"name" : "s_161006_G!",
+																"comment" : 																{
+																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+																}
+,
 																"message" : 																{
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
@@ -6509,10 +6569,6 @@
 
 																}
 ,
-																"comment" : 																{
-																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-																}
-,
 																"parentstyle" : "",
 																"multi" : 1
 															}
@@ -6524,6 +6580,7 @@
 , 															{
 																"name" : "simple-2",
 																"default" : 																{
+																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -6533,8 +6590,7 @@
 																		"proportion" : 0.39,
 																		"autogradient" : 0
 																	}
-,
-																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 																}
 ,
 																"parentstyle" : "default",
@@ -6543,8 +6599,8 @@
 , 															{
 																"name" : "texteditGold",
 																"default" : 																{
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 																}
 ,
 																"parentstyle" : "",
@@ -7060,6 +7116,8 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -7069,9 +7127,7 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-,
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 												}
 ,
 												"parentstyle" : "",
@@ -7098,8 +7154,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-													"fontsize" : [ 12.059008 ]
+													"fontsize" : [ 12.059008 ],
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -7134,6 +7190,10 @@
 											}
 , 											{
 												"name" : "s_161006_G!",
+												"comment" : 												{
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+												}
+,
 												"message" : 												{
 													"bgfillcolor" : 													{
 														"type" : "color",
@@ -7147,10 +7207,6 @@
 
 												}
 ,
-												"comment" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-												}
-,
 												"parentstyle" : "",
 												"multi" : 1
 											}
@@ -7162,6 +7218,7 @@
 , 											{
 												"name" : "simple-2",
 												"default" : 												{
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -7171,8 +7228,7 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-,
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 												}
 ,
 												"parentstyle" : "default",
@@ -7181,8 +7237,8 @@
 , 											{
 												"name" : "texteditGold",
 												"default" : 												{
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 												}
 ,
 												"parentstyle" : "",
@@ -7536,6 +7592,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-43", 0 ],
+									"source" : [ "obj-203", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-19", 0 ],
 									"source" : [ "obj-23", 0 ]
 								}
@@ -7695,6 +7758,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-198", 0 ],
+									"source" : [ "obj-43", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-2", 0 ],
 									"source" : [ "obj-5", 0 ]
 								}
@@ -7777,6 +7847,8 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -7786,9 +7858,7 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-,
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -7833,8 +7903,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -7896,6 +7966,10 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -7909,10 +7983,6 @@
 
 								}
 ,
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -7924,6 +7994,7 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -7933,8 +8004,7 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-,
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "default",
@@ -7943,8 +8013,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 								}
 ,
 								"parentstyle" : "",
@@ -8011,8 +8081,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 10,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -8423,8 +8493,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 10,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -8832,6 +8902,8 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -8841,9 +8913,7 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-,
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -8870,8 +8940,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -8906,6 +8976,10 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -8919,10 +8993,6 @@
 
 								}
 ,
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -8934,6 +9004,7 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -8943,8 +9014,7 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-,
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "default",
@@ -8953,8 +9023,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 								}
 ,
 								"parentstyle" : "",
@@ -9142,8 +9212,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 10,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -9212,8 +9282,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 10,
+											"minor" : 2,
+											"revision" : 1,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -9389,8 +9459,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 10,
+															"minor" : 2,
+															"revision" : 1,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -9517,8 +9587,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-																	"fontsize" : [ 12.059008 ]
+																	"fontsize" : [ 12.059008 ],
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -10029,6 +10099,8 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -10038,9 +10110,7 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-,
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 												}
 ,
 												"parentstyle" : "",
@@ -10067,8 +10137,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-													"fontsize" : [ 12.059008 ]
+													"fontsize" : [ 12.059008 ],
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -10103,6 +10173,10 @@
 											}
 , 											{
 												"name" : "s_161006_G!",
+												"comment" : 												{
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+												}
+,
 												"message" : 												{
 													"bgfillcolor" : 													{
 														"type" : "color",
@@ -10116,10 +10190,6 @@
 
 												}
 ,
-												"comment" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-												}
-,
 												"parentstyle" : "",
 												"multi" : 1
 											}
@@ -10131,6 +10201,7 @@
 , 											{
 												"name" : "simple-2",
 												"default" : 												{
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -10140,8 +10211,7 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-,
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 												}
 ,
 												"parentstyle" : "default",
@@ -10150,8 +10220,8 @@
 , 											{
 												"name" : "texteditGold",
 												"default" : 												{
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 												}
 ,
 												"parentstyle" : "",
@@ -10338,8 +10408,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 10,
+											"minor" : 2,
+											"revision" : 1,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -10467,6 +10537,8 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -10476,9 +10548,7 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-,
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 												}
 ,
 												"parentstyle" : "",
@@ -10505,8 +10575,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-													"fontsize" : [ 12.059008 ]
+													"fontsize" : [ 12.059008 ],
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -10541,6 +10611,10 @@
 											}
 , 											{
 												"name" : "s_161006_G!",
+												"comment" : 												{
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+												}
+,
 												"message" : 												{
 													"bgfillcolor" : 													{
 														"type" : "color",
@@ -10554,10 +10628,6 @@
 
 												}
 ,
-												"comment" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-												}
-,
 												"parentstyle" : "",
 												"multi" : 1
 											}
@@ -10569,6 +10639,7 @@
 , 											{
 												"name" : "simple-2",
 												"default" : 												{
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -10578,8 +10649,7 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-,
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 												}
 ,
 												"parentstyle" : "default",
@@ -10588,8 +10658,8 @@
 , 											{
 												"name" : "texteditGold",
 												"default" : 												{
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 												}
 ,
 												"parentstyle" : "",
@@ -10745,8 +10815,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 10,
+											"minor" : 2,
+											"revision" : 1,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -11391,8 +11461,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 10,
+											"minor" : 2,
+											"revision" : 1,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -11699,6 +11769,8 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -11708,9 +11780,7 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-,
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 												}
 ,
 												"parentstyle" : "",
@@ -11737,8 +11807,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-													"fontsize" : [ 12.059008 ]
+													"fontsize" : [ 12.059008 ],
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -11773,6 +11843,10 @@
 											}
 , 											{
 												"name" : "s_161006_G!",
+												"comment" : 												{
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+												}
+,
 												"message" : 												{
 													"bgfillcolor" : 													{
 														"type" : "color",
@@ -11786,10 +11860,6 @@
 
 												}
 ,
-												"comment" : 												{
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-												}
-,
 												"parentstyle" : "",
 												"multi" : 1
 											}
@@ -11801,6 +11871,7 @@
 , 											{
 												"name" : "simple-2",
 												"default" : 												{
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -11810,8 +11881,7 @@
 														"proportion" : 0.39,
 														"autogradient" : 0
 													}
-,
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 												}
 ,
 												"parentstyle" : "default",
@@ -11820,8 +11890,8 @@
 , 											{
 												"name" : "texteditGold",
 												"default" : 												{
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 												}
 ,
 												"parentstyle" : "",
@@ -13034,6 +13104,8 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -13043,9 +13115,7 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-,
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -13090,8 +13160,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -13153,6 +13223,10 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -13166,10 +13240,6 @@
 
 								}
 ,
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -13181,6 +13251,7 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -13190,8 +13261,7 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-,
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "default",
@@ -13200,8 +13270,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 								}
 ,
 								"parentstyle" : "",
@@ -13287,8 +13357,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 10,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -13658,6 +13728,8 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -13667,9 +13739,7 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-,
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -13696,8 +13766,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -13732,6 +13802,10 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -13745,10 +13819,6 @@
 
 								}
 ,
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -13760,6 +13830,7 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -13769,8 +13840,7 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-,
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "default",
@@ -13779,8 +13849,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 								}
 ,
 								"parentstyle" : "",
@@ -13826,8 +13896,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 10,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -14110,6 +14180,8 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -14119,9 +14191,7 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-,
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -14148,8 +14218,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -14184,6 +14254,10 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -14197,10 +14271,6 @@
 
 								}
 ,
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -14212,6 +14282,7 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -14221,8 +14292,7 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-,
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "default",
@@ -14231,8 +14301,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 								}
 ,
 								"parentstyle" : "",
@@ -14266,8 +14336,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 10,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -14836,6 +14906,8 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -14845,9 +14917,7 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-,
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -14874,8 +14944,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -14910,6 +14980,10 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -14923,10 +14997,6 @@
 
 								}
 ,
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -14938,6 +15008,7 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -14947,8 +15018,7 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-,
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "default",
@@ -14957,8 +15027,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 								}
 ,
 								"parentstyle" : "",
@@ -14992,8 +15062,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 10,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -15028,6 +15098,42 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-11",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 118.0, 370.0, 69.0, 22.0 ],
+									"text" : "v PROFILE"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 118.0, 346.0, 57.0, 22.0 ],
+									"text" : "tosymbol"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 118.0, 320.0, 77.0, 22.0 ],
+									"text" : "route symbol"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-5",
 									"maxclass" : "message",
@@ -15261,6 +15367,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"source" : [ "obj-4", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-3", 0 ],
 									"source" : [ "obj-42", 0 ]
 								}
@@ -15275,7 +15395,16 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"order" : 0,
+									"source" : [ "obj-6", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-7", 0 ],
+									"order" : 1,
 									"source" : [ "obj-6", 0 ]
 								}
 
@@ -15284,6 +15413,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-10", 0 ],
 									"source" : [ "obj-8", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-11", 0 ],
+									"source" : [ "obj-9", 0 ]
 								}
 
 							}
@@ -15361,8 +15497,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 10,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -15901,6 +16037,8 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -15910,9 +16048,7 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-,
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -15957,8 +16093,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -16020,6 +16156,10 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -16033,10 +16173,6 @@
 
 								}
 ,
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -16048,6 +16184,7 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -16057,8 +16194,7 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-,
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "default",
@@ -16067,8 +16203,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 								}
 ,
 								"parentstyle" : "",
@@ -16101,8 +16237,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 10,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -16898,6 +17034,8 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -16907,9 +17045,7 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-,
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -16954,8 +17090,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -17017,6 +17153,10 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -17030,10 +17170,6 @@
 
 								}
 ,
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -17045,6 +17181,7 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -17054,8 +17191,7 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-,
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "default",
@@ -17064,8 +17200,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 								}
 ,
 								"parentstyle" : "",
@@ -17097,8 +17233,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 10,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -17306,6 +17442,8 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -17315,9 +17453,7 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-,
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -17344,8 +17480,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -17380,6 +17516,10 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -17393,10 +17533,6 @@
 
 								}
 ,
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -17408,6 +17544,7 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -17417,8 +17554,7 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-,
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "default",
@@ -17427,8 +17563,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 								}
 ,
 								"parentstyle" : "",
@@ -17472,8 +17608,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 10,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -17567,8 +17703,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 10,
+											"minor" : 2,
+											"revision" : 1,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -18495,6 +18631,8 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -18504,9 +18642,7 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-,
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -18533,8 +18669,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -18569,6 +18705,10 @@
 							}
 , 							{
 								"name" : "s_161006_G!",
+								"comment" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+,
 								"message" : 								{
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -18582,10 +18722,6 @@
 
 								}
 ,
-								"comment" : 								{
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-,
 								"parentstyle" : "",
 								"multi" : 1
 							}
@@ -18597,6 +18733,7 @@
 , 							{
 								"name" : "simple-2",
 								"default" : 								{
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -18606,8 +18743,7 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-,
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "default",
@@ -18616,8 +18752,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 								}
 ,
 								"parentstyle" : "",
@@ -18917,6 +19053,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-104", 0 ],
+					"order" : 1,
+					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-33", 0 ],
 					"source" : [ "obj-21", 2 ]
 				}
@@ -18925,6 +19069,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-57", 0 ],
+					"order" : 0,
 					"source" : [ "obj-21", 0 ]
 				}
 
@@ -19748,6 +19893,8 @@
 , 			{
 				"name" : "_myStyle",
 				"default" : 				{
+					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -19757,9 +19904,7 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-,
-					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 				}
 ,
 				"parentstyle" : "",
@@ -19804,8 +19949,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -19867,6 +20012,10 @@
 			}
 , 			{
 				"name" : "s_161006_G!",
+				"comment" : 				{
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				}
+,
 				"message" : 				{
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -19880,10 +20029,6 @@
 
 				}
 ,
-				"comment" : 				{
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-				}
-,
 				"parentstyle" : "",
 				"multi" : 1
 			}
@@ -19895,6 +20040,7 @@
 , 			{
 				"name" : "simple-2",
 				"default" : 				{
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -19904,8 +20050,7 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-,
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+
 				}
 ,
 				"parentstyle" : "default",
@@ -19914,8 +20059,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 				}
 ,
 				"parentstyle" : "",
