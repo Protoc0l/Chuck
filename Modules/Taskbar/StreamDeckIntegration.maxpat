@@ -41,6 +41,42 @@
 		"title" : "Stream Deck Integration",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-69",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 618.0, 632.5, 91.0, 22.0 ],
+					"text" : "r Chuck_Check"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-71",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 618.0, 663.5, 77.0, 22.0 ],
+					"text" : "s Chuck_ON"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 13.0,
+					"id" : "obj-61",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 618.0, 604.5, 134.0, 21.0 ],
+					"text" : "Check if Chuck is ON",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"fontsize" : 24.0,
 					"id" : "obj-64",
@@ -4680,6 +4716,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-35",
+									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -8915,13 +8952,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-106",
-									"linecount" : 5,
+									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 72.0, 875.0, 100.0, 77.0 ],
-									"text" : ";\r\nUPDATE_SETTINGS_USER_MAIN_PROFILE bang"
+									"text" : ";\r\nQuery_Camera_Table bang"
 								}
 
 							}
@@ -9981,8 +10018,14 @@
 													"id" : "obj-9",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
-													"numoutlets" : 0,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "bang" ],
 													"patching_rect" : [ 587.0, 585.0, 100.0, 22.0 ],
+													"saved_object_attributes" : 													{
+														"shell" : "(default)",
+														"wd" : "(default)"
+													}
+,
 													"text" : "shell"
 												}
 
@@ -14293,8 +14336,8 @@
 , 															{
 																"name" : "rsliderGold",
 																"default" : 																{
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
-																	"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
+																	"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -25737,8 +25780,8 @@
 , 															{
 																"name" : "rsliderGold",
 																"default" : 																{
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
-																	"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
+																	"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -29801,7 +29844,7 @@
 					"color" : [ 0.96078431372549, 0.96078431372549, 0.96078431372549, 1.0 ],
 					"fontsize" : 8.0,
 					"id" : "obj-27",
-					"items" : [ "Mayflash Wiimote PC Adapter", ",", "Mayflash Wiimote PC Adapter 2", ",", "Mayflash Wiimote PC Adapter 3", ",", "Mayflash Wiimote PC Adapter 4" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -73131,7 +73174,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 789.0, 190.0, 120.0, 22.0 ],
+					"patching_rect" : [ 788.0, 190.5, 120.0, 22.0 ],
 					"text" : "sprintf read \\\"%s%s\\\""
 				}
 
@@ -82726,6 +82769,16 @@
 			}
 , 			{
 				"box" : 				{
+					"id" : "obj-70",
+					"maxclass" : "panel",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 613.5, 600.5, 151.0, 91.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"angle" : 270.0,
 					"background" : 1,
 					"bgcolor" : [ 0.886274509803922, 0.886274509803922, 0.886274509803922, 0.66 ],
@@ -83254,6 +83307,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-71", 0 ],
+					"source" : [ "obj-69", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-40", 0 ],
 					"order" : 1,
 					"source" : [ "obj-7", 0 ]
@@ -83299,7 +83359,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
-					"midpoints" : [ 798.5, 213.0, 627.5, 213.0 ],
+					"midpoints" : [ 797.5, 213.0, 627.5, 213.0 ],
 					"source" : [ "obj-91", 0 ]
 				}
 
@@ -83402,6 +83462,10 @@
 				"type" : "mx64"
 			}
 , 			{
+				"name" : "shell.mxe64",
+				"type" : "mx64"
+			}
+, 			{
 				"name" : "sadam.udpSender.mxe64",
 				"type" : "mx64"
 			}
@@ -83459,9 +83523,27 @@
 				"multi" : 0
 			}
 , 			{
+				"name" : "newobjBrown-1",
+				"default" : 				{
+					"accentcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
 				"name" : "newobjGreen-1",
 				"default" : 				{
 					"accentcolor" : [ 0.0, 0.533333, 0.168627, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "newobjRed-1",
+				"default" : 				{
+					"accentcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -83478,9 +83560,36 @@
 				"multi" : 0
 			}
 , 			{
+				"name" : "numberB-1",
+				"default" : 				{
+					"accentcolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "numberG-1",
+				"default" : 				{
+					"accentcolor" : [ 0.0, 0.533333, 0.168627, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
 				"name" : "numberGold-1",
 				"default" : 				{
 					"accentcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "numberR-1",
+				"default" : 				{
+					"accentcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
