@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1992.0, 148.0, 1924.0, 1251.0 ],
+		"rect" : [ -1992.0, 148.0, 1304.0, 1251.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -853,13 +853,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-51",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 117.0, 54.0, 187.0, 36.0 ],
-					"text" : "\"'Calculator' 'C:/Windows/System32/calc.exe'\""
+					"patching_rect" : [ 117.0, 54.0, 187.0, 22.0 ],
+					"text" : "\"'s' 's'\""
 				}
 
 			}
@@ -2664,7 +2663,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 843.0, 314.0, 347.5, 22.0 ],
-					"text" : "[C:/Windows/System32/calc.exe] [Calculator]"
+					"text" : "[s] [s]"
 				}
 
 			}
@@ -2745,7 +2744,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "Patient_Hub_", "OP_Macros" ],
+					"args" : [ 11 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -2762,7 +2761,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 5.777801990509033, 178.000045299530029, 426.888903141021729, 102.444443225860596 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 13.666664600372314, 26.555571556091309, 405.777791023254395, 79.111108779907227 ],
+					"presentation_rect" : [ 14.666664600372314, 26.555571556091309, 405.777791023254395, 79.111108779907227 ],
 					"viewvisibility" : 1
 				}
 
@@ -4172,7 +4171,7 @@
 , 			{
 				"name" : "_myStyle",
 				"default" : 				{
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -4183,7 +4182,7 @@
 						"autogradient" : 0
 					}
 ,
-					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -4228,8 +4227,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -4291,10 +4290,6 @@
 			}
 , 			{
 				"name" : "s_161006_G!",
-				"comment" : 				{
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-				}
-,
 				"message" : 				{
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -4308,6 +4303,10 @@
 
 				}
 ,
+				"comment" : 				{
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+				}
+,
 				"parentstyle" : "",
 				"multi" : 1
 			}
@@ -4319,7 +4318,6 @@
 , 			{
 				"name" : "simple-2",
 				"default" : 				{
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
@@ -4329,7 +4327,8 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-
+,
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 				}
 ,
 				"parentstyle" : "default",
