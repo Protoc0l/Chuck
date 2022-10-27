@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 952.0, 85.0, 936.0, 1273.0 ],
+		"rect" : [ 665.0, 95.0, 1190.0, 1273.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-123",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 156.5, 653.55554723739624, 485.5, 22.0 ],
+					"text" : "\"Visionary - Clinic\" \"C:/Program Files (x86)/Visionary Clinic/EyeCon.exe\" \"0 0 1920 1080\""
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-159",
 					"maxclass" : "comment",
@@ -708,18 +720,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-51",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 117.0, 54.0, 187.0, 22.0 ],
-					"text" : "\"'s' 's'\""
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-49",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -921,7 +921,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 9.777801990509033, 805.55554723739624, 155.0, 22.0 ],
+					"patching_rect" : [ 9.777801990509033, 804.55554723739624, 155.0, 22.0 ],
 					"text" : "loadmess \"[Blank] [0 0 0 0]\""
 				}
 
@@ -1112,7 +1112,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 29.0, 295.0, 194.0, 25.0 ],
+					"patching_rect" : [ 17.999997615814209, 356.222227096557617, 98.0, 25.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ -0.611112594604492, 288.500018119812012, 92.0, 25.0 ],
 					"text" : "Select Info"
@@ -1604,11 +1604,11 @@
 				"box" : 				{
 					"id" : "obj-55",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
+					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 145.0, 326.55554723739624, 106.0, 22.0 ],
-					"text" : "sprintf \\\"'%s' '%s'\\\""
+					"patching_rect" : [ 145.0, 326.55554723739624, 148.444507122039795, 22.0 ],
+					"text" : "sprintf \\\"'%s' '%s' '%s'\\\""
 				}
 
 			}
@@ -2524,8 +2524,6 @@
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 484.0, 101.55554723739624, 67.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 430.055568218231201, 2.555571556091309, 54.5, 19.0 ],
 					"text" : "Test ",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 0.76 ]
 				}
@@ -2592,12 +2590,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-25",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 843.0, 314.0, 347.5, 22.0 ],
-					"text" : "[s] [s]"
+					"patching_rect" : [ 843.0, 314.0, 347.5, 36.0 ],
+					"text" : "[0] \"[C:/Program Files (x86)/Visionary Clinic/EyeCon.exe]\" \"[Visionary - Clinic]\""
 				}
 
 			}
@@ -2605,11 +2604,11 @@
 				"box" : 				{
 					"id" : "obj-23",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
+					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 5.777801990509033, 299.0, 426.888903141021729, 22.0 ],
-					"text" : "sprintf \\\"[%s]\\\" \\\"[%s]\\\""
+					"text" : "sprintf \\\"[%s]\\\" \\\"[%s]\\\" \\\"[%s]\\\""
 				}
 
 			}
@@ -2690,9 +2689,9 @@
 					"maxclass" : "bpatcher",
 					"name" : "OpenProgram.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 2,
+					"numoutlets" : 3,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "", "" ],
+					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 5.777801990509033, 178.000045299530029, 426.888903141021729, 102.444443225860596 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 13.666664600372314, 26.555571556091309, 405.777791023254395, 79.111108779907227 ],
@@ -3438,6 +3437,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-23", 2 ],
+					"order" : 0,
+					"source" : [ "obj-32", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-23", 1 ],
 					"order" : 0,
 					"source" : [ "obj-32", 1 ]
@@ -3449,6 +3456,14 @@
 					"destination" : [ "obj-23", 0 ],
 					"order" : 1,
 					"source" : [ "obj-32", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-55", 2 ],
+					"order" : 1,
+					"source" : [ "obj-32", 2 ]
 				}
 
 			}
@@ -3590,22 +3605,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-104", 0 ],
-					"source" : [ "obj-51", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-27", 1 ],
-					"order" : 2,
-					"source" : [ "obj-55", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-51", 1 ],
 					"order" : 1,
 					"source" : [ "obj-55", 0 ]
 				}
@@ -3879,6 +3879,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-123", 1 ],
+					"order" : 0,
+					"source" : [ "obj-85", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
 					"midpoints" : [ 97.777801990509033, 148.0, 15.0, 148.0, 15.0, 174.0, 15.277801990509033, 174.0 ],
 					"source" : [ "obj-85", 3 ]
@@ -3888,6 +3896,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
+					"order" : 1,
 					"source" : [ "obj-85", 0 ]
 				}
 
@@ -4121,7 +4130,6 @@
 , 			{
 				"name" : "_myStyle",
 				"default" : 				{
-					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -4132,7 +4140,8 @@
 						"autogradient" : 0
 					}
 ,
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
