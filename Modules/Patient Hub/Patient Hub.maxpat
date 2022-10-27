@@ -201,17 +201,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-25",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1051.0, 2226.0, 89.0, 22.0 ],
-					"text" : "print macro-PH"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-300",
 					"linecount" : 3,
 					"maxclass" : "comment",
@@ -8889,7 +8878,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1215.051224231719971, 2265.0, 753.0, 36.0 ],
+					"patching_rect" : [ 1215.051224231719971, 2265.0, 489.0, 36.0 ],
 					"text" : "sprintf \\\"[{{{@Mouse Left Click@}}} {{{@%s@}}} {{{@click@}}}] [{{{@Keyboard Type@}}} {{{@^a@}}} {{{@select all@}}}] [{{{@Fast Keyboard Type@}}} {{{@%s@}}} {{{@type@}}}]\\\""
 				}
 
@@ -8998,6 +8987,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-124",
+					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -9111,6 +9101,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-100",
+					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -10550,13 +10541,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-118",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 460.5, 1526.0, 496.0, 36.0 ],
-					"text" : ";\r\nMacrov2 \"[{{{@Mouse Left Click@}}} {{{@269 58@}}} {{{@click patient@}}}] [-]\""
+					"patching_rect" : [ 460.5, 1526.0, 496.0, 50.0 ],
+					"text" : ";\r\nMacrov2 \"[{{{@Mouse Left Click@}}} {{{@486 66@}}} {{{@click exam@}}}] [{{{@Mouse Left Click@}}} {{{@33 102@}}} {{{@click find@}}}]\""
 				}
 
 			}
@@ -12964,7 +12955,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 1.25, 4.75, 10.0, 10.0 ],
 					"rounded" : 0.0,
-					"text" : "\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"[First Name] [Bogus journey]\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"",
+					"text" : "\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"[First Name] [Bogus journey]\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"",
 					"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"textjustification" : 1,
 					"wordwrap" : 0
@@ -13663,15 +13654,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-171", 0 ],
-					"order" : 0,
-					"source" : [ "obj-175", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-25", 0 ],
-					"order" : 1,
 					"source" : [ "obj-175", 0 ]
 				}
 
