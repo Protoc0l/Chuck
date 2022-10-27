@@ -337,7 +337,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -348,6 +347,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -764,7 +764,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -775,6 +774,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -2599,7 +2599,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -2610,6 +2609,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -2934,7 +2934,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -2945,6 +2944,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -3440,7 +3440,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -3451,6 +3450,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -3861,7 +3861,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -3872,6 +3871,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -4537,7 +4537,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -4548,6 +4547,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -4938,7 +4938,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -4949,6 +4948,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -5484,7 +5484,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -5495,6 +5494,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -5691,7 +5691,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 108.0, 148.0, 1556.0, 757.0 ],
+						"rect" : [ -1815.0, 85.0, 1556.0, 757.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -5719,8 +5719,31 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-84",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 36.0, 456.0, 54.0, 22.0 ],
+									"text" : "deferlow"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-78",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 261.75, 890.0, 82.0, 22.0 ],
+									"text" : "Keyboard"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-38",
 									"maxclass" : "newobj",
@@ -7046,7 +7069,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 1847.0, 483.0, 574.0, 701.0 ],
+										"rect" : [ 547.0, 180.0, 574.0, 701.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -7075,6 +7098,19 @@
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
+												"box" : 												{
+													"color" : [ 0.403921568627451, 0.109803921568627, 0.701960784313725, 1.0 ],
+													"id" : "obj-13",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "zlclear" ],
+													"patching_rect" : [ 109.0, 40.0, 56.0, 22.0 ],
+													"text" : "t l zlclear"
+												}
+
+											}
+, 											{
 												"box" : 												{
 													"id" : "obj-4",
 													"maxclass" : "newobj",
@@ -7174,7 +7210,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 109.0, 51.0, 100.0, 22.0 ],
+													"patching_rect" : [ 109.0, 70.0, 100.0, 22.0 ],
 													"text" : "zl slice 2"
 												}
 
@@ -7268,6 +7304,7 @@
 												"box" : 												{
 													"color" : [ 1.0, 0.0, 0.0, 1.0 ],
 													"id" : "obj-104",
+													"int" : 1,
 													"maxclass" : "gswitch2",
 													"numinlets" : 2,
 													"numoutlets" : 2,
@@ -7530,7 +7567,7 @@
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
-													"outlettype" : [ "bang" ],
+													"outlettype" : [ "" ],
 													"patching_rect" : [ 70.0, 16.0, 30.0, 30.0 ]
 												}
 
@@ -7544,7 +7581,7 @@
 													"numinlets" : 0,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 109.0, 16.0, 30.0, 30.0 ]
+													"patching_rect" : [ 109.0, 6.0, 30.0, 30.0 ]
 												}
 
 											}
@@ -7674,6 +7711,31 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-3", 0 ],
+													"source" : [ "obj-13", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"color" : [ 0.403921568627451, 0.109803921568627, 0.701960784313725, 1.0 ],
+													"destination" : [ "obj-31", 0 ],
+													"order" : 0,
+													"source" : [ "obj-13", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"color" : [ 0.403921568627451, 0.109803921568627, 0.701960784313725, 1.0 ],
+													"destination" : [ "obj-83", 0 ],
+													"order" : 1,
+													"source" : [ "obj-13", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-144", 0 ],
 													"midpoints" : [ 412.25, 597.0, 351.5, 597.0 ],
 													"source" : [ "obj-130", 3 ]
@@ -7698,7 +7760,7 @@
 , 											{
 												"patchline" : 												{
 													"color" : [ 0.090196078431373, 1.0, 0.0, 1.0 ],
-													"destination" : [ "obj-3", 0 ],
+													"destination" : [ "obj-13", 0 ],
 													"source" : [ "obj-143", 0 ]
 												}
 
@@ -9047,13 +9109,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-145", 0 ],
-									"source" : [ "obj-133", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-21", 0 ],
 									"source" : [ "obj-133", 1 ]
 								}
@@ -9064,6 +9119,13 @@
 									"destination" : [ "obj-35", 1 ],
 									"midpoints" : [ 207.5, 228.0, 228.0, 228.0, 228.0, 228.0, 798.0, 228.0, 798.0, 318.0, 798.5, 318.0 ],
 									"source" : [ "obj-133", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-84", 0 ],
+									"source" : [ "obj-133", 0 ]
 								}
 
 							}
@@ -9093,6 +9155,7 @@
 								"patchline" : 								{
 									"destination" : [ "obj-145", 1 ],
 									"midpoints" : [ 187.25, 501.0, 126.5, 501.0 ],
+									"order" : 1,
 									"source" : [ "obj-140", 3 ]
 								}
 
@@ -9101,6 +9164,14 @@
 								"patchline" : 								{
 									"destination" : [ "obj-145", 1 ],
 									"source" : [ "obj-140", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-78", 1 ],
+									"order" : 0,
+									"source" : [ "obj-140", 3 ]
 								}
 
 							}
@@ -9985,6 +10056,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-145", 0 ],
+									"source" : [ "obj-84", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-113", 0 ],
 									"source" : [ "obj-85", 0 ]
 								}
@@ -10028,7 +10106,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -10039,6 +10116,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -10308,7 +10386,6 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-4",
@@ -10782,7 +10859,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 50.0, 181.5, 179.0, 36.0 ],
-													"text" : ";\r\nPatient_Hub_OCR 10-10-10"
+													"text" : ";\r\nPatient_Hub_OCR KenN"
 												}
 
 											}
@@ -11096,7 +11173,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -11107,6 +11183,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -11500,7 +11577,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -11511,6 +11587,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -11868,13 +11945,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-106",
-									"linecount" : 2,
+									"linecount" : 4,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 72.0, 875.0, 100.0, 36.0 ],
-									"text" : ";\r\npx_hub bang"
+									"text" : ";\r\nQuery_Patient_Hub_Macro bang"
 								}
 
 							}
@@ -12595,7 +12672,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -12606,6 +12682,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -12759,7 +12836,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 483.0, 504.5, 450.0, 36.0 ],
-									"text" : ";\r\n\"Prog_Dim Program_Dim -2508 34 1311 685\" -2508"
+									"text" : ";\r\nCompleted_Open_Program Completed"
 								}
 
 							}
@@ -13591,7 +13668,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -13602,6 +13678,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -14016,7 +14093,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -14027,6 +14103,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -14440,7 +14517,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -14451,6 +14527,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -14882,7 +14959,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -14893,6 +14969,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -15931,7 +16008,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -15942,6 +16018,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -16738,7 +16815,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -16749,6 +16825,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -17610,7 +17687,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -17621,6 +17697,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -18652,7 +18729,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -18663,6 +18739,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -19730,7 +19807,6 @@
 , 															{
 																"name" : "_myStyle",
 																"default" : 																{
-																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -19741,6 +19817,7 @@
 																		"autogradient" : 0
 																	}
 ,
+																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 																}
 ,
@@ -20810,7 +20887,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -20821,6 +20897,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -21479,7 +21556,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -21490,6 +21566,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -22122,7 +22199,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -22133,6 +22209,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -23025,7 +23102,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -23036,6 +23112,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -23591,7 +23668,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -23602,6 +23678,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -25088,7 +25165,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -25099,6 +25175,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -26168,7 +26245,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -26179,6 +26255,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -26450,7 +26527,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -26461,6 +26537,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -27015,7 +27092,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -27026,6 +27102,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -27539,7 +27616,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -27550,6 +27626,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -28182,7 +28259,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -28193,6 +28269,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -29047,7 +29124,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -29058,6 +29134,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -30127,7 +30204,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -30138,6 +30214,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -30619,7 +30696,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -30630,6 +30706,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -31287,7 +31364,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -31298,6 +31374,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -31730,7 +31807,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -31741,6 +31817,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -32135,7 +32212,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -32146,6 +32222,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -32600,7 +32677,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -32611,6 +32687,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -34378,7 +34455,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -34389,6 +34465,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -35160,7 +35237,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -35171,6 +35247,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -36253,7 +36330,6 @@
 , 															{
 																"name" : "_myStyle",
 																"default" : 																{
-																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -36264,6 +36340,7 @@
 																		"autogradient" : 0
 																	}
 ,
+																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 																}
 ,
@@ -37546,7 +37623,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -37557,6 +37633,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -38096,7 +38173,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -38107,6 +38183,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -38638,7 +38715,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -38649,6 +38725,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -39046,7 +39123,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -39057,6 +39133,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -39384,7 +39461,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -39395,6 +39471,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -41355,7 +41432,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -41366,6 +41442,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -41944,7 +42021,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -41955,6 +42031,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -42337,7 +42414,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -42348,6 +42424,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -43912,7 +43989,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -43923,6 +43999,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -44419,7 +44496,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -44430,6 +44506,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -45873,7 +45950,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -45884,6 +45960,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -46403,7 +46480,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -46414,6 +46490,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -46732,7 +46809,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -46743,6 +46819,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -47046,7 +47123,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -47057,6 +47133,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -47406,7 +47483,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -47417,6 +47493,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -48476,7 +48553,6 @@
 , 																			{
 																				"name" : "_myStyle",
 																				"default" : 																				{
-																					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																					"bgfillcolor" : 																					{
 																						"type" : "color",
 																						"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -48487,6 +48563,7 @@
 																						"autogradient" : 0
 																					}
 ,
+																					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 																				}
 ,
@@ -49206,7 +49283,6 @@
 , 															{
 																"name" : "_myStyle",
 																"default" : 																{
-																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -49217,6 +49293,7 @@
 																		"autogradient" : 0
 																	}
 ,
+																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 																}
 ,
@@ -50141,7 +50218,6 @@
 , 															{
 																"name" : "_myStyle",
 																"default" : 																{
-																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -50152,6 +50228,7 @@
 																		"autogradient" : 0
 																	}
 ,
+																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 																}
 ,
@@ -50520,7 +50597,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -50531,6 +50607,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -51774,7 +51851,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -51785,6 +51861,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -52483,7 +52560,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -52494,6 +52570,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -54125,7 +54202,6 @@
 , 																			{
 																				"name" : "_myStyle",
 																				"default" : 																				{
-																					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																					"bgfillcolor" : 																					{
 																						"type" : "color",
 																						"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -54136,6 +54212,7 @@
 																						"autogradient" : 0
 																					}
 ,
+																					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 																				}
 ,
@@ -54995,7 +55072,6 @@
 , 																			{
 																				"name" : "_myStyle",
 																				"default" : 																				{
-																					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																					"bgfillcolor" : 																					{
 																						"type" : "color",
 																						"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -55006,6 +55082,7 @@
 																						"autogradient" : 0
 																					}
 ,
+																					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 																				}
 ,
@@ -55950,7 +56027,6 @@
 , 															{
 																"name" : "_myStyle",
 																"default" : 																{
-																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -55961,6 +56037,7 @@
 																		"autogradient" : 0
 																	}
 ,
+																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 																}
 ,
@@ -57577,7 +57654,6 @@
 , 																			{
 																				"name" : "_myStyle",
 																				"default" : 																				{
-																					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																					"bgfillcolor" : 																					{
 																						"type" : "color",
 																						"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -57588,6 +57664,7 @@
 																						"autogradient" : 0
 																					}
 ,
+																					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 																				}
 ,
@@ -58574,7 +58651,6 @@
 , 															{
 																"name" : "_myStyle",
 																"default" : 																{
-																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -58585,6 +58661,7 @@
 																		"autogradient" : 0
 																	}
 ,
+																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 																}
 ,
@@ -59608,7 +59685,6 @@
 , 															{
 																"name" : "_myStyle",
 																"default" : 																{
-																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -59619,6 +59695,7 @@
 																		"autogradient" : 0
 																	}
 ,
+																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 																}
 ,
@@ -60630,7 +60707,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -60641,6 +60717,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -61071,7 +61148,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -61082,6 +61158,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -61910,7 +61987,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -61921,6 +61997,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -62470,7 +62547,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -62481,6 +62557,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -63277,7 +63354,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -63288,6 +63364,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -63571,7 +63648,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -63582,6 +63658,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -64036,7 +64113,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -64047,6 +64123,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -64804,7 +64881,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -64815,6 +64891,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -66057,7 +66134,6 @@
 , 															{
 																"name" : "_myStyle",
 																"default" : 																{
-																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -66068,6 +66144,7 @@
 																		"autogradient" : 0
 																	}
 ,
+																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 																}
 ,
@@ -67081,7 +67158,6 @@
 , 															{
 																"name" : "_myStyle",
 																"default" : 																{
-																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -67092,6 +67168,7 @@
 																		"autogradient" : 0
 																	}
 ,
+																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 																}
 ,
@@ -67513,7 +67590,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -67524,6 +67600,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -68049,7 +68126,6 @@
 , 															{
 																"name" : "_myStyle",
 																"default" : 																{
-																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -68060,6 +68136,7 @@
 																		"autogradient" : 0
 																	}
 ,
+																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 																}
 ,
@@ -68592,7 +68669,6 @@
 , 															{
 																"name" : "_myStyle",
 																"default" : 																{
-																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -68603,6 +68679,7 @@
 																		"autogradient" : 0
 																	}
 ,
+																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 																}
 ,
@@ -69029,7 +69106,6 @@
 , 															{
 																"name" : "_myStyle",
 																"default" : 																{
-																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -69040,6 +69116,7 @@
 																		"autogradient" : 0
 																	}
 ,
+																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 																}
 ,
@@ -69566,7 +69643,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -69577,6 +69653,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -69949,7 +70026,6 @@
 , 															{
 																"name" : "_myStyle",
 																"default" : 																{
-																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -69960,6 +70036,7 @@
 																		"autogradient" : 0
 																	}
 ,
+																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 																}
 ,
@@ -70307,7 +70384,6 @@
 , 															{
 																"name" : "_myStyle",
 																"default" : 																{
-																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -70318,6 +70394,7 @@
 																		"autogradient" : 0
 																	}
 ,
+																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 																}
 ,
@@ -70690,7 +70767,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -70701,6 +70777,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -71992,7 +72069,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -72003,6 +72079,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -72514,7 +72591,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -72525,6 +72601,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -72964,7 +73041,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -72975,6 +73051,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -73806,7 +73883,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -73817,6 +73893,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -74389,7 +74466,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -74400,6 +74476,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -74783,7 +74860,6 @@
 , 															{
 																"name" : "_myStyle",
 																"default" : 																{
-																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -74794,6 +74870,7 @@
 																		"autogradient" : 0
 																	}
 ,
+																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 																}
 ,
@@ -75141,7 +75218,6 @@
 , 															{
 																"name" : "_myStyle",
 																"default" : 																{
-																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -75152,6 +75228,7 @@
 																		"autogradient" : 0
 																	}
 ,
+																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 																}
 ,
@@ -75526,7 +75603,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -75537,6 +75613,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -75976,7 +76053,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -75987,6 +76063,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -76890,7 +76967,6 @@
 , 															{
 																"name" : "_myStyle",
 																"default" : 																{
-																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -76901,6 +76977,7 @@
 																		"autogradient" : 0
 																	}
 ,
+																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 																}
 ,
@@ -77694,7 +77771,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -77705,6 +77781,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -78846,7 +78923,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -78857,6 +78933,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -79970,7 +80047,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -79981,6 +80057,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -82868,7 +82945,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -82879,6 +82955,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -84025,7 +84102,6 @@
 , 											{
 												"name" : "_myStyle",
 												"default" : 												{
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -84036,6 +84112,7 @@
 														"autogradient" : 0
 													}
 ,
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -84795,7 +84872,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -84806,6 +84882,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -85431,7 +85508,6 @@
 , 							{
 								"name" : "_myStyle",
 								"default" : 								{
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -85442,6 +85518,7 @@
 										"autogradient" : 0
 									}
 ,
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
@@ -86441,7 +86518,6 @@
 , 			{
 				"name" : "_myStyle",
 				"default" : 				{
-					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
@@ -86452,6 +86528,7 @@
 						"autogradient" : 0
 					}
 ,
+					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
 					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 				}
 ,
