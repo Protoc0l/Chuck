@@ -54,6 +54,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-36",
+					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -5737,7 +5738,7 @@
 								"box" : 								{
 									"fontsize" : 18.0,
 									"id" : "obj-26",
-									"items" : "<empty>",
+									"items" : [ "Staff", ",", "Alicia", ",", "Alison F", ",", "Alison M", ",", "Betty", ",", "Bonnie", ",", "Caudette", ",", "Chantal", ",", "Corrina", ",", "Dr Clark Hyde", ",", "Dr Cory McClung", ",", "Dr Jodi Sehn", ",", "Dr Michael McClung", ",", "Jean", ",", "Kara", ",", "Karen", ",", "Katelyn", ",", "Kathy", ",", "Katrina", ",", "Keara", ",", "Leanne", ",", "Lindsay", ",", "Lindsey W", ",", "Macey", ",", "Mayda", ",", "Melissa", ",", "Natasha", ",", "Roxanne", ",", "Steph", ",", "Tammy", ",", "Taya" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -7593,7 +7594,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 4.0, 70.0, 447.0, 195.0 ],
 									"rowheight" : 24,
-									"rows" : 3,
+									"rows" : 2,
 									"selmode" : 3,
 									"stcolor" : [ 0.686274509803922, 0.686274509803922, 0.686274509803922, 1.0 ]
 								}
@@ -8302,10 +8303,10 @@
 					"id" : "obj-170",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 801.051224231719971, 2086.0, 50.0, 22.0 ],
-					"text" : "t b s"
+					"numoutlets" : 3,
+					"outlettype" : [ "bang", "", "int" ],
+					"patching_rect" : [ 801.051224231719971, 2086.0, 81.0, 22.0 ],
+					"text" : "t b s 0"
 				}
 
 			}
@@ -9856,7 +9857,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 1.083333666666746, 91.5, 433.166666333333239, 71.5 ],
 					"rowheight" : 22,
-					"rows" : 3,
+					"rows" : 2,
 					"selmode" : 3,
 					"stcolor" : [ 0.686274509803922, 0.686274509803922, 0.686274509803922, 1.0 ]
 				}
@@ -13014,7 +13015,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 1.25, 4.75, 10.0, 10.0 ],
 					"rounded" : 0.0,
-					"text" : "\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"[First Name] [Bogus journey]\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"",
+					"text" : "\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"[First Name] [Bogus journey]\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"",
 					"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"textjustification" : 1,
 					"wordwrap" : 0
@@ -13690,6 +13691,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"color" : [ 0.929411764705882, 0.36078431372549, 0.866666666666667, 1.0 ],
+					"destination" : [ "obj-36", 0 ],
+					"source" : [ "obj-170", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-173", 0 ],
 					"source" : [ "obj-171", 0 ]
 				}
@@ -14350,6 +14359,7 @@
 			}
 , 			{
 				"patchline" : 				{
+					"color" : [ 0.96078431372549, 0.43921568627451, 0.47843137254902, 1.0 ],
 					"destination" : [ "obj-36", 0 ],
 					"midpoints" : [ 1247.551224231719971, 2294.0, 1204.551224231719971, 2294.0 ],
 					"source" : [ "obj-28", 0 ]
@@ -14554,6 +14564,7 @@
 			}
 , 			{
 				"patchline" : 				{
+					"color" : [ 0.929411764705882, 0.36078431372549, 0.866666666666667, 1.0 ],
 					"destination" : [ "obj-36", 0 ],
 					"midpoints" : [ 1279.551224231719971, 2294.0, 1204.551224231719971, 2294.0 ],
 					"source" : [ "obj-39", 0 ]
