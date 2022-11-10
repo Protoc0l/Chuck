@@ -41,6 +41,19 @@
 		"title" : "Patient Hub",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-22",
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 561.0, 1606.0, 100.0, 20.0 ],
+					"text" : "RESET"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-39",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -6373,9 +6386,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 561.0, 1614.0, 73.0, 22.0 ],
-					"text" : "closebang 0"
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 561.0, 1631.0, 22.0, 22.0 ],
+					"text" : "t 0"
 				}
 
 			}
@@ -7212,7 +7225,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
+									"outlettype" : [ "int" ],
 									"patching_rect" : [ 376.0, 167.5, 30.0, 30.0 ]
 								}
 
@@ -7459,7 +7472,7 @@
 								"box" : 								{
 									"fontsize" : 18.0,
 									"id" : "obj-26",
-									"items" : [ "Staff", ",", "Alicia", ",", "Alison F", ",", "Alison M", ",", "Betty", ",", "Bonnie", ",", "Caudette", ",", "Chantal", ",", "Corrina", ",", "Dr Clark Hyde", ",", "Dr Cory McClung", ",", "Dr Jodi Sehn", ",", "Dr Michael McClung", ",", "Jean", ",", "Kara", ",", "Karen", ",", "Katelyn", ",", "Kathy", ",", "Katrina", ",", "Keara", ",", "Leanne", ",", "Lindsay", ",", "Lindsey W", ",", "Macey", ",", "Mayda", ",", "Melissa", ",", "Natasha", ",", "Roxanne", ",", "Steph", ",", "Tammy", ",", "Taya" ],
+									"items" : "<empty>",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -10948,7 +10961,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-124",
-					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -11062,7 +11074,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-100",
-					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -11861,7 +11872,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-238",
-					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -12980,7 +12990,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"openrect" : [ 745.0, 313.0, 430.0, 529.0 ],
+						"openrect" : [ 745.0, 313.0, 430.0, 509.0 ],
 						"bglocked" : 1,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -13016,7 +13026,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 65.0, 519.0, 50.0, 22.0 ],
+									"patching_rect" : [ 25.0, 543.0, 50.0, 22.0 ],
 									"text" : "4"
 								}
 
@@ -13029,7 +13039,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 58.0, 453.0, 24.0, 24.0 ]
+									"patching_rect" : [ 56.0, 490.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -13041,7 +13051,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 95.0, 477.0, 80.0, 22.0 ],
+									"patching_rect" : [ 56.0, 519.0, 80.0, 22.0 ],
 									"text" : "v hub_info_id"
 								}
 
@@ -13112,7 +13122,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 210.0, 374.0, 100.0, 20.0 ],
+									"patching_rect" : [ 210.0, 374.0, 78.0, 20.0 ],
 									"text" : "r",
 									"textoncolor" : [ 0.76078431372549, 0.76078431372549, 0.76078431372549, 1.0 ]
 								}
@@ -14243,10 +14253,10 @@
 									"id" : "obj-132",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "bang", "int" ],
-									"patching_rect" : [ 210.0, 430.0, 30.666666666666629, 22.0 ],
-									"text" : "t b i"
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 210.0, 430.0, 22.0, 22.0 ],
+									"text" : "t b"
 								}
 
 							}
@@ -14296,7 +14306,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "", "" ],
-									"patching_rect" : [ 456.166666666666629, 411.0, 90.0, 22.0 ],
+									"patching_rect" : [ 376.166666666666629, 381.0, 90.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0,
 										"precision" : 6
@@ -15854,6 +15864,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-225", 0 ],
 					"source" : [ "obj-219", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-22", 0 ]
 				}
 
 			}
