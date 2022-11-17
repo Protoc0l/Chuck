@@ -7163,7 +7163,6 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 178.0, 68.0, 274.0, 25.0 ],
 									"rounded" : 0.0,
-									"text" : "11:46",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1,
 									"wordwrap" : 0
@@ -7703,8 +7702,8 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 440.0, 191.0, 60.0, 22.0 ],
-													"text" : "pipe 1100"
+													"patching_rect" : [ 440.0, 191.0, 55.0, 22.0 ],
+													"text" : "pipe 100"
 												}
 
 											}
@@ -7963,13 +7962,13 @@
 													"fontname" : "Arial",
 													"fontsize" : 11.595186999999999,
 													"id" : "obj-160",
-													"linecount" : 3,
+													"linecount" : 2,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 556.0, 237.0, 181.0, 48.0 ],
-													"text" : "window flags noclose, window flags nomenu, window flags nogrow, window exec"
+													"patching_rect" : [ 556.0, 237.0, 356.0, 35.0 ],
+													"text" : "window flags noclose, window flags nomenu, window flags nogrow, window flags title, window exec"
 												}
 
 											}
@@ -8039,8 +8038,8 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 575.5, 194.0, 212.0, 35.0 ],
-													"text" : "window flags close, window flags menu, window flags grow, window exec"
+													"patching_rect" : [ 575.5, 194.0, 359.0, 35.0 ],
+													"text" : "window flags close, window flags menu, window flags grow, window flags title, window exec"
 												}
 
 											}
@@ -9447,6 +9446,14 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-30", 0 ],
+									"order" : 1,
+									"source" : [ "obj-23", 3 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
 									"order" : 1,
 									"source" : [ "obj-23", 2 ]
@@ -9465,14 +9472,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-39", 0 ],
-									"order" : 2,
-									"source" : [ "obj-23", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-51", 0 ],
 									"order" : 1,
 									"source" : [ "obj-23", 1 ]
@@ -9482,6 +9481,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-54", 0 ],
+									"order" : 0,
 									"source" : [ "obj-23", 3 ]
 								}
 
@@ -14895,7 +14895,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 1.25, 4.75, 495.0, 15.0 ],
 					"rounded" : 0.0,
-					"text" : "\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"[First Name] [Bogus journey]\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"",
+					"text" : "\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"[First Name] [Bogus journey]\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"",
 					"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"textjustification" : 1,
 					"wordwrap" : 0
