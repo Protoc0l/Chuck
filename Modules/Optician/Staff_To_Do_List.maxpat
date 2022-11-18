@@ -31724,7 +31724,7 @@
 									"patching_rect" : [ 890.5, 585.0, 168.0, 69.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 1.0, 356.0, 824.0, 27.0 ],
-									"text" : "Details (double click item above to see more details):",
+									"text" : "Details (click on any item above to see more details):",
 									"textjustification" : 1
 								}
 
