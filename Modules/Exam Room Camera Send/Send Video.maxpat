@@ -41,6 +41,35 @@
 		"title" : "Send Camera Footage",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-73",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 361.0, 683.0, 104.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0,
+						"precision" : 6
+					}
+,
+					"text" : "coll ---camera_loc"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-64",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 361.0, 659.0, 93.0, 22.0 ],
+					"text" : "prepend store 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-34",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -294,7 +323,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 77.0, 269.0, 271.0, 22.0 ],
+					"patching_rect" : [ 64.0, 263.0, 271.0, 22.0 ],
 					"text" : "read c:/ProgramData/Chuck/Settings/Camera.coll"
 				}
 
@@ -304,10 +333,10 @@
 					"id" : "obj-104",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 227.5, 613.5, 22.0, 22.0 ],
-					"text" : "t b"
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 227.5, 613.5, 29.5, 22.0 ],
+					"text" : "t b l"
 				}
 
 			}
@@ -426,8 +455,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 51.0, 295.0, 55.0, 22.0 ],
-					"text" : "pipe 250"
+					"patching_rect" : [ 51.0, 295.0, 61.0, 22.0 ],
+					"text" : "pipe 2000"
 				}
 
 			}
@@ -480,10 +509,10 @@
 					"id" : "obj-70",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 51.0, 227.0, 70.0, 22.0 ],
-					"text" : "loadmess 0"
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "bang" ],
+					"patching_rect" : [ 51.0, 227.0, 32.0, 22.0 ],
+					"text" : "t 0 b"
 				}
 
 			}
@@ -535,7 +564,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 107.0, 1264.0, 479.0 ],
+						"rect" : [ 344.0, 492.0, 1264.0, 479.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3248,6 +3277,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-64", 0 ],
+					"source" : [ "obj-104", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-48", 0 ],
 					"source" : [ "obj-106", 0 ]
 				}
@@ -3771,6 +3807,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-73", 0 ],
+					"source" : [ "obj-64", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-65", 0 ]
 				}
@@ -3817,15 +3860,13 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-106", 0 ],
-					"order" : 0,
-					"source" : [ "obj-70", 0 ]
+					"source" : [ "obj-70", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-81", 0 ],
-					"order" : 1,
 					"source" : [ "obj-70", 0 ]
 				}
 
