@@ -46,8 +46,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 362.5, 635.0, 61.0, 22.0 ],
-					"text" : "delay 1"
+					"patching_rect" : [ 362.5, 635.0, 47.0, 22.0 ],
+					"text" : "delay 5"
 				}
 
 			}
@@ -3051,7 +3051,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 118.0, 40.813554048538208, 121.0, 22.0 ],
+					"patching_rect" : [ 118.0, 39.813554048538208, 121.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
