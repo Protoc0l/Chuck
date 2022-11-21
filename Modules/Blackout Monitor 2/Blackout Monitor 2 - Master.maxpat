@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 10,
+			"minor" : 2,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -39,6 +39,67 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-43",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 570.0, 69.5, 215.0, 20.0 ],
+					"text" : "Make sure not blocking other modules"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-40",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 506.000000000000114, 93.5, 174.0, 22.0 ],
+					"text" : "script hide \"Blackout Monitor 2\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.0, 0.996078431372549, 0.0, 1.0 ],
+					"id" : "obj-55",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 505.500000000000227, 119.0, 223.0, 22.0 ],
+					"text" : "s ---2020_master_program_this_patcher"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-36",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 506.000000000000114, 69.5, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 0.23921568627451, 0.23921568627451, 0.23921568627451, 0.14 ],
+					"id" : "obj-52",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 497.0, 63.0, 303.0, 83.5 ],
+					"proportion" : 0.5
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "newobj",
@@ -127,8 +188,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 10,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -174,8 +235,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 10,
+											"minor" : 2,
+											"revision" : 1,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -351,8 +412,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 10,
+															"minor" : 2,
+															"revision" : 1,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -546,8 +607,8 @@
 																		"autogradient" : 0
 																	}
 ,
-																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
+																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -574,8 +635,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-																	"fontsize" : [ 12.059008 ]
+																	"fontsize" : [ 12.059008 ],
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -657,8 +718,8 @@
 , 															{
 																"name" : "texteditGold",
 																"default" : 																{
-																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -1170,8 +1231,8 @@
 														"autogradient" : 0
 													}
 ,
-													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
+													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -1198,8 +1259,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-													"fontsize" : [ 12.059008 ]
+													"fontsize" : [ 12.059008 ],
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -1281,8 +1342,8 @@
 , 											{
 												"name" : "texteditGold",
 												"default" : 												{
-													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -1699,8 +1760,8 @@
 										"autogradient" : 0
 									}
 ,
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
+									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1727,8 +1788,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1810,8 +1871,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1965,6 +2026,21 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-40", 0 ],
+					"source" : [ "obj-36", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-55", 0 ],
+					"midpoints" : [ 515.500000000000114, 112.5, 515.000000000000227, 112.5 ],
+					"source" : [ "obj-40", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-6", 0 ]
 				}
@@ -2032,8 +2108,8 @@
 						"autogradient" : 0
 					}
 ,
-					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ]
+					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2049,6 +2125,15 @@
 				"multi" : 0
 			}
 , 			{
+				"name" : "newobjBrown-1",
+				"default" : 				{
+					"accentcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
 				"name" : "newobjGreen-1",
 				"default" : 				{
 					"accentcolor" : [ 0.0, 0.533333, 0.168627, 1.0 ]
@@ -2058,10 +2143,37 @@
 				"multi" : 0
 			}
 , 			{
+				"name" : "newobjRed-1",
+				"default" : 				{
+					"accentcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "numberB-1",
+				"default" : 				{
+					"accentcolor" : [ 0.011765, 0.396078, 0.752941, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "numberG-1",
+				"default" : 				{
+					"accentcolor" : [ 0.0, 0.533333, 0.168627, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2071,6 +2183,15 @@
 				"name" : "numberGold-1",
 				"default" : 				{
 					"accentcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "numberR-1",
+				"default" : 				{
+					"accentcolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2143,8 +2264,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
