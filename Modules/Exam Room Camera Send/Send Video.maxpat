@@ -41,6 +41,30 @@
 		"title" : "Send Camera Footage",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-76",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 361.0, 634.5, 71.0, 22.0 ],
+					"text" : "fromsymbol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-74",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 361.0, 603.0, 77.0, 22.0 ],
+					"text" : "route symbol"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-73",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -2455,7 +2479,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 645.0, 749.0, 266.0, 36.0 ],
-					"text" : "\"S:/SLE CLIPBOARD/Clinic Monitors/4th Security.jpg\""
+					"text" : "\"S:/SLE CLIPBOARD/Clinic Monitors/3rd Security.jpg\""
 				}
 
 			}
@@ -3277,13 +3301,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-64", 0 ],
-					"source" : [ "obj-104", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-48", 0 ],
 					"source" : [ "obj-106", 0 ]
 				}
@@ -3887,6 +3904,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-76", 0 ],
+					"source" : [ "obj-74", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-76", 0 ],
+					"source" : [ "obj-74", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-21", 1 ],
 					"source" : [ "obj-75", 3 ]
 				}
@@ -3903,6 +3934,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-98", 0 ],
 					"source" : [ "obj-75", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-64", 0 ],
+					"source" : [ "obj-76", 0 ]
 				}
 
 			}
@@ -3969,6 +4007,13 @@
 					"destination" : [ "obj-95", 0 ],
 					"midpoints" : [ 641.0, 389.75, 411.5, 389.75 ],
 					"source" : [ "obj-9", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-74", 0 ],
+					"source" : [ "obj-90", 1 ]
 				}
 
 			}
@@ -4065,13 +4110,6 @@
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
 				"patcherrelativepath" : "../Taskbar/Maxpat",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Camera.coll",
-				"bootpath" : "C:/ProgramData/Chuck/Settings",
-				"patcherrelativepath" : "../../../Settings",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
