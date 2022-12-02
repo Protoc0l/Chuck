@@ -9623,7 +9623,6 @@
 								"box" : 								{
 									"bgcolor" : [ 0.0, 0.0, 0.0, 0.76 ],
 									"fontsize" : 14.0,
-									"hidden" : 1,
 									"id" : "obj-20",
 									"maxclass" : "textbutton",
 									"mode" : 1,
@@ -12854,8 +12853,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 202.0, 21.0, 100.0, 22.0 ],
-									"text" : "loadmess 0"
+									"patching_rect" : [ 202.0, 21.0, 70.0, 22.0 ],
+									"text" : "loadmess 1"
 								}
 
 							}
@@ -26097,6 +26096,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-210",
+					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -26610,6 +26610,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-173",
+					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -45017,13 +45018,23 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-8",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 428.0, 467.0, 103.0, 22.0 ],
+									"text" : "print sounds_msg"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-14",
 									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 391.5, 634.0, 85.0, 34.0 ],
-									"presentation_linecount" : 2,
 									"text" : "trigger urgent\nsound on PC"
 								}
 
@@ -46102,7 +46113,7 @@
 								"patchline" : 								{
 									"destination" : [ "obj-1", 0 ],
 									"midpoints" : [ 233.0, 476.0, 82.0, 476.0 ],
-									"order" : 1,
+									"order" : 2,
 									"source" : [ "obj-35", 0 ]
 								}
 
@@ -46110,6 +46121,14 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-189", 0 ],
+									"order" : 1,
+									"source" : [ "obj-35", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-8", 0 ],
 									"order" : 0,
 									"source" : [ "obj-35", 0 ]
 								}
