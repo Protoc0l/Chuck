@@ -186,6 +186,18 @@
 						"title" : "Camera Viewer",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-32",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1254.0, 277.0, 71.0, 22.0 ],
+									"text" : "fromsymbol"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-25",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -215,7 +227,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1163.5, 284.0, 59.0, 22.0 ],
+									"patching_rect" : [ 1254.0, 250.0, 59.0, 22.0 ],
 									"text" : "r Camera"
 								}
 
@@ -4182,7 +4194,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-14", 0 ],
+									"destination" : [ "obj-32", 0 ],
 									"source" : [ "obj-16", 0 ]
 								}
 
@@ -4355,6 +4367,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
 									"source" : [ "obj-31", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-14", 0 ],
+									"source" : [ "obj-32", 0 ]
 								}
 
 							}
