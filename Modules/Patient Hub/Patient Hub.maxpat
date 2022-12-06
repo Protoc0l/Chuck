@@ -70,7 +70,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 679.51957780122757, 221.399996340274811, 117.0, 75.0 ],
+					"patching_rect" : [ 679.51957780122757, 221.399996340274811, 120.0, 75.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 438.25, 171.375, 170.0, 52.0 ],
@@ -153,7 +153,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 26.0, 8.0, 30.0, 30.0 ]
 								}
 
@@ -165,7 +165,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 26.0, 203.0, 54.0, 22.0 ],
+									"patching_rect" : [ 26.0, 63.0, 54.0, 22.0 ],
 									"text" : "delay 50"
 								}
 
@@ -176,7 +176,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 26.0, 266.0, 93.0, 22.0 ],
+									"patching_rect" : [ 26.0, 126.0, 93.0, 22.0 ],
 									"text" : "s OpenProgram"
 								}
 
@@ -188,7 +188,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 26.0, 236.0, 154.0, 22.0 ],
+									"patching_rect" : [ 26.0, 96.0, 154.0, 22.0 ],
 									"text" : "[x] [Confirm Patient Details]"
 								}
 
@@ -403,8 +403,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 								}
 ,
 								"parentstyle" : "",
@@ -413,7 +413,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 316.0, 1926.0, 93.0, 22.0 ],
+					"patching_rect" : [ 336.0, 1979.0, 93.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1403,7 +1403,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 592.5, 1942.0, 110.75, 22.0 ],
+					"patching_rect" : [ 625.25, 1946.0, 110.75, 22.0 ],
 					"text" : "t b l"
 				}
 
@@ -1415,7 +1415,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 592.5, 1918.0, 86.0, 22.0 ],
+					"patching_rect" : [ 625.25, 1922.0, 86.0, 22.0 ],
 					"text" : "r PH_MODIFY"
 				}
 
@@ -2861,8 +2861,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3450,7 +3450,6 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 248.0, 934.5, 238.0, 23.0 ],
-													"presentation_linecount" : 2,
 													"text" : "font Arial 30, moveto 258 1673, write $1"
 												}
 
@@ -7419,8 +7418,8 @@
 , 											{
 												"name" : "texteditGold",
 												"default" : 												{
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 												}
 ,
 												"parentstyle" : "",
@@ -8432,8 +8431,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 								}
 ,
 								"parentstyle" : "",
@@ -10553,8 +10552,8 @@
 , 											{
 												"name" : "texteditGold",
 												"default" : 												{
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 												}
 ,
 												"parentstyle" : "",
@@ -12203,8 +12202,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 								}
 ,
 								"parentstyle" : "",
@@ -12213,7 +12212,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 416.25, 1989.5, 287.0, 43.0 ],
+					"patching_rect" : [ 449.0, 1989.5, 287.0, 43.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -12232,7 +12231,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 416.25, 1966.0, 51.0, 22.0 ],
+					"patching_rect" : [ 449.0, 1966.0, 51.0, 22.0 ],
 					"text" : "pcontrol"
 				}
 
@@ -12242,10 +12241,10 @@
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "open" ],
-					"patching_rect" : [ 416.25, 1942.0, 51.0, 22.0 ],
-					"text" : "t open"
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "open" ],
+					"patching_rect" : [ 416.25, 1942.0, 52.0, 22.0 ],
+					"text" : "t b open"
 				}
 
 			}
@@ -13668,8 +13667,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 								}
 ,
 								"parentstyle" : "",
@@ -16188,8 +16187,8 @@
 , 											{
 												"name" : "texteditGold",
 												"default" : 												{
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 												}
 ,
 												"parentstyle" : "",
@@ -16902,8 +16901,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 								}
 ,
 								"parentstyle" : "",
@@ -17100,7 +17099,7 @@
 				"patchline" : 				{
 					"color" : [ 0.27843137254902, 0.92156862745098, 0.63921568627451, 1.0 ],
 					"destination" : [ "obj-211", 0 ],
-					"midpoints" : [ 425.75, 2034.0, 381.0, 2034.0, 381.0, 2034.0, 30.0, 2034.0, 30.0, 957.0, 30.0, 957.0, 30.0, 369.0, 84.26957780122757, 369.0 ],
+					"midpoints" : [ 458.5, 2034.0, 381.0, 2034.0, 381.0, 2034.0, 30.0, 2034.0, 30.0, 957.0, 30.0, 957.0, 30.0, 369.0, 84.26957780122757, 369.0 ],
 					"source" : [ "obj-11", 0 ]
 				}
 
@@ -17858,8 +17857,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
+					"destination" : [ "obj-25", 0 ],
+					"midpoints" : [ 425.75, 1971.0, 345.5, 1971.0 ],
 					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-2", 1 ]
 				}
 
 			}
@@ -17916,7 +17923,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"midpoints" : [ 602.0, 1965.0, 579.0, 1965.0, 579.0, 1938.0, 487.0, 1938.0, 487.0, 1938.0, 425.75, 1938.0 ],
+					"midpoints" : [ 634.75, 1965.0, 579.0, 1965.0, 579.0, 1938.0, 487.0, 1938.0, 487.0, 1938.0, 425.75, 1938.0 ],
 					"source" : [ "obj-21", 0 ]
 				}
 
@@ -19281,8 +19288,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
 				}
 ,
 				"parentstyle" : "",
