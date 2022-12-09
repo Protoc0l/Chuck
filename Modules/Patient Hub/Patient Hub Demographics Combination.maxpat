@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 597.0, 185.0, 1281.0, 539.0 ],
+		"rect" : [ 597.0, 185.0, 661.0, 539.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,73 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"comment" : "OUTPUT: application to pull information from. Variable \"demographics_info_id\" tables 'coll hub_rev_demo' (name, id) & 'coll hub_demo' (id, name_)",
+					"id" : "obj-2",
+					"index" : 0,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 275.0, 472.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"id" : "obj-101",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 312.5, 456.5872802734375, 135.0, 22.0 ],
+					"text" : "v demographics_info_id"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-96",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 174.5, 430.5872802734375, 157.0, 22.0 ],
+					"text" : "route DEMOGRAPHICS_ID"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-87",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 174.5, 404.5872802734375, 110.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0,
+						"precision" : 6
+					}
+,
+					"text" : "coll hub_rev_demo"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-11",
+					"index" : 0,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 302.0, 327.5872802734375, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-10",
 					"maxclass" : "newobj",
@@ -78,12 +145,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-14",
-					"maxclass" : "newobj",
+					"maxclass" : "textbutton",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 37.0, 278.0, 63.0, 22.0 ],
-					"text" : "closebang"
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 37.0, 278.0, 68.0, 21.5872802734375 ],
+					"text" : "CLEAR"
 				}
 
 			}
@@ -161,18 +229,6 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "OUTPUT: application to pull information from. Variable \"demographics_info_id\" tables 'coll hub_rev_demo' (name, id) & 'coll hub_demo' (id, name_)",
-					"id" : "obj-2",
-					"index" : 0,
-					"maxclass" : "outlet",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 271.5, 484.0, 30.0, 30.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-108",
@@ -180,8 +236,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 239.0, 379.5872802734375, 177.0, 23.0 ],
-					"text" : "clearchecks, checkitem $1 1"
+					"patching_rect" : [ 239.0, 379.5872802734375, 100.0, 23.0 ],
+					"text" : "checkitem $1 -1"
 				}
 
 			}
@@ -269,19 +325,6 @@
 			}
 , 			{
 				"box" : 				{
-					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
-					"id" : "obj-101",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 312.5, 456.5872802734375, 135.0, 22.0 ],
-					"text" : "v demographics_info_id"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-99",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -289,18 +332,6 @@
 					"outlettype" : [ "", "bang", "bang" ],
 					"patching_rect" : [ 510.0, 331.5872802734375, 270.0, 22.0 ],
 					"text" : "dialog @mode 2 @label Delete information type?"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-96",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 174.5, 430.5872802734375, 157.0, 22.0 ],
-					"text" : "route DEMOGRAPHICS_ID"
 				}
 
 			}
@@ -349,23 +380,6 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 22.0, 245.5872802734375, 110.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"embed" : 0,
-						"precision" : 6
-					}
-,
-					"text" : "coll hub_rev_demo"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-87",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 174.5, 404.5872802734375, 110.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"precision" : 6
@@ -513,7 +527,7 @@
 					"bgfillcolor_proportion" : 0.5,
 					"bgfillcolor_type" : "color",
 					"id" : "obj-67",
-					"items" : [ "First Name", ",", "Last Name", ",", "PHC", ",", "Date of Birth", ",", "Email", ",", "Glasses Rx - OD Sph", ",", "Combined Parameters" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -712,6 +726,13 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-67", 0 ],
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-67", 0 ],
 					"midpoints" : [ 279.5, 372.0, 231.0, 372.0, 231.0, 372.0, 143.5, 372.0 ],
 					"source" : [ "obj-13", 0 ]
 				}
@@ -856,7 +877,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"order" : 0,
+					"source" : [ "obj-67", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-87", 0 ],
+					"order" : 1,
 					"source" : [ "obj-67", 1 ]
 				}
 
@@ -1029,15 +1059,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-101", 0 ],
-					"order" : 0,
-					"source" : [ "obj-96", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"order" : 1,
 					"source" : [ "obj-96", 1 ]
 				}
 
