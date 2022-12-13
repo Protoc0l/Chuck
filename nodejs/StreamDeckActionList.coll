@@ -4,7 +4,7 @@ Image, 'ButtonID' 'name of pic located inside images folder or full path of pict
 Macrov2, 'command' 'msg';
 MessageMonitor, 'Message' -> sends a message directly to the computer monitor on screen for 1500ms;
 OpenProgram, 'full path of program/exe' -> limited though does not require python;
-"Patient Hub Pull-Push", 'name of preset' 'push/pull' -> pulls info or pushes info;
+PatientHub-PullPush, 'name of preset' 'push/pull' -> pulls info or pushes info;
 Pause, 'integer' -> integer is in milliseconds - aka if you want delay of 1 second put 1000 into box;
 Screenshot, 'x1' 'y1' 'x2' 'y2' 'save_path';
 ScreenToText, 'x1' 'y1' 'x2' 'y2' 'variable name' to store contents of OCR image capture;
