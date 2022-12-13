@@ -41,6 +41,30 @@
 		"title" : "Client Hub",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-184",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 1248.5, 327.5, 22.0, 22.0 ],
+					"text" : "t 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-183",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1248.5, 304.0, 107.0, 22.0 ],
+					"text" : "r Open_PH_Editor"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"color" : [ 1.0, 0.031372549019608, 0.031372549019608, 1.0 ],
 					"id" : "obj-166",
 					"maxclass" : "newobj",
@@ -98,7 +122,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ -1077.0, 245.0, 640.0, 480.0 ],
+						"rect" : [ -1077.0, 245.0, 722.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -126,8 +150,19 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 103.0, 9.0, 127.0, 22.0 ],
+									"text" : "r PatientHub-PullPush"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-19",
 									"maxclass" : "newobj",
@@ -243,7 +278,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 428.0, 76.0, 184.0, 22.0 ],
+									"patching_rect" : [ 520.0, 31.0, 184.0, 22.0 ],
 									"text" : "\"[Exam - Visionary Clinic] [Push]\""
 								}
 
@@ -314,7 +349,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 176.0, 9.0, 150.0, 48.0 ],
+									"patching_rect" : [ 239.0, 9.0, 78.0, 48.0 ],
 									"text" : "2 arguments\n1) Preset\n2) Push/Pull"
 								}
 
@@ -477,8 +512,17 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-15", 0 ],
+									"destination" : [ "obj-1", 0 ],
+									"midpoints" : [ 529.5, 54.0, 426.0, 54.0, 426.0, 54.0, 351.5, 54.0 ],
 									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-15", 0 ],
+									"midpoints" : [ 112.5, 33.0, 23.82130535443622, 33.0 ],
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -3216,7 +3260,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 571.833333333333371, 627.722924113273621, 167.0, 50.0 ],
-					"text" : ";\r\nPH_Buttons Button_2_Push Test"
+					"text" : ";\r\nPH_Buttons Button_3_Push \"Exam - Forum\""
 				}
 
 			}
@@ -11061,6 +11105,55 @@
 						"title" : "Confirm Client Details",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-56",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 8.0, 264.0, 67.0, 22.0 ],
+									"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
+									"text" : "thispatcher"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-198",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "wclose" ],
+									"patching_rect" : [ 8.0, 240.0, 52.0, 22.0 ],
+									"text" : "t wclose"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-191",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 8.0, 217.0, 53.0, 22.0 ],
+									"text" : "route 27"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-183",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 4,
+									"outlettype" : [ "int", "int", "int", "int" ],
+									"patching_rect" : [ 8.0, 190.0, 50.5, 22.0 ],
+									"text" : "key"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-79",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -12123,7 +12216,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 8.0, 199.0, 30.0, 30.0 ]
+									"patching_rect" : [ 8.0, 123.0, 52.0, 52.0 ]
 								}
 
 							}
@@ -14207,6 +14300,27 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-191", 0 ],
+									"source" : [ "obj-183", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-198", 0 ],
+									"source" : [ "obj-191", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-56", 0 ],
+									"source" : [ "obj-198", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-21", 0 ],
 									"source" : [ "obj-20", 0 ]
 								}
@@ -14250,6 +14364,7 @@
 							}
 , 							{
 								"patchline" : 								{
+									"color" : [ 0.945098039215686, 0.913725490196078, 0.407843137254902, 1.0 ],
 									"destination" : [ "obj-30", 0 ],
 									"order" : 1,
 									"source" : [ "obj-23", 3 ]
@@ -15911,7 +16026,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-100",
-					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -20600,6 +20714,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-177", 0 ],
 					"source" : [ "obj-182", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-184", 0 ],
+					"source" : [ "obj-183", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-42", 0 ],
+					"source" : [ "obj-184", 0 ]
 				}
 
 			}
