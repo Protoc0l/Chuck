@@ -222,6 +222,8 @@ c:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat/Discord_Integration.maxpat, Fil
 c:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat/Background_Query.maxpat, File;
 c:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat/MySQL_Background.maxpat, File;
 c:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat/MySQL_User.maxpat, File;
+"c:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat/Select Box Coords.maxpat", File;
+"c:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat/Select XY Coords.maxpat", File;
 "c:/ProgramData/Chuck/main/Modules/OCR Image-to-Text/OCR Image-to-Text - Master.maxpat", File;
 "c:/ProgramData/Chuck/main/Modules/OCR Image-to-Text/OCR Image-to-Text Main.maxpat", File;
 "c:/ProgramData/Chuck/main/Modules/OCR Image-to-Text/CrystalToVisionary-Patient.maxpat", File;
