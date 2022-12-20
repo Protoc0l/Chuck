@@ -1643,7 +1643,7 @@
 													"maxclass" : "button",
 													"numinlets" : 1,
 													"numoutlets" : 1,
-													"outlettype" : [ "" ],
+													"outlettype" : [ "bang" ],
 													"parameter_enable" : 0,
 													"patching_rect" : [ 104.0, 51.0, 24.0, 24.0 ]
 												}
@@ -1942,7 +1942,7 @@
 									"maxclass" : "button",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 80.0, 226.0, 24.0, 24.0 ]
 								}
@@ -4520,7 +4520,7 @@
 					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 819.5, 200.0, 24.0, 24.0 ]
 				}
@@ -4532,7 +4532,7 @@
 					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 672.5, 200.0, 24.0, 24.0 ]
 				}
@@ -4739,7 +4739,7 @@
 					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1120.0, 62.0, 24.0, 24.0 ]
 				}
@@ -5914,7 +5914,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 1454.0, 274.5, 192.0, 34.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 789.5, 720.5, 194.0, 34.0 ],
+									"presentation_rect" : [ 777.5, 444.5, 194.0, 34.0 ],
 									"text" : "Launch Modules:",
 									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
 								}
@@ -5930,7 +5930,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 1363.0, -4.0, 319.0, 117.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 728.5, 584.0, 431.0, 62.0 ],
+									"presentation_rect" : [ 731.5, 309.0, 431.0, 62.0 ],
 									"text" : "Advanced Settings:",
 									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
 								}
@@ -5953,7 +5953,7 @@
 									"offset" : [ 0.0, 0.0 ],
 									"patching_rect" : [ 1375.0, 339.0, 286.0, 56.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 1005.5, 720.5, 286.0, 56.0 ],
+									"presentation_rect" : [ 993.5, 444.5, 286.0, 56.0 ],
 									"viewvisibility" : 1
 								}
 
@@ -6019,7 +6019,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 1367.0, 98.0, 237.0, 39.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 789.5, 667.0, 215.0, 39.0 ],
+									"presentation_rect" : [ 777.5, 391.0, 215.0, 39.0 ],
 									"rounded" : 2.0,
 									"text" : "Setup Monitors",
 									"textoncolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
@@ -6051,17 +6051,17 @@
 							}
 , 							{
 								"box" : 								{
-									"fontsize" : 36.0,
+									"fontsize" : 20.0,
 									"id" : "obj-50",
 									"linecount" : 7,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 101.0, 650.0, 773.0, 296.0 ],
+									"patching_rect" : [ 101.0, 650.0, 424.0, 167.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 6,
-									"presentation_rect" : [ 724.5, 141.0, 847.0, 255.0 ],
-									"text" : "2022/12/21 Minor Bugfix & Feature Update:\n\n1) Updating backend Max Msp 8.5.2 now working.\n\n2) Fixed patient hub a TON and macros and stream deck editor v2",
+									"presentation_linecount" : 5,
+									"presentation_rect" : [ 724.5, 141.0, 625.0, 121.0 ],
+									"text" : "2022/12/21 Minor Bugfix & Feature Update:\n\n1) Updating backend Max Msp 8.5.2 now working.\n2) User Menu Asthetics :)\n3) Fixed patient hub a TON and macros and stream deck editor v2",
 									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
 								}
 
@@ -6075,7 +6075,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 578.0, 5.0, 643.0, 89.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 40.0, 29.0, 1441.0, 89.0 ],
+									"presentation_rect" : [ 40.0, 29.0, 1309.5, 89.0 ],
 									"text" : "Welcome to Chuck:",
 									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
 									"textjustification" : 1
@@ -6986,8 +6986,8 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 237.0, 191.0, 158.0, 22.0 ],
-													"text" : "title \"User & Role Selection\""
+													"patching_rect" : [ 237.0, 191.0, 191.0, 22.0 ],
+													"text" : "title \"Chuck: User & Role Selection\""
 												}
 
 											}
@@ -7865,7 +7865,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 1347.5, -4.0, 350.0, 408.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 724.5, 585.0, 628.0, 221.0 ]
+									"presentation_rect" : [ 720.5, 297.0, 629.0, 234.0 ]
 								}
 
 							}
@@ -9111,7 +9111,7 @@
 									"maxclass" : "button",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 40.0, 48.0, 24.0, 24.0 ]
 								}
@@ -10854,7 +10854,7 @@
 													"maxclass" : "button",
 													"numinlets" : 1,
 													"numoutlets" : 1,
-													"outlettype" : [ "" ],
+													"outlettype" : [ "bang" ],
 													"parameter_enable" : 0,
 													"patching_rect" : [ 104.0, 51.0, 24.0, 24.0 ]
 												}
@@ -11153,7 +11153,7 @@
 									"maxclass" : "button",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 80.0, 226.0, 24.0, 24.0 ]
 								}
@@ -14342,7 +14342,7 @@
 									"maxclass" : "button",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 119.0, 38.0, 24.0, 24.0 ]
 								}
@@ -14806,7 +14806,7 @@
 									"maxclass" : "button",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 105.0, 13.0, 24.0, 24.0 ]
 								}
@@ -16683,7 +16683,7 @@
 									"maxclass" : "button",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 187.0, 83.0, 24.0, 24.0 ]
 								}
