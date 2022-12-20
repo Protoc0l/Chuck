@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 1,
+			"minor" : 5,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -119,7 +119,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 14.0, 106.0, 123.0, 64.0 ],
+					"patching_rect" : [ 14.0, 135.0, 123.0, 64.0 ],
 					"text" : "read C:/ProgramData/Chuck/Settings/Monitors.coll"
 				}
 
@@ -188,14 +188,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 1,
+							"minor" : 5,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ -225.0, 489.0, 1920.0, 1080.0 ],
+						"rect" : [ -217.0, 140.0, 1920.0, 1080.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -226,6 +226,30 @@
 						"title" : "Blackout Monitor",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-8",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 233.0, 66.0, 24.0, 24.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 207.0, 236.0, 22.0, 22.0 ],
+									"text" : "t b"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-9",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -235,8 +259,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 1,
+											"minor" : 5,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -271,6 +295,20 @@
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
+												"box" : 												{
+													"fontname" : "Arial",
+													"fontsize" : 11.595186999999999,
+													"id" : "obj-2",
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 237.0, 373.0, 109.0, 22.0 ],
+													"text" : "window flags notitle"
+												}
+
+											}
+, 											{
 												"box" : 												{
 													"id" : "obj-1",
 													"maxclass" : "newobj",
@@ -307,7 +345,7 @@
 													"numoutlets" : 3,
 													"outlettype" : [ "", "", "int" ],
 													"parameter_enable" : 0,
-													"patching_rect" : [ 26.5, 24.0, 47.5, 18.201171875 ],
+													"patching_rect" : [ 27.5, 44.0, 47.5, 18.201171875 ],
 													"presentation" : 1,
 													"presentation_rect" : [ 171.5, 16.0, 47.5, 18.201171875 ],
 													"text" : "Window",
@@ -324,8 +362,8 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 81.5, 25.201171875, 70.0, 22.0 ],
-													"text" : "loadmess 0"
+													"patching_rect" : [ 27.5, 20.0, 70.0, 22.0 ],
+													"text" : "loadmess 1"
 												}
 
 											}
@@ -346,10 +384,10 @@
 													"id" : "obj-89",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
-													"numoutlets" : 4,
-													"outlettype" : [ "int", "bang", "bang", "int" ],
-													"patching_rect" : [ 26.5, 47.1005859375, 50.5, 22.0 ],
-													"text" : "t 2 b b i"
+													"numoutlets" : 5,
+													"outlettype" : [ "int", "bang", "bang", "int", "bang" ],
+													"patching_rect" : [ 27.5, 67.1005859375, 61.0, 22.0 ],
+													"text" : "t 2 b b i b"
 												}
 
 											}
@@ -412,8 +450,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 1,
+															"minor" : 5,
+															"revision" : 2,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -580,13 +618,13 @@
 																"name" : "AudioStatus_Menu",
 																"default" : 																{
 																	"bgfillcolor" : 																	{
-																		"type" : "color",
+																		"angle" : 270.0,
+																		"autogradient" : 0,
 																		"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 																		"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
 																		"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																		"angle" : 270.0,
 																		"proportion" : 0.39,
-																		"autogradient" : 0
+																		"type" : "color"
 																	}
 
 																}
@@ -598,13 +636,13 @@
 																"name" : "_myStyle",
 																"default" : 																{
 																	"bgfillcolor" : 																	{
-																		"type" : "color",
+																		"angle" : 270.0,
+																		"autogradient" : 0,
 																		"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
 																		"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 																		"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																		"angle" : 270.0,
 																		"proportion" : 0.39,
-																		"autogradient" : 0
+																		"type" : "color"
 																	}
 ,
 																	"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
@@ -635,8 +673,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"fontsize" : [ 12.059008 ],
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+																	"fontsize" : [ 12.059008 ]
 																}
 ,
 																"parentstyle" : "",
@@ -655,13 +693,13 @@
 																"name" : "panelGold-1",
 																"default" : 																{
 																	"bgfillcolor" : 																	{
-																		"type" : "color",
+																		"angle" : 270.0,
+																		"autogradient" : 0,
 																		"color" : [ 0.764706, 0.592157, 0.101961, 0.25 ],
 																		"color1" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
 																		"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																		"angle" : 270.0,
 																		"proportion" : 0.39,
-																		"autogradient" : 0
+																		"type" : "color"
 																	}
 
 																}
@@ -673,13 +711,13 @@
 																"name" : "s_161006_G!",
 																"message" : 																{
 																	"bgfillcolor" : 																	{
-																		"type" : "color",
+																		"angle" : 270.0,
+																		"autogradient" : 0,
 																		"color" : [ 0.32549, 0.345098, 0.372549, 0.79 ],
 																		"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 																		"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																		"angle" : 270.0,
 																		"proportion" : 0.39,
-																		"autogradient" : 0
+																		"type" : "color"
 																	}
 
 																}
@@ -700,13 +738,13 @@
 																"name" : "simple-2",
 																"default" : 																{
 																	"bgfillcolor" : 																	{
-																		"type" : "color",
+																		"angle" : 270.0,
+																		"autogradient" : 0,
 																		"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
 																		"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 																		"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																		"angle" : 270.0,
 																		"proportion" : 0.39,
-																		"autogradient" : 0
+																		"type" : "color"
 																	}
 ,
 																	"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
@@ -1009,7 +1047,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-154", 0 ],
-													"order" : 6,
+													"order" : 7,
 													"source" : [ "obj-155", 0 ]
 												}
 
@@ -1017,22 +1055,6 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-156", 0 ],
-													"order" : 0,
-													"source" : [ "obj-155", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
-													"destination" : [ "obj-157", 0 ],
-													"order" : 4,
-													"source" : [ "obj-155", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
-													"destination" : [ "obj-158", 0 ],
 													"order" : 1,
 													"source" : [ "obj-155", 0 ]
 												}
@@ -1040,7 +1062,15 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-161", 0 ],
+													"destination" : [ "obj-157", 0 ],
+													"order" : 5,
+													"source" : [ "obj-155", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-158", 0 ],
 													"order" : 2,
 													"source" : [ "obj-155", 0 ]
 												}
@@ -1048,7 +1078,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-162", 0 ],
+													"destination" : [ "obj-161", 0 ],
 													"order" : 3,
 													"source" : [ "obj-155", 0 ]
 												}
@@ -1056,8 +1086,16 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-162", 0 ],
+													"order" : 4,
+													"source" : [ "obj-155", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-163", 0 ],
-													"order" : 5,
+													"order" : 6,
 													"source" : [ "obj-155", 0 ]
 												}
 
@@ -1066,7 +1104,15 @@
 												"patchline" : 												{
 													"destination" : [ "obj-164", 0 ],
 													"midpoints" : [ 246.5, 186.0, 154.5, 186.0 ],
-													"order" : 7,
+													"order" : 8,
+													"source" : [ "obj-155", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-2", 0 ],
+													"order" : 0,
 													"source" : [ "obj-155", 0 ]
 												}
 
@@ -1136,6 +1182,13 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-169", 0 ],
+													"source" : [ "obj-2", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-1", 0 ],
 													"order" : 0,
 													"source" : [ "obj-3", 0 ]
@@ -1159,7 +1212,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-89", 0 ],
+													"destination" : [ "obj-75", 0 ],
 													"source" : [ "obj-81", 0 ]
 												}
 
@@ -1188,7 +1241,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-155", 0 ],
-													"source" : [ "obj-89", 1 ]
+													"source" : [ "obj-89", 4 ]
 												}
 
 											}
@@ -1204,13 +1257,13 @@
 												"name" : "AudioStatus_Menu",
 												"default" : 												{
 													"bgfillcolor" : 													{
-														"type" : "color",
+														"angle" : 270.0,
+														"autogradient" : 0,
 														"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 														"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
 														"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-														"angle" : 270.0,
 														"proportion" : 0.39,
-														"autogradient" : 0
+														"type" : "color"
 													}
 
 												}
@@ -1222,13 +1275,13 @@
 												"name" : "_myStyle",
 												"default" : 												{
 													"bgfillcolor" : 													{
-														"type" : "color",
+														"angle" : 270.0,
+														"autogradient" : 0,
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
 														"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 														"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-														"angle" : 270.0,
 														"proportion" : 0.39,
-														"autogradient" : 0
+														"type" : "color"
 													}
 ,
 													"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
@@ -1259,8 +1312,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"fontsize" : [ 12.059008 ],
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+													"fontsize" : [ 12.059008 ]
 												}
 ,
 												"parentstyle" : "",
@@ -1279,13 +1332,13 @@
 												"name" : "panelGold-1",
 												"default" : 												{
 													"bgfillcolor" : 													{
-														"type" : "color",
+														"angle" : 270.0,
+														"autogradient" : 0,
 														"color" : [ 0.764706, 0.592157, 0.101961, 0.25 ],
 														"color1" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
 														"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-														"angle" : 270.0,
 														"proportion" : 0.39,
-														"autogradient" : 0
+														"type" : "color"
 													}
 
 												}
@@ -1297,13 +1350,13 @@
 												"name" : "s_161006_G!",
 												"message" : 												{
 													"bgfillcolor" : 													{
-														"type" : "color",
+														"angle" : 270.0,
+														"autogradient" : 0,
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.79 ],
 														"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 														"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-														"angle" : 270.0,
 														"proportion" : 0.39,
-														"autogradient" : 0
+														"type" : "color"
 													}
 
 												}
@@ -1324,13 +1377,13 @@
 												"name" : "simple-2",
 												"default" : 												{
 													"bgfillcolor" : 													{
-														"type" : "color",
+														"angle" : 270.0,
+														"autogradient" : 0,
 														"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
 														"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 														"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-														"angle" : 270.0,
 														"proportion" : 0.39,
-														"autogradient" : 0
+														"type" : "color"
 													}
 ,
 													"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
@@ -1563,7 +1616,6 @@
 								"box" : 								{
 									"angle" : 270.0,
 									"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"hidden" : 1,
 									"id" : "obj-2",
 									"maxclass" : "panel",
 									"mode" : 0,
@@ -1709,8 +1761,8 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-2", 0 ],
-									"midpoints" : [ 391.5, 232.0, 240.5, 232.0 ],
+									"destination" : [ "obj-3", 0 ],
+									"midpoints" : [ 391.5, 232.0, 216.5, 232.0 ],
 									"source" : [ "obj-42", 0 ]
 								}
 
@@ -1719,6 +1771,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-2", 0 ],
 									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-26", 0 ],
+									"source" : [ "obj-8", 0 ]
 								}
 
 							}
@@ -1734,13 +1793,13 @@
 								"name" : "AudioStatus_Menu",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270.0,
+										"autogradient" : 0,
 										"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 										"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.39,
-										"autogradient" : 0
+										"type" : "color"
 									}
 
 								}
@@ -1752,13 +1811,13 @@
 								"name" : "_myStyle",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270.0,
+										"autogradient" : 0,
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.39,
-										"autogradient" : 0
+										"type" : "color"
 									}
 ,
 									"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
@@ -1789,8 +1848,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1809,13 +1868,13 @@
 								"name" : "panelGold-1",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270.0,
+										"autogradient" : 0,
 										"color" : [ 0.764706, 0.592157, 0.101961, 0.25 ],
 										"color1" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.39,
-										"autogradient" : 0
+										"type" : "color"
 									}
 
 								}
@@ -1827,13 +1886,13 @@
 								"name" : "s_161006_G!",
 								"message" : 								{
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270.0,
+										"autogradient" : 0,
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.79 ],
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.39,
-										"autogradient" : 0
+										"type" : "color"
 									}
 
 								}
@@ -1854,13 +1913,13 @@
 								"name" : "simple-2",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270.0,
+										"autogradient" : 0,
 										"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
 										"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.39,
-										"autogradient" : 0
+										"type" : "color"
 									}
 ,
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
@@ -1897,10 +1956,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-12",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 151.0, 251.0, 261.0, 20.0 ],
+					"patching_rect" : [ 151.0, 235.0, 150.0, 34.0 ],
 					"text" : "<- change to display number trying to black out"
 				}
 
@@ -1937,7 +1997,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 229.0, 131.0, 105.0, 22.0 ],
+					"patching_rect" : [ 229.0, 135.0, 105.0, 22.0 ],
 					"text" : "s ---close_taskbar"
 				}
 
@@ -2082,13 +2142,13 @@
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
 					"bgfillcolor" : 					{
-						"type" : "color",
+						"angle" : 270.0,
+						"autogradient" : 0,
 						"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 						"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
 						"proportion" : 0.39,
-						"autogradient" : 0
+						"type" : "color"
 					}
 
 				}
@@ -2100,13 +2160,13 @@
 				"name" : "_myStyle",
 				"default" : 				{
 					"bgfillcolor" : 					{
-						"type" : "color",
+						"angle" : 270.0,
+						"autogradient" : 0,
 						"color" : [ 0.32549, 0.345098, 0.372549, 0.82 ],
 						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
 						"proportion" : 0.39,
-						"autogradient" : 0
+						"type" : "color"
 					}
 ,
 					"elementcolor" : [ 0.448693, 0.454459, 0.433178, 1.0 ],
@@ -2155,8 +2215,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2202,13 +2262,13 @@
 				"name" : "panelGold-1",
 				"default" : 				{
 					"bgfillcolor" : 					{
-						"type" : "color",
+						"angle" : 270.0,
+						"autogradient" : 0,
 						"color" : [ 0.764706, 0.592157, 0.101961, 0.25 ],
 						"color1" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
 						"proportion" : 0.39,
-						"autogradient" : 0
+						"type" : "color"
 					}
 
 				}
@@ -2220,13 +2280,13 @@
 				"name" : "s_161006_G!",
 				"message" : 				{
 					"bgfillcolor" : 					{
-						"type" : "color",
+						"angle" : 270.0,
+						"autogradient" : 0,
 						"color" : [ 0.32549, 0.345098, 0.372549, 0.79 ],
 						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
 						"proportion" : 0.39,
-						"autogradient" : 0
+						"type" : "color"
 					}
 
 				}
@@ -2247,13 +2307,13 @@
 				"name" : "simple-2",
 				"default" : 				{
 					"bgfillcolor" : 					{
-						"type" : "color",
+						"angle" : 270.0,
+						"autogradient" : 0,
 						"color" : [ 0.32549, 0.345098, 0.372549, 0.71 ],
 						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
 						"proportion" : 0.39,
-						"autogradient" : 0
+						"type" : "color"
 					}
 ,
 					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
