@@ -1622,6 +1622,18 @@
 										"title" : "Print Prescription Template",
 										"boxes" : [ 											{
 												"box" : 												{
+													"id" : "obj-41",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 1046.25, 493.0, 54.0, 22.0 ],
+													"text" : "deferlow"
+												}
+
+											}
+, 											{
+												"box" : 												{
 													"id" : "obj-89",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
@@ -1759,7 +1771,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 4,
 													"outlettype" : [ "", "", "", "" ],
-													"patching_rect" : [ 1067.0, 574.5, 285.0, 22.0 ],
+													"patching_rect" : [ 1056.0, 578.5, 285.0, 22.0 ],
 													"saved_object_attributes" : 													{
 														"embed" : 0,
 														"precision" : 6
@@ -3983,7 +3995,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "select" ],
-													"patching_rect" : [ 389.0, 180.0, 100.0, 22.0 ],
+													"patching_rect" : [ 30.0, 313.0, 57.0, 22.0 ],
 													"text" : "t select"
 												}
 
@@ -3995,7 +4007,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "bang", "" ],
-													"patching_rect" : [ 389.0, 156.0, 100.0, 22.0 ],
+													"patching_rect" : [ 30.0, 289.0, 57.0, 22.0 ],
 													"text" : "select 9"
 												}
 
@@ -4019,7 +4031,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 267.0, 211.0, 134.0, 22.0 ],
+													"patching_rect" : [ 336.0, 207.0, 134.0, 22.0 ],
 													"text" : "set Type Birthdate Here"
 												}
 
@@ -4232,7 +4244,6 @@
 													"fontsize" : 16.0,
 													"id" : "obj-5",
 													"keymode" : 1,
-													"linecount" : 2,
 													"lines" : 1,
 													"maxclass" : "textedit",
 													"numinlets" : 1,
@@ -4240,11 +4251,11 @@
 													"outlettype" : [ "", "int", "", "" ],
 													"outputmode" : 1,
 													"parameter_enable" : 0,
-													"patching_rect" : [ 171.0, 242.0, 140.0, 33.0 ],
+													"patching_rect" : [ 171.0, 255.0, 167.0, 21.0 ],
 													"presentation" : 1,
 													"presentation_rect" : [ 183.0, 40.0, 256.5, 34.0 ],
 													"rounded" : 0.0,
-													"text" : "Type Birthdate Here",
+													"text" : "\"Type Birthdate Here\"",
 													"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
 												}
 
@@ -4361,13 +4372,12 @@
 														"boxes" : [ 															{
 																"box" : 																{
 																	"id" : "obj-6",
-																	"linecount" : 4,
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 368.960526466369629, 397.0, 100.0, 64.0 ],
-																	"text" : "sprintf \\\"c:/ProgramData/Chuck/Users/%s/Rx/Rx.png\\\""
+																	"patching_rect" : [ 368.960526466369629, 403.0, 277.0, 22.0 ],
+																	"text" : "sprintf \\\"c:/ProgramData/Chuck/Users/%s/Rx.png\\\""
 																}
 
 															}
@@ -4398,13 +4408,12 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-2",
-																	"linecount" : 4,
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 239.960526466369629, 397.0, 100.0, 64.0 ],
-																	"text" : "sprintf \\\"c:`ProgramData`Chuck`Users`%s`Rx`Rx.png\\\""
+																	"patching_rect" : [ 239.960526466369629, 433.0, 280.0, 22.0 ],
+																	"text" : "sprintf \\\"c:`ProgramData`Chuck`Users`%s`Rx.png\\\""
 																}
 
 															}
@@ -4603,13 +4612,13 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-7",
-																	"linecount" : 4,
+																	"linecount" : 3,
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 40.460526466369629, 397.0, 100.0, 64.0 ],
-																	"text" : "sprintf \\\"mkdir 'c:/ProgramData/Chuck/Users/%s/Rx/'\\\""
+																	"patching_rect" : [ 40.460526466369629, 403.0, 112.0, 50.0 ],
+																	"text" : "sprintf \\\"mkdir 'c:/ProgramData/Chuck/Users/%s/'\\\""
 																}
 
 															}
@@ -8933,7 +8942,7 @@
  ]
 													}
 ,
-													"patching_rect" : [ 174.0, 207.0, 83.0, 22.0 ],
+													"patching_rect" : [ 174.0, 218.0, 83.0, 22.0 ],
 													"saved_object_attributes" : 													{
 														"description" : "",
 														"digest" : "",
@@ -8952,6 +8961,7 @@
 													"fontsize" : 16.0,
 													"id" : "obj-66",
 													"keymode" : 1,
+													"linecount" : 2,
 													"lines" : 1,
 													"maxclass" : "textedit",
 													"numinlets" : 1,
@@ -8963,7 +8973,7 @@
 													"presentation" : 1,
 													"presentation_rect" : [ 183.0, 4.0, 256.0, 34.0 ],
 													"rounded" : 0.0,
-													"text" : "Type Name Here",
+													"text" : "\"Type Name Here\"",
 													"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
 												}
 
@@ -9186,12 +9196,12 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-15",
-																	"linecount" : 4,
+																	"linecount" : 2,
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 356.730496446291568, 312.0, 100.0, 64.0 ],
+																	"patching_rect" : [ 356.730496446291568, 336.0, 271.0, 36.0 ],
 																	"text" : "loadmess C:/ProgramData/Chuck/Scripts/Rx_Clipboard.Rx"
 																}
 
@@ -12529,7 +12539,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-5", 0 ],
-													"midpoints" : [ 276.5, 236.0, 180.5, 236.0 ],
+													"midpoints" : [ 345.5, 249.0, 180.5, 249.0 ],
 													"source" : [ "obj-10", 0 ]
 												}
 
@@ -12764,6 +12774,13 @@
 												"patchline" : 												{
 													"destination" : [ "obj-44", 0 ],
 													"source" : [ "obj-40", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-105", 0 ],
+													"source" : [ "obj-41", 0 ]
 												}
 
 											}
@@ -13015,7 +13032,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-105", 0 ],
+													"destination" : [ "obj-41", 0 ],
 													"source" : [ "obj-76", 0 ]
 												}
 
