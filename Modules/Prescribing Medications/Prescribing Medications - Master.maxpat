@@ -4129,8 +4129,8 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 132.0, 173.0, 145.0, 22.0 ],
-																	"text" : "sprintf store Age \\\"%s\\\""
+																	"patching_rect" : [ 132.0, 173.0, 158.0, 22.0 ],
+																	"text" : "sprintf store Birthdate \\\"%s\\\""
 																}
 
 															}
