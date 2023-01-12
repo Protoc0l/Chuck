@@ -38,7 +38,7 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
-		"title" : "Chuck: Prescribing Medications HIdden Master Window",
+		"title" : "Chuck: PM HIdden",
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-3",
@@ -56,7 +56,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 107.0, 640.0, 480.0 ],
+						"rect" : [ -692.0, 289.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -860,8 +860,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 328.0, 201.0, 324.0, 22.0 ],
-									"text" : "title \"Chuck: Prescribing Medications HIdden Master Window\""
+									"patching_rect" : [ 328.0, 201.0, 135.0, 22.0 ],
+									"text" : "title \"Chuck: PM HIdden\""
 								}
 
 							}
@@ -1656,6 +1656,8 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"fontsize" : 36.0,
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -1701,6 +1703,104 @@
 						"assistshowspatchername" : 0,
 						"title" : "Chuck: Prescribing Medications",
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-76",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 0,
+									"patcher" : 									{
+										"fileversion" : 1,
+										"appversion" : 										{
+											"major" : 8,
+											"minor" : 5,
+											"revision" : 2,
+											"architecture" : "x64",
+											"modernui" : 1
+										}
+,
+										"classnamespace" : "box",
+										"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+										"bglocked" : 0,
+										"openinpresentation" : 0,
+										"default_fontsize" : 12.0,
+										"default_fontface" : 0,
+										"default_fontname" : "Arial",
+										"gridonopen" : 1,
+										"gridsize" : [ 15.0, 15.0 ],
+										"gridsnaponopen" : 1,
+										"objectsnaponopen" : 1,
+										"statusbarvisible" : 2,
+										"toolbarvisible" : 1,
+										"lefttoolbarpinned" : 0,
+										"toptoolbarpinned" : 0,
+										"righttoolbarpinned" : 0,
+										"bottomtoolbarpinned" : 0,
+										"toolbars_unpinned_last_save" : 0,
+										"tallnewobj" : 0,
+										"boxanimatetime" : 200,
+										"enablehscroll" : 1,
+										"enablevscroll" : 1,
+										"devicewidth" : 0.0,
+										"description" : "",
+										"digest" : "",
+										"tags" : "",
+										"style" : "",
+										"subpatcher_template" : "",
+										"assistshowspatchername" : 0,
+										"boxes" : [ 											{
+												"box" : 												{
+													"id" : "obj-5",
+													"linecount" : 4,
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 50.0, 100.0, 1035.0, 64.0 ],
+													"text" : "\"rx_meds.RX_MEDS_ID, rx_meds.RX_MEDS_TRADE_NAME, rx_meds.RX_MEDS_GENERIC_NAME, rx_meds.RX_MEDS_COMPANY, rx_meds.RX_MEDS_SEARCH, rx_meds.CATEGORY, rx_meds.CLASS,  rx_meds.USAGE, rx_meds.TRADENAME_PRICE, rx_meds.GENERIC_PRICE, rx_meds.AB_WORKS_COVERAGE, rx_meds.CONCENTRATION, rx_meds.TYPE, rx_meds.BOTTLE_SIZE, rx_meds.ADULT_DOSAGE, rx_meds.PEDS_DOSAGE, rx_meds.PREGNANCY_CATEGORY, rx_meds.ADRS, rx_meds.CONTRAINDICATIONS, rx_meds.NOTES, rx_meds.URL, rx_meds.ACTION, rx_meds.DISCONTINUED, rx_meds.TIMESTAMP\""
+												}
+
+											}
+ ],
+										"lines" : [  ]
+									}
+,
+									"patching_rect" : [ 962.5, 394.0, 195.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"description" : "",
+										"digest" : "",
+										"globalpatchername" : "",
+										"tags" : ""
+									}
+,
+									"text" : "p OLD QUERY WITH TIMESTAMP"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"args" : [ "RX_MEDS_TRADE_NAME", 49, 100 ],
+									"bgmode" : 0,
+									"border" : 0,
+									"clickthrough" : 0,
+									"enablehscroll" : 0,
+									"enablevscroll" : 0,
+									"id" : "obj-151",
+									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
+									"maxclass" : "bpatcher",
+									"name" : "SQLite_GUI_Search_Drugs.maxpat",
+									"numinlets" : 0,
+									"numoutlets" : 0,
+									"offset" : [ 0.0, 0.0 ],
+									"patching_rect" : [ 31.583333333333258, 1126.5, 126.0, 21.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 0.5, 48.0, 67.5, 21.999999999999986 ],
+									"varname" : "RX_MEDS_TRADE_NAME",
+									"viewvisibility" : 1
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-28",
 									"maxclass" : "message",
@@ -1760,7 +1860,7 @@
 							}
 , 							{
 								"box" : 								{
-									"args" : [ "CLASS", 20 ],
+									"args" : [ "CLASS", 18, 175 ],
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,
@@ -1774,7 +1874,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 0,
 									"offset" : [ 0.0, 0.0 ],
-									"patching_rect" : [ 46.583333333333258, 1001.5, 126.0, 24.0 ],
+									"patching_rect" : [ 31.583333333333258, 1406.5, 126.0, 24.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 270.5, 47.699706999999997, 38.0, 21.999999999999993 ],
 									"varname" : "CLASS",
@@ -13655,7 +13755,7 @@
 							}
 , 							{
 								"box" : 								{
-									"args" : [ "TYPE", 0 ],
+									"args" : [ "TYPE", 0, 300 ],
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,
@@ -13696,7 +13796,7 @@
 							}
 , 							{
 								"box" : 								{
-									"args" : [ "BOTTLE_SIZE", 0 ],
+									"args" : [ "BOTTLE_SIZE", 0, 350 ],
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,
@@ -14091,15 +14191,16 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 774.5, 633.5, 173.0, 23.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 763.25, 28.699706999999997, 128.0, 23.0 ],
+									"presentation_rect" : [ 763.25, 28.699706999999997, 132.0, 23.0 ],
 									"text" : "Contraindications",
-									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
+									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
+									"textjustification" : 1
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"args" : [ "CONTRAINDICATIONS", 114 ],
+									"args" : [ "CONTRAINDICATIONS", 114, 475 ],
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,
@@ -14115,7 +14216,7 @@
 									"offset" : [ 0.0, 0.0 ],
 									"patching_rect" : [ 31.583333333333258, 1265.5, 126.0, 21.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 893.0, 47.699706999999997, 132.0, 21.999999999999993 ],
+									"presentation_rect" : [ 763.25, 47.699706999999997, 132.0, 21.999999999999993 ],
 									"varname" : "CONTRAINDICATIONS",
 									"viewvisibility" : 1
 								}
@@ -14131,15 +14232,16 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 971.0, 593.0, 173.0, 23.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 698.5, 28.699706999999997, 49.0, 23.0 ],
+									"presentation_rect" : [ 659.5, 28.699706999999997, 102.0, 23.0 ],
 									"text" : "ADRs",
-									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
+									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
+									"textjustification" : 1
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"args" : [ "ADRS", 114 ],
+									"args" : [ "ADRS", 90, 450 ],
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,
@@ -14155,7 +14257,7 @@
 									"offset" : [ 0.0, 0.0 ],
 									"patching_rect" : [ 31.583333333333258, 1182.5, 126.0, 21.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 761.5, 47.699706999999997, 133.5, 21.999999999999993 ],
+									"presentation_rect" : [ 655.0, 47.699706999999997, 106.5, 21.999999999999993 ],
 									"varname" : "ADRS",
 									"viewvisibility" : 1
 								}
@@ -14163,7 +14265,7 @@
 							}
 , 							{
 								"box" : 								{
-									"args" : [ "PREGNANCY_CATEGORY", 18 ],
+									"args" : [ "PREGNANCY_CATEGORY", 18, 425 ],
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,
@@ -14203,7 +14305,7 @@
 							}
 , 							{
 								"box" : 								{
-									"args" : [ "PEDS_DOSAGE", 32 ],
+									"args" : [ "PEDS_DOSAGE", 32, 400 ],
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,
@@ -14227,7 +14329,7 @@
 							}
 , 							{
 								"box" : 								{
-									"args" : [ "AB_WORKS_COVERAGE", 18 ],
+									"args" : [ "AB_WORKS_COVERAGE", 18, 250 ],
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,
@@ -14269,7 +14371,7 @@
 							}
 , 							{
 								"box" : 								{
-									"args" : [ "RX_MEDS_GENERIC_NAME", 123 ],
+									"args" : [ "RX_MEDS_GENERIC_NAME", 123, 125 ],
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,
@@ -14301,9 +14403,10 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 774.5, 607.0, 173.0, 23.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 85.5, 27.699706999999997, 103.0, 23.0 ],
+									"presentation_rect" : [ 69.25, 27.699706999999997, 141.25, 23.0 ],
 									"text" : "Generic Name",
-									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
+									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
+									"textjustification" : 1
 								}
 
 							}
@@ -17974,7 +18077,7 @@
 							}
 , 							{
 								"box" : 								{
-									"args" : [ "ADULT_DOSAGE", 32 ],
+									"args" : [ "ADULT_DOSAGE", 32, 375 ],
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,
@@ -18140,7 +18243,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 1267.0, 215.0, 590.0, 790.0 ],
+										"rect" : [ -1591.0, 135.0, 590.0, 790.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -18170,208 +18273,7 @@
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
 												"box" : 												{
-													"id" : "obj-1",
-													"maxclass" : "newobj",
-													"numinlets" : 1,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
-													"patching_rect" : [ 411.0, 566.0, 100.0, 22.0 ],
-													"text" : "deferlow"
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"color" : [ 0.635294117647059, 0.0, 1.0, 1.0 ],
-													"id" : "obj-109",
-													"maxclass" : "newobj",
-													"numinlets" : 1,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
-													"patching_rect" : [ 61.694444444444457, 694.0, 100.0, 22.0 ],
-													"text" : "deferlow"
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"color" : [ 0.635294117647059, 0.0, 1.0, 1.0 ],
-													"id" : "obj-98",
-													"maxclass" : "newobj",
-													"numinlets" : 1,
-													"numoutlets" : 0,
-													"patching_rect" : [ 61.694444444444457, 721.0, 127.0, 22.0 ],
-													"text" : "s QUERY_RX_MEDS"
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-23",
-													"maxclass" : "newobj",
-													"numinlets" : 1,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
-													"patching_rect" : [ 411.0, 462.0, 100.0, 22.0 ],
-													"text" : "loadmess 0"
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-22",
-													"maxclass" : "newobj",
-													"numinlets" : 1,
-													"numoutlets" : 2,
-													"outlettype" : [ "", "int" ],
-													"patching_rect" : [ 61.694444444444457, 491.0, 100.0, 22.0 ],
-													"text" : "t s 1"
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-21",
-													"maxclass" : "newobj",
-													"numinlets" : 1,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
-													"patching_rect" : [ 411.0, 590.0, 100.0, 22.0 ],
-													"text" : "prepend hidden"
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"comment" : "",
-													"id" : "obj-20",
-													"index" : 2,
-													"maxclass" : "outlet",
-													"numinlets" : 1,
-													"numoutlets" : 0,
-													"patching_rect" : [ 411.0, 619.0, 30.0, 30.0 ]
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-19",
-													"maxclass" : "newobj",
-													"numinlets" : 1,
-													"numoutlets" : 2,
-													"outlettype" : [ "int", "bang" ],
-													"patching_rect" : [ 15.0, 32.0, 100.0, 22.0 ],
-													"text" : "t 1 b"
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-18",
-													"maxclass" : "newobj",
-													"numinlets" : 1,
-													"numoutlets" : 1,
-													"outlettype" : [ "bang" ],
-													"patching_rect" : [ 15.0, 8.0, 100.0, 22.0 ],
-													"text" : "loadbang"
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"comment" : "",
-													"id" : "obj-17",
-													"index" : 1,
-													"maxclass" : "outlet",
-													"numinlets" : 1,
-													"numoutlets" : 0,
-													"patching_rect" : [ 15.0, 152.5, 30.0, 30.0 ]
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"comment" : "",
-													"id" : "obj-14",
-													"index" : 2,
-													"maxclass" : "inlet",
-													"numinlets" : 0,
-													"numoutlets" : 1,
-													"outlettype" : [ "int" ],
-													"patching_rect" : [ 49.249999999999986, 294.0, 30.0, 30.0 ]
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"comment" : "",
-													"id" : "obj-9",
-													"index" : 1,
-													"maxclass" : "inlet",
-													"numinlets" : 0,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
-													"patching_rect" : [ 14.694444444444429, 294.0, 30.0, 30.0 ]
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-112",
-													"maxclass" : "newobj",
-													"numinlets" : 1,
-													"numoutlets" : 3,
-													"outlettype" : [ "bang", "", "bang" ],
-													"patching_rect" : [ 61.694444444444457, 557.0, 55.0, 22.0 ],
-													"text" : "t b s b"
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-108",
-													"maxclass" : "newobj",
-													"numinlets" : 1,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
-													"patching_rect" : [ 79.694444444444457, 584.0, 206.0, 22.0 ],
-													"text" : "prepend store RX_MEDS_SEARCH"
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-102",
-													"linecount" : 2,
-													"maxclass" : "message",
-													"numinlets" : 2,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
-													"patching_rect" : [ 255.361111111111086, 614.0, 130.0, 36.0 ],
-													"text" : "delete RX_MEDS_SEARCH"
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-99",
-													"maxclass" : "newobj",
-													"numinlets" : 1,
-													"numoutlets" : 4,
-													"outlettype" : [ "", "", "", "" ],
-													"patching_rect" : [ 79.694444444444457, 654.0, 193.0, 22.0 ],
-													"saved_object_attributes" : 													{
-														"embed" : 0,
-														"precision" : 6
-													}
-,
-													"text" : "coll ---RX_MEDS_multiple_query"
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-60",
+													"id" : "obj-2",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 1,
@@ -18387,7 +18289,7 @@
 														}
 ,
 														"classnamespace" : "box",
-														"rect" : [ 880.0, 234.0, 998.0, 777.0 ],
+														"rect" : [ -1320.0, 175.0, 998.0, 777.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 0,
 														"default_fontsize" : 12.0,
@@ -18417,12 +18319,184 @@
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
 																"box" : 																{
+																	"id" : "obj-10",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 311.0, 398.0, 83.0, 22.0 ],
+																	"text" : "prepend store"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-8",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 2,
+																	"outlettype" : [ "RX_MEDS_SEARCH", "" ],
+																	"patching_rect" : [ 311.0, 342.0, 136.0, 22.0 ],
+																	"text" : "t RX_MEDS_SEARCH l"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-7",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 2,
+																	"outlettype" : [ "", "" ],
+																	"patching_rect" : [ 311.0, 374.0, 136.0, 22.0 ],
+																	"text" : "zl join"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-3",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 4,
+																	"outlettype" : [ "", "", "", "" ],
+																	"patching_rect" : [ 311.0, 424.0, 123.0, 22.0 ],
+																	"saved_object_attributes" : 																	{
+																		"embed" : 0,
+																		"precision" : 6
+																	}
+,
+																	"text" : "coll Rx_Meds_Values"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-21",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 2,
+																	"outlettype" : [ "?", "" ],
+																	"patching_rect" : [ 53.0, 266.0, 277.0, 22.0 ],
+																	"text" : "t ? s"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-17",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 2,
+																	"outlettype" : [ "", "" ],
+																	"patching_rect" : [ 311.0, 311.0, 51.0, 22.0 ],
+																	"text" : "zl group"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-15",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 2,
+																	"outlettype" : [ "", "%s" ],
+																	"patching_rect" : [ 53.0, 145.0, 41.0, 22.0 ],
+																	"text" : "t s %s"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-4",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 464.0, 164.0, 57.0, 22.0 ],
+																	"text" : "tosymbol"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-2",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 5,
+																	"outlettype" : [ "", "", "", "", "" ],
+																	"patching_rect" : [ 464.0, 124.0, 134.0, 22.0 ],
+																	"text" : "regexp \" \" @substitute |"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-12",
+																	"linecount" : 2,
+																	"maxclass" : "comment",
+																	"numinlets" : 1,
+																	"numoutlets" : 0,
+																	"patching_rect" : [ 377.0, 30.0, 326.0, 34.0 ],
+																	"text" : "REGEXP method\nhttps://stackoverflow.com/questions/1127088/mysql-like-in"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-11",
+																	"maxclass" : "comment",
+																	"numinlets" : 1,
+																	"numoutlets" : 0,
+																	"patching_rect" : [ 46.5, 6.0, 106.0, 20.0 ],
+																	"text" : "Using LIKE and %"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-9",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 2,
+																	"outlettype" : [ "RX_MEDS_SEARCH", "" ],
+																	"patching_rect" : [ 337.0, 97.0, 146.0, 22.0 ],
+																	"text" : "t RX_MEDS_SEARCH l"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-6",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 337.0, 199.0, 146.0, 22.0 ],
+																	"text" : "sprintf \\\"%s REGEXP '%s'"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-5",
+																	"maxclass" : "message",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 212.0, 6.0, 82.0, 22.0 ],
+																	"text" : "\"mhghg sdf s\""
+																}
+
+															}
+, 															{
+																"box" : 																{
 																	"id" : "obj-48",
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 53.0, 149.0, 92.0, 22.0 ],
+																	"patching_rect" : [ 53.0, 204.0, 92.0, 22.0 ],
 																	"text" : "sprintf \\\"``%s``\\\""
 																}
 
@@ -18434,7 +18508,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 5,
 																	"outlettype" : [ "", "", "", "", "" ],
-																	"patching_rect" : [ 53.0, 173.0, 137.0, 22.0 ],
+																	"patching_rect" : [ 53.0, 228.0, 137.0, 22.0 ],
 																	"text" : "regexp `` @substitute %"
 																}
 
@@ -18448,7 +18522,7 @@
 																	"numinlets" : 0,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 12.5, 19.0, 30.0, 30.0 ]
+																	"patching_rect" : [ 12.5, 6.0, 30.0, 30.0 ]
 																}
 
 															}
@@ -18459,7 +18533,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 53.0, 343.0, 100.0, 22.0 ],
+																	"patching_rect" : [ 53.0, 438.0, 100.0, 22.0 ],
 																	"text" : "tosymbol"
 																}
 
@@ -18471,7 +18545,7 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
-																	"patching_rect" : [ 53.0, 316.0, 100.0, 22.0 ],
+																	"patching_rect" : [ 53.0, 411.0, 100.0, 22.0 ],
 																	"text" : "route AND"
 																}
 
@@ -18483,7 +18557,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 53.0, 290.0, 100.0, 22.0 ],
+																	"patching_rect" : [ 53.0, 385.0, 100.0, 22.0 ],
 																	"text" : "sprintf %s"
 																}
 
@@ -18495,7 +18569,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 53.0, 267.0, 100.0, 22.0 ],
+																	"patching_rect" : [ 53.0, 362.0, 100.0, 22.0 ],
 																	"text" : "tosymbol"
 																}
 
@@ -18519,8 +18593,8 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 53.0, 216.0, 248.0, 22.0 ],
-																	"text" : "sprintf AND RX_MEDS_SEARCH LIKE '%s'"
+																	"patching_rect" : [ 53.0, 311.0, 237.0, 22.0 ],
+																	"text" : "sprintf AND RX_MEDS_SEARCH LIKE %s"
 																}
 
 															}
@@ -18531,7 +18605,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 3,
 																	"outlettype" : [ "bang", "", "zlclear" ],
-																	"patching_rect" : [ 12.5, 61.0, 140.5, 22.0 ],
+																	"patching_rect" : [ 12.5, 61.0, 100.0, 22.0 ],
 																	"text" : "t b s zlclear"
 																}
 
@@ -18543,7 +18617,7 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
-																	"patching_rect" : [ 53.0, 240.0, 100.0, 22.0 ],
+																	"patching_rect" : [ 53.0, 335.0, 100.0, 22.0 ],
 																	"text" : "zl group"
 																}
 
@@ -18582,16 +18656,73 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-60", 0 ],
-																	"midpoints" : [ 151.0, 205.0, 63.0, 205.0, 63.0, 210.0, 62.5, 210.0 ],
-																	"source" : [ "obj-29", 3 ]
+																	"destination" : [ "obj-3", 0 ],
+																	"source" : [ "obj-10", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-48", 0 ],
+																	"source" : [ "obj-15", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-8", 0 ],
+																	"source" : [ "obj-17", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-4", 0 ],
+																	"midpoints" : [ 559.75, 154.0, 473.5, 154.0 ],
+																	"source" : [ "obj-2", 3 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-4", 0 ],
+																	"source" : [ "obj-2", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-17", 0 ],
+																	"source" : [ "obj-21", 1 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-60", 0 ],
+																	"source" : [ "obj-21", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-21", 0 ],
+																	"midpoints" : [ 151.0, 260.0, 63.0, 260.0, 63.0, 265.0, 62.5, 265.0 ],
+																	"source" : [ "obj-29", 3 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-21", 0 ],
 																	"source" : [ "obj-29", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-6", 1 ],
+																	"source" : [ "obj-4", 0 ]
 																}
 
 															}
@@ -18604,7 +18735,25 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-48", 0 ],
+																	"destination" : [ "obj-56", 0 ],
+																	"midpoints" : [ 221.5, 48.0, 22.0, 48.0 ],
+																	"order" : 1,
+																	"source" : [ "obj-5", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-9", 0 ],
+																	"midpoints" : [ 221.5, 50.0, 346.5, 50.0 ],
+																	"order" : 0,
+																	"source" : [ "obj-5", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-15", 0 ],
 																	"source" : [ "obj-50", 0 ]
 																}
 
@@ -18618,14 +18767,36 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-53", 0 ],
+																	"color" : [ 0.917647058823529, 0.937254901960784, 0.670588235294118, 1.0 ],
+																	"destination" : [ "obj-17", 0 ],
+																	"order" : 0,
 																	"source" : [ "obj-56", 2 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
+																	"color" : [ 0.917647058823529, 0.937254901960784, 0.670588235294118, 1.0 ],
+																	"destination" : [ "obj-17", 0 ],
+																	"order" : 0,
+																	"source" : [ "obj-56", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"color" : [ 0.917647058823529, 0.937254901960784, 0.670588235294118, 1.0 ],
 																	"destination" : [ "obj-53", 0 ],
+																	"order" : 1,
+																	"source" : [ "obj-56", 2 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"color" : [ 0.917647058823529, 0.937254901960784, 0.670588235294118, 1.0 ],
+																	"destination" : [ "obj-53", 0 ],
+																	"order" : 1,
 																	"source" : [ "obj-56", 0 ]
 																}
 
@@ -18634,6 +18805,14 @@
 																"patchline" : 																{
 																	"destination" : [ "obj-62", 0 ],
 																	"source" : [ "obj-56", 1 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-80", 0 ],
+																	"midpoints" : [ 346.5, 465.0, 62.5, 465.0 ],
+																	"source" : [ "obj-6", 0 ]
 																}
 
 															}
@@ -18667,6 +18846,13 @@
 															}
 , 															{
 																"patchline" : 																{
+																	"destination" : [ "obj-10", 0 ],
+																	"source" : [ "obj-7", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
 																	"destination" : [ "obj-74", 0 ],
 																	"source" : [ "obj-71", 0 ]
 																}
@@ -18676,6 +18862,34 @@
 																"patchline" : 																{
 																	"destination" : [ "obj-80", 0 ],
 																	"source" : [ "obj-74", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-7", 1 ],
+																	"source" : [ "obj-8", 1 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-7", 0 ],
+																	"source" : [ "obj-8", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-2", 0 ],
+																	"source" : [ "obj-9", 1 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-6", 0 ],
+																	"source" : [ "obj-9", 0 ]
 																}
 
 															}
@@ -18832,7 +19046,7 @@
  ]
 													}
 ,
-													"patching_rect" : [ 61.694444444444457, 529.0, 127.0, 22.0 ],
+													"patching_rect" : [ 61.694444444444457, 528.0, 127.0, 22.0 ],
 													"saved_object_attributes" : 													{
 														"description" : "",
 														"digest" : "",
@@ -18841,6 +19055,207 @@
 													}
 ,
 													"text" : "p SEARCH_QUERY"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-1",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 411.0, 566.0, 100.0, 22.0 ],
+													"text" : "deferlow"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"color" : [ 0.635294117647059, 0.0, 1.0, 1.0 ],
+													"id" : "obj-109",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 61.694444444444457, 694.0, 100.0, 22.0 ],
+													"text" : "deferlow"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"color" : [ 0.635294117647059, 0.0, 1.0, 1.0 ],
+													"id" : "obj-98",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 61.694444444444457, 721.0, 127.0, 22.0 ],
+													"text" : "s QUERY_RX_MEDS"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-23",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 411.0, 462.0, 100.0, 22.0 ],
+													"text" : "loadmess 0"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-22",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "int" ],
+													"patching_rect" : [ 61.694444444444457, 491.0, 100.0, 22.0 ],
+													"text" : "t s 1"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-21",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 411.0, 590.0, 100.0, 22.0 ],
+													"text" : "prepend hidden"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"comment" : "",
+													"id" : "obj-20",
+													"index" : 2,
+													"maxclass" : "outlet",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 411.0, 619.0, 30.0, 30.0 ]
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-19",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 2,
+													"outlettype" : [ "int", "bang" ],
+													"patching_rect" : [ 15.0, 32.0, 100.0, 22.0 ],
+													"text" : "t 1 b"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-18",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "bang" ],
+													"patching_rect" : [ 15.0, 8.0, 100.0, 22.0 ],
+													"text" : "loadbang"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"comment" : "",
+													"id" : "obj-17",
+													"index" : 1,
+													"maxclass" : "outlet",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 15.0, 152.5, 30.0, 30.0 ]
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"comment" : "",
+													"id" : "obj-14",
+													"index" : 2,
+													"maxclass" : "inlet",
+													"numinlets" : 0,
+													"numoutlets" : 1,
+													"outlettype" : [ "int" ],
+													"patching_rect" : [ 49.5, 277.0, 30.0, 30.0 ]
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"comment" : "",
+													"id" : "obj-9",
+													"index" : 1,
+													"maxclass" : "inlet",
+													"numinlets" : 0,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 14.944444444444443, 277.0, 30.0, 30.0 ]
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-112",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 3,
+													"outlettype" : [ "bang", "", "bang" ],
+													"patching_rect" : [ 61.694444444444457, 557.0, 55.0, 22.0 ],
+													"text" : "t b s b"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-108",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 79.694444444444457, 584.0, 206.0, 22.0 ],
+													"text" : "prepend store RX_MEDS_SEARCH"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-102",
+													"linecount" : 2,
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 255.361111111111086, 614.0, 130.0, 36.0 ],
+													"text" : "delete RX_MEDS_SEARCH"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-99",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 4,
+													"outlettype" : [ "", "", "", "" ],
+													"patching_rect" : [ 79.694444444444457, 654.0, 193.0, 22.0 ],
+													"saved_object_attributes" : 													{
+														"embed" : 0,
+														"precision" : 6
+													}
+,
+													"text" : "coll ---RX_MEDS_multiple_query"
 												}
 
 											}
@@ -18864,7 +19279,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 45.249999999999986, 348.5, 39.0, 18.0 ],
+													"patching_rect" : [ 45.5, 331.5, 39.0, 18.0 ],
 													"text" : "deferlow"
 												}
 
@@ -18877,7 +19292,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "bang" ],
-													"patching_rect" : [ 49.249999999999986, 328.5, 17.0, 18.0 ],
+													"patching_rect" : [ 49.5, 311.5, 17.0, 18.0 ],
 													"text" : "t b"
 												}
 
@@ -18902,7 +19317,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 4,
 													"outlettype" : [ "select", "bang", "bang", "int" ],
-													"patching_rect" : [ 14.694444444444429, 433.0, 380.0, 22.0 ],
+													"patching_rect" : [ 14.694444444444429, 419.0, 380.0, 22.0 ],
 													"text" : "t select b b 0"
 												}
 
@@ -18914,7 +19329,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 14.694444444444429, 405.0, 66.0, 22.0 ],
+													"patching_rect" : [ 14.944444444444443, 390.0, 66.0, 22.0 ],
 													"text" : "route bang"
 												}
 
@@ -18979,7 +19394,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 14.694444444444429, 373.5, 59.0, 22.0 ],
+													"patching_rect" : [ 14.944444444444443, 356.5, 59.0, 22.0 ],
 													"text" : "route text"
 												}
 
@@ -19098,6 +19513,13 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-112", 0 ],
+													"source" : [ "obj-2", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-20", 0 ],
 													"source" : [ "obj-21", 0 ]
 												}
@@ -19113,7 +19535,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-60", 0 ],
+													"destination" : [ "obj-2", 0 ],
 													"source" : [ "obj-22", 0 ]
 												}
 
@@ -19128,7 +19550,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-44", 0 ],
-													"midpoints" : [ 64.194444444444429, 400.0, 26.694444444444429, 400.0, 26.694444444444429, 401.0, 24.194444444444429, 401.0 ],
+													"midpoints" : [ 64.444444444444443, 381.0, 24.444444444444443, 381.0 ],
 													"source" : [ "obj-28", 1 ]
 												}
 
@@ -19150,7 +19572,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-17", 0 ],
-													"midpoints" : [ 54.749999999999986, 367.0, 12.0, 367.0, 12.0, 253.0, 12.0, 253.0, 12.0, 147.0, 24.5, 147.0 ],
+													"midpoints" : [ 55.0, 353.0, 12.0, 353.0, 12.0, 253.0, 12.0, 253.0, 12.0, 147.0, 24.5, 147.0 ],
 													"source" : [ "obj-36", 0 ]
 												}
 
@@ -19211,13 +19633,6 @@
 												"patchline" : 												{
 													"destination" : [ "obj-8", 0 ],
 													"source" : [ "obj-5", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
-													"destination" : [ "obj-112", 0 ],
-													"source" : [ "obj-60", 0 ]
 												}
 
 											}
@@ -19608,7 +20023,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 589.0, 1124.0, 100.0, 20.0 ],
+									"patching_rect" : [ 589.0, 1122.0, 100.0, 20.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 129.0, 4.899414, 40.0, 20.0 ],
 									"text" : "Edit",
@@ -19685,7 +20100,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "int" ],
+									"outlettype" : [ "bang" ],
 									"patcher" : 									{
 										"fileversion" : 1,
 										"appversion" : 										{
@@ -19697,7 +20112,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 420.0, 324.0, 670.0, 563.0 ],
+										"rect" : [ -740.0, 113.0, 670.0, 865.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -19726,6 +20141,201 @@
 										"subpatcher_template" : "Default Max 7",
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
+												"box" : 												{
+													"id" : "obj-25",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 89.5, 244.0, 126.0, 22.0 ],
+													"text" : "sprintf \\\"rx_meds.%s\\\""
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-22",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 306.833333333333314, 529.0, 132.0, 22.0 ],
+													"text" : "v RX_PARAM_QUERY"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-33",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
+													"patching_rect" : [ 306.833333333333314, 316.0, 51.0, 22.0 ],
+													"text" : "zl group"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-30",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 306.833333333333314, 289.0, 57.0, 22.0 ],
+													"text" : "tosymbol"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-32",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
+													"patching_rect" : [ 248.833333333333314, 258.0, 77.0, 22.0 ],
+													"text" : "route symbol"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-28",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 248.833333333333314, 208.0, 57.0, 22.0 ],
+													"text" : "tosymbol"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-24",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
+													"patching_rect" : [ 190.833333333333314, 177.0, 77.0, 22.0 ],
+													"text" : "route symbol"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-23",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 4,
+													"outlettype" : [ "", "", "", "" ],
+													"patching_rect" : [ 248.833333333333314, 234.0, 123.0, 22.0 ],
+													"saved_object_attributes" : 													{
+														"embed" : 0,
+														"precision" : 6
+													}
+,
+													"text" : "coll Rx_Meds_Values"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-2",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
+													"patching_rect" : [ 180.75, 761.0, 116.0, 22.0 ],
+													"text" : "route RX_MEDS_ID"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"comment" : "",
+													"id" : "obj-26",
+													"index" : 1,
+													"maxclass" : "outlet",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 8.5, 787.0, 30.0, 30.0 ]
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-21",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 4,
+													"outlettype" : [ "", "", "", "" ],
+													"patching_rect" : [ 180.75, 730.0, 177.0, 22.0 ],
+													"saved_object_attributes" : 													{
+														"embed" : 0,
+														"precision" : 6
+													}
+,
+													"text" : "coll Med_Drugs_Rx_Query_coll"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-20",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 277.75, 797.0, 83.0, 22.0 ],
+													"text" : "prepend store"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-19",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 4,
+													"outlettype" : [ "", "", "", "" ],
+													"patching_rect" : [ 277.75, 832.0, 100.0, 22.0 ],
+													"saved_object_attributes" : 													{
+														"embed" : 0,
+														"precision" : 6
+													}
+,
+													"text" : "coll ---RX_MEDS"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-14",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 3,
+													"outlettype" : [ "bang", "dump", "clear" ],
+													"patching_rect" : [ 8.5, 703.0, 363.5, 22.0 ],
+													"text" : "t b dump clear"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-6",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
+													"patching_rect" : [ 8.5, 677.5, 317.333333333333314, 22.0 ],
+													"text" : "MySQL_User Med_Drugs_Rx_Query"
+												}
+
+											}
+, 											{
 												"box" : 												{
 													"id" : "obj-13",
 													"maxclass" : "newobj",
@@ -19763,18 +20373,6 @@
 											}
 , 											{
 												"box" : 												{
-													"comment" : "",
-													"id" : "obj-2",
-													"index" : 1,
-													"maxclass" : "outlet",
-													"numinlets" : 1,
-													"numoutlets" : 0,
-													"patching_rect" : [ 212.0, 79.0, 30.0, 30.0 ]
-												}
-
-											}
-, 											{
-												"box" : 												{
 													"id" : "obj-79",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
@@ -19789,11 +20387,11 @@
 												"box" : 												{
 													"id" : "obj-18",
 													"maxclass" : "newobj",
-													"numinlets" : 1,
+													"numinlets" : 2,
 													"numoutlets" : 1,
-													"outlettype" : [ "" ],
-													"patching_rect" : [ 8.5, 440.0, 59.0, 22.0 ],
-													"text" : "deferlow"
+													"outlettype" : [ "bang" ],
+													"patching_rect" : [ 8.5, 440.0, 61.0, 22.0 ],
+													"text" : "delay 250"
 												}
 
 											}
@@ -19802,10 +20400,10 @@
 													"id" : "obj-17",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
-													"numoutlets" : 3,
-													"outlettype" : [ "bang", "bang", "int" ],
-													"patching_rect" : [ 8.5, 91.0, 181.0, 22.0 ],
-													"text" : "t b b 1"
+													"numoutlets" : 2,
+													"outlettype" : [ "bang", "bang" ],
+													"patching_rect" : [ 8.5, 91.0, 100.0, 22.0 ],
+													"text" : "t b b"
 												}
 
 											}
@@ -19829,8 +20427,8 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 419.5, 176.0, 219.0, 50.0 ],
-													"text" : "sprintf sqlout \\\"SELECT %s AS RX_MEDS_SEARCH FROM RX_MEDS\\\""
+													"patching_rect" : [ 419.5, 176.0, 227.0, 50.0 ],
+													"text" : "sprintf \\\"SELECT %s AS RX_MEDS_SEARCH FROM RX_MEDS WHERE RX_MEDS_SEARCH LIKE ?\\\""
 												}
 
 											}
@@ -19841,7 +20439,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 3,
 													"outlettype" : [ "bang", "bang", "" ],
-													"patching_rect" : [ 89.5, 346.0, 382.0, 22.0 ],
+													"patching_rect" : [ 89.5, 391.0, 389.0, 22.0 ],
 													"text" : "t b b s"
 												}
 
@@ -19853,7 +20451,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 89.5, 322.0, 100.0, 22.0 ],
+													"patching_rect" : [ 89.5, 367.0, 100.0, 22.0 ],
 													"text" : "tosymbol"
 												}
 
@@ -19865,7 +20463,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 89.5, 296.0, 100.0, 22.0 ],
+													"patching_rect" : [ 89.5, 341.0, 100.0, 22.0 ],
 													"text" : "route AND"
 												}
 
@@ -19877,7 +20475,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "AND" ],
-													"patching_rect" : [ 89.5, 234.0, 100.0, 22.0 ],
+													"patching_rect" : [ 89.5, 279.0, 49.0, 22.0 ],
 													"text" : "t s AND"
 												}
 
@@ -19889,7 +20487,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 89.5, 270.0, 100.0, 22.0 ],
+													"patching_rect" : [ 89.5, 315.0, 100.0, 22.0 ],
 													"text" : "zl group"
 												}
 
@@ -19925,7 +20523,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 4,
 													"outlettype" : [ "", "", "", "" ],
-													"patching_rect" : [ 89.5, 150.0, 186.0, 22.0 ],
+													"patching_rect" : [ 89.5, 150.0, 323.0, 22.0 ],
 													"saved_object_attributes" : 													{
 														"embed" : 0,
 														"precision" : 6
@@ -19941,9 +20539,9 @@
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 4,
-													"outlettype" : [ "dump", "bang", "zlclear", "bang" ],
+													"outlettype" : [ "dump", "%", "zlclear", "bang" ],
 													"patching_rect" : [ 89.5, 117.0, 349.0, 22.0 ],
-													"text" : "t dump b zlclear b"
+													"text" : "t dump % zlclear b"
 												}
 
 											}
@@ -19961,23 +20559,12 @@
 											}
 , 											{
 												"box" : 												{
-													"id" : "obj-53",
-													"maxclass" : "newobj",
-													"numinlets" : 1,
-													"numoutlets" : 0,
-													"patching_rect" : [ 8.5, 556.0, 114.0, 22.0 ],
-													"text" : "s ---databaselocal"
-												}
-
-											}
-, 											{
-												"box" : 												{
 													"id" : "obj-42",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 272.0, 370.0, 100.0, 22.0 ],
+													"patching_rect" : [ 274.5, 370.0, 100.0, 22.0 ],
 													"text" : "v Table"
 												}
 
@@ -19989,7 +20576,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 89.5, 370.0, 147.0, 22.0 ],
+													"patching_rect" : [ 89.5, 415.0, 147.0, 22.0 ],
 													"text" : "v RX_MEDS_categories"
 												}
 
@@ -20009,21 +20596,39 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-29",
-													"linecount" : 2,
 													"maxclass" : "newobj",
 													"numinlets" : 3,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 88.5, 394.0, 383.000000000000057, 36.0 ],
-													"text" : "sprintf sqlout \\\"SELECT %s AS RX_MEDS_SEARCH FROM %s WHERE %s\\\""
+													"patching_rect" : [ 88.5, 439.0, 390.0, 22.0 ],
+													"text" : "sprintf \\\"SELECT %s AS RX_MEDS_SEARCH FROM %s WHERE %s\\\""
 												}
 
 											}
  ],
 										"lines" : [ 											{
 												"patchline" : 												{
+													"color" : [ 0.929411764705882, 0.36078431372549, 0.866666666666667, 1.0 ],
+													"destination" : [ "obj-22", 0 ],
+													"source" : [ "obj-1", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"color" : [ 0.929411764705882, 0.36078431372549, 0.866666666666667, 1.0 ],
+													"destination" : [ "obj-33", 0 ],
+													"order" : 0,
+													"source" : [ "obj-1", 2 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"color" : [ 0.929411764705882, 0.36078431372549, 0.866666666666667, 1.0 ],
 													"destination" : [ "obj-5", 0 ],
-													"midpoints" : [ 319.0, 267.0, 99.0, 267.0 ],
+													"midpoints" : [ 319.0, 311.0, 99.0, 311.0 ],
+													"order" : 1,
 													"source" : [ "obj-1", 2 ]
 												}
 
@@ -20087,6 +20692,28 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-19", 0 ],
+													"midpoints" : [ 362.5, 824.0, 287.25, 824.0 ],
+													"source" : [ "obj-14", 2 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-21", 0 ],
+													"source" : [ "obj-14", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-26", 0 ],
+													"source" : [ "obj-14", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"color" : [ 1.0, 0.0, 0.0, 1.0 ],
 													"destination" : [ "obj-16", 0 ],
 													"midpoints" : [ 429.0, 518.0, 18.0, 518.0 ],
@@ -20096,7 +20723,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-53", 0 ],
+													"destination" : [ "obj-6", 0 ],
 													"source" : [ "obj-16", 0 ]
 												}
 
@@ -20117,15 +20744,82 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-2", 0 ],
-													"source" : [ "obj-17", 2 ]
+													"destination" : [ "obj-16", 0 ],
+													"order" : 1,
+													"source" : [ "obj-18", 0 ]
 												}
 
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-16", 0 ],
+													"destination" : [ "obj-22", 0 ],
+													"midpoints" : [ 18.0, 485.0, 316.333333333333314, 485.0 ],
+													"order" : 0,
 													"source" : [ "obj-18", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-20", 0 ],
+													"source" : [ "obj-2", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-19", 0 ],
+													"source" : [ "obj-20", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-2", 0 ],
+													"source" : [ "obj-21", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-6", 1 ],
+													"source" : [ "obj-22", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-32", 0 ],
+													"source" : [ "obj-23", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-28", 0 ],
+													"source" : [ "obj-24", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-28", 0 ],
+													"midpoints" : [ 200.333333333333314, 202.0, 258.333333333333314, 202.0 ],
+													"source" : [ "obj-24", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-8", 0 ],
+													"source" : [ "obj-25", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-23", 0 ],
+													"source" : [ "obj-28", 0 ]
 												}
 
 											}
@@ -20154,9 +20848,38 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-33", 0 ],
+													"source" : [ "obj-30", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-17", 0 ],
 													"midpoints" : [ 167.5, 86.0, 18.0, 86.0 ],
 													"source" : [ "obj-31", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-30", 0 ],
+													"source" : [ "obj-32", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-30", 0 ],
+													"midpoints" : [ 258.333333333333314, 283.0, 316.333333333333314, 283.0 ],
+													"source" : [ "obj-32", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-22", 0 ],
+													"source" : [ "obj-33", 0 ]
 												}
 
 											}
@@ -20169,7 +20892,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-8", 0 ],
+													"destination" : [ "obj-25", 0 ],
 													"source" : [ "obj-4", 0 ]
 												}
 
@@ -20197,6 +20920,13 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-14", 0 ],
+													"source" : [ "obj-6", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-17", 0 ],
 													"source" : [ "obj-7", 1 ]
 												}
@@ -20212,7 +20942,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-5", 0 ],
-													"midpoints" : [ 180.0, 259.0, 100.0, 259.0, 100.0, 265.0, 99.0, 265.0 ],
+													"midpoints" : [ 129.0, 304.0, 100.0, 304.0, 100.0, 310.0, 99.0, 310.0 ],
 													"source" : [ "obj-8", 1 ]
 												}
 
@@ -20233,6 +20963,13 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-24", 0 ],
+													"source" : [ "obj-99", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-3", 0 ],
 													"source" : [ "obj-99", 0 ]
 												}
@@ -20240,8 +20977,19 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-33", 0 ],
+													"midpoints" : [ 403.0, 312.0, 316.333333333333314, 312.0 ],
+													"order" : 0,
+													"source" : [ "obj-99", 3 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"color" : [ 0.929411764705882, 0.36078431372549, 0.866666666666667, 1.0 ],
 													"destination" : [ "obj-5", 0 ],
-													"midpoints" : [ 266.0, 268.0, 99.0, 268.0 ],
+													"midpoints" : [ 403.0, 310.0, 99.0, 310.0 ],
+													"order" : 1,
 													"source" : [ "obj-99", 3 ]
 												}
 
@@ -20399,7 +21147,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 546.0, 1031.5, 436.0, 43.0 ],
+									"patching_rect" : [ 277.333333333333258, 518.5, 436.0, 43.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -20460,6 +21208,42 @@
 										"assistshowspatchername" : 0,
 										"title" : "Edit Prescription Medication Search",
 										"boxes" : [ 											{
+												"box" : 												{
+													"id" : "obj-114",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 2,
+													"outlettype" : [ "bang", "" ],
+													"patching_rect" : [ 409.0, 693.0, 154.5, 22.0 ],
+													"text" : "t b l"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-108",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 2,
+													"outlettype" : [ "bang", "-" ],
+													"patching_rect" : [ 289.333333333333371, 750.0, 208.0, 22.0 ],
+													"text" : "t b -"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-90",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
+													"patching_rect" : [ 289.333333333333371, 800.5, 208.0, 22.0 ],
+													"text" : "MySQL_User INSERT_MED_RX_DB"
+												}
+
+											}
+, 											{
 												"box" : 												{
 													"id" : "obj-135",
 													"maxclass" : "message",
@@ -20534,13 +21318,13 @@
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
 																"box" : 																{
-																	"id" : "obj-14",
+																	"id" : "obj-4",
 																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 5,
-																	"outlettype" : [ "", "", "", "", "" ],
-																	"patching_rect" : [ 153.666666666666686, 199.0, 229.814814814814781, 22.0 ],
-																	"text" : "regexp ' @substitute \" \""
+																	"numinlets" : 2,
+																	"numoutlets" : 2,
+																	"outlettype" : [ "", "" ],
+																	"patching_rect" : [ 262.555555555555543, 346.0, 358.0, 22.0 ],
+																	"text" : "MySQL_User INSERT_SQL_INDIVIDUAL_rx_meds_CATEGORY"
 																}
 
 															}
@@ -20552,6 +21336,66 @@
 																	"numoutlets" : 0,
 																	"patching_rect" : [ 153.5, 382.5, 129.0, 22.0 ],
 																	"text" : "s QUERY_RX_MEDS"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-43",
+																	"maxclass" : "message",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 293.0, 124.0, 22.0 ],
+																	"text" : "rx_meds.CATEGORY"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-41",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 4,
+																	"outlettype" : [ "bang", "bang", "", "bang" ],
+																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
+																	"text" : "t b b s b"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-40",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 624.555555555555543, 293.0, 97.0, 22.0 ],
+																	"text" : "v RX_MEDS_ID"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-35",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 320.0, 381.0, 22.0 ],
+																	"text" : "sprintf \\\"UPDATE RX_MEDS SET %s=? WHERE RX_MEDS_ID=%s\\\""
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-14",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 5,
+																	"outlettype" : [ "", "", "", "", "" ],
+																	"patching_rect" : [ 153.666666666666686, 199.0, 229.814814814814781, 22.0 ],
+																	"text" : "regexp ' @substitute \" \""
 																}
 
 															}
@@ -20577,65 +21421,6 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 153.666666666666686, 135.25, 30.0, 30.0 ]
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-44",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 0,
-																	"patching_rect" : [ 262.555555555555543, 349.0, 104.0, 22.0 ],
-																	"text" : "s ---databaselocal"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-43",
-																	"maxclass" : "message",
-																	"numinlets" : 2,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 282.0, 158.333333333333371, 22.0 ],
-																	"text" : "CATEGORY"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-41",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 4,
-																	"outlettype" : [ "bang", "bang", "", "bang" ],
-																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
-																	"text" : "t b b s b"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-40",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 795.555555555555543, 296.0, 97.0, 22.0 ],
-																	"text" : "v RX_MEDS_ID"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-35",
-																	"maxclass" : "newobj",
-																	"numinlets" : 3,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 320.0, 553.0, 22.0 ],
-																	"text" : "sprintf exec \\\"UPDATE RX_MEDS SET %s='%s' WHERE RX_MEDS_ID=%s\\\""
 																}
 
 															}
@@ -20761,21 +21546,22 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-44", 0 ],
+																	"destination" : [ "obj-4", 0 ],
 																	"source" : [ "obj-35", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 2 ],
+																	"destination" : [ "obj-35", 1 ],
 																	"source" : [ "obj-40", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 1 ],
+																	"destination" : [ "obj-4", 1 ],
+																	"midpoints" : [ 380.944444444444457, 288.0, 732.0, 288.0, 732.0, 315.0, 732.0, 315.0, 732.0, 333.0, 611.055555555555543, 333.0 ],
 																	"source" : [ "obj-41", 2 ]
 																}
 
@@ -20783,7 +21569,7 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-40", 0 ],
-																	"midpoints" : [ 489.833333333333314, 278.0, 805.055555555555543, 278.0 ],
+																	"midpoints" : [ 489.833333333333314, 278.0, 634.055555555555543, 278.0 ],
 																	"source" : [ "obj-41", 3 ]
 																}
 
@@ -21319,18 +22105,6 @@
 											}
 , 											{
 												"box" : 												{
-													"id" : "obj-108",
-													"maxclass" : "message",
-													"numinlets" : 2,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
-													"patching_rect" : [ 1006.0, 555.5, 50.0, 22.0 ],
-													"text" : "set -"
-												}
-
-											}
-, 											{
-												"box" : 												{
 													"id" : "obj-81",
 													"maxclass" : "comment",
 													"numinlets" : 1,
@@ -21421,13 +22195,13 @@
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
 																"box" : 																{
-																	"id" : "obj-14",
+																	"id" : "obj-4",
 																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 5,
-																	"outlettype" : [ "", "", "", "", "" ],
-																	"patching_rect" : [ 153.666666666666686, 199.0, 229.814814814814781, 22.0 ],
-																	"text" : "regexp ' @substitute \" \""
+																	"numinlets" : 2,
+																	"numoutlets" : 2,
+																	"outlettype" : [ "", "" ],
+																	"patching_rect" : [ 262.555555555555543, 346.0, 365.0, 22.0 ],
+																	"text" : "MySQL_User INSERT_SQL_INDIVIDUAL_rx_meds_BOTTLESIZE"
 																}
 
 															}
@@ -21439,6 +22213,66 @@
 																	"numoutlets" : 0,
 																	"patching_rect" : [ 153.5, 382.5, 129.0, 22.0 ],
 																	"text" : "s QUERY_RX_MEDS"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-43",
+																	"maxclass" : "message",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 293.0, 138.0, 22.0 ],
+																	"text" : "rx_meds.BOTTLE_SIZE"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-41",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 4,
+																	"outlettype" : [ "bang", "bang", "", "bang" ],
+																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
+																	"text" : "t b b s b"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-40",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 624.555555555555543, 293.0, 97.0, 22.0 ],
+																	"text" : "v RX_MEDS_ID"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-35",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 320.0, 381.0, 22.0 ],
+																	"text" : "sprintf \\\"UPDATE RX_MEDS SET %s=? WHERE RX_MEDS_ID=%s\\\""
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-14",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 5,
+																	"outlettype" : [ "", "", "", "", "" ],
+																	"patching_rect" : [ 153.666666666666686, 199.0, 229.814814814814781, 22.0 ],
+																	"text" : "regexp ' @substitute \" \""
 																}
 
 															}
@@ -21464,65 +22298,6 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 153.666666666666686, 135.25, 30.0, 30.0 ]
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-44",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 0,
-																	"patching_rect" : [ 262.555555555555543, 349.0, 104.0, 22.0 ],
-																	"text" : "s ---databaselocal"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-43",
-																	"maxclass" : "message",
-																	"numinlets" : 2,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 282.0, 158.333333333333371, 22.0 ],
-																	"text" : "BOTTLE_SIZE"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-41",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 4,
-																	"outlettype" : [ "bang", "bang", "", "bang" ],
-																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
-																	"text" : "t b b s b"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-40",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 795.555555555555543, 296.0, 97.0, 22.0 ],
-																	"text" : "v RX_MEDS_ID"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-35",
-																	"maxclass" : "newobj",
-																	"numinlets" : 3,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 320.0, 553.0, 22.0 ],
-																	"text" : "sprintf exec \\\"UPDATE RX_MEDS SET %s='%s' WHERE RX_MEDS_ID=%s\\\""
 																}
 
 															}
@@ -21648,21 +22423,22 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-44", 0 ],
+																	"destination" : [ "obj-4", 0 ],
 																	"source" : [ "obj-35", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 2 ],
+																	"destination" : [ "obj-35", 1 ],
 																	"source" : [ "obj-40", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 1 ],
+																	"destination" : [ "obj-4", 1 ],
+																	"midpoints" : [ 380.944444444444457, 288.0, 732.0, 288.0, 732.0, 315.0, 732.0, 315.0, 732.0, 333.0, 618.055555555555543, 333.0 ],
 																	"source" : [ "obj-41", 2 ]
 																}
 
@@ -21670,7 +22446,7 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-40", 0 ],
-																	"midpoints" : [ 489.833333333333314, 278.0, 805.055555555555543, 278.0 ],
+																	"midpoints" : [ 489.833333333333314, 278.0, 634.055555555555543, 278.0 ],
 																	"source" : [ "obj-41", 3 ]
 																}
 
@@ -22217,13 +22993,13 @@
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
 																"box" : 																{
-																	"id" : "obj-14",
+																	"id" : "obj-4",
 																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 5,
-																	"outlettype" : [ "", "", "", "", "" ],
-																	"patching_rect" : [ 153.666666666666686, 199.0, 229.814814814814781, 22.0 ],
-																	"text" : "regexp ' @substitute \" \""
+																	"numinlets" : 2,
+																	"numoutlets" : 2,
+																	"outlettype" : [ "", "" ],
+																	"patching_rect" : [ 262.555555555555543, 346.0, 323.0, 22.0 ],
+																	"text" : "MySQL_User INSERT_SQL_INDIVIDUAL_rx_meds_TYPE"
 																}
 
 															}
@@ -22235,6 +23011,66 @@
 																	"numoutlets" : 0,
 																	"patching_rect" : [ 153.5, 382.5, 129.0, 22.0 ],
 																	"text" : "s QUERY_RX_MEDS"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-43",
+																	"maxclass" : "message",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 293.0, 89.0, 22.0 ],
+																	"text" : "rx_meds.TYPE"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-41",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 4,
+																	"outlettype" : [ "bang", "bang", "", "bang" ],
+																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
+																	"text" : "t b b s b"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-40",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 624.555555555555543, 293.0, 97.0, 22.0 ],
+																	"text" : "v RX_MEDS_ID"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-35",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 320.0, 381.0, 22.0 ],
+																	"text" : "sprintf \\\"UPDATE RX_MEDS SET %s=? WHERE RX_MEDS_ID=%s\\\""
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-14",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 5,
+																	"outlettype" : [ "", "", "", "", "" ],
+																	"patching_rect" : [ 153.666666666666686, 199.0, 229.814814814814781, 22.0 ],
+																	"text" : "regexp ' @substitute \" \""
 																}
 
 															}
@@ -22260,65 +23096,6 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 153.666666666666686, 135.25, 30.0, 30.0 ]
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-44",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 0,
-																	"patching_rect" : [ 262.555555555555543, 349.0, 104.0, 22.0 ],
-																	"text" : "s ---databaselocal"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-43",
-																	"maxclass" : "message",
-																	"numinlets" : 2,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 282.0, 158.333333333333371, 22.0 ],
-																	"text" : "TYPE"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-41",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 4,
-																	"outlettype" : [ "bang", "bang", "", "bang" ],
-																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
-																	"text" : "t b b s b"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-40",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 795.555555555555543, 296.0, 97.0, 22.0 ],
-																	"text" : "v RX_MEDS_ID"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-35",
-																	"maxclass" : "newobj",
-																	"numinlets" : 3,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 320.0, 553.0, 22.0 ],
-																	"text" : "sprintf exec \\\"UPDATE RX_MEDS SET %s='%s' WHERE RX_MEDS_ID=%s\\\""
 																}
 
 															}
@@ -22444,21 +23221,22 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-44", 0 ],
+																	"destination" : [ "obj-4", 0 ],
 																	"source" : [ "obj-35", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 2 ],
+																	"destination" : [ "obj-35", 1 ],
 																	"source" : [ "obj-40", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 1 ],
+																	"destination" : [ "obj-4", 1 ],
+																	"midpoints" : [ 380.944444444444457, 288.0, 732.0, 288.0, 732.0, 315.0, 732.0, 315.0, 732.0, 333.0, 576.055555555555543, 333.0 ],
 																	"source" : [ "obj-41", 2 ]
 																}
 
@@ -22466,7 +23244,7 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-40", 0 ],
-																	"midpoints" : [ 489.833333333333314, 278.0, 805.055555555555543, 278.0 ],
+																	"midpoints" : [ 489.833333333333314, 278.0, 634.055555555555543, 278.0 ],
 																	"source" : [ "obj-41", 3 ]
 																}
 
@@ -23013,13 +23791,13 @@
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
 																"box" : 																{
-																	"id" : "obj-14",
+																	"id" : "obj-4",
 																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 5,
-																	"outlettype" : [ "", "", "", "", "" ],
-																	"patching_rect" : [ 153.666666666666686, 199.0, 229.814814814814781, 22.0 ],
-																	"text" : "regexp ' @substitute \" \""
+																	"numinlets" : 2,
+																	"numoutlets" : 2,
+																	"outlettype" : [ "", "" ],
+																	"patching_rect" : [ 262.555555555555543, 346.0, 395.0, 22.0 ],
+																	"text" : "MySQL_User INSERT_SQL_INDIVIDUAL_rx_meds_CONCENTRATION"
 																}
 
 															}
@@ -23031,6 +23809,66 @@
 																	"numoutlets" : 0,
 																	"patching_rect" : [ 153.5, 382.5, 129.0, 22.0 ],
 																	"text" : "s QUERY_RX_MEDS"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-43",
+																	"maxclass" : "message",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 293.0, 162.0, 22.0 ],
+																	"text" : "rx_meds.CONCENTRATION"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-41",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 4,
+																	"outlettype" : [ "bang", "bang", "", "bang" ],
+																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
+																	"text" : "t b b s b"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-40",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 624.555555555555543, 293.0, 97.0, 22.0 ],
+																	"text" : "v RX_MEDS_ID"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-35",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 320.0, 381.0, 22.0 ],
+																	"text" : "sprintf \\\"UPDATE RX_MEDS SET %s=? WHERE RX_MEDS_ID=%s\\\""
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-14",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 5,
+																	"outlettype" : [ "", "", "", "", "" ],
+																	"patching_rect" : [ 153.666666666666686, 199.0, 229.814814814814781, 22.0 ],
+																	"text" : "regexp ' @substitute \" \""
 																}
 
 															}
@@ -23056,65 +23894,6 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 153.666666666666686, 135.25, 30.0, 30.0 ]
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-44",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 0,
-																	"patching_rect" : [ 262.555555555555543, 349.0, 104.0, 22.0 ],
-																	"text" : "s ---databaselocal"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-43",
-																	"maxclass" : "message",
-																	"numinlets" : 2,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 282.0, 158.333333333333371, 22.0 ],
-																	"text" : "CONCENTRATION"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-41",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 4,
-																	"outlettype" : [ "bang", "bang", "", "bang" ],
-																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
-																	"text" : "t b b s b"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-40",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 795.555555555555543, 296.0, 97.0, 22.0 ],
-																	"text" : "v RX_MEDS_ID"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-35",
-																	"maxclass" : "newobj",
-																	"numinlets" : 3,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 320.0, 553.0, 22.0 ],
-																	"text" : "sprintf exec \\\"UPDATE RX_MEDS SET %s='%s' WHERE RX_MEDS_ID=%s\\\""
 																}
 
 															}
@@ -23240,21 +24019,22 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-44", 0 ],
+																	"destination" : [ "obj-4", 0 ],
 																	"source" : [ "obj-35", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 2 ],
+																	"destination" : [ "obj-35", 1 ],
 																	"source" : [ "obj-40", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 1 ],
+																	"destination" : [ "obj-4", 1 ],
+																	"midpoints" : [ 380.944444444444457, 288.0, 732.0, 288.0, 732.0, 315.0, 732.0, 315.0, 732.0, 333.0, 648.055555555555543, 333.0 ],
 																	"source" : [ "obj-41", 2 ]
 																}
 
@@ -23262,7 +24042,7 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-40", 0 ],
-																	"midpoints" : [ 489.833333333333314, 278.0, 805.055555555555543, 278.0 ],
+																	"midpoints" : [ 489.833333333333314, 278.0, 634.055555555555543, 278.0 ],
 																	"source" : [ "obj-41", 3 ]
 																}
 
@@ -23895,13 +24675,13 @@
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
 																"box" : 																{
-																	"id" : "obj-14",
+																	"id" : "obj-4",
 																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 5,
-																	"outlettype" : [ "", "", "", "", "" ],
-																	"patching_rect" : [ 153.666666666666686, 199.0, 229.814814814814781, 22.0 ],
-																	"text" : "regexp ' @substitute \" \""
+																	"numinlets" : 2,
+																	"numoutlets" : 2,
+																	"outlettype" : [ "", "" ],
+																	"patching_rect" : [ 262.555555555555543, 346.0, 333.0, 22.0 ],
+																	"text" : "MySQL_User INSERT_SQL_INDIVIDUAL_rx_meds_NOTES"
 																}
 
 															}
@@ -23913,6 +24693,66 @@
 																	"numoutlets" : 0,
 																	"patching_rect" : [ 153.5, 382.5, 129.0, 22.0 ],
 																	"text" : "s QUERY_RX_MEDS"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-43",
+																	"maxclass" : "message",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 293.0, 99.0, 22.0 ],
+																	"text" : "rx_meds.NOTES"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-41",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 4,
+																	"outlettype" : [ "bang", "bang", "", "bang" ],
+																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
+																	"text" : "t b b s b"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-40",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 624.555555555555543, 293.0, 97.0, 22.0 ],
+																	"text" : "v RX_MEDS_ID"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-35",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 320.0, 381.0, 22.0 ],
+																	"text" : "sprintf \\\"UPDATE RX_MEDS SET %s=? WHERE RX_MEDS_ID=%s\\\""
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-14",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 5,
+																	"outlettype" : [ "", "", "", "", "" ],
+																	"patching_rect" : [ 153.666666666666686, 199.0, 229.814814814814781, 22.0 ],
+																	"text" : "regexp ' @substitute \" \""
 																}
 
 															}
@@ -23938,65 +24778,6 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 153.666666666666686, 135.25, 30.0, 30.0 ]
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-44",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 0,
-																	"patching_rect" : [ 262.555555555555543, 349.0, 104.0, 22.0 ],
-																	"text" : "s ---databaselocal"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-43",
-																	"maxclass" : "message",
-																	"numinlets" : 2,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 282.0, 158.333333333333371, 22.0 ],
-																	"text" : "NOTES"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-41",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 4,
-																	"outlettype" : [ "bang", "bang", "", "bang" ],
-																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
-																	"text" : "t b b s b"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-40",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 795.555555555555543, 296.0, 97.0, 22.0 ],
-																	"text" : "v RX_MEDS_ID"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-35",
-																	"maxclass" : "newobj",
-																	"numinlets" : 3,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 320.0, 553.0, 22.0 ],
-																	"text" : "sprintf exec \\\"UPDATE RX_MEDS SET %s='%s' WHERE RX_MEDS_ID=%s\\\""
 																}
 
 															}
@@ -24122,21 +24903,22 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-44", 0 ],
+																	"destination" : [ "obj-4", 0 ],
 																	"source" : [ "obj-35", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 2 ],
+																	"destination" : [ "obj-35", 1 ],
 																	"source" : [ "obj-40", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 1 ],
+																	"destination" : [ "obj-4", 1 ],
+																	"midpoints" : [ 380.944444444444457, 288.0, 732.0, 288.0, 732.0, 315.0, 732.0, 315.0, 732.0, 333.0, 586.055555555555543, 333.0 ],
 																	"source" : [ "obj-41", 2 ]
 																}
 
@@ -24144,7 +24926,7 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-40", 0 ],
-																	"midpoints" : [ 489.833333333333314, 278.0, 805.055555555555543, 278.0 ],
+																	"midpoints" : [ 489.833333333333314, 278.0, 634.055555555555543, 278.0 ],
 																	"source" : [ "obj-41", 3 ]
 																}
 
@@ -24715,13 +25497,13 @@
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
 																"box" : 																{
-																	"id" : "obj-14",
+																	"id" : "obj-4",
 																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 5,
-																	"outlettype" : [ "", "", "", "", "" ],
-																	"patching_rect" : [ 153.666666666666686, 199.0, 229.814814814814781, 22.0 ],
-																	"text" : "regexp ' @substitute \" \""
+																	"numinlets" : 2,
+																	"numoutlets" : 2,
+																	"outlettype" : [ "", "" ],
+																	"patching_rect" : [ 262.555555555555543, 346.0, 419.0, 22.0 ],
+																	"text" : "MySQL_User INSERT_SQL_INDIVIDUAL_rx_meds_CONTRAINDICATIONS"
 																}
 
 															}
@@ -24733,6 +25515,66 @@
 																	"numoutlets" : 0,
 																	"patching_rect" : [ 153.5, 382.5, 129.0, 22.0 ],
 																	"text" : "s QUERY_RX_MEDS"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-43",
+																	"maxclass" : "message",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 293.0, 185.0, 22.0 ],
+																	"text" : "rx_meds.CONTRAINDICATIONS"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-41",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 4,
+																	"outlettype" : [ "bang", "bang", "", "bang" ],
+																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
+																	"text" : "t b b s b"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-40",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 624.555555555555543, 293.0, 97.0, 22.0 ],
+																	"text" : "v RX_MEDS_ID"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-35",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 320.0, 381.0, 22.0 ],
+																	"text" : "sprintf \\\"UPDATE RX_MEDS SET %s=? WHERE RX_MEDS_ID=%s\\\""
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-14",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 5,
+																	"outlettype" : [ "", "", "", "", "" ],
+																	"patching_rect" : [ 153.666666666666686, 199.0, 229.814814814814781, 22.0 ],
+																	"text" : "regexp ' @substitute \" \""
 																}
 
 															}
@@ -24758,65 +25600,6 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 153.666666666666686, 135.25, 30.0, 30.0 ]
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-44",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 0,
-																	"patching_rect" : [ 262.555555555555543, 349.0, 104.0, 22.0 ],
-																	"text" : "s ---databaselocal"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-43",
-																	"maxclass" : "message",
-																	"numinlets" : 2,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 282.0, 158.333333333333371, 22.0 ],
-																	"text" : "CONTRAINDICATIONS"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-41",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 4,
-																	"outlettype" : [ "bang", "bang", "", "bang" ],
-																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
-																	"text" : "t b b s b"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-40",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 795.555555555555543, 296.0, 97.0, 22.0 ],
-																	"text" : "v RX_MEDS_ID"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-35",
-																	"maxclass" : "newobj",
-																	"numinlets" : 3,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 320.0, 553.0, 22.0 ],
-																	"text" : "sprintf exec \\\"UPDATE RX_MEDS SET %s='%s' WHERE RX_MEDS_ID=%s\\\""
 																}
 
 															}
@@ -24942,21 +25725,22 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-44", 0 ],
+																	"destination" : [ "obj-4", 0 ],
 																	"source" : [ "obj-35", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 2 ],
+																	"destination" : [ "obj-35", 1 ],
 																	"source" : [ "obj-40", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 1 ],
+																	"destination" : [ "obj-4", 1 ],
+																	"midpoints" : [ 380.944444444444457, 288.0, 732.0, 288.0, 732.0, 315.0, 732.0, 315.0, 732.0, 333.0, 672.055555555555543, 333.0 ],
 																	"source" : [ "obj-41", 2 ]
 																}
 
@@ -24964,7 +25748,7 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-40", 0 ],
-																	"midpoints" : [ 489.833333333333314, 278.0, 805.055555555555543, 278.0 ],
+																	"midpoints" : [ 489.833333333333314, 278.0, 634.055555555555543, 278.0 ],
 																	"source" : [ "obj-41", 3 ]
 																}
 
@@ -25535,13 +26319,13 @@
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
 																"box" : 																{
-																	"id" : "obj-14",
+																	"id" : "obj-4",
 																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 5,
-																	"outlettype" : [ "", "", "", "", "" ],
-																	"patching_rect" : [ 153.666666666666686, 199.0, 229.814814814814781, 22.0 ],
-																	"text" : "regexp ' @substitute \" \""
+																	"numinlets" : 2,
+																	"numoutlets" : 2,
+																	"outlettype" : [ "", "" ],
+																	"patching_rect" : [ 262.555555555555543, 346.0, 325.0, 22.0 ],
+																	"text" : "MySQL_User INSERT_SQL_INDIVIDUAL_rx_meds_ADRS"
 																}
 
 															}
@@ -25553,6 +26337,66 @@
 																	"numoutlets" : 0,
 																	"patching_rect" : [ 153.5, 382.5, 129.0, 22.0 ],
 																	"text" : "s QUERY_RX_MEDS"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-43",
+																	"maxclass" : "message",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 293.0, 91.0, 22.0 ],
+																	"text" : "rx_meds.ADRS"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-41",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 4,
+																	"outlettype" : [ "bang", "bang", "", "bang" ],
+																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
+																	"text" : "t b b s b"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-40",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 624.555555555555543, 293.0, 97.0, 22.0 ],
+																	"text" : "v RX_MEDS_ID"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-35",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 320.0, 381.0, 22.0 ],
+																	"text" : "sprintf \\\"UPDATE RX_MEDS SET %s=? WHERE RX_MEDS_ID=%s\\\""
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-14",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 5,
+																	"outlettype" : [ "", "", "", "", "" ],
+																	"patching_rect" : [ 153.666666666666686, 199.0, 229.814814814814781, 22.0 ],
+																	"text" : "regexp ' @substitute \" \""
 																}
 
 															}
@@ -25578,65 +26422,6 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 153.666666666666686, 135.25, 30.0, 30.0 ]
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-44",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 0,
-																	"patching_rect" : [ 262.555555555555543, 349.0, 104.0, 22.0 ],
-																	"text" : "s ---databaselocal"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-43",
-																	"maxclass" : "message",
-																	"numinlets" : 2,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 282.0, 158.333333333333371, 22.0 ],
-																	"text" : "ADRS"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-41",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 4,
-																	"outlettype" : [ "bang", "bang", "", "bang" ],
-																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
-																	"text" : "t b b s b"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-40",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 795.555555555555543, 296.0, 97.0, 22.0 ],
-																	"text" : "v RX_MEDS_ID"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-35",
-																	"maxclass" : "newobj",
-																	"numinlets" : 3,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 320.0, 553.0, 22.0 ],
-																	"text" : "sprintf exec \\\"UPDATE RX_MEDS SET %s='%s' WHERE RX_MEDS_ID=%s\\\""
 																}
 
 															}
@@ -25762,21 +26547,22 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-44", 0 ],
+																	"destination" : [ "obj-4", 0 ],
 																	"source" : [ "obj-35", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 2 ],
+																	"destination" : [ "obj-35", 1 ],
 																	"source" : [ "obj-40", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 1 ],
+																	"destination" : [ "obj-4", 1 ],
+																	"midpoints" : [ 380.944444444444457, 288.0, 732.0, 288.0, 732.0, 315.0, 732.0, 315.0, 732.0, 333.0, 578.055555555555543, 333.0 ],
 																	"source" : [ "obj-41", 2 ]
 																}
 
@@ -25784,7 +26570,7 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-40", 0 ],
-																	"midpoints" : [ 489.833333333333314, 278.0, 805.055555555555543, 278.0 ],
+																	"midpoints" : [ 489.833333333333314, 278.0, 634.055555555555543, 278.0 ],
 																	"source" : [ "obj-41", 3 ]
 																}
 
@@ -26331,13 +27117,13 @@
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
 																"box" : 																{
-																	"id" : "obj-14",
+																	"id" : "obj-4",
 																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 5,
-																	"outlettype" : [ "", "", "", "", "" ],
-																	"patching_rect" : [ 153.666666666666686, 199.0, 229.814814814814781, 22.0 ],
-																	"text" : "regexp ' @substitute \" \""
+																	"numinlets" : 2,
+																	"numoutlets" : 2,
+																	"outlettype" : [ "", "" ],
+																	"patching_rect" : [ 262.555555555555543, 346.0, 399.0, 22.0 ],
+																	"text" : "MySQL_User INSERT_SQL_INDIVIDUAL_rx_meds_PREG_CATEGORY"
 																}
 
 															}
@@ -26349,6 +27135,66 @@
 																	"numoutlets" : 0,
 																	"patching_rect" : [ 153.5, 382.5, 129.0, 22.0 ],
 																	"text" : "s QUERY_RX_MEDS"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-43",
+																	"maxclass" : "message",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 293.0, 207.0, 22.0 ],
+																	"text" : "rx_meds.PREGNANCY_CATEGORY"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-41",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 4,
+																	"outlettype" : [ "bang", "bang", "", "bang" ],
+																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
+																	"text" : "t b b s b"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-40",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 624.555555555555543, 293.0, 97.0, 22.0 ],
+																	"text" : "v RX_MEDS_ID"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-35",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 320.0, 381.0, 22.0 ],
+																	"text" : "sprintf \\\"UPDATE RX_MEDS SET %s=? WHERE RX_MEDS_ID=%s\\\""
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-14",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 5,
+																	"outlettype" : [ "", "", "", "", "" ],
+																	"patching_rect" : [ 153.666666666666686, 199.0, 229.814814814814781, 22.0 ],
+																	"text" : "regexp ' @substitute \" \""
 																}
 
 															}
@@ -26374,65 +27220,6 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 153.666666666666686, 135.25, 30.0, 30.0 ]
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-44",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 0,
-																	"patching_rect" : [ 262.555555555555543, 349.0, 104.0, 22.0 ],
-																	"text" : "s ---databaselocal"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-43",
-																	"maxclass" : "message",
-																	"numinlets" : 2,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 282.0, 158.333333333333371, 22.0 ],
-																	"text" : "PREGNANCY_CATEGORY"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-41",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 4,
-																	"outlettype" : [ "bang", "bang", "", "bang" ],
-																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
-																	"text" : "t b b s b"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-40",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 795.555555555555543, 296.0, 97.0, 22.0 ],
-																	"text" : "v RX_MEDS_ID"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-35",
-																	"maxclass" : "newobj",
-																	"numinlets" : 3,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 320.0, 553.0, 22.0 ],
-																	"text" : "sprintf exec \\\"UPDATE RX_MEDS SET %s='%s' WHERE RX_MEDS_ID=%s\\\""
 																}
 
 															}
@@ -26558,21 +27345,22 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-44", 0 ],
+																	"destination" : [ "obj-4", 0 ],
 																	"source" : [ "obj-35", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 2 ],
+																	"destination" : [ "obj-35", 1 ],
 																	"source" : [ "obj-40", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 1 ],
+																	"destination" : [ "obj-4", 1 ],
+																	"midpoints" : [ 380.944444444444457, 288.0, 732.0, 288.0, 732.0, 315.0, 732.0, 315.0, 732.0, 333.0, 652.055555555555543, 333.0 ],
 																	"source" : [ "obj-41", 2 ]
 																}
 
@@ -26580,7 +27368,7 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-40", 0 ],
-																	"midpoints" : [ 489.833333333333314, 278.0, 805.055555555555543, 278.0 ],
+																	"midpoints" : [ 489.833333333333314, 278.0, 634.055555555555543, 278.0 ],
 																	"source" : [ "obj-41", 3 ]
 																}
 
@@ -27127,13 +27915,13 @@
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
 																"box" : 																{
-																	"id" : "obj-14",
+																	"id" : "obj-4",
 																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 5,
-																	"outlettype" : [ "", "", "", "", "" ],
-																	"patching_rect" : [ 153.666666666666686, 199.0, 229.814814814814781, 22.0 ],
-																	"text" : "regexp ' @substitute \" \""
+																	"numinlets" : 2,
+																	"numoutlets" : 2,
+																	"outlettype" : [ "", "" ],
+																	"patching_rect" : [ 262.555555555555543, 346.0, 382.0, 22.0 ],
+																	"text" : "MySQL_User INSERT_SQL_INDIVIDUAL_rx_meds_PEDS_DOSAGE"
 																}
 
 															}
@@ -27145,6 +27933,66 @@
 																	"numoutlets" : 0,
 																	"patching_rect" : [ 153.5, 382.5, 129.0, 22.0 ],
 																	"text" : "s QUERY_RX_MEDS"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-43",
+																	"maxclass" : "message",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 293.0, 149.0, 22.0 ],
+																	"text" : "rx_meds.PEDS_DOSAGE"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-41",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 4,
+																	"outlettype" : [ "bang", "bang", "", "bang" ],
+																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
+																	"text" : "t b b s b"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-40",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 624.555555555555543, 293.0, 97.0, 22.0 ],
+																	"text" : "v RX_MEDS_ID"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-35",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 320.0, 381.0, 22.0 ],
+																	"text" : "sprintf \\\"UPDATE RX_MEDS SET %s=? WHERE RX_MEDS_ID=%s\\\""
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-14",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 5,
+																	"outlettype" : [ "", "", "", "", "" ],
+																	"patching_rect" : [ 153.666666666666686, 199.0, 229.814814814814781, 22.0 ],
+																	"text" : "regexp ' @substitute \" \""
 																}
 
 															}
@@ -27170,65 +28018,6 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 153.666666666666686, 135.25, 30.0, 30.0 ]
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-44",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 0,
-																	"patching_rect" : [ 262.555555555555543, 349.0, 104.0, 22.0 ],
-																	"text" : "s ---databaselocal"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-43",
-																	"maxclass" : "message",
-																	"numinlets" : 2,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 282.0, 158.333333333333371, 22.0 ],
-																	"text" : "PEDS_DOSAGE"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-41",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 4,
-																	"outlettype" : [ "bang", "bang", "", "bang" ],
-																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
-																	"text" : "t b b s b"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-40",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 795.555555555555543, 296.0, 97.0, 22.0 ],
-																	"text" : "v RX_MEDS_ID"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-35",
-																	"maxclass" : "newobj",
-																	"numinlets" : 3,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 320.0, 553.0, 22.0 ],
-																	"text" : "sprintf exec \\\"UPDATE RX_MEDS SET %s='%s' WHERE RX_MEDS_ID=%s\\\""
 																}
 
 															}
@@ -27354,21 +28143,22 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-44", 0 ],
+																	"destination" : [ "obj-4", 0 ],
 																	"source" : [ "obj-35", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 2 ],
+																	"destination" : [ "obj-35", 1 ],
 																	"source" : [ "obj-40", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 1 ],
+																	"destination" : [ "obj-4", 1 ],
+																	"midpoints" : [ 380.944444444444457, 288.0, 732.0, 288.0, 732.0, 315.0, 732.0, 315.0, 732.0, 333.0, 635.055555555555543, 333.0 ],
 																	"source" : [ "obj-41", 2 ]
 																}
 
@@ -27376,7 +28166,7 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-40", 0 ],
-																	"midpoints" : [ 489.833333333333314, 278.0, 805.055555555555543, 278.0 ],
+																	"midpoints" : [ 489.833333333333314, 278.0, 634.055555555555543, 278.0 ],
 																	"source" : [ "obj-41", 3 ]
 																}
 
@@ -27923,13 +28713,13 @@
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
 																"box" : 																{
-																	"id" : "obj-14",
+																	"id" : "obj-4",
 																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 5,
-																	"outlettype" : [ "", "", "", "", "" ],
-																	"patching_rect" : [ 153.666666666666686, 199.0, 229.814814814814781, 22.0 ],
-																	"text" : "regexp ' @substitute \" \""
+																	"numinlets" : 2,
+																	"numoutlets" : 2,
+																	"outlettype" : [ "", "" ],
+																	"patching_rect" : [ 262.555555555555543, 346.0, 343.0, 22.0 ],
+																	"text" : "MySQL_User INSERT_SQL_INDIVIDUAL_rx_meds_DOSAGE"
 																}
 
 															}
@@ -27941,6 +28731,66 @@
 																	"numoutlets" : 0,
 																	"patching_rect" : [ 153.5, 382.5, 129.0, 22.0 ],
 																	"text" : "s QUERY_RX_MEDS"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-43",
+																	"maxclass" : "message",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 293.0, 109.0, 22.0 ],
+																	"text" : "rx_meds.DOSAGE"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-41",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 4,
+																	"outlettype" : [ "bang", "bang", "", "bang" ],
+																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
+																	"text" : "t b b s b"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-40",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 624.555555555555543, 293.0, 97.0, 22.0 ],
+																	"text" : "v RX_MEDS_ID"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-35",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 320.0, 381.0, 22.0 ],
+																	"text" : "sprintf \\\"UPDATE RX_MEDS SET %s=? WHERE RX_MEDS_ID=%s\\\""
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-14",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 5,
+																	"outlettype" : [ "", "", "", "", "" ],
+																	"patching_rect" : [ 153.666666666666686, 199.0, 229.814814814814781, 22.0 ],
+																	"text" : "regexp ' @substitute \" \""
 																}
 
 															}
@@ -27966,65 +28816,6 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 153.666666666666686, 135.25, 30.0, 30.0 ]
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-44",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 0,
-																	"patching_rect" : [ 262.555555555555543, 349.0, 104.0, 22.0 ],
-																	"text" : "s ---databaselocal"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-43",
-																	"maxclass" : "message",
-																	"numinlets" : 2,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 282.0, 158.333333333333371, 22.0 ],
-																	"text" : "ADULT_DOSAGE"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-41",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 4,
-																	"outlettype" : [ "bang", "bang", "", "bang" ],
-																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
-																	"text" : "t b b s b"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-40",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 795.555555555555543, 296.0, 97.0, 22.0 ],
-																	"text" : "v RX_MEDS_ID"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-35",
-																	"maxclass" : "newobj",
-																	"numinlets" : 3,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 320.0, 553.0, 22.0 ],
-																	"text" : "sprintf exec \\\"UPDATE RX_MEDS SET %s='%s' WHERE RX_MEDS_ID=%s\\\""
 																}
 
 															}
@@ -28150,21 +28941,22 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-44", 0 ],
+																	"destination" : [ "obj-4", 0 ],
 																	"source" : [ "obj-35", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 2 ],
+																	"destination" : [ "obj-35", 1 ],
 																	"source" : [ "obj-40", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 1 ],
+																	"destination" : [ "obj-4", 1 ],
+																	"midpoints" : [ 380.944444444444457, 288.0, 732.0, 288.0, 732.0, 315.0, 732.0, 315.0, 732.0, 333.0, 596.055555555555543, 333.0 ],
 																	"source" : [ "obj-41", 2 ]
 																}
 
@@ -28172,7 +28964,7 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-40", 0 ],
-																	"midpoints" : [ 489.833333333333314, 278.0, 805.055555555555543, 278.0 ],
+																	"midpoints" : [ 489.833333333333314, 278.0, 634.055555555555543, 278.0 ],
 																	"source" : [ "obj-41", 3 ]
 																}
 
@@ -28719,13 +29511,13 @@
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
 																"box" : 																{
-																	"id" : "obj-14",
+																	"id" : "obj-4",
 																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 5,
-																	"outlettype" : [ "", "", "", "", "" ],
-																	"patching_rect" : [ 153.666666666666686, 199.0, 229.814814814814781, 22.0 ],
-																	"text" : "regexp ' @substitute \" \""
+																	"numinlets" : 2,
+																	"numoutlets" : 2,
+																	"outlettype" : [ "", "" ],
+																	"patching_rect" : [ 262.555555555555543, 346.0, 392.0, 22.0 ],
+																	"text" : "MySQL_User INSERT_SQL_INDIVIDUAL_rx_meds_AB_WORKS_CVG"
 																}
 
 															}
@@ -28737,6 +29529,66 @@
 																	"numoutlets" : 0,
 																	"patching_rect" : [ 153.5, 382.5, 129.0, 22.0 ],
 																	"text" : "s QUERY_RX_MEDS"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-43",
+																	"maxclass" : "message",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 293.0, 201.0, 22.0 ],
+																	"text" : "rx_meds.AB_WORKS_COVERAGE"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-41",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 4,
+																	"outlettype" : [ "bang", "bang", "", "bang" ],
+																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
+																	"text" : "t b b s b"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-40",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 624.555555555555543, 293.0, 97.0, 22.0 ],
+																	"text" : "v RX_MEDS_ID"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-35",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 320.0, 381.0, 22.0 ],
+																	"text" : "sprintf \\\"UPDATE RX_MEDS SET %s=? WHERE RX_MEDS_ID=%s\\\""
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-14",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 5,
+																	"outlettype" : [ "", "", "", "", "" ],
+																	"patching_rect" : [ 153.666666666666686, 199.0, 229.814814814814781, 22.0 ],
+																	"text" : "regexp ' @substitute \" \""
 																}
 
 															}
@@ -28762,65 +29614,6 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 153.666666666666686, 135.25, 30.0, 30.0 ]
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-44",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 0,
-																	"patching_rect" : [ 262.555555555555543, 349.0, 104.0, 22.0 ],
-																	"text" : "s ---databaselocal"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-43",
-																	"maxclass" : "message",
-																	"numinlets" : 2,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 282.0, 158.333333333333371, 22.0 ],
-																	"text" : "AB_WORKS_COVERAGE"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-41",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 4,
-																	"outlettype" : [ "bang", "bang", "", "bang" ],
-																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
-																	"text" : "t b b s b"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-40",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 795.555555555555543, 296.0, 97.0, 22.0 ],
-																	"text" : "v RX_MEDS_ID"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-35",
-																	"maxclass" : "newobj",
-																	"numinlets" : 3,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 320.0, 553.0, 22.0 ],
-																	"text" : "sprintf exec \\\"UPDATE RX_MEDS SET %s='%s' WHERE RX_MEDS_ID=%s\\\""
 																}
 
 															}
@@ -28946,21 +29739,22 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-44", 0 ],
+																	"destination" : [ "obj-4", 0 ],
 																	"source" : [ "obj-35", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 2 ],
+																	"destination" : [ "obj-35", 1 ],
 																	"source" : [ "obj-40", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 1 ],
+																	"destination" : [ "obj-4", 1 ],
+																	"midpoints" : [ 380.944444444444457, 288.0, 732.0, 288.0, 732.0, 315.0, 732.0, 315.0, 732.0, 333.0, 645.055555555555543, 333.0 ],
 																	"source" : [ "obj-41", 2 ]
 																}
 
@@ -28968,7 +29762,7 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-40", 0 ],
-																	"midpoints" : [ 489.833333333333314, 278.0, 805.055555555555543, 278.0 ],
+																	"midpoints" : [ 489.833333333333314, 278.0, 634.055555555555543, 278.0 ],
 																	"source" : [ "obj-41", 3 ]
 																}
 
@@ -29515,13 +30309,13 @@
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
 																"box" : 																{
-																	"id" : "obj-14",
+																	"id" : "obj-4",
 																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 5,
-																	"outlettype" : [ "", "", "", "", "" ],
-																	"patching_rect" : [ 153.666666666666686, 199.0, 229.814814814814781, 22.0 ],
-																	"text" : "regexp ' @substitute \" \""
+																	"numinlets" : 2,
+																	"numoutlets" : 2,
+																	"outlettype" : [ "", "" ],
+																	"patching_rect" : [ 262.555555555555543, 346.0, 390.0, 22.0 ],
+																	"text" : "MySQL_User INSERT_SQL_INDIVIDUAL_rx_meds_GENERIC_PRICE"
 																}
 
 															}
@@ -29533,6 +30327,66 @@
 																	"numoutlets" : 0,
 																	"patching_rect" : [ 153.5, 382.5, 129.0, 22.0 ],
 																	"text" : "s QUERY_RX_MEDS"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-43",
+																	"maxclass" : "message",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 293.0, 156.0, 22.0 ],
+																	"text" : "rx_meds.GENERIC_PRICE"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-41",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 4,
+																	"outlettype" : [ "bang", "bang", "", "bang" ],
+																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
+																	"text" : "t b b s b"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-40",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 624.555555555555543, 293.0, 97.0, 22.0 ],
+																	"text" : "v RX_MEDS_ID"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-35",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 320.0, 381.0, 22.0 ],
+																	"text" : "sprintf \\\"UPDATE RX_MEDS SET %s=? WHERE RX_MEDS_ID=%s\\\""
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-14",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 5,
+																	"outlettype" : [ "", "", "", "", "" ],
+																	"patching_rect" : [ 153.666666666666686, 199.0, 229.814814814814781, 22.0 ],
+																	"text" : "regexp ' @substitute \" \""
 																}
 
 															}
@@ -29558,65 +30412,6 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 153.666666666666686, 135.25, 30.0, 30.0 ]
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-44",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 0,
-																	"patching_rect" : [ 262.555555555555543, 349.0, 104.0, 22.0 ],
-																	"text" : "s ---databaselocal"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-43",
-																	"maxclass" : "message",
-																	"numinlets" : 2,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 282.0, 158.333333333333371, 22.0 ],
-																	"text" : "GENERIC_PRICE"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-41",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 4,
-																	"outlettype" : [ "bang", "bang", "", "bang" ],
-																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
-																	"text" : "t b b s b"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-40",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 795.555555555555543, 296.0, 97.0, 22.0 ],
-																	"text" : "v RX_MEDS_ID"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-35",
-																	"maxclass" : "newobj",
-																	"numinlets" : 3,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 320.0, 553.0, 22.0 ],
-																	"text" : "sprintf exec \\\"UPDATE RX_MEDS SET %s='%s' WHERE RX_MEDS_ID=%s\\\""
 																}
 
 															}
@@ -29742,21 +30537,22 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-44", 0 ],
+																	"destination" : [ "obj-4", 0 ],
 																	"source" : [ "obj-35", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 2 ],
+																	"destination" : [ "obj-35", 1 ],
 																	"source" : [ "obj-40", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 1 ],
+																	"destination" : [ "obj-4", 1 ],
+																	"midpoints" : [ 380.944444444444457, 288.0, 732.0, 288.0, 732.0, 315.0, 732.0, 315.0, 732.0, 333.0, 643.055555555555543, 333.0 ],
 																	"source" : [ "obj-41", 2 ]
 																}
 
@@ -29764,7 +30560,7 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-40", 0 ],
-																	"midpoints" : [ 489.833333333333314, 278.0, 805.055555555555543, 278.0 ],
+																	"midpoints" : [ 489.833333333333314, 278.0, 634.055555555555543, 278.0 ],
 																	"source" : [ "obj-41", 3 ]
 																}
 
@@ -30311,13 +31107,13 @@
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
 																"box" : 																{
-																	"id" : "obj-14",
+																	"id" : "obj-4",
 																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 5,
-																	"outlettype" : [ "", "", "", "", "" ],
-																	"patching_rect" : [ 153.666666666666686, 199.0, 229.814814814814781, 22.0 ],
-																	"text" : "regexp ' @substitute \" \""
+																	"numinlets" : 2,
+																	"numoutlets" : 2,
+																	"outlettype" : [ "", "" ],
+																	"patching_rect" : [ 262.555555555555543, 346.0, 410.0, 22.0 ],
+																	"text" : "MySQL_User INSERT_SQL_INDIVIDUAL_rx_meds_TRADENAME_PRICE"
 																}
 
 															}
@@ -30329,6 +31125,66 @@
 																	"numoutlets" : 0,
 																	"patching_rect" : [ 153.5, 382.5, 129.0, 22.0 ],
 																	"text" : "s QUERY_RX_MEDS"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-43",
+																	"maxclass" : "message",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 293.0, 177.0, 22.0 ],
+																	"text" : "rx_meds.TRADENAME_PRICE"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-41",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 4,
+																	"outlettype" : [ "bang", "bang", "", "bang" ],
+																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
+																	"text" : "t b b s b"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-40",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 624.555555555555543, 293.0, 97.0, 22.0 ],
+																	"text" : "v RX_MEDS_ID"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-35",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 320.0, 381.0, 22.0 ],
+																	"text" : "sprintf \\\"UPDATE RX_MEDS SET %s=? WHERE RX_MEDS_ID=%s\\\""
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-14",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 5,
+																	"outlettype" : [ "", "", "", "", "" ],
+																	"patching_rect" : [ 153.666666666666686, 199.0, 229.814814814814781, 22.0 ],
+																	"text" : "regexp ' @substitute \" \""
 																}
 
 															}
@@ -30354,65 +31210,6 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 153.666666666666686, 135.25, 30.0, 30.0 ]
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-44",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 0,
-																	"patching_rect" : [ 262.555555555555543, 349.0, 104.0, 22.0 ],
-																	"text" : "s ---databaselocal"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-43",
-																	"maxclass" : "message",
-																	"numinlets" : 2,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 282.0, 158.333333333333371, 22.0 ],
-																	"text" : "TRADENAME_PRICE"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-41",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 4,
-																	"outlettype" : [ "bang", "bang", "", "bang" ],
-																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
-																	"text" : "t b b s b"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-40",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 795.555555555555543, 296.0, 97.0, 22.0 ],
-																	"text" : "v RX_MEDS_ID"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-35",
-																	"maxclass" : "newobj",
-																	"numinlets" : 3,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 320.0, 553.0, 22.0 ],
-																	"text" : "sprintf exec \\\"UPDATE RX_MEDS SET %s='%s' WHERE RX_MEDS_ID=%s\\\""
 																}
 
 															}
@@ -30538,21 +31335,22 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-44", 0 ],
+																	"destination" : [ "obj-4", 0 ],
 																	"source" : [ "obj-35", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 2 ],
+																	"destination" : [ "obj-35", 1 ],
 																	"source" : [ "obj-40", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 1 ],
+																	"destination" : [ "obj-4", 1 ],
+																	"midpoints" : [ 380.944444444444457, 288.0, 732.0, 288.0, 732.0, 315.0, 732.0, 315.0, 732.0, 333.0, 663.055555555555543, 333.0 ],
 																	"source" : [ "obj-41", 2 ]
 																}
 
@@ -30560,7 +31358,7 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-40", 0 ],
-																	"midpoints" : [ 489.833333333333314, 278.0, 805.055555555555543, 278.0 ],
+																	"midpoints" : [ 489.833333333333314, 278.0, 634.055555555555543, 278.0 ],
 																	"source" : [ "obj-41", 3 ]
 																}
 
@@ -31107,13 +31905,13 @@
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
 																"box" : 																{
-																	"id" : "obj-14",
+																	"id" : "obj-4",
 																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 5,
-																	"outlettype" : [ "", "", "", "", "" ],
-																	"patching_rect" : [ 153.666666666666686, 199.0, 229.814814814814781, 22.0 ],
-																	"text" : "regexp ' @substitute \" \""
+																	"numinlets" : 2,
+																	"numoutlets" : 2,
+																	"outlettype" : [ "", "" ],
+																	"patching_rect" : [ 262.555555555555543, 346.0, 334.0, 22.0 ],
+																	"text" : "MySQL_User INSERT_SQL_INDIVIDUAL_rx_meds_USAGE"
 																}
 
 															}
@@ -31125,6 +31923,66 @@
 																	"numoutlets" : 0,
 																	"patching_rect" : [ 153.5, 382.5, 129.0, 22.0 ],
 																	"text" : "s QUERY_RX_MEDS"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-43",
+																	"maxclass" : "message",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 293.0, 100.0, 22.0 ],
+																	"text" : "rx_meds.USAGE"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-41",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 4,
+																	"outlettype" : [ "bang", "bang", "", "bang" ],
+																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
+																	"text" : "t b b s b"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-40",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 624.555555555555543, 293.0, 97.0, 22.0 ],
+																	"text" : "v RX_MEDS_ID"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-35",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 320.0, 381.0, 22.0 ],
+																	"text" : "sprintf \\\"UPDATE RX_MEDS SET %s=? WHERE RX_MEDS_ID=%s\\\""
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-14",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 5,
+																	"outlettype" : [ "", "", "", "", "" ],
+																	"patching_rect" : [ 153.666666666666686, 199.0, 229.814814814814781, 22.0 ],
+																	"text" : "regexp ' @substitute \" \""
 																}
 
 															}
@@ -31150,65 +32008,6 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 153.666666666666686, 135.25, 30.0, 30.0 ]
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-44",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 0,
-																	"patching_rect" : [ 262.555555555555543, 349.0, 104.0, 22.0 ],
-																	"text" : "s ---databaselocal"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-43",
-																	"maxclass" : "message",
-																	"numinlets" : 2,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 282.0, 158.333333333333371, 22.0 ],
-																	"text" : "USAGE"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-41",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 4,
-																	"outlettype" : [ "bang", "bang", "", "bang" ],
-																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
-																	"text" : "t b b s b"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-40",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 795.555555555555543, 296.0, 97.0, 22.0 ],
-																	"text" : "v RX_MEDS_ID"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-35",
-																	"maxclass" : "newobj",
-																	"numinlets" : 3,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 320.0, 553.0, 22.0 ],
-																	"text" : "sprintf exec \\\"UPDATE RX_MEDS SET %s='%s' WHERE RX_MEDS_ID=%s\\\""
 																}
 
 															}
@@ -31334,21 +32133,22 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-44", 0 ],
+																	"destination" : [ "obj-4", 0 ],
 																	"source" : [ "obj-35", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 2 ],
+																	"destination" : [ "obj-35", 1 ],
 																	"source" : [ "obj-40", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 1 ],
+																	"destination" : [ "obj-4", 1 ],
+																	"midpoints" : [ 380.944444444444457, 288.0, 732.0, 288.0, 732.0, 315.0, 732.0, 315.0, 732.0, 333.0, 587.055555555555543, 333.0 ],
 																	"source" : [ "obj-41", 2 ]
 																}
 
@@ -31356,7 +32156,7 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-40", 0 ],
-																	"midpoints" : [ 489.833333333333314, 278.0, 805.055555555555543, 278.0 ],
+																	"midpoints" : [ 489.833333333333314, 278.0, 634.055555555555543, 278.0 ],
 																	"source" : [ "obj-41", 3 ]
 																}
 
@@ -31903,13 +32703,13 @@
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
 																"box" : 																{
-																	"id" : "obj-14",
+																	"id" : "obj-4",
 																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 5,
-																	"outlettype" : [ "", "", "", "", "" ],
-																	"patching_rect" : [ 153.666666666666686, 199.0, 229.814814814814781, 22.0 ],
-																	"text" : "regexp ' @substitute \" \""
+																	"numinlets" : 2,
+																	"numoutlets" : 2,
+																	"outlettype" : [ "", "" ],
+																	"patching_rect" : [ 262.555555555555543, 346.0, 331.0, 22.0 ],
+																	"text" : "MySQL_User INSERT_SQL_INDIVIDUAL_rx_meds_CLASS"
 																}
 
 															}
@@ -31921,6 +32721,78 @@
 																	"numoutlets" : 0,
 																	"patching_rect" : [ 153.5, 382.5, 129.0, 22.0 ],
 																	"text" : "s QUERY_RX_MEDS"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-43",
+																	"maxclass" : "message",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 293.0, 97.0, 22.0 ],
+																	"text" : "rx_meds.CLASS"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-41",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 4,
+																	"outlettype" : [ "bang", "bang", "", "bang" ],
+																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
+																	"text" : "t b b s b"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-40",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 624.555555555555543, 293.0, 97.0, 22.0 ],
+																	"text" : "v RX_MEDS_ID"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-35",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 320.0, 381.0, 22.0 ],
+																	"text" : "sprintf \\\"UPDATE RX_MEDS SET %s=? WHERE RX_MEDS_ID=%s\\\""
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-3",
+																	"maxclass" : "message",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 518.555555555555543, 87.0, 158.333333333333371, 22.0 ],
+																	"text" : "CLASS"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-14",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 5,
+																	"outlettype" : [ "", "", "", "", "" ],
+																	"patching_rect" : [ 153.666666666666686, 199.0, 229.814814814814781, 22.0 ],
+																	"text" : "regexp ' @substitute \" \""
 																}
 
 															}
@@ -31946,65 +32818,6 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 153.666666666666686, 135.25, 30.0, 30.0 ]
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-44",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 0,
-																	"patching_rect" : [ 262.555555555555543, 349.0, 104.0, 22.0 ],
-																	"text" : "s ---databaselocal"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-43",
-																	"maxclass" : "message",
-																	"numinlets" : 2,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 282.0, 158.333333333333371, 22.0 ],
-																	"text" : "CLASS"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-41",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 4,
-																	"outlettype" : [ "bang", "bang", "", "bang" ],
-																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
-																	"text" : "t b b s b"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-40",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 795.555555555555543, 296.0, 97.0, 22.0 ],
-																	"text" : "v RX_MEDS_ID"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-35",
-																	"maxclass" : "newobj",
-																	"numinlets" : 3,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 320.0, 553.0, 22.0 ],
-																	"text" : "sprintf exec \\\"UPDATE RX_MEDS SET %s='%s' WHERE RX_MEDS_ID=%s\\\""
 																}
 
 															}
@@ -32130,21 +32943,22 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-44", 0 ],
+																	"destination" : [ "obj-4", 0 ],
 																	"source" : [ "obj-35", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 2 ],
+																	"destination" : [ "obj-35", 1 ],
 																	"source" : [ "obj-40", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 1 ],
+																	"destination" : [ "obj-4", 1 ],
+																	"midpoints" : [ 380.944444444444457, 288.0, 732.0, 288.0, 732.0, 315.0, 732.0, 315.0, 732.0, 333.0, 584.055555555555543, 333.0 ],
 																	"source" : [ "obj-41", 2 ]
 																}
 
@@ -32152,7 +32966,7 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-40", 0 ],
-																	"midpoints" : [ 489.833333333333314, 278.0, 805.055555555555543, 278.0 ],
+																	"midpoints" : [ 489.833333333333314, 278.0, 634.055555555555543, 278.0 ],
 																	"source" : [ "obj-41", 3 ]
 																}
 
@@ -32699,13 +33513,13 @@
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
 																"box" : 																{
-																	"id" : "obj-14",
+																	"id" : "obj-4",
 																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 5,
-																	"outlettype" : [ "", "", "", "", "" ],
-																	"patching_rect" : [ 153.666666666666686, 199.0, 229.814814814814781, 22.0 ],
-																	"text" : "regexp ' @substitute \" \""
+																	"numinlets" : 2,
+																	"numoutlets" : 2,
+																	"outlettype" : [ "", "" ],
+																	"patching_rect" : [ 262.555555555555543, 346.0, 354.0, 22.0 ],
+																	"text" : "MySQL_User INSERT_SQL_INDIVIDUAL_RX_MEDS_SEARCH"
 																}
 
 															}
@@ -32717,6 +33531,66 @@
 																	"numoutlets" : 0,
 																	"patching_rect" : [ 153.5, 382.5, 129.0, 22.0 ],
 																	"text" : "s QUERY_RX_MEDS"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-43",
+																	"maxclass" : "message",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 293.0, 123.0, 22.0 ],
+																	"text" : "RX_MEDS_SEARCH"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-41",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 4,
+																	"outlettype" : [ "bang", "bang", "", "bang" ],
+																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
+																	"text" : "t b b s b"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-40",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 624.555555555555543, 293.0, 97.0, 22.0 ],
+																	"text" : "v RX_MEDS_ID"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-35",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 320.0, 381.0, 22.0 ],
+																	"text" : "sprintf \\\"UPDATE RX_MEDS SET %s=? WHERE RX_MEDS_ID=%s\\\""
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-14",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 5,
+																	"outlettype" : [ "", "", "", "", "" ],
+																	"patching_rect" : [ 153.666666666666686, 199.0, 229.814814814814781, 22.0 ],
+																	"text" : "regexp ' @substitute \" \""
 																}
 
 															}
@@ -32742,65 +33616,6 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 153.666666666666686, 135.25, 30.0, 30.0 ]
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-44",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 0,
-																	"patching_rect" : [ 262.555555555555543, 349.0, 104.0, 22.0 ],
-																	"text" : "s ---databaselocal"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-43",
-																	"maxclass" : "message",
-																	"numinlets" : 2,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 282.0, 158.333333333333371, 22.0 ],
-																	"text" : "RX_MEDS_SEARCH"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-41",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 4,
-																	"outlettype" : [ "bang", "bang", "", "bang" ],
-																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
-																	"text" : "t b b s b"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-40",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 795.555555555555543, 296.0, 97.0, 22.0 ],
-																	"text" : "v RX_MEDS_ID"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-35",
-																	"maxclass" : "newobj",
-																	"numinlets" : 3,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 320.0, 553.0, 22.0 ],
-																	"text" : "sprintf exec \\\"UPDATE RX_MEDS SET %s='%s' WHERE RX_MEDS_ID=%s\\\""
 																}
 
 															}
@@ -32926,21 +33741,22 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-44", 0 ],
+																	"destination" : [ "obj-4", 0 ],
 																	"source" : [ "obj-35", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 2 ],
+																	"destination" : [ "obj-35", 1 ],
 																	"source" : [ "obj-40", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 1 ],
+																	"destination" : [ "obj-4", 1 ],
+																	"midpoints" : [ 380.944444444444457, 288.0, 732.0, 288.0, 732.0, 315.0, 732.0, 315.0, 732.0, 333.0, 607.055555555555543, 333.0 ],
 																	"source" : [ "obj-41", 2 ]
 																}
 
@@ -32948,7 +33764,7 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-40", 0 ],
-																	"midpoints" : [ 489.833333333333314, 278.0, 805.055555555555543, 278.0 ],
+																	"midpoints" : [ 489.833333333333314, 278.0, 634.055555555555543, 278.0 ],
 																	"source" : [ "obj-41", 3 ]
 																}
 
@@ -33495,13 +34311,13 @@
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
 																"box" : 																{
-																	"id" : "obj-14",
+																	"id" : "obj-4",
 																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 5,
-																	"outlettype" : [ "", "", "", "", "" ],
-																	"patching_rect" : [ 153.666666666666686, 199.0, 229.814814814814781, 22.0 ],
-																	"text" : "regexp ' @substitute \" \""
+																	"numinlets" : 2,
+																	"numoutlets" : 2,
+																	"outlettype" : [ "", "" ],
+																	"patching_rect" : [ 262.555555555555543, 346.0, 479.0, 22.0 ],
+																	"text" : "MySQL_User INSERT_SQL_INDIVIDUAL_RX_MEDS_COMPANY"
 																}
 
 															}
@@ -33513,6 +34329,66 @@
 																	"numoutlets" : 0,
 																	"patching_rect" : [ 153.5, 382.5, 129.0, 22.0 ],
 																	"text" : "s QUERY_RX_MEDS"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-43",
+																	"maxclass" : "message",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 293.0, 133.0, 22.0 ],
+																	"text" : "RX_MEDS_COMPANY"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-41",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 4,
+																	"outlettype" : [ "bang", "bang", "", "bang" ],
+																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
+																	"text" : "t b b s b"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-40",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 624.555555555555543, 293.0, 97.0, 22.0 ],
+																	"text" : "v RX_MEDS_ID"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-35",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 320.0, 381.0, 22.0 ],
+																	"text" : "sprintf \\\"UPDATE RX_MEDS SET %s=? WHERE RX_MEDS_ID=%s\\\""
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-14",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 5,
+																	"outlettype" : [ "", "", "", "", "" ],
+																	"patching_rect" : [ 153.666666666666686, 199.0, 229.814814814814781, 22.0 ],
+																	"text" : "regexp ' @substitute \" \""
 																}
 
 															}
@@ -33538,65 +34414,6 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 153.666666666666686, 135.25, 30.0, 30.0 ]
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-44",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 0,
-																	"patching_rect" : [ 262.555555555555543, 349.0, 104.0, 22.0 ],
-																	"text" : "s ---databaselocal"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-43",
-																	"maxclass" : "message",
-																	"numinlets" : 2,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 282.0, 158.333333333333371, 22.0 ],
-																	"text" : "RX_MEDS_COMPANY"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-41",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 4,
-																	"outlettype" : [ "bang", "bang", "", "bang" ],
-																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
-																	"text" : "t b b s b"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-40",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 795.555555555555543, 296.0, 97.0, 22.0 ],
-																	"text" : "v RX_MEDS_ID"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-35",
-																	"maxclass" : "newobj",
-																	"numinlets" : 3,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 320.0, 553.0, 22.0 ],
-																	"text" : "sprintf exec \\\"UPDATE RX_MEDS SET %s='%s' WHERE RX_MEDS_ID=%s\\\""
 																}
 
 															}
@@ -33722,21 +34539,22 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-44", 0 ],
+																	"destination" : [ "obj-4", 0 ],
 																	"source" : [ "obj-35", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 2 ],
+																	"destination" : [ "obj-35", 1 ],
 																	"source" : [ "obj-40", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 1 ],
+																	"destination" : [ "obj-4", 1 ],
+																	"midpoints" : [ 380.944444444444457, 288.0, 732.0, 288.0, 732.0, 315.0, 732.0, 315.0, 732.0, 333.0, 732.055555555555543, 333.0 ],
 																	"source" : [ "obj-41", 2 ]
 																}
 
@@ -33744,7 +34562,7 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-40", 0 ],
-																	"midpoints" : [ 489.833333333333314, 278.0, 805.055555555555543, 278.0 ],
+																	"midpoints" : [ 489.833333333333314, 278.0, 634.055555555555543, 278.0 ],
 																	"source" : [ "obj-41", 3 ]
 																}
 
@@ -34291,13 +35109,13 @@
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
 																"box" : 																{
-																	"id" : "obj-14",
+																	"id" : "obj-3",
 																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 5,
-																	"outlettype" : [ "", "", "", "", "" ],
-																	"patching_rect" : [ 153.666666666666686, 199.0, 229.814814814814781, 22.0 ],
-																	"text" : "regexp ' @substitute \" \""
+																	"numinlets" : 2,
+																	"numoutlets" : 2,
+																	"outlettype" : [ "", "" ],
+																	"patching_rect" : [ 262.555555555555543, 346.0, 479.0, 22.0 ],
+																	"text" : "MySQL_User INSERT_SQL_INDIVIDUAL_RX_MEDS_GENERIC_NAME"
 																}
 
 															}
@@ -34309,6 +35127,66 @@
 																	"numoutlets" : 0,
 																	"patching_rect" : [ 153.5, 382.5, 129.0, 22.0 ],
 																	"text" : "s QUERY_RX_MEDS"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-43",
+																	"maxclass" : "message",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 293.0, 169.0, 22.0 ],
+																	"text" : "RX_MEDS_GENERIC_NAME"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-41",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 4,
+																	"outlettype" : [ "bang", "bang", "", "bang" ],
+																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
+																	"text" : "t b b s b"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-40",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 624.555555555555543, 293.0, 97.0, 22.0 ],
+																	"text" : "v RX_MEDS_ID"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-35",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 320.0, 381.0, 22.0 ],
+																	"text" : "sprintf \\\"UPDATE RX_MEDS SET %s=? WHERE RX_MEDS_ID=%s\\\""
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-14",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 5,
+																	"outlettype" : [ "", "", "", "", "" ],
+																	"patching_rect" : [ 153.666666666666686, 199.0, 229.814814814814781, 22.0 ],
+																	"text" : "regexp ' @substitute \" \""
 																}
 
 															}
@@ -34334,65 +35212,6 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 153.666666666666686, 135.25, 30.0, 30.0 ]
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-44",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 0,
-																	"patching_rect" : [ 262.555555555555543, 349.0, 104.0, 22.0 ],
-																	"text" : "s ---databaselocal"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-43",
-																	"maxclass" : "message",
-																	"numinlets" : 2,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 282.0, 176.333333333333371, 22.0 ],
-																	"text" : "RX_MEDS_GENERIC_NAME"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-41",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 4,
-																	"outlettype" : [ "bang", "bang", "", "bang" ],
-																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
-																	"text" : "t b b s b"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-40",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 795.555555555555543, 296.0, 97.0, 22.0 ],
-																	"text" : "v RX_MEDS_ID"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-35",
-																	"maxclass" : "newobj",
-																	"numinlets" : 3,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 320.0, 553.0, 22.0 ],
-																	"text" : "sprintf exec \\\"UPDATE RX_MEDS SET %s='%s' WHERE RX_MEDS_ID=%s\\\""
 																}
 
 															}
@@ -34518,21 +35337,22 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-44", 0 ],
+																	"destination" : [ "obj-3", 0 ],
 																	"source" : [ "obj-35", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 2 ],
+																	"destination" : [ "obj-35", 1 ],
 																	"source" : [ "obj-40", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 1 ],
+																	"destination" : [ "obj-3", 1 ],
+																	"midpoints" : [ 380.944444444444457, 288.0, 732.0, 288.0, 732.0, 315.0, 732.0, 315.0, 732.0, 333.0, 732.055555555555543, 333.0 ],
 																	"source" : [ "obj-41", 2 ]
 																}
 
@@ -34540,7 +35360,7 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-40", 0 ],
-																	"midpoints" : [ 489.833333333333314, 278.0, 805.055555555555543, 278.0 ],
+																	"midpoints" : [ 489.833333333333314, 278.0, 634.055555555555543, 278.0 ],
 																	"source" : [ "obj-41", 3 ]
 																}
 
@@ -35111,6 +35931,77 @@
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
 																"box" : 																{
+																	"id" : "obj-4",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 2,
+																	"outlettype" : [ "", "" ],
+																	"patching_rect" : [ 262.555555555555543, 346.0, 383.0, 22.0 ],
+																	"text" : "MySQL_User INSERT_SQL_INDIVIDUAL_rx_meds_DISCONTINUED"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-54",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 0,
+																	"patching_rect" : [ 153.5, 382.5, 129.0, 22.0 ],
+																	"text" : "s QUERY_RX_MEDS"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-43",
+																	"maxclass" : "message",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 293.0, 149.0, 22.0 ],
+																	"text" : "rx_meds.DISCONTINUED"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-41",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 4,
+																	"outlettype" : [ "bang", "bang", "", "bang" ],
+																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
+																	"text" : "t b b s b"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-40",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 624.555555555555543, 293.0, 97.0, 22.0 ],
+																	"text" : "v RX_MEDS_ID"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-35",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 320.0, 381.0, 22.0 ],
+																	"text" : "sprintf \\\"UPDATE RX_MEDS SET %s=? WHERE RX_MEDS_ID=%s\\\""
+																}
+
+															}
+, 															{
+																"box" : 																{
 																	"id" : "obj-14",
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
@@ -35147,17 +36038,6 @@
 															}
 , 															{
 																"box" : 																{
-																	"id" : "obj-54",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 0,
-																	"patching_rect" : [ 153.5, 383.5, 125.0, 22.0 ],
-																	"text" : "s QUERY_RX_MEDS"
-																}
-
-															}
-, 															{
-																"box" : 																{
 																	"comment" : "",
 																	"id" : "obj-2",
 																	"index" : 1,
@@ -35178,65 +36058,6 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 153.666666666666686, 135.25, 30.0, 30.0 ]
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-44",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 0,
-																	"patching_rect" : [ 262.555555555555543, 350.0, 104.0, 22.0 ],
-																	"text" : "s ---databaselocal"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-43",
-																	"maxclass" : "message",
-																	"numinlets" : 2,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 289.0, 165.333333333333371, 22.0 ],
-																	"text" : "DISCONTINUED"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-41",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 4,
-																	"outlettype" : [ "bang", "bang", "", "bang" ],
-																	"patching_rect" : [ 153.666666666666686, 256.0, 345.666666666666629, 22.0 ],
-																	"text" : "t b b s b"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-40",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 795.555555555555543, 297.0, 95.0, 22.0 ],
-																	"text" : "v RX_MEDS_ID"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-35",
-																	"maxclass" : "newobj",
-																	"numinlets" : 3,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 321.0, 553.0, 22.0 ],
-																	"text" : "sprintf exec \\\"UPDATE RX_MEDS SET %s='%s' WHERE RX_MEDS_ID=%s\\\""
 																}
 
 															}
@@ -35338,22 +36159,22 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-44", 0 ],
+																	"destination" : [ "obj-4", 0 ],
 																	"source" : [ "obj-35", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 2 ],
+																	"destination" : [ "obj-35", 1 ],
 																	"source" : [ "obj-40", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 1 ],
-																	"midpoints" : [ 380.944444444444457, 284.0, 539.055555555555543, 284.0 ],
+																	"destination" : [ "obj-4", 1 ],
+																	"midpoints" : [ 380.944444444444457, 288.0, 732.0, 288.0, 732.0, 315.0, 732.0, 315.0, 732.0, 333.0, 636.055555555555543, 333.0 ],
 																	"source" : [ "obj-41", 2 ]
 																}
 
@@ -35361,7 +36182,7 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-40", 0 ],
-																	"midpoints" : [ 489.833333333333314, 279.0, 805.055555555555543, 279.0 ],
+																	"midpoints" : [ 489.833333333333314, 278.0, 634.055555555555543, 278.0 ],
 																	"source" : [ "obj-41", 3 ]
 																}
 
@@ -38455,12 +39276,12 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-102",
-													"maxclass" : "newobj",
-													"numinlets" : 1,
+													"maxclass" : "message",
+													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 409.0, 694.0, 394.0, 22.0 ],
-													"text" : "sprintf exec \\\"DELETE FROM RX_MEDS WHERE RX_MEDS_ID=%s\\\""
+													"patching_rect" : [ 409.0, 720.0, 305.0, 22.0 ],
+													"text" : "\"DELETE FROM RX_MEDS WHERE RX_MEDS_ID=?\""
 												}
 
 											}
@@ -38495,19 +39316,8 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 292.0, 720.0, 431.0, 22.0 ],
-													"text" : "exec \"INSERT INTO RX_MEDS ('RX_MEDS_TRADE_NAME') VALUES ('-')\""
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-90",
-													"maxclass" : "newobj",
-													"numinlets" : 1,
-													"numoutlets" : 0,
-													"patching_rect" : [ 292.0, 746.0, 104.0, 22.0 ],
-													"text" : "s ---databaselocal"
+													"patching_rect" : [ 289.333333333333371, 774.5, 384.0, 22.0 ],
+													"text" : "\"INSERT INTO RX_MEDS ('RX_MEDS_TRADE_NAME') VALUES (?)\""
 												}
 
 											}
@@ -38659,6 +39469,77 @@
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
 																"box" : 																{
+																	"id" : "obj-4",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 2,
+																	"outlettype" : [ "", "" ],
+																	"patching_rect" : [ 262.555555555555543, 346.0, 337.0, 22.0 ],
+																	"text" : "MySQL_User INSERT_SQL_INDIVIDUAL_rx_meds_ACTION"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-54",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 0,
+																	"patching_rect" : [ 153.5, 382.5, 129.0, 22.0 ],
+																	"text" : "s QUERY_RX_MEDS"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-43",
+																	"maxclass" : "message",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 293.0, 103.0, 22.0 ],
+																	"text" : "rx_meds.ACTION"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-41",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 4,
+																	"outlettype" : [ "bang", "bang", "", "bang" ],
+																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
+																	"text" : "t b b s b"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-40",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 624.555555555555543, 293.0, 97.0, 22.0 ],
+																	"text" : "v RX_MEDS_ID"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-35",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 320.0, 381.0, 22.0 ],
+																	"text" : "sprintf \\\"UPDATE RX_MEDS SET %s=? WHERE RX_MEDS_ID=%s\\\""
+																}
+
+															}
+, 															{
+																"box" : 																{
 																	"id" : "obj-14",
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
@@ -38695,17 +39576,6 @@
 															}
 , 															{
 																"box" : 																{
-																	"id" : "obj-54",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 0,
-																	"patching_rect" : [ 153.5, 380.5, 127.0, 22.0 ],
-																	"text" : "s QUERY_RX_MEDS"
-																}
-
-															}
-, 															{
-																"box" : 																{
 																	"comment" : "",
 																	"id" : "obj-2",
 																	"index" : 1,
@@ -38726,65 +39596,6 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 153.666666666666686, 135.25, 30.0, 30.0 ]
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-44",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 0,
-																	"patching_rect" : [ 262.555555555555543, 347.0, 104.0, 22.0 ],
-																	"text" : "s ---databaselocal"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-43",
-																	"maxclass" : "message",
-																	"numinlets" : 2,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 286.0, 165.333333333333371, 22.0 ],
-																	"text" : "ACTION"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-41",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 4,
-																	"outlettype" : [ "bang", "bang", "", "bang" ],
-																	"patching_rect" : [ 153.666666666666686, 253.0, 345.666666666666629, 22.0 ],
-																	"text" : "t b b s b"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-40",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 795.555555555555543, 294.0, 95.0, 22.0 ],
-																	"text" : "v RX_MEDS_ID"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-35",
-																	"maxclass" : "newobj",
-																	"numinlets" : 3,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 318.0, 553.0, 22.0 ],
-																	"text" : "sprintf exec \\\"UPDATE RX_MEDS SET %s='%s' WHERE RX_MEDS_ID=%s\\\""
 																}
 
 															}
@@ -38886,22 +39697,22 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-44", 0 ],
+																	"destination" : [ "obj-4", 0 ],
 																	"source" : [ "obj-35", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 2 ],
+																	"destination" : [ "obj-35", 1 ],
 																	"source" : [ "obj-40", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 1 ],
-																	"midpoints" : [ 380.944444444444457, 281.0, 539.055555555555543, 281.0 ],
+																	"destination" : [ "obj-4", 1 ],
+																	"midpoints" : [ 380.944444444444457, 288.0, 732.0, 288.0, 732.0, 315.0, 732.0, 315.0, 732.0, 333.0, 590.055555555555543, 333.0 ],
 																	"source" : [ "obj-41", 2 ]
 																}
 
@@ -38909,7 +39720,7 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-40", 0 ],
-																	"midpoints" : [ 489.833333333333314, 276.0, 805.055555555555543, 276.0 ],
+																	"midpoints" : [ 489.833333333333314, 278.0, 634.055555555555543, 278.0 ],
 																	"source" : [ "obj-41", 3 ]
 																}
 
@@ -39180,6 +39991,77 @@
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
 																"box" : 																{
+																	"id" : "obj-4",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 2,
+																	"outlettype" : [ "", "" ],
+																	"patching_rect" : [ 262.555555555555543, 346.0, 316.0, 22.0 ],
+																	"text" : "MySQL_User INSERT_SQL_INDIVIDUAL_rx_meds_URL"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-54",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 0,
+																	"patching_rect" : [ 153.5, 382.5, 129.0, 22.0 ],
+																	"text" : "s QUERY_RX_MEDS"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-43",
+																	"maxclass" : "message",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 293.0, 82.0, 22.0 ],
+																	"text" : "rx_meds.URL"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-41",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 4,
+																	"outlettype" : [ "bang", "bang", "", "bang" ],
+																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
+																	"text" : "t b b s b"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-40",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 624.555555555555543, 293.0, 97.0, 22.0 ],
+																	"text" : "v RX_MEDS_ID"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-35",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 262.555555555555543, 320.0, 381.0, 22.0 ],
+																	"text" : "sprintf \\\"UPDATE RX_MEDS SET %s=? WHERE RX_MEDS_ID=%s\\\""
+																}
+
+															}
+, 															{
+																"box" : 																{
 																	"id" : "obj-14",
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
@@ -39216,17 +40098,6 @@
 															}
 , 															{
 																"box" : 																{
-																	"id" : "obj-54",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 0,
-																	"patching_rect" : [ 153.5, 382.5, 128.0, 22.0 ],
-																	"text" : "s QUERY_RX_MEDS"
-																}
-
-															}
-, 															{
-																"box" : 																{
 																	"comment" : "",
 																	"id" : "obj-2",
 																	"index" : 1,
@@ -39247,65 +40118,6 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 153.666666666666686, 135.25, 30.0, 30.0 ]
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-44",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 0,
-																	"patching_rect" : [ 262.555555555555543, 349.0, 104.0, 22.0 ],
-																	"text" : "s ---databaselocal"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-43",
-																	"maxclass" : "message",
-																	"numinlets" : 2,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 288.0, 165.333333333333371, 22.0 ],
-																	"text" : "URL"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-41",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 4,
-																	"outlettype" : [ "bang", "bang", "", "bang" ],
-																	"patching_rect" : [ 153.666666666666686, 255.0, 345.666666666666629, 22.0 ],
-																	"text" : "t b b s b"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-40",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 795.555555555555543, 296.0, 96.0, 22.0 ],
-																	"text" : "v RX_MEDS_ID"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-35",
-																	"maxclass" : "newobj",
-																	"numinlets" : 3,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 320.0, 553.0, 22.0 ],
-																	"text" : "sprintf exec \\\"UPDATE RX_MEDS SET %s='%s' WHERE RX_MEDS_ID=%s\\\""
 																}
 
 															}
@@ -39407,22 +40219,22 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-44", 0 ],
+																	"destination" : [ "obj-4", 0 ],
 																	"source" : [ "obj-35", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 2 ],
+																	"destination" : [ "obj-35", 1 ],
 																	"source" : [ "obj-40", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 1 ],
-																	"midpoints" : [ 380.944444444444457, 283.0, 539.055555555555543, 283.0 ],
+																	"destination" : [ "obj-4", 1 ],
+																	"midpoints" : [ 380.944444444444457, 288.0, 732.0, 288.0, 732.0, 315.0, 732.0, 315.0, 732.0, 333.0, 569.055555555555543, 333.0 ],
 																	"source" : [ "obj-41", 2 ]
 																}
 
@@ -39430,7 +40242,7 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-40", 0 ],
-																	"midpoints" : [ 489.833333333333314, 278.0, 805.055555555555543, 278.0 ],
+																	"midpoints" : [ 489.833333333333314, 278.0, 634.055555555555543, 278.0 ],
 																	"source" : [ "obj-41", 3 ]
 																}
 
@@ -39684,7 +40496,6 @@
 													"hint" : "Type here to refine search.",
 													"id" : "obj-71",
 													"keymode" : 1,
-													"linecount" : 2,
 													"lines" : 1,
 													"maxclass" : "textedit",
 													"numinlets" : 1,
@@ -39692,11 +40503,11 @@
 													"outlettype" : [ "", "int", "", "" ],
 													"outputmode" : 1,
 													"parameter_enable" : 0,
-													"patching_rect" : [ 1069.111111111110858, 555.5, 97.666666666666686, 19.0 ],
+													"patching_rect" : [ 1069.111111111110858, 554.5, 97.666666666666686, 19.0 ],
 													"presentation" : 1,
 													"presentation_rect" : [ 163.0, 357.0, 443.0, 20.0 ],
 													"rounded" : 0.0,
-													"text" : "\"1 gtt TID x 7 days.\"",
+													"text" : "-",
 													"varname" : "textboxedit[9]"
 												}
 
@@ -39937,7 +40748,7 @@
 														}
 ,
 														"classnamespace" : "box",
-														"rect" : [ 317.0, 137.0, 900.0, 189.0 ],
+														"rect" : [ 317.0, 137.0, 1186.0, 582.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 0,
 														"default_fontsize" : 12.0,
@@ -39966,6 +40777,18 @@
 														"subpatcher_template" : "Default Max 7",
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
+																"box" : 																{
+																	"id" : "obj-3",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 2,
+																	"outlettype" : [ "", "" ],
+																	"patching_rect" : [ 262.555555555555543, 346.0, 479.0, 22.0 ],
+																	"text" : "MySQL_User INSERT_SQL_INDIVIDUAL_RX_MEDS_TRADE_NAME"
+																}
+
+															}
+, 															{
 																"box" : 																{
 																	"id" : "obj-14",
 																	"maxclass" : "newobj",
@@ -40015,23 +40838,12 @@
 															}
 , 															{
 																"box" : 																{
-																	"id" : "obj-44",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 0,
-																	"patching_rect" : [ 262.555555555555543, 349.0, 104.0, 22.0 ],
-																	"text" : "s ---databaselocal"
-																}
-
-															}
-, 															{
-																"box" : 																{
 																	"id" : "obj-43",
 																	"maxclass" : "message",
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 282.0, 158.333333333333371, 22.0 ],
+																	"patching_rect" : [ 262.555555555555543, 293.0, 158.333333333333371, 22.0 ],
 																	"text" : "RX_MEDS_TRADE_NAME"
 																}
 
@@ -40055,7 +40867,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 795.555555555555543, 296.0, 97.0, 22.0 ],
+																	"patching_rect" : [ 624.555555555555543, 293.0, 97.0, 22.0 ],
 																	"text" : "v RX_MEDS_ID"
 																}
 
@@ -40064,11 +40876,11 @@
 																"box" : 																{
 																	"id" : "obj-35",
 																	"maxclass" : "newobj",
-																	"numinlets" : 3,
+																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.555555555555543, 320.0, 553.0, 22.0 ],
-																	"text" : "sprintf exec \\\"UPDATE RX_MEDS SET %s='%s' WHERE RX_MEDS_ID=%s\\\""
+																	"patching_rect" : [ 262.555555555555543, 320.0, 381.0, 22.0 ],
+																	"text" : "sprintf \\\"UPDATE RX_MEDS SET %s=? WHERE RX_MEDS_ID=%s\\\""
 																}
 
 															}
@@ -40194,21 +41006,22 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-44", 0 ],
+																	"destination" : [ "obj-3", 0 ],
 																	"source" : [ "obj-35", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 2 ],
+																	"destination" : [ "obj-35", 1 ],
 																	"source" : [ "obj-40", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-35", 1 ],
+																	"destination" : [ "obj-3", 1 ],
+																	"midpoints" : [ 380.944444444444457, 288.0, 732.0, 288.0, 732.0, 315.0, 732.0, 315.0, 732.0, 333.0, 732.055555555555543, 333.0 ],
 																	"source" : [ "obj-41", 2 ]
 																}
 
@@ -40216,7 +41029,7 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-40", 0 ],
-																	"midpoints" : [ 489.833333333333314, 278.0, 805.055555555555543, 278.0 ],
+																	"midpoints" : [ 489.833333333333314, 278.0, 634.055555555555543, 278.0 ],
 																	"source" : [ "obj-41", 3 ]
 																}
 
@@ -40432,9 +41245,9 @@
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 2,
-													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 401.666666666666686, 99.0, 38.0, 22.0 ],
-													"text" : "t s s"
+													"outlettype" : [ "int", "" ],
+													"patching_rect" : [ 401.666666666666686, 99.0, 29.5, 22.0 ],
+													"text" : "t i s"
 												}
 
 											}
@@ -40444,9 +41257,9 @@
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 24,
-													"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" ],
+													"outlettype" : [ "int", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" ],
 													"patching_rect" : [ 401.5, 69.0, 1242.444444444444343, 22.0 ],
-													"text" : "unpack s s s s s s s s s s s s s s s s s s s s s s s s"
+													"text" : "unpack i s s s s s s s s s s s s s s s s s s s s s s s"
 												}
 
 											}
@@ -41733,6 +42546,7 @@
 											}
 , 											{
 												"patchline" : 												{
+													"color" : [ 0.741176470588235, 0.184313725490196, 0.756862745098039, 1.0 ],
 													"destination" : [ "obj-90", 0 ],
 													"source" : [ "obj-102", 0 ]
 												}
@@ -41781,6 +42595,20 @@
 													"color" : [ 0.0, 0.0, 1.0, 1.0 ],
 													"destination" : [ "obj-73", 0 ],
 													"source" : [ "obj-107", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-90", 1 ],
+													"source" : [ "obj-108", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-92", 0 ],
+													"source" : [ "obj-108", 0 ]
 												}
 
 											}
@@ -41843,6 +42671,21 @@
 													"color" : [ 0.180392156862745, 1.0, 0.0, 1.0 ],
 													"destination" : [ "obj-73", 0 ],
 													"source" : [ "obj-113", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-102", 0 ],
+													"source" : [ "obj-114", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"color" : [ 0.741176470588235, 0.184313725490196, 0.756862745098039, 1.0 ],
+													"destination" : [ "obj-90", 1 ],
+													"source" : [ "obj-114", 1 ]
 												}
 
 											}
@@ -42009,14 +42852,6 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-108", 1 ],
-													"order" : 8,
-													"source" : [ "obj-135", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
 													"destination" : [ "obj-122", 0 ],
 													"order" : 4,
 													"source" : [ "obj-135", 0 ]
@@ -42131,6 +42966,14 @@
 												"patchline" : 												{
 													"destination" : [ "obj-70", 0 ],
 													"order" : 10,
+													"source" : [ "obj-135", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-71", 0 ],
+													"order" : 8,
 													"source" : [ "obj-135", 0 ]
 												}
 
@@ -42525,15 +43368,15 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-39", 0 ],
-													"source" : [ "obj-42", 0 ]
+													"destination" : [ "obj-108", 0 ],
+													"source" : [ "obj-42", 2 ]
 												}
 
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-92", 0 ],
-													"source" : [ "obj-42", 2 ]
+													"destination" : [ "obj-39", 0 ],
+													"source" : [ "obj-42", 0 ]
 												}
 
 											}
@@ -43038,7 +43881,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-102", 0 ],
+													"destination" : [ "obj-114", 0 ],
 													"source" : [ "obj-94", 0 ]
 												}
 
@@ -43256,7 +44099,7 @@
 							}
 , 							{
 								"box" : 								{
-									"args" : [ "TRADENAME_PRICE", 38 ],
+									"args" : [ "TRADENAME_PRICE", 38, 225 ],
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,
@@ -44822,15 +45665,16 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 967.5, 718.0, 173.0, 23.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 941.0, 28.699706999999997, 47.0, 23.0 ],
+									"presentation_rect" : [ 897.25, 28.699706999999997, 125.75, 23.0 ],
 									"text" : "Notes",
-									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
+									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
+									"textjustification" : 1
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"args" : [ "NOTES", 90 ],
+									"args" : [ "NOTES", 114, 500 ],
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,
@@ -44846,7 +45690,7 @@
 									"offset" : [ 0.0, 0.0 ],
 									"patching_rect" : [ 31.583333333333258, 1152.5, 126.0, 26.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 654.0, 47.699706999999997, 108.0, 21.999999999999993 ],
+									"presentation_rect" : [ 897.25, 47.699706999999997, 126.0, 21.999999999999993 ],
 									"varname" : "NOTES",
 									"viewvisibility" : 1
 								}
@@ -44854,7 +45698,7 @@
 							}
 , 							{
 								"box" : 								{
-									"args" : [ "DISCONTINUED", 0 ],
+									"args" : [ "DISCONTINUED", 1200 ],
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,
@@ -44894,7 +45738,7 @@
 							}
 , 							{
 								"box" : 								{
-									"args" : [ "USAGE", 84 ],
+									"args" : [ "USAGE", 85, 200 ],
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,
@@ -44926,15 +45770,16 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 967.5, 659.5, 173.0, 23.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 334.5, 28.699706999999997, 56.0, 23.0 ],
+									"presentation_rect" : [ 316.5, 28.699706999999997, 93.0, 23.0 ],
 									"text" : "Usage",
-									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
+									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
+									"textjustification" : 1
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"args" : [ "CONCENTRATION", 38 ],
+									"args" : [ "CONCENTRATION", 38, 275 ],
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,
@@ -45006,7 +45851,7 @@
 							}
 , 							{
 								"box" : 								{
-									"args" : [ "CATEGORY", 44 ],
+									"args" : [ "CATEGORY", 44, 150 ],
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,
@@ -45024,30 +45869,6 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 208.5, 47.699706999999997, 63.0, 21.999999999999993 ],
 									"varname" : "CATEGORY",
-									"viewvisibility" : 1
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"args" : [ "RX_MEDS_TRADE_NAME", 49 ],
-									"bgmode" : 0,
-									"border" : 0,
-									"clickthrough" : 0,
-									"enablehscroll" : 0,
-									"enablevscroll" : 0,
-									"id" : "obj-151",
-									"lockeddragscroll" : 0,
-									"lockedsize" : 0,
-									"maxclass" : "bpatcher",
-									"name" : "SQLite_GUI_Search_Drugs.maxpat",
-									"numinlets" : 0,
-									"numoutlets" : 0,
-									"offset" : [ 0.0, 0.0 ],
-									"patching_rect" : [ 31.583333333333258, 1126.5, 126.0, 21.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 0.5, 48.0, 67.5, 21.999999999999986 ],
-									"varname" : "RX_MEDS_TRADE_NAME",
 									"viewvisibility" : 1
 								}
 
@@ -46321,7 +47142,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 271.5, 524.5, 122.0, 29.0 ],
+									"patching_rect" : [ 549.5, 565.0, 122.0, 29.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ -4.5, 0.399414, 91.0, 29.0 ],
 									"text" : "Rx Meds",
@@ -46384,7 +47205,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "bang", "bang", "bang", "bang" ],
-									"patching_rect" : [ 302.5, 312.0, 100.0, 22.0 ],
+									"patching_rect" : [ 303.0, 287.0, 182.0, 22.0 ],
 									"text" : "t b b b b"
 								}
 
@@ -46443,7 +47264,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 302.5, 264.0, 107.0, 22.0 ],
+									"patching_rect" : [ 303.0, 239.0, 107.0, 22.0 ],
 									"text" : "r clear_RX_MEDS"
 								}
 
@@ -46478,7 +47299,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 411.5, 372.0, 143.5, 22.0 ],
+									"patching_rect" : [ 415.0, 394.0, 143.5, 22.0 ],
 									"text" : "v RX_MEDS_categories"
 								}
 
@@ -46490,7 +47311,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 302.5, 288.0, 100.0, 22.0 ],
+									"patching_rect" : [ 303.0, 263.0, 100.0, 22.0 ],
 									"text" : "loadbang"
 								}
 
@@ -46498,13 +47319,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-75",
-									"linecount" : 3,
+									"linecount" : 4,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 411.5, 320.0, 841.0, 50.0 ],
-									"text" : "\"RX_MEDS_ID, RX_MEDS_TRADE_NAME, RX_MEDS_GENERIC_NAME, RX_MEDS_COMPANY, RX_MEDS_SEARCH, CATEGORY, CLASS,  USAGE, TRADENAME_PRICE, GENERIC_PRICE, AB_WORKS_COVERAGE, CONCENTRATION, TYPE, BOTTLE_SIZE, ADULT_DOSAGE, PEDS_DOSAGE, PREGNANCY_CATEGORY, ADRS, CONTRAINDICATIONS, NOTES, URL, ACTION, DISCONTINUED, TIMESTAMP\""
+									"patching_rect" : [ 411.5, 320.0, 1035.0, 64.0 ],
+									"text" : "\"rx_meds.RX_MEDS_ID, rx_meds.RX_MEDS_TRADE_NAME, rx_meds.RX_MEDS_GENERIC_NAME, rx_meds.RX_MEDS_COMPANY, rx_meds.RX_MEDS_SEARCH, rx_meds.CATEGORY, rx_meds.CLASS,  rx_meds.USAGE, rx_meds.TRADENAME_PRICE, rx_meds.GENERIC_PRICE, rx_meds.AB_WORKS_COVERAGE, rx_meds.CONCENTRATION, rx_meds.TYPE, rx_meds.BOTTLE_SIZE, rx_meds.ADULT_DOSAGE, rx_meds.PEDS_DOSAGE, rx_meds.PREGNANCY_CATEGORY, rx_meds.ADRS, rx_meds.CONTRAINDICATIONS, rx_meds.NOTES, rx_meds.URL, rx_meds.ACTION, rx_meds.DISCONTINUED\""
 								}
 
 							}
@@ -48472,7 +49293,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-20", 0 ],
-									"midpoints" : [ 339.0, 403.0, 530.0, 403.0, 530.0, 399.0, 543.5, 399.0 ],
+									"midpoints" : [ 366.833333333333314, 399.0, 530.0, 399.0, 530.0, 399.0, 543.5, 399.0 ],
 									"source" : [ "obj-18", 1 ]
 								}
 
@@ -48480,7 +49301,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-3", 0 ],
-									"midpoints" : [ 312.0, 365.0, 231.5, 365.0 ],
+									"midpoints" : [ 312.5, 375.0, 231.5, 375.0 ],
 									"source" : [ "obj-18", 0 ]
 								}
 
@@ -48790,7 +49611,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-15", 1 ],
-									"midpoints" : [ 421.0, 372.0, 900.0, 372.0, 900.0, 372.0, 928.0, 372.0, 928.0, 378.0, 928.5, 378.0 ],
+									"midpoints" : [ 421.0, 391.0, 900.0, 391.0, 900.0, 396.0, 928.0, 396.0, 928.0, 378.0, 928.5, 378.0 ],
 									"order" : 0,
 									"source" : [ "obj-75", 0 ]
 								}
@@ -48836,6 +49657,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-119", 0 ],
 									"source" : [ "obj-83", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-111", 0 ],
+									"source" : [ "obj-84", 0 ]
 								}
 
 							}
@@ -49058,7 +49886,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 562.0, 226.0, 157.0, 22.0 ],
+					"patching_rect" : [ 562.0, 229.0, 455.0, 50.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -49288,6 +50116,13 @@
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Prescribing Medications",
 				"patcherrelativepath" : ".",
 				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MySQL_User.maxpat",
+				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"patcherrelativepath" : "../Taskbar/Maxpat",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
