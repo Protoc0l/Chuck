@@ -41,6 +41,83 @@
 		"title" : "Client Hub",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-72",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 496.0, 1058.0, 258.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0,
+						"precision" : 6
+					}
+,
+					"text" : "coll Query_Patient_Hub_Macro_coll"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-325",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 667.0, 1164.0, 54.0, 22.0 ],
+					"text" : "deferlow"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-324",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 136.0, 2323.0, 552.0, 48.0 ],
+					"text" : "connect to coll Patient_Hub_Values\nif want to delete every time; code now to delete if ADD_NEW column in Patient_Hub_Macro_Pulll table is 0 (new) or 1 (neaming you add to coll Patient_Hub_Values)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-320",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "clear" ],
+					"patching_rect" : [ 140.25, 2292.0, 41.0, 22.0 ],
+					"text" : "t clear"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-319",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "clear" ],
+					"patching_rect" : [ 589.0, 2257.903617262840271, 41.0, 22.0 ],
+					"text" : "t clear"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-318",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 589.0, 2225.903617262840271, 46.0, 22.0 ],
+					"text" : "route 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-260",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -590,7 +667,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 286.25, 2286.903617262840271, 138.0, 22.0 ],
+					"patching_rect" : [ 286.25, 2292.0, 138.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"precision" : 6
@@ -3492,7 +3569,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 245.0, 1144.0, 102.0, 29.0 ],
+					"patching_rect" : [ 245.0, 1137.0, 102.0, 29.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -4406,9 +4483,10 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1248.5, 366.722924113273621, 67.0, 22.0 ],
+					"patching_rect" : [ 1248.5, 367.722924113273621, 67.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.25, 32.0, 54.5, 19.0 ],
+					"presentation_rect" : [ 5.25, 34.0, 54.5, 19.0 ],
+					"rounded" : 2.0,
 					"text" : "Edit",
 					"textcolor" : [ 0.23921568627451, 0.23921568627451, 0.23921568627451, 1.0 ],
 					"texton" : "Edit",
@@ -18120,11 +18198,11 @@
 				"box" : 				{
 					"id" : "obj-89",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 496.0, 1085.0, 191.0, 22.0 ],
-					"text" : "route OPEN_PROGRAM"
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 496.0, 1085.0, 205.0, 22.0 ],
+					"text" : "route OPEN_PROGRAM ADD_NEW"
 				}
 
 			}
@@ -18248,30 +18326,13 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-72",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 496.0, 1058.0, 258.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"embed" : 0,
-						"precision" : 6
-					}
-,
-					"text" : "coll Query_Patient_Hub_Macro_coll"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-71",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 496.0, 984.0, 687.0, 22.0 ],
-					"text" : "sprintf \\\"SELECT OPEN_PROGRAM\\, DELAY_1\\, MACRO\\, DELAY_2 FROM PATIENT_HUB_MACRO_%s WHERE HUB_ID=?\\\""
+					"patching_rect" : [ 496.0, 984.0, 753.0, 22.0 ],
+					"text" : "sprintf \\\"SELECT OPEN_PROGRAM\\, DELAY_1\\, MACRO\\, DELAY_2\\, ADD_NEW FROM PATIENT_HUB_MACRO_%s WHERE HUB_ID=?\\\""
 				}
 
 			}
@@ -18453,7 +18514,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"openrect" : [ 745.0, 313.0, 430.0, 644.0 ],
+						"openrect" : [ 46.0, 90.0, 430.0, 665.0 ],
 						"bglocked" : 1,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -19757,7 +19818,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 248.166666666666629, 621.0, 713.0, 36.0 ],
-									"text" : "sprintf script newobject bpatcher @name \\\"Patient Hub %s Module\\\" @varname Module @presentation_rect 0.833333 63. 482. 594. @presentation 1 @patching_rect 160.666667 75. 241. 192."
+									"text" : "sprintf script newobject bpatcher @name \\\"Patient Hub %s Module\\\" @varname Module @presentation_rect 0.833333 63. 482. 624. @presentation 1 @patching_rect 160.666667 75. 241. 192."
 								}
 
 							}
@@ -21838,14 +21899,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
-					"destination" : [ "obj-230", 0 ],
-					"source" : [ "obj-251", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"color" : [ 0.929411764705882, 0.36078431372549, 0.866666666666667, 1.0 ],
 					"destination" : [ "obj-238", 0 ],
 					"source" : [ "obj-251", 3 ]
@@ -21857,6 +21910,14 @@
 					"color" : [ 0.929411764705882, 0.36078431372549, 0.866666666666667, 1.0 ],
 					"destination" : [ "obj-243", 2 ],
 					"source" : [ "obj-251", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"destination" : [ "obj-320", 0 ],
+					"source" : [ "obj-251", 2 ]
 				}
 
 			}
@@ -22395,6 +22456,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-319", 0 ],
+					"source" : [ "obj-318", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"destination" : [ "obj-230", 0 ],
+					"midpoints" : [ 598.5, 2285.0, 295.75, 2285.0 ],
+					"source" : [ "obj-319", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-190", 0 ],
 					"source" : [ "obj-32", 0 ]
 				}
@@ -22404,6 +22481,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-156", 0 ],
 					"source" : [ "obj-321", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-90", 0 ],
+					"midpoints" : [ 676.5, 1195.0, 505.5, 1195.0 ],
+					"source" : [ "obj-325", 0 ]
 				}
 
 			}
@@ -23003,9 +23088,17 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-84", 0 ],
-					"midpoints" : [ 677.5, 1108.0, 676.5, 1108.0 ],
+					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"destination" : [ "obj-318", 0 ],
 					"source" : [ "obj-89", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-84", 0 ],
+					"midpoints" : [ 691.5, 1108.0, 676.5, 1108.0 ],
+					"source" : [ "obj-89", 2 ]
 				}
 
 			}
@@ -23077,8 +23170,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-90", 0 ],
-					"midpoints" : [ 676.5, 1195.0, 505.5, 1195.0 ],
+					"destination" : [ "obj-325", 0 ],
 					"source" : [ "obj-97", 0 ]
 				}
 
