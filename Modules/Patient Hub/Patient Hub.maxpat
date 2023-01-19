@@ -41,6 +41,29 @@
 		"title" : "Client Hub",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-325",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1347.0, 959.0, 150.0, 48.0 ],
+					"text" : "close all windows before executing pull request or push request"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-221",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 637.0, 2293.0, 95.0, 22.0 ],
+					"text" : "print ADD_NEW"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-323",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -59,8 +82,6 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 576.0, 1307.0, 92.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 382.166666833333352, 109.0, 92.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"precision" : 6
@@ -94,7 +115,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 136.0, 2323.0, 552.0, 48.0 ],
+					"patching_rect" : [ 136.0, 2324.0, 552.0, 48.0 ],
 					"text" : "connect to coll Patient_Hub_Values\nif want to delete every time; code now to delete if ADD_NEW column in Patient_Hub_Macro_Pulll table is 0 (new) or 1 (neaming you add to coll Patient_Hub_Values)"
 				}
 
@@ -106,7 +127,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "clear" ],
-					"patching_rect" : [ 140.25, 2292.0, 41.0, 22.0 ],
+					"patching_rect" : [ 140.25, 2293.0, 41.0, 22.0 ],
 					"text" : "t clear"
 				}
 
@@ -300,7 +321,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "bang", "bang", "clear", "int" ],
-					"patching_rect" : [ 140.25, 2422.903617262840271, 71.0, 22.0 ],
+					"patching_rect" : [ 140.25, 2423.903617262840271, 71.0, 22.0 ],
 					"text" : "t b b clear 0"
 				}
 
@@ -497,7 +518,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "bang", "clear", "int", "length", "bang" ],
-					"patching_rect" : [ 192.25, 2513.903617262840271, 107.0, 22.0 ],
+					"patching_rect" : [ 192.25, 2514.903617262840271, 107.0, 22.0 ],
 					"text" : "t b clear 0 length b"
 				}
 
@@ -608,7 +629,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "dump", "clear" ],
-					"patching_rect" : [ 961.0, 1445.0, 75.0, 22.0 ],
+					"patching_rect" : [ 961.0, 1446.0, 75.0, 22.0 ],
 					"text" : "t dump clear"
 				}
 
@@ -2719,7 +2740,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "", "zlclear" ],
-					"patching_rect" : [ 1069.051224231719971, 2407.067796468734741, 66.0, 22.0 ],
+					"patching_rect" : [ 1069.051224231719971, 2408.067796468734741, 66.0, 22.0 ],
 					"text" : "t b l zlclear"
 				}
 
@@ -3951,18 +3972,6 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 180.987972021102905, 32.0, 149.0, 61.0 ],
 					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-181",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 907.5, 582.722924113273621, 146.0, 22.0 ],
-					"text" : "r Patient_Hub_Value_Coll"
 				}
 
 			}
@@ -12727,7 +12736,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 390.5, 227.0, 116.0, 34.0 ],
+									"patching_rect" : [ 390.5, 228.0, 116.0, 34.0 ],
 									"text" : "this clears all info before saving"
 								}
 
@@ -12752,7 +12761,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "set", "clear" ],
-									"patching_rect" : [ 376.0, 199.0, 61.0, 22.0 ],
+									"patching_rect" : [ 376.0, 202.0, 61.0, 22.0 ],
 									"text" : "t set clear"
 								}
 
@@ -12766,7 +12775,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 717.5, 174.5, 177.0, 23.0 ],
+									"patching_rect" : [ 717.5, 176.5, 177.0, 23.0 ],
 									"text" : "clearchecks, checkitem $1 1"
 								}
 
@@ -12915,7 +12924,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 717.5, 32.0, 35.0, 22.0 ],
+									"patching_rect" : [ 717.5, 34.0, 35.0, 22.0 ],
 									"text" : "clear"
 								}
 
@@ -13006,7 +13015,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "dump", "clear", "int", "int" ],
-									"patching_rect" : [ 588.0, 37.0, 95.0, 22.0 ],
+									"patching_rect" : [ 588.0, 38.0, 95.0, 22.0 ],
 									"text" : "t dump clear 1 2"
 								}
 
@@ -16603,7 +16612,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "bang", "clear", "int", "length", "bang" ],
-					"patching_rect" : [ 748.051224231719971, 1784.903617262840271, 107.0, 22.0 ],
+					"patching_rect" : [ 748.051224231719971, 1785.903617262840271, 107.0, 22.0 ],
 					"text" : "t b clear 0 length b"
 				}
 
@@ -17348,7 +17357,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 930.0, 654.722924113273621, 701.0, 82.0 ],
+					"patching_rect" : [ 930.0, 655.722924113273621, 701.0, 82.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"precision" : 6
@@ -17597,7 +17606,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "bang", "clear", "int", "length", "bang" ],
-					"patching_rect" : [ 222.75, 1784.903617262840271, 107.0, 22.0 ],
+					"patching_rect" : [ 222.75, 1785.903617262840271, 107.0, 22.0 ],
 					"text" : "t b clear 0 length b"
 				}
 
@@ -17701,7 +17710,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "clear" ],
-					"patching_rect" : [ 241.0, 1363.0, 51.0, 22.0 ],
+					"patching_rect" : [ 241.0, 1364.0, 51.0, 22.0 ],
 					"text" : "t b clear"
 				}
 
@@ -18143,7 +18152,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "zlclear" ],
-					"patching_rect" : [ 496.0, 1111.0, 56.0, 22.0 ],
+					"patching_rect" : [ 496.0, 1112.0, 56.0, 22.0 ],
 					"text" : "t l zlclear"
 				}
 
@@ -18292,7 +18301,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "dump", "clear" ],
-					"patching_rect" : [ 916.0, 1179.0, 75.0, 22.0 ],
+					"patching_rect" : [ 916.0, 1178.0, 75.0, 22.0 ],
 					"text" : "t dump clear"
 				}
 
@@ -18364,10 +18373,10 @@
 					"id" : "obj-59",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "bang", "", "bang" ],
-					"patching_rect" : [ 496.0, 935.0, 649.0, 22.0 ],
-					"text" : "t l b l b"
+					"numoutlets" : 5,
+					"outlettype" : [ "", "bang", "", "bang", "close" ],
+					"patching_rect" : [ 496.0, 935.0, 859.0, 22.0 ],
+					"text" : "t l b l b close"
 				}
 
 			}
@@ -21268,13 +21277,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-254", 0 ],
-					"source" : [ "obj-181", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-177", 0 ],
 					"source" : [ "obj-182", 0 ]
 				}
@@ -22436,9 +22438,18 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-221", 0 ],
+					"order" : 0,
+					"source" : [ "obj-319", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"destination" : [ "obj-230", 0 ],
 					"midpoints" : [ 598.5, 2285.0, 295.75, 2285.0 ],
+					"order" : 1,
 					"source" : [ "obj-319", 0 ]
 				}
 
@@ -22459,8 +22470,17 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-221", 0 ],
+					"order" : 0,
+					"source" : [ "obj-323", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"destination" : [ "obj-318", 0 ],
+					"order" : 1,
 					"source" : [ "obj-323", 0 ]
 				}
 
@@ -22764,8 +22784,26 @@
 			}
 , 			{
 				"patchline" : 				{
+					"color" : [ 0.415686274509804, 0.23921568627451, 0.109803921568627, 1.0 ],
+					"destination" : [ "obj-38", 0 ],
+					"order" : 0,
+					"source" : [ "obj-59", 4 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-69", 0 ],
 					"source" : [ "obj-59", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"color" : [ 0.415686274509804, 0.23921568627451, 0.109803921568627, 1.0 ],
+					"destination" : [ "obj-7", 0 ],
+					"order" : 1,
+					"source" : [ "obj-59", 4 ]
 				}
 
 			}
