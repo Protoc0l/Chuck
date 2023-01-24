@@ -41,13 +41,84 @@
 		"title" : "Jarvis hidden master",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 362.0, 217.0, 57.0, 22.0 ],
+					"text" : "s Launch"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "Jarvis Editor" ],
+					"patching_rect" : [ 362.0, 193.0, 90.0, 22.0 ],
+					"text" : "t \"Jarvis Editor\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 224.0, 106.0, 77.0, 22.0 ],
+					"text" : "route symbol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 224.0, 166.0, 157.0, 22.0 ],
+					"text" : "select 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 224.0, 140.0, 104.0, 22.0 ],
+					"text" : "zl compare panda"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "bang", "bang" ],
+					"patching_rect" : [ 224.0, 80.0, 349.0, 22.0 ],
+					"text" : "dialog @mode 0 @label Please enter password for Jarvis Editor"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-23",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 224.0, 56.0, 48.0, 22.0 ],
-					"text" : "pipe 20"
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 224.0, 56.0, 54.0, 22.0 ],
+					"text" : "delay 20"
 				}
 
 			}
@@ -1082,7 +1153,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 10.5, 70.0, 151.0, 22.0 ],
+					"patching_rect" : [ 10.5, 71.0, 148.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1140,7 +1211,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 139.5, 17.0, 30.0, 30.0 ]
+					"patching_rect" : [ 139.5, 15.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -1165,7 +1236,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 224.0, 111.0, 51.0, 22.0 ],
+					"patching_rect" : [ 224.0, 217.0, 51.0, 22.0 ],
 					"text" : "pcontrol"
 				}
 
@@ -1177,7 +1248,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "open" ],
-					"patching_rect" : [ 224.0, 87.0, 42.0, 22.0 ],
+					"patching_rect" : [ 224.0, 193.0, 42.0, 22.0 ],
 					"text" : "t open"
 				}
 
@@ -1188,9 +1259,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 224.0, 23.0, 90.0, 22.0 ],
-					"text" : "loadmess open"
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 224.0, 29.0, 58.0, 22.0 ],
+					"text" : "loadbang"
 				}
 
 			}
@@ -7442,7 +7513,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 224.0, 137.0, 94.0, 36.0 ],
+					"patching_rect" : [ 224.0, 243.0, 94.0, 36.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -7457,8 +7528,37 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"midpoints" : [ 291.5, 132.0, 233.5, 132.0 ],
+					"source" : [ "obj-11", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
 					"source" : [ "obj-117", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-12", 0 ]
 				}
 
 			}
@@ -7485,6 +7585,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
 					"source" : [ "obj-20", 0 ]
 				}
@@ -7499,7 +7606,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-19", 0 ],
+					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-23", 0 ]
 				}
 
@@ -7522,6 +7629,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-118", 0 ],
 					"source" : [ "obj-33", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"source" : [ "obj-6", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"source" : [ "obj-6", 0 ]
 				}
 
 			}
@@ -7559,13 +7680,6 @@
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Stream Deck Editor v2",
 				"patcherrelativepath" : "../Stream Deck Editor v2",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "StreamDeckActionList.coll",
-				"bootpath" : "C:/ProgramData/Chuck/main/nodejs",
-				"patcherrelativepath" : "../../nodejs",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
