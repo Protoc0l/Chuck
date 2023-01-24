@@ -10,9 +10,9 @@
 		}
 ,
 		"classnamespace" : "box",
-		"openrect" : [ 47.0, 95.0, 1479.0, 1427.0 ],
+		"openrect" : [ 66.0, 100.0, 1280.0, 815.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -31,7 +31,7 @@
 		"boxanimatetime" : 200,
 		"enablehscroll" : 1,
 		"enablevscroll" : 1,
-		"devicewidth" : 1479.0,
+		"devicewidth" : 1280.0,
 		"description" : "",
 		"digest" : "",
 		"tags" : "",
@@ -401,7 +401,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 172.892857372760773, 684.417235255241394, 410.796490013599396, 25.0 ],
 					"rounded" : 0.0,
-					"text" : "B&L Biotrue 1-Day",
+					"text" : "\"B&L Biotrue 1-Day\"",
 					"textcolor" : [ 0.686274509803922, 0.686274509803922, 0.686274509803922, 1.0 ],
 					"textjustification" : 1,
 					"wordwrap" : 0
@@ -465,7 +465,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 172.892857372760773, 658.917235255241394, 410.796490013599396, 25.0 ],
 					"rounded" : 0.0,
-					"text" : "B&L Biotrue 1-Day",
+					"text" : "\"B&L Biotrue 1-Day\"",
 					"textcolor" : [ 0.686274509803922, 0.686274509803922, 0.686274509803922, 1.0 ],
 					"textjustification" : 1,
 					"wordwrap" : 0
@@ -3404,7 +3404,6 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 68.892857372760773, 2.642857670783997, 287.0, 21.0 ],
 					"rounded" : 0.0,
-					"text" : "bio",
 					"wordwrap" : 0
 				}
 
@@ -5694,13 +5693,6 @@
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Stream Deck Editor v2",
 				"patcherrelativepath" : "../Stream Deck Editor v2",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "StreamDeckActionList.coll",
-				"bootpath" : "C:/ProgramData/Chuck/main/nodejs",
-				"patcherrelativepath" : "../../nodejs",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
