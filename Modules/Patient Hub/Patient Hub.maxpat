@@ -1881,7 +1881,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1046.051224231719971, 2709.875030994415283, 931.0, 36.0 ],
-					"text" : "sprintf \\\"[{{{@Mouse Left Click@}}} {{{@%s@}}} {{{@click@}}}] [{{{@Keyboard Type@}}} {{{@{CTRL a}@}}} {{{@select all@}}}] [{{{@Pause@}}} {{{@200@}}} {{{@Pause@}}}] [{{{@Keyboard Type@}}} {{{@%s@}}} {{{@type@}}}] [{{{@Keyboard Type@}}} {{{@{ENTER}@}}} {{{@type@}}}]\\\""
+					"text" : "sprintf \\\"[{{{@Mouse Left Click@}}} {{{@%s@}}} {{{@click@}}}] [{{{@Keyboard Type@}}} {{{@{CTRL a}@}}} {{{@select all@}}}] [{{{@Pause@}}} {{{@200@}}} {{{@Pause@}}}] [{{{@Keyboard Type@}}} {{{@%s@}}} {{{@type@}}}] [{{{@Keyboard Type@}}} {{{@{TAB}@}}} {{{@type@}}}]\\\""
 				}
 
 			}
@@ -16452,7 +16452,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1215.051224231719971, 2380.903617262840271, 763.0, 36.0 ],
-					"text" : "sprintf \\\"[{{{@Mouse Left Click@}}} {{{@%s@}}} {{{@click@}}}] [{{{@Keyboard Type@}}} {{{@{CTRL a}@}}} {{{@select all@}}}] [{{{@Keyboard Type@}}} {{{@%s@}}} {{{@type@}}}] [{{{@Keyboard Type@}}} {{{@{ENTER}@}}} {{{@type@}}}]\\\""
+					"text" : "sprintf \\\"[{{{@Mouse Left Click@}}} {{{@%s@}}} {{{@click@}}}] [{{{@Keyboard Type@}}} {{{@{CTRL a}@}}} {{{@select all@}}}] [{{{@Keyboard Type@}}} {{{@%s@}}} {{{@type@}}}] [{{{@Keyboard Type@}}} {{{@{TAB}@}}} {{{@type@}}}]\\\""
 				}
 
 			}
