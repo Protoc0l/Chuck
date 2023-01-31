@@ -142,7 +142,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 300.0, 140.0, 55.0, 22.0 ],
-									"text" : "pipe 160"
+									"text" : "pipe 260"
 								}
 
 							}
@@ -164,8 +164,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 95.0, 164.0, 152.0, 22.0 ],
-									"text" : "sprintf \\\"'OpenFolder' '%s'\\\""
+									"patching_rect" : [ 95.0, 164.0, 156.0, 22.0 ],
+									"text" : "sprintf \\\"'Open Folder' '%s'\\\""
 								}
 
 							}
@@ -96891,12 +96891,6 @@
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
 				"patcherrelativepath" : "./Maxpat",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Exam Room Master.coll",
-				"bootpath" : "S:/SLE CLIPBOARD/Chuck Profiles/Cory Work/Profiles",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
