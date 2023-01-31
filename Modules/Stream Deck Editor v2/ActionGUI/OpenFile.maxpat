@@ -40,6 +40,30 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 924.0, 162.0, 61.0, 22.0 ],
+					"text" : "delay 250"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 924.0, 102.0, 31.0, 22.0 ],
+					"text" : "t b s"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-41",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
@@ -86,7 +110,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 795.75, 25.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 112.0, 20.0, 46.5, 19.0 ],
+					"presentation_rect" : [ 114.0, 41.0, 46.5, 19.0 ],
 					"text" : "refresh",
 					"texton" : "refresh",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 0.76 ]
@@ -215,7 +239,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 742.25, 286.0, 100.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 160.0, 20.0, 18.0, 19.0 ],
+					"presentation_rect" : [ 161.0, 41.0, 18.0, 19.0 ],
 					"textjustification" : 1
 				}
 
@@ -288,7 +312,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 445.5, 262.0, 114.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.0, 20.0, 108.0, 20.0 ],
+					"presentation_rect" : [ 4.0, 41.0, 108.0, 20.0 ],
 					"text" : "Title Name:",
 					"textjustification" : 2
 				}
@@ -312,7 +336,7 @@
 					"parameter_mappable" : 0,
 					"patching_rect" : [ 564.5, 262.0, 146.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 112.0, 41.0, 290.0, 19.0 ],
+					"presentation_rect" : [ 179.0, 41.0, 219.0, 19.0 ],
 					"rounded" : 0.0,
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 1,
@@ -863,7 +887,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 76.5, 557.0, 48.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 385.0, 44.0, 17.0, 12.0 ],
+					"presentation_rect" : [ 383.0, 21.0, 17.0, 12.0 ],
 					"text" : "+",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 0.76 ]
 				}
@@ -876,7 +900,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 924.0, 100.0, 67.0, 22.0 ],
+					"patching_rect" : [ 936.0, 135.0, 67.0, 22.0 ],
 					"text" : "s OpenFile"
 				}
 
@@ -1088,7 +1112,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 209.5, 592.0, 114.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.0, 42.0, 108.0, 20.0 ],
+					"presentation_rect" : [ 4.0, 20.0, 108.0, 20.0 ],
 					"text" : "Full Path to File:",
 					"textjustification" : 2
 				}
@@ -1112,7 +1136,7 @@
 					"parameter_mappable" : 0,
 					"patching_rect" : [ 328.5, 592.0, 146.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 179.0, 20.0, 223.0, 19.0 ],
+					"presentation_rect" : [ 114.0, 20.0, 284.0, 19.0 ],
 					"rounded" : 0.0,
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 1,
@@ -1333,6 +1357,20 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
+					"source" : [ "obj-2", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
 					"midpoints" : [ 933.5, 97.0, 933.5, 97.0 ],
 					"source" : [ "obj-20", 0 ]
 				}
@@ -1550,6 +1588,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-55", 0 ],
 					"source" : [ "obj-49", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-36", 0 ],
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
