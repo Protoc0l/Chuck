@@ -105,8 +105,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 5,
 									"outlettype" : [ "", "", "", "", "" ],
-									"patching_rect" : [ 95.0, 57.0, 152.0, 22.0 ],
-									"text" : "regexp \\\\[|\\\\] @substitute \\\""
+									"patching_rect" : [ 95.0, 57.0, 162.0, 22.0 ],
+									"text" : "regexp \\\\[|\\\\]|\\\\' @substitute \\\""
 								}
 
 							}
@@ -210,7 +210,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-4", 0 ],
-									"midpoints" : [ 204.25, 92.0, 104.5, 92.0 ],
+									"midpoints" : [ 211.75, 92.0, 104.5, 92.0 ],
 									"source" : [ "obj-14", 3 ]
 								}
 
