@@ -80,7 +80,7 @@
 					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 706.333333333333485, 1116.0, 24.0, 24.0 ]
 				}
@@ -3840,7 +3840,7 @@
 													"maxclass" : "button",
 													"numinlets" : 1,
 													"numoutlets" : 1,
-													"outlettype" : [ "" ],
+													"outlettype" : [ "bang" ],
 													"parameter_enable" : 0,
 													"patching_rect" : [ 104.0, 51.0, 24.0, 24.0 ]
 												}
@@ -7976,7 +7976,7 @@
 													"maxclass" : "button",
 													"numinlets" : 1,
 													"numoutlets" : 1,
-													"outlettype" : [ "" ],
+													"outlettype" : [ "bang" ],
 													"parameter_enable" : 0,
 													"patching_rect" : [ 104.0, 51.0, 24.0, 24.0 ]
 												}
@@ -12720,7 +12720,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 695.333333333333371, 63.5, 88.041666666666629, 87.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1132.041666999999734, 0.0, 53.041666666666515, 43.0 ],
+					"presentation_rect" : [ 1136.041666999999734, 8.0, 53.041666666666515, 43.0 ],
 					"rounded" : 24.0,
 					"text" : "X",
 					"texton" : "X",
