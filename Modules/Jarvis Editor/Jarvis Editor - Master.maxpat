@@ -105,8 +105,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "bang" ],
-					"patching_rect" : [ 224.0, 80.0, 349.0, 22.0 ],
-					"text" : "dialog @mode 0 @label Please enter password for Jarvis Editor"
+					"patching_rect" : [ 224.0, 80.0, 403.0, 22.0 ],
+					"text" : "dialog @mode 0 @label Please enter password for Jarvis Editor @mask 1"
 				}
 
 			}
