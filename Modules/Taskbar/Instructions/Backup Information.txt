@@ -20,4 +20,4 @@ Restore from Backup Module/Application:
 1) Select the previously named backup (note: the one you created in Backup program above).
 2) Click on the 'restore' button (only shown when there is a backup selected).
 -------------------------------------------------------------------------------------
-Created on 2021-02-15 by Dr Cory McClung
+Created on 2021-02-15 by Protoc01
