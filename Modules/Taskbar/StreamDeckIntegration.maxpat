@@ -19890,7 +19890,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 881.0, 261.0, 1048.0, 1010.0 ],
+										"rect" : [ 830.0, 261.0, 1048.0, 1010.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -20788,7 +20788,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 1326.0, 487.0, 822.0, 738.0 ],
+										"rect" : [ 934.0, 218.0, 822.0, 738.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -20837,35 +20837,6 @@
 													"outlettype" : [ "bang" ],
 													"patching_rect" : [ 83.0, 559.0, 25.0, 22.0 ],
 													"text" : "t b"
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-17",
-													"maxclass" : "message",
-													"numinlets" : 2,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
-													"patching_rect" : [ 587.0, 559.0, 156.0, 22.0 ],
-													"text" : "taskkill /F /IM PSC.exe"
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-9",
-													"maxclass" : "newobj",
-													"numinlets" : 1,
-													"numoutlets" : 2,
-													"outlettype" : [ "", "bang" ],
-													"patching_rect" : [ 587.0, 585.0, 100.0, 22.0 ],
-													"saved_object_attributes" : 													{
-														"shell" : "(default)",
-														"wd" : "(default)"
-													}
-,
-													"text" : "shell"
 												}
 
 											}
@@ -21294,13 +21265,6 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-9", 0 ],
-													"source" : [ "obj-17", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
 													"destination" : [ "obj-19", 0 ],
 													"source" : [ "obj-18", 0 ]
 												}
@@ -21345,16 +21309,6 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-1", 0 ],
-													"order" : 1,
-													"source" : [ "obj-3", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
-													"destination" : [ "obj-17", 0 ],
-													"midpoints" : [ 92.5, 525.0, 285.0, 525.0, 285.0, 525.0, 596.5, 525.0 ],
-													"order" : 0,
 													"source" : [ "obj-3", 0 ]
 												}
 
@@ -96980,10 +96934,6 @@
 			}
 , 			{
 				"name" : "sadam.udpSender.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "shell.mxe64",
 				"type" : "mx64"
 			}
 , 			{
