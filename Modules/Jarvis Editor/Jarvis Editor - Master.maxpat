@@ -1711,12 +1711,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-27",
-									"linecount" : 3,
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1007.722201764583588, 127.5, 290.0, 50.0 ],
+									"patching_rect" : [ 1007.722201764583588, 127.5, 314.0, 36.0 ],
 									"text" : ";\r\nOpenProgram \"'C:/Windows/notepad.exe' 'Notepad' 's'\""
 								}
 
@@ -5141,7 +5141,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "bang" ],
 													"patching_rect" : [ 26.0, 72.0, 61.0, 22.0 ],
-													"text" : "delay 250"
+													"text" : "delay 350"
 												}
 
 											}
@@ -7295,7 +7295,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-27", 1 ],
-									"midpoints" : [ 1017.222201764583588, 122.0, 1288.222201764583588, 122.0 ],
+									"midpoints" : [ 1017.222201764583588, 122.0, 1312.222201764583588, 122.0 ],
 									"order" : 0,
 									"source" : [ "obj-39", 0 ]
 								}
