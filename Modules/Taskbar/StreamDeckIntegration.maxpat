@@ -1729,7 +1729,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 639.5, 1038.0, 97.0, 36.0 ],
+					"patching_rect" : [ 630.5, 1038.0, 97.0, 36.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -4059,7 +4059,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 147.0, 735.0, 854.0, 498.0 ],
+						"rect" : [ -1643.0, 587.0, 1467.0, 393.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -4088,6 +4088,124 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-42",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1025.300002902746201, 120.800000727176666, 182.0, 22.0 ],
+									"text" : "sprintf \\\"'ImagePrinter' '%s' '%s'\\\""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-43",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 1025.300002902746201, 94.400001227855682, 173.0, 22.0 ],
+									"text" : "zl slice 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-44",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 1025.300002902746201, 147.800000727176666, 58.0, 22.0 ],
+									"text" : "s Python"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-34",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 847.6500014513731, 118.400001227855682, 171.0, 22.0 ],
+									"text" : "sprintf \\\"'TextPrinter' '%s' '%s'\\\""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-35",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 847.6500014513731, 94.400001227855682, 171.0, 22.0 ],
+									"text" : "zl slice 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-36",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 847.6500014513731, 145.400001227855682, 58.0, 22.0 ],
+									"text" : "s Python"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-28",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 670.0, 86.400001227855682, 96.0, 22.0 ],
+									"text" : "append Console"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-16",
+									"maxclass" : "newobj",
+									"numinlets" : 5,
+									"numoutlets" : 5,
+									"outlettype" : [ "", "", "", "", "" ],
+									"patching_rect" : [ 670.0, 54.400000810623169, 729.600005805492401, 22.0 ],
+									"text" : "route \"General Print\" \"Print Text File\" \"Print Image\" \"Print PDF\""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-14",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 5,
+									"outlettype" : [ "", "", "", "", "" ],
+									"patching_rect" : [ 670.0, 28.0, 152.0, 22.0 ],
+									"text" : "regexp \\\\[|\\\\] @substitute \\\""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 670.0, 2.0, 41.0, 22.0 ],
+									"text" : "r Print"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-13",
 									"linecount" : 5,
@@ -4246,6 +4364,50 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-16", 0 ],
+									"source" : [ "obj-14", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-28", 0 ],
+									"midpoints" : [ 1390.100005805492401, 83.0, 679.5, 83.0 ],
+									"source" : [ "obj-16", 4 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-28", 0 ],
+									"midpoints" : [ 1212.450004354119301, 78.99999988079071, 768.0, 78.99999988079071, 768.0, 78.0, 679.5, 78.0 ],
+									"source" : [ "obj-16", 3 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-28", 0 ],
+									"source" : [ "obj-16", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-35", 0 ],
+									"source" : [ "obj-16", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-43", 0 ],
+									"source" : [ "obj-16", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-4", 0 ],
 									"midpoints" : [ 204.25, 105.0, 104.5, 105.0 ],
 									"source" : [ "obj-19", 3 ]
@@ -4284,6 +4446,35 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"midpoints" : [ 679.5, 111.0, 267.0, 111.0, 267.0, 111.0, 104.5, 111.0 ],
+									"source" : [ "obj-28", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-36", 0 ],
+									"source" : [ "obj-34", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-34", 1 ],
+									"source" : [ "obj-35", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-34", 0 ],
+									"source" : [ "obj-35", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-5", 1 ],
 									"source" : [ "obj-4", 1 ]
 								}
@@ -4298,8 +4489,36 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-44", 0 ],
+									"source" : [ "obj-42", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-42", 1 ],
+									"source" : [ "obj-43", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-42", 0 ],
+									"source" : [ "obj-43", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-3", 0 ],
 									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-14", 0 ],
+									"source" : [ "obj-6", 0 ]
 								}
 
 							}
@@ -4523,7 +4742,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 814.0, 1038.0, 99.0, 36.0 ],
+					"patching_rect" : [ 744.5, 1038.0, 155.0, 36.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -4531,7 +4750,7 @@
 						"tags" : ""
 					}
 ,
-					"text" : "p Printer"
+					"text" : "p Print/Printer"
 				}
 
 			}
@@ -8493,7 +8712,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 17.0, 173.0, 58.0, 22.0 ],
+									"patching_rect" : [ 17.0, 175.0, 58.0, 22.0 ],
 									"text" : "s Python"
 								}
 
@@ -17338,7 +17557,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 343.0, 157.0, 1168.0, 1181.0 ],
+						"rect" : [ 637.0, 445.0, 1168.0, 509.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -17549,7 +17768,6 @@
 									}
 ,
 									"patching_rect" : [ 582.333333333333258, 471.0, 87.0, 22.0 ],
-									"presentation_linecount" : 2,
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -19152,13 +19370,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-106",
-									"linecount" : 6,
+									"linecount" : 4,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 72.0, 875.0, 72.0, 91.0 ],
-									"text" : ";\r\nUPDATE_SETTINGS_USER_MAIN_PROFILE bang"
+									"patching_rect" : [ 72.0, 875.0, 72.0, 64.0 ],
+									"text" : ";\r\nUPDATE_STAFF_IN_TODAY bang"
 								}
 
 							}
@@ -20043,7 +20261,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 683.0, 504.5, 450.0, 36.0 ],
-									"text" : ";\r\n\"OCRTEST_VARIABLE'OCR' + args[0] + paste_data)\""
+									"text" : ";\r\nCompleted_Open_Program Completed"
 								}
 
 							}
@@ -90825,13 +91043,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-32",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 254.0, 417.0, 304.0, 36.0 ],
-									"text" : ";\r\nFolderImage \"8 zeiss button.png\""
+									"text" : ";\r\nFolderImage \"9 visionary icon 2 large border yellow.png\""
 								}
 
 							}
@@ -95102,8 +95320,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 5,
 									"outlettype" : [ "", "", "", "", "" ],
-									"patching_rect" : [ 18.0, 101.0, 129.0, 22.0 ],
-									"text" : "regexp ' @substitute \\\""
+									"patching_rect" : [ 18.0, 101.0, 155.0, 22.0 ],
+									"text" : "regexp '|\\\\[|\\\\] @substitute \\\""
 								}
 
 							}
@@ -95199,7 +95417,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-8", 0 ],
-									"midpoints" : [ 110.0, 141.0, 27.5, 141.0 ],
+									"midpoints" : [ 129.5, 141.0, 27.5, 141.0 ],
 									"source" : [ "obj-19", 3 ]
 								}
 
@@ -96252,6 +96470,12 @@
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
 				"patcherrelativepath" : "./Maxpat",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Exam Room Master.coll",
+				"bootpath" : "S:/SLE CLIPBOARD/Chuck Profiles/Cory Work/Profiles",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
