@@ -7,6 +7,7 @@ OpenProgram, 'full path of program/exe' -> limited though does not require pytho
 OpenFile, 'full path of file' 'title/name of window to pull to file front';
 PatientHub-PullPush, 'name of preset' 'push/pull' -> pulls info or pushes info;
 Pause, 'integer' -> integer is in milliseconds - aka if you want delay of 1 second put 1000 into box;
+Print, 'Print type - general or image or pdf or text' 'fullpath to file to print';
 Screenshot, 'x1' 'y1' 'x2' 'y2' 'save_path';
 ScreenToText, 'x1' 'y1' 'x2' 'y2' 'variable name' to store contents of OCR image capture;
 ToDoList, 'Msg' 'Staff_ID_FOR or USER_ID' 'URGENT 1/0' 'Staff/Role 0/1';
