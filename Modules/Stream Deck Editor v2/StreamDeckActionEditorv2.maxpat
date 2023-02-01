@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -2580.0, 273.0, 2492.0, 1289.0 ],
+		"rect" : [ 34.0, 85.0, 1852.0, 929.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,47 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-202",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "select" ],
+					"patching_rect" : [ 600.0, 435.0, 47.0, 22.0 ],
+					"text" : "t select"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-199",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 872.5, 77.0, 63.0, 22.0 ],
+					"text" : "s #1_save"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-197",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "bang" ],
+					"patching_rect" : [ 811.5, 50.0, 80.0, 22.0 ],
+					"text" : "t b b"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-193",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 879.0, 42.0, 67.0, 22.0 ],
+					"patching_rect" : [ 930.5, 46.0, 67.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -62,7 +97,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 879.0, 5.0, 30.0, 30.0 ]
+					"patching_rect" : [ 930.5, 9.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -892,7 +927,7 @@
 					"maxclass" : "hint",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 820.0, 59.0, 100.0, 20.0 ],
+					"patching_rect" : [ 744.0, 42.0, 100.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 433.0, 3.0, 61.0, 24.0 ]
 				}
@@ -15825,7 +15860,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 811.5, 71.0, 100.0, 20.0 ],
+					"patching_rect" : [ 811.5, 24.0, 100.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 433.0, 3.0, 61.0, 24.0 ],
 					"text" : "Save",
@@ -18064,8 +18099,30 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-199", 0 ],
+					"source" : [ "obj-197", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-76", 0 ],
+					"source" : [ "obj-197", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-61", 0 ],
 					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"destination" : [ "obj-20", 0 ],
+					"source" : [ "obj-202", 0 ]
 				}
 
 			}
@@ -18573,14 +18630,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
-					"destination" : [ "obj-20", 0 ],
-					"source" : [ "obj-66", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-58", 0 ],
 					"source" : [ "obj-66", 2 ]
 				}
@@ -18702,7 +18751,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-76", 0 ],
+					"destination" : [ "obj-197", 0 ],
 					"source" : [ "obj-77", 0 ]
 				}
 
@@ -18915,13 +18964,6 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "StreamDeckActionList.coll",
-				"bootpath" : "C:/ProgramData/Chuck/main/nodejs",
-				"patcherrelativepath" : "../../nodejs",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "clear.png",
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Stream Deck Editor v2",
 				"patcherrelativepath" : ".",
