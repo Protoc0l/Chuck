@@ -1316,6 +1316,17 @@
 						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-48",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 1501.0, 511.0, 32.0, 22.0 ],
+									"text" : "print"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-47",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -1576,8 +1587,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1242.0, 557.142860412597656, 109.0, 22.0 ],
-									"text" : "v JARIVS_ID_DEL"
+									"patching_rect" : [ 1242.0, 557.142860412597656, 108.0, 22.0 ],
+									"text" : "v JARVIS_ID_DEL"
 								}
 
 							}
@@ -7372,6 +7383,15 @@
 								"patchline" : 								{
 									"destination" : [ "obj-41", 1 ],
 									"midpoints" : [ 1251.5, 582.0, 1501.428576231002808, 582.0 ],
+									"order" : 1,
+									"source" : [ "obj-45", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-48", 0 ],
+									"order" : 0,
 									"source" : [ "obj-45", 0 ]
 								}
 
@@ -7718,13 +7738,6 @@
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Stream Deck Editor v2",
 				"patcherrelativepath" : "../Stream Deck Editor v2",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "StreamDeckActionList.coll",
-				"bootpath" : "C:/ProgramData/Chuck/main/nodejs",
-				"patcherrelativepath" : "../../nodejs",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
