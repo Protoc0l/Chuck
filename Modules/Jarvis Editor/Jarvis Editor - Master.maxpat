@@ -1313,19 +1313,7 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"title" : "Chuck Jarvis: Editor",
-						"visible" : 1,
 						"boxes" : [ 							{
-								"box" : 								{
-									"id" : "obj-48",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 1501.0, 511.0, 32.0, 22.0 ],
-									"text" : "print"
-								}
-
-							}
-, 							{
 								"box" : 								{
 									"id" : "obj-47",
 									"maxclass" : "newobj",
@@ -3230,8 +3218,8 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 93.5, 467.0, 1338.0, 36.0 ],
-													"text" : "sprintf \\\"SELECT JARVIS.JARVIS_ID as 'ID'\\, USER.USER_NAME as 'User'\\, STAFF.STAFF_NAME AS 'Staff'\\, JARVIS.JARVIS_NAME 'Title'\\, JARVIS.JARVIS_SEARCH 'Tags'\\, JARVIS.JARVIS_ACTION 'Action'\\, JARVIS.JARVIS_VALUE 'Entry' FROM JARVIS LEFT JOIN USER ON JARVIS.USER_ID=USER.USER_ID LEFT JOIN STAFF ON JARVIS.STAFF_ID=STAFF.STAFF_ID WHERE %s ORDER BY JARVIS.JARVIS_NAME ASC\\\""
+													"patching_rect" : [ 93.5, 467.0, 1337.0, 36.0 ],
+													"text" : "sprintf \\\"SELECT JARVIS.JARVIS_ID as 'ID'\\, USER.USER_NAME as 'Role'\\, STAFF.STAFF_NAME AS 'Staff'\\, JARVIS.JARVIS_NAME 'Title'\\, JARVIS.JARVIS_SEARCH 'Tags'\\, JARVIS.JARVIS_ACTION 'Action'\\, JARVIS.JARVIS_VALUE 'Entry' FROM JARVIS LEFT JOIN USER ON JARVIS.USER_ID=USER.USER_ID LEFT JOIN STAFF ON JARVIS.STAFF_ID=STAFF.STAFF_ID WHERE %s ORDER BY JARVIS.JARVIS_NAME ASC\\\""
 												}
 
 											}
@@ -3812,7 +3800,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 1630.0, 410.0, 712.0, 708.0 ],
+										"rect" : [ 1166.0, 410.0, 712.0, 708.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -7383,15 +7371,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-41", 1 ],
 									"midpoints" : [ 1251.5, 582.0, 1501.428576231002808, 582.0 ],
-									"order" : 1,
-									"source" : [ "obj-45", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-48", 0 ],
-									"order" : 0,
 									"source" : [ "obj-45", 0 ]
 								}
 
