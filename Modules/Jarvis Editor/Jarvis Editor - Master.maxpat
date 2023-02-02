@@ -1313,6 +1313,7 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"title" : "Chuck Jarvis: Editor",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-47",
@@ -1610,7 +1611,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1224.928576231002808, 586.292671084403992, 265.0, 22.0 ],
+									"patching_rect" : [ 1224.928576231002808, 588.292671084403992, 265.0, 22.0 ],
 									"text" : "DELETE FROM JARVIS WHERE JARVIS_ID=?"
 								}
 
@@ -1622,8 +1623,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 1224.928576231002808, 615.435531497001648, 292.0, 22.0 ],
-									"text" : "MySQL_User Insert_new_jarvis_entry"
+									"patching_rect" : [ 1224.928576231002808, 615.435531497001648, 286.0, 22.0 ],
+									"text" : "MySQL_User delete_new_jarvis_entry"
 								}
 
 							}
@@ -1845,18 +1846,6 @@
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 895.535705745220184, 746.460463345050812, 22.0, 22.0 ],
 									"text" : "t 0"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-283",
-									"maxclass" : "button",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 706.201561331748962, 265.891476988792419, 24.0, 24.0 ]
 								}
 
 							}
@@ -2208,7 +2197,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-220",
-									"items" : [ "Alicia", ",", "Alison F", ",", "Alison M", ",", "Ang", ",", "Betty", ",", "Bonnie", ",", "Caudette", ",", "Chantal", ",", "Corrina", ",", "Dr Clark Hyde", ",", "Dr Cory McClung", ",", "Dr Jodi Sehn", ",", "Dr Michael McClung", ",", "Jean", ",", "Kara", ",", "Karen", ",", "Katelyn", ",", "Kathy", ",", "Keara", ",", "Leanne", ",", "Lindsay", ",", "Mayda", ",", "Melissa", ",", "Natasha", ",", "Roxanne", ",", "Steph", ",", "Tammy", ",", "Taya", ",", "Tonya", ",", "Log Out" ],
+									"items" : "<empty>",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -2395,7 +2384,7 @@
 									"bgfillcolor_type" : "color",
 									"fontsize" : 14.0,
 									"id" : "obj-236",
-									"items" : [ "Alicia", ",", "Alison F", ",", "Alison M", ",", "Ang", ",", "Betty", ",", "Bonnie", ",", "Caudette", ",", "Chantal", ",", "Corrina", ",", "Dr Clark Hyde", ",", "Dr Cory McClung", ",", "Dr Jodi Sehn", ",", "Dr Michael McClung", ",", "Jean", ",", "Kara", ",", "Karen", ",", "Katelyn", ",", "Kathy", ",", "Keara", ",", "Leanne", ",", "Lindsay", ",", "Mayda", ",", "Melissa", ",", "Natasha", ",", "Roxanne", ",", "Steph", ",", "Tammy", ",", "Taya", ",", "Tonya", ",", "Log Out" ],
+									"items" : "<empty>",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -2478,7 +2467,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-208",
-									"items" : [ "General Use", ",", "Optometrist", ",", "3rd Assistant", ",", "4th Assistant", ",", "Front Desk", ",", "Lab", ",", "3rd St Optician", ",", "4th St Optician" ],
+									"items" : "<empty>",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -2594,7 +2583,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "", "" ],
-									"patching_rect" : [ 630.035718858242035, 324.932334423065186, 81.0, 22.0 ],
+									"patching_rect" : [ 630.035718858242035, 321.932334423065186, 81.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0,
 										"precision" : 6
@@ -2665,7 +2654,7 @@
 									"bgfillcolor_type" : "color",
 									"fontsize" : 14.0,
 									"id" : "obj-138",
-									"items" : [ "General Use", ",", "Optometrist", ",", "3rd Assistant", ",", "4th Assistant", ",", "Front Desk", ",", "Lab", ",", "3rd St Optician", ",", "4th St Optician" ],
+									"items" : "<empty>",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -6532,8 +6521,8 @@
 , 							{
 								"box" : 								{
 									"bgcolor" : [ 0.831372549019608, 0.831372549019608, 0.831372549019608, 1.0 ],
-									"coldef" : [ [ 0, 45, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 2, 100, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 1, 80, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 4, 250, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 5, 150, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 6, 300, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 3, 350, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ] ],
-									"cols" : 7,
+									"coldef" : [ [ 0, 45, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ] ],
+									"cols" : 1,
 									"colwidth" : 200,
 									"fontface" : 0,
 									"fontname" : "Arial",
@@ -6549,7 +6538,7 @@
 									"patching_rect" : [ 16.0, 414.035397589206696, 422.0, 254.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 0.892857372760773, 28.642857670783997, 974.0, 418.30973494052887 ],
-									"rows" : 4,
+									"rows" : 1,
 									"sccolor" : [ 0.831372549019608, 0.831372549019608, 0.831372549019608, 1.0 ],
 									"selmode" : 3,
 									"sgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
@@ -7226,14 +7215,8 @@
 								"patchline" : 								{
 									"color" : [ 1.0, 0.0, 0.0, 1.0 ],
 									"destination" : [ "obj-126", 0 ],
+									"midpoints" : [ 905.035705745220184, 348.0, 711.0, 348.0, 711.0, 348.0, 639.535718858242035, 348.0 ],
 									"source" : [ "obj-281", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-217", 0 ],
-									"source" : [ "obj-283", 0 ]
 								}
 
 							}
@@ -7388,7 +7371,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-41", 1 ],
-									"midpoints" : [ 1251.5, 582.0, 1507.428576231002808, 582.0 ],
+									"midpoints" : [ 1251.5, 582.0, 1501.428576231002808, 582.0 ],
 									"source" : [ "obj-45", 0 ]
 								}
 
@@ -7735,6 +7718,13 @@
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Stream Deck Editor v2",
 				"patcherrelativepath" : "../Stream Deck Editor v2",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "StreamDeckActionList.coll",
+				"bootpath" : "C:/ProgramData/Chuck/main/nodejs",
+				"patcherrelativepath" : "../../nodejs",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
