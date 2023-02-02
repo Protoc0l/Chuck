@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 85.0, 1852.0, 929.0 ],
+		"rect" : [ 42.0, 85.0, 1852.0, 929.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -14196,7 +14196,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 50.0, 50.0, 58.0, 22.0 ],
+									"patching_rect" : [ 50.0, 34.0, 58.0, 22.0 ],
 									"text" : "loadbang"
 								}
 
@@ -15200,7 +15200,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 107.0, 436.0, 444.0, 50.0 ],
+									"patching_rect" : [ 107.0, 436.0, 444.0, 36.0 ],
 									"text" : ";\r\nmax launchbrowser c:/ProgramData/Chuck/Settings/ListOfOpenPrograms.pyw"
 								}
 
@@ -15255,13 +15255,6 @@
 							}
  ],
 						"lines" : [ 							{
-								"patchline" : 								{
-									"destination" : [ "obj-2", 0 ],
-									"source" : [ "obj-1", 0 ]
-								}
-
-							}
-, 							{
 								"patchline" : 								{
 									"destination" : [ "obj-16", 0 ],
 									"source" : [ "obj-10", 0 ]
@@ -18964,6 +18957,13 @@
 			}
  ],
 		"dependency_cache" : [ 			{
+				"name" : "StreamDeckActionList.coll",
+				"bootpath" : "C:/ProgramData/Chuck/main/nodejs",
+				"patcherrelativepath" : "../../nodejs",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "clear.png",
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Stream Deck Editor v2",
 				"patcherrelativepath" : ".",
