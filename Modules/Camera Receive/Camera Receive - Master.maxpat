@@ -46,7 +46,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 198.0, 179.0, 67.0, 22.0 ],
+					"patching_rect" : [ 198.0, 169.0, 67.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -59,7 +59,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "wclose" ],
-					"patching_rect" : [ 198.0, 155.0, 52.0, 22.0 ],
+					"patching_rect" : [ 198.0, 145.0, 52.0, 22.0 ],
 					"text" : "t wclose"
 				}
 
@@ -71,7 +71,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 198.0, 37.0, 54.0, 22.0 ],
+					"patching_rect" : [ 198.0, 34.0, 54.0, 22.0 ],
 					"text" : "delay 20"
 				}
 
@@ -1190,7 +1190,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 198.0, 91.0, 51.0, 22.0 ],
+					"patching_rect" : [ 198.0, 83.0, 51.0, 22.0 ],
 					"text" : "pcontrol"
 				}
 
@@ -1200,10 +1200,10 @@
 					"id" : "obj-19",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "open", "bang" ],
-					"patching_rect" : [ 198.0, 67.0, 94.0, 22.0 ],
-					"text" : "t open b"
+					"numoutlets" : 1,
+					"outlettype" : [ "open" ],
+					"patching_rect" : [ 198.0, 59.0, 42.0, 22.0 ],
+					"text" : "t open"
 				}
 
 			}
@@ -3765,7 +3765,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 198.0, 117.0, 94.0, 36.0 ],
+					"patching_rect" : [ 198.0, 107.0, 94.0, 36.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3817,6 +3817,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
 					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"source" : [ "obj-20", 0 ]
 				}
 
 			}
