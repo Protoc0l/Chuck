@@ -1268,7 +1268,6 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"title" : "Chuck: Camera Receive",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-30",
@@ -1395,7 +1394,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "bang" ],
 													"patching_rect" : [ 26.0, 72.0, 61.0, 22.0 ],
-													"text" : "delay 350"
+													"text" : "delay 450"
 												}
 
 											}
@@ -3872,13 +3871,6 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "Camera_Receive",
-				"bootpath" : "C:/ProgramData/Chuck/Settings",
-				"patcherrelativepath" : "../../../Settings",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "jit.ndi.receive~.mxe64",
 				"type" : "mx64"
 			}
