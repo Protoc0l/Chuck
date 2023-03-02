@@ -183,6 +183,7 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"title" : "SLE Camera",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-29",
@@ -601,8 +602,6 @@
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 921.427048000000013, 356.0, 37.5, 29.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 966.177048000000013, 55.5, 27.0, 24.0 ],
 									"text" : "",
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"texton" : "",
@@ -621,9 +620,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_matrix" ],
 									"patching_rect" : [ 943.0, 373.5, 49.0, 45.0 ],
-									"pic" : "folder icon.png",
-									"presentation" : 1,
-									"presentation_rect" : [ 966.177048000000013, 55.5, 27.0, 24.0 ]
+									"pic" : "folder icon.png"
 								}
 
 							}
@@ -639,8 +636,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 933.927048000000013, 366.5, 37.5, 29.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 966.177048000000013, 55.5, 27.0, 24.0 ],
 									"proportion" : 0.39,
 									"rounded" : 6,
 									"varname" : "On_Off_color_panel[1]"
@@ -1706,8 +1701,6 @@
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 542.5, 603.5, 37.5, 29.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 936.5, 55.5, 28.0, 24.0 ],
 									"text" : "",
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"texton" : "",
@@ -1725,9 +1718,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_matrix" ],
 									"patching_rect" : [ 579.5, 603.5, 49.0, 45.0 ],
-									"pic" : "image_icon.png",
-									"presentation" : 1,
-									"presentation_rect" : [ 938.5, 56.5, 24.0, 21.0 ]
+									"pic" : "image_icon.png"
 								}
 
 							}
@@ -1742,8 +1733,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 565.5, 597.5, 37.5, 29.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 936.5, 55.5, 28.0, 24.0 ],
 									"proportion" : 0.39,
 									"rounded" : 6,
 									"varname" : "Player_panel"
@@ -1763,8 +1752,6 @@
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 519.5, 296.5, 37.5, 29.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 908.0, 57.5, 27.5, 19.0 ],
 									"text" : "",
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"texton" : "",
@@ -1782,9 +1769,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_matrix" ],
 									"patching_rect" : [ 585.5, 288.5, 49.0, 45.0 ],
-									"pic" : "active_icon.png",
-									"presentation" : 1,
-									"presentation_rect" : [ 908.5, 57.5, 25.0, 19.0 ]
+									"pic" : "active_icon.png"
 								}
 
 							}
@@ -1799,8 +1784,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 660.25, 347.5, 37.5, 29.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 908.0, 55.5, 27.5, 24.0 ],
 									"proportion" : 0.39,
 									"rounded" : 6,
 									"varname" : "On_Off_color_panel"
@@ -7233,9 +7216,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 0,
 									"offset" : [ 0.0, 0.0 ],
-									"patching_rect" : [ 161.0, 270.5, 207.0, 82.5 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 991.5, 55.5, 48.0, 24.0 ],
+									"patching_rect" : [ 159.0, 178.5, 56.0, 27.5 ],
 									"viewvisibility" : 1
 								}
 
@@ -7244,7 +7225,7 @@
 								"box" : 								{
 									"angle" : 270.0,
 									"background" : 1,
-									"bgcolor" : [ 0.262745098039216, 0.384313725490196, 0.666666666666667, 1.0 ],
+									"bgcolor" : [ 0.223529411764706, 0.223529411764706, 0.223529411764706, 1.0 ],
 									"id" : "obj-46",
 									"maxclass" : "panel",
 									"mode" : 0,
