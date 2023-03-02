@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 85.0, 1852.0, 929.0 ],
+		"rect" : [ -2053.0, 175.0, 1446.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,56 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-91",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 1500.0, 565.0, 39.0, 22.0 ],
+					"text" : "- 190."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-237",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1500.0, 592.0, 314.0, 36.0 ],
+					"text" : "sprintf script sendbox SideBar1 presentation_rect 0. 170. 244. %f"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-230",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 1500.0, 633.0, 100.0, 22.0 ],
+					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
+					"text" : "thispatcher"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-249",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1500.0, 538.0, 113.0, 22.0 ],
+					"text" : "r SLE_Cam_Y_Dim"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontsize" : 16.0,
 					"id" : "obj-89",
 					"maxclass" : "comment",
@@ -58,7 +108,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1363.5, 742.0, 118.0, 25.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Image Capture"
 				}
 
@@ -271,7 +320,6 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "SideBar1" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -288,6 +336,7 @@
 					"patching_rect" : [ 1497.0, 761.75, 159.75, 134.5 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 170.0, 244.0, 784.0 ],
+					"varname" : "SideBar1",
 					"viewvisibility" : 1
 				}
 
@@ -371,11 +420,11 @@
 				"box" : 				{
 					"fontsize" : 11.0,
 					"id" : "obj-63",
-					"linecount" : 6,
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1256.5, 468.0, 177.0, 82.0 ],
+					"patching_rect" : [ 1248.5, 379.0, 319.0, 57.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 4,
 					"presentation_rect" : [ 4.25, 104.543478260869563, 236.75, 57.0 ],
@@ -512,11 +561,10 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-53",
-					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1256.5, 407.75, 174.0, 55.0 ],
+					"patching_rect" : [ 1248.5, 352.75, 316.0, 23.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 683.25, 112.364906832298118, 217.75, 39.0 ],
@@ -529,11 +577,10 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-52",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1256.5, 368.0, 174.0, 39.0 ],
+					"patching_rect" : [ 1248.5, 326.0, 316.0, 23.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 683.25, 86.543478260869563, 217.75, 23.0 ],
 					"text" : "3) Copy unzipped jit.ndi folder to:",
@@ -576,11 +623,10 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-47",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1256.5, 323.75, 174.0, 39.0 ],
+					"patching_rect" : [ 1248.5, 298.75, 316.0, 23.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 683.25, 62.25, 187.0, 23.0 ],
 					"text" : "2) Download jit.ndi package:",
@@ -592,11 +638,10 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-67",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1256.5, 280.368419170379639, 174.0, 39.0 ],
+					"patching_rect" : [ 1248.5, 274.0, 316.0, 23.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 683.25, 37.25, 187.0, 23.0 ],
 					"text" : "1) Install NDI Runtime Driver",
@@ -1031,7 +1076,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 198.0, 307.0, 37.5, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 252.0, 40.25, 46.5, 39.0 ],
+					"presentation_rect" : [ 252.0, 37.25, 46.5, 39.0 ],
 					"text" : "",
 					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"texton" : "",
@@ -1052,7 +1097,7 @@
 					"patching_rect" : [ 258.0, 299.0, 49.0, 45.0 ],
 					"pic" : "Refresh_Icon.png",
 					"presentation" : 1,
-					"presentation_rect" : [ 253.0, 42.75, 39.5, 32.0 ],
+					"presentation_rect" : [ 253.0, 39.75, 39.5, 32.0 ],
 					"varname" : "Camera_Refresh_Icon"
 				}
 
@@ -1069,7 +1114,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 215.25, 311.0, 37.5, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 254.5, 43.75, 33.5, 30.0 ],
+					"presentation_rect" : [ 254.5, 40.75, 33.5, 30.0 ],
 					"proportion" : 0.39,
 					"rounded" : 3,
 					"varname" : "Camera_Refresh_Background"
@@ -1135,7 +1180,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 8.0, 394.5, 200.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 283.0, 43.75, 379.0, 30.0 ],
+					"presentation_rect" : [ 283.0, 40.75, 378.0, 30.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 1,
 					"varname" : "Capture_Selection"
@@ -1905,8 +1950,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 8.0, 239.0, 456.499999999999943, 36.0 ],
-					"text" : "script newobject bpatcher @name Phone_Camera_Vertical @varname Phone_Camera_Vertical @presentation_rect 245. -5. 8000. 8000. @presentation 1"
+					"patching_rect" : [ 22.0, 224.0, 381.0, 36.0 ],
+					"text" : "script newobject bpatcher @name \"Image Editor\" @varname ImageEditor @presentation_rect 246. 0. 8000. 8000. @presentation 1"
 				}
 
 			}
@@ -1984,7 +2029,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1296.0, 61.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 252.0, 40.25, 414.0, 39.0 ],
+					"presentation_rect" : [ 251.0, 37.25, 414.0, 39.0 ],
 					"proportion" : 0.5,
 					"rounded" : 2
 				}
@@ -2187,6 +2232,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-230", 0 ],
+					"midpoints" : [ 1509.5, 631.0, 1509.5, 631.0 ],
+					"source" : [ "obj-237", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"destination" : [ "obj-21", 0 ],
 					"source" : [ "obj-24", 1 ]
@@ -2215,6 +2268,13 @@
 					"midpoints" : [ 130.0, 489.0, 165.0, 489.0, 165.0, 489.0, 243.5, 489.0 ],
 					"order" : 0,
 					"source" : [ "obj-24", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-91", 0 ],
+					"source" : [ "obj-249", 0 ]
 				}
 
 			}
@@ -2518,6 +2578,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-237", 0 ],
+					"source" : [ "obj-91", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-944", 0 ],
 					"source" : [ "obj-943", 0 ]
 				}
@@ -2556,76 +2623,6 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "08-09-2022 14-56-25 SLE Photo 0.png",
-				"bootpath" : "C:/ProgramData/Chuck/Users/Exam Room Master/Photos",
-				"patcherrelativepath" : "../../../../Users/Exam Room Master/Photos",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "08-09-2022 14-56-27 SLE Photo 1.png",
-				"bootpath" : "C:/ProgramData/Chuck/Users/Exam Room Master/Photos",
-				"patcherrelativepath" : "../../../../Users/Exam Room Master/Photos",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "08-09-2022 14-56-30 SLE Photo 2.png",
-				"bootpath" : "C:/ProgramData/Chuck/Users/Exam Room Master/Photos",
-				"patcherrelativepath" : "../../../../Users/Exam Room Master/Photos",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "08-09-2022 14-56-57 SLE Photo 3.png",
-				"bootpath" : "C:/ProgramData/Chuck/Users/Exam Room Master/Photos",
-				"patcherrelativepath" : "../../../../Users/Exam Room Master/Photos",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "08-09-2022 14-56-59 SLE Photo 4.png",
-				"bootpath" : "C:/ProgramData/Chuck/Users/Exam Room Master/Photos",
-				"patcherrelativepath" : "../../../../Users/Exam Room Master/Photos",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "08-09-2022 14-57-05 SLE Photo 5.png",
-				"bootpath" : "C:/ProgramData/Chuck/Users/Exam Room Master/Photos",
-				"patcherrelativepath" : "../../../../Users/Exam Room Master/Photos",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "08-09-2022 14-57-09 SLE Photo 6.png",
-				"bootpath" : "C:/ProgramData/Chuck/Users/Exam Room Master/Photos",
-				"patcherrelativepath" : "../../../../Users/Exam Room Master/Photos",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "08-09-2022 14-58-04 SLE Photo 7.png",
-				"bootpath" : "C:/ProgramData/Chuck/Users/Exam Room Master/Photos",
-				"patcherrelativepath" : "../../../../Users/Exam Room Master/Photos",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "08-09-2022 14-58-06 SLE Photo 8.png",
-				"bootpath" : "C:/ProgramData/Chuck/Users/Exam Room Master/Photos",
-				"patcherrelativepath" : "../../../../Users/Exam Room Master/Photos",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "08-09-2022 14-58-07 SLE Photo 9.png",
-				"bootpath" : "C:/ProgramData/Chuck/Users/Exam Room Master/Photos",
-				"patcherrelativepath" : "../../../../Users/Exam Room Master/Photos",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "CCW_Rotation.png",
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Image Editor",
 				"patcherrelativepath" : "../../Image Editor",
@@ -2697,13 +2694,6 @@
 			}
 , 			{
 				"name" : "Side_Thumbnail_GroupView.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/SLE Camera/Maxpat",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Side_Thumbnail_Individual.maxpat",
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/SLE Camera/Maxpat",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
