@@ -48,7 +48,8 @@
 					"patching_rect" : [ 76.5, 132.0, 19.0, 16.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 39.0, 4.0, 19.0, 16.0 ],
-					"text" : "H"
+					"text" : "H",
+					"textcolor" : [ 0.76078431372549, 0.76078431372549, 0.76078431372549, 1.0 ]
 				}
 
 			}
@@ -62,7 +63,8 @@
 					"patching_rect" : [ 41.5, 132.0, 19.0, 16.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 20.0, 4.0, 19.0, 16.0 ],
-					"text" : "ST"
+					"text" : "ST",
+					"textcolor" : [ 0.76078431372549, 0.76078431372549, 0.76078431372549, 1.0 ]
 				}
 
 			}
@@ -76,7 +78,8 @@
 					"patching_rect" : [ 8.0, 132.0, 19.0, 16.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.0, 4.0, 19.0, 16.0 ],
-					"text" : "DT"
+					"text" : "DT",
+					"textcolor" : [ 0.76078431372549, 0.76078431372549, 0.76078431372549, 1.0 ]
 				}
 
 			}
@@ -320,7 +323,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 24.0, 244.0, 61.0, 22.0 ],
-									"text" : "delay 400"
+									"text" : "delay 300"
 								}
 
 							}

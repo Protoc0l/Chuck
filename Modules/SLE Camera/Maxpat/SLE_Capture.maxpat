@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -2053.0, 175.0, 1446.0, 929.0 ],
+		"rect" : [ -1878.0, 85.0, 1852.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,74 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-92",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 1110.5, 167.0, 111.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0,
+						"precision" : 6
+					}
+,
+					"text" : "coll LR-image-label"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 1110.5, 138.56249612569809, 87.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0,
+						"precision" : 6
+					}
+,
+					"text" : "coll Pic_2_Fav"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 1110.5, 109.43750387430191, 87.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0,
+						"precision" : 6
+					}
+,
+					"text" : "coll Pic_2_Px"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-43",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 1110.5, 79.0, 87.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0,
+						"precision" : 6
+					}
+,
+					"text" : "coll Pic_2_DB"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-91",
 					"maxclass" : "newobj",
@@ -121,29 +189,6 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1237.5, 742.0, 101.0, 25.0 ],
 					"text" : "Image Editor"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-80",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 547.0, 101.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-43",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 543.0, 53.0, 107.0, 22.0 ],
-					"text" : "r ---footpedal_hold"
 				}
 
 			}
@@ -297,29 +342,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-65",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 732.5, 124.0, 150.0, 20.0 ],
-					"text" : "connect to photo editor"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-44",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 727.5, 92.0, 155.0, 22.0 ],
-					"text" : "r OpenPhoto_Image_Editor"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -391,7 +413,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 699.75, 890.25, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 88.5, 80.543478260869563, 65.0, 19.0 ],
+					"presentation_rect" : [ 2.5, 80.543478260869563, 92.0, 19.0 ],
 					"rounded" : 3.0,
 					"text" : "Footpedal",
 					"textoncolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
@@ -681,20 +703,6 @@
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 249.0, 355.0, 58.0, 22.0 ],
 					"text" : "loadbang"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontsize" : 18.0,
-					"id" : "obj-347",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1277.0, 11.0, 214.0, 27.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 75.543478260869563, 92.0, 27.0 ],
-					"text" : "Footpedal"
 				}
 
 			}
@@ -1858,18 +1866,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-18",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "bang", "bang", "bang" ],
-					"patching_rect" : [ 543.0, 183.0, 45.0, 22.0 ],
-					"text" : "t b b b"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-15",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -1890,18 +1886,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 543.0, 239.0, 457.0, 50.0 ],
 					"text" : "script newobject bpatcher @name Phone_Camera_Horizontal @varname Phone_Camera_Horizontal @presentation_rect 245. -5. 8000. 8000. @presentation 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-13",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 543.0, 152.0, 107.0, 22.0 ],
-					"text" : "r ---footpedal_hold"
 				}
 
 			}
@@ -2173,13 +2157,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-18", 0 ],
-					"source" : [ "obj-13", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"midpoints" : [ 552.5, 288.0, 17.5, 288.0 ],
 					"source" : [ "obj-14", 0 ]
@@ -2376,13 +2353,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-943", 2 ],
 					"source" : [ "obj-42", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-80", 1 ],
-					"source" : [ "obj-43", 0 ]
 				}
 
 			}
@@ -2690,6 +2660,13 @@
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/SLE Camera/Icon Images",
 				"patcherrelativepath" : "../Icon Images",
 				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Select Box Coords.maxpat",
+				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"patcherrelativepath" : "../../Taskbar/Maxpat",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{

@@ -183,8 +183,29 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"title" : "SLE Camera",
-						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"bgmode" : 0,
+									"border" : 0,
+									"clickthrough" : 0,
+									"enablehscroll" : 0,
+									"enablevscroll" : 0,
+									"id" : "obj-1",
+									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
+									"maxclass" : "bpatcher",
+									"name" : "FootPedal.maxpat",
+									"numinlets" : 0,
+									"numoutlets" : 0,
+									"offset" : [ 0.0, 0.0 ],
+									"patching_rect" : [ 377.0, 98.25, 56.0, 27.5 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 96.0, 78.0, 56.0, 25.5 ],
+									"viewvisibility" : 1
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-29",
 									"maxclass" : "newobj",
@@ -7198,26 +7219,6 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 15.5, 221.0, 112.0, 29.0 ],
 									"text" : "r ---footpedal"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgmode" : 0,
-									"border" : 0,
-									"clickthrough" : 0,
-									"enablehscroll" : 0,
-									"enablevscroll" : 0,
-									"id" : "obj-1",
-									"lockeddragscroll" : 0,
-									"lockedsize" : 0,
-									"maxclass" : "bpatcher",
-									"name" : "FootPedal.maxpat",
-									"numinlets" : 0,
-									"numoutlets" : 0,
-									"offset" : [ 0.0, 0.0 ],
-									"patching_rect" : [ 159.0, 178.5, 56.0, 27.5 ],
-									"viewvisibility" : 1
 								}
 
 							}
