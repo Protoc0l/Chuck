@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 42.0, 87.0, 1850.0, 1117.0 ],
+		"rect" : [ 42.0, 85.0, 1852.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,24 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-80",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 15.5, 754.25, 122.0, 22.0 ],
+					"text" : "r SLE_Capture_Save"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-71",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 24.0, 890.25, 58.0, 22.0 ],
+					"patching_rect" : [ 15.5, 650.25, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -57,7 +69,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 24.0, 916.0, 279.0, 22.0 ],
+					"patching_rect" : [ 15.5, 676.0, 279.0, 22.0 ],
 					"text" : "read c:/ProgramData/Chuck/Settings/SLE_Capture"
 				}
 
@@ -69,7 +81,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 60.25, 632.0, 29.5, 22.0 ],
+					"patching_rect" : [ 57.25, 704.0, 29.5, 22.0 ],
 					"text" : "t b l"
 				}
 
@@ -81,7 +93,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 60.25, 658.25, 281.0, 22.0 ],
+					"patching_rect" : [ 57.25, 730.25, 281.0, 22.0 ],
 					"text" : "write c:/ProgramData/Chuck/Settings/SLE_Capture"
 				}
 
@@ -105,7 +117,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 681.89593600000012, 53.0, 136.0, 22.0 ],
+					"patching_rect" : [ 681.89593600000012, 79.0, 136.0, 22.0 ],
 					"text" : "r SLE_Selection_Ready"
 				}
 
@@ -136,24 +148,12 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-110",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 316.25, 916.0, 206.0, 22.0 ],
-					"text" : "sprintf setparse test last_used: \\\"%s\\\""
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-106",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 27.0, 974.0, 131.0, 22.0 ]
+					"patching_rect" : [ 47.0, 1021.0, 131.0, 22.0 ]
 				}
 
 			}
@@ -164,7 +164,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 139.0, 945.0, 114.0, 22.0 ],
+					"patching_rect" : [ 159.0, 992.0, 114.0, 22.0 ],
 					"text" : "r camera::last_used"
 				}
 
@@ -176,7 +176,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 120.25, 818.0, 118.0, 22.0 ],
+					"patching_rect" : [ 117.25, 888.0, 118.0, 22.0 ],
 					"text" : "sprintf \\; \\\"%s\\\" \\\"%s\\\""
 				}
 
@@ -188,7 +188,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 83.5, 719.0, 127.0, 22.0 ],
+					"patching_rect" : [ 80.5, 802.0, 127.0, 22.0 ],
 					"text" : "get camera::last_used"
 				}
 
@@ -196,11 +196,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-94",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 24.0, 869.25, 244.0, 22.0 ]
+					"patching_rect" : [ 21.0, 939.25, 666.0, 36.0 ],
+					"text" : ";\r\nmain_screen::location \"window size -1886 85 -34 1014\""
 				}
 
 			}
@@ -211,32 +213,26 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 60.25, 758.0, 227.0, 22.0 ],
+					"patching_rect" : [ 57.25, 828.0, 227.0, 22.0 ],
 					"text" : "sprintf setparse camera last_used: \\\"%s\\\""
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"data" : 					{
-
-					}
-,
 					"id" : "obj-44",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 60.25, 791.25, 199.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 22.5, 40.75, 199.0, 22.0 ],
+					"patching_rect" : [ 57.25, 861.25, 199.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 1,
+						"embed" : 0,
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
 					}
 ,
-					"text" : "dict SLE_Capture_Save @embed 1"
+					"text" : "dict SLE_Capture_Save"
 				}
 
 			}
@@ -561,7 +557,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 1497.0, 761.75, 159.75, 134.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 170.0, 244.0, 784.0 ],
+					"presentation_rect" : [ 0.0, 170.0, 244.0, 739.0 ],
 					"varname" : "SideBar1",
 					"viewvisibility" : 1
 				}
@@ -575,7 +571,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 321.0, 842.0, 364.0, 36.0 ],
+					"patching_rect" : [ 351.0, 843.0, 364.0, 36.0 ],
 					"text" : ";\r\nmax launchbrowser https://beatbars.com/en/footswitch-to-midi.html"
 				}
 
@@ -588,7 +584,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 699.75, 916.0, 639.0, 36.0 ],
+					"patching_rect" : [ 719.89593600000012, 916.0, 639.0, 36.0 ],
 					"text" : ";\r\nmax launchbrowser https://www.amazon.ca/gp/product/B00063678A/ref=ppx_od_dt_b_asin_title_s00?ie=UTF8&psc=1"
 				}
 
@@ -602,7 +598,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 699.75, 890.25, 100.0, 20.0 ],
+					"patching_rect" : [ 719.89593600000012, 890.25, 100.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.5, 80.543478260869563, 92.0, 19.0 ],
 					"rounded" : 3.0,
@@ -620,7 +616,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 321.0, 815.25, 100.0, 20.0 ],
+					"patching_rect" : [ 351.0, 816.25, 100.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 155.0, 80.543478260869563, 86.0, 19.0 ],
 					"rounded" : 3.0,
@@ -654,7 +650,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 699.89593600000012, 842.0, 481.0, 36.0 ],
+					"patching_rect" : [ 719.89593600000012, 843.0, 481.0, 36.0 ],
 					"text" : ";\r\nmax launchbrowser https://play.google.com/store/apps/details?id=com.newtek.ndi.hxcam"
 				}
 
@@ -668,7 +664,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 699.89593600000012, 815.25, 100.0, 20.0 ],
+					"patching_rect" : [ 719.89593600000012, 816.25, 100.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 904.0, 134.364906832298118, 86.0, 19.0 ],
 					"rounded" : 3.0,
@@ -685,7 +681,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 699.89593600000012, 764.0, 464.0, 36.0 ],
+					"patching_rect" : [ 719.89593600000012, 765.0, 464.0, 36.0 ],
 					"text" : ";\r\nmax launchbrowser https://apps.apple.com/us/app/ndi-hx-camera/id1477266080?ls=1"
 				}
 
@@ -699,7 +695,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 699.89593600000012, 737.25, 100.0, 20.0 ],
+					"patching_rect" : [ 719.89593600000012, 738.25, 100.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 817.0, 134.364906832298118, 86.0, 19.0 ],
 					"rounded" : 3.0,
@@ -716,7 +712,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 321.0, 764.0, 366.0, 36.0 ],
+					"patching_rect" : [ 351.0, 765.0, 366.0, 36.0 ],
 					"text" : ";\r\nmax launchbrowser https://www.ndi.tv/products/ndi-hx-camera-app/"
 				}
 
@@ -730,7 +726,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 321.0, 737.25, 100.0, 20.0 ],
+					"patching_rect" : [ 351.0, 738.25, 100.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 904.0, 114.25, 86.0, 19.0 ],
 					"rounded" : 3.0,
@@ -747,7 +743,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 688.0, 685.0, 500.0, 36.0 ],
+					"patching_rect" : [ 708.0, 686.0, 500.0, 36.0 ],
 					"text" : ";\r\nmax launchbrowser file:///c:/program%20files/Cycling%20'74/Max%208/resources/packages/"
 				}
 
@@ -761,7 +757,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 688.0, 658.25, 100.0, 20.0 ],
+					"patching_rect" : [ 708.0, 659.25, 100.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 904.0, 88.543478260869563, 86.0, 19.0 ],
 					"rounded" : 3.0,
@@ -809,7 +805,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 321.0, 685.0, 333.0, 36.0 ],
+					"patching_rect" : [ 351.0, 686.0, 333.0, 36.0 ],
 					"text" : ";\r\nmax launchbrowser https://github.com/pixsper/jit.ndi/releases"
 				}
 
@@ -823,7 +819,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 321.0, 658.25, 100.0, 20.0 ],
+					"patching_rect" : [ 351.0, 659.25, 100.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 872.0, 64.25, 118.0, 19.0 ],
 					"rounded" : 3.0,
@@ -1088,7 +1084,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 83.5, 685.0, 61.0, 22.0 ],
+					"patching_rect" : [ 80.5, 778.0, 61.0, 22.0 ],
 					"text" : "r SLEC_0"
 				}
 
@@ -2344,7 +2340,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-94", 1 ],
-					"midpoints" : [ 129.75, 855.0, 258.5, 855.0 ],
+					"midpoints" : [ 126.75, 925.0, 677.5, 925.0 ],
 					"order" : 0,
 					"source" : [ "obj-103", 0 ]
 				}
@@ -2353,7 +2349,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-94", 0 ],
-					"midpoints" : [ 129.75, 855.0, 33.5, 855.0 ],
+					"midpoints" : [ 126.75, 925.0, 30.5, 925.0 ],
 					"order" : 1,
 					"source" : [ "obj-103", 0 ]
 				}
@@ -2378,13 +2374,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-27", 0 ],
 					"source" : [ "obj-11", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-44", 0 ],
-					"source" : [ "obj-110", 0 ]
 				}
 
 			}
@@ -2479,14 +2468,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-110", 0 ],
-					"order" : 0,
-					"source" : [ "obj-24", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"destination" : [ "obj-21", 0 ],
 					"source" : [ "obj-24", 1 ]
@@ -2503,7 +2484,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-38", 0 ],
-					"order" : 2,
+					"order" : 1,
 					"source" : [ "obj-24", 2 ]
 				}
 
@@ -2512,7 +2493,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-479", 0 ],
 					"midpoints" : [ 130.0, 489.0, 165.0, 489.0, 165.0, 489.0, 243.5, 489.0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-24", 2 ]
 				}
 
@@ -2841,6 +2822,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"source" : [ "obj-8", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-44", 0 ],
+					"source" : [ "obj-80", 0 ]
 				}
 
 			}
