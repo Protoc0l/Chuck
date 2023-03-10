@@ -509,7 +509,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 328.0, 201.0, 194.0, 22.0 ],
-									"text" : "title \"camera receive hidden master\""
+									"text" : "title \"camera recieve hidden master\""
 								}
 
 							}
@@ -1394,7 +1394,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "bang" ],
 													"patching_rect" : [ 26.0, 72.0, 61.0, 22.0 ],
-													"text" : "delay 450"
+													"text" : "delay 650"
 												}
 
 											}
@@ -1417,7 +1417,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 26.0, 105.0, 161.0, 22.0 ],
-													"text" : "[x] [Chuck: Camera Receive]"
+													"text" : "[x] [Chuck: Camera Recieve]"
 												}
 
 											}
@@ -2054,7 +2054,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 328.0, 201.0, 164.0, 22.0 ],
-													"text" : "title \"Chuck: Camera Receive\""
+													"text" : "title \"Chuck: Camera Recieve\""
 												}
 
 											}
@@ -3196,7 +3196,7 @@
 									"patching_rect" : [ 190.25, 8.5, 346.0, 41.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 2.0, 2.0, 242.0, 41.0 ],
-									"text" : "Camera Receive",
+									"text" : "Camera Recieve",
 									"textjustification" : 1
 								}
 
