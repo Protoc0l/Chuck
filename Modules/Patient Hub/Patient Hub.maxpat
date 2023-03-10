@@ -2902,7 +2902,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1046.051224231719971, 2747.875030994415283, 100.0, 22.0 ],
+					"patching_rect" : [ 1046.051224231719971, 2747.875030994415283, 89.0, 22.0 ],
 					"text" : "s Macrov2"
 				}
 
@@ -6138,7 +6138,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ -1138.0, 205.0, 995.0, 1005.0 ],
+						"rect" : [ 34.0, 85.0, 1852.0, 929.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -6167,6 +6167,18 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-15",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 422.0, 753.0, 29.5, 22.0 ],
+									"text" : "67"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-9",
 									"maxclass" : "newobj",
@@ -6535,7 +6547,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 36.25, 824.0, 333.333333333333371, 22.0 ],
-									"text" : "sprintf \\\"[%s] [%s]\\\""
+									"text" : "sprintf \\\"[Print Image] [%s] [%s]\\\""
 								}
 
 							}
@@ -10703,8 +10715,8 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 36.25, 850.0, 53.0, 22.0 ],
-									"text" : "s Printer"
+									"patching_rect" : [ 36.25, 850.0, 43.0, 22.0 ],
+									"text" : "s Print"
 								}
 
 							}
@@ -11111,6 +11123,13 @@
 									"destination" : [ "obj-17", 0 ],
 									"midpoints" : [ 85.25, 90.0, 66.0, 90.0, 66.0, 90.0, 45.75, 90.0 ],
 									"source" : [ "obj-130", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-32", 0 ],
+									"source" : [ "obj-15", 0 ]
 								}
 
 							}
@@ -16463,7 +16482,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1215.051224231719971, 2420.0, 100.0, 22.0 ],
+					"patching_rect" : [ 1215.051224231719971, 2420.0, 84.5, 22.0 ],
 					"text" : "s Macrov2"
 				}
 
@@ -22148,7 +22167,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-187", 0 ],
-					"midpoints" : [ 606.666666666666629, 579.0, 679.5, 579.0, 679.5, 529.0, 679.5, 529.0, 679.5, 502.0, 556.0, 502.0 ],
+					"midpoints" : [ 606.666666666666629, 579.0, 677.5, 579.0, 677.5, 529.0, 679.5, 529.0, 679.5, 502.0, 556.0, 502.0 ],
 					"source" : [ "obj-255", 0 ]
 				}
 
