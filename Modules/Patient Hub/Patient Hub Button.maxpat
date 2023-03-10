@@ -40,6 +40,17 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-75",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 448.0, 246.722924113273621, 124.0, 22.0 ],
+					"text" : "s close_VPH_window"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"attr" : "text",
 					"id" : "obj-18",
 					"maxclass" : "attrui",
@@ -746,8 +757,19 @@
 , 			{
 				"patchline" : 				{
 					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"destination" : [ "obj-75", 0 ],
+					"midpoints" : [ 408.821305354436277, 228.0, 457.5, 228.0 ],
+					"order" : 0,
+					"source" : [ "obj-39", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"destination" : [ "obj-94", 0 ],
 					"midpoints" : [ 408.821305354436277, 230.0, 202.5, 230.0 ],
+					"order" : 1,
 					"source" : [ "obj-39", 2 ]
 				}
 
