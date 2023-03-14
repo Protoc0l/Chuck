@@ -7009,6 +7009,34 @@
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
 												"box" : 												{
+													"fontname" : "Arial",
+													"fontsize" : 13.0,
+													"id" : "obj-15",
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 527.5, 917.0, 97.0, 23.0 ],
+													"text" : "textface normal"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"fontname" : "Arial",
+													"fontsize" : 13.0,
+													"id" : "obj-13",
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 629.0, 917.0, 82.0, 23.0 ],
+													"text" : "textface bold"
+												}
+
+											}
+, 											{
+												"box" : 												{
 													"id" : "obj-55",
 													"maxclass" : "message",
 													"numinlets" : 2,
@@ -10391,7 +10419,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 617.0, 805.0, 96.0, 22.0 ],
-													"text" : "expr $i1*45+333"
+													"text" : "expr $i1*50+333"
 												}
 
 											}
@@ -10403,8 +10431,8 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 617.0, 860.0, 261.0, 36.0 ],
-													"text" : "font Arial 28, moveto 170 333, write \"Date of Birth: 1948-03-15\""
+													"patching_rect" : [ 617.0, 860.0, 278.0, 36.0 ],
+													"text" : "font Arial 28, moveto 165 333, write \"Date of Birth: 1948-03-15\""
 												}
 
 											}
@@ -10416,7 +10444,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 617.0, 829.0, 261.0, 22.0 ],
-													"text" : "sprintf font Arial 28\\, moveto 170 %i\\, write \\\"%s\\\""
+													"text" : "sprintf font Arial 34\\, moveto 155 %i\\, write \\\"%s\\\""
 												}
 
 											}
@@ -10885,8 +10913,22 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-42", 0 ],
+													"source" : [ "obj-13", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-6", 0 ],
 													"source" : [ "obj-14", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-42", 0 ],
+													"source" : [ "obj-15", 0 ]
 												}
 
 											}
@@ -10964,6 +11006,14 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-13", 0 ],
+													"order" : 1,
+													"source" : [ "obj-23", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-230", 0 ],
 													"source" : [ "obj-23", 0 ]
 												}
@@ -10972,6 +11022,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-57", 2 ],
+													"order" : 0,
 													"source" : [ "obj-23", 1 ]
 												}
 
@@ -11075,7 +11126,16 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-15", 0 ],
+													"order" : 0,
+													"source" : [ "obj-3", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-2", 0 ],
+													"order" : 1,
 													"source" : [ "obj-3", 0 ]
 												}
 
@@ -11316,7 +11376,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-61", 1 ],
-													"midpoints" : [ 626.5, 855.0, 868.5, 855.0 ],
+													"midpoints" : [ 626.5, 855.0, 885.5, 855.0 ],
 													"order" : 0,
 													"source" : [ "obj-58", 0 ]
 												}
@@ -11882,7 +11942,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-190",
-									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -12773,6 +12832,32 @@
 						"title" : "Confirm Client Details",
 						"boxes" : [ 							{
 								"box" : 								{
+									"color" : [ 0.0, 0.909803921568627, 1.0, 1.0 ],
+									"id" : "obj-62",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "select" ],
+									"patching_rect" : [ 243.5, 828.0, 47.0, 22.0 ],
+									"text" : "t select"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"color" : [ 0.0, 0.909803921568627, 1.0, 1.0 ],
+									"id" : "obj-73",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 243.5, 804.0, 46.0, 22.0 ],
+									"text" : "route 9"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-103",
 									"maxclass" : "message",
 									"numinlets" : 2,
@@ -13418,7 +13503,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 1426.0, 288.0, 312.0, 131.0 ],
-									"text" : "Comp 0-4, Comp 0-4 Cyclo, Comp 5-18, Comp 16-64, Comp >65,, Comp 5-18 + DFE, Comp 19-64 + DFE, Comp >65 + DFE,, Refraction, Refraction Non-Adapt, Refraction + CL Exam, Refraction + DFE,, Contact Lens Exam, Comp 5-18 + CL Exam, Comp 19-64 + CL Exam, Comp >65 + CL Exam,, MedEye 1st Time, MedEye F/Up,, LASIK, PRK, SMILE, Consultation, HFA,, DFE, DFE + OCT, DFE + OCT + HFA 10-2, DFE + OCT + HFA 24-2, DFE + OCT + 24-2 + Pac, DFE + OCT + HFA 30-2"
+									"text" : "Comp 0-4, Comp 0-4 Cyclo, Comp 5-18, Comp 19-64, Comp >65,, Comp 5-18 + DFE, Comp 19-64 + DFE, Comp >65 + DFE,, Refraction, Refraction Non-Adapt, Refraction + CL Exam, Refraction + DFE,, Contact Lens Exam, Comp 5-18 + CL Exam, Comp 19-64 + CL Exam, Comp >65 + CL Exam,, MedEye 1st Time, MedEye F/Up,, LASIK, PRK, SMILE, Consultation, HFA,, DFE, DFE + OCT, DFE + OCT + HFA 10-2, DFE + OCT + HFA 24-2, DFE + OCT + 24-2 + Pac, DFE + OCT + HFA 30-2"
 								}
 
 							}
@@ -13521,7 +13606,7 @@
 									"align" : 1,
 									"fontsize" : 18.0,
 									"id" : "obj-60",
-									"items" : [ "Comp", "0-4", ",", "Comp", "0-4", "Cyclo", ",", "Comp", "5-18", ",", "Comp", "16-64", ",", "Comp", ">65", ",", ",", "Comp", "5-18", "+", "DFE", ",", "Comp", "19-64", "+", "DFE", ",", "Comp", ">65", "+", "DFE", ",", ",", "Refraction", ",", "Refraction", "Non-Adapt", ",", "Refraction", "+", "CL", "Exam", ",", "Refraction", "+", "DFE", ",", ",", "Contact", "Lens", "Exam", ",", "Comp", "5-18", "+", "CL", "Exam", ",", "Comp", "19-64", "+", "CL", "Exam", ",", "Comp", ">65", "+", "CL", "Exam", ",", ",", "MedEye", "1st", "Time", ",", "MedEye", "F/Up", ",", ",", "LASIK", ",", "PRK", ",", "SMILE", ",", "Consultation", ",", "HFA", ",", ",", "DFE", ",", "DFE", "+", "OCT", ",", "DFE", "+", "OCT", "+", "HFA", "10-2", ",", "DFE", "+", "OCT", "+", "HFA", "24-2", ",", "DFE", "+", "OCT", "+", "24-2", "+", "Pac", ",", "DFE", "+", "OCT", "+", "HFA", "30-2" ],
+									"items" : [ "Comp", "0-4", ",", "Comp", "0-4", "Cyclo", ",", "Comp", "5-18", ",", "Comp", "19-64", ",", "Comp", ">65", ",", ",", "Comp", "5-18", "+", "DFE", ",", "Comp", "19-64", "+", "DFE", ",", "Comp", ">65", "+", "DFE", ",", ",", "Refraction", ",", "Refraction", "Non-Adapt", ",", "Refraction", "+", "CL", "Exam", ",", "Refraction", "+", "DFE", ",", ",", "Contact", "Lens", "Exam", ",", "Comp", "5-18", "+", "CL", "Exam", ",", "Comp", "19-64", "+", "CL", "Exam", ",", "Comp", ">65", "+", "CL", "Exam", ",", ",", "MedEye", "1st", "Time", ",", "MedEye", "F/Up", ",", ",", "LASIK", ",", "PRK", ",", "SMILE", ",", "Consultation", ",", "HFA", ",", ",", "DFE", ",", "DFE", "+", "OCT", ",", "DFE", "+", "OCT", "+", "HFA", "10-2", ",", "DFE", "+", "OCT", "+", "HFA", "24-2", ",", "DFE", "+", "OCT", "+", "24-2", "+", "Pac", ",", "DFE", "+", "OCT", "+", "HFA", "30-2" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -16834,6 +16919,15 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-109", 0 ],
+									"order" : 0,
+									"source" : [ "obj-103", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-54", 0 ],
+									"order" : 1,
 									"source" : [ "obj-103", 0 ]
 								}
 
@@ -17038,7 +17132,7 @@
 								"patchline" : 								{
 									"color" : [ 0.945098039215686, 0.913725490196078, 0.407843137254902, 1.0 ],
 									"destination" : [ "obj-30", 0 ],
-									"order" : 3,
+									"order" : 2,
 									"source" : [ "obj-23", 3 ]
 								}
 
@@ -17066,14 +17160,6 @@
 									"destination" : [ "obj-51", 0 ],
 									"order" : 2,
 									"source" : [ "obj-23", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-54", 0 ],
-									"order" : 2,
-									"source" : [ "obj-23", 3 ]
 								}
 
 							}
@@ -17268,6 +17354,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-73", 0 ],
+									"source" : [ "obj-39", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-12", 0 ],
 									"order" : 1,
 									"source" : [ "obj-4", 0 ]
@@ -17457,6 +17550,14 @@
 							}
 , 							{
 								"patchline" : 								{
+									"color" : [ 0.047058823529412, 0.913725490196078, 0.913725490196078, 1.0 ],
+									"destination" : [ "obj-100", 0 ],
+									"source" : [ "obj-62", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-92", 0 ],
 									"source" : [ "obj-63", 0 ]
 								}
@@ -17529,6 +17630,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-66", 0 ],
 									"source" : [ "obj-72", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-62", 0 ],
+									"source" : [ "obj-73", 0 ]
 								}
 
 							}
