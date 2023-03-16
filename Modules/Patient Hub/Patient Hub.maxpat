@@ -178,9 +178,9 @@
 					"maxclass" : "bpatcher",
 					"name" : "QR_Scanner_Connection.maxpat",
 					"numinlets" : 0,
-					"numoutlets" : 1,
+					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
+					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 1532.0, 393.484386056661606, 68.0, 33.47707611322403 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 63.749999666666781, 199.25, 19.833333333333485, 19.0 ],
@@ -6972,7 +6972,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ -9.0, 123.0, 1852.0, 929.0 ],
+						"rect" : [ -214.0, 170.0, 1852.0, 929.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -8928,7 +8928,7 @@
 														}
 ,
 														"classnamespace" : "box",
-														"rect" : [ 727.0, 178.0, 640.0, 746.0 ],
+														"rect" : [ 727.0, 178.0, 540.0, 746.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 0,
 														"default_fontsize" : 12.0,
@@ -8958,6 +8958,30 @@
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
 																"box" : 																{
+																	"id" : "obj-3",
+																	"maxclass" : "message",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 341.0, 163.0, 178.0, 22.0 ],
+																	"text" : "store \"Date of Birth\" 1924-03-17"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-1",
+																	"maxclass" : "message",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 325.0, 98.0, 178.0, 22.0 ],
+																	"text" : "store \"Date of Birth\" 1924-03-15"
+																}
+
+															}
+, 															{
+																"box" : 																{
 																	"id" : "obj-95",
 																	"maxclass" : "newobj",
 																	"numinlets" : 2,
@@ -8975,7 +8999,7 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "float" ],
-																	"patching_rect" : [ 64.5, 551.0, 39.0, 22.0 ],
+																	"patching_rect" : [ 64.5, 548.0, 39.0, 22.0 ],
 																	"text" : "/ 365."
 																}
 
@@ -8999,7 +9023,7 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "int" ],
-																	"patching_rect" : [ 64.5, 459.0, 54.5, 22.0 ],
+																	"patching_rect" : [ 65.0, 524.0, 54.5, 22.0 ],
 																	"text" : "-"
 																}
 
@@ -9071,7 +9095,7 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
-																	"patching_rect" : [ 64.5, 430.0, 55.0, 22.0 ],
+																	"patching_rect" : [ 64.5, 493.0, 55.0, 22.0 ],
 																	"text" : "zl slice 1"
 																}
 
@@ -9083,7 +9107,7 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
-																	"patching_rect" : [ 64.5, 405.0, 37.0, 22.0 ],
+																	"patching_rect" : [ 64.5, 468.0, 37.0, 22.0 ],
 																	"text" : "zl rev"
 																}
 
@@ -9095,7 +9119,7 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
-																	"patching_rect" : [ 64.5, 379.0, 189.5, 22.0 ],
+																	"patching_rect" : [ 64.5, 399.0, 189.5, 22.0 ],
 																	"text" : "zl join"
 																}
 
@@ -9143,8 +9167,8 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 141.0, 647.0, 82.0, 22.0 ],
-																	"text" : "sprintf \\\"(%f)\\\""
+																	"patching_rect" : [ 141.0, 647.0, 92.0, 22.0 ],
+																	"text" : "sprintf \\\"(%.3f)\\\""
 																}
 
 															}
@@ -9359,6 +9383,13 @@
  ],
 														"lines" : [ 															{
 																"patchline" : 																{
+																	"destination" : [ "obj-10", 0 ],
+																	"source" : [ "obj-1", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
 																	"destination" : [ "obj-47", 0 ],
 																	"source" : [ "obj-10", 0 ]
 																}
@@ -9410,7 +9441,7 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-27", 0 ],
-																	"midpoints" : [ 233.5, 303.0, 186.0, 303.0 ],
+																	"midpoints" : [ 233.5, 311.0, 186.0, 311.0 ],
 																	"source" : [ "obj-20", 0 ]
 																}
 
@@ -9468,6 +9499,13 @@
 																"patchline" : 																{
 																	"destination" : [ "obj-59", 1 ],
 																	"source" : [ "obj-27", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-10", 0 ],
+																	"source" : [ "obj-3", 0 ]
 																}
 
 															}
@@ -9628,7 +9666,7 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-78", 1 ],
-																	"midpoints" : [ 74.0, 591.0, 160.5, 591.0 ],
+																	"midpoints" : [ 74.0, 580.0, 160.5, 580.0 ],
 																	"source" : [ "obj-94", 0 ]
 																}
 
