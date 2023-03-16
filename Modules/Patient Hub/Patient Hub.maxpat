@@ -41,6 +41,144 @@
 		"title" : "Client Hub",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-370",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1923.0, 1762.0, 57.0, 22.0 ],
+					"text" : "tosymbol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-381",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "QR_SCANNER" ],
+					"patching_rect" : [ 1923.25, 1814.0, 99.0, 22.0 ],
+					"text" : "t QR_SCANNER"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-384",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1923.0, 1841.0, 81.0, 22.0 ],
+					"text" : "prepend write"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-386",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "bang", "bang", "" ],
+					"patching_rect" : [ 1923.0, 1787.75, 55.0, 22.0 ],
+					"text" : "t b b l"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-388",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1959.0, 1869.525423236617826, 227.0, 22.0 ],
+					"text" : "sprintf setparse QR_Scanner_Port \\\"%s\\\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-369",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 4,
+					"outlettype" : [ "dictionary", "", "", "" ],
+					"patching_rect" : [ 1941.0, 1956.903617262840271, 148.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0,
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "dict QR_SCANNER_Save"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-352",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1923.0, 1736.0, 149.0, 22.0 ],
+					"text" : "r QR_Scanner_Port_Send"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-368",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1625.5, 2238.0, 144.0, 22.0 ],
+					"text" : "s QR_Scanner_Port_Rec"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-357",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1312.0, -1101.277075886726379, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 68.250000333333276, 199.0, 30.0, 20.0 ],
+					"text" : "QR:"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.254901960784314, 0.796078431372549, 0.196078431372549, 1.0 ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-331",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "QR_Connection.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2217.0, -613.554151773452759, 91.0, 32.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 95.250000333333276, 198.0, 79.833333333333485, 19.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-371",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -139,7 +277,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 2012.539155602455139, 787.422924876213074, 24.0, 24.0 ]
+					"patching_rect" : [ 2001.039155602455139, 787.422924876213074, 24.0, 24.0 ]
 				}
 
 			}
@@ -623,15 +761,15 @@
 , 			{
 				"box" : 				{
 					"align" : 1,
-					"bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgcolor" : [ 0.254901960784314, 0.796078431372549, 0.196078431372549, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgfillcolor_color" : [ 0.254901960784314, 0.796078431372549, 0.196078431372549, 1.0 ],
 					"bgfillcolor_color1" : [ 0.035294117647059, 0.035294117647059, 0.035294117647059, 1.0 ],
 					"bgfillcolor_color2" : [ 0.2, 0.2, 0.2, 1.0 ],
 					"bgfillcolor_proportion" : 0.5,
 					"bgfillcolor_type" : "color",
-					"fontsize" : 13.0,
+					"fontsize" : 16.0,
 					"id" : "obj-343",
 					"items" : "<empty>",
 					"maxclass" : "umenu",
@@ -639,10 +777,10 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1736.039155602455139, 2000.550846473235652, 100.0, 23.0 ],
+					"patching_rect" : [ 1736.039155602455139, 2000.550846473235652, 100.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 71.083333999999994, 190.0, 100.0, 23.0 ],
-					"textcolor" : [ 0.76078431372549, 0.76078431372549, 0.76078431372549, 1.0 ],
+					"presentation_rect" : [ 66.916666333333296, 162.125, 100.0, 27.0 ],
+					"textcolor" : [ 0.0, 0.0, 0.0, 0.76078431372549 ],
 					"textjustification" : 1
 				}
 
@@ -671,7 +809,7 @@
 					"patching_rect" : [ 1398.51957780122757, 1600.5, 86.0, 23.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ -2.916666333333239, 182.0, 81.0, 39.0 ],
+					"presentation_rect" : [ -2.250000333333219, 156.0, 81.0, 39.0 ],
 					"text" : "QR Scanner",
 					"textcolor" : [ 0.054901960784314, 0.054901960784314, 0.054901960784314, 1.0 ],
 					"textjustification" : 1
@@ -701,9 +839,9 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1264.0, 1564.0, 128.0, 128.0 ],
+					"patching_rect" : [ 1377.51957780122757, 1562.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.083333666666761, 182.0, 174.833334000000008, 39.25 ],
+					"presentation_rect" : [ 4.25, 156.0, 174.833334000000008, 39.25 ],
 					"proportion" : 0.5,
 					"rounded" : 15
 				}
@@ -3649,7 +3787,7 @@
 					"patching_rect" : [ 679.51957780122757, 221.399996340274811, 86.0, 55.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 6.083333666666761, 140.375, 174.0, 39.0 ],
+					"presentation_rect" : [ 5.083333666666761, 116.375, 174.0, 39.0 ],
 					"text" : "Medication Prescription Pad",
 					"textcolor" : [ 0.76078431372549, 0.76078431372549, 0.76078431372549, 1.0 ],
 					"textjustification" : 1
@@ -3668,7 +3806,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 662.789155602455139, 203.399996340274811, 150.460844397544861, 111.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.083333666666761, 139.375, 174.833333666666704, 39.25 ],
+					"presentation_rect" : [ 3.083333666666761, 115.375, 174.833333666666704, 39.25 ],
 					"rounded" : 15.0,
 					"text" : "",
 					"texton" : "",
@@ -4011,7 +4149,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1584.0, 304.0, 364.0, 36.0 ],
+					"patching_rect" : [ 1580.0, 348.722924113273621, 364.0, 36.0 ],
 					"text" : "[First Name] [Henry] |~|[Last Name] [Aaker] |~|[PHC] [45293-0010] |~|[Date of Birth] [1953-11-05] |~|[Email] [ ] |~|[Gender] [M] n"
 				}
 
@@ -4603,7 +4741,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 571.833333333333371, 627.722924113273621, 167.0, 50.0 ],
-					"text" : ";\r\nPH_Buttons Button_3_Push \"Exam - Forum\""
+					"text" : ";\r\nPH_Buttons Button_3_Pull \"Exam - VisGLsRx2Wink\""
 				}
 
 			}
@@ -5142,7 +5280,7 @@
 					"patching_rect" : [ 505.5, 170.903617262840271, 84.0, 39.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 7.083333666666761, 97.75, 172.833333666666704, 39.0 ],
+					"presentation_rect" : [ 5.083333666666761, 73.75, 172.833333666666704, 39.0 ],
 					"text" : "Add Task to\nTo Do List",
 					"textcolor" : [ 0.76078431372549, 0.76078431372549, 0.76078431372549, 1.0 ],
 					"textjustification" : 1
@@ -5161,7 +5299,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 488.76957780122757, 139.5, 150.460844397544861, 111.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.083333666666761, 97.75, 174.833333666666704, 38.0 ],
+					"presentation_rect" : [ 3.083333666666761, 73.75, 174.833333666666704, 38.0 ],
 					"rounded" : 15.0,
 					"text" : "",
 					"texton" : "",
@@ -5181,10 +5319,10 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1248.5, 367.722924113273621, 67.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.25, 34.0, 54.5, 19.0 ],
-					"rounded" : 2.0,
+					"presentation_rect" : [ 7.083333666666761, 199.0, 52.5, 19.0 ],
+					"rounded" : 10.0,
 					"text" : "Edit",
-					"textcolor" : [ 0.23921568627451, 0.23921568627451, 0.23921568627451, 1.0 ],
+					"textcolor" : [ 0.0, 0.0, 0.0, 0.76078431372549 ],
 					"texton" : "Edit",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 0.76 ]
 				}
@@ -5213,7 +5351,7 @@
 					"patching_rect" : [ 27.5, 167.399996340274811, 65.0, 55.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 8.083333666666761, 56.5, 170.833333666666704, 39.0 ],
+					"presentation_rect" : [ 7.083333666666761, 31.5, 170.833333666666704, 39.0 ],
 					"text" : "Print\nRouting Sheet",
 					"textcolor" : [ 0.76078431372549, 0.76078431372549, 0.76078431372549, 1.0 ],
 					"textjustification" : 1
@@ -6795,7 +6933,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 74.76957780122757, 305.600003659725189, 87.460844397544861, 64.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.083333666666761, 56.5, 174.833333666666704, 38.0 ],
+					"presentation_rect" : [ 3.083333666666761, 32.5, 174.833333666666704, 38.0 ],
 					"rounded" : 15.0,
 					"text" : "",
 					"texton" : "",
@@ -23250,6 +23388,25 @@
 			}
 , 			{
 				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 0.254901960784314, 0.796078431372549, 0.196078431372549, 1.0 ],
+					"border" : 2,
+					"bordercolor" : [ 0.0, 0.0, 0.0, 0.76078431372549 ],
+					"id" : "obj-268",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1816.0, 449.20000022649765, 128.0, 128.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 62.916666333333296, 196.0, 115.166667333333464, 24.0 ],
+					"proportion" : 0.5,
+					"rounded" : 10
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"background" : 1,
 					"fontsize" : 30.0,
 					"id" : "obj-233",
@@ -23297,7 +23454,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 11.0, 143.5, 457.5, 515.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.083333666666761, 182.0, 174.833334000000008, 39.25 ],
+					"presentation_rect" : [ 2.25, 32.0, 612.0, 190.0 ],
 					"proportion" : 0.5,
 					"rounded" : 4
 				}
@@ -25432,6 +25589,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-33", 0 ],
+					"midpoints" : [ 2226.5, 573.0, 1677.75, 573.0 ],
+					"source" : [ "obj-331", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-23", 0 ],
 					"midpoints" : [ 1267.5, 1005.0, 726.0, 1005.0, 726.0, 1005.0, 505.5, 1005.0 ],
 					"source" : [ "obj-333", 0 ]
@@ -25608,6 +25773,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-370", 0 ],
+					"source" : [ "obj-352", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"color" : [ 0.145098039215686, 0.074509803921569, 0.376470588235294, 1.0 ],
 					"destination" : [ "obj-345", 0 ],
 					"source" : [ "obj-353", 0 ]
@@ -25736,6 +25908,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-386", 0 ],
+					"source" : [ "obj-370", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-190", 0 ],
 					"source" : [ "obj-371", 3 ]
 				}
@@ -25838,6 +26017,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-384", 0 ],
+					"source" : [ "obj-381", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-372", 0 ],
 					"source" : [ "obj-382", 0 ]
 				}
@@ -25860,6 +26046,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-369", 0 ],
+					"midpoints" : [ 1932.5, 1914.0, 1932.0, 1914.0, 1932.0, 1950.0, 1950.5, 1950.0 ],
+					"source" : [ "obj-384", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-383", 0 ],
 					"source" : [ "obj-385", 1 ]
 				}
@@ -25874,8 +26068,29 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-381", 0 ],
+					"source" : [ "obj-386", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-388", 0 ],
+					"source" : [ "obj-386", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-349", 0 ],
 					"source" : [ "obj-387", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-369", 0 ],
+					"source" : [ "obj-388", 0 ]
 				}
 
 			}
@@ -26570,6 +26785,13 @@
 				"name" : "Patient Hub Macro.maxpat",
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Patient Hub",
 				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "QR_Connection.maxpat",
+				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"patcherrelativepath" : "../Taskbar/Maxpat",
 				"type" : "JSON",
 				"implicit" : 1
 			}
