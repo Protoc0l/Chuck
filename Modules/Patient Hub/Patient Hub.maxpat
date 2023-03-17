@@ -10893,7 +10893,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 19.0, 305.0, 230.0, 23.0 ],
-													"text" : "font Arial 32, moveto 314 240, write $1"
+													"text" : "font Arial 32, moveto 274 235, write $1"
 												}
 
 											}
@@ -11314,7 +11314,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 282.5, 589.0, 230.0, 23.0 ],
-													"text" : "font Arial 34, moveto 274 272, write $1"
+													"text" : "font Arial 34, moveto 274 277, write $1"
 												}
 
 											}
