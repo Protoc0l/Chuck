@@ -41,12 +41,194 @@
 		"title" : "Client Hub",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-402",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2303.5, 342.722924113273621, 116.0, 22.0 ],
+					"text" : "r Screen_BlackOut1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-403",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2293.0, 367.20000022649765, 29.5, 22.0 ],
+					"text" : "[b]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-400",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 2199.0, 233.52292388677597, 405.0, 75.0 ],
+					"text" : "Formatting QR With multiple Actions\n1) [Chuck] - msg preceeding everything \n2) Each string start with [Recieve Obj Name] followed by any list of msgs\n3) Seperate each string with a comma \", \"\nSee i.e. below sending to Routing Sheet & BlackOut1 the Monitor:"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-393",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1667.25, 399.0, 952.0, 22.0 ],
+					"text" : "[Routing_Sheet] [First Name] [Jack] |~|[Last Name] [Black] |~|[PHC] [45738-98989] |~|[Date of Birth] [1901-15-15] |~|[Email] [ ] |~|[Gender] [M], [Screen_BlackOut1] [b] n"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-391",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2303.5, 30.722924113273621, 116.0, 22.0 ],
+					"text" : "r Screen_BlackOut1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-386",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2293.0, 55.20000022649765, 29.5, 22.0 ],
+					"text" : "[b]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-371",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2199.0, 312.245848000049591, 952.0, 22.0 ],
+					"presentation_linecount" : 2,
+					"text" : "\"[Chuck] [Routing_Sheet] [First Name] [Jack] |~|[Last Name] [Black] |~|[PHC] [45738-98989] |~|[Date of Birth] [1901-15-15] |~|[Email] [ ] |~|[Gender] [M], [Screen_BlackOut1] [b] n\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-381",
+					"linecount" : 8,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1822.0, 218.722924113273621, 347.0, 117.0 ],
+					"text" : "QR Scan can send any message to a route object, basically just like an action for Jarvis or Stream Deck.\nCan create custom QR codes to send black out screens, change signed in person etc. \nFirst argument [Chuck] is needed to filter into Chuck else it will be sent out a virtual Comm port\n2nd Argumet is the send name followed by all the stuff to send it in a list of any length. "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-404",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 5,
+					"outlettype" : [ "", "", "", "", "" ],
+					"patching_rect" : [ 1860.25, 446.5, 144.0, 22.0 ],
+					"text" : "regexp \"] n\" @substitute ]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-401",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1668.25, 579.20000022649765, 95.0, 22.0 ],
+					"text" : "r Routing_Sheet"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-399",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1667.25, 495.70000022649765, 59.0, 22.0 ],
+					"text" : "prepend \\;"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-398",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 1667.25, 470.70000022649765, 212.0, 22.0 ],
+					"text" : "zl join"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-395",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 5,
+					"outlettype" : [ "", "", "", "", "" ],
+					"patching_rect" : [ 1667.25, 446.5, 149.0, 22.0 ],
+					"text" : "regexp \\\\[|\\\\] @substitute \\\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-388",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1667.25, 524.20000022649765, 463.0, 36.0 ],
+					"text" : ";\r\nScreen_BlackOut1 [b]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-380",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 1667.25, 420.5, 212.0, 22.0 ],
+					"text" : "zl slice 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-370",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1668.25, 510.0, 71.0, 22.0 ],
+					"patching_rect" : [ 1667.25, 349.0, 71.0, 22.0 ],
 					"text" : "fromsymbol"
 				}
 
@@ -68,7 +250,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1532.0, 604.722924113273621, 87.0, 22.0 ],
+					"patching_rect" : [ 1531.0, 349.0, 87.0, 22.0 ],
 					"text" : "print QR_Scan"
 				}
 
@@ -88,7 +270,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 1581.0, 451.722924113273621, 48.0, 28.0 ],
+					"patching_rect" : [ 1580.0, 290.722924113273621, 48.0, 28.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 151.0, 199.0, 25.41666699999999, 19.25 ],
 					"viewvisibility" : 1
@@ -102,7 +284,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1668.25, 538.722924113273621, 80.0, 22.0 ],
+					"patching_rect" : [ 1667.25, 372.722924113273621, 80.0, 22.0 ],
 					"text" : "route [Chuck]"
 				}
 
@@ -113,7 +295,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1576.0, 467.722924113273621, 63.75, 20.0 ],
+					"patching_rect" : [ 1575.0, 306.722924113273621, 63.75, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 95.416665666666802, 199.25, 61.0, 20.0 ],
 					"text" : "QR Send:"
@@ -131,7 +313,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1567.75, 440.20000022649765, 72.0, 52.0 ],
+					"patching_rect" : [ 1566.75, 279.20000022649765, 72.0, 52.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 92.25, 197.25, 86.166667000000018, 24.0 ],
 					"proportion" : 0.5,
@@ -157,7 +339,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1547.0, 400.722924113273621, 53.0, 34.0 ],
+					"patching_rect" : [ 1546.0, 239.722924113273621, 53.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 7.083333666666761, 199.25, 55.0, 20.0 ],
 					"text" : "QR Rec:"
@@ -181,22 +363,10 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1532.0, 393.484386056661606, 68.0, 33.47707611322403 ],
+					"patching_rect" : [ 1531.0, 232.484386056661606, 68.0, 33.47707611322403 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 63.749999666666781, 199.25, 19.833333333333485, 19.0 ],
 					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-371",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 5,
-					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 1668.25, 642.722924113273621, 144.0, 22.0 ],
-					"text" : "regexp \"] n\" @substitute ]"
 				}
 
 			}
@@ -4161,8 +4331,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1580.0, 266.245848000049591, 724.0, 22.0 ],
-					"text" : "[Chuck] [First Name] [Jack] |~|[Last Name] [Black] |~|[PHC] [45738-98989] |~|[Date of Birth] [1901-15-15] |~|[Email] [ ] |~|[Gender] [M] n"
+					"patching_rect" : [ 1579.0, 105.245848000049591, 822.0, 22.0 ],
+					"text" : "\"[Chuck] [Routing_Sheet] [First Name] [Jack] |~|[Last Name] [Black] |~|[PHC] [45738-98989] |~|[Date of Birth] [1901-15-15] |~|[Email] [ ] |~|[Gender] [M] n\""
 				}
 
 			}
@@ -5347,7 +5517,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1669.25, 309.245848000049591, 123.0, 22.0 ],
+					"patching_rect" : [ 1668.25, 148.245848000049591, 123.0, 22.0 ],
 					"text" : "r PH_WINDOW_BAR"
 				}
 
@@ -5624,7 +5794,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "bang" ],
-					"patching_rect" : [ 1248.5, 417.722924113273621, 261.0, 22.0 ],
+					"patching_rect" : [ 1246.5, 377.722924113273621, 261.0, 22.0 ],
 					"text" : "dialog @label Please enter password @mask 1"
 				}
 
@@ -6802,7 +6972,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1756.25, 335.245848000049591, 206.0, 22.0 ],
+					"patching_rect" : [ 1755.25, 174.245848000049591, 206.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -6862,7 +7032,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 1668.25, 569.20000022649765, 155.0, 22.0 ],
+					"patching_rect" : [ 1668.25, 608.20000022649765, 155.0, 22.0 ],
 					"text" : "regexp \\\\|\\\\~\\\\| @substitute \\,"
 				}
 
@@ -6874,8 +7044,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1668.25, 604.722924113273621, 636.75, 22.0 ],
-					"text" : "[First Name] [Jack], [Last Name] [Black], [PHC] [45738-98989], [Date of Birth] [1901-15-15], [Email] [ ], [Gender] [M] n"
+					"patching_rect" : [ 1668.25, 646.722924113273621, 636.75, 22.0 ],
+					"text" : "[First Name] [Jack], [Last Name] [Black], [PHC] [45738-98989], [Date of Birth] [1901-15-15], [Email] [ ], [Gender] [M]"
 				}
 
 			}
@@ -6927,7 +7097,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "clear" ],
-					"patching_rect" : [ 1669.25, 394.52292388677597, 107.5, 22.0 ],
+					"patching_rect" : [ 1668.25, 233.52292388677597, 107.5, 22.0 ],
 					"text" : "t b b clear"
 				}
 
@@ -6972,7 +7142,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 42.0, 85.0, 1852.0, 920.0 ],
+						"rect" : [ -1886.0, 85.0, 1852.0, 929.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -12975,9 +13145,9 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 4,
-									"outlettype" : [ "dump", "[Chuck]", "zlclear", "int" ],
-									"patching_rect" : [ 36.25, 95.0, 137.0, 22.0 ],
-									"text" : "t dump [Chuck] zlclear 0"
+									"outlettype" : [ "dump", "[Chuck] [Routing_Sheet]", "zlclear", "int" ],
+									"patching_rect" : [ 36.25, 95.0, 235.0, 22.0 ],
+									"text" : "t dump \"[Chuck] [Routing_Sheet]\" zlclear 0"
 								}
 
 							}
@@ -20438,7 +20608,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1713.5, 419.722924113273621, 29.5, 22.0 ],
+					"patching_rect" : [ 1712.5, 258.722924113273621, 29.5, 22.0 ],
 					"text" : "set"
 				}
 
@@ -23530,7 +23700,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1668.25, 467.722924113273621, 59.0, 22.0 ],
+					"patching_rect" : [ 1667.25, 306.722924113273621, 59.0, 22.0 ],
 					"text" : "route text"
 				}
 
@@ -23542,7 +23712,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1669.25, 419.722924113273621, 40.0, 22.0 ],
+					"patching_rect" : [ 1668.25, 258.722924113273621, 40.0, 22.0 ],
 					"text" : "select"
 				}
 
@@ -23564,7 +23734,7 @@
 					"outputmode" : 1,
 					"parameter_enable" : 0,
 					"parameter_mappable" : 0,
-					"patching_rect" : [ 1669.25, 445.722924113273621, 73.75, 19.0 ],
+					"patching_rect" : [ 1668.25, 284.722924113273621, 73.75, 19.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1.25, 5.75, 495.0, 15.0 ],
 					"rounded" : 0.0,
@@ -23583,7 +23753,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1669.25, 335.245848000049591, 82.0, 56.79999977350235 ],
+					"patching_rect" : [ 1668.25, 174.245848000049591, 82.0, 56.79999977350235 ],
 					"text" : "QR",
 					"textoncolor" : [ 0.741176470588235, 0.741176470588235, 0.741176470588235, 1.0 ]
 				}
@@ -23842,7 +24012,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1522.0, 379.722924113273621, 85.0, 55.0 ],
+					"patching_rect" : [ 1521.0, 218.722924113273621, 85.0, 55.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 5.416666, 197.25, 85.833333999999994, 24.0 ],
 					"proportion" : 0.5,
@@ -25585,7 +25755,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-46", 0 ],
-					"midpoints" : [ 1723.0, 442.722924113273621, 1678.75, 442.722924113273621 ],
+					"midpoints" : [ 1722.0, 281.722924113273621, 1677.75, 281.722924113273621 ],
 					"source" : [ "obj-281", 0 ]
 				}
 
@@ -25917,7 +26087,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-371", 0 ],
+					"destination" : [ "obj-190", 0 ],
 					"source" : [ "obj-32", 0 ]
 				}
 
@@ -25994,7 +26164,7 @@
 				"patchline" : 				{
 					"color" : [ 0.917647058823529, 0.937254901960784, 0.670588235294118, 1.0 ],
 					"destination" : [ "obj-32", 1 ],
-					"midpoints" : [ 1779.75, 594.20000022649765, 2295.5, 594.20000022649765 ],
+					"midpoints" : [ 1779.75, 636.20000022649765, 2295.5, 636.20000022649765 ],
 					"order" : 0,
 					"source" : [ "obj-33", 3 ]
 				}
@@ -26004,7 +26174,7 @@
 				"patchline" : 				{
 					"color" : [ 0.917647058823529, 0.937254901960784, 0.670588235294118, 1.0 ],
 					"destination" : [ "obj-32", 0 ],
-					"midpoints" : [ 1779.75, 594.20000022649765, 1677.75, 594.20000022649765 ],
+					"midpoints" : [ 1779.75, 636.20000022649765, 1677.75, 636.20000022649765 ],
 					"order" : 1,
 					"source" : [ "obj-33", 3 ]
 				}
@@ -26014,7 +26184,7 @@
 				"patchline" : 				{
 					"color" : [ 0.047058823529412, 0.913725490196078, 0.913725490196078, 1.0 ],
 					"destination" : [ "obj-32", 1 ],
-					"midpoints" : [ 1677.75, 601.20000022649765, 2295.5, 601.20000022649765 ],
+					"midpoints" : [ 1677.75, 643.20000022649765, 2295.5, 643.20000022649765 ],
 					"order" : 0,
 					"source" : [ "obj-33", 0 ]
 				}
@@ -26047,7 +26217,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-370", 0 ],
-					"midpoints" : [ 1541.5, 504.0, 1677.75, 504.0 ],
+					"midpoints" : [ 1540.5, 343.0, 1676.75, 343.0 ],
 					"order" : 0,
 					"source" : [ "obj-331", 0 ]
 				}
@@ -26375,15 +26545,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-190", 0 ],
-					"midpoints" : [ 1771.5, 669.0, 1710.0, 669.0, 1710.0, 669.0, 1677.75, 669.0 ],
-					"source" : [ "obj-371", 3 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-190", 0 ],
+					"destination" : [ "obj-370", 0 ],
+					"midpoints" : [ 2208.5, 345.0, 1758.0, 345.0, 1758.0, 345.0, 1676.75, 345.0 ],
 					"source" : [ "obj-371", 0 ]
 				}
 
@@ -26478,6 +26641,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-395", 0 ],
+					"source" : [ "obj-380", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-404", 0 ],
+					"source" : [ "obj-380", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-372", 0 ],
 					"source" : [ "obj-382", 0 ]
 				}
@@ -26544,6 +26721,51 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-386", 1 ],
+					"source" : [ "obj-391", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-380", 0 ],
+					"source" : [ "obj-393", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-398", 0 ],
+					"source" : [ "obj-395", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-399", 0 ],
+					"source" : [ "obj-398", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-388", 1 ],
+					"midpoints" : [ 1676.75, 520.5, 1768.0, 520.5, 1768.0, 520.5, 2120.75, 520.5 ],
+					"order" : 0,
+					"source" : [ "obj-399", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-388", 0 ],
+					"order" : 1,
+					"source" : [ "obj-399", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-182", 0 ],
 					"source" : [ "obj-4", 0 ]
 				}
@@ -26566,6 +26788,35 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-33", 0 ],
+					"source" : [ "obj-401", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-403", 1 ],
+					"source" : [ "obj-402", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-398", 1 ],
+					"midpoints" : [ 1963.5, 469.0, 1881.0, 469.0, 1881.0, 468.0, 1869.75, 468.0 ],
+					"source" : [ "obj-404", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-398", 1 ],
+					"source" : [ "obj-404", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
 					"source" : [ "obj-41", 0 ]
 				}
@@ -26573,7 +26824,17 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-33", 0 ],
+					"destination" : [ "obj-393", 1 ],
+					"midpoints" : [ 1676.75, 396.0, 1884.0, 396.0, 1884.0, 396.0, 2609.75, 396.0 ],
+					"order" : 0,
+					"source" : [ "obj-410", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-393", 0 ],
+					"order" : 1,
 					"source" : [ "obj-410", 0 ]
 				}
 
@@ -26788,7 +27049,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-370", 0 ],
-					"midpoints" : [ 1717.75, 495.20000022649765, 1677.75, 495.20000022649765 ],
+					"midpoints" : [ 1716.75, 334.20000022649765, 1676.75, 334.20000022649765 ],
 					"source" : [ "obj-61", 1 ]
 				}
 
