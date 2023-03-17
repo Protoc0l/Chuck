@@ -7507,6 +7507,20 @@
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
 												"box" : 												{
+													"fontname" : "Arial",
+													"fontsize" : 13.0,
+													"id" : "obj-66",
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ -107.5, 333.0, 230.0, 23.0 ],
+													"text" : "font Arial 32, moveto 756 240, write $1"
+												}
+
+											}
+, 											{
+												"box" : 												{
 													"id" : "obj-64",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
@@ -10879,7 +10893,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 19.0, 305.0, 230.0, 23.0 ],
-													"text" : "font Arial 32, moveto 756 240, write $1"
+													"text" : "font Arial 32, moveto 314 240, write $1"
 												}
 
 											}
