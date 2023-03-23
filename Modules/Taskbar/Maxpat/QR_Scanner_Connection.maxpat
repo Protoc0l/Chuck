@@ -903,7 +903,7 @@
 					"bgfillcolor_type" : "color",
 					"fontsize" : 11.0,
 					"id" : "obj-33",
-					"items" : [ "g: COM7 (USB-SERIAL CH340)", ",", "a: COM1 (Prolific USB-to-Serial Comm Port)", ",", "c: COM3 (USB Serial Device)" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
