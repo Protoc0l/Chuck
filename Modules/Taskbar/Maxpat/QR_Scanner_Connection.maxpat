@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 2,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 263.0, 182.0, 1214.0, 780.0 ],
+		"rect" : [ -1337.0, 161.0, 1214.0, 780.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,95 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-50",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 515.0, 164.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-48",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "bang", "bang" ],
+					"patching_rect" : [ 694.0, 202.0, 338.0, 22.0 ],
+					"text" : "dialog @mode 1 @label \"Error: QR Scanner NOT Connected\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-40",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 596.0, 228.0, 61.0, 22.0 ],
+					"text" : "delay 500"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-37",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "int" ],
+					"patching_rect" : [ 596.0, 199.0, 88.5, 22.0 ],
+					"text" : "t 0 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-31",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 596.0, 171.0, 69.0, 22.0 ],
+					"text" : "metro 1000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-25",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "bang" ],
+					"patching_rect" : [ 596.0, 145.0, 117.0, 22.0 ],
+					"text" : "t 1 b"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.2, 0.2, 0.2, 0.0 ],
+					"blinkcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"id" : "obj-15",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"outlinecolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 665.5, 261.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 12.0, 0.0, 21.0, 21.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-57",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -66,11 +155,11 @@
 				"box" : 				{
 					"id" : "obj-5",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 438.0, 118.0, 196.0, 22.0 ],
-					"text" : "route \"must be between 0 and 255\""
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 438.0, 116.0, 335.0, 22.0 ],
+					"text" : "route \"must be between 0 and 255\" \"error opening serial port\""
 				}
 
 			}
@@ -284,7 +373,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 615.0, 145.0, 96.0, 22.0 ],
+					"patching_rect" : [ 754.0, 145.0, 96.0, 22.0 ],
 					"text" : "prepend append"
 				}
 
@@ -302,7 +391,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -570,7 +659,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
-					"patching_rect" : [ 357.0, 63.0, 159.0, 22.0 ],
+					"patching_rect" : [ 357.0, 57.0, 159.0, 22.0 ],
 					"text" : "console @classfilter serial"
 				}
 
@@ -794,10 +883,10 @@
 					"id" : "obj-42",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "int", "open", "dump", "" ],
-					"patching_rect" : [ 211.5, 310.0, 91.0, 22.0 ],
-					"text" : "t 1 open dump l"
+					"numoutlets" : 5,
+					"outlettype" : [ "int", "open", "dump", "", "int" ],
+					"patching_rect" : [ 211.5, 310.0, 116.0, 22.0 ],
+					"text" : "t 1 open dump l 0"
 				}
 
 			}
@@ -814,7 +903,7 @@
 					"bgfillcolor_type" : "color",
 					"fontsize" : 11.0,
 					"id" : "obj-33",
-					"items" : "<empty>",
+					"items" : [ "g: COM7 (USB-SERIAL CH340)", ",", "a: COM1 (Prolific USB-to-Serial Comm Port)", ",", "c: COM3 (USB Serial Device)" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1020,6 +1109,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-48", 0 ],
+					"source" : [ "obj-25", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-34", 0 ],
 					"midpoints" : [ 86.5, 389.5, 146.5, 389.5 ],
 					"source" : [ "obj-26", 0 ]
@@ -1085,6 +1188,13 @@
 					"destination" : [ "obj-7", 0 ],
 					"midpoints" : [ 305.0, 432.5, 305.0, 432.5 ],
 					"source" : [ "obj-30", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"source" : [ "obj-31", 0 ]
 				}
 
 			}
@@ -1166,6 +1276,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-37", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-40", 0 ],
+					"source" : [ "obj-37", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-77", 0 ],
 					"source" : [ "obj-38", 0 ]
 				}
@@ -1194,6 +1318,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"midpoints" : [ 605.5, 255.0, 660.0, 255.0, 660.0, 255.0, 675.0, 255.0 ],
+					"source" : [ "obj-40", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
 					"source" : [ "obj-41", 0 ]
 				}
@@ -1202,7 +1334,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"midpoints" : [ 245.0, 372.0, 64.0, 372.0, 64.0, 189.0, 86.5, 189.0 ],
+					"midpoints" : [ 245.25, 372.0, 64.0, 372.0, 64.0, 189.0, 86.5, 189.0 ],
 					"source" : [ "obj-42", 1 ]
 				}
 
@@ -1210,8 +1342,16 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"midpoints" : [ 293.0, 340.0, 293.25, 340.0 ],
+					"midpoints" : [ 293.75, 340.0, 293.25, 340.0 ],
 					"source" : [ "obj-42", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"midpoints" : [ 318.0, 333.0, 582.0, 333.0, 582.0, 168.0, 605.5, 168.0 ],
+					"source" : [ "obj-42", 4 ]
 				}
 
 			}
@@ -1273,7 +1413,21 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
+					"source" : [ "obj-5", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
 					"source" : [ "obj-5", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"source" : [ "obj-50", 0 ]
 				}
 
 			}
