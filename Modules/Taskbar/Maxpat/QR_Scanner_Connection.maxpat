@@ -40,25 +40,111 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-50",
-					"maxclass" : "button",
-					"numinlets" : 1,
+					"id" : "obj-15",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 583.0, 51.0, 67.0, 22.0 ],
+					"text" : "delay 2000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-65",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 583.0, 77.0, 73.0, 22.0 ],
+					"text" : "v error_msg"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-64",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 583.0, 24.5, 68.0, 22.0 ],
+					"text" : "route serial"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"handoff" : "",
+					"hltcolor" : [ 1.0, 0.0, 0.0, 0.55 ],
+					"id" : "obj-47",
+					"maxclass" : "ubutton",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "bang", "bang", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 515.0, 164.0, 24.0, 24.0 ]
+					"patching_rect" : [ 197.0, 7.0, 86.0, 39.5 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 15.0, 3.0, 15.0, 14.5 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"autofit" : 1,
+					"id" : "obj-50",
+					"maxclass" : "fpic",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "jit_matrix" ],
+					"patching_rect" : [ 236.0, 17.75, 17.0, 18.0 ],
+					"pic" : "CCW_Rotation.png",
+					"presentation" : 1,
+					"presentation_rect" : [ 16.0, 4.0, 12.0, 11.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-20",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 665.0, 268.0, 92.0, 22.0 ],
+					"text" : "prepend hidden"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"bordercolor" : [ 1.0, 0.0, 0.0, 0.0 ],
+					"id" : "obj-14",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 665.0, 298.0, 128.0, 128.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 10.0, 0.0, 8.0, 6.0 ],
+					"proportion" : 0.5,
+					"rounded" : 465
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-48",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "bang" ],
-					"patching_rect" : [ 694.0, 202.0, 338.0, 22.0 ],
-					"text" : "dialog @mode 1 @label \"Error: QR Scanner NOT Connected\""
+					"patching_rect" : [ 694.0, 202.0, 492.0, 36.0 ],
+					"text" : "dialog @mode 1 @label \"Error: Scanner NOT Connecting... try unplugging the scanner, hit refresh & reselect the scanner\""
 				}
 
 			}
@@ -68,9 +154,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 596.0, 228.0, 61.0, 22.0 ],
-					"text" : "delay 500"
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 596.0, 228.0, 55.0, 22.0 ],
+					"text" : "pipe 500"
 				}
 
 			}
@@ -81,8 +167,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 596.0, 199.0, 88.5, 22.0 ],
-					"text" : "t 0 1"
+					"patching_rect" : [ 596.0, 199.0, 88.0, 22.0 ],
+					"text" : "t 1 0"
 				}
 
 			}
@@ -107,23 +193,6 @@
 					"outlettype" : [ "int", "bang" ],
 					"patching_rect" : [ 596.0, 145.0, 117.0, 22.0 ],
 					"text" : "t 1 b"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.2, 0.2, 0.2, 0.0 ],
-					"blinkcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
-					"id" : "obj-15",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"outlinecolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 665.5, 261.0, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 12.0, 0.0, 21.0, 21.0 ]
 				}
 
 			}
@@ -155,11 +224,11 @@
 				"box" : 				{
 					"id" : "obj-5",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 438.0, 116.0, 335.0, 22.0 ],
-					"text" : "route \"must be between 0 and 255\" \"error opening serial port\""
+					"numinlets" : 4,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 438.0, 116.0, 296.0, 22.0 ],
+					"text" : "route \"must be between 0 and 255\" error specified"
 				}
 
 			}
@@ -373,7 +442,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 754.0, 145.0, 96.0, 22.0 ],
+					"patching_rect" : [ 715.0, 145.0, 96.0, 22.0 ],
 					"text" : "prepend append"
 				}
 
@@ -384,8 +453,8 @@
 					"id" : "obj-60",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "dump", "", "clear" ],
+					"numoutlets" : 4,
+					"outlettype" : [ "dump", "", "clear", "" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -426,6 +495,18 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-5",
+									"index" : 4,
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 335.0, 323.0, 30.0, 30.0 ]
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-2",
@@ -516,7 +597,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 214.0, 82.623291015625, 64.0, 22.0 ],
+									"patching_rect" : [ 214.0, 81.623291015625, 140.0, 22.0 ],
 									"text" : "route port"
 								}
 
@@ -605,6 +686,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-59", 0 ],
 									"source" : [ "obj-48", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-5", 0 ],
+									"source" : [ "obj-49", 1 ]
 								}
 
 							}
@@ -1052,6 +1140,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-65", 0 ],
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-12", 1 ],
 					"source" : [ "obj-16", 0 ]
 				}
@@ -1082,6 +1177,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-33", 0 ],
 					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"source" : [ "obj-20", 0 ]
 				}
 
 			}
@@ -1276,7 +1378,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-15", 0 ],
+					"destination" : [ "obj-20", 0 ],
 					"source" : [ "obj-37", 1 ]
 				}
 
@@ -1318,8 +1420,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-15", 0 ],
-					"midpoints" : [ 605.5, 255.0, 660.0, 255.0, 660.0, 255.0, 675.0, 255.0 ],
+					"destination" : [ "obj-20", 0 ],
+					"midpoints" : [ 605.5, 260.0, 674.5, 260.0 ],
 					"source" : [ "obj-40", 0 ]
 				}
 
@@ -1381,6 +1483,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-64", 0 ],
+					"midpoints" : [ 366.5, 81.0, 342.0, 81.0, 342.0, 22.0, 592.5, 22.0 ],
+					"source" : [ "obj-43", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"color" : [ 1.0, 0.027450980392157, 0.027450980392157, 1.0 ],
 					"destination" : [ "obj-1", 0 ],
 					"midpoints" : [ 273.5, 187.0, 123.0, 187.0, 123.0, 187.0, 86.5, 187.0 ],
@@ -1405,6 +1515,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-41", 0 ],
+					"source" : [ "obj-47", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-86", 0 ],
 					"source" : [ "obj-49", 0 ]
 				}
@@ -1413,6 +1530,14 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
+					"source" : [ "obj-5", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"midpoints" : [ 632.166666666666629, 141.0, 605.5, 141.0 ],
 					"source" : [ "obj-5", 2 ]
 				}
 
@@ -1420,14 +1545,8 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-25", 0 ],
+					"midpoints" : [ 539.833333333333371, 141.0, 591.0, 141.0, 591.0, 141.0, 605.5, 141.0 ],
 					"source" : [ "obj-5", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-25", 0 ],
-					"source" : [ "obj-50", 0 ]
 				}
 
 			}
@@ -1505,6 +1624,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-65", 0 ],
+					"midpoints" : [ 458.5, 106.0, 480.0, 106.0, 480.0, 106.0, 564.0, 106.0, 564.0, 74.0, 592.5, 74.0 ],
+					"source" : [ "obj-60", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"color" : [ 1.0, 0.337254901960784, 0.619607843137255, 1.0 ],
 					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-61", 0 ]
@@ -1523,6 +1650,21 @@
 				"patchline" : 				{
 					"destination" : [ "obj-61", 0 ],
 					"source" : [ "obj-62", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-64", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"midpoints" : [ 592.5, 111.0, 480.0, 111.0, 480.0, 111.0, 447.5, 111.0 ],
+					"source" : [ "obj-65", 0 ]
 				}
 
 			}
@@ -1556,6 +1698,13 @@
 			}
  ],
 		"dependency_cache" : [ 			{
+				"name" : "CCW_Rotation.png",
+				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Image Editor",
+				"patcherrelativepath" : "../../Image Editor",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "QR_Comm",
 				"bootpath" : "C:/ProgramData/Chuck/Settings",
 				"patcherrelativepath" : "../../../../Settings",
