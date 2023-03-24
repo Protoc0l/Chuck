@@ -2634,7 +2634,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"openrect" : [ 40.0, 82.0, 625.0, 297.0 ],
+						"openrect" : [ 40.0, 82.0, 620.0, 297.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -2655,7 +2655,7 @@
 						"boxanimatetime" : 200,
 						"enablehscroll" : 0,
 						"enablevscroll" : 0,
-						"devicewidth" : 625.0,
+						"devicewidth" : 620.0,
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
@@ -2855,7 +2855,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 279.0, 437.0, 100.0, 20.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 613.0, 42.0, 8.0, 254.0 ],
+									"presentation_rect" : [ 612.0, 41.0, 8.0, 255.0 ],
 									"text" : "",
 									"texton" : ""
 								}
