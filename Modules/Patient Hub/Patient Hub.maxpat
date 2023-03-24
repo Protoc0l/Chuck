@@ -41,6 +41,29 @@
 		"title" : "Client Hub",
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 1,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-405",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "Patient Hub Search.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1147.0, 89.5, 221.0, 134.5 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 2.25, 30.0, 612.0, 223.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-402",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -271,7 +294,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 1580.0, 290.722924113273621, 48.0, 28.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 151.0, 199.0, 25.41666699999999, 19.25 ],
+					"presentation_rect" : [ 151.0, 230.0, 25.41666699999999, 19.25 ],
 					"viewvisibility" : 1
 				}
 
@@ -296,7 +319,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1575.0, 306.722924113273621, 63.75, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 95.416665666666802, 199.25, 61.0, 20.0 ],
+					"presentation_rect" : [ 95.416665666666802, 230.25, 61.0, 20.0 ],
 					"text" : "QR Send:"
 				}
 
@@ -314,7 +337,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1566.75, 279.20000022649765, 72.0, 52.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 92.25, 197.25, 86.166667000000018, 24.0 ],
+					"presentation_rect" : [ 92.25, 228.25, 86.166667000000018, 24.0 ],
 					"proportion" : 0.5,
 					"rounded" : 15
 				}
@@ -340,7 +363,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1546.0, 239.722924113273621, 53.0, 34.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.083333666666761, 199.25, 55.0, 20.0 ],
+					"presentation_rect" : [ 7.083333666666761, 230.25, 55.0, 20.0 ],
 					"text" : "QR Rec:"
 				}
 
@@ -364,7 +387,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1531.0, 232.484386056661606, 68.0, 33.47707611322403 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 59.749999666666781, 199.25, 31.500000333333219, 19.0 ],
+					"presentation_rect" : [ 56.749999666666781, 230.25, 31.500000333333219, 19.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -959,7 +982,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1736.039155602455139, 2000.550846473235652, 100.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 66.916666333333296, 162.125, 100.0, 27.0 ],
+					"presentation_rect" : [ 66.916666333333296, 193.125, 100.0, 27.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 0.76078431372549 ],
 					"textjustification" : 1
 				}
@@ -989,7 +1012,7 @@
 					"patching_rect" : [ 1398.51957780122757, 1600.5, 86.0, 23.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ -2.250000333333219, 156.0, 81.0, 39.0 ],
+					"presentation_rect" : [ -2.250000333333219, 187.0, 81.0, 39.0 ],
 					"text" : "QR Scanner",
 					"textcolor" : [ 0.054901960784314, 0.054901960784314, 0.054901960784314, 1.0 ],
 					"textjustification" : 1
@@ -1021,7 +1044,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1377.51957780122757, 1562.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.25, 156.0, 174.833334000000008, 39.25 ],
+					"presentation_rect" : [ 4.25, 187.0, 174.833334000000008, 39.25 ],
 					"proportion" : 0.5,
 					"rounded" : 15
 				}
@@ -3960,15 +3983,13 @@
 				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-35",
-					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 679.51957780122757, 221.399996340274811, 86.0, 55.0 ],
+					"patching_rect" : [ 679.51957780122757, 221.399996340274811, 86.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 5.083333666666761, 116.375, 174.0, 39.0 ],
-					"text" : "Medication Prescription Pad",
+					"presentation_rect" : [ 5.083333666666761, 155.375, 174.0, 23.0 ],
+					"text" : "Rx Pad",
 					"textcolor" : [ 0.76078431372549, 0.76078431372549, 0.76078431372549, 1.0 ],
 					"textjustification" : 1
 				}
@@ -3986,7 +4007,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 662.789155602455139, 203.399996340274811, 150.460844397544861, 111.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.083333666666761, 115.375, 174.833333666666704, 39.25 ],
+					"presentation_rect" : [ 3.083333666666761, 146.375, 174.833333666666704, 39.25 ],
 					"rounded" : 15.0,
 					"text" : "",
 					"texton" : "",
@@ -4636,7 +4657,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 1100.0, 756.0, 149.0, 61.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 469.166666833333352, 166.0, 149.0, 61.0 ],
+					"presentation_rect" : [ 469.166666833333352, 197.0, 149.0, 61.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -4659,7 +4680,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 1100.0, 839.524129867553711, 149.0, 61.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 469.166666833333352, 32.0, 146.0, 61.0 ],
+					"presentation_rect" : [ 469.166666833333352, 63.0, 146.0, 61.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -4682,7 +4703,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 930.0, 839.524129867553711, 149.0, 61.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 325.166666833333352, 32.0, 149.0, 61.0 ],
+					"presentation_rect" : [ 325.166666833333352, 63.0, 149.0, 61.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -4705,7 +4726,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 930.0, 756.0, 149.0, 61.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 325.166666833333352, 166.0, 149.0, 61.0 ],
+					"presentation_rect" : [ 325.166666833333352, 197.0, 149.0, 61.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -4740,7 +4761,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 765.0, 756.0, 149.0, 61.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 180.833334000000008, 166.0, 149.0, 61.0 ],
+					"presentation_rect" : [ 180.833334000000008, 197.0, 149.0, 61.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -4984,7 +5005,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 765.0, 839.524129867553711, 149.0, 61.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 180.987972021102905, 32.0, 149.0, 61.0 ],
+					"presentation_rect" : [ 180.987972021102905, 63.0, 149.0, 61.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -5459,7 +5480,7 @@
 					"patching_rect" : [ 505.5, 170.903617262840271, 84.0, 39.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 5.083333666666761, 73.75, 172.833333666666704, 39.0 ],
+					"presentation_rect" : [ 5.083333666666761, 104.75, 172.833333666666704, 39.0 ],
 					"text" : "Add Task to\nTo Do List",
 					"textcolor" : [ 0.76078431372549, 0.76078431372549, 0.76078431372549, 1.0 ],
 					"textjustification" : 1
@@ -5478,7 +5499,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 488.76957780122757, 139.5, 150.460844397544861, 111.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.083333666666761, 73.75, 174.833333666666704, 38.0 ],
+					"presentation_rect" : [ 3.083333666666761, 104.75, 174.833333666666704, 38.0 ],
 					"rounded" : 15.0,
 					"text" : "",
 					"texton" : "",
@@ -5530,7 +5551,7 @@
 					"patching_rect" : [ 27.5, 167.399996340274811, 65.0, 55.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 7.083333666666761, 31.5, 170.833333666666704, 39.0 ],
+					"presentation_rect" : [ 7.083333666666761, 62.5, 170.833333666666704, 39.0 ],
 					"text" : "Print\nRouting Sheet",
 					"textcolor" : [ 0.76078431372549, 0.76078431372549, 0.76078431372549, 1.0 ],
 					"textjustification" : 1
@@ -7111,7 +7132,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 74.76957780122757, 305.600003659725189, 87.460844397544861, 64.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.083333666666761, 32.5, 174.833333666666704, 38.0 ],
+					"presentation_rect" : [ 3.083333666666761, 63.5, 174.833333666666704, 38.0 ],
 					"rounded" : 15.0,
 					"text" : "",
 					"texton" : "",
@@ -13911,7 +13932,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"openrect" : [ 618.0, 373.0, 455.0, 471.0 ],
+						"openrect" : [ 618.0, 373.0, 455.0, 489.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -13942,12 +13963,126 @@
 						"title" : "Confirm Client Details",
 						"boxes" : [ 							{
 								"box" : 								{
+									"bgcolor" : [ 0.666666666666667, 0.125490196078431, 0.125490196078431, 1.0 ],
+									"fontsize" : 36.0,
+									"id" : "obj-124",
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 868.0, 532.0, 181.0, 72.0 ],
+									"text" : "CLEAR",
+									"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-123",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "bang", "bang" ],
+									"patching_rect" : [ 867.0, 608.0, 134.0, 22.0 ],
+									"text" : "t b b"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-105",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 758.5, 1059.0, 177.0, 22.0 ],
+									"text" : "sprintf store \\\"Birth_Sex\\\" \\\"%s\\\""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-116",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 4,
+									"outlettype" : [ "", "", "", "" ],
+									"patching_rect" : [ 758.5, 1083.0, 138.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"embed" : 0,
+										"precision" : 6
+									}
+,
+									"text" : "coll Patient_Hub_Values"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-117",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 726.5, 1009.0, 51.0, 22.0 ],
+									"text" : "t s s"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-118",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 726.5, 1033.0, 167.0, 22.0 ],
+									"text" : "v PH_Appointment_Birth_Sex"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"htabcolor" : [ 0.16078431372549, 0.427450980392157, 0.686274509803922, 1.0 ],
+									"id" : "obj-96",
+									"maxclass" : "tab",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "int", "", "" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 636.0, 979.5, 200.0, 24.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 176.0, 234.0, 278.0, 24.0 ],
+									"rounded" : 3.9,
+									"tabcolor" : [ 0.0, 0.0, 0.0, 0.7 ],
+									"tabs" : [ "M", "F" ],
+									"textcolor" : [ 0.776470588235294, 0.776470588235294, 0.776470588235294, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontsize" : 16.0,
+									"id" : "obj-104",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 534.5, 979.5, 88.5, 25.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 4.0, 234.0, 143.0, 25.0 ],
+									"text" : "Birth Sex:"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-102",
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 767.0, 492.5, 29.5, 22.0 ],
+									"patching_rect" : [ 867.0, 634.5, 29.5, 22.0 ],
 									"text" : "set"
 								}
 
@@ -13973,7 +14108,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 1297.5, 191.5, 22.0, 22.0 ],
-									"text" : "t 4"
+									"text" : "t 5"
 								}
 
 							}
@@ -13985,7 +14120,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 1246.5, 191.5, 22.0, 22.0 ],
-									"text" : "t 3"
+									"text" : "t 4"
 								}
 
 							}
@@ -13997,7 +14132,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 1202.5, 166.0, 22.0, 22.0 ],
-									"text" : "t 2"
+									"text" : "t 3"
 								}
 
 							}
@@ -14009,7 +14144,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 1164.5, 142.0, 22.0, 22.0 ],
-									"text" : "t 1"
+									"text" : "t 2"
 								}
 
 							}
@@ -14930,7 +15065,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 1163.5, 42.5, 116.0, 29.0 ],
+									"patching_rect" : [ 1163.5, 50.5, 116.0, 29.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -15622,12 +15757,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-84",
-									"linecount" : 9,
+									"linecount" : 10,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1426.0, 288.0, 312.0, 131.0 ],
-									"text" : "Comp 0-4, Comp 0-4 Cyclo, Comp 5-18, Comp 19-64, Comp >65,, Comp 5-18 + DFE, Comp 19-64 + DFE, Comp >65 + DFE,, Refraction, Refraction Non-Adapt, Refraction + CL Exam, Refraction + DFE,, Contact Lens Exam, Comp 5-18 + CL Exam, Comp 19-64 + CL Exam, Comp >65 + CL Exam,, MedEye 1st Time, MedEye F/Up,, LASIK, PRK, SMILE, Consultation, HFA,, DFE, DFE + OCT, DFE + OCT + HFA 10-2, DFE + OCT + HFA 24-2, DFE + OCT + 24-2 + Pac, DFE + OCT + HFA 30-2"
+									"patching_rect" : [ 1426.0, 288.0, 312.0, 144.0 ],
+									"text" : "Select,, Comp 0-4, Comp 0-4 Cyclo, Comp 5-18, Comp 19-64, Comp >65,, Comp 5-18 + DFE, Comp 19-64 + DFE, Comp >65 + DFE,, Refraction, Refraction Non-Adapt, Refraction + CL Exam, Refraction + DFE,, Contact Lens Exam, Comp 5-18 + CL Exam, Comp 19-64 + CL Exam, Comp >65 + CL Exam,, MedEye 1st Time, MedEye F/Up,, LASIK, PRK, SMILE, Consultation, HFA,, DFE, DFE + OCT, DFE + OCT + HFA 10-2, DFE + OCT + HFA 24-2, DFE + OCT + 24-2 + Pac, DFE + OCT + HFA 30-2"
 								}
 
 							}
@@ -15730,7 +15865,7 @@
 									"align" : 1,
 									"fontsize" : 18.0,
 									"id" : "obj-60",
-									"items" : [ "Comp", "0-4", ",", "Comp", "0-4", "Cyclo", ",", "Comp", "5-18", ",", "Comp", "19-64", ",", "Comp", ">65", ",", ",", "Comp", "5-18", "+", "DFE", ",", "Comp", "19-64", "+", "DFE", ",", "Comp", ">65", "+", "DFE", ",", ",", "Refraction", ",", "Refraction", "Non-Adapt", ",", "Refraction", "+", "CL", "Exam", ",", "Refraction", "+", "DFE", ",", ",", "Contact", "Lens", "Exam", ",", "Comp", "5-18", "+", "CL", "Exam", ",", "Comp", "19-64", "+", "CL", "Exam", ",", "Comp", ">65", "+", "CL", "Exam", ",", ",", "MedEye", "1st", "Time", ",", "MedEye", "F/Up", ",", ",", "LASIK", ",", "PRK", ",", "SMILE", ",", "Consultation", ",", "HFA", ",", ",", "DFE", ",", "DFE", "+", "OCT", ",", "DFE", "+", "OCT", "+", "HFA", "10-2", ",", "DFE", "+", "OCT", "+", "HFA", "24-2", ",", "DFE", "+", "OCT", "+", "24-2", "+", "Pac", ",", "DFE", "+", "OCT", "+", "HFA", "30-2" ],
+									"items" : [ "Select", ",", ",", "Comp", "0-4", ",", "Comp", "0-4", "Cyclo", ",", "Comp", "5-18", ",", "Comp", "19-64", ",", "Comp", ">65", ",", ",", "Comp", "5-18", "+", "DFE", ",", "Comp", "19-64", "+", "DFE", ",", "Comp", ">65", "+", "DFE", ",", ",", "Refraction", ",", "Refraction", "Non-Adapt", ",", "Refraction", "+", "CL", "Exam", ",", "Refraction", "+", "DFE", ",", ",", "Contact", "Lens", "Exam", ",", "Comp", "5-18", "+", "CL", "Exam", ",", "Comp", "19-64", "+", "CL", "Exam", ",", "Comp", ">65", "+", "CL", "Exam", ",", ",", "MedEye", "1st", "Time", ",", "MedEye", "F/Up", ",", ",", "LASIK", ",", "PRK", ",", "SMILE", ",", "Consultation", ",", "HFA", ",", ",", "DFE", ",", "DFE", "+", "OCT", ",", "DFE", "+", "OCT", "+", "HFA", "10-2", ",", "DFE", "+", "OCT", "+", "HFA", "24-2", ",", "DFE", "+", "OCT", "+", "24-2", "+", "Pac", ",", "DFE", "+", "OCT", "+", "HFA", "30-2" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -16565,7 +16700,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 234.5, 582.0, 165.0, 22.0 ],
+									"patching_rect" : [ 1103.5, 1055.0, 165.0, 22.0 ],
 									"text" : "sprintf store \\\"Gender\\\" \\\"%s\\\""
 								}
 
@@ -16577,7 +16712,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "", "" ],
-									"patching_rect" : [ 234.5, 606.0, 138.0, 22.0 ],
+									"patching_rect" : [ 1103.5, 1079.0, 138.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0,
 										"precision" : 6
@@ -16594,7 +16729,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 202.5, 532.0, 51.0, 22.0 ],
+									"patching_rect" : [ 1071.5, 1005.0, 51.0, 22.0 ],
 									"text" : "t s s"
 								}
 
@@ -16606,7 +16741,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 202.5, 556.0, 155.0, 22.0 ],
+									"patching_rect" : [ 1071.5, 1029.0, 155.0, 22.0 ],
 									"text" : "v PH_Appointment_Gender"
 								}
 
@@ -16704,7 +16839,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "", "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 112.0, 506.5, 200.0, 24.0 ],
+									"patching_rect" : [ 981.0, 979.5, 200.0, 24.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 176.0, 209.0, 278.0, 24.0 ],
 									"rounded" : 3.9,
@@ -16721,7 +16856,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 39.0, 506.5, 71.0, 25.0 ],
+									"patching_rect" : [ 908.0, 979.5, 71.0, 25.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 4.0, 209.0, 143.0, 25.0 ],
 									"text" : "Gender:"
@@ -18333,7 +18468,7 @@
 									"parameter_mappable" : 0,
 									"patching_rect" : [ 376.0, 405.0, 340.0, 27.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 177.0, 436.0, 274.0, 25.0 ],
+									"presentation_rect" : [ 177.0, 460.0, 274.0, 25.0 ],
 									"rounded" : 0.0,
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1,
@@ -18399,7 +18534,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 185.0, 382.0, 84.0, 23.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 4.0, 437.0, 173.0, 23.0 ],
+									"presentation_rect" : [ 4.0, 462.0, 173.0, 23.0 ],
 									"text" : "First Name",
 									"textjustification" : 2
 								}
@@ -18968,7 +19103,7 @@
 									"outmode" : 1,
 									"patching_rect" : [ 149.0, 63.0, 200.0, 200.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 4.0, 237.0, 447.0, 195.0 ],
+									"presentation_rect" : [ 4.0, 261.0, 447.0, 195.0 ],
 									"rowheight" : 24,
 									"rows" : 1,
 									"selmode" : 3,
@@ -19090,6 +19225,21 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-96", 0 ],
+									"order" : 2,
+									"source" : [ "obj-103", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-116", 0 ],
+									"source" : [ "obj-105", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-107", 0 ],
 									"source" : [ "obj-106", 0 ]
 								}
@@ -19170,8 +19320,43 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-105", 0 ],
+									"source" : [ "obj-117", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-118", 0 ],
+									"source" : [ "obj-117", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-60", 0 ],
 									"source" : [ "obj-122", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-102", 0 ],
+									"source" : [ "obj-123", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-103", 0 ],
+									"source" : [ "obj-123", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-123", 0 ],
+									"source" : [ "obj-124", 0 ]
 								}
 
 							}
@@ -20000,6 +20185,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-127", 0 ],
 									"source" : [ "obj-94", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-117", 0 ],
+									"source" : [ "obj-96", 1 ]
 								}
 
 							}
@@ -21826,7 +22018,7 @@
 					"outmode" : 1,
 					"patching_rect" : [ 1036.0, 410.722924113273621, 200.0, 75.47707611322403 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 180.083333666666761, 91.5, 433.166666333333239, 71.5 ],
+					"presentation_rect" : [ 180.083333666666761, 122.5, 433.166666333333239, 71.5 ],
 					"rowheight" : 22,
 					"rows" : 1,
 					"selmode" : 3,
@@ -24884,7 +25076,7 @@
 					"parameter_mappable" : 0,
 					"patching_rect" : [ 1668.25, 284.722924113273621, 73.75, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.25, 5.75, 495.0, 15.0 ],
+					"presentation_rect" : [ 599.25, 5.75, 10.0, 15.0 ],
 					"rounded" : 0.0,
 					"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"textjustification" : 1,
@@ -25162,7 +25354,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1521.0, 218.722924113273621, 85.0, 55.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.416666, 197.25, 85.833333999999994, 24.0 ],
+					"presentation_rect" : [ 5.416666, 228.25, 85.833333999999994, 24.0 ],
 					"proportion" : 0.5,
 					"rounded" : 10
 				}
@@ -25217,9 +25409,29 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 11.0, 143.5, 457.5, 515.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.25, 32.0, 612.0, 190.0 ],
+					"presentation_rect" : [ 2.25, 63.0, 612.0, 190.0 ],
 					"proportion" : 0.5,
 					"rounded" : 4
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"background" : 1,
+					"bgcolor" : [ 0.0, 0.0, 0.0, 0.76078431372549 ],
+					"border" : 2,
+					"bordercolor" : [ 0.0, 0.0, 0.0, 0.76078431372549 ],
+					"id" : "obj-397",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1083.5, 10.0, 160.0, 70.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1.0, 31.0, 613.083333666666704, 30.0 ],
+					"proportion" : 0.5,
+					"rounded" : 0
 				}
 
 			}
@@ -28598,6 +28810,13 @@
 			}
  ],
 		"dependency_cache" : [ 			{
+				"name" : "CCW_Rotation.png",
+				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Image Editor",
+				"patcherrelativepath" : "../Image Editor",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "JSON_SAVEPARAMS.maxpat",
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
 				"patcherrelativepath" : "../Taskbar/Maxpat",
@@ -28640,6 +28859,20 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Patient Hub Search.maxpat",
+				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Patient Hub",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Python.maxpat",
+				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"patcherrelativepath" : "../Taskbar/Maxpat",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "QR_Comm",
 				"bootpath" : "C:/ProgramData/Chuck/Settings",
 				"patcherrelativepath" : "../../../Settings",
@@ -28658,6 +28891,13 @@
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
 				"patcherrelativepath" : "../Taskbar/Maxpat",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Search Icon Light.png",
+				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Icons",
+				"patcherrelativepath" : "../Taskbar/Icons",
+				"type" : "PNG",
 				"implicit" : 1
 			}
  ],
