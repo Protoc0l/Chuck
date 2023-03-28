@@ -361,6 +361,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-4",
+									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -2634,7 +2635,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"openrect" : [ 40.0, 82.0, 620.0, 297.0 ],
+						"openrect" : [ 40.0, 82.0, 624.0, 308.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -2655,7 +2656,7 @@
 						"boxanimatetime" : 200,
 						"enablehscroll" : 0,
 						"enablevscroll" : 0,
-						"devicewidth" : 620.0,
+						"devicewidth" : 624.0,
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
@@ -2663,6 +2664,7 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"title" : "Client Hub",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-25",
@@ -3136,7 +3138,7 @@
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,
-									"enablehscroll" : 1,
+									"enablehscroll" : 0,
 									"enablevscroll" : 0,
 									"id" : "obj-1",
 									"lockeddragscroll" : 0,
@@ -3148,7 +3150,7 @@
 									"offset" : [ 0.0, 0.0 ],
 									"patching_rect" : [ 29.0, 92.0, 117.0, 112.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 0.0, 41.0, 624.0, 256.0 ],
+									"presentation_rect" : [ 0.0, 41.0, 620.0, 264.0 ],
 									"varname" : "PHVirtual",
 									"viewvisibility" : 1
 								}
