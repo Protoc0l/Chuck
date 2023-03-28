@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 805.0, 257.0, 70.0, 22.0 ],
+					"text" : "loadmess 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-15",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -122,6 +134,7 @@
 					"angle" : 270.0,
 					"bgcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"bordercolor" : [ 1.0, 0.0, 0.0, 0.0 ],
+					"hidden" : 1,
 					"id" : "obj-14",
 					"maxclass" : "panel",
 					"mode" : 0,
@@ -991,7 +1004,7 @@
 					"bgfillcolor_type" : "color",
 					"fontsize" : 11.0,
 					"id" : "obj-33",
-					"items" : [ "g: COM7 (USB-SERIAL CH340)", ",", "a: COM1 (Prolific USB-to-Serial Comm Port)", ",", "c: COM3 (USB Serial Device)" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1185,6 +1198,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
 					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"source" : [ "obj-21", 0 ]
 				}
 
 			}
