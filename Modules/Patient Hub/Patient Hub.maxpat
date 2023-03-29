@@ -41,6 +41,30 @@
 		"title" : "Client Hub",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-433",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 670.0, 2153.0, 150.0, 34.0 ],
+					"text" : "connect to sprint store below"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-415",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 286.25, 2390.903617262840271, 515.0, 22.0 ],
+					"text" : "sprintf store \\\"%s\\\" \\\"%s\\\" \\\"%s\\\""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-434",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -434,17 +458,6 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 584.25, 5.75, 29.0, 24.75 ],
 					"proportion" : 0.5
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-415",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 645.625, 2231.903617262840271, 77.0, 22.0 ],
-					"text" : "print values2"
 				}
 
 			}
@@ -7592,7 +7605,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1248.5, 441.722924113273621, 34.0, 22.0 ],
+					"patching_rect" : [ 1248.5, 441.722924113273621, 197.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -7611,7 +7624,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1248.5, 393.722924113273621, 46.0, 22.0 ],
+					"patching_rect" : [ 1248.5, 383.722924113273621, 46.0, 22.0 ],
 					"text" : "route 1"
 				}
 
@@ -7623,7 +7636,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "bang" ],
-					"patching_rect" : [ 1246.5, 377.722924113273621, 261.0, 22.0 ],
+					"patching_rect" : [ 1248.5, 410.722924113273621, 261.0, 22.0 ],
 					"text" : "dialog @label Please enter password @mask 1"
 				}
 
@@ -23734,11 +23747,11 @@
 				"box" : 				{
 					"id" : "obj-227",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 286.25, 2317.903617262840271, 515.0, 22.0 ],
-					"text" : "sprintf store \\\"%s\\\" \\\"%s\\\" \\\"%s\\\""
+					"patching_rect" : [ 286.25, 2317.903617262840271, 267.25, 22.0 ],
+					"text" : "sprintf store \\\"%s\\\" \\\"%s\\\""
 				}
 
 			}
@@ -27984,7 +27997,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-42", 0 ],
-					"midpoints" : [ 1273.0, 464.722924113273621, 1459.0, 464.722924113273621, 1459.0, 360.722924113273621, 1258.0, 360.722924113273621 ],
+					"midpoints" : [ 1436.0, 464.722924113273621, 1459.0, 464.722924113273621, 1459.0, 352.722924113273621, 1258.0, 352.722924113273621 ],
 					"source" : [ "obj-196", 1 ]
 				}
 
@@ -29853,22 +29866,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-219", 0 ],
 					"source" : [ "obj-425", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-227", 2 ],
-					"order" : 0,
-					"source" : [ "obj-425", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-415", 0 ],
-					"order" : 1,
-					"source" : [ "obj-425", 1 ]
 				}
 
 			}
