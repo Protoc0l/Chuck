@@ -41,6 +41,41 @@
 		"title" : "Client Hub",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-433",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1142.0, 10.722924113273621, 123.0, 22.0 ],
+					"text" : "r PH_WINDOW_BAR"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 1,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-405",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "Patient Hub Search.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "int", "", "" ],
+					"patching_rect" : [ 1142.0, 34.722924113273621, 221.0, 134.5 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 3.0, 34.0, 617.0, 228.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-111",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -116,7 +151,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 83.0, 430.0, 271.0, 22.0 ],
-									"presentation_linecount" : 2,
 									"text" : "\"Front desk - Push New Px to Visionary P2\" Push"
 								}
 
@@ -2243,29 +2277,6 @@
 					"patching_rect" : [ 2245.01957780122757, 840.422924876213074, 33.0, 27.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 9.083333666666761, 191.0, 66.0, 39.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 1,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-405",
-					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "Patient Hub Search.maxpat",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1142.0, 34.722924113273621, 221.0, 134.5 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 3.0, 34.0, 617.0, 228.0 ],
-					"viewvisibility" : 1
 				}
 
 			}
@@ -7740,7 +7751,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1668.25, 148.245848000049591, 123.0, 22.0 ],
+					"patching_rect" : [ 1668.25, 138.5, 123.0, 22.0 ],
 					"text" : "r PH_WINDOW_BAR"
 				}
 
@@ -27306,6 +27317,43 @@
 			}
 , 			{
 				"box" : 				{
+					"angle" : 270.0,
+					"background" : 1,
+					"bgcolor" : [ 0.2, 0.2, 0.2, 0.12 ],
+					"border" : 2,
+					"bordercolor" : [ 0.0, 0.0, 0.0, 0.76 ],
+					"id" : "obj-452",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1175.5, 271.0, 128.0, 128.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 259.5, 16.0, 427.5, 167.0 ],
+					"proportion" : 0.5,
+					"rounded" : 2
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"background" : 1,
+					"fontface" : 0,
+					"fontsize" : 20.0,
+					"id" : "obj-448",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1344.0, 174.484386056661606, 53.0, 29.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 294.25, 5.0, 283.0, 29.0 ],
+					"textcolor" : [ 0.76078431372549, 0.76078431372549, 0.76078431372549, 1.0 ],
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"background" : 1,
 					"fontsize" : 30.0,
 					"id" : "obj-233",
@@ -27314,9 +27362,9 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 662.789155602455139, 24.5, 337.0, 41.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.25, -1.0, 612.833333666666704, 41.0 ],
+					"presentation_rect" : [ 54.25, -1.0, 243.833333666666704, 41.0 ],
 					"text" : "Client Hub",
-					"textcolor" : [ 0.76078431372549, 0.76078431372549, 0.76078431372549, 1.0 ],
+					"textcolor" : [ 0.341176470588235, 0.654901960784314, 0.964705882352941, 1.0 ],
 					"textjustification" : 1
 				}
 
@@ -28695,13 +28743,6 @@
 					"destination" : [ "obj-27", 0 ],
 					"midpoints" : [ 285.25, 2310.0, 228.25, 2310.0 ],
 					"source" : [ "obj-232", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"source" : [ "obj-234", 0 ]
 				}
 
 			}
@@ -30142,6 +30183,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-448", 0 ],
+					"source" : [ "obj-405", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-355", 0 ],
 					"source" : [ "obj-406", 0 ]
 				}
@@ -30274,6 +30322,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-111", 0 ],
 					"source" : [ "obj-431", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-405", 0 ],
+					"source" : [ "obj-433", 0 ]
 				}
 
 			}
