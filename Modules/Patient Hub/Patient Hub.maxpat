@@ -69,7 +69,7 @@
 					"outlettype" : [ "int", "", "" ],
 					"patching_rect" : [ 1142.0, 34.722924113273621, 221.0, 134.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.0, 34.0, 617.0, 228.0 ],
+					"presentation_rect" : [ 3.0, 32.25, 614.25, 232.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -3670,7 +3670,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 256.0, 3083.903617262840271, 571.5, 22.0 ],
+					"patching_rect" : [ 256.0, 3083.903617262840271, 547.5, 22.0 ],
 					"text" : "sprintf store \\\"%s\\\" \\\"%s\\\" \\\"%s\\\""
 				}
 
@@ -27329,7 +27329,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1175.5, 271.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 259.5, 16.0, 427.5, 167.0 ],
+					"presentation_rect" : [ 3.0, 4.0, 614.25, 258.0 ],
 					"proportion" : 0.5,
 					"rounded" : 2
 				}
