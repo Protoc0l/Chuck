@@ -3723,8 +3723,6 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 408.0, 112.291674017906189, 111.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 55.0, 29.291674017906189, 111.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"precision" : 6
