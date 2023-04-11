@@ -198,18 +198,6 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-94",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "bang" ],
-									"patching_rect" : [ 974.0, 780.0, 29.5, 22.0 ],
-									"text" : "t l b"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-443",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
@@ -270,43 +258,6 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 854.0, 931.0, 245.0, 22.0 ],
 									"text" : "MySQL_User Query_Patient_EXAM_Details"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontsize" : 24.0,
-									"id" : "obj-83",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 1243.0, 780.0, 235.0, 34.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 675.0, 0.5, 613.25, 34.0 ],
-									"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgmode" : 0,
-									"border" : 0,
-									"clickthrough" : 0,
-									"enablehscroll" : 0,
-									"enablevscroll" : 0,
-									"id" : "obj-79",
-									"lockeddragscroll" : 0,
-									"lockedsize" : 0,
-									"maxclass" : "bpatcher",
-									"name" : "Patient Hub Search.maxpat",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"offset" : [ 0.0, 0.0 ],
-									"outlettype" : [ "int", "", "" ],
-									"patching_rect" : [ 974.0, 657.5, 288.0, 114.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 674.0, 35.5, 614.25, 315.0 ],
-									"viewvisibility" : 1
 								}
 
 							}
@@ -693,7 +644,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 845.0, 10.0, 43.5, 41.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 193.25, 35.5, 43.5, 41.0 ],
+									"presentation_rect" : [ 944.25, 2.0, 43.5, 41.0 ],
 									"text" : "",
 									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 									"texton" : "",
@@ -713,7 +664,7 @@
 									"patching_rect" : [ 825.0, 25.5, 49.0, 45.0 ],
 									"pic" : "Expand_Icon.png",
 									"presentation" : 1,
-									"presentation_rect" : [ 193.25, 35.5, 49.0, 45.0 ]
+									"presentation_rect" : [ 944.25, 2.0, 49.0, 45.0 ]
 								}
 
 							}
@@ -734,7 +685,7 @@
 									"offset" : [ 0.0, 0.0 ],
 									"patching_rect" : [ 377.0, 98.25, 56.0, 27.5 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 96.0, 78.0, 56.0, 25.5 ],
+									"presentation_rect" : [ 565.0, 80.5, 56.0, 25.5 ],
 									"viewvisibility" : 1
 								}
 
@@ -9018,20 +8969,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-83", 0 ],
-									"source" : [ "obj-79", 2 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-94", 0 ],
-									"source" : [ "obj-79", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-84", 0 ],
 									"source" : [ "obj-80", 0 ]
 								}
@@ -9847,27 +9784,6 @@
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
 				"patcherrelativepath" : "../Taskbar/Maxpat",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Patient Hub Search.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Patient Hub",
-				"patcherrelativepath" : "../Patient Hub",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Python.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
-				"patcherrelativepath" : "../Taskbar/Maxpat",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Search Icon Light.png",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Icons",
-				"patcherrelativepath" : "../Taskbar/Icons",
-				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{

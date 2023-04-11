@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 2,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -40,13 +40,344 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 1,
+					"id" : "obj-37",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "Side_Thumbnail_GroupView.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, -146.0 ],
+					"patching_rect" : [ 1497.0, 761.75, 159.75, 134.5 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 167.543478260869563, 244.0, 764.0 ],
+					"varname" : "SideBar1",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-116",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1593.0, 424.0, 276.0, 22.0 ],
+					"text" : "print PX_SEARCH_SELECTINO_SLE_CAPTURE"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-113",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 1593.0, 367.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-112",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1593.0, 394.5, 161.0, 22.0 ],
+					"text" : "v Px_Hub_Search_Selection"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-111",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1588.0, 175.5, 150.0, 20.0 ],
+					"text" : "PATIENT HUB SEARCH"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-107",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"patching_rect" : [ 1593.0, 314.5, 29.5, 22.0 ],
+					"text" : "t l b"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 20.0,
+					"id" : "obj-108",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1862.0, 314.5, 210.0, 29.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 2.0, 31.75, 239.0, 29.0 ],
+					"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 1,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-109",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "Patient Hub Search.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "int", "", "" ],
+					"patching_rect" : [ 1593.0, 197.5, 288.0, 114.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1.0, 64.75, 614.25, 315.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-105",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1104.0, 506.291674000000057, 106.0, 22.0 ],
+					"text" : "s Px_SEND/SAVE"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.666666666666667, 0.125490196078431, 0.125490196078431, 1.0 ],
+					"fontsize" : 24.0,
+					"id" : "obj-102",
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1104.0, 481.0, 100.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 115.0, 105.0, 122.0, 57.321428999999995 ],
+					"text" : "SEND",
+					"textoncolor" : [ 0.0, 0.0, 0.0, 0.76078431372549 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-99",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 967.0, 480.0, 119.0, 22.0 ],
+					"text" : "r Fav_GROUP_OUT"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-101",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 967.0, 531.0, 107.0, 22.0 ],
+					"text" : "s Fav_GROUP_IN"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-97",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1090.708335041999817, 375.0, 113.0, 22.0 ],
+					"text" : "r pX_GROUP_OUT"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-98",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1090.708335041999817, 426.0, 102.0, 22.0 ],
+					"text" : "s pX_GROUP_IN"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-96",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 967.0, 375.0, 115.0, 22.0 ],
+					"text" : "r DB_GROUP_OUT"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-95",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 967.0, 426.0, 104.0, 22.0 ],
+					"text" : "s DB_GROUP_IN"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.254901960784314, 0.796078431372549, 0.196078431372549, 1.0 ],
+					"checkedcolor" : [ 0.0, 0.0, 0.0, 0.76078431372549 ],
+					"id" : "obj-93",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 967.0, 504.291674000000057, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 76.0, 131.864906832298118, 31.0, 31.0 ],
+					"uncheckedcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.835294117647059, 0.850980392156863, 0.450980392156863, 1.0 ],
+					"checkedcolor" : [ 0.0, 0.0, 0.0, 0.76078431372549 ],
+					"id" : "obj-544",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1090.708335041999817, 400.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 43.0, 131.864906832298118, 31.0, 31.0 ],
+					"uncheckedcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.16078431372549, 0.427450980392157, 0.686274509803922, 1.0 ],
+					"checkedcolor" : [ 0.0, 0.0, 0.0, 0.76078431372549 ],
+					"id" : "obj-545",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 967.0, 401.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 9.0, 131.864906832298118, 31.0, 31.0 ],
+					"uncheckedcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 11.0,
+					"id" : "obj-543",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 967.0, 457.291674017906189, 33.0, 19.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 76.0, 116.864906832298118, 28.0, 19.0 ],
+					"text" : "Fav",
+					"textcolor" : [ 0.0, 0.0, 0.0, 0.76078431372549 ],
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 11.0,
+					"id" : "obj-542",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1090.708335041999817, 355.0, 28.291664958000183, 19.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 46.0, 116.864906832298118, 25.0, 19.0 ],
+					"text" : "Px",
+					"textcolor" : [ 0.0, 0.0, 0.0, 0.76078431372549 ],
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 11.0,
+					"id" : "obj-541",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 967.0, 355.0, 29.0, 19.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 12.0, 116.864906832298118, 25.0, 19.0 ],
+					"text" : "DB",
+					"textcolor" : [ 0.0, 0.0, 0.0, 0.76078431372549 ],
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontsize" : 18.0,
+					"id" : "obj-496",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1001.0, 322.0, 103.0, 27.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 5.5, 98.543478260869563, 104.0, 27.0 ],
+					"text" : "Select ALL",
+					"textcolor" : [ 0.0, 0.0, 0.0, 0.76078431372549 ],
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-79",
 					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 924.5, 82.0, 150.0, 48.0 ],
-					"presentation_linecount" : 3,
 					"text" : "1 = single tap take photo\n2 = double tap take video\n0 = switch L & R markings"
 				}
 
@@ -536,7 +867,7 @@
 				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
-					"clickthrough" : 0,
+					"clickthrough" : 1,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
 					"hidden" : 1,
@@ -550,7 +881,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 1224.0, 764.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 246.0, 0.0, 8000.0, 8000.0 ],
+					"presentation_rect" : [ 245.0, 0.0, 8000.0, 8000.0 ],
 					"varname" : "ImageEditor",
 					"viewvisibility" : 1
 				}
@@ -565,29 +896,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1219.0, 607.0, 119.0, 22.0 ],
 					"text" : "r open_image_editor"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 1,
-					"id" : "obj-37",
-					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "Side_Thumbnail_GroupView.maxpat",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"offset" : [ 0.0, -146.0 ],
-					"patching_rect" : [ 1497.0, 761.75, 159.75, 134.5 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 170.0, 244.0, 739.0 ],
-					"varname" : "SideBar1",
-					"viewvisibility" : 1
 				}
 
 			}
@@ -619,7 +927,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.0, 0.0, 0.0, 0.58 ],
+					"bgcolor" : [ 0.0, 0.0, 0.0, 0.76078431372549 ],
 					"id" : "obj-68",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
@@ -628,7 +936,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 719.89593600000012, 890.25, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.5, 80.543478260869563, 92.0, 19.0 ],
+					"presentation_rect" : [ 1124.5, 12.5, 92.0, 19.0 ],
 					"rounded" : 3.0,
 					"text" : "Footpedal",
 					"textoncolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
@@ -637,7 +945,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.0, 0.0, 0.0, 0.58 ],
+					"bgcolor" : [ 0.0, 0.0, 0.0, 0.76078431372549 ],
 					"id" : "obj-66",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
@@ -646,7 +954,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 351.0, 816.25, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 155.0, 80.543478260869563, 86.0, 19.0 ],
+					"presentation_rect" : [ 1227.0, 12.5, 86.0, 19.0 ],
 					"rounded" : 3.0,
 					"text" : "FP2C Adapter",
 					"textoncolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
@@ -662,9 +970,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1248.5, 379.0, 319.0, 57.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 4,
-					"presentation_rect" : [ 4.25, 104.543478260869563, 236.75, 57.0 ],
 					"text" : "Presses:\n- Tap once to take a photo\n- Hold for > 1/2 sec to switch R & L\n- Double Tap to start & stop video recording.",
 					"textcolor" : [ 0.482352941176471, 0.482352941176471, 0.482352941176471, 1.0 ]
 				}
@@ -685,7 +990,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.0, 0.0, 0.0, 0.58 ],
+					"bgcolor" : [ 0.0, 0.0, 0.0, 0.76078431372549 ],
 					"id" : "obj-61",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
@@ -694,7 +999,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 719.89593600000012, 816.25, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 904.0, 134.364906832298118, 86.0, 19.0 ],
+					"presentation_rect" : [ 1227.0, 137.864906832298118, 86.0, 19.0 ],
 					"rounded" : 3.0,
 					"text" : "Google App",
 					"textoncolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
@@ -716,7 +1021,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.0, 0.0, 0.0, 0.58 ],
+					"bgcolor" : [ 0.0, 0.0, 0.0, 0.76078431372549 ],
 					"id" : "obj-59",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
@@ -725,7 +1030,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 719.89593600000012, 738.25, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 817.0, 134.364906832298118, 86.0, 19.0 ],
+					"presentation_rect" : [ 1140.0, 137.864906832298118, 86.0, 19.0 ],
 					"rounded" : 3.0,
 					"text" : "iPhone App",
 					"textoncolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
@@ -756,7 +1061,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 351.0, 738.25, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 904.0, 114.25, 86.0, 19.0 ],
+					"presentation_rect" : [ 1227.0, 117.75, 86.0, 19.0 ],
 					"rounded" : 3.0,
 					"text" : "Phone Info",
 					"textoncolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
@@ -787,7 +1092,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 708.0, 659.25, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 904.0, 88.543478260869563, 86.0, 19.0 ],
+					"presentation_rect" : [ 1227.0, 92.043478260869563, 86.0, 19.0 ],
 					"rounded" : 3.0,
 					"text" : "Folder",
 					"textoncolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
@@ -804,7 +1109,7 @@
 					"patching_rect" : [ 1248.5, 352.75, 316.0, 23.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 683.25, 112.364906832298118, 217.75, 39.0 ],
+					"presentation_rect" : [ 1006.25, 115.864906832298118, 217.75, 39.0 ],
 					"text" : "4) Download NDI HX Camera on phone of choice",
 					"textcolor" : [ 0.482352941176471, 0.482352941176471, 0.482352941176471, 1.0 ]
 				}
@@ -819,7 +1124,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1248.5, 326.0, 316.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 683.25, 86.543478260869563, 217.75, 23.0 ],
+					"presentation_rect" : [ 1006.25, 90.043478260869563, 217.75, 23.0 ],
 					"text" : "3) Copy unzipped jit.ndi folder to:",
 					"textcolor" : [ 0.482352941176471, 0.482352941176471, 0.482352941176471, 1.0 ]
 				}
@@ -849,7 +1154,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 351.0, 659.25, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 872.0, 64.25, 118.0, 19.0 ],
+					"presentation_rect" : [ 1195.0, 67.75, 118.0, 19.0 ],
 					"rounded" : 3.0,
 					"text" : "Download jit.ndi",
 					"textoncolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
@@ -865,7 +1170,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1248.5, 298.75, 316.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 683.25, 62.25, 187.0, 23.0 ],
+					"presentation_rect" : [ 1006.25, 65.75, 187.0, 23.0 ],
 					"text" : "2) Download jit.ndi package:",
 					"textcolor" : [ 0.482352941176471, 0.482352941176471, 0.482352941176471, 1.0 ]
 				}
@@ -880,7 +1185,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1248.5, 274.0, 316.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 683.25, 37.25, 187.0, 23.0 ],
+					"presentation_rect" : [ 1006.25, 40.75, 187.0, 23.0 ],
 					"text" : "1) Install NDI Runtime Driver",
 					"textcolor" : [ 0.482352941176471, 0.482352941176471, 0.482352941176471, 1.0 ]
 				}
@@ -962,7 +1267,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 8.0, 582.0, 110.5, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 676.5, 4.0, 111.0, 29.0 ],
+					"presentation_rect" : [ 999.5, 7.5, 111.0, 29.0 ],
 					"text" : "Installation"
 				}
 
@@ -990,7 +1295,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 105.0, 573.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 872.0, 39.25, 118.0, 19.0 ],
+					"presentation_rect" : [ 1195.0, 42.75, 118.0, 19.0 ],
 					"rounded" : 3.0,
 					"text" : "Install/Update NDI",
 					"textoncolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ]
@@ -1400,7 +1705,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2337,7 +2642,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 1356.0, 764.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 245.0, -5.0, 8000.0, 8000.0 ],
+					"presentation_rect" : [ 246.0, -4.0, 8000.0, 8000.0 ],
 					"varname" : "Phone_Camera_Vertical",
 					"viewvisibility" : 1
 				}
@@ -2362,6 +2667,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-44", 0 ],
 					"source" : [ "obj-100", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-105", 0 ],
+					"source" : [ "obj-102", 0 ]
 				}
 
 			}
@@ -2392,6 +2704,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-107", 0 ],
+					"source" : [ "obj-109", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-108", 0 ],
+					"source" : [ "obj-109", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"destination" : [ "obj-21", 1 ],
 					"source" : [ "obj-11", 1 ]
@@ -2402,6 +2728,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-27", 0 ],
 					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-116", 0 ],
+					"source" : [ "obj-112", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-112", 0 ],
+					"source" : [ "obj-113", 0 ]
 				}
 
 			}
@@ -2710,6 +3050,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-98", 0 ],
+					"source" : [ "obj-544", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-95", 0 ],
+					"source" : [ "obj-545", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-54", 0 ],
 					"source" : [ "obj-55", 0 ]
 				}
@@ -2913,6 +3267,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-101", 0 ],
+					"source" : [ "obj-93", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-944", 0 ],
 					"source" : [ "obj-943", 0 ]
 				}
@@ -2932,6 +3293,27 @@
 					"destination" : [ "obj-946", 0 ],
 					"order" : 1,
 					"source" : [ "obj-944", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-545", 0 ],
+					"source" : [ "obj-96", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-544", 0 ],
+					"source" : [ "obj-97", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-93", 0 ],
+					"source" : [ "obj-99", 0 ]
 				}
 
 			}
@@ -2986,9 +3368,30 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "MySQL_User.maxpat",
+				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"patcherrelativepath" : "../../Taskbar/Maxpat",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Patient Hub Search.maxpat",
+				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Patient Hub",
+				"patcherrelativepath" : "../../Patient Hub",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Phone_Camera_Vertical.maxpat",
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/SLE Camera/Maxpat",
 				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Python.maxpat",
+				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"patcherrelativepath" : "../../Taskbar/Maxpat",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3003,6 +3406,13 @@
 				"name" : "Screen_Rotation_Icon.png",
 				"bootpath" : "C:/ProgramData/Chuck/main/Modules/SLE Camera/Icon Images",
 				"patcherrelativepath" : "../Icon Images",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Search Icon Light.png",
+				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Icons",
+				"patcherrelativepath" : "../../Taskbar/Icons",
 				"type" : "PNG",
 				"implicit" : 1
 			}
