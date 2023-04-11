@@ -208,18 +208,6 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-12",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 188.0, 7.0, 454.0, 22.0 ],
-									"text" : "[C:/ProgramData/Chuck/Users/QR_Code_2.png] [C:/Users/corym/Desktop/156.png]"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-4",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -272,14 +260,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-21", 0 ],
 									"source" : [ "obj-11", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-21", 0 ],
-									"midpoints" : [ 197.5, 30.0, 26.5, 30.0 ],
-									"source" : [ "obj-12", 0 ]
 								}
 
 							}
