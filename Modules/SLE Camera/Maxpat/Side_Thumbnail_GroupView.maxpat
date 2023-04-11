@@ -115,8 +115,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 700.0, 307.291674017906189, 105.0, 22.0 ],
-					"text" : "r Fav_GROUP_IN"
+					"patching_rect" : [ 700.0, 307.291674017906189, 102.0, 22.0 ],
+					"text" : "r DB_GROUP_IN"
 				}
 
 			}
