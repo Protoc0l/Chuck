@@ -488,7 +488,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1862.0, 314.5, 78.5, 22.0 ],
+					"patching_rect" : [ 1862.0, 318.0, 78.5, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1121,12 +1121,12 @@
 , 			{
 				"box" : 				{
 					"fontsize" : 20.0,
-					"hint" : "XXXXXXXXXXXXXXXXXXX",
+					"hint" : "",
 					"id" : "obj-108",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1862.0, 338.5, 210.0, 29.0 ],
+					"patching_rect" : [ 1862.0, 346.75, 210.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 5.0, 31.75, 238.0, 29.0 ],
 					"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
@@ -1152,7 +1152,7 @@
 					"outlettype" : [ "int", "", "" ],
 					"patching_rect" : [ 1593.0, 197.5, 288.0, 114.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -1.0, 64.75, 245.0, 38.25 ],
+					"presentation_rect" : [ -1.0, 64.75, 730.0, 591.25 ],
 					"varname" : "SLE_Px_Search",
 					"viewvisibility" : 1
 				}
@@ -1164,8 +1164,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1104.0, 506.291674000000057, 106.0, 22.0 ],
-					"text" : "s Px_SEND/SAVE"
+					"patching_rect" : [ 1104.0, 506.291674000000057, 103.0, 22.0 ],
+					"text" : "s Px_SENDSAVE"
 				}
 
 			}
