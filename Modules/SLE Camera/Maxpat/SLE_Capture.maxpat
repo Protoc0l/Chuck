@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-126",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 932.0, 84.0, 150.0, 48.0 ],
+					"text" : "1 = single tap take photo\n2 = switch L & R markings\n0 = reload camera"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-118",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -1369,18 +1381,6 @@
 					"text" : "Select ALL",
 					"textcolor" : [ 0.0, 0.0, 0.0, 0.76078431372549 ],
 					"textjustification" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-79",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 924.5, 82.0, 150.0, 48.0 ],
-					"text" : "1 = single tap take photo\n2 = double tap take video\n0 = switch L & R markings"
 				}
 
 			}
