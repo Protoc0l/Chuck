@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 195.0, 92.0, 1518.0, 874.0 ],
+		"rect" : [ 34.0, 85.0, 1852.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -185,6 +185,60 @@
 						"title" : "Chuck: SLE Camera",
 						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+									"bgoncolor" : [ 0.376471, 0.384314, 0.4, 0.0 ],
+									"fontsize" : 8.0,
+									"id" : "obj-78",
+									"maxclass" : "textbutton",
+									"mode" : 1,
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 845.0, 10.0, 43.5, 41.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 4.0, 2.0, 29.5, 26.0 ],
+									"text" : "",
+									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"texton" : "",
+									"textoncolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"textovercolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"autofit" : 1,
+									"id" : "obj-42",
+									"maxclass" : "fpic",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "jit_matrix" ],
+									"patching_rect" : [ 825.0, 25.5, 49.0, 45.0 ],
+									"pic" : "Expand_Icon.png",
+									"presentation" : 1,
+									"presentation_rect" : [ 4.0, 2.0, 35.0, 30.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"angle" : 270.0,
+									"bgcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
+									"id" : "obj-79",
+									"maxclass" : "panel",
+									"mode" : 0,
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 785.5, 2.368419170379639, 50.0, 36.631580829620361 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 4.0, 2.0, 35.0, 30.0 ],
+									"proportion" : 0.5
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-96",
 									"linecount" : 4,
@@ -632,44 +686,6 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
-									"bgoncolor" : [ 0.376471, 0.384314, 0.4, 0.0 ],
-									"fontsize" : 8.0,
-									"id" : "obj-78",
-									"maxclass" : "textbutton",
-									"mode" : 1,
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "int" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 845.0, 10.0, 43.5, 41.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 944.25, 2.0, 43.5, 41.0 ],
-									"text" : "",
-									"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-									"texton" : "",
-									"textoncolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-									"textovercolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"autofit" : 1,
-									"id" : "obj-42",
-									"maxclass" : "fpic",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "jit_matrix" ],
-									"patching_rect" : [ 825.0, 25.5, 49.0, 45.0 ],
-									"pic" : "Expand_Icon.png",
-									"presentation" : 1,
-									"presentation_rect" : [ 944.25, 2.0, 49.0, 45.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,
@@ -685,7 +701,7 @@
 									"offset" : [ 0.0, 0.0 ],
 									"patching_rect" : [ 377.0, 98.25, 56.0, 27.5 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 565.0, 80.5, 56.0, 25.5 ],
+									"presentation_rect" : [ 184.0, 4.5, 56.0, 25.5 ],
 									"viewvisibility" : 1
 								}
 
