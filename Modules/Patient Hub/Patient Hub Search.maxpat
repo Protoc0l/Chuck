@@ -4566,8 +4566,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 343.0, 935.0, 116.0, 22.0 ],
-					"text" : "sprintf set \\\"%s %s\\\""
+					"patching_rect" : [ 343.0, 935.0, 96.0, 22.0 ],
+					"text" : "sprintf \\\"%s %s\\\""
 				}
 
 			}
@@ -9560,14 +9560,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"color" : [ 1.0, 0.337254901960784, 0.619607843137255, 1.0 ],
-					"destination" : [ "obj-69", 0 ],
-					"source" : [ "obj-14", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"color" : [ 1.0, 0.725490196078431, 0.0, 1.0 ],
 					"destination" : [ "obj-142", 0 ],
 					"source" : [ "obj-141", 0 ]
@@ -9608,6 +9600,14 @@
 					"color" : [ 1.0, 0.337254901960784, 0.619607843137255, 1.0 ],
 					"destination" : [ "obj-69", 0 ],
 					"source" : [ "obj-16", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"color" : [ 1.0, 0.337254901960784, 0.619607843137255, 1.0 ],
+					"destination" : [ "obj-69", 0 ],
+					"source" : [ "obj-16", 0 ]
 				}
 
 			}
