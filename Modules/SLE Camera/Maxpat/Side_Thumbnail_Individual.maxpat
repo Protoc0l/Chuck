@@ -41,6 +41,56 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"handoff" : "",
+					"id" : "obj-92",
+					"maxclass" : "ubutton",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "bang", "bang", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 521.0, 532.5, 126.0, 65.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 187.5, 5.0, 37.25, 50.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"autofit" : 1,
+					"forceaspect" : 1,
+					"id" : "obj-93",
+					"maxclass" : "fpic",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "jit_matrix" ],
+					"patching_rect" : [ 647.5, 527.5, 75.0, 75.0 ],
+					"pic" : "clipboard_icon.png",
+					"presentation" : 1,
+					"presentation_rect" : [ 178.5, 5.0, 50.0, 50.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 0.72156862745098, 0.72156862745098, 0.72156862745098, 0.12 ],
+					"border" : 2,
+					"bordercolor" : [ 0.0, 0.0, 0.0, 0.76 ],
+					"id" : "obj-90",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 507.5, 515.5, 267.0, 242.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 187.5, 5.0, 37.0, 50.0 ],
+					"proportion" : 0.5,
+					"rounded" : 2
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"handoff" : "",
 					"id" : "obj-79",
 					"maxclass" : "ubutton",
 					"numinlets" : 1,
@@ -80,8 +130,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 21.0, 396.5, 219.0, 336.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 168.5, 68.5, 52.125, 66.0 ],
 					"proportion" : 0.5,
 					"rounded" : 2
 				}
@@ -724,37 +772,6 @@
 					"presentation_rect" : [ 110.0, 10.0, 76.0, 20.0 ],
 					"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
 					"textjustification" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"handoff" : "",
-					"id" : "obj-92",
-					"maxclass" : "ubutton",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "bang", "bang", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 521.0, 532.5, 126.0, 65.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 187.5, 5.0, 37.25, 50.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"autofit" : 1,
-					"forceaspect" : 1,
-					"id" : "obj-93",
-					"maxclass" : "fpic",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 647.5, 527.5, 75.0, 75.0 ],
-					"pic" : "clipboard_icon.png",
-					"presentation" : 1,
-					"presentation_rect" : [ 178.5, 5.0, 50.0, 50.0 ]
 				}
 
 			}
@@ -3063,8 +3080,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 248.5, 520.5, 235.0, 224.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 109.0, 8.5, 77.25, 34.0 ],
 					"proportion" : 0.5,
 					"rounded" : 2
 				}
