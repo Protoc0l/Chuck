@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 42.0, 85.0, 1852.0, 929.0 ],
+		"rect" : [ -1878.0, 85.0, 1852.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,39 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-60",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 470.499999999999943, 388.0, 107.0, 22.0 ],
+					"text" : "s SLE_CAM_PIC2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-28",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 113.0, 639.0, 107.0, 22.0 ],
+					"text" : "s SLE_CAM_PIC1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-56",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 116.25, 531.0, 109.0, 22.0 ],
+					"text" : "s SLE_CAM_DICT"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-55",
 					"maxclass" : "newobj",
@@ -1975,7 +2008,7 @@
 					"offset" : [ 0.0, -146.0 ],
 					"patching_rect" : [ 1497.0, 761.75, 159.75, 134.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 167.543478260869563, 244.0, 764.0 ],
+					"presentation_rect" : [ 0.0, 170.0, 244.0, 745.0 ],
 					"varname" : "SideBar1",
 					"viewvisibility" : 1
 				}
@@ -2311,66 +2344,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-80",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 15.5, 754.25, 122.0, 22.0 ],
-					"text" : "r SLE_Capture_Save"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-71",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 15.5, 650.25, 58.0, 22.0 ],
-					"text" : "loadbang"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-65",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 15.5, 676.0, 279.0, 22.0 ],
-					"text" : "read c:/ProgramData/Chuck/Settings/SLE_Capture"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-38",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 57.25, 704.0, 29.5, 22.0 ],
-					"text" : "t b l"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-32",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 57.25, 730.25, 281.0, 22.0 ],
-					"text" : "write c:/ProgramData/Chuck/Settings/SLE_Capture"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -2414,96 +2387,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 564.593812000000071, 79.0, 114.0, 22.0 ],
 					"text" : "r camera::last_used"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-106",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 47.0, 1021.0, 131.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-104",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 159.0, 992.0, 114.0, 22.0 ],
-					"text" : "r camera::last_used"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-103",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 117.25, 888.0, 118.0, 22.0 ],
-					"text" : "sprintf \\; \\\"%s\\\" \\\"%s\\\""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-100",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 80.5, 802.0, 127.0, 22.0 ],
-					"text" : "get camera::last_used"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-94",
-					"linecount" : 2,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 21.0, 939.25, 666.0, 36.0 ],
-					"text" : ";\r\nmain_screen::location \"window size -1886 85 -34 1014\""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-46",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 57.25, 828.0, 227.0, 22.0 ],
-					"text" : "sprintf setparse camera last_used: \\\"%s\\\""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-44",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 4,
-					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 57.25, 861.25, 199.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"embed" : 0,
-						"parameter_enable" : 0,
-						"parameter_mappable" : 0
-					}
-,
-					"text" : "dict SLE_Capture_Save"
 				}
 
 			}
@@ -3007,18 +2890,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-28",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 80.5, 778.0, 61.0, 22.0 ],
-					"text" : "r SLEC_0"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-27",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -3036,7 +2907,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "int", "bang" ],
 					"patching_rect" : [ 581.572938000000022, 413.0, 42.0, 22.0 ],
-					"text" : "t b 3 b"
+					"text" : "t b 6 b"
 				}
 
 			}
@@ -4280,40 +4151,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-44", 0 ],
-					"source" : [ "obj-100", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-53", 0 ],
 					"source" : [ "obj-102", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-94", 1 ],
-					"midpoints" : [ 126.75, 925.0, 677.5, 925.0 ],
-					"order" : 0,
-					"source" : [ "obj-103", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-94", 0 ],
-					"midpoints" : [ 126.75, 925.0, 30.5, 925.0 ],
-					"order" : 1,
-					"source" : [ "obj-103", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-106", 1 ],
-					"source" : [ "obj-104", 0 ]
 				}
 
 			}
@@ -4467,17 +4306,16 @@
 , 			{
 				"patchline" : 				{
 					"color" : [ 0.756862745098039, 0.329411764705882, 0.843137254901961, 1.0 ],
-					"destination" : [ "obj-44", 0 ],
-					"order" : 0,
+					"destination" : [ "obj-6", 0 ],
+					"order" : 1,
 					"source" : [ "obj-125", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"color" : [ 0.756862745098039, 0.329411764705882, 0.843137254901961, 1.0 ],
-					"destination" : [ "obj-6", 0 ],
-					"order" : 1,
+					"destination" : [ "obj-60", 0 ],
+					"order" : 0,
 					"source" : [ "obj-125", 0 ]
 				}
 
@@ -4566,7 +4404,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-38", 0 ],
+					"destination" : [ "obj-28", 0 ],
 					"order" : 1,
 					"source" : [ "obj-24", 2 ]
 				}
@@ -4599,13 +4437,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-100", 0 ],
-					"source" : [ "obj-28", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-3", 0 ]
 				}
@@ -4628,13 +4459,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-44", 0 ],
-					"source" : [ "obj-32", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
 					"source" : [ "obj-34", 0 ]
 				}
@@ -4651,20 +4475,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-36", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-32", 0 ],
-					"source" : [ "obj-38", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-46", 0 ],
-					"source" : [ "obj-38", 1 ]
 				}
 
 			}
@@ -4714,20 +4524,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-55", 0 ],
 					"source" : [ "obj-438", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-103", 0 ],
-					"source" : [ "obj-44", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-44", 0 ],
-					"source" : [ "obj-46", 0 ]
 				}
 
 			}
@@ -4828,23 +4624,9 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-44", 0 ],
-					"source" : [ "obj-65", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-7", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-65", 0 ],
-					"source" : [ "obj-71", 0 ]
 				}
 
 			}
@@ -4903,13 +4685,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"source" : [ "obj-8", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-44", 0 ],
-					"source" : [ "obj-80", 0 ]
 				}
 
 			}
@@ -5040,140 +4815,140 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "CCW_Rotation.png",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Image Editor",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Image Editor",
 				"patcherrelativepath" : "../../Image Editor",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CW_Rotation.png",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Image Editor",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Image Editor",
 				"patcherrelativepath" : "../../Image Editor",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Flip_image_vertically_icon.png",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/SLE Camera/Icon Images",
-				"patcherrelativepath" : "../Icon Images",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Screenshot",
+				"patcherrelativepath" : "../../Screenshot",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Image Editor.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Image Editor",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Image Editor",
 				"patcherrelativepath" : "../../Image Editor",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Loading_Thumbnails.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/SLE Camera/Maxpat",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/SLE Camera/Maxpat",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MySQL_User.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
 				"patcherrelativepath" : "../../Taskbar/Maxpat",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Patient Hub Application Selection.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Patient Hub",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Patient Hub",
 				"patcherrelativepath" : "../../Patient Hub",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Patient Hub Button.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Patient Hub",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Patient Hub",
 				"patcherrelativepath" : "../../Patient Hub",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Patient Hub Search.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Patient Hub",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Patient Hub",
 				"patcherrelativepath" : "../../Patient Hub",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Patient Hub.png",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Patient Hub",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Patient Hub",
 				"patcherrelativepath" : "../../Patient Hub",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Phone_Camera_Vertical.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/SLE Camera/Maxpat",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/SLE Camera/Maxpat",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Python.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
 				"patcherrelativepath" : "../../Taskbar/Maxpat",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Refresh_Icon.png",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/SLE Camera/Icon Images",
-				"patcherrelativepath" : "../Icon Images",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Screenshot",
+				"patcherrelativepath" : "../../Screenshot",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Screen_Rotation_Icon.png",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/SLE Camera/Icon Images",
-				"patcherrelativepath" : "../Icon Images",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Screenshot",
+				"patcherrelativepath" : "../../Screenshot",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Search Icon Light.png",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Icons",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Icons",
 				"patcherrelativepath" : "../../Taskbar/Icons",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Select Box Coords.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
 				"patcherrelativepath" : "../../Taskbar/Maxpat",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Side_Thumbnail_GroupView.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/SLE Camera/Maxpat",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/SLE Camera/Maxpat",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bpatcher_jit_pwindow.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Image Editor",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Image Editor",
 				"patcherrelativepath" : "../../Image Editor",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "camera_refresh_icon.png",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/SLE Camera/Icon Images",
-				"patcherrelativepath" : "../Icon Images",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Screenshot",
+				"patcherrelativepath" : "../../Screenshot",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "clear all icon.png",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/SLE Camera/Icon Images",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/SLE Camera/Icon Images",
 				"patcherrelativepath" : "../Icon Images",
 				"type" : "PNG",
 				"implicit" : 1
@@ -5184,8 +4959,8 @@
 			}
 , 			{
 				"name" : "recording_icon.png",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/SLE Camera/Icon Images",
-				"patcherrelativepath" : "../Icon Images",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Screenshot",
+				"patcherrelativepath" : "../../Screenshot",
 				"type" : "PNG",
 				"implicit" : 1
 			}
