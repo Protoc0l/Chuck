@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 85.0, 1852.0, 929.0 ],
+		"rect" : [ 42.0, 85.0, 1503.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -2949,7 +2949,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1179.0, 481.0, 640.0, 602.0 ],
+						"rect" : [ -1156.0, 199.0, 640.0, 602.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3271,7 +3271,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 149.0, 165.0, 353.0, 22.0 ],
+									"patching_rect" : [ 64.0, 165.0, 353.0, 22.0 ],
 									"text" : "script sendbox NDI_window presentation_rect 0. 26. 478. 850."
 								}
 
@@ -3339,25 +3339,9 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-12", 0 ],
-									"order" : 3,
-									"source" : [ "obj-2", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-13", 0 ],
 									"order" : 2,
 									"source" : [ "obj-2", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-15", 0 ],
-									"order" : 4,
-									"source" : [ "obj-2", 0 ]
 								}
 
 							}
@@ -3380,7 +3364,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-5", 0 ],
-									"order" : 4,
+									"order" : 3,
 									"source" : [ "obj-2", 1 ]
 								}
 
@@ -11467,7 +11451,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 35.0, 205.0, 280.666666666666629, 263.0 ],
+					"patching_rect" : [ 35.0, 204.0, 280.666666666666629, 263.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1.0, 173.0, 1475.0, 1475.0 ],
 					"srcrect" : [ 0, 0, 1940, 1080 ],
@@ -12432,29 +12416,29 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "Flip_image_vertically_icon.png",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/SLE Camera/Icon Images",
-				"patcherrelativepath" : "../Icon Images",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Screenshot",
+				"patcherrelativepath" : "../../Screenshot",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Screen_Rotation_Icon.png",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/SLE Camera/Icon Images",
-				"patcherrelativepath" : "../Icon Images",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Screenshot",
+				"patcherrelativepath" : "../../Screenshot",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "camera_refresh_icon.png",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/SLE Camera/Icon Images",
-				"patcherrelativepath" : "../Icon Images",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Screenshot",
+				"patcherrelativepath" : "../../Screenshot",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "recording_icon.png",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/SLE Camera/Icon Images",
-				"patcherrelativepath" : "../Icon Images",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Screenshot",
+				"patcherrelativepath" : "../../Screenshot",
 				"type" : "PNG",
 				"implicit" : 1
 			}

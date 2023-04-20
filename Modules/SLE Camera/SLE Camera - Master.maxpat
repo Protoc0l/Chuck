@@ -831,7 +831,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ -1259.0, 159.0, 1040.0, 703.0 ],
+										"rect" : [ -1397.0, 91.0, 1123.0, 914.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -878,7 +878,7 @@
 													"numinlets" : 0,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 621.5, 588.0, 105.0, 22.0 ],
+													"patching_rect" : [ 237.5, 683.0, 105.0, 22.0 ],
 													"text" : "r SLE_CAM_PIC2"
 												}
 
@@ -890,7 +890,7 @@
 													"numinlets" : 0,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 306.427048000000013, 630.0, 105.0, 22.0 ],
+													"patching_rect" : [ 397.927048000000013, 610.0, 105.0, 22.0 ],
 													"text" : "r SLE_CAM_PIC1"
 												}
 
@@ -902,7 +902,7 @@
 													"numinlets" : 0,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 264.677048000000013, 704.25, 122.0, 22.0 ],
+													"patching_rect" : [ 261.0, 712.0, 122.0, 22.0 ],
 													"text" : "r SLE_Capture_Save"
 												}
 
@@ -914,7 +914,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "bang" ],
-													"patching_rect" : [ 169.5, 572.25, 58.0, 22.0 ],
+													"patching_rect" : [ 276.0, 549.25, 58.0, 22.0 ],
 													"text" : "loadbang"
 												}
 
@@ -926,7 +926,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 169.5, 598.0, 279.0, 22.0 ],
+													"patching_rect" : [ 276.0, 575.0, 279.0, 22.0 ],
 													"text" : "read c:/ProgramData/Chuck/Settings/SLE_Capture"
 												}
 
@@ -938,7 +938,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 2,
 													"outlettype" : [ "bang", "" ],
-													"patching_rect" : [ 306.427048000000013, 654.0, 29.5, 22.0 ],
+													"patching_rect" : [ 397.927048000000013, 634.0, 29.5, 22.0 ],
 													"text" : "t b l"
 												}
 
@@ -950,31 +950,8 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 306.427048000000013, 680.25, 281.0, 22.0 ],
+													"patching_rect" : [ 397.927048000000013, 660.25, 281.0, 22.0 ],
 													"text" : "write c:/ProgramData/Chuck/Settings/SLE_Capture"
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-106",
-													"maxclass" : "message",
-													"numinlets" : 2,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
-													"patching_rect" : [ 296.177048000000013, 971.0, 131.0, 22.0 ]
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-18",
-													"maxclass" : "newobj",
-													"numinlets" : 0,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
-													"patching_rect" : [ 408.177048000000013, 942.0, 114.0, 22.0 ],
-													"text" : "r camera::last_used"
 												}
 
 											}
@@ -985,7 +962,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 366.427048000000013, 838.0, 118.0, 22.0 ],
+													"patching_rect" : [ 457.927048000000013, 772.0, 118.0, 22.0 ],
 													"text" : "sprintf \\; \\\"%s\\\" \\\"%s\\\""
 												}
 
@@ -997,7 +974,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 329.677048000000013, 752.0, 127.0, 22.0 ],
+													"patching_rect" : [ 644.0, 711.0, 127.0, 22.0 ],
 													"text" : "get camera::last_used"
 												}
 
@@ -1010,7 +987,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 270.177048000000013, 889.25, 666.0, 36.0 ],
+													"patching_rect" : [ 361.677048000000013, 823.25, 666.0, 36.0 ],
 													"text" : ";\r\nmain_screen::location \"window size 308 85 1571 1046\""
 												}
 
@@ -1022,7 +999,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 306.427048000000013, 778.0, 227.0, 22.0 ],
+													"patching_rect" : [ 397.927048000000013, 712.0, 227.0, 22.0 ],
 													"text" : "sprintf setparse camera last_used: \\\"%s\\\""
 												}
 
@@ -1034,7 +1011,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 4,
 													"outlettype" : [ "dictionary", "", "", "" ],
-													"patching_rect" : [ 306.427048000000013, 811.25, 199.0, 22.0 ],
+													"patching_rect" : [ 397.927048000000013, 745.25, 199.0, 22.0 ],
 													"saved_object_attributes" : 													{
 														"embed" : 0,
 														"parameter_enable" : 0,
@@ -1052,8 +1029,8 @@
 													"numinlets" : 0,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 329.677048000000013, 728.0, 52.0, 22.0 ],
-													"text" : "r SLE_6"
+													"patching_rect" : [ 644.0, 687.0, 119.0, 22.0 ],
+													"text" : "r SLE_Loadcamera2"
 												}
 
 											}
@@ -1657,13 +1634,6 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-106", 1 ],
-													"source" : [ "obj-18", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
 													"destination" : [ "obj-1", 0 ],
 													"source" : [ "obj-2", 0 ]
 												}
@@ -1821,7 +1791,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-94", 1 ],
-													"midpoints" : [ 375.927048000000013, 875.0, 926.677048000000013, 875.0 ],
+													"midpoints" : [ 467.427048000000013, 809.0, 1018.177048000000013, 809.0 ],
 													"order" : 0,
 													"source" : [ "obj-39", 0 ]
 												}
@@ -1830,7 +1800,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-94", 0 ],
-													"midpoints" : [ 375.927048000000013, 875.0, 279.677048000000013, 875.0 ],
+													"midpoints" : [ 467.427048000000013, 809.0, 371.177048000000013, 809.0 ],
 													"order" : 1,
 													"source" : [ "obj-39", 0 ]
 												}
@@ -1846,6 +1816,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-58", 0 ],
+													"midpoints" : [ 653.5, 738.0, 649.5, 738.0, 649.5, 738.0, 650.5, 738.0, 650.5, 738.0, 407.427048000000013, 738.0 ],
 													"source" : [ "obj-40", 0 ]
 												}
 
@@ -1888,6 +1859,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-58", 0 ],
+													"midpoints" : [ 247.0, 741.0, 394.5, 741.0, 394.5, 741.0, 407.427048000000013, 741.0 ],
 													"source" : [ "obj-57", 0 ]
 												}
 
@@ -1937,6 +1909,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-58", 0 ],
+													"midpoints" : [ 270.5, 741.0, 394.5, 741.0, 394.5, 741.0, 407.427048000000013, 741.0 ],
 													"source" : [ "obj-9", 0 ]
 												}
 
@@ -4965,20 +4938,13 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "bang" ],
-													"patching_rect" : [ 134.0, 83.0, 58.0, 22.0 ],
+													"patching_rect" : [ 134.0, 62.0, 58.0, 22.0 ],
 													"text" : "loadbang"
 												}
 
 											}
  ],
 										"lines" : [ 											{
-												"patchline" : 												{
-													"destination" : [ "obj-2", 0 ],
-													"source" : [ "obj-1", 0 ]
-												}
-
-											}
-, 											{
 												"patchline" : 												{
 													"destination" : [ "obj-3", 0 ],
 													"source" : [ "obj-2", 0 ]
