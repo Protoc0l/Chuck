@@ -40,6 +40,48 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-57",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1249.5, 293.0, 211.0, 36.0 ],
+					"text" : "c:/ProgramData/Chuck/main/Modules/ImageViewer/ImageViewer.maxpat"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-44",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1249.5, 331.0, 241.0, 36.0 ],
+					"text" : ";\r\nmax launchbrowser $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-32",
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1249.5, 270.0, 100.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1323.0, 52.875, 100.0, 63.25 ],
+					"text" : "Image Viewer",
+					"textoncolor" : [ 0.76078431372549, 0.76078431372549, 0.76078431372549, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-60",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -2095,7 +2137,7 @@
 					"outlettype" : [ "int", "", "", "bang" ],
 					"patching_rect" : [ 1593.0, 198.5, 288.0, 114.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -1.0, 64.75, 730.0, 591.25 ],
+					"presentation_rect" : [ -1.0, 64.75, 701.0, 591.25 ],
 					"varname" : "SLE_Px_Search",
 					"viewvisibility" : 1
 				}
@@ -4459,6 +4501,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-57", 0 ],
+					"source" : [ "obj-32", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
 					"source" : [ "obj-34", 0 ]
 				}
@@ -4605,6 +4654,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-110", 0 ],
 					"source" : [ "obj-55", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-44", 0 ],
+					"source" : [ "obj-57", 0 ]
 				}
 
 			}
