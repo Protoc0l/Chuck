@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-51",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 276.929292929292842, 785.5, 51.0, 22.0 ],
+					"text" : "v Px_ID"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-49",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -495,6 +507,18 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-134",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1288.555555555555657, 933.5, 51.0, 22.0 ],
+									"text" : "v Px_ID"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-145",
 									"maxclass" : "newobj",
@@ -3901,7 +3925,16 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-134", 0 ],
+									"order" : 0,
+									"source" : [ "obj-23", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-24", 0 ],
+									"order" : 1,
 									"source" : [ "obj-23", 0 ]
 								}
 
@@ -4910,7 +4943,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "select", "set", "int" ],
 					"patching_rect" : [ 567.0, 64.0, 76.0, 22.0 ],
-					"text" : "t select set 1"
+					"text" : "t select set 0"
 				}
 
 			}
@@ -8970,8 +9003,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 342.0, 231.0, 89.0, 22.0 ],
-									"text" : "col 3 width 125"
+									"patching_rect" : [ 342.0, 231.0, 75.0, 22.0 ],
+									"text" : "col 3 width 0"
 								}
 
 							}
@@ -9636,6 +9669,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 16.0,
 					"hcellcolor" : [ 0.572549019607843, 0.572549019607843, 0.572549019607843, 0.47 ],
+					"hidden" : 1,
 					"hscroll" : 0,
 					"id" : "obj-50",
 					"maxclass" : "jit.cellblock",
@@ -9645,7 +9679,7 @@
 					"outmode" : 1,
 					"patching_rect" : [ 0.5, 441.0, 627.0, 70.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 38.0, 616.0, 317.0 ],
+					"presentation_rect" : [ 0.0, 34.0, 700.0, 72.0 ],
 					"rowdef" : [ [ 0, 0, 0, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ] ],
 					"rows" : 1,
 					"selmode" : 3,
@@ -9666,7 +9700,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 408.333333499999981, 547.0, 111.333333000000039, 40.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.0, 35.0, 611.0, 18.0 ],
+					"presentation_rect" : [ 0.0, 34.0, 700.0, 72.0 ],
 					"varname" : "PH_HINT"
 				}
 
@@ -9832,14 +9866,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"color" : [ 1.0, 0.337254901960784, 0.619607843137255, 1.0 ],
-					"destination" : [ "obj-69", 0 ],
-					"source" : [ "obj-16", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-16", 2 ]
 				}
@@ -9875,6 +9901,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
+					"order" : 1,
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-51", 0 ],
+					"order" : 0,
 					"source" : [ "obj-17", 0 ]
 				}
 
@@ -10487,21 +10522,21 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "MySQL_User.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
 				"patcherrelativepath" : "../Taskbar/Maxpat",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Python.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
 				"patcherrelativepath" : "../Taskbar/Maxpat",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Search Icon Light.png",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Icons",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Icons",
 				"patcherrelativepath" : "../Taskbar/Icons",
 				"type" : "PNG",
 				"implicit" : 1
