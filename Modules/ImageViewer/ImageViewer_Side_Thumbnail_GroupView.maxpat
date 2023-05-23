@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1878.0, 85.0, 1406.0, 929.0 ],
+		"rect" : [ -1944.0, 118.0, 1852.0, 929.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,41 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 893.0, 33.0, 150.0, 20.0 ],
+					"text" : "#1 - UniqueID (Date|Time)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1534.0, 525.291674017906189, 29.0, 22.0 ],
+					"text" : "t #1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 1534.0, 497.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-96",
 					"maxclass" : "newobj",
@@ -118,13 +153,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 425.0, 258.166667461395264, 120.999999999999943, 22.0 ],
+					"patching_rect" : [ 425.0, 258.166667461395264, 119.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"precision" : 6
 					}
 ,
-					"text" : "coll IMAGES_SLE"
+					"text" : "coll #1IMAGES_SLE"
 				}
 
 			}
@@ -135,8 +170,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 460.0, 313.0, 346.0, 22.0 ],
-					"text" : "sprintf script delete %iImageViewer_Side_Thumbnail_Individual"
+					"patching_rect" : [ 460.0, 313.0, 333.0, 22.0 ],
+					"text" : "sprintf script delete ImageViewer_Side_Thumbnail_Individual"
 				}
 
 			}
@@ -342,8 +377,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1316.0, 145.916682958602905, 158.0, 22.0 ],
-					"text" : "v IV_current_thumbnail_img"
+					"patching_rect" : [ 1316.0, 145.916682958602905, 171.0, 22.0 ],
+					"text" : "v #1IV_current_thumbnail_img"
 				}
 
 			}
@@ -366,8 +401,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1274.0, 239.312511622905731, 158.0, 22.0 ],
-					"text" : "v IV_current_thumbnail_img"
+					"patching_rect" : [ 1274.0, 239.312511622905731, 171.0, 22.0 ],
+					"text" : "v #1IV_current_thumbnail_img"
 				}
 
 			}
@@ -487,8 +522,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 75.833340167999268, 468.583348035812378, 221.0, 22.0 ],
-					"text" : "v IV_count_starting_SLE_pics_in_folder"
+					"patching_rect" : [ 75.833340167999268, 468.583348035812378, 235.0, 22.0 ],
+					"text" : "v #1IV_count_starting_SLE_pics_in_folder"
 				}
 
 			}
@@ -499,8 +534,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 262.0, 80.291674017906189, 221.0, 22.0 ],
-					"text" : "v IV_count_starting_SLE_pics_in_folder"
+					"patching_rect" : [ 262.0, 80.291674017906189, 235.0, 22.0 ],
+					"text" : "v #1IV_count_starting_SLE_pics_in_folder"
 				}
 
 			}
@@ -668,11 +703,11 @@
 				"box" : 				{
 					"id" : "obj-9",
 					"maxclass" : "newobj",
-					"numinlets" : 8,
+					"numinlets" : 9,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 324.0, 618.729177892208099, 1463.0, 22.0 ],
-					"text" : "sprintf %i script newobject bpatcher @name ImageViewer_Side_Thumbnail_Individual @varname %iImageViewer_Side_Thumbnail_Individual @presentation_rect 1. %i. 231. 146. @patching_rect 62.83334 43. 128. 128. @presentation 1 @args \\\"%s\\\" %i \\\"%s\\\" \\\"%s\\\" \\\"%s\\\""
+					"patching_rect" : [ 324.0, 618.729177892208099, 1499.0, 22.0 ],
+					"text" : "sprintf %i script newobject bpatcher @name ImageViewer_Side_Thumbnail_Individual @varname %iImageViewer_Side_Thumbnail_Individual @presentation_rect 1. %i. 231. 146. @patching_rect 62.83334 43. 128. 128. @presentation 1 @args \\\"%s\\\" %i \\\"%s\\\" \\\"%s\\\" \\\"%s\\\" \\\"%s\\\""
 				}
 
 			}
@@ -696,13 +731,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 262.0, 296.729177892208099, 120.999999999999943, 22.0 ],
+					"patching_rect" : [ 262.0, 296.729177892208099, 119.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"precision" : 6
 					}
 ,
-					"text" : "coll IMAGES_SLE"
+					"text" : "coll #1IMAGES_SLE"
 				}
 
 			}
@@ -775,7 +810,7 @@
 				"patchline" : 				{
 					"color" : [ 0.047058823529412, 0.913725490196078, 0.913725490196078, 1.0 ],
 					"destination" : [ "obj-9", 1 ],
-					"midpoints" : [ 485.75, 434.729177892208099, 539.785714285714221, 434.729177892208099 ],
+					"midpoints" : [ 485.75, 434.729177892208099, 518.5, 434.729177892208099 ],
 					"source" : [ "obj-10", 1 ]
 				}
 
@@ -892,6 +927,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-25", 0 ],
 					"midpoints" : [ 183.333340167999268, 611.291674017906189, 85.333340167999268, 611.291674017906189 ],
 					"source" : [ "obj-31", 0 ]
@@ -945,6 +987,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
 					"source" : [ "obj-37", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 8 ],
+					"midpoints" : [ 1543.5, 603.0, 1813.5, 603.0 ],
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}
@@ -1211,7 +1261,7 @@
 		"dependency_cache" : [ 			{
 				"name" : "Loading_Thumbnails.maxpat",
 				"bootpath" : "c:/ProgramData/Chuck/main/Modules/SLE Camera/Maxpat",
-				"patcherrelativepath" : ".",
+				"patcherrelativepath" : "../SLE Camera/Maxpat",
 				"type" : "JSON",
 				"implicit" : 1
 			}
