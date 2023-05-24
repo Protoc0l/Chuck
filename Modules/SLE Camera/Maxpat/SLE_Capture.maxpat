@@ -372,8 +372,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1118.75, 551.0, 105.0, 22.0 ],
-					"text" : "sprintf label \\\"%s\\\""
+					"patching_rect" : [ 1118.75, 551.0, 268.0, 22.0 ],
+					"text" : "sprintf label Save Images for \\\"%s\\\" in database?"
 				}
 
 			}
