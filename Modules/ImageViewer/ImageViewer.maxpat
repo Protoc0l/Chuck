@@ -40,17 +40,6 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-27",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 293.0, 179.0, 89.0, 22.0 ],
-					"text" : "print PH_ID_IV"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-25",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -427,13 +416,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-45",
-					"linecount" : 7,
+					"linecount" : 3,
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1560.666666666666742, 186.437489569187164, 211.0, 105.0 ],
-					"text" : "sprintf script newobject bpatcher @name \\\"%s.maxpat\\\" @varname \\\"%s\\\" @args \\\"%s\\\" @presentation_rect 123.25 35.5 245.576266 763. @presentation 1 @patching_position 561. 189.621804 128. 128."
+					"patching_rect" : [ 1560.666666666666742, 186.437489569187164, 479.0, 50.0 ],
+					"text" : "sprintf script newobject bpatcher @name \\\"%s.maxpat\\\" @varname \\\"%s\\\" @args \\\"%s\\\" @presentation_rect 123.25 35.5 245.576266 763. @presentation 1 @patching_position 561. 189.621804 128. 128. @enablevscroll 1"
 				}
 
 			}
@@ -5810,6 +5799,30 @@
 				}
 
 			}
+, 			{
+				"box" : 				{
+					"args" : [ "bang" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-64",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "ImageViewer_Main_Pic.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 968.0, 467.562509999999975, 128.0, 128.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 123.25, 35.5, 245.576266000000004, 763.0 ],
+					"varname" : "IV_Main_Pic",
+					"viewvisibility" : 1
+				}
+
+			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
@@ -5869,16 +5882,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-27", 0 ],
-					"order" : 0,
-					"source" : [ "obj-109", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-81", 1 ],
-					"order" : 1,
 					"source" : [ "obj-109", 0 ]
 				}
 
@@ -6274,8 +6278,24 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-64", 0 ],
+					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"destination" : [ "obj-108", 0 ],
+					"order" : 1,
+					"source" : [ "obj-36", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-35", 0 ],
+					"order" : 0,
 					"source" : [ "obj-36", 0 ]
 				}
 
@@ -6598,6 +6618,13 @@
 			}
  ],
 		"dependency_cache" : [ 			{
+				"name" : "ImageViewer_Main_Pic.maxpat",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/ImageViewer",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "MySQL_User.maxpat",
 				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
 				"patcherrelativepath" : "../Taskbar/Maxpat",
@@ -6622,6 +6649,13 @@
 				"name" : "Search Icon Light.png",
 				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Icons",
 				"patcherrelativepath" : "../Taskbar/Icons",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "image_icon.png",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/SLE Camera/Icon Images",
+				"patcherrelativepath" : "../SLE Camera/Icon Images",
 				"type" : "PNG",
 				"implicit" : 1
 			}
