@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1878.0, 274.0, 1852.0, 923.0 ],
+		"rect" : [ -1886.0, 128.0, 1852.0, 923.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,54 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-37",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 1270.5, 323.0, 29.5, 22.0 ],
+					"text" : "- 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-35",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 1230.5, 323.0, 29.5, 22.0 ],
+					"text" : "- 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-34",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1230.5, 347.0, 59.0, 22.0 ],
+					"text" : "pack i i"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-32",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "int" ],
+					"patching_rect" : [ 1230.5, 299.0, 59.0, 22.0 ],
+					"text" : "unpack i i"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-41",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -68,7 +116,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1165.0, 206.0, 29.5, 22.0 ],
+					"patching_rect" : [ 1165.0, 206.0, 219.5, 22.0 ],
 					"text" : "t l l"
 				}
 
@@ -80,7 +128,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1165.0, 346.0, 54.0, 22.0 ],
+					"patching_rect" : [ 1165.0, 323.0, 54.0, 22.0 ],
 					"text" : "deferlow"
 				}
 
@@ -90,10 +138,10 @@
 					"id" : "obj-3",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1165.0, 270.0, 19.0, 22.0 ],
-					"text" : "t l"
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 1165.0, 270.0, 84.5, 22.0 ],
+					"text" : "t l l"
 				}
 
 			}
@@ -187,7 +235,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 122.0, 154.0625, 103.0, 22.0 ],
+					"patching_rect" : [ 122.0, 162.0625, 103.0, 22.0 ],
 					"text" : "s #1-IV_RELOAD"
 				}
 
@@ -248,7 +296,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 1165.0, 149.0, 36.0, 22.0 ],
-					"text" : "- 120"
+					"text" : "- 370"
 				}
 
 			}
@@ -283,7 +331,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1165.0, 391.0, 392.0, 22.0 ],
+					"patching_rect" : [ 1165.0, 380.0, 392.0, 22.0 ],
 					"text" : "presentation_rect 0 0 $1 $2"
 				}
 
@@ -362,13 +410,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-7",
-					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 346.0, 46.0, 208.0, 50.0 ],
-					"text" : "\"c:/ProgramData/Chuck/main/Modules/SLE Camera/Icon Images/image_icon.png\""
+					"patching_rect" : [ 346.0, 54.0, 208.0, 22.0 ]
 				}
 
 			}
@@ -419,7 +465,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
 					"patching_rect" : [ 346.0, 130.0625, 788.0, 788.0 ],
-					"pic" : "image_icon.png",
+					"pic" : "",
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 835.0, 835.0 ]
 				}
@@ -567,6 +613,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-32", 0 ],
+					"source" : [ "obj-3", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
 					"source" : [ "obj-30", 0 ]
 				}
@@ -581,6 +634,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-35", 0 ],
+					"source" : [ "obj-32", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"source" : [ "obj-32", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-33", 0 ]
 				}
@@ -589,15 +656,38 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-36", 1 ],
-					"midpoints" : [ 1185.0, 231.0, 1369.0, 231.0 ],
+					"midpoints" : [ 1375.0, 231.0, 1369.0, 231.0 ],
 					"source" : [ "obj-33", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-27", 0 ],
+					"midpoints" : [ 1240.0, 371.0, 1174.5, 371.0 ],
+					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-34", 0 ],
+					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
+					"midpoints" : [ 1216.0, 261.0, 1174.5, 261.0 ],
 					"source" : [ "obj-36", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-34", 1 ],
+					"source" : [ "obj-37", 0 ]
 				}
 
 			}
@@ -667,14 +757,7 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "image_icon.png",
-				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Screenshot",
-				"patcherrelativepath" : "../Screenshot",
-				"type" : "PNG",
-				"implicit" : 1
-			}
- ],
+		"dependency_cache" : [  ],
 		"autosave" : 0
 	}
 

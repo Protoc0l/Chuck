@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1912.0, 51.0, 1920.0, 997.0 ],
+		"rect" : [ -1862.0, 125.0, 1920.0, 997.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -130,7 +130,7 @@
 						"gridsnaponopen" : 1,
 						"objectsnaponopen" : 1,
 						"statusbarvisible" : 2,
-						"toolbarvisible" : 1,
+						"toolbarvisible" : 0,
 						"lefttoolbarpinned" : 0,
 						"toptoolbarpinned" : 0,
 						"righttoolbarpinned" : 0,
@@ -138,8 +138,8 @@
 						"toolbars_unpinned_last_save" : 0,
 						"tallnewobj" : 0,
 						"boxanimatetime" : 200,
-						"enablehscroll" : 1,
-						"enablevscroll" : 1,
+						"enablehscroll" : 0,
+						"enablevscroll" : 0,
 						"devicewidth" : 1263.0,
 						"description" : "",
 						"digest" : "",
@@ -1954,27 +1954,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "ImageViewer_Main_Pic.maxpat",
-				"bootpath" : "c:/ProgramData/Chuck/main/Modules/ImageViewer",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ImageViewer_Side_Thumbnail_GroupView.maxpat",
-				"bootpath" : "c:/ProgramData/Chuck/main/Modules/ImageViewer",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Loading_Thumbnails.maxpat",
-				"bootpath" : "c:/ProgramData/Chuck/main/Modules/SLE Camera/Maxpat",
-				"patcherrelativepath" : "../SLE Camera/Maxpat",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "MySQL_User.maxpat",
 				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
 				"patcherrelativepath" : "../Taskbar/Maxpat",
@@ -1999,13 +1978,6 @@
 				"name" : "Search Icon Light.png",
 				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Icons",
 				"patcherrelativepath" : "../Taskbar/Icons",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "image_icon.png",
-				"bootpath" : "c:/ProgramData/Chuck/main/Modules/SLE Camera/Icon Images",
-				"patcherrelativepath" : "../SLE Camera/Icon Images",
 				"type" : "PNG",
 				"implicit" : 1
 			}
