@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1862.0, 125.0, 1920.0, 997.0 ],
+		"rect" : [ 8.0, 51.0, 1920.0, 991.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -148,7 +148,64 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"title" : "Chuck: Image Viewer",
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-17",
+									"linecount" : 2,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 469.0, 412.0, 597.0, 36.0 ],
+									"text" : ";\r\nmax launchbrowser c:/ProgramData/Chuck/main/Modules/ImageViewer/ImageViewer_Multiple_Screen.maxpat"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"annotation" : "Additional Window (to compare images from multiple years)",
+									"fontsize" : 30.0,
+									"hint" : "Additional Window (to compare images from multiple years)",
+									"id" : "obj-15",
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 469.0, 367.5, 50.0, 41.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 128.0, 39.0, 50.0, 41.0 ],
+									"text" : "+",
+									"textoncolor" : [ 0.776470588235294, 0.776470588235294, 0.776470588235294, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-14",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 840.0, 237.0, 191.0, 22.0 ],
+									"text" : "sprintf presentation_rect 0 0 %i %i"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-12",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 840.0, 211.0, 108.0, 22.0 ],
+									"text" : "zl join"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-5",
@@ -156,7 +213,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 651.0, 360.0, 30.0, 30.0 ]
+									"patching_rect" : [ 452.0, 496.0, 84.0, 84.0 ]
 								}
 
 							}
@@ -167,7 +224,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 651.0, 330.0, 63.0, 22.0 ],
+									"patching_rect" : [ 452.0, 469.0, 63.0, 22.0 ],
 									"text" : "closebang"
 								}
 
@@ -181,7 +238,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 603.0, 87.0, 30.0, 30.0 ]
+									"patching_rect" : [ 452.0, 273.0, 84.0, 84.0 ]
 								}
 
 							}
@@ -470,7 +527,8 @@
 									"id" : "obj-106",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 0,
+									"numoutlets" : 2,
+									"outlettype" : [ "int", "int" ],
 									"patcher" : 									{
 										"fileversion" : 1,
 										"appversion" : 										{
@@ -512,6 +570,30 @@
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
 												"box" : 												{
+													"comment" : "",
+													"id" : "obj-6",
+													"index" : 2,
+													"maxclass" : "outlet",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 64.0, 338.0, 30.0, 30.0 ]
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"comment" : "",
+													"id" : "obj-3",
+													"index" : 1,
+													"maxclass" : "outlet",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 29.0, 547.0, 30.0, 30.0 ]
+												}
+
+											}
+, 											{
+												"box" : 												{
 													"id" : "obj-14",
 													"linecount" : 2,
 													"maxclass" : "message",
@@ -530,7 +612,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 86.0, 446.0, 37.0, 22.0 ],
+													"patching_rect" : [ 86.0, 450.0, 37.0, 22.0 ],
 													"text" : "zl rev"
 												}
 
@@ -542,7 +624,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 86.0, 422.0, 254.666666666666629, 22.0 ],
+													"patching_rect" : [ 86.0, 426.0, 254.666666666666629, 22.0 ],
 													"text" : "zl join"
 												}
 
@@ -554,7 +636,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 86.0, 472.0, 190.0, 22.0 ],
+													"patching_rect" : [ 86.0, 476.0, 190.0, 22.0 ],
 													"text" : "sprintf \\; \\\"%s-IV_Cam_X_Dim\\\" %i"
 												}
 
@@ -568,7 +650,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 103.333333333333371, 357.0, 278.0, 36.0 ],
-													"text" : ";\r\n5/23/2023|11:2:12-IV_Cam_Y_Dim 961"
+													"text" : ";\r\n961-IV_Cam_Y_Dim 0"
 												}
 
 											}
@@ -579,7 +661,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 103.333333333333371, 287.0, 37.0, 22.0 ],
+													"patching_rect" : [ 103.333333333333371, 290.0, 37.0, 22.0 ],
 													"text" : "zl rev"
 												}
 
@@ -591,7 +673,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 103.333333333333371, 263.0, 208.666666666666629, 22.0 ],
+													"patching_rect" : [ 103.333333333333371, 266.0, 208.666666666666629, 22.0 ],
 													"text" : "zl join"
 												}
 
@@ -603,7 +685,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 103.333333333333371, 313.0, 190.0, 22.0 ],
+													"patching_rect" : [ 103.333333333333371, 316.0, 190.0, 22.0 ],
 													"text" : "sprintf \\; \\\"%s-IV_Cam_Y_Dim\\\" %i"
 												}
 
@@ -743,7 +825,17 @@
  ],
 										"lines" : [ 											{
 												"patchline" : 												{
+													"destination" : [ "obj-6", 0 ],
+													"midpoints" : [ 112.833333333333371, 261.0, 73.0, 261.0, 73.0, 324.0, 73.5, 324.0 ],
+													"order" : 1,
+													"source" : [ "obj-1", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-7", 0 ],
+													"order" : 0,
 													"source" : [ "obj-1", 0 ]
 												}
 
@@ -793,6 +885,16 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-17", 0 ],
+													"order" : 0,
+													"source" : [ "obj-104", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-3", 0 ],
+													"midpoints" : [ 95.5, 213.0, 38.5, 213.0 ],
+													"order" : 1,
 													"source" : [ "obj-104", 0 ]
 												}
 
@@ -821,7 +923,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-14", 1 ],
-													"midpoints" : [ 95.5, 504.0, 354.5, 504.0 ],
+													"midpoints" : [ 95.5, 506.0, 354.5, 506.0 ],
 													"order" : 0,
 													"source" : [ "obj-18", 0 ]
 												}
@@ -861,7 +963,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-13", 1 ],
-													"midpoints" : [ 112.833333333333371, 345.0, 371.833333333333371, 345.0 ],
+													"midpoints" : [ 112.833333333333371, 347.0, 371.833333333333371, 347.0 ],
 													"order" : 0,
 													"source" : [ "obj-5", 0 ]
 												}
@@ -892,7 +994,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 840.0, 157.631580829620361, 108.0, 22.0 ],
+									"patching_rect" : [ 840.0, 154.631580829620361, 108.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -943,25 +1045,20 @@
 							}
 , 							{
 								"box" : 								{
-									"args" : [ "5/23/2023|11:2:12" ],
-									"bgmode" : 0,
-									"border" : 0,
-									"clickthrough" : 0,
-									"enablehscroll" : 0,
-									"enablevscroll" : 0,
-									"id" : "obj-7",
-									"lockeddragscroll" : 0,
-									"lockedsize" : 0,
-									"maxclass" : "bpatcher",
-									"name" : "ImageViewer.maxpat",
-									"numinlets" : 0,
+									"angle" : 270.0,
+									"bgcolor" : [ 0.815686274509804, 0.090196078431373, 0.090196078431373, 0.0 ],
+									"border" : 4,
+									"bordercolor" : [ 0.035294117647059, 0.298039215686275, 0.741176470588235, 1.0 ],
+									"id" : "obj-6",
+									"maxclass" : "panel",
+									"mode" : 0,
+									"numinlets" : 1,
 									"numoutlets" : 0,
-									"offset" : [ 0.0, 0.0 ],
-									"patching_rect" : [ 170.0, 5.0, 128.0, 128.0 ],
+									"patching_rect" : [ 840.0, 262.0, 169.0, 52.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 0.0, 0.0, 5000.0, 5000.0 ],
-									"varname" : "ImageViewer",
-									"viewvisibility" : 1
+									"presentation_rect" : [ 0.0, 0.0, 1259.0, 957.0 ],
+									"proportion" : 0.5,
+									"rounded" : 0
 								}
 
 							}
@@ -1017,6 +1114,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-12", 1 ],
+									"source" : [ "obj-106", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-12", 0 ],
+									"source" : [ "obj-106", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-98", 0 ],
 									"source" : [ "obj-107", 0 ]
 								}
@@ -1041,6 +1152,27 @@
 								"patchline" : 								{
 									"destination" : [ "obj-95", 1 ],
 									"source" : [ "obj-112", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-14", 0 ],
+									"source" : [ "obj-12", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"source" : [ "obj-14", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-17", 0 ],
+									"source" : [ "obj-15", 0 ]
 								}
 
 							}
@@ -1139,6 +1271,7 @@
 							}
 , 							{
 								"patchline" : 								{
+									"color" : [ 0.047058823529412, 0.913725490196078, 0.913725490196078, 1.0 ],
 									"destination" : [ "obj-106", 1 ],
 									"source" : [ "obj-98", 4 ]
 								}
@@ -1580,7 +1713,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "bang", "int" ],
 									"patching_rect" : [ 25.0, 95.0, 61.0, 22.0 ],
-									"text" : "t i b 6"
+									"text" : "t i b 2"
 								}
 
 							}
@@ -1943,41 +2076,6 @@
 				"name" : "Expand_Icon.png",
 				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Screenshot",
 				"patcherrelativepath" : "../Screenshot",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ImageViewer.maxpat",
-				"bootpath" : "c:/ProgramData/Chuck/main/Modules/ImageViewer",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "MySQL_User.maxpat",
-				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
-				"patcherrelativepath" : "../Taskbar/Maxpat",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Patient Hub Search.maxpat",
-				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Patient Hub",
-				"patcherrelativepath" : "../Patient Hub",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Python.maxpat",
-				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
-				"patcherrelativepath" : "../Taskbar/Maxpat",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Search Icon Light.png",
-				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Icons",
-				"patcherrelativepath" : "../Taskbar/Icons",
 				"type" : "PNG",
 				"implicit" : 1
 			}
