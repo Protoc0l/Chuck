@@ -40,13 +40,30 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-58",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 1110.5, 198.5, 103.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0,
+						"precision" : 6
+					}
+,
+					"text" : "coll ---listofphotos"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-57",
 					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1249.5, 293.0, 211.0, 36.0 ],
+					"patching_rect" : [ 1261.5, 317.0, 211.0, 36.0 ],
 					"text" : "c:/ProgramData/Chuck/main/Modules/ImageViewer/ImageViewer.maxpat"
 				}
 
@@ -59,7 +76,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1249.5, 331.0, 241.0, 36.0 ],
+					"patching_rect" : [ 1261.5, 355.0, 241.0, 36.0 ],
 					"text" : ";\r\nmax launchbrowser $1"
 				}
 
@@ -72,7 +89,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1249.5, 270.0, 100.0, 20.0 ],
+					"patching_rect" : [ 1261.5, 294.0, 100.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1323.0, 52.875, 100.0, 63.25 ],
 					"text" : "Image Viewer",
@@ -120,7 +137,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1763.0, 466.5, 72.0, 22.0 ],
+					"patching_rect" : [ 1782.0, 410.25, 72.0, 22.0 ],
 					"text" : "prepend set"
 				}
 
@@ -353,7 +370,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1763.0, 442.5, 82.0, 22.0 ],
+					"patching_rect" : [ 1782.0, 386.25, 82.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1934,7 +1951,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1862.0, 318.0, 78.5, 22.0 ],
+					"patching_rect" : [ 1782.0, 434.25, 78.5, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2063,7 +2080,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1763.0, 388.0, 58.0, 22.0 ],
+					"patching_rect" : [ 1782.0, 331.75, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -2075,7 +2092,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1763.0, 415.5, 161.0, 22.0 ],
+					"patching_rect" : [ 1782.0, 359.25, 161.0, 22.0 ],
 					"text" : "v Px_Hub_Search_Selection"
 				}
 
@@ -2111,7 +2128,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1862.0, 346.75, 210.0, 29.0 ],
+					"patching_rect" : [ 1782.0, 463.0, 210.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 29.0, 36.75, 214.0, 29.0 ],
 					"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
@@ -2132,10 +2149,10 @@
 					"maxclass" : "bpatcher",
 					"name" : "Patient Hub Search.maxpat",
 					"numinlets" : 2,
-					"numoutlets" : 4,
+					"numoutlets" : 5,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "int", "", "", "bang" ],
-					"patching_rect" : [ 1593.0, 198.5, 288.0, 114.0 ],
+					"outlettype" : [ "int", "", "", "bang", "int" ],
+					"patching_rect" : [ 1593.0, 197.5, 288.0, 114.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ -1.0, 64.75, 701.0, 591.25 ],
 					"varname" : "SLE_Px_Search",
