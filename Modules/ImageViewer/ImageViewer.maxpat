@@ -6519,13 +6519,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-94",
-					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 18.0, 93.0, 156.0, 50.0 ],
-					"text" : "\"SELECT EXAM_ID, DATE FROM EXAM WHERE PATIENT_ID=?\""
+					"patching_rect" : [ 18.0, 93.0, 839.0, 22.0 ],
+					"text" : "\"SELECT EXAM_ID, DATE FROM EXAM WHERE PATIENT_ID=? AND EXAM_ID IN (SELECT EXAM_ID FROM IMAGES)ORDER BY TIMESTAMP DESC\""
 				}
 
 			}
