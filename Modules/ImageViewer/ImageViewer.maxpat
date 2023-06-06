@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 8.0, 51.0, 1920.0, 991.0 ],
+		"rect" : [ 8.0, 121.0, 2682.0, 997.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,31 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"bgcolor" : [ 0.556862745098039, 0.556862745098039, 0.556862745098039, 1.0 ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-4",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "Patient Hub Search.maxpat",
+					"numinlets" : 2,
+					"numoutlets" : 5,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "int", "", "", "bang", "int" ],
+					"patching_rect" : [ 973.0, 196.621804177761078, 288.0, 114.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ -0.0, 0.75, 245.0, 38.25 ],
+					"varname" : "SLE_Px_Search",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-21",
 					"maxclass" : "newobj",
@@ -81,8 +106,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1491.0, 557.0, 61.0, 22.0 ],
-					"text" : "delay 500"
+					"patching_rect" : [ 1491.0, 557.0, 67.0, 22.0 ],
+					"text" : "delay 1000"
 				}
 
 			}
@@ -93,8 +118,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1560.666666666666742, 140.850996357177792, 61.0, 22.0 ],
-					"text" : "delay 500"
+					"patching_rect" : [ 1560.666666666666742, 140.850996357177792, 47.0, 22.0 ],
+					"text" : "delay 0"
 				}
 
 			}
@@ -869,13 +894,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-45",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1560.666666666666742, 212.621804177761078, 479.0, 50.0 ],
-					"text" : "sprintf script newobject bpatcher @name \\\"%s.maxpat\\\" @varname \\\"%s\\\" @args \\\"%s\\\" @presentation_rect 123.25 35.5 245.576266 763. @presentation 1 @patching_position 561. 189.621804 128. 128. @enablevscroll 1"
+					"patching_rect" : [ 1560.666666666666742, 212.621804177761078, 1094.0, 36.0 ],
+					"text" : "sprintf script newobject bpatcher @name \\\"%s.maxpat\\\" @varname \\\"%s\\\" @args \\\"%s\\\" @presentation_rect 123.25 35.5 245.576266 763. @presentation 1 @patching_position 561. 189.621804 128. 128. @enablevscroll 1 @bringtofront 1"
 				}
 
 			}
@@ -2696,7 +2721,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 561.0, 138.0, 54.0, 22.0 ],
+					"patching_rect" : [ 556.0, 140.850996357177792, 54.0, 22.0 ],
 					"text" : "deferlow"
 				}
 
@@ -2709,7 +2734,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 561.0, 162.0, 24.0, 24.0 ],
+					"patching_rect" : [ 556.0, 166.315685391426086, 24.0, 24.0 ],
 					"varname" : "bang_IV"
 				}
 
@@ -4037,31 +4062,6 @@
 					"presentation_rect" : [ 252.25, 3.375, 543.576265811920166, 29.0 ],
 					"textcolor" : [ 0.27843137254902, 0.27843137254902, 0.27843137254902, 1.0 ],
 					"textjustification" : 2
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.556862745098039, 0.556862745098039, 0.556862745098039, 1.0 ],
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-4",
-					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "Patient Hub Search.maxpat",
-					"numinlets" : 2,
-					"numoutlets" : 5,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "int", "", "", "bang", "int" ],
-					"patching_rect" : [ 973.0, 196.621804177761078, 288.0, 114.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ -0.0, 0.75, 245.0, 38.25 ],
-					"varname" : "SLE_Px_Search",
-					"viewvisibility" : 1
 				}
 
 			}
@@ -6870,7 +6870,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-50", 0 ],
+					"order" : 0,
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
+					"order" : 1,
 					"source" : [ "obj-14", 0 ]
 				}
 
