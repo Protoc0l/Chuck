@@ -4289,8 +4289,6 @@
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 18.0, 43.875007748603821, 100.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 55.0, 37.5, 48.0, 18.305084999999998 ],
 					"text" : "refresh",
 					"textoncolor" : [ 0.831372549019608, 0.831372549019608, 0.831372549019608, 1.0 ]
 				}
@@ -6767,7 +6765,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1009.0, 762.080171883106232, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, -0.25, 245.0, 36.0 ],
+					"presentation_rect" : [ 0.0, -0.25, 250.25, 36.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
