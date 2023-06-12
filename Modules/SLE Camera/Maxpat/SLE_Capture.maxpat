@@ -58,13 +58,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-57",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1261.5, 317.0, 211.0, 36.0 ],
-					"text" : "c:/ProgramData/Chuck/main/Modules/ImageViewer/ImageViewer.maxpat"
+					"patching_rect" : [ 1261.5, 362.75, 452.0, 22.0 ],
+					"text" : "\"c:/ProgramData/Chuck/main/Modules/ImageViewer/ImageViewer - Master.maxpat\""
 				}
 
 			}
@@ -76,7 +75,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1261.5, 355.0, 241.0, 36.0 ],
+					"patching_rect" : [ 1261.5, 386.0, 241.0, 36.0 ],
 					"text" : ";\r\nmax launchbrowser $1"
 				}
 
@@ -89,9 +88,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1261.5, 294.0, 100.0, 20.0 ],
+					"patching_rect" : [ 1261.5, 339.75, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1323.0, 52.875, 100.0, 63.25 ],
+					"presentation_rect" : [ 1246.0, 7.5, 255.0, 25.25 ],
 					"text" : "Image Viewer",
 					"textoncolor" : [ 0.76078431372549, 0.76078431372549, 0.76078431372549, 1.0 ]
 				}
@@ -127,18 +126,6 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 116.25, 531.0, 109.0, 22.0 ],
 					"text" : "s SLE_CAM_DICT"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-55",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1782.0, 410.25, 72.0, 22.0 ],
-					"text" : "prepend set"
 				}
 
 			}
@@ -1951,7 +1938,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1782.0, 434.25, 78.5, 22.0 ],
+					"patching_rect" : [ 1782.0, 413.0, 78.5, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2128,7 +2115,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1782.0, 463.0, 210.0, 29.0 ],
+					"patching_rect" : [ 1782.0, 441.75, 210.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 29.0, 36.75, 214.0, 29.0 ],
 					"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
@@ -4218,6 +4205,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-117", 0 ],
+					"midpoints" : [ 1613.0, 339.0, 1575.0, 339.0, 1575.0, 114.0, 1597.5, 114.0 ],
 					"source" : [ "obj-107", 1 ]
 				}
 
@@ -4588,7 +4576,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-55", 0 ],
+					"destination" : [ "obj-110", 0 ],
 					"source" : [ "obj-438", 0 ]
 				}
 
@@ -4664,13 +4652,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-95", 0 ],
 					"source" : [ "obj-545", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-110", 0 ],
-					"source" : [ "obj-55", 0 ]
 				}
 
 			}
@@ -4902,8 +4883,8 @@
 			}
 , 			{
 				"name" : "Flip_image_vertically_icon.png",
-				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Screenshot",
-				"patcherrelativepath" : "../../Screenshot",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/SLE Camera/Icon Images",
+				"patcherrelativepath" : "../Icon Images",
 				"type" : "PNG",
 				"implicit" : 1
 			}
@@ -4972,15 +4953,15 @@
 			}
 , 			{
 				"name" : "Refresh_Icon.png",
-				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Screenshot",
-				"patcherrelativepath" : "../../Screenshot",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/SLE Camera/Icon Images",
+				"patcherrelativepath" : "../Icon Images",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Screen_Rotation_Icon.png",
-				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Screenshot",
-				"patcherrelativepath" : "../../Screenshot",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/SLE Camera/Icon Images",
+				"patcherrelativepath" : "../Icon Images",
 				"type" : "PNG",
 				"implicit" : 1
 			}
@@ -5014,8 +4995,8 @@
 			}
 , 			{
 				"name" : "camera_refresh_icon.png",
-				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Screenshot",
-				"patcherrelativepath" : "../../Screenshot",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/SLE Camera/Icon Images",
+				"patcherrelativepath" : "../Icon Images",
 				"type" : "PNG",
 				"implicit" : 1
 			}
