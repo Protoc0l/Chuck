@@ -11174,6 +11174,18 @@
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
 																"box" : 																{
+																	"id" : "obj-2",
+																	"maxclass" : "message",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 419.0, 21.0, 33.0, 22.0 ],
+																	"text" : "ESC"
+																}
+
+															}
+, 															{
+																"box" : 																{
 																	"id" : "obj-4",
 																	"maxclass" : "comment",
 																	"numinlets" : 1,
@@ -11708,7 +11720,7 @@
 , 															{
 																"box" : 																{
 																	"coll_data" : 																	{
-																		"count" : 94,
+																		"count" : 97,
 																		"data" : [ 																			{
 																				"key" : "NUMPAD0",
 																				"value" : [ 0 ]
@@ -11830,11 +11842,23 @@
 																				"value" : [ "capslock" ]
 																			}
 , 																			{
-																				"key" : "SCAPE",
+																				"key" : "ESCAPE",
+																				"value" : [ "esc" ]
+																			}
+, 																			{
+																				"key" : "ESC",
+																				"value" : [ "esc" ]
+																			}
+, 																			{
+																				"key" : "esc",
 																				"value" : [ "esc" ]
 																			}
 , 																			{
 																				"key" : "SPACE",
+																				"value" : [ "space" ]
+																			}
+, 																			{
+																				"key" : "space",
 																				"value" : [ "space" ]
 																			}
 , 																			{
@@ -12106,7 +12130,6 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-12",
-																	"int" : 1,
 																	"maxclass" : "gswitch2",
 																	"numinlets" : 2,
 																	"numoutlets" : 2,
@@ -12203,7 +12226,7 @@
 , 															{
 																"box" : 																{
 																	"coll_data" : 																	{
-																		"count" : 94,
+																		"count" : 97,
 																		"data" : [ 																			{
 																				"key" : "NUMPAD0",
 																				"value" : [ 0 ]
@@ -12325,11 +12348,23 @@
 																				"value" : [ "capslock" ]
 																			}
 , 																			{
-																				"key" : "SCAPE",
+																				"key" : "ESCAPE",
+																				"value" : [ "esc" ]
+																			}
+, 																			{
+																				"key" : "ESC",
+																				"value" : [ "esc" ]
+																			}
+, 																			{
+																				"key" : "esc",
 																				"value" : [ "esc" ]
 																			}
 , 																			{
 																				"key" : "SPACE",
+																				"value" : [ "space" ]
+																			}
+, 																			{
+																				"key" : "space",
 																				"value" : [ "space" ]
 																			}
 , 																			{
@@ -12721,6 +12756,13 @@
 																"patchline" : 																{
 																	"destination" : [ "obj-49", 0 ],
 																	"source" : [ "obj-19", 1 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-3", 0 ],
+																	"source" : [ "obj-2", 0 ]
 																}
 
 															}
@@ -13901,7 +13943,7 @@
 , 							{
 								"box" : 								{
 									"coll_data" : 									{
-										"count" : 94,
+										"count" : 97,
 										"data" : [ 											{
 												"key" : "NUMPAD0",
 												"value" : [ 0 ]
@@ -14023,11 +14065,23 @@
 												"value" : [ "capslock" ]
 											}
 , 											{
-												"key" : "SCAPE",
+												"key" : "ESCAPE",
+												"value" : [ "esc" ]
+											}
+, 											{
+												"key" : "ESC",
+												"value" : [ "esc" ]
+											}
+, 											{
+												"key" : "esc",
 												"value" : [ "esc" ]
 											}
 , 											{
 												"key" : "SPACE",
+												"value" : [ "space" ]
+											}
+, 											{
+												"key" : "space",
 												"value" : [ "space" ]
 											}
 , 											{
@@ -95246,7 +95300,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 360.75, 728.0, 558.25, 723.5 ],
+					"patching_rect" : [ 360.75, 729.75, 768.25, 717.75 ],
 					"proportion" : 0.5
 				}
 
