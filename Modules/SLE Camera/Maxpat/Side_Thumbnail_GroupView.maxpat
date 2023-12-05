@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 3,
+			"revision" : 6,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -44,8 +44,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1355.5, 437.0, 32.0, 22.0 ],
-					"text" : "print"
+					"patching_rect" : [ 1355.5, 437.0, 95.0, 22.0 ],
+					"text" : "print COPYFILE"
 				}
 
 			}
@@ -90,7 +90,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1444.0, 233.0, 101.0, 22.0 ],
+					"patching_rect" : [ 1452.0, 229.0, 101.0, 22.0 ],
 					"text" : "r Px_SENDSAVE"
 				}
 
@@ -250,7 +250,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1331,7 +1331,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 3,
+							"revision" : 6,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1602,7 +1602,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 3,
+											"revision" : 6,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1638,23 +1638,48 @@
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
 												"box" : 												{
-													"id" : "obj-2",
+													"id" : "obj-8",
 													"maxclass" : "newobj",
-													"numinlets" : 1,
-													"numoutlets" : 0,
-													"patching_rect" : [ 628.0, 795.0, 165.0, 22.0 ],
-													"text" : "print DB_create_image_entry"
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "bang" ],
+													"patching_rect" : [ 27.0, 299.0, 61.0, 22.0 ],
+													"text" : "delay 500"
 												}
 
 											}
 , 											{
 												"box" : 												{
-													"id" : "obj-1",
+													"id" : "obj-7",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "bang" ],
+													"patching_rect" : [ 791.0, 475.0, 22.0, 22.0 ],
+													"text" : "t b"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-6",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "bang" ],
+													"patching_rect" : [ 791.0, 499.0, 61.0, 22.0 ],
+													"text" : "delay 500"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-2",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 523.0, 453.0, 185.0, 22.0 ],
-													"text" : "print BD_create_examdate_entry"
+													"patching_rect" : [ 628.0, 829.0, 165.0, 22.0 ],
+													"text" : "print DB_create_image_entry"
 												}
 
 											}
@@ -1662,11 +1687,11 @@
 												"box" : 												{
 													"id" : "obj-48",
 													"maxclass" : "newobj",
-													"numinlets" : 2,
-													"numoutlets" : 2,
-													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 834.0, 402.0, 92.0, 22.0 ],
-													"text" : "route EXAM_ID"
+													"numinlets" : 3,
+													"numoutlets" : 3,
+													"outlettype" : [ "", "", "" ],
+													"patching_rect" : [ 834.0, 436.0, 135.0, 22.0 ],
+													"text" : "route EXAM_ID 0"
 												}
 
 											}
@@ -1677,7 +1702,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 1502.0, 892.0, 55.0, 22.0 ],
+													"patching_rect" : [ 1502.0, 926.0, 55.0, 22.0 ],
 													"text" : "zl slice 1"
 												}
 
@@ -1689,7 +1714,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 1429.0, 868.0, 92.0, 22.0 ],
+													"patching_rect" : [ 1429.0, 902.0, 92.0, 22.0 ],
 													"text" : "route EXAM_ID"
 												}
 
@@ -1701,7 +1726,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 2,
 													"outlettype" : [ "EXAM", "" ],
-													"patching_rect" : [ 887.0, 791.0, 561.0, 22.0 ],
+													"patching_rect" : [ 887.0, 825.0, 561.0, 22.0 ],
 													"text" : "t EXAM l"
 												}
 
@@ -1713,7 +1738,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 887.0, 843.0, 561.0, 22.0 ],
+													"patching_rect" : [ 887.0, 877.0, 561.0, 22.0 ],
 													"text" : "MySQL_User Query_2ndtime_Exam_ID_db"
 												}
 
@@ -1725,7 +1750,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 887.0, 766.0, 53.0, 22.0 ],
+													"patching_rect" : [ 887.0, 800.0, 53.0, 22.0 ],
 													"text" : "v PH_ID"
 												}
 
@@ -1737,7 +1762,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 887.0, 817.0, 804.0, 22.0 ],
+													"patching_rect" : [ 887.0, 851.0, 804.0, 22.0 ],
 													"text" : "sprintf \\\"select EXAM_ID\\, DATE FROM %s WHERE EXAM_ID=(select max(exam_id) from exam where patient_id=?) ORDER BY EXAM_ID LIMIT 1\\\""
 												}
 
@@ -1749,7 +1774,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "bang" ],
-													"patching_rect" : [ 887.0, 739.0, 54.0, 22.0 ],
+													"patching_rect" : [ 887.0, 773.0, 54.0, 22.0 ],
 													"text" : "delay 50"
 												}
 
@@ -1761,7 +1786,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 606.0, 531.0, 57.0, 22.0 ],
+													"patching_rect" : [ 606.0, 565.0, 57.0, 22.0 ],
 													"text" : "tosymbol"
 												}
 
@@ -1773,7 +1798,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "bang" ],
-													"patching_rect" : [ 887.0, 534.0, 22.0, 22.0 ],
+													"patching_rect" : [ 887.0, 568.0, 22.0, 22.0 ],
 													"text" : "t b"
 												}
 
@@ -1785,7 +1810,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 641.0, 582.0, 67.0, 22.0 ],
+													"patching_rect" : [ 641.0, 616.0, 67.0, 22.0 ],
 													"text" : "v Exam_ID"
 												}
 
@@ -1797,7 +1822,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 606.0, 555.0, 54.0, 22.0 ],
+													"patching_rect" : [ 606.0, 589.0, 54.0, 22.0 ],
 													"text" : "t s s"
 												}
 
@@ -1809,7 +1834,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 887.0, 558.0, 103.0, 22.0 ],
+													"patching_rect" : [ 887.0, 592.0, 103.0, 22.0 ],
 													"text" : "v today_date_img"
 												}
 
@@ -1821,7 +1846,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 509.0, 298.0, 103.0, 22.0 ],
+													"patching_rect" : [ 509.0, 332.0, 103.0, 22.0 ],
 													"text" : "v today_date_img"
 												}
 
@@ -1835,7 +1860,7 @@
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
 													"parameter_enable" : 0,
-													"patching_rect" : [ 887.0, 488.0, 39.0, 32.0 ]
+													"patching_rect" : [ 887.0, 522.0, 39.0, 32.0 ]
 												}
 
 											}
@@ -1851,7 +1876,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 5,
-															"revision" : 3,
+															"revision" : 6,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -2055,7 +2080,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 5,
-															"revision" : 3,
+															"revision" : 6,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -2254,7 +2279,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 943.0, 454.0, 67.0, 22.0 ],
+													"patching_rect" : [ 943.0, 488.0, 67.0, 22.0 ],
 													"text" : "zl compare"
 												}
 
@@ -2278,7 +2303,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 907.0, 426.0, 55.0, 22.0 ],
+													"patching_rect" : [ 907.0, 464.0, 55.0, 22.0 ],
 													"text" : "zl slice 1"
 												}
 
@@ -2290,7 +2315,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 2,
 													"outlettype" : [ "EXAM", "" ],
-													"patching_rect" : [ 27.0, 323.0, 826.0, 22.0 ],
+													"patching_rect" : [ 27.0, 356.0, 826.0, 22.0 ],
 													"text" : "t EXAM l"
 												}
 
@@ -2302,7 +2327,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 27.0, 375.0, 826.0, 22.0 ],
+													"patching_rect" : [ 27.0, 409.0, 826.0, 22.0 ],
 													"text" : "MySQL_User Query1_Exam_ID_db"
 												}
 
@@ -2314,7 +2339,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 27.0, 298.0, 53.0, 22.0 ],
+													"patching_rect" : [ 27.0, 323.0, 53.0, 22.0 ],
 													"text" : "v PH_ID"
 												}
 
@@ -2326,7 +2351,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 27.0, 349.0, 804.0, 22.0 ],
+													"patching_rect" : [ 27.0, 383.0, 804.0, 22.0 ],
 													"text" : "sprintf \\\"select EXAM_ID\\, DATE FROM %s WHERE EXAM_ID=(select max(exam_id) from exam where patient_id=?) ORDER BY EXAM_ID LIMIT 1\\\""
 												}
 
@@ -2421,7 +2446,7 @@
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 606.0, 582.0, 30.0, 30.0 ]
+													"patching_rect" : [ 606.0, 616.0, 30.0, 30.0 ]
 												}
 
 											}
@@ -2529,7 +2554,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 1361.0, 682.0, 78.25, 22.0 ],
+													"patching_rect" : [ 1361.0, 716.0, 78.25, 22.0 ],
 													"text" : "zl join"
 												}
 
@@ -2541,7 +2566,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 1420.25, 658.0, 78.0, 22.0 ],
+													"patching_rect" : [ 1420.25, 692.0, 78.0, 22.0 ],
 													"text" : "zl join"
 												}
 
@@ -2553,7 +2578,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 1420.25, 634.0, 61.0, 22.0 ],
+													"patching_rect" : [ 1420.25, 668.0, 61.0, 22.0 ],
 													"text" : "v Staff_ID"
 												}
 
@@ -2565,7 +2590,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 1361.0, 634.0, 53.0, 22.0 ],
+													"patching_rect" : [ 1361.0, 668.0, 53.0, 22.0 ],
 													"text" : "v PH_ID"
 												}
 
@@ -2577,7 +2602,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 3,
 													"outlettype" : [ "bang", "bang", "" ],
-													"patching_rect" : [ 1361.0, 608.0, 137.5, 22.0 ],
+													"patching_rect" : [ 1361.0, 642.0, 137.5, 22.0 ],
 													"text" : "t b b l"
 												}
 
@@ -2589,7 +2614,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 2,
 													"outlettype" : [ "EXAM", "" ],
-													"patching_rect" : [ 887.0, 584.0, 493.0, 22.0 ],
+													"patching_rect" : [ 887.0, 618.0, 493.0, 22.0 ],
 													"text" : "t EXAM l"
 												}
 
@@ -2601,7 +2626,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 887.0, 683.0, 443.0, 22.0 ],
+													"patching_rect" : [ 887.0, 717.0, 443.0, 22.0 ],
 													"text" : "sprintf \\\"INSERT INTO %s (PATIENT_ID\\, DOCTOR_ID\\, DATE) VALUES (?\\, ?\\, ?)\\\""
 												}
 
@@ -2613,7 +2638,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 887.0, 711.0, 493.0, 22.0 ],
+													"patching_rect" : [ 887.0, 745.0, 493.0, 22.0 ],
 													"text" : "MySQL_User insert_exam_date_for_images_db"
 												}
 
@@ -2767,16 +2792,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-1", 0 ],
-													"order" : 0,
-													"source" : [ "obj-28", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
 													"destination" : [ "obj-30", 0 ],
-													"order" : 1,
 													"source" : [ "obj-28", 0 ]
 												}
 
@@ -2797,25 +2813,8 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-1", 0 ],
-													"order" : 1,
-													"source" : [ "obj-30", 1 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
 													"destination" : [ "obj-48", 0 ],
-													"order" : 0,
 													"source" : [ "obj-30", 1 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
-													"destination" : [ "obj-1", 0 ],
-													"order" : 1,
-													"source" : [ "obj-35", 1 ]
 												}
 
 											}
@@ -2829,7 +2828,6 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-30", 1 ],
-													"order" : 0,
 													"source" : [ "obj-35", 1 ]
 												}
 
@@ -2850,13 +2848,6 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-29", 0 ],
-													"source" : [ "obj-39", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
 													"destination" : [ "obj-40", 1 ],
 													"source" : [ "obj-39", 2 ]
 												}
@@ -2871,8 +2862,15 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-8", 0 ],
+													"source" : [ "obj-39", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-71", 0 ],
-													"midpoints" : [ 952.5, 480.0, 896.5, 480.0 ],
+													"midpoints" : [ 952.5, 514.0, 896.5, 514.0 ],
 													"source" : [ "obj-40", 0 ]
 												}
 
@@ -2880,6 +2878,14 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-36", 0 ],
+													"midpoints" : [ 959.5, 460.0, 916.5, 460.0 ],
+													"source" : [ "obj-48", 2 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-7", 0 ],
 													"source" : [ "obj-48", 1 ]
 												}
 
@@ -2888,6 +2894,13 @@
 												"patchline" : 												{
 													"destination" : [ "obj-11", 0 ],
 													"source" : [ "obj-57", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-9", 0 ],
+													"source" : [ "obj-6", 0 ]
 												}
 
 											}
@@ -2971,8 +2984,15 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-63", 1 ],
-													"midpoints" : [ 1370.5, 705.0, 1370.5, 705.0 ],
+													"midpoints" : [ 1370.5, 739.0, 1370.5, 739.0 ],
 													"source" : [ "obj-68", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-6", 0 ],
+													"source" : [ "obj-7", 0 ]
 												}
 
 											}
@@ -2986,7 +3006,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-95", 0 ],
-													"midpoints" : [ 916.5, 527.0, 615.5, 527.0 ],
+													"midpoints" : [ 916.5, 561.0, 615.5, 561.0 ],
 													"source" : [ "obj-71", 1 ]
 												}
 
@@ -2995,6 +3015,13 @@
 												"patchline" : 												{
 													"destination" : [ "obj-61", 0 ],
 													"source" : [ "obj-74", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-29", 0 ],
+													"source" : [ "obj-8", 0 ]
 												}
 
 											}
@@ -3043,7 +3070,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-95", 0 ],
-													"midpoints" : [ 1511.5, 917.0, 601.0, 917.0, 601.0, 526.0, 615.5, 526.0 ],
+													"midpoints" : [ 1511.5, 951.0, 601.0, 951.0, 601.0, 560.0, 615.5, 560.0 ],
 													"source" : [ "obj-99", 0 ]
 												}
 
