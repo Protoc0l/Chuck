@@ -71,7 +71,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 921.0, 333.0, 199.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 127.5, 390.0, 174.0, 25.0 ],
+					"presentation_rect" : [ 242.5, 561.0, 174.0, 25.0 ],
 					"text" : "Transcription Module:",
 					"textcolor" : [ 0.76078431372549, 0.76078431372549, 0.76078431372549, 1.0 ],
 					"textjustification" : 1
@@ -95,7 +95,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 922.0, 188.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 128.5, 411.5, 173.0, 170.0 ],
+					"presentation_rect" : [ 243.5, 583.5, 173.0, 170.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -164,7 +164,7 @@
 					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 706.333333333333485, 1116.0, 24.0, 24.0 ]
 				}
@@ -3924,7 +3924,7 @@
 													"maxclass" : "button",
 													"numinlets" : 1,
 													"numoutlets" : 1,
-													"outlettype" : [ "" ],
+													"outlettype" : [ "bang" ],
 													"parameter_enable" : 0,
 													"patching_rect" : [ 104.0, 51.0, 24.0, 24.0 ]
 												}
@@ -8060,7 +8060,7 @@
 													"maxclass" : "button",
 													"numinlets" : 1,
 													"numoutlets" : 1,
-													"outlettype" : [ "" ],
+													"outlettype" : [ "bang" ],
 													"parameter_enable" : 0,
 													"patching_rect" : [ 104.0, 51.0, 24.0, 24.0 ]
 												}
@@ -14718,8 +14718,9 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 909.0, 177.0, 223.0, 203.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 120.0, 386.0, 190.0, 205.0 ],
-					"proportion" : 0.5
+					"presentation_rect" : [ 235.0, 556.0, 190.0, 205.0 ],
+					"proportion" : 0.5,
+					"rounded" : 0
 				}
 
 			}
