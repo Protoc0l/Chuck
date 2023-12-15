@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 2,
+			"revision" : 6,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1878.0, 85.0, 1852.0, 929.0 ],
+		"rect" : [ -1878.0, 85.0, 1406.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,68 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 466.861111111111086, 1097.0, 22.0, 22.0 ],
+					"text" : "t b"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 244.5, 1109.0, 22.0, 22.0 ],
+					"text" : "t b"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 16.0,
+					"id" : "obj-14",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 921.0, 333.0, 199.0, 25.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 127.5, 390.0, 174.0, 25.0 ],
+					"text" : "Transcription Module:",
+					"textcolor" : [ 0.76078431372549, 0.76078431372549, 0.76078431372549, 1.0 ],
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-10",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "Transcription Main.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 922.0, 188.0, 128.0, 128.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 128.5, 411.5, 173.0, 170.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-16",
 					"maxclass" : "newobj",
@@ -102,7 +164,7 @@
 					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 706.333333333333485, 1116.0, 24.0, 24.0 ]
 				}
@@ -145,7 +207,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 2,
+							"revision" : 6,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -229,7 +291,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 2,
+											"revision" : 6,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -909,7 +971,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 2,
+											"revision" : 6,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1280,7 +1342,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 2,
+											"revision" : 6,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1512,7 +1574,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 2,
+											"revision" : 6,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2239,7 +2301,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 2,
+											"revision" : 6,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2734,7 +2796,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 2,
+											"revision" : 6,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3037,7 +3099,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 2,
+											"revision" : 6,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3822,7 +3884,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 2,
+											"revision" : 6,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3862,7 +3924,7 @@
 													"maxclass" : "button",
 													"numinlets" : 1,
 													"numoutlets" : 1,
-													"outlettype" : [ "bang" ],
+													"outlettype" : [ "" ],
 													"parameter_enable" : 0,
 													"patching_rect" : [ 104.0, 51.0, 24.0, 24.0 ]
 												}
@@ -4142,7 +4204,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 2,
+											"revision" : 6,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -4637,7 +4699,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 2,
+											"revision" : 6,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -4940,7 +5002,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 2,
+											"revision" : 6,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -5837,7 +5899,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 2,
+											"revision" : 6,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -6529,7 +6591,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 2,
+											"revision" : 6,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -6884,7 +6946,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 2,
+											"revision" : 6,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -7061,7 +7123,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 5,
-															"revision" : 2,
+															"revision" : 6,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -7958,7 +8020,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 2,
+											"revision" : 6,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -7998,7 +8060,7 @@
 													"maxclass" : "button",
 													"numinlets" : 1,
 													"numoutlets" : 1,
-													"outlettype" : [ "bang" ],
+													"outlettype" : [ "" ],
 													"parameter_enable" : 0,
 													"patching_rect" : [ 104.0, 51.0, 24.0, 24.0 ]
 												}
@@ -8317,7 +8379,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 2,
+											"revision" : 6,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -9047,7 +9109,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 2,
+											"revision" : 6,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -11137,7 +11199,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 2,
+							"revision" : 6,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -11184,7 +11246,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 2,
+											"revision" : 6,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -11781,7 +11843,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 2,
+							"revision" : 6,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -11913,7 +11975,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-15",
-									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -11950,7 +12011,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 5,
-											"revision" : 2,
+											"revision" : 6,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -12684,7 +12745,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 695.333333333333371, 63.5, 88.041666666666629, 87.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1136.041666999999734, 8.0, 53.041666666666515, 43.0 ],
+					"presentation_rect" : [ 1130.041666999999734, 0.0, 53.041666666666515, 43.0 ],
 					"rounded" : 24.0,
 					"text" : "X",
 					"texton" : "X",
@@ -12790,7 +12851,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 2,
+							"revision" : 6,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -13537,7 +13598,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 2,
+							"revision" : 6,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -14200,7 +14261,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 2,
+							"revision" : 6,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -14646,6 +14707,25 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
+					"border" : 5,
+					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"grad1" : [ 0.301961, 0.301961, 0.301961, 0.0 ],
+					"grad2" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"id" : "obj-11",
+					"maxclass" : "panel",
+					"mode" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 909.0, 177.0, 223.0, 203.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 120.0, 386.0, 190.0, 205.0 ],
+					"proportion" : 0.5
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
 					"background" : 1,
 					"bgcolor" : [ 0.0, 0.0, 0.0, 0.76 ],
 					"id" : "obj-145",
@@ -14937,19 +15017,19 @@
 			}
 , 			{
 				"patchline" : 				{
-					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
-					"destination" : [ "obj-174", 0 ],
-					"midpoints" : [ 461.833333333333371, 1051.0, 383.333333333333371, 1051.0, 383.333333333333371, 952.0, 406.333333333333371, 952.0 ],
-					"source" : [ "obj-163", 2 ]
+					"color" : [ 0.047058823529412, 0.913725490196078, 0.913725490196078, 1.0 ],
+					"destination" : [ "obj-17", 0 ],
+					"order" : 1,
+					"source" : [ "obj-163", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"color" : [ 0.047058823529412, 0.913725490196078, 0.913725490196078, 1.0 ],
-					"destination" : [ "obj-4", 0 ],
-					"order" : 1,
-					"source" : [ "obj-163", 0 ]
+					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"destination" : [ "obj-174", 0 ],
+					"midpoints" : [ 461.833333333333371, 1051.0, 383.333333333333371, 1051.0, 383.333333333333371, 952.0, 406.333333333333371, 952.0 ],
+					"source" : [ "obj-163", 2 ]
 				}
 
 			}
@@ -15059,6 +15139,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-180", 0 ],
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-104", 0 ],
 					"order" : 1,
 					"source" : [ "obj-180", 0 ]
@@ -15159,13 +15246,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-188", 0 ],
 					"source" : [ "obj-197", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-180", 0 ],
-					"source" : [ "obj-202", 0 ]
 				}
 
 			}
@@ -15392,136 +15472,157 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "APT_LIST_MENU.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Appointment List.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Discord_Integration.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Emoji.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Optician",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Optician",
 				"patcherrelativepath" : "../../Optician",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Emoji_Happy.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Optician",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Optician",
 				"patcherrelativepath" : "../../Optician",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Emoji_single_button.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Optician",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Optician",
 				"patcherrelativepath" : "../../Optician",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Emoji_single_button_long.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Optician",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Optician",
 				"patcherrelativepath" : "../../Optician",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Jarvis.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MySQL_USER.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MySQL_User.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OPTICAL_WAITLIST_LIST_MENU.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Optician",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Optician",
 				"patcherrelativepath" : "../../Optician",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Optician Available.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Optician",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Optician",
 				"patcherrelativepath" : "../../Optician",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Optician Waitlist2.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Optician",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Optician",
 				"patcherrelativepath" : "../../Optician",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Python.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Maxpat",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Search Icon Light.png",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Taskbar/Icons",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Taskbar/Icons",
 				"patcherrelativepath" : "../Icons",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Staff_To_Do_List.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Optician",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Optician",
 				"patcherrelativepath" : "../../Optician",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Staff_To_Do_List_Filters.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Optician",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Optician",
 				"patcherrelativepath" : "../../Optician",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Staff_To_Do_List_Menu2.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Optician",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Optician",
 				"patcherrelativepath" : "../../Optician",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Staff_To_Do_List_Menu3.maxpat",
-				"bootpath" : "C:/ProgramData/Chuck/main/Modules/Optician",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Optician",
 				"patcherrelativepath" : "../../Optician",
 				"type" : "JSON",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "Transcription Main.maxpat",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Transcription",
+				"patcherrelativepath" : "../../Transcription",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "helpargs.js",
+				"bootpath" : "C74:/help/resources",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sadam.udpReceiver.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+				"name" : "sadam.udpSender.mxe64",
+				"type" : "mx64"
 			}
  ],
 		"autosave" : 0,
