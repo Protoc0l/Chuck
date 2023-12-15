@@ -86,7 +86,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 410.0, 213.0, 1518.0, 739.0 ],
+						"rect" : [ 360.0, 213.0, 1518.0, 739.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -114,7 +114,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-8",
@@ -232,7 +231,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 73.5, 279.0, 877.5, 64.0 ],
+									"patching_rect" : [ 73.5, 279.0, 880.0, 64.0 ],
 									"text" : "Dear Dr. HardMouth@#%$ thank you to advance for seeing Beth@#%$ the 72-year-old female@#%$, **$$**@@ @#%$ blah@#%$ blah@#%$ blah@#%$ this@#%$ this@#%$ this@#%$ that@#%$ that@#%$ that@#%$, @#%$ a pleasant 62-year-old female who presented with black lights and her vision and floaters all over the place@#%$, **$$**@@ @#%$ this is crazy@#%$ I don't know what this is doing@#%$ this is all nuts@#%$ I don't believe it@#%$ this is all crazy. Thank you@#%$, @#%$ thank you kindly@#%$ Corey."
 								}
 
@@ -440,7 +439,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-72", 1 ],
-									"midpoints" : [ 83.0, 273.0, 921.0, 273.0, 921.0, 272.0, 941.0, 272.0, 941.0, 275.0, 941.5, 275.0 ],
+									"midpoints" : [ 83.0, 273.0, 921.0, 273.0, 921.0, 272.0, 941.0, 272.0, 941.0, 275.0, 944.0, 275.0 ],
 									"order" : 0,
 									"source" : [ "obj-66", 1 ]
 								}
@@ -679,13 +678,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-5",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 34.0, 243.0, 433.0, 36.0 ],
-									"text" : ";\r\nmax launchbrowser C:/ProgramData/Chuck/main/ChuckTranscriptionServer.exe"
+									"patching_rect" : [ 34.0, 243.0, 467.0, 50.0 ],
+									"text" : ";\r\nmax launchbrowser C:/ProgramData/Chuck/main/ChuckTranscriptionServer/ChuckTranscriptionServer.exe"
 								}
 
 							}
@@ -1062,6 +1061,7 @@
 					"bgcolor" : [ 0.058823529411765, 1.0, 0.0, 1.0 ],
 					"border" : 5,
 					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"hidden" : 1,
 					"id" : "obj-80",
 					"maxclass" : "panel",
 					"mode" : 0,
@@ -2156,7 +2156,6 @@
 					"patching_rect" : [ 179.5, 493.0, 97.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 55.5, 116.0, 59.0, 20.0 ],
-					"text" : "1.76s",
 					"textjustification" : 1
 				}
 
