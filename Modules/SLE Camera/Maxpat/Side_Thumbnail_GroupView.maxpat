@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 6,
+			"minor" : 6,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -39,6 +39,30 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-83",
+					"index" : 0,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1417.666666666666742, 299.291674000000057, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-81",
+					"index" : 0,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1377.333333333333258, 299.291674000000057, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-80",
 					"maxclass" : "newobj",
@@ -209,7 +233,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1310.0, 179.875007748603821, 523.0, 36.0 ],
+					"patching_rect" : [ 1310.0, 179.875007748603821, 523.0, 35.0 ],
 					"text" : "\"'c:/ProgramData/Chuck/Users/Optometrist/Photos/04-10-2023 14-28-14 SLE Photo 1.png' 'h:/DB_Images30/30.png'\""
 				}
 
@@ -249,8 +273,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1235,7 +1259,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1614.0, 80.291674017906189, 157.0, 34.0 ],
+					"patching_rect" : [ 1614.0, 80.291674017906189, 157.0, 33.0 ],
 					"text" : "NEED TO FIND & FILL ON LAUNCH THIS PARAM"
 				}
 
@@ -1324,20 +1348,20 @@
 					"id" : "obj-26",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "bang", "" ],
+					"numoutlets" : 4,
+					"outlettype" : [ "bang", "", "int", "" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 42.0, 85.0, 1852.0, 929.0 ],
+						"rect" : [ 42.0, 85.0, 1406.0, 929.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1367,6 +1391,90 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-63",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"patching_rect" : [ 351.0, 397.096382737159729, 29.5, 22.0 ],
+									"text" : "int"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-61",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 351.0, 423.096382737159729, 248.0, 22.0 ],
+									"text" : "sprintf set Successfully saved %i / %i images"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-60",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"patching_rect" : [ 427.0, 285.0, 29.5, 22.0 ],
+									"text" : "+ 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-59",
+									"index" : 3,
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 466.5, 362.096382737159729, 30.0, 30.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-40",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 466.5, 335.0, 77.0, 22.0 ],
+									"text" : "prepend size"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-23",
+									"index" : 2,
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 427.0, 362.096382737159729, 30.0, 30.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-22",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 427.0, 311.0, 225.0, 22.0 ],
+									"text" : "sprintf set ...uploading %i of %i images..."
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-9",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -1392,7 +1500,7 @@
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-14",
-									"index" : 2,
+									"index" : 4,
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
@@ -1491,7 +1599,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 376.333333333333485, 939.0, 349.0, 34.0 ],
+									"patching_rect" : [ 376.333333333333485, 939.0, 349.0, 33.0 ],
 									"text" : "next connect *copy image to drive next with this images_id.png\nREQUIRES L/R to activiate else will not activate"
 								}
 
@@ -1601,8 +1709,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
-											"revision" : 6,
+											"minor" : 6,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1875,8 +1983,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 5,
-															"revision" : 6,
+															"minor" : 6,
+															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -2079,8 +2187,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 5,
-															"revision" : 6,
+															"minor" : 6,
+															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -3150,7 +3258,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 969.5, 921.0, 555.0, 75.0 ],
+									"patching_rect" : [ 969.5, 921.0, 555.0, 74.0 ],
 									"text" : "\"04-04-2023 05-23-38 SLE Photo 0.png\", \"1.5mm ingrowth\";\n\"04-04-2023 05-23-42 SLE Photo 1.png\", \"ONH hemes & signficant elevation\";\n\"04-04-2023 05-23-45 SLE Photo 2.png\", \"sign elevation of the macula\";\n\"04-04-2023 05-23-49 SLE Photo 3.png\", \"sign mac elevation and NV along the superior arcades 1DD from the macula center\";"
 								}
 
@@ -3190,7 +3298,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 968.0, 818.0, 555.0, 62.0 ],
+									"patching_rect" : [ 968.0, 818.0, 555.0, 60.0 ],
 									"text" : "\"04-04-2023 05-23-38 SLE Photo 0.png\", \"Pytergium\";\n\"04-04-2023 05-23-42 SLE Photo 1.png\", \"Non-arteritic Anterior Ischemic Optic Neuropathy\";\n\"04-04-2023 05-23-45 SLE Photo 2.png\", \"NPDR & no DME\";\n\"04-04-2023 05-23-49 SLE Photo 3.png\", \"NVAMD with active CNVM\";"
 								}
 
@@ -3402,7 +3510,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 968.0, 595.5, 508.0, 89.0 ],
+									"patching_rect" : [ 968.0, 595.5, 508.0, 87.0 ],
 									"text" : "0, \"c:/ProgramData/Chuck/Users/Optometrist/Photos/04-03-2023 16-34-19 SLE Photo 0.png\";\n1, \"c:/ProgramData/Chuck/Users/Optometrist/Photos/04-04-2023 05-23-38 SLE Photo 0.png\";\n2, \"c:/ProgramData/Chuck/Users/Optometrist/Photos/04-04-2023 05-23-42 SLE Photo 1.png\";\n3, \"c:/ProgramData/Chuck/Users/Optometrist/Photos/04-04-2023 05-23-45 SLE Photo 2.png\";\n4, \"c:/ProgramData/Chuck/Users/Optometrist/Photos/04-04-2023 05-23-49 SLE Photo 3.png\";\n"
 								}
 
@@ -3465,7 +3573,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 968.0, 480.0, 246.0, 75.0 ],
+									"patching_rect" : [ 968.0, 480.0, 246.0, 74.0 ],
 									"text" : "\"04-04-2023 05-23-38 SLE Photo 0.png\", R;\n\"04-04-2023 05-23-42 SLE Photo 1.png\", L;\n\"04-04-2023 05-23-45 SLE Photo 2.png\", R;\n\"04-04-2023 05-23-49 SLE Photo 3.png\", R;\n"
 								}
 
@@ -3489,7 +3597,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1257.0, 480.0, 244.0, 75.0 ],
+									"patching_rect" : [ 1257.0, 480.0, 244.0, 74.0 ],
 									"text" : "0, \"04-03-2023 16-34-19 SLE Photo 0.png\";\n1, \"04-04-2023 05-23-38 SLE Photo 0.png\";\n2, \"04-04-2023 05-23-42 SLE Photo 1.png\";\n3, \"04-04-2023 05-23-45 SLE Photo 2.png\";\n4, \"04-04-2023 05-23-49 SLE Photo 3.png\";"
 								}
 
@@ -3538,7 +3646,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 421.5, 397.096382737159729, 150.0, 48.0 ],
+									"patching_rect" : [ 421.5, 397.096382737159729, 150.0, 47.0 ],
 									"text" : "once done copy trigger opening the change/modify screen"
 								}
 
@@ -3562,7 +3670,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 265.75, 208.0, 150.0, 48.0 ],
+									"patching_rect" : [ 265.75, 208.0, 150.0, 47.0 ],
 									"text" : "PULL\ncapture OCR values from patient_hub_details_pull"
 								}
 
@@ -3635,7 +3743,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "", "" ],
-									"patching_rect" : [ 326.0, 272.0, 83.0, 22.0 ],
+									"patching_rect" : [ 326.0, 268.0, 83.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0,
 										"precision" : 6
@@ -3797,6 +3905,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-23", 0 ],
+									"source" : [ "obj-22", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-32", 0 ],
 									"source" : [ "obj-24", 1 ]
 								}
@@ -3834,6 +3949,15 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-25", 0 ],
+									"order" : 1,
+									"source" : [ "obj-260", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-63", 0 ],
+									"order" : 0,
 									"source" : [ "obj-260", 0 ]
 								}
 
@@ -3905,6 +4029,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-279", 0 ],
+									"order" : 2,
 									"source" : [ "obj-298", 2 ]
 								}
 
@@ -3937,6 +4062,22 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-59", 0 ],
+									"order" : 0,
+									"source" : [ "obj-298", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-60", 0 ],
+									"order" : 1,
+									"source" : [ "obj-298", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-298", 0 ],
 									"source" : [ "obj-299", 0 ]
 								}
@@ -3952,7 +4093,32 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-22", 1 ],
+									"order" : 0,
+									"source" : [ "obj-301", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-275", 0 ],
+									"order" : 3,
+									"source" : [ "obj-301", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-40", 0 ],
+									"order" : 2,
+									"source" : [ "obj-301", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-61", 1 ],
+									"order" : 1,
 									"source" : [ "obj-301", 0 ]
 								}
 
@@ -3992,6 +4158,13 @@
 									"destination" : [ "obj-301", 0 ],
 									"midpoints" : [ 187.5, 264.0, 335.5, 264.0 ],
 									"source" : [ "obj-315", 3 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-59", 0 ],
+									"source" : [ "obj-315", 2 ]
 								}
 
 							}
@@ -4080,6 +4253,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-59", 0 ],
+									"source" : [ "obj-40", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-43", 3 ],
 									"source" : [ "obj-42", 0 ]
 								}
@@ -4154,8 +4334,38 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-22", 0 ],
+									"order" : 0,
+									"source" : [ "obj-60", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-63", 1 ],
+									"order" : 1,
+									"source" : [ "obj-60", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-23", 0 ],
+									"source" : [ "obj-61", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-317", 0 ],
 									"source" : [ "obj-62", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-61", 0 ],
+									"source" : [ "obj-63", 0 ]
 								}
 
 							}
@@ -4342,7 +4552,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 605.310898780822754, 884.145844161510468, 185.897436261177063, 62.0 ],
+					"patching_rect" : [ 605.310898780822754, 884.145844161510468, 185.897436261177063, 60.0 ],
 					"text" : "arguments\n1) partial path (name of file only)\n2) number in list\n3) LEft or Right Eye"
 				}
 
@@ -4388,7 +4598,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1402.5, 477.875007748603821, 166.0, 48.0 ],
+					"patching_rect" : [ 1402.5, 477.875007748603821, 166.0, 47.0 ],
 					"text" : "next or previous image\nup & right arrow = next\ndown & left arrows = previous"
 				}
 
@@ -4401,7 +4611,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1340.0, 755.416680574417114, 217.0, 36.0 ],
+					"patching_rect" : [ 1340.0, 755.416680574417114, 217.0, 35.0 ],
 					"text" : ";\r\n0_group_next_prev_img"
 				}
 
@@ -4647,7 +4857,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 58.102563738822937, 362.124992251396179, 185.897436261177063, 34.0 ],
+					"patching_rect" : [ 58.102563738822937, 362.124992251396179, 185.897436261177063, 33.0 ],
 					"text" : "arguments\n1) partial path (name of file only)"
 				}
 
@@ -4878,7 +5088,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1072.0, 273.291674017906189, 205.0, 25.0 ],
+					"patching_rect" : [ 1072.0, 273.291674017906189, 205.0, 24.0 ],
 					"text" : "Fav",
 					"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
 					"textjustification" : 1
@@ -4892,7 +5102,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 856.208335041999817, 273.291674017906189, 205.0, 25.0 ],
+					"patching_rect" : [ 856.208335041999817, 273.291674017906189, 205.0, 24.0 ],
 					"text" : "Px",
 					"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
 					"textjustification" : 1
@@ -4906,7 +5116,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 646.0, 273.291674017906189, 205.0, 25.0 ],
+					"patching_rect" : [ 646.0, 273.291674017906189, 205.0, 24.0 ],
 					"text" : "DB",
 					"textcolor" : [ 0.749019607843137, 0.749019607843137, 0.749019607843137, 1.0 ],
 					"textjustification" : 1
@@ -5451,7 +5661,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 282.333333333333258, 841.145844161510468, 920.111111111111086, 36.0 ],
+					"patching_rect" : [ 282.333333333333258, 841.145844161510468, 920.111111111111086, 35.0 ],
 					"text" : "sprintf %i script newobject bpatcher @name Side_Thumbnail_Individual @varname %iSide_Thumbnail_Individual @presentation_rect 1. %i. 231. 146. @patching_rect 62.83334 43. 128. 128. @presentation 1 @args \\\"%s\\\" %i \\\"%s\\\""
 				}
 
@@ -5872,7 +6082,21 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-72", 0 ],
+					"source" : [ "obj-26", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-81", 0 ],
 					"source" : [ "obj-26", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-83", 0 ],
+					"source" : [ "obj-26", 2 ]
 				}
 
 			}
