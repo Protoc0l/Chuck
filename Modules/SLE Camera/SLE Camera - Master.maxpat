@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 3,
+			"minor" : 6,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -39,6 +39,55 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"linecount" : 4,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 12.0, 275.0, 100.0, 62.0 ],
+					"presentation_linecount" : 4,
+					"text" : "sprintf \\\"mkdir 'c:/ProgramData/Chuck/Users/%s/Photos/'\\\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 12.0, 376.0, 100.0, 22.0 ],
+					"text" : "tosymbol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 12.0, 345.0, 100.0, 22.0 ],
+					"text" : "v SLE_Pic_Path"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 12.0, 407.0, 120.0, 22.0 ],
+					"text" : "s DELETE_FOLDER"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-6",
 					"maxclass" : "newobj",
@@ -147,8 +196,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 3,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -184,6 +233,17 @@
 						"assistshowspatchername" : 0,
 						"title" : "Chuck: SLE Camera",
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-75",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 966.0, 11.0, 58.0, 20.0 ],
+									"text" : "disabled"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-81",
 									"maxclass" : "newobj",
@@ -256,7 +316,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 815.427048000000013, 1046.0, 587.0, 62.0 ],
+									"patching_rect" : [ 815.427048000000013, 1046.0, 587.0, 60.0 ],
 									"text" : "INSERT INTO EXAM (DATE, PATIENT_ID, DOCTOR_ID) VALUES('2023-03-04', 1, 14);\nSELECT * FROM exam;\nINSERT INTO IMAGES (EXAM_ID, Dx, NOTES, LATERALITY) VALUES (1, 'Pterygium', 'blah blah blah', 'L');\nSELECT * FROM IMAGES;"
 								}
 
@@ -337,8 +397,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
-											"revision" : 3,
+											"minor" : 6,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -772,7 +832,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 903.0, 2.368419170379639, 70.0, 22.0 ],
+									"patching_rect" : [ 902.5, -2.0, 70.0, 22.0 ],
 									"text" : "loadmess 1"
 								}
 
@@ -824,8 +884,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
-											"revision" : 3,
+											"minor" : 6,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -860,6 +920,28 @@
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
+												"box" : 												{
+													"id" : "obj-43",
+													"maxclass" : "comment",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 589.5, 414.0, 58.0, 20.0 ],
+													"text" : "disabled"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-42",
+													"maxclass" : "comment",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 320.0, 414.0, 58.0, 20.0 ],
+													"text" : "disabled"
+												}
+
+											}
+, 											{
 												"box" : 												{
 													"id" : "obj-45",
 													"maxclass" : "newobj",
@@ -987,7 +1069,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 361.677048000000013, 823.25, 666.0, 36.0 ],
+													"patching_rect" : [ 457.927048000000013, 822.0, 666.0, 35.0 ],
 													"text" : ";\r\nmain_screen::location \"window size 308 85 1571 1046\""
 												}
 
@@ -1009,11 +1091,12 @@
 													"id" : "obj-58",
 													"maxclass" : "newobj",
 													"numinlets" : 2,
-													"numoutlets" : 4,
-													"outlettype" : [ "dictionary", "", "", "" ],
+													"numoutlets" : 5,
+													"outlettype" : [ "dictionary", "", "", "", "" ],
 													"patching_rect" : [ 397.927048000000013, 745.25, 199.0, 22.0 ],
 													"saved_object_attributes" : 													{
 														"embed" : 0,
+														"legacy" : 1,
 														"parameter_enable" : 0,
 														"parameter_mappable" : 0
 													}
@@ -1053,7 +1136,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 571.0, 434.0, 91.0, 22.0 ],
+													"patching_rect" : [ 568.5, 465.0, 91.0, 22.0 ],
 													"text" : "route fullscreen"
 												}
 
@@ -1065,7 +1148,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 571.0, 406.0, 71.0, 22.0 ],
+													"patching_rect" : [ 568.5, 437.0, 71.0, 22.0 ],
 													"text" : "fromsymbol"
 												}
 
@@ -1197,7 +1280,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 2,
 													"outlettype" : [ "bang", "" ],
-													"patching_rect" : [ 276.0, 412.0, 31.0, 22.0 ],
+													"patching_rect" : [ 276.0, 423.0, 31.0, 22.0 ],
 													"text" : "t b s"
 												}
 
@@ -1209,7 +1292,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 276.0, 477.0, 77.0, 22.0 ],
+													"patching_rect" : [ 276.0, 488.0, 77.0, 22.0 ],
 													"text" : "window exec"
 												}
 
@@ -1233,7 +1316,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 288.0, 441.0, 71.0, 22.0 ],
+													"patching_rect" : [ 288.0, 452.0, 71.0, 22.0 ],
 													"text" : "fromsymbol"
 												}
 
@@ -1246,7 +1329,7 @@
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 276.0, 508.0, 30.0, 30.0 ]
+													"patching_rect" : [ 276.0, 519.0, 30.0, 30.0 ]
 												}
 
 											}
@@ -1411,7 +1494,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 118.0, 16.0, 150.0, 34.0 ],
+													"patching_rect" : [ 118.0, 16.0, 150.0, 33.0 ],
 													"text" : "window dimensions of SLE Camera main window"
 												}
 
@@ -1613,13 +1696,6 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-25", 0 ],
-													"source" : [ "obj-14", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
 													"destination" : [ "obj-41", 0 ],
 													"source" : [ "obj-15", 1 ]
 												}
@@ -1755,13 +1831,6 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-35", 0 ],
-													"source" : [ "obj-34", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
 													"destination" : [ "obj-36", 0 ],
 													"source" : [ "obj-35", 0 ]
 												}
@@ -1791,7 +1860,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-94", 1 ],
-													"midpoints" : [ 467.427048000000013, 809.0, 1018.177048000000013, 809.0 ],
+													"midpoints" : [ 467.427048000000013, 809.0, 1114.427048000000013, 809.0 ],
 													"order" : 0,
 													"source" : [ "obj-39", 0 ]
 												}
@@ -1800,7 +1869,6 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-94", 0 ],
-													"midpoints" : [ 467.427048000000013, 809.0, 371.177048000000013, 809.0 ],
 													"order" : 1,
 													"source" : [ "obj-39", 0 ]
 												}
@@ -2044,8 +2112,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
-											"revision" : 3,
+											"minor" : 6,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2102,8 +2170,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 5,
-															"revision" : 3,
+															"minor" : 6,
+															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -2157,7 +2225,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 5,
 																	"outlettype" : [ "", "", "", "", "" ],
-																	"patching_rect" : [ 16.0, 97.0, 100.0, 36.0 ],
+																	"patching_rect" : [ 16.0, 97.0, 100.0, 35.0 ],
 																	"text" : "regexp / @substitute `"
 																}
 
@@ -2444,8 +2512,8 @@
 													"numinlets" : 0,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 12.0, 12.0, 53.0, 22.0 ],
-													"text" : "r SLE_5"
+													"patching_rect" : [ 12.0, 12.0, 52.0, 22.0 ],
+													"text" : "r SLE_2"
 												}
 
 											}
@@ -2472,8 +2540,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 5,
-															"revision" : 3,
+															"minor" : 6,
+															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -2749,7 +2817,7 @@
  ]
 													}
 ,
-													"patching_rect" : [ 12.0, 44.0, 79.0, 64.0 ],
+													"patching_rect" : [ 12.0, 44.0, 79.0, 62.0 ],
 													"saved_object_attributes" : 													{
 														"description" : "",
 														"digest" : "",
@@ -2937,7 +3005,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 1027.0, 466.0, 351.0, 36.0 ],
+									"patching_rect" : [ 1027.0, 466.0, 351.0, 35.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -3176,8 +3244,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
-											"revision" : 3,
+											"minor" : 6,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3368,8 +3436,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 5,
-															"revision" : 3,
+															"minor" : 6,
+															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -4304,8 +4372,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
-											"revision" : 3,
+											"minor" : 6,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -4347,7 +4415,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 5,
 													"outlettype" : [ "", "", "", "", "" ],
-													"patching_rect" : [ 114.0, 334.0, 100.0, 36.0 ],
+													"patching_rect" : [ 114.0, 334.0, 100.0, 35.0 ],
 													"text" : "regexp ' @substitute \\\""
 												}
 
@@ -4384,7 +4452,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 114.0, 381.0, 100.0, 36.0 ],
+													"patching_rect" : [ 114.0, 381.0, 100.0, 35.0 ],
 													"text" : "sprintf store \\\"%s\\\" \\\"%s\\\""
 												}
 
@@ -4809,8 +4877,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
-											"revision" : 3,
+											"minor" : 6,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -5094,8 +5162,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
-											"revision" : 3,
+											"minor" : 6,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -5750,8 +5818,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
-											"revision" : 3,
+											"minor" : 6,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -6106,8 +6174,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
-											"revision" : 3,
+											"minor" : 6,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -6536,8 +6604,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
-											"revision" : 3,
+											"minor" : 6,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -6591,7 +6659,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 326.460526466369629, 294.0, 100.0, 64.0 ],
+													"patching_rect" : [ 326.460526466369629, 294.0, 100.0, 62.0 ],
 													"text" : "sprintf \\\"mkdir 'c:/ProgramData/Chuck/Users/%s/Photos/'\\\""
 												}
 
@@ -6677,14 +6745,14 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 5,
-															"revision" : 3,
+															"minor" : 6,
+															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
 														"classnamespace" : "box",
-														"rect" : [ 59.0, 107.0, 406.0, 522.0 ],
+														"rect" : [ 59.0, 107.0, 959.0, 795.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 0,
 														"default_fontsize" : 12.0,
@@ -6732,7 +6800,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 240.960526466369629, 391.0, 100.0, 64.0 ],
+																	"patching_rect" : [ 233.0, 387.0, 100.0, 62.0 ],
 																	"text" : "sprintf \\\"c:/ProgramData/Chuck/Users/%s/Photos/\\\""
 																}
 
@@ -6792,7 +6860,7 @@
 																	"maxclass" : "comment",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 309.828951358795166, 212.842105150222778, 67.0, 34.0 ],
+																	"patching_rect" : [ 309.828951358795166, 212.842105150222778, 67.0, 33.0 ],
 																	"text" : "Convert to Message",
 																	"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 																}
@@ -6886,7 +6954,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "USER_NAME_CAMERA" ],
-																	"patching_rect" : [ 162.460526466369629, 254.5, 93.0, 50.0 ],
+																	"patching_rect" : [ 162.460526466369629, 254.5, 93.0, 49.0 ],
 																	"text" : "t s USER_NAME_CAMERA"
 																}
 
@@ -6913,7 +6981,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 9.0, 118.0, 341.789464235305786, 50.0 ],
+																	"patching_rect" : [ 9.0, 118.0, 341.789464235305786, 49.0 ],
 																	"text" : "sprintf sqlout \\\"SELECT USER_NAME AS USER_NAME_CAMERA FROM USER WHERE USER_ID='%s'\\\""
 																}
 
@@ -6950,7 +7018,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 40.460526466369629, 387.0, 100.0, 64.0 ],
+																	"patching_rect" : [ 40.460526466369629, 387.0, 100.0, 62.0 ],
 																	"text" : "sprintf \\\"mkdir 'c:/ProgramData/Chuck/Users/%s/Photos/'\\\""
 																}
 
@@ -6983,7 +7051,7 @@
 																	"maxclass" : "panel",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 9.0, 201.842105150222778, 374.573887169361115, 294.52631402015686 ]
+																	"patching_rect" : [ 11.173582881689072, 208.23684298992157, 374.573887169361115, 294.52631402015686 ]
 																}
 
 															}
@@ -7789,8 +7857,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
-											"revision" : 3,
+											"minor" : 6,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -8074,7 +8142,7 @@
 									"numinlets" : 5,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 36.5, 766.5, 789.0, 36.0 ],
+									"patching_rect" : [ 36.5, 766.5, 789.0, 35.0 ],
 									"text" : "sprintf %i script newobject bpatcher @name \\\"Image Editor.maxpat\\\" @varname Video_Player @presentation_rect 0. 0. %i %i @presentation 1 @args %i %i"
 								}
 
@@ -8103,8 +8171,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
-											"revision" : 3,
+											"minor" : 6,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -8562,13 +8630,6 @@
 									"destination" : [ "obj-91", 0 ],
 									"midpoints" : [ 912.5, 154.0, 896.0, 154.0, 896.0, 100.0, 912.5, 100.0 ],
 									"source" : [ "obj-106", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-81", 0 ],
-									"source" : [ "obj-111", 0 ]
 								}
 
 							}
@@ -9518,7 +9579,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 16.5, 156.5, 125.0, 43.0 ],
+					"patching_rect" : [ 16.5, 156.5, 125.0, 42.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -9541,8 +9602,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 3,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -9667,7 +9728,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "bang", "int" ],
 									"patching_rect" : [ 25.0, 95.0, 61.0, 22.0 ],
-									"text" : "t i b 6"
+									"text" : "t i b 7"
 								}
 
 							}
@@ -9819,7 +9880,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 527.223983999999973, 189.0, 224.078093999999965, 117.0 ],
+					"patching_rect" : [ 527.223983999999973, 189.0, 224.078093999999965, 114.0 ],
 					"text" : "ORDER OF LOADBANGS\n1) Loads 1st in p_2020_loadbang: to load path to this /2020 App/ folder\n2) Next it loads S Connect.bat to make sure s drive is connected\n3) There is a delay in p2020_1_open_s_drive_connect\n4) \"r loadALL\" to bang in r \"2020_x\""
 				}
 
@@ -9855,7 +9916,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 487.385299999999916, 121.0, 253.666748000000013, 34.0 ],
+					"patching_rect" : [ 487.385299999999916, 121.0, 253.666748000000013, 33.0 ],
 					"text" : "These are the ordered receive of a loadbang:\n                 (remember to include 0)"
 				}
 
@@ -9880,7 +9941,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 391.677048000000013, 250.0, 128.0, 36.0 ],
+					"patching_rect" : [ 391.677048000000013, 250.0, 128.0, 35.0 ],
 					"text" : ";\r\nSLE_6 bang"
 				}
 
@@ -9916,7 +9977,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 459.0, 74.0, 212.0, 34.0 ],
+					"patching_rect" : [ 459.0, 74.0, 212.0, 33.0 ],
 					"text" : "Ordered Loadbang",
 					"textcolor" : [ 0.0, 0.078431, 0.321569, 1.0 ]
 				}
@@ -9939,6 +10000,20 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-4", 0 ]
@@ -10014,8 +10089,8 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "Expand_Icon.png",
-				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Screenshot",
-				"patcherrelativepath" : "../Screenshot",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/SLE Camera/Icon Images",
+				"patcherrelativepath" : "./Icon Images",
 				"type" : "PNG",
 				"implicit" : 1
 			}
@@ -10035,8 +10110,8 @@
 			}
 , 			{
 				"name" : "active_icon.png",
-				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Screenshot",
-				"patcherrelativepath" : "../Screenshot",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/SLE Camera/Icon Images",
+				"patcherrelativepath" : "./Icon Images",
 				"type" : "PNG",
 				"implicit" : 1
 			}
@@ -10056,8 +10131,8 @@
 			}
 , 			{
 				"name" : "image_icon.png",
-				"bootpath" : "c:/ProgramData/Chuck/main/Modules/Screenshot",
-				"patcherrelativepath" : "../Screenshot",
+				"bootpath" : "c:/ProgramData/Chuck/main/Modules/SLE Camera/Icon Images",
+				"patcherrelativepath" : "./Icon Images",
 				"type" : "PNG",
 				"implicit" : 1
 			}
