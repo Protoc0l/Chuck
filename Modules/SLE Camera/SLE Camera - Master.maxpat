@@ -47,7 +47,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 12.0, 275.0, 100.0, 62.0 ],
-					"presentation_linecount" : 4,
 					"text" : "sprintf \\\"mkdir 'c:/ProgramData/Chuck/Users/%s/Photos/'\\\""
 				}
 
@@ -8630,6 +8629,13 @@
 									"destination" : [ "obj-91", 0 ],
 									"midpoints" : [ 912.5, 154.0, 896.0, 154.0, 896.0, 100.0, 912.5, 100.0 ],
 									"source" : [ "obj-106", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-81", 0 ],
+									"source" : [ "obj-111", 0 ]
 								}
 
 							}
