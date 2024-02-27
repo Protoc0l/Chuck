@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 6,
+			"minor" : 6,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -45,10 +45,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 381.0, 75.0, 150.0, 131.0 ],
+					"patching_rect" : [ 381.0, 75.0, 150.0, 127.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 8,
-					"presentation_rect" : [ 381.0, 75.0, 150.0, 131.0 ],
+					"presentation_rect" : [ 381.0, 75.0, 150.0, 127.0 ],
 					"text" : "write right\nleft\nright to\nleft to\nright,\nleflt,\nright-\nleft-\n"
 				}
 
@@ -60,10 +60,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 202.0, 62.0, 150.0, 172.0 ],
+					"patching_rect" : [ 202.0, 62.0, 150.0, 167.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 12,
-					"presentation_rect" : [ 202.0, 62.0, 150.0, 172.0 ],
+					"presentation_rect" : [ 202.0, 62.0, 150.0, 167.0 ],
 					"text" : "Lids\nConjunct\nCornea\nAC\nIris\nLens\nOptic Nerve Head\nMacula\nPost\nAV\nPeriphery\nVitreous (vitrious)"
 				}
 
@@ -79,8 +79,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -628,8 +628,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -683,7 +683,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 34.0, 243.0, 467.0, 50.0 ],
+									"patching_rect" : [ 34.0, 243.0, 467.0, 49.0 ],
 									"text" : ";\r\nmax launchbrowser C:/ProgramData/Chuck/main/ChuckTranscriptionServer/ChuckTranscriptionServer.exe"
 								}
 
@@ -695,7 +695,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 54.0, 28.0, 58.0, 22.0 ],
+									"patching_rect" : [ 54.0, 26.0, 58.0, 22.0 ],
 									"text" : "loadbang"
 								}
 
@@ -859,17 +859,10 @@
 								}
 
 							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-1", 0 ],
-									"source" : [ "obj-119", 0 ]
-								}
-
-							}
  ]
 					}
 ,
-					"patching_rect" : [ 593.25, 44.0, 415.5, 133.0 ],
+					"patching_rect" : [ 593.25, 44.0, 415.5, 129.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -936,7 +929,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1156.5, 162.0, 73.0, 34.0 ],
+					"patching_rect" : [ 1156.5, 162.0, 73.0, 33.0 ],
 					"text" : "AUDIO\nSETTINGS"
 				}
 
@@ -948,7 +941,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1138.5, 289.0, 82.0, 34.0 ],
+					"patching_rect" : [ 1138.5, 289.0, 82.0, 33.0 ],
 					"text" : "UDP\nSEND"
 				}
 
@@ -960,7 +953,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1556.5, 351.0, 82.0, 34.0 ],
+					"patching_rect" : [ 1556.5, 351.0, 82.0, 33.0 ],
 					"text" : "UDP\nRECIEVE"
 				}
 
@@ -1113,8 +1106,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1460,8 +1453,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1990,7 +1983,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 928.5, 493.0, 710.0, 36.0 ],
+					"patching_rect" : [ 928.5, 493.0, 710.0, 35.0 ],
 					"text" : ";\r\nClipboard_Done \"Cornea, contact over\""
 				}
 
@@ -2387,7 +2380,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 307.5, 332.0, 115.0, 34.0 ],
+					"patching_rect" : [ 307.5, 332.0, 115.0, 33.0 ],
 					"style" : "helpfile_label",
 					"text" : "soundfile input for channel 2 (R)"
 				}
@@ -2400,7 +2393,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 149.0, 332.0, 115.0, 34.0 ],
+					"patching_rect" : [ 149.0, 332.0, 115.0, 33.0 ],
 					"style" : "helpfile_label",
 					"text" : "soundfile input for channel 1 (L)"
 				}
@@ -2544,7 +2537,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 315.0, 371.0, 264.212493896484375, 54.0 ]
+					"patching_rect" : [ 315.0, 371.0, 264.21246337890625, 54.0 ]
 				}
 
 			}
