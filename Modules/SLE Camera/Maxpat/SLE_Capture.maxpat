@@ -3387,8 +3387,8 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 68.5, 268.0, 107.0, 22.0 ],
-									"text" : "s NDI_audio_send"
+									"patching_rect" : [ 68.5, 268.0, 134.0, 22.0 ],
+									"text" : "send~ NDI_audio_send"
 								}
 
 							}
