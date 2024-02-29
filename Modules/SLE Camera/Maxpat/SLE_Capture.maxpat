@@ -3383,6 +3383,17 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-10",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 68.5, 268.0, 107.0, 22.0 ],
+									"text" : "s NDI_audio_send"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-17",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -3436,7 +3447,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 349.833333333333371, 343.0, 253.0, 36.0 ],
+									"patching_rect" : [ 349.833333333333371, 343.0, 253.0, 35.0 ],
 									"text" : ";\r\nmax launchbrowser http://new.tk/NDIRedistV4"
 								}
 
@@ -3650,6 +3661,13 @@
 							}
  ],
 						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-10", 0 ],
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
 								"patchline" : 								{
 									"destination" : [ "obj-2", 0 ],
 									"source" : [ "obj-1", 1 ]
