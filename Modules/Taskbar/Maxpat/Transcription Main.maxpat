@@ -112,7 +112,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1386.0, 610.0, 100.0, 20.0 ],
+					"patching_rect" : [ 1386.0, 609.0, 100.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 119.0, 51.0, 53.0, 20.0 ],
 					"text" : "refresh",
@@ -838,7 +838,7 @@
 					"id" : "obj-120",
 					"linecount" : 3,
 					"maxclass" : "newobj",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patcher" : 					{
 						"fileversion" : 1,
@@ -881,13 +881,14 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"comment" : "",
 									"id" : "obj-1",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
+									"index" : 1,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 54.0, 54.0, 67.0, 22.0 ],
-									"text" : "delay 3000"
+									"patching_rect" : [ 54.0, 18.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -901,18 +902,6 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 34.0, 243.0, 467.0, 49.0 ],
 									"text" : ";\r\nmax launchbrowser C:/ProgramData/Chuck/main/ChuckTranscriptionServer/ChuckTranscriptionServer.exe"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-119",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 54.0, 26.0, 58.0, 22.0 ],
-									"text" : "loadbang"
 								}
 
 							}
@@ -1078,7 +1067,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 593.25, 44.0, 415.5, 129.0 ],
+					"patching_rect" : [ 629.0, 31.5, 415.5, 129.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2673,7 +2662,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-27",
-					"ignoreclick" : 1,
 					"local" : 1,
 					"maxclass" : "ezadc~",
 					"numinlets" : 1,
@@ -3345,8 +3333,18 @@
 			}
 , 			{
 				"patchline" : 				{
+					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"destination" : [ "obj-120", 0 ],
+					"order" : 1,
+					"source" : [ "obj-58", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-61", 0 ],
 					"hidden" : 1,
+					"order" : 0,
 					"source" : [ "obj-58", 0 ]
 				}
 
